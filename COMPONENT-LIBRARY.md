@@ -1354,7 +1354,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="footer-content">
         <div class="footer-brand">
             <h3>Neothink Society</h3>
-            <p>Transforming Lives Through Enlightenment</p>
+            <p>Prosper Happily Forever</p>
         </div>
 
         <div class="footer-support">
