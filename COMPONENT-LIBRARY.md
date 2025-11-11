@@ -786,9 +786,10 @@ body {
     font-family: var(--font-serif);
     font-size: var(--text-5xl);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.3;  /* Increased from 1.1 to prevent descender clipping */
     color: var(--white);
     margin-bottom: var(--space-md);
+    overflow: visible;
 }
 
 .gradient-text {
@@ -797,6 +798,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    padding-bottom: 0.1em;  /* Ensures descenders (y, g, p, q, j) are not clipped */
+    overflow: visible;
 }
 
 .hero-subtitle {
