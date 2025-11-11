@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>Day of Enlightenment Resources | The Society</title>
+    <meta name="description" content="Access your Day of Enlightenment resources including bonus session recordings and materials to continue your transformation.">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #FFC700;
+            --black: #000000;
+            --gray-950: #0a0a0a;
+            --gray-900: #0f0f0f;
+            --gray-800: #1a1a1a;
+            --gray-700: #2a2a2a;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
+            --white: #ffffff;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        .container-narrow {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        section {
+            padding: clamp(2.5rem, 8vw, 4rem) 0;
+        }
+
+        /* Header */
+        .workshop-header {
+            padding: clamp(1rem, 2vw, 1.5rem) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--black);
+        }
+
+        .classification {
+            text-align: center;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 600;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: clamp(0.1em, 0.5vw, 0.2em);
+            line-height: 1.5;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: clamp(3rem, 8vw, 5rem) 0 clamp(2rem, 5vw, 3rem);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+            border: 3px solid var(--gold);
+            border-radius: 100px;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+        }
+
+        .hero-badge-text {
+            color: var(--gold);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 400;
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.2;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1.125rem, 3vw, 1.75rem);
+            color: var(--gray-400);
+            font-style: italic;
+            margin-bottom: clamp(2rem, 5vw, 3rem);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: clamp(2.5rem, 6vw, 4rem);
+        }
+
+        .section-label {
+            display: block;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+        }
+
+        .section-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1.125rem, 2.75vw, 1.5rem);
+            color: var(--gray-400);
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Recording Cards */
+        .recording-card {
+            background: linear-gradient(135deg, var(--gray-950), var(--gray-900));
+            border: 2px solid var(--gray-800);
+            border-radius: 16px;
+            padding: clamp(2rem, 4vw, 3rem);
+            margin-bottom: clamp(2.5rem, 5vw, 3rem);
+        }
+
+        .recording-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .recording-info {
+            flex: 1;
+        }
+
+        .recording-number {
+            display: inline-block;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+        }
+
+        .recording-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            line-height: 1.3;
+        }
+
+        .recording-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gray-400);
+            font-size: clamp(0.875rem, 2vw, 1rem);
+        }
+
+        .meta-icon {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        .video-container {
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--gray-900);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--gray-900), var(--gray-950));
+            border: 2px dashed var(--gray-700);
+        }
+
+        .video-icon {
+            width: 64px;
+            height: 64px;
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+        }
+
+        .video-placeholder p {
+            color: var(--gray-500);
+            font-size: 1rem;
+        }
+
+        .recording-description {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            line-height: 1.8;
+            color: var(--gray-300);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .recording-highlights {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 4px solid var(--gold);
+            padding: clamp(1.5rem, 3vw, 2rem);
+            border-radius: 8px;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .highlights-title {
+            font-size: clamp(1.125rem, 2.75vw, 1.375rem);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: clamp(1rem, 2vw, 1.25rem);
+        }
+
+        .highlights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights-list li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--gray-300);
+            line-height: 1.7;
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+        }
+
+        .highlights-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .highlights-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .timestamps {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            padding: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .timestamps-title {
+            font-size: clamp(1.125rem, 2.75vw, 1.375rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        .timestamp-item {
+            padding: clamp(0.75rem, 2vw, 1rem) 0;
+            border-bottom: 1px solid var(--gray-800);
+            display: flex;
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        .timestamp-item:last-child {
+            border-bottom: none;
+        }
+
+        .timestamp {
+            font-family: 'Courier New', monospace;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--gold);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .timestamp-description {
+            flex: 1;
+            color: var(--gray-300);
+            line-height: 1.6;
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: clamp(0.75rem, 2vw, 1rem);
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: clamp(0.875rem, 2vw, 1.125rem) clamp(1.5rem, 3vw, 2rem);
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--black);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--gray-700);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, var(--gray-950), var(--gray-900));
+            padding: clamp(3rem, 8vw, 5rem) 0;
+        }
+
+        .quote-block {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-style: italic;
+            line-height: 1.5;
+            color: var(--white);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            position: relative;
+        }
+
+        .quote-text:before {
+            content: '"';
+            position: absolute;
+            left: -0.4em;
+            top: -0.2em;
+            font-size: 2em;
+            color: var(--gold);
+            opacity: 0.3;
+        }
+
+        .quote-author {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Background Variations */
+        .bg-dark-gray {
+            background: var(--gray-950);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black);
+            border-top: 1px solid var(--gray-800);
+            padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+        }
+
+        .footer-contact {
+            color: var(--gray-400);
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            line-height: 1.8;
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-legal {
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--gray-500);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .recording-header {
+                flex-direction: column;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="workshop-header">
+        <div class="container">
+            <p class="classification">Level 2 Member Resources • Day of Enlightenment</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="hero-badge-text">Workshop Resources</span>
+                </div>
+                <h1 class="hero-title">Day of Enlightenment</h1>
+                <p class="hero-subtitle">
+                    Access your recordings and resources to continue deepening your transformation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Day 1: Live Experience Only -->
+        <section>
+            <div class="container-narrow">
+                <div class="recording-card" style="border-color: rgba(255, 215, 0, 0.5); background: linear-gradient(135deg, rgba(255, 215, 0, 0.03), var(--gray-950));">
+                    <div class="recording-header">
+                        <div class="recording-info">
+                            <span class="recording-number" style="background: linear-gradient(135deg, var(--gold), var(--gold-dark)); -webkit-background-clip: text; background-clip: text; color: transparent;">🔒 Live Experience</span>
+                            <h2 class="recording-title">Day 1: The Transformation</h2>
+                            <div class="recording-meta">
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    October 18, 2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08)); border: 3px solid var(--gold); border-radius: 16px; padding: clamp(2rem, 4vw, 3rem); text-align: center; margin-bottom: clamp(1.5rem, 3vw, 2rem);">
+                        <svg style="width: 64px; height: 64px; color: var(--gold); margin: 0 auto clamp(1rem, 2vw, 1.5rem);" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                        </svg>
+                        <h3 style="font-family: var(--font-serif); font-size: clamp(1.5rem, 3.5vw, 2rem); color: var(--gold); margin-bottom: clamp(0.75rem, 2vw, 1rem);">A Sacred Live Experience</h3>
+                        <p style="font-size: clamp(1rem, 2.5vw, 1.125rem); color: var(--gray-300); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+                            The Day 1 transformation was designed to be experienced live, in the moment, with your fellow value creators. This profound journey through your Friday Night Essence, the Matrix of Illusions, and your path forward is meant to be felt, not watched.
+                        </p>
+                    </div>
+
+                    <div style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; padding: clamp(1.5rem, 3vw, 2rem); margin-bottom: clamp(1.5rem, 3vw, 2rem);">
+                        <p style="color: var(--gray-300); line-height: 1.7; font-size: clamp(1rem, 2.5vw, 1.125rem); text-align: center; margin-bottom: 1rem;">
+                            The Day of Enlightenment was your initiation into a deeper understanding. But the journey doesn't end here.
+                        </p>
+                        <p style="color: var(--gray-400); line-height: 1.7; font-size: clamp(0.9375rem, 2.25vw, 1.0625rem); text-align: center;">
+                            If you're ready to go deeper, to access 50 years of Neothink secrets and tools for removing negatives from your life...
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05)); border: 2px solid var(--gold); border-radius: 12px; padding: clamp(2rem, 4vw, 2.5rem); text-align: center;">
+                        <h3 style="font-family: var(--font-serif); font-size: clamp(1.5rem, 3.5vw, 2rem); color: var(--white); margin-bottom: clamp(1rem, 2vw, 1.25rem);">Level 3: The Stargazer Event</h3>
+                        <p style="color: var(--gray-300); line-height: 1.7; font-size: clamp(0.9375rem, 2.25vw, 1.0625rem); margin-bottom: clamp(1.5rem, 3vw, 2rem); max-width: 650px; margin-left: auto; margin-right: auto;">
+                            <strong style="color: var(--gold);">Available for a limited time:</strong> The 3-day immersive event where you'll reach your previously unreachable star. This is where the real work begins—removing the negatives, building your wealth engine, and stepping fully into your creator consciousness.
+                        </p>
+                        <a href="https://societysecrets.com/schedule-level-three-consultation" target="_blank" class="btn btn-primary" style="display: inline-flex;">
+                            <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            Learn About Level 3
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Session 1: Bonus Session -->
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="recording-card">
+                    <div class="recording-header">
+                        <div class="recording-info">
+                            <span class="recording-number">Session 01</span>
+                            <h2 class="recording-title">Day 2: Wealth Implementation & Deep Dive</h2>
+                            <div class="recording-meta">
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    2 hours 55 minutes
+                                </span>
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    October 19, 2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-container">
+                        <div style="padding:58.93% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/1128700572?h=0922b439ac&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day of Enlightenment (Level 2 Workshop) - Day 2 Session 1 (Bonus)"></iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+
+                    <p class="recording-description">
+                        Day 2 was where members shared immediate transformations and breakthrough moments from Day 1. Alex shared how he immediately took action during lunch break and secured his first client sign-up. Wallace re-walked the Wealth Engine calculations with crystal clarity, demonstrating how the Society ambassador program can accelerate financial security from 26 years to 6.5 years (4 referrals/month) or even 3 years (10 referrals/month). The session concludes with detailed instruction on creating your Golden Life Sheet—the six-category daily alignment tool.
+                    </p>
+
+                    <div class="recording-highlights">
+                        <h3 class="highlights-title">Key Teachings Covered</h3>
+                        <ul class="highlights-list">
+                            <li>Member breakthrough sharing—energy increases, doubt disappearance, immediate action stories</li>
+                            <li>Alex's success: Posted offer during Day 1 lunch break, secured first client within 24 hours</li>
+                            <li>David Groode's vulnerability: Invested last $60 to attend VIP, zero regrets, felt "plugged in"</li>
+                            <li>The Spiral of Learning concept: Revisiting teachings at higher levels of understanding</li>
+                            <li>Comprehensive Wealth Engine calculation walkthrough with live examples</li>
+                            <li>Three financial targets defined: Security (basic costs), Vitality (basic + half discretionary), Freedom (100% lifestyle)</li>
+                            <li>The 12% annual return assumption and Inflection Point formula: Annual Expenses ÷ 0.12</li>
+                            <li>Case study: Fixed-income earner ($2,200/month Social Security) path to freedom</li>
+                            <li>Timeline acceleration through Society ambassador program: 50% commission, $250 per Level 2 referral</li>
+                            <li>Scenario analysis: 4 referrals/month = 6.5 years to security; 10 referrals/month = under 3 years</li>
+                            <li>Golden Life Sheet deep dive: Six categories explained (Who I Am, FNE, Dreams, Focuses, Celebrations, Health)</li>
+                            <li>Daily review protocol: Post on bathroom mirror, read morning and night for 30+ days</li>
+                            <li>The sheet evolution concept: Create new sheets as you master and outgrow previous versions</li>
+                        </ul>
+                    </div>
+
+                    <div class="timestamps">
+                        <h4 class="timestamps-title">Session Flow</h4>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Opening:</strong> High-energy welcome back and setting intentions</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Breakthrough Stories:</strong> Graciela's vibration raising, doubt disappeared, commitment affirmed</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>David's Journey:</strong> Invested last $60, felt "plugged in in such a magnified way"</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Alex's Win:</strong> First sign-up secured within 24 hours, stayed up until 2 AM "jazzed"</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Energy Analysis:</strong> Why members couldn't sleep—removing blockers allowed exhilaration to surface</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Learning Philosophy:</strong> The Spiral of Learning—revisiting concepts at higher levels</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Wealth Engine:</strong> Deep dive into portfolio of assets working while you sleep</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Three Targets:</strong> Calculating Financial Security, Vitality, and Freedom numbers</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Case Study:</strong> $2,200/month Social Security example—$160,000 needed for security</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Acceleration Path:</strong> 26 years → 6.5 years → 3 years through value creation</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Ambassador Program:</strong> Mechanics—50% commission, $250 per Level 2 referral</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Golden Life Sheet:</strong> Six categories that prevent Matrix drift</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Category Details:</strong> Who I Am, FNE, Dreams, Focuses, Celebrations, Health breakdown</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Implementation:</strong> Daily review protocol and sheet evolution as you grow</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp-description"><strong>Celebration:</strong> Tracy's Level 3 ascension and closing inspiration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Session 2: VIP Session -->
+        <section>
+            <div class="container-narrow">
+                <div class="recording-card" style="border-color: rgba(255, 215, 0, 0.5); background: linear-gradient(135deg, rgba(255, 215, 0, 0.03), var(--gray-950));">
+                    <div class="recording-header">
+                        <div class="recording-info">
+                            <span class="recording-number" style="background: linear-gradient(135deg, var(--gold), var(--gold-dark)); -webkit-background-clip: text; background-clip: text; color: transparent;">🔒 VIP Exclusive</span>
+                            <h2 class="recording-title">VIP Session: Implementation & Q&A</h2>
+                            <div class="recording-meta">
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    2 hours 7 minutes
+                                </span>
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    October 19, 2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08)); border: 3px solid var(--gold); border-radius: 16px; padding: clamp(2rem, 4vw, 3rem); text-align: center; margin-bottom: clamp(1.5rem, 3vw, 2rem);">
+                        <svg style="width: 64px; height: 64px; color: var(--gold); margin: 0 auto clamp(1rem, 2vw, 1.5rem);" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <h3 style="font-family: var(--font-serif); font-size: clamp(1.5rem, 3.5vw, 2rem); color: var(--gold); margin-bottom: clamp(0.75rem, 2vw, 1rem);">VIP Members Only</h3>
+                        <p style="font-size: clamp(1rem, 2.5vw, 1.125rem); color: var(--gray-300); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+                            This exclusive, powerful session is reserved only for VIP participants.
+                        </p>
+                    </div>
+
+                    <div style="background: rgba(255, 215, 0, 0.05); border-left: 4px solid var(--gold); padding: clamp(1.25rem, 3vw, 1.75rem); border-radius: 8px;">
+                        <p style="color: var(--gray-300); line-height: 1.7; font-size: clamp(0.9375rem, 2.25vw, 1.0625rem); margin-bottom: 1rem;">
+                            <strong style="color: var(--gold);">For VIP Members:</strong> Your exclusive recording link and access details have been sent separately to your email. Check your inbox (and spam folder) for your personalized VIP portal access.
+                        </p>
+                        <p style="color: var(--gray-400); font-size: clamp(0.875rem, 2vw, 1rem); line-height: 1.6;">
+                            <strong>Not a VIP Member?</strong> The VIP experience includes exclusive sessions like this one, priority access to mentors, personalized implementation support, and advanced teachings. VIP access is available for select workshop events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">"The spiral of learning means you'll revisit these concepts many times—each time from a higher vantage point, understanding more deeply."</p>
+                    <p class="quote-author">— Wallace Hamilton, Platinum Mentor</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Your Complete Resource Library</span>
+                    <h2 class="section-title">Continue Your Journey</h2>
+                    <p class="section-subtitle">Access all tools and materials to implement your transformation.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1.5rem, 3vw, 2rem);">
+                    <div class="recording-card" style="margin-bottom: 0; height: 100%; display: flex; flex-direction: column;">
+                        <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); margin-bottom: 1rem; color: var(--gold);">📚 Workshop Recap</h3>
+                        <p style="color: var(--gray-300); line-height: 1.6; flex: 1; margin-bottom: 1.5rem;">Complete summary of all teachings, key concepts, and action steps from the workshop.</p>
+                        <a href="https://societysecrets.com/day-of-enlightenment-workshop-aftermath" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            View Recap
+                        </a>
+                    </div>
+
+                    <div class="recording-card" style="margin-bottom: 0; height: 100%; display: flex; flex-direction: column;">
+                        <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); margin-bottom: 1rem; color: var(--gold);">💰 Wealth Calculator</h3>
+                        <p style="color: var(--gray-300); line-height: 1.6; flex: 1; margin-bottom: 1.5rem;">Calculate your Financial Security, Vitality, and Freedom numbers with the 12% formula.</p>
+                        <a href="https://societysecrets.com/wealth-engine-calculator" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            Calculate Now
+                        </a>
+                    </div>
+
+                    <div class="recording-card" style="margin-bottom: 0; height: 100%; display: flex; flex-direction: column;">
+                        <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); margin-bottom: 1rem; color: var(--gold);">📄 Golden Life Sheet</h3>
+                        <p style="color: var(--gray-300); line-height: 1.6; flex: 1; margin-bottom: 1.5rem;">Download the printable template to synthesize your transformation into six categories.</p>
+                        <a href="https://societysecrets.com/your-golden-life" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            Get Template
+                        </a>
+                    </div>
+
+                    <div class="recording-card" style="margin-bottom: 0; height: 100%; display: flex; flex-direction: column;">
+                        <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); margin-bottom: 1rem; color: var(--gold);">🔗 Ambassador Program</h3>
+                        <p style="color: var(--gray-300); line-height: 1.6; flex: 1; margin-bottom: 1.5rem;">Get your ambassador link and earn 50% commission for every Level 2 member you invite.</p>
+                        <a href="https://societysecrets.com/ambassador-signup" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            Join Program
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">The Spiral of Learning Never Ends</p>
+                <p class="footer-contact">
+                    Questions? Need support?<br>
+                    <a href="mailto:support@neothink.com">support@neothink.com</a>
+                </p>
+                <p class="footer-legal">The Neothink Society • Level 2 Members</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
