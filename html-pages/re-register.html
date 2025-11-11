@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirm your attendance for Day of Enlightenment Workshop - November 22-23, 2025. Update your details and secure your spot.">
+    <title>Confirm Your Attendance | Day of Enlightenment</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus States */
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Skip to Content */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 100;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* ===========================
+           HEADER
+        =========================== */
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .header-date {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero-section {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .eyebrow-badge {
+            display: inline-block;
+            margin-bottom: var(--space-md);
+        }
+
+        .eyebrow-badge span {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--black);
+            background: var(--gold);
+            padding: 0.375rem 0.875rem;
+            border-radius: 2px;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: var(--gold);
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .hero-date {
+            font-family: var(--font-mono);
+            font-size: var(--text-lg);
+            font-weight: 600;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ===========================
+           ALERT SECTION
+        =========================== */
+        .alert-section {
+            padding: var(--space-xl) var(--space-md);
+            background: rgba(255, 215, 0, 0.05);
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .alert-box {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            gap: var(--space-md);
+            align-items: flex-start;
+        }
+
+        .alert-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+        }
+
+        .alert-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--gold);
+        }
+
+        .alert-content h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .alert-content p {
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           COUNTDOWN TIMER
+        =========================== */
+        .countdown-section {
+            padding: var(--space-2xl) var(--space-md);
+            background: var(--gray-900);
+        }
+
+        .countdown-container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .countdown-label {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gray-400);
+            margin-bottom: var(--space-md);
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .countdown-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .countdown-number {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            min-width: 80px;
+        }
+
+        .countdown-unit-label {
+            font-family: var(--font-sans);
+            font-size: var(--text-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--gray-400);
+        }
+
+        .countdown-separator {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--gold);
+            opacity: 0.5;
+            margin: 0 var(--space-xs);
+        }
+
+        .countdown-expired {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        /* ===========================
+           FORM SECTION
+        =========================== */
+        .form-section {
+            padding: var(--space-3xl) var(--space-md);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-container {
+            background: var(--gray-900);
+            border: 1px solid var(--gray-800);
+            border-radius: 12px;
+            padding: var(--space-2xl);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .form-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--white);
+            margin: var(--space-md) 0;
+        }
+
+        .form-header p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        .ghl-form-wrapper {
+            margin: var(--space-xl) 0;
+        }
+
+        /* GHL Form Overrides */
+        .ghl-form-wrapper input,
+        .ghl-form-wrapper select,
+        .ghl-form-wrapper textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            color: var(--white);
+            background: var(--gray-800);
+            border: 2px solid var(--gray-700);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            min-height: var(--min-touch-target);
+        }
+
+        .ghl-form-wrapper input:focus,
+        .ghl-form-wrapper select:focus,
+        .ghl-form-wrapper textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: var(--gray-900);
+        }
+
+        .ghl-form-wrapper label {
+            display: block;
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-300);
+            margin-bottom: var(--space-xs);
+        }
+
+        .ghl-form-wrapper button[type="submit"] {
+            width: 100%;
+            padding: 1rem 2rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: var(--gold);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: var(--min-touch-target);
+            margin-top: var(--space-lg);
+        }
+
+        .ghl-form-wrapper button[type="submit"]:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+        }
+
+        .ghl-form-wrapper button[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        .form-footer {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
+        }
+
+        .privacy-notice {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-xs);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.5;
+        }
+
+        .privacy-notice svg {
+            flex-shrink: 0;
+            color: var(--gold);
+            margin-top: 2px;
+        }
+
+        /* ===========================
+           INFO CARDS SECTION
+        =========================== */
+        .info-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--gray-900);
+        }
+
+        .info-section-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .info-section-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .info-section-header p {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            padding: var(--space-xl);
+            background: var(--black);
+            border: 1px solid var(--gray-800);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            margin-bottom: var(--space-md);
+        }
+
+        .card-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--gold);
+        }
+
+        .info-card h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .info-card p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           FOOTER
+        =========================== */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md) var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .footer-brand p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+        }
+
+        .footer-support {
+            text-align: right;
+        }
+
+        .support-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            margin-bottom: var(--space-xs);
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .support-link:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
+        }
+
+        .footer-bottom p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+        }
+
+        /* ===========================
+           RESPONSIVE
+        =========================== */
+        @media (max-width: 768px) {
+            .header-date {
+                font-size: var(--text-xs);
+            }
+
+            .hero-section {
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .alert-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .alert-icon {
+                margin: 0 auto;
+            }
+
+            .countdown-timer {
+                gap: var(--space-sm);
+            }
+
+            .countdown-number {
+                font-size: var(--text-3xl);
+                min-width: 60px;
+            }
+
+            .countdown-separator {
+                font-size: var(--text-2xl);
+            }
+
+            .form-container {
+                padding: var(--space-lg);
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-support {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown-separator {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="/" class="site-logo" aria-label="Neothink Society Home">Neothink Society</a>
+                    <div class="header-date" aria-label="Workshop date">Nov 22-23, 2025</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="eyebrow-badge">
+                        <span>Welcome Back</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Confirm Your Attendance for
+                        <span class="gradient-text">Day of Enlightenment</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        You previously purchased this workshop online. We're excited to have you join us!
+                        Please confirm your attendance and update your contact information below.
+                    </p>
+
+                    <p class="hero-date" aria-label="Workshop dates">Saturday, November 22 • Sunday, November 23, 2025</p>
+                </div>
+            </section>
+
+            <!-- Alert Section -->
+            <section class="alert-section">
+                <div class="container">
+                    <div class="alert-box">
+                        <div class="alert-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="alert-content">
+                            <h3>Why Re-Register?</h3>
+                            <p>
+                                We want to ensure you receive your updated workshop materials, Zoom link, and all event communications.
+                                This takes just 2 minutes and guarantees you won't miss anything for your transformation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Countdown Section -->
+            <section class="countdown-section">
+                <div class="countdown-container">
+                    <div class="countdown-label">Workshop Begins In:</div>
+                    <div class="countdown-timer" id="countdown" aria-live="polite">
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="days" aria-label="Days remaining">00</span>
+                            <span class="countdown-unit-label">Days</span>
+                        </div>
+                        <div class="countdown-separator" aria-hidden="true">:</div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="hours" aria-label="Hours remaining">00</span>
+                            <span class="countdown-unit-label">Hours</span>
+                        </div>
+                        <div class="countdown-separator" aria-hidden="true">:</div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="minutes" aria-label="Minutes remaining">00</span>
+                            <span class="countdown-unit-label">Minutes</span>
+                        </div>
+                        <div class="countdown-separator" aria-hidden="true">:</div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="seconds" aria-label="Seconds remaining">00</span>
+                            <span class="countdown-unit-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="form-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <div class="eyebrow-badge">
+                            <span>Confirmation Required</span>
+                        </div>
+                        <h2>Update Your Information</h2>
+                        <p>Confirm your attendance and update your contact details to ensure you receive all workshop materials and access information.</p>
+                    </div>
+
+                    <div class="ghl-form-wrapper">
+                        <!-- GHL Form Injection Point -->
+                        <div id="reregister-form" data-form-id="YOUR-GHL-REREGISTER-FORM-ID-HERE">
+                            <!--
+                                IMPORTANT: Replace YOUR-GHL-REREGISTER-FORM-ID-HERE with actual GHL form ID
+
+                                Form should capture:
+                                - First Name
+                                - Last Name
+                                - Email (required - may pre-populate from previous purchase)
+                                - Phone (required)
+                                - Address (Street, City, State, ZIP)
+
+                                Post-submit redirect: /thanks-vip-upsell.html
+                            -->
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <p class="privacy-notice">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span>Your information is secure and will only be used for workshop communications. We respect your privacy and will never share your details with third parties.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What's New Section -->
+            <section class="info-section">
+                <div class="container">
+                    <div class="info-section-header">
+                        <h2>What's Different This Time</h2>
+                        <p>Enhanced workshop experience with new resources and opportunities</p>
+                    </div>
+
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Two Full Days</h3>
+                            <p>This workshop now spans two complete days (Nov 22-23) for deeper transformation and implementation support.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <h3>Enhanced Materials</h3>
+                            <p>Access updated Golden Life Sheet templates, new implementation tools, and exclusive resources to accelerate your breakthrough.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                                </svg>
+                            </div>
+                            <h3>VIP Upgrade Available</h3>
+                            <p>After confirmation, you'll have the opportunity to upgrade to VIP for GUARANTEED 1-on-1 mentorship and exclusive Day 2 benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Neothink Society</h3>
+                        <p>Transforming Lives Through Enlightenment</p>
+                    </div>
+
+                    <div class="footer-support">
+                        <p class="support-label">Need Help?</p>
+                        <a href="mailto:support@neothink.com" class="support-link" aria-label="Email support at support@neothink.com">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            support@neothink.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Countdown Timer Implementation
+        function initCountdown(targetDate) {
+            const countdownEl = document.getElementById('countdown');
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    countdownEl.innerHTML = '<div class="countdown-expired">Workshop Has Begun!</div>';
+                    clearInterval(interval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                daysEl.textContent = String(days).padStart(2, '0');
+                hoursEl.textContent = String(hours).padStart(2, '0');
+                minutesEl.textContent = String(minutes).padStart(2, '0');
+                secondsEl.textContent = String(seconds).padStart(2, '0');
+            }
+
+            updateCountdown();
+            const interval = setInterval(updateCountdown, 1000);
+        }
+
+        // Initialize countdown to Nov 22, 2025 at 9:00 AM EST
+        document.addEventListener('DOMContentLoaded', function() {
+            const workshopDate = new Date('2025-11-22T09:00:00-05:00').getTime();
+            initCountdown(workshopDate);
+        });
+    </script>
+
+    <!-- GHL Form Script -->
+    <!-- Add GHL form injection script here based on your GHL configuration -->
+</body>
+</html>
