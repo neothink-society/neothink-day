@@ -91,46 +91,26 @@
             }
         }
 
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            color-scheme: dark;
-        }
-
         body {
             font-family: var(--font-sans);
-            background: var(--black);
-            color: var(--white);
-            line-height: 1.7;
             font-size: var(--text-base);
-            overflow-x: hidden;
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 90% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        /* Skip to Content Link */
+        /* Skip to Content */
         .skip-to-content {
             position: absolute;
-            top: -100px;
+            top: -40px;
             left: 0;
             background: var(--gold);
             color: var(--black);
-            padding: var(--space-sm) var(--space-md);
+            padding: 0.5rem 1rem;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 600;
             z-index: 100;
         }
 
@@ -138,49 +118,61 @@
             top: 0;
         }
 
+        /* ===========================
+           LAYOUT
+        =========================== */
         .page-wrapper {
-            position: relative;
-            z-index: 1;
-            opacity: 0;
-            animation: fadeInPage 0.5s ease-out forwards;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        @keyframes fadeInPage {
-            to { opacity: 1; }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: var(--space-2xl) var(--space-md);
         }
 
         /* ===========================
            HEADER
         =========================== */
-        .checkout-header {
-            padding: var(--space-lg) 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
         }
 
-        .header-logo {
-            font-size: var(--text-lg);
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
             font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .header-date {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
             color: var(--gray-400);
             text-transform: uppercase;
-            letter-spacing: 0.2em;
-            text-decoration: none;
-            display: inline-block;
-            min-height: var(--min-touch-target);
-            line-height: var(--min-touch-target);
-        }
-
-        .header-logo:hover {
-            color: var(--gold);
-        }
-
-        /* ===========================
-           LAYOUT
-        =========================== */
-        .main-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: var(--space-2xl) var(--space-md);
+            letter-spacing: 0.05em;
         }
 
         /* ===========================
@@ -519,6 +511,11 @@
         }
 
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+
             .main-container {
                 padding: var(--space-xl) var(--space-md);
             }
@@ -560,8 +557,13 @@
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
     <div class="page-wrapper">
-        <header class="checkout-header">
-            <a href="/" class="header-logo" aria-label="Return to Neothink Society homepage">THE NEOTHINK SOCIETY</a>
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="/" class="site-logo" aria-label="Neothink Society Home">Neothink Society</a>
+                    <div class="header-date" aria-label="Workshop date">Nov 22-23, 2025</div>
+                </div>
+            </div>
         </header>
 
         <main id="main-content" class="main-container">
