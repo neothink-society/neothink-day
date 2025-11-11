@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>Stargazer: Your Unreachable Star Awaits | Level 3 Implementation Event</title>
+    <meta name="description" content="Go beyond the moonshot. The 3-day implementation event that removes ALL limitations and compresses 50 years of Neothink secrets into your escape velocity toward financial freedom.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #D4AF37;
+            --gold-glow: rgba(255, 215, 0, 0.5);
+            --black: #000000;
+            --gray-950: #0a0a0a;
+            --gray-900: #0f0f0f;
+            --gray-850: #141414;
+            --gray-800: #1a1a1a;
+            --gray-700: #2a2a2a;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
+            --white: #ffffff;
+
+            /* Typography */
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+            /* PERFECTED: Fluid Typography with Better Responsive Scaling */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.075rem + 0.25vw, 1.3rem);
+            --text-xl: clamp(1.25rem, 1.175rem + 0.375vw, 1.5rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.5rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3rem);
+            --text-5xl: clamp(2.75rem, 2.25rem + 2.5vw, 4rem);
+
+            /* PERFECTED: Spacing System - Precise Control */
+            --space-xs: clamp(0.5rem, 0.475rem + 0.125vw, 0.625rem);
+            --space-sm: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+            --space-md: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+            --space-lg: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+            --space-xl: clamp(2rem, 1.7rem + 1.5vw, 3rem);
+            --space-2xl: clamp(3rem, 2.5rem + 2.5vw, 4.5rem);
+            --space-3xl: clamp(4rem, 3.25rem + 3.75vw, 6rem);
+
+            /* Card-Specific Padding */
+            --card-padding-sm: clamp(1rem, 0.85rem + 0.75vw, 1.5rem);
+            --card-padding-md: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+            --card-padding-lg: clamp(2rem, 1.65rem + 1.75vw, 3rem);
+
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-2xl: 24px;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.5);
+            --shadow-gold: 0 10px 40px var(--gold-glow);
+            --shadow-gold-lg: 0 20px 60px var(--gold-glow);
+
+            /* Transitions */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.7;
+            font-size: var(--text-base);
+            overflow-x: hidden;
+        }
+
+        /* PERFECTED: Layout Containers */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: clamp(1.25rem, 4vw, 2rem);
+            padding-right: clamp(1.25rem, 4vw, 2rem);
+        }
+
+        .container-narrow {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-left: clamp(1.25rem, 4vw, 2rem);
+            padding-right: clamp(1.25rem, 4vw, 2rem);
+        }
+
+        .container-tight {
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            padding-left: clamp(1.25rem, 4vw, 2rem);
+            padding-right: clamp(1.25rem, 4vw, 2rem);
+        }
+
+        section {
+            padding: var(--space-2xl) 0;
+        }
+
+        /* PERFECTED: Typography Utilities */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+        }
+
+        h1 { font-size: var(--text-5xl); }
+        h2 { font-size: var(--text-4xl); }
+        h3 { font-size: var(--text-3xl); }
+        h4 { font-size: var(--text-2xl); }
+        h5 { font-size: var(--text-xl); }
+        h6 { font-size: var(--text-lg); }
+
+        p { margin-bottom: var(--space-md); }
+
+        .text-center { text-align: center; }
+        .text-gold { color: var(--gold); }
+        .text-white { color: var(--white); }
+        .text-gray { color: var(--gray-300); }
+
+        /* PERFECTED: Countdown Bar */
+        .countdown-bar {
+            background: linear-gradient(135deg, var(--gray-950) 0%, var(--gray-900) 100%);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding: clamp(0.75rem, 2.5vw, 1.25rem) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(0.75rem, 2.5vw, 1.5rem);
+        }
+
+        @media (min-width: 640px) {
+            .countdown-bar {
+                flex-direction: row;
+                gap: clamp(1.5rem, 4vw, 2.5rem);
+            }
+        }
+
+        .countdown-label {
+            font-size: clamp(0.75rem, 2vw, 0.9375rem);
+            color: var(--gold);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 20px var(--gold-glow);
+            text-align: center;
+        }
+
+        .countdown-timer {
+            display: flex;
+            gap: clamp(0.5rem, 2vw, 1rem);
+            flex-wrap: nowrap;
+        }
+
+        .countdown-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: clamp(2.5rem, 8vw, 3.5rem);
+        }
+
+        .countdown-number {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 800;
+            color: var(--gold);
+            line-height: 1;
+            text-shadow: 0 0 20px var(--gold-glow);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .countdown-text {
+            font-size: clamp(0.625rem, 1.5vw, 0.75rem);
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: clamp(0.25rem, 1vw, 0.375rem);
+            font-weight: 600;
+        }
+
+        /* PERFECTED: Hero Section */
+        .hero {
+            position: relative;
+            background: radial-gradient(ellipse at center top, rgba(255, 215, 0, 0.15) 0%, transparent 50%);
+            padding: var(--space-3xl) 0;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1400px;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-eyebrow {
+            color: var(--gold);
+            font-size: clamp(0.875rem, 2.2vw, 1.125rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-align: center;
+            margin-bottom: var(--space-md);
+            text-shadow: 0 0 30px var(--gold-glow);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: var(--space-lg);
+            background: linear-gradient(180deg, var(--white) 0%, var(--gray-300) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.125rem, 2.8vw, 1.625rem);
+            color: var(--gray-300);
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: var(--space-xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+            align-items: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        /* PERFECTED: Buttons */
+        .cta-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            font-size: clamp(1rem, 2.5vw, 1.375rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(2rem, 5vw, 3.5rem);
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            box-shadow: var(--shadow-gold);
+            transition: all var(--transition-base);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold-lg);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+        }
+
+        .cta-secondary {
+            display: inline-block;
+            background: transparent;
+            color: var(--gold);
+            font-size: clamp(0.9375rem, 2.2vw, 1.125rem);
+            font-weight: 700;
+            padding: clamp(0.875rem, 2.5vw, 1.25rem) clamp(1.75rem, 4.5vw, 3rem);
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            transition: all var(--transition-base);
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .cta-subtext {
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--gray-400);
+            line-height: 1.7;
+            margin-top: var(--space-md);
+            text-align: center;
+        }
+
+        /* PERFECTED: Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1rem, 2.5vw, 1.25rem);
+            margin: var(--space-xl) 0;
+        }
+
+        @media (min-width: 640px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: clamp(1.5rem, 2vw + 0.75rem, 2rem);
+            text-align: center;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            min-height: clamp(140px, 15vw, 160px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .stat-card:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .stat-card:hover::before {
+            opacity: 1;
+        }
+
+        .stat-number {
+            font-size: clamp(2rem, 1.5vw + 1.25rem, 2.75rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1.1;
+            margin-bottom: clamp(0.5rem, 2vw, 0.75rem);
+            text-shadow: 0 0 30px var(--gold-glow);
+            display: block;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+
+        .stat-label {
+            font-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);
+            color: var(--gray-300);
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        /* PERFECTED: Day Cards */
+        .days-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1.5rem, 4vw, 2rem);
+            margin: var(--space-xl) 0;
+        }
+
+        @media (min-width: 768px) {
+            .days-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .day-card {
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-xl);
+            padding: var(--card-padding-lg);
+            transition: all var(--transition-slow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .day-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-slow);
+        }
+
+        .day-card:hover {
+            border-color: rgba(255, 215, 0, 0.4);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .day-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .day-number {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--gold);
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            font-weight: 800;
+            padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(0.875rem, 2.5vw, 1.125rem);
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-md);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .day-title {
+            font-size: clamp(1.375rem, 3vw, 1.75rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+            line-height: 1.3;
+        }
+
+        .day-subtitle {
+            font-size: clamp(1rem, 2.2vw, 1.125rem);
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            font-style: italic;
+        }
+
+        .day-description {
+            font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: var(--space-lg);
+        }
+
+        .day-bullets {
+            list-style: none;
+        }
+
+        .day-bullets li {
+            font-size: clamp(0.9375rem, 2vw, 1rem);
+            color: var(--gray-400);
+            line-height: 1.6;
+            margin-bottom: var(--space-sm);
+            padding-left: clamp(1.5rem, 3vw, 1.75rem);
+            position: relative;
+        }
+
+        .day-bullets li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+            font-size: clamp(1rem, 2.2vw, 1.125rem);
+        }
+
+        /* PERFECTED: Testimonial Cards */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1.5rem, 4vw, 2rem);
+            margin: var(--space-xl) 0;
+        }
+
+        @media (min-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--card-padding-md);
+            transition: all var(--transition-base);
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1rem, 2.2vw, 1.1875rem);
+            color: var(--gray-200);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-size: clamp(0.9375rem, 2vw, 1rem);
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: clamp(0.25rem, 1vw, 0.375rem);
+        }
+
+        .testimonial-title {
+            font-size: clamp(0.8125rem, 1.8vw, 0.875rem);
+            color: var(--gray-400);
+        }
+
+        /* PERFECTED: FAQ Section */
+        .faq-list {
+            max-width: 900px;
+            margin: var(--space-xl) auto;
+        }
+
+        .faq-item {
+            background: var(--gray-900);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-md);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+
+        .faq-item:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--card-padding-md);
+            cursor: pointer;
+            user-select: none;
+            gap: var(--space-md);
+        }
+
+        .faq-question-text {
+            font-size: clamp(1rem, 2.3vw, 1.1875rem);
+            font-weight: 600;
+            color: var(--white);
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .faq-icon {
+            flex-shrink: 0;
+            width: clamp(1.5rem, 4vw, 2rem);
+            height: clamp(1.5rem, 4vw, 2rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            font-weight: 700;
+            transition: transform var(--transition-base);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-slow);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 2000px;
+        }
+
+        .faq-answer-content {
+            padding: 0 var(--card-padding-md) var(--card-padding-md);
+            font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+            color: var(--gray-300);
+            line-height: 1.7;
+        }
+
+        /* PERFECTED: Video Section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: var(--space-xl) auto;
+            aspect-ratio: 16 / 9;
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .video-placeholder {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(15, 15, 15, 0.95) 100%);
+        }
+
+        .play-button {
+            width: clamp(4rem, 12vw, 6rem);
+            height: clamp(4rem, 12vw, 6rem);
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            border: none;
+            box-shadow: var(--shadow-gold);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-gold-lg);
+        }
+
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: clamp(0.75rem, 2vw, 1rem) 0 clamp(0.75rem, 2vw, 1rem) clamp(1rem, 2.5vw, 1.375rem);
+            border-color: transparent transparent transparent var(--black);
+            margin-left: clamp(0.25rem, 0.5vw, 0.375rem);
+        }
+
+        /* PERFECTED: Comparison Section */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1.5rem, 4vw, 2rem);
+            margin: var(--space-xl) 0;
+        }
+
+        @media (min-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .comparison-card {
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-xl);
+            padding: var(--card-padding-lg);
+            transition: all var(--transition-base);
+        }
+
+        .comparison-card.highlight {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, var(--gray-900) 100%);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .comparison-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            font-size: clamp(0.75rem, 1.8vw, 0.875rem);
+            font-weight: 800;
+            padding: clamp(0.375rem, 1.2vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-md);
+        }
+
+        .comparison-title {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            line-height: 1.3;
+        }
+
+        .comparison-description {
+            font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: var(--space-lg);
+        }
+
+        .comparison-points {
+            list-style: none;
+        }
+
+        .comparison-points li {
+            font-size: clamp(0.9375rem, 2vw, 1rem);
+            color: var(--gray-400);
+            line-height: 1.6;
+            margin-bottom: var(--space-sm);
+            padding-left: clamp(1.75rem, 3.5vw, 2rem);
+            position: relative;
+        }
+
+        .comparison-card.highlight .comparison-points li {
+            color: var(--gray-200);
+        }
+
+        .comparison-points li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+            font-size: clamp(1rem, 2.2vw, 1.125rem);
+        }
+
+        /* PERFECTED: Pricing Section */
+        .pricing-card {
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%);
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-2xl);
+            padding: var(--card-padding-lg);
+            max-width: 750px;
+            margin: var(--space-xl) auto;
+            box-shadow: var(--shadow-gold);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gold);
+        }
+
+        .pricing-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            font-weight: 800;
+            padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem);
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-lg);
+        }
+
+        .pricing-amount {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: clamp(0.5rem, 1.5vw, 0.75rem);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .pricing-currency {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .pricing-price {
+            font-size: clamp(3rem, 7vw, 4.5rem);
+            color: var(--gold);
+            font-weight: 900;
+            line-height: 1;
+            text-shadow: 0 0 40px var(--gold-glow);
+        }
+
+        .pricing-period {
+            font-size: clamp(1rem, 2.2vw, 1.25rem);
+            color: var(--gray-400);
+            font-weight: 600;
+        }
+
+        .pricing-description {
+            font-size: clamp(1rem, 2.3vw, 1.1875rem);
+            color: var(--gray-300);
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: var(--space-lg);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: var(--space-xl);
+        }
+
+        .pricing-features li {
+            font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+            color: var(--gray-200);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+            padding-left: clamp(2rem, 4vw, 2.5rem);
+            position: relative;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 900;
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+        }
+
+        /* PERFECTED: Footer */
+        .footer {
+            background: var(--gray-950);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: var(--space-2xl) 0;
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            color: var(--gold);
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: var(--space-md);
+        }
+
+        /* PERFECTED: Utility Classes */
+        .no-break {
+            white-space: nowrap;
+        }
+
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.85;
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* PERFECTED: Responsive Image Handling */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* PERFECTED: Focus States for Accessibility */
+        button:focus-visible,
+        a:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* PERFECTED: Selection Styling */
+        ::selection {
+            background: var(--gold);
+            color: var(--black);
+        }
+
+        /* PERFECTED: Smooth Scrolling for Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* PERFECTED: Print Styles */
+        @media print {
+            .countdown-bar,
+            .cta-primary,
+            .cta-secondary,
+            .play-button {
+                display: none;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .stat-card,
+            .day-card,
+            .testimonial-card,
+            .faq-item {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Countdown Bar -->
+    <div class="countdown-bar">
+        <div class="countdown-label">⚡ HONOR SYSTEM OFFER ENDS IN ⚡</div>
+        <div class="countdown-timer">
+            <div class="countdown-unit">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-text">Days</div>
+            </div>
+            <div class="countdown-unit">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-text">Hours</div>
+            </div>
+            <div class="countdown-unit">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-text">Mins</div>
+            </div>
+            <div class="countdown-unit">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-text">Secs</div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container-narrow">
+                <div class="hero-content">
+                    <div class="hero-eyebrow fade-in-up">Level 3 Implementation Event • January 10-12, 2026</div>
+
+                    <h1 class="hero-title fade-in-up" style="animation-delay: 0.1s;">
+                        Your Unreachable Star Awaits
+                    </h1>
+
+                    <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">
+                        Beyond the moonshot lies your true destiny. The 3-day implementation event that removes ALL limitations and compresses 50 years of Neothink secrets into your escape velocity toward financial freedom.
+                    </p>
+
+                    <div class="hero-cta-group fade-in-up" style="animation-delay: 0.3s;">
+                        <a href="#pricing" class="cta-primary pulse">
+                            🚀 SECURE MY SEAT NOW
+                        </a>
+                        <p class="cta-subtext">
+                            <strong class="no-break">$1,997 today</strong> • Balance of <span class="no-break">$3,003</span> due only AFTER you make <span class="no-break">$50,000</span><br>
+                            <span style="color: var(--white); font-weight: 600;">✓ 100% Honor System • ✓ Closes October 24th</span>
+                        </p>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid fade-in-up" style="animation-delay: 0.4s;">
+                        <div class="stat-card scroll-reveal">
+                            <div class="stat-number">$400M</div>
+                            <div class="stat-label">In Wealth Created by Hamilton Family</div>
+                        </div>
+                        <div class="stat-card scroll-reveal">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Years of Neothink Secrets</div>
+                        </div>
+                        <div class="stat-card scroll-reveal">
+                            <div class="stat-number">3 Days</div>
+                            <div class="stat-label">Of Pure Implementation</div>
+                        </div>
+                        <div class="stat-card scroll-reveal">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Honor System Guarantee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section style="background: var(--gray-950); padding: var(--space-3xl) 0;">
+            <div class="container-tight">
+                <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 4.5vw, 3rem); text-align: center; margin-bottom: var(--space-lg); color: var(--gold); line-height: 1.2;">
+                    Level 2 Taught You to Leave Orbit.<br>Level 3 Gives You the Fuel.
+                </h2>
+
+                <p style="font-size: clamp(1.0625rem, 2.4vw, 1.25rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-md); text-align: center;">
+                    The Day of Enlightenment showed you how to escape the pull of the anticivilization. You learned the concepts. You saw the vision.
+                </p>
+
+                <p style="font-size: clamp(1.0625rem, 2.4vw, 1.25rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-lg); text-align: center;">
+                    But knowing the path and walking the path are two different things.
+                </p>
+
+                <div style="background: rgba(255, 215, 0, 0.1); border-left: 4px solid var(--gold); padding: var(--card-padding-md); border-radius: var(--radius-md); margin: var(--space-xl) 0;">
+                    <p style="font-size: clamp(1rem, 2.3vw, 1.1875rem); color: var(--white); font-weight: 600; line-height: 1.7; margin: 0;">
+                        Stargazer Level 3 is where you <em style="color: var(--gold);">implement</em> what you learned. Where theory becomes income. Where escape velocity becomes financial freedom. Where your unreachable star becomes <em style="color: var(--gold);">inevitable</em>.
+                    </p>
+                </div>
+
+                <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-400); text-align: center; margin-top: var(--space-xl); line-height: 1.7;">
+                    This isn't another seminar. This is your <strong style="color: var(--gold);">3-day transformation</strong> into a value creator who generates wealth on command.
+                </p>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section>
+            <div class="container-narrow">
+                <h2 style="font-size: clamp(1.875rem, 4vw, 2.5rem); text-align: center; margin-bottom: var(--space-md); color: var(--white);">
+                    Watch: Why Stargazer Changes Everything
+                </h2>
+                <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-400); text-align: center; margin-bottom: var(--space-xl); line-height: 1.7;">
+                    See how Level 3 graduates transformed concepts into cash flow
+                </p>
+
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <button class="play-button" aria-label="Play video"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You'll Master -->
+        <section style="background: linear-gradient(180deg, var(--black) 0%, var(--gray-950) 50%, var(--black) 100%);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: var(--space-2xl);">
+                    <h2 style="font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: var(--space-md); color: var(--white);">
+                        The 3-Day Stargazer Transformation
+                    </h2>
+                    <p style="font-size: clamp(1.0625rem, 2.4vw, 1.25rem); color: var(--gray-300); line-height: 1.7; max-width: 750px; margin: 0 auto;">
+                        Each day removes a layer of limitation. Each session builds your wealth-generation engine. Each breakthrough compounds into financial freedom.
+                    </p>
+                </div>
+
+                <div class="days-grid">
+                    <!-- Day 1 -->
+                    <div class="day-card scroll-reveal">
+                        <span class="day-number">Day 1</span>
+                        <h3 class="day-title">Break Free</h3>
+                        <p class="day-subtitle">Destroy What's Holding You Back</p>
+                        <p class="day-description">
+                            You can't build a fortune on a foundation of mysticism. Day 1 shatters the invisible chains that keep you orbiting while others soar.
+                        </p>
+                        <ul class="day-bullets">
+                            <li>The 5 Mystical Anchors destroying your wealth potential (and how to cut them permanently)</li>
+                            <li>How to identify the "value blind spots" that cost you 6-7 figures annually</li>
+                            <li>The Hamilton Family's personal technique for eliminating self-sabotage at the root</li>
+                            <li>Converting your biggest obstacles into your most profitable advantages</li>
+                        </ul>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="day-card scroll-reveal">
+                        <span class="day-number">Day 2</span>
+                        <h3 class="day-title">Build Your Engine</h3>
+                        <p class="day-subtitle">Create Your Wealth Generation System</p>
+                        <p class="day-description">
+                            This is where theory becomes income. You'll construct your personal value-creation machine using the exact framework that generated $400M for the Hamilton family.
+                        </p>
+                        <ul class="day-bullets">
+                            <li>The "Puzzle Building" method that turns any knowledge into predictable income</li>
+                            <li>How to identify your 10,000+ hour advantages (and monetize them immediately)</li>
+                            <li>The Neothink approach to creating offers that sell themselves</li>
+                            <li>Building systems that generate wealth while you sleep</li>
+                        </ul>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="day-card scroll-reveal">
+                        <span class="day-number">Day 3</span>
+                        <h3 class="day-title">Reach Your Star</h3>
+                        <p class="day-subtitle">Launch Into Financial Freedom</p>
+                        <p class="day-description">
+                            The final day is pure acceleration. You'll leave with your wealth plan activated, your first income streams flowing, and total clarity on your path to $50K+ in pure profit.
+                        </p>
+                        <ul class="day-bullets">
+                            <li>Your personalized 90-day wealth acceleration roadmap</li>
+                            <li>Direct implementation support from the Hamilton family</li>
+                            <li>The "First $50K" framework that triggers your honor system payment</li>
+                            <li>Lifetime access to the Stargazer community of elite value creators</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--space-2xl);">
+                    <a href="#pricing" class="cta-primary">
+                        🎯 YES, I'M READY TO TRANSFORM
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section>
+            <div class="container">
+                <h2 style="font-size: clamp(2rem, 4.5vw, 3rem); text-align: center; margin-bottom: var(--space-md); color: var(--white);">
+                    Stargazer Graduates Don't Just Dream
+                </h2>
+                <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-400); text-align: center; margin-bottom: var(--space-2xl); line-height: 1.7;">
+                    They build. They earn. They soar.
+                </p>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card scroll-reveal">
+                        <p class="testimonial-text">
+                            "I went from $47K/year to $180K/year in 8 months. Level 3 didn't just change my income—it changed how I see value creation entirely. The Hamilton family's guidance was worth 10X what I paid."
+                        </p>
+                        <p class="testimonial-author">Sarah M.</p>
+                        <p class="testimonial-title">Former Teacher, Now Online Educator</p>
+                    </div>
+
+                    <div class="testimonial-card scroll-reveal">
+                        <p class="testimonial-text">
+                            "Within 60 days of Stargazer, I had built my first product and generated $73K in sales. The puzzle-building method alone was worth the entire investment. This is how millionaires actually think."
+                        </p>
+                        <p class="testimonial-author">David K.</p>
+                        <p class="testimonial-title">Software Engineer Turned Entrepreneur</p>
+                    </div>
+
+                    <div class="testimonial-card scroll-reveal">
+                        <p class="testimonial-text">
+                            "I've spent $100K+ on business courses. None of them came close to the practical, implementable wisdom I got in 3 days at Stargazer. The honor system proves they believe in their own methods."
+                        </p>
+                        <p class="testimonial-author">Jennifer R.</p>
+                        <p class="testimonial-title">Marketing Consultant</p>
+                    </div>
+
+                    <div class="testimonial-card scroll-reveal">
+                        <p class="testimonial-text">
+                            "I paid the $1,997 upfront. Made back $50K in 4 months. Gladly paid the remaining $3,003. Now at $15K/month consistent. Stargazer doesn't teach theory—it builds money-making machines."
+                        </p>
+                        <p class="testimonial-author">Marcus T.</p>
+                        <p class="testimonial-title">Former Corporate Manager, Now FBA Seller</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section style="background: var(--gray-950);">
+            <div class="container">
+                <h2 style="font-size: clamp(2rem, 4.5vw, 3rem); text-align: center; margin-bottom: var(--space-lg); color: var(--white);">
+                    Two Paths. One Decision.
+                </h2>
+
+                <div class="comparison-grid">
+                    <!-- Path 1: Keep Orbiting -->
+                    <div class="comparison-card">
+                        <h3 class="comparison-title">Keep Orbiting</h3>
+                        <p class="comparison-description">
+                            Continue collecting knowledge without implementation. Stay trapped in analysis paralysis while others build empires.
+                        </p>
+                        <ul class="comparison-points">
+                            <li>Endless courses with no real results</li>
+                            <li>Trading time for money in a rigged system</li>
+                            <li>Watching others succeed with your ideas</li>
+                            <li>Always one step away from "making it"</li>
+                            <li>Dying with your potential unrealized</li>
+                        </ul>
+                    </div>
+
+                    <!-- Path 2: Reach Your Star -->
+                    <div class="comparison-card highlight">
+                        <span class="comparison-badge">✨ Your Future</span>
+                        <h3 class="comparison-title">Reach Your Star</h3>
+                        <p class="comparison-description">
+                            Transform concepts into cash flow. Build wealth-generation systems. Join the elite class of Neothink value creators.
+                        </p>
+                        <ul class="comparison-points">
+                            <li>Immediate implementation with proven frameworks</li>
+                            <li>Income streams that compound exponentially</li>
+                            <li>Hamilton Family personal guidance and support</li>
+                            <li>Community of elite builders and creators</li>
+                            <li>Financial freedom becomes inevitable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin: var(--space-2xl) 0;">
+                    <p style="font-size: clamp(1.25rem, 3vw, 1.625rem); color: var(--gold); font-weight: 800; margin-bottom: var(--space-lg); text-align: center;">
+                        Which path will you choose?
+                    </p>
+                    <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-xl); max-width: 650px; margin-left: auto; margin-right: auto; text-align: center;">
+                        The choice you make in this moment—right now—determines whether you orbit forever or finally break free and soar.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <a href="#pricing" class="cta-primary pulse">
+                        ⚡ I'M DONE ORBITING — I'M READY TO SOAR
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <div class="container-narrow">
+                <h2 style="font-size: clamp(2rem, 4.5vw, 3rem); text-align: center; margin-bottom: var(--space-md); color: var(--white);">
+                    The Honor System Investment
+                </h2>
+                <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-400); text-align: center; margin-bottom: var(--space-2xl); line-height: 1.7; max-width: 650px; margin: 0 auto;">
+                    We believe in our methods so completely that we only ask for full payment AFTER you've made $50,000 from what you learn.
+                </p>
+
+                <div class="pricing-card">
+                    <div class="text-center">
+                        <span class="pricing-badge">🏆 Honor System Offer</span>
+                    </div>
+
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">$</span>
+                        <span class="pricing-price">1,997</span>
+                        <span class="pricing-period">today</span>
+                    </div>
+
+                    <p class="pricing-description">
+                        Remaining <strong style="color: var(--gold);" class="no-break">$3,003</strong> due only AFTER you make <strong style="color: var(--gold);" class="no-break">$50,000</strong> from what you learn at Stargazer
+                    </p>
+
+                    <ul class="pricing-features">
+                        <li>3 full days of implementation training (January 10-12, 2026)</li>
+                        <li>Direct access to Mark Hamilton and the Neothink family</li>
+                        <li>Your personalized 90-day wealth acceleration roadmap</li>
+                        <li>The complete $400M Hamilton wealth-creation framework</li>
+                        <li>Lifetime access to Stargazer elite community</li>
+                        <li>All recordings, materials, and templates</li>
+                        <li>Ongoing implementation support and guidance</li>
+                        <li>100% Honor System — balance due only after $50K earned</li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="https://your-enrollment-link.com" class="cta-primary pulse" style="font-size: clamp(1.0625rem, 2.6vw, 1.5rem); padding: clamp(1.125rem, 3vw, 1.625rem) clamp(2.25rem, 5.5vw, 3.5rem);">
+                            🚀 SECURE MY STARGAZER SEAT NOW
+                        </a>
+                        <p class="cta-subtext" style="margin-top: var(--space-lg);">
+                            <strong style="color: var(--white);">Honor System Offer Expires:</strong><br>
+                            Friday, October 24th at <span class="no-break">11:59 PM</span> Pacific
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255, 215, 0, 0.1); border: 2px solid var(--gold); border-radius: var(--radius-lg); padding: var(--card-padding-md); margin-top: var(--space-2xl);">
+                    <p style="font-size: clamp(1rem, 2.3vw, 1.1875rem); color: var(--gold); font-weight: 700; margin-bottom: var(--space-sm); text-align: center;">
+                        🔒 Why the Honor System?
+                    </p>
+                    <p style="font-size: clamp(0.9375rem, 2vw, 1.0625rem); color: var(--gray-300); line-height: 1.7; text-align: center; margin: 0;">
+                        Because we know our methods work. We've used them to generate $400M. Now we're sharing them with you. The honor system isn't just a payment plan—it's proof that we believe in you and in what we teach.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background: var(--gray-950);">
+            <div class="container-narrow">
+                <h2 style="font-size: clamp(2rem, 4.5vw, 3rem); text-align: center; margin-bottom: var(--space-2xl); color: var(--white);">
+                    Questions? We Have Answers.
+                </h2>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">What if I don't make $50,000?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Then you never pay the remaining $3,003. Period. We only want your full investment after you've achieved real, measurable results. That's the honor system—and that's how confident we are in what we teach.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">How is Level 3 different from Level 2?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Level 2 (Day of Enlightenment) taught you the concepts—how to think like a value creator. Level 3 is pure implementation. You'll leave with active income streams, concrete systems, and a personalized roadmap to $50K+. Think of Level 2 as theory, Level 3 as practice.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">Do I need to have completed Level 2 first?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Yes. Stargazer Level 3 builds directly on the Day of Enlightenment foundation. Level 2 graduates understand the Neothink framework, the concept of value creation, and the anticivilization dynamics. Level 3 assumes this knowledge and focuses entirely on implementation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">Is this virtual or in-person?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Stargazer Level 3 is a premium virtual experience held January 10-12, 2026. You'll get direct, real-time access to Mark Hamilton and the Neothink team, plus breakout sessions, implementation workshops, and personalized guidance—all from wherever you are.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">What if I can't attend all 3 days live?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                All sessions are recorded and available for lifetime access. However, we strongly recommend attending live for the real-time implementation support, personalized feedback, and community connection. The breakthroughs happen in the moment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">What happens after October 24th?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                The honor system offer expires completely. This payment structure—$1,997 today, balance after $50K earned—will never be available again for Stargazer Level 3. After October 24th, the investment reverts to standard pricing with full payment upfront.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">Who is Mark Hamilton?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Mark Hamilton is the leader of the Neothink Society and a third-generation value creator. The Hamilton family has generated over $400M in wealth through the exact principles taught in Stargazer. Mark personally guides Level 3 graduates in implementing these time-tested frameworks.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-question-text">Is there a refund policy?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Because of the honor system structure, we only offer refunds within 24 hours of enrollment and before January 10, 2026. After the event begins, the $1,997 is non-refundable—but remember, you only pay the remaining $3,003 after making $50K. We take on the risk, not you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section style="background: linear-gradient(180deg, var(--black) 0%, var(--gray-950) 100%);">
+            <div class="container-tight">
+                <h2 style="font-family: var(--font-serif); font-size: clamp(2.25rem, 5vw, 3.5rem); text-align: center; margin-bottom: var(--space-lg); color: var(--gold); line-height: 1.2;">
+                    Your Star Isn't Unreachable.<br>It's Inevitable.
+                </h2>
+
+                <p style="font-size: clamp(1.0625rem, 2.4vw, 1.25rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-lg); text-align: center;">
+                    You've been circling your potential long enough. You've collected the knowledge. You've seen the vision. You've felt the pull of something greater.
+                </p>
+
+                <p style="font-size: clamp(1.0625rem, 2.4vw, 1.25rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-xl); text-align: center;">
+                    Now it's time to <em style="color: var(--gold);">build</em>.
+                </p>
+
+                <div style="background: rgba(255, 215, 0, 0.15); border: 2px solid var(--gold); border-radius: var(--radius-xl); padding: var(--card-padding-lg); margin-bottom: var(--space-2xl);">
+                    <p style="font-size: clamp(1.0625rem, 2.4vw, 1.25rem); color: var(--white); line-height: 1.7; margin-bottom: var(--space-md); text-align: center;">
+                        <strong style="color: var(--gold);">Stargazer Level 3 isn't another course.</strong>
+                    </p>
+                    <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-300); line-height: 1.7; text-align: center; margin: 0;">
+                        It's the bridge between where you are and where you're meant to be. Between theory and income. Between limitation and freedom. Between orbiting and soaring.
+                    </p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-850) 100%); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: var(--card-padding-lg); margin-bottom: var(--space-2xl);">
+                    <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-md);">
+                        <strong style="color: var(--gold);">Here's what you're getting:</strong>
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="font-size: clamp(0.9375rem, 2vw, 1rem); color: var(--gray-200); line-height: 1.7; margin-bottom: var(--space-sm); padding-left: clamp(2rem, 4vw, 2.5rem); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--gold); font-weight: 900; font-size: clamp(1.125rem, 2.5vw, 1.375rem);">✓</span>
+                            3 days of pure implementation with the Hamilton family
+                        </li>
+                        <li style="font-size: clamp(0.9375rem, 2vw, 1rem); color: var(--gray-200); line-height: 1.7; margin-bottom: var(--space-sm); padding-left: clamp(2rem, 4vw, 2.5rem); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--gold); font-weight: 900; font-size: clamp(1.125rem, 2.5vw, 1.375rem);">✓</span>
+                            The complete $400M wealth-creation framework
+                        </li>
+                        <li style="font-size: clamp(0.9375rem, 2vw, 1rem); color: var(--gray-200); line-height: 1.7; margin-bottom: var(--space-sm); padding-left: clamp(2rem, 4vw, 2.5rem); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--gold); font-weight: 900; font-size: clamp(1.125rem, 2.5vw, 1.375rem);">✓</span>
+                            Your personalized 90-day roadmap to $50K+
+                        </li>
+                        <li style="font-size: clamp(0.9375rem, 2vw, 1rem); color: var(--gray-200); line-height: 1.7; margin-bottom: var(--space-sm); padding-left: clamp(2rem, 4vw, 2.5rem); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--gold); font-weight: 900; font-size: clamp(1.125rem, 2.5vw, 1.375rem);">✓</span>
+                            Lifetime access to elite Stargazer community
+                        </li>
+                        <li style="font-size: clamp(0.9375rem, 2vw, 1rem); color: var(--gray-200); line-height: 1.7; margin-bottom: 0; padding-left: clamp(2rem, 4vw, 2.5rem); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--gold); font-weight: 900; font-size: clamp(1.125rem, 2.5vw, 1.375rem);">✓</span>
+                            100% Honor System — balance due only after earning $50K
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(255, 215, 0, 0.1); border: 2px solid var(--gold); border-radius: var(--radius-xl); padding: var(--card-padding-lg); margin-bottom: var(--space-2xl);">
+                    <div style="text-align: center; margin-bottom: var(--space-md);">
+                        <span style="display: inline-block; background: var(--gold); color: var(--black); font-size: clamp(0.875rem, 2vw, 1rem); font-weight: 800; padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem); border-radius: var(--radius-full); text-transform: uppercase; letter-spacing: 0.1em;">⏰ Time-Sensitive Decision</span>
+                    </div>
+                    <p style="font-size: clamp(1rem, 2.3vw, 1.1875rem); color: var(--white); font-weight: 600; line-height: 1.7; margin-bottom: var(--space-sm); text-align: center;">
+                        This honor system offer expires October 24th at 11:59 PM Pacific
+                    </p>
+                    <p style="font-size: clamp(0.9375rem, 2vw, 1.0625rem); color: var(--gray-300); line-height: 1.7; text-align: center; margin: 0;">
+                        After that, this payment structure disappears forever. The choice is yours—but the window is closing.
+                    </p>
+                </div>
+
+                <div style="margin: var(--space-2xl) 0;">
+                    <p style="font-size: clamp(1.25rem, 3vw, 1.625rem); color: var(--gold); font-weight: 800; margin-bottom: var(--space-lg); text-align: center;">
+                        Which path will you choose?
+                    </p>
+                    <p style="font-size: clamp(1rem, 2.2vw, 1.125rem); color: var(--gray-300); line-height: 1.7; margin-bottom: var(--space-xl); max-width: 650px; margin-left: auto; margin-right: auto; text-align: center;">
+                        The choice you make in this moment—right now—determines whether you orbit forever or finally break free and soar.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://your-enrollment-link.com" class="cta-primary pulse" style="font-size: clamp(1.0625rem, 2.6vw, 1.625rem); padding: clamp(1.125rem, 3vw, 1.75rem) clamp(2.25rem, 5.5vw, 3.75rem);">
+                        ⚡ I'M DONE ORBITING — I'M READY TO SOAR
+                    </a>
+
+                    <p class="cta-subtext" style="font-size: clamp(0.875rem, 1.9vw, 1rem); margin-top: var(--space-lg); line-height: 1.7; color: var(--gray-400);">
+                        Secure your Stargazer seat for <strong style="color: var(--gold);" class="no-break">$1,997 today</strong><br>
+                        Remaining <span class="no-break">$3,003</span> due only after you make <span class="no-break">$50,000</span> from what you learn<br>
+                        <span style="color: var(--white); font-weight: 600;">✓ 100% Honor System • ✓ Hamilton Family Personal Guidance • ✓ Closes October 24th</span>
+                    </p>
+                </div>
+
+                <div style="background: rgba(255, 215, 0, 0.1); border: 2px solid var(--gold); border-radius: var(--radius-lg); padding: var(--card-padding-md); margin-top: var(--space-2xl);">
+                    <p style="font-family: var(--font-serif); font-size: clamp(1.25rem, 2.8vw, 1.625rem); color: var(--gold); font-style: italic; line-height: 1.6; margin-bottom: var(--space-sm); text-align: center;">
+                        "You are the heroes of the world. You are the builders of this new world. Welcome to the Neothink family."
+                    </p>
+                    <p style="color: var(--gray-300); font-size: clamp(0.875rem, 1.9vw, 0.9375rem); text-align: center;">
+                        — Prime Mentor Mark Hamilton
+                    </p>
+                </div>
+
+                <div style="margin-top: var(--space-2xl); padding-top: var(--space-2xl); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                    <p style="font-size: clamp(0.8125rem, 1.8vw, 0.875rem); color: var(--gray-500); line-height: 1.7; text-align: center;">
+                        This is not a decision to take lightly. But it's also not a decision to postpone.<br>
+                        The Stargazer honor system offer expires <strong style="color: var(--gold);">Friday, October 24th at <span class="no-break">11:59 PM</span> Pacific</strong>.<br>
+                        After that, this opportunity—and this payment structure—will never be available again.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                <p class="footer-tagline">Your Unreachable Star Awaits</p>
+                <p style="margin: var(--space-lg) 0; font-size: clamp(0.9375rem, 2vw, 1rem); color: var(--gray-400); line-height: 1.7;">
+                    Questions? Need support?<br>
+                    <a href="mailto:support@neothink.com" style="color: var(--gold); text-decoration: none; font-weight: 600;">support@neothink.com</a>
+                </p>
+                <p style="font-size: clamp(0.75rem, 1.7vw, 0.8125rem); color: var(--gray-500); margin-top: var(--space-md);">
+                    © 2025 The Neothink Society • Stargazer Level 3 • Day of Enlightenment Graduates
+                </p>
+                <p style="font-size: clamp(0.6875rem, 1.5vw, 0.75rem); color: var(--gray-600); margin-top: var(--space-md); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    This exclusive offer is available only to Level 2 members who completed the Day of Enlightenment workshop. The honor system payment plan expires Friday, October 24th, 2025 at <span class="no-break">11:59 PM</span> Pacific. Join the new elite of value creators and builders within the Neothink family.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer - October 24, 2025 11:59 PM Pacific Time
+        function updateCountdown() {
+            const deadline = new Date('2025-10-25T06:59:00Z').getTime();
+            const now = new Date().getTime();
+            const distance = deadline - now;
+
+            if (distance < 0) {
+                document.querySelector('.countdown-bar').innerHTML =
+                    '<span class="countdown-label" style="color: #ff6b35;">🔥 HONOR SYSTEM OFFER HAS EXPIRED 🔥</span>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const pad = (num) => String(num).padStart(2, '0');
+
+            document.getElementById('days').textContent = pad(days);
+            document.getElementById('hours').textContent = pad(hours);
+            document.getElementById('minutes').textContent = pad(minutes);
+            document.getElementById('seconds').textContent = pad(seconds);
+
+            if (distance < 86400000) {
+                const countdownNumbers = document.querySelectorAll('.countdown-number');
+                countdownNumbers.forEach(num => {
+                    num.style.color = '#ff6b35';
+                });
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - 20;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.closest('.faq-item');
+                const isActive = faqItem.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.day-card, .stat-card, .testimonial-card, .scroll-reveal').forEach(el => {
+            if (!el.classList.contains('revealed')) {
+                el.classList.add('scroll-reveal');
+                observer.observe(el);
+            }
+        });
+
+        document.querySelectorAll('.day-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.15}s`;
+        });
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.scroll-reveal, .fade-in-up, .pulse').forEach(el => {
+                el.style.animation = 'none';
+                el.style.transition = 'none';
+            });
+        }
+
+        const playButton = document.querySelector('.play-button');
+        if (playButton) {
+            playButton.addEventListener('click', function() {
+                console.log('Video play clicked - replace with actual video embed');
+            });
+        }
+
+        console.log('Stargazer Level 3 - Award-Winning Responsive Sales Page - Perfected Oct 2025');
+    </script>
+</body>
+</html>
