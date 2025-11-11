@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>Wealth Engine Bonus Session - TODAY • October 19, 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #FFC700;
+            --black: #000000;
+            --gray-950: #0a0a0a;
+            --gray-900: #0f0f0f;
+            --gray-800: #1a1a1a;
+            --gray-700: #2a2a2a;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
+            --white: #ffffff;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        .container-narrow {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        .container-tight {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        section {
+            padding: clamp(2.5rem, 8vw, 4rem) 0;
+        }
+
+        /* Header */
+        .workshop-header {
+            padding: clamp(1rem, 2vw, 1.5rem) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--black);
+        }
+
+        .classification {
+            text-align: center;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 600;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: clamp(0.1em, 0.5vw, 0.2em);
+            line-height: 1.5;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: clamp(2rem, 5vw, 3rem) 0;
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .today-badge {
+            display: inline-block;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+            border: 3px solid var(--gold);
+            border-radius: 100px;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.6); }
+        }
+
+        .today-badge-text {
+            color: var(--gold);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 400;
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.2;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1.125rem, 3vw, 2rem);
+            color: var(--gray-400);
+            font-style: italic;
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .date-display {
+            font-family: var(--font-serif);
+            font-size: clamp(3rem, 12vw, 6rem);
+            font-weight: 900;
+            line-height: 0.9;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            background: linear-gradient(180deg, var(--white) 0%, var(--gray-300) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Time Zones */
+        .time-zones-container {
+            max-width: 900px;
+            margin: 0 auto clamp(1.5rem, 4vw, 2rem);
+        }
+
+        .time-zones-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(0.75rem, 2vw, 1rem);
+        }
+
+        @media (max-width: 640px) {
+            .time-zones-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .time-zone-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: clamp(12px, 3vw, 16px);
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(0.75rem, 2vw, 1rem);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .time-zone-card:hover {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.12));
+            transform: translateY(-3px);
+        }
+
+        .time-zone-abbr {
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: clamp(0.5rem, 2vw, 0.75rem);
+        }
+
+        .time-zone-time {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1;
+        }
+
+        .date-details {
+            color: var(--gray-300);
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 500;
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        /* Buttons */
+        .cta-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: clamp(0.75rem, 2vw, 1rem);
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(2rem, 5vw, 3rem);
+            font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-sans);
+            border-radius: clamp(12px, 2vw, 16px);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            box-shadow: 0 0 60px rgba(255, 215, 0, 0.4), 0 12px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 80px rgba(255, 215, 0, 0.4), 0 18px 45px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--black);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 767px) {
+            .btn {
+                width: 100%;
+                padding: 1.25rem 2rem;
+            }
+        }
+
+        /* Sections */
+        .bg-dark-gray {
+            background: var(--gray-950);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: clamp(2rem, 6vw, 3rem);
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: clamp(0.625rem, 2vw, 0.75rem) clamp(1.25rem, 3vw, 1.75rem);
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 100px;
+            color: var(--gold);
+            font-size: clamp(0.8125rem, 2vw, 0.9375rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            color: var(--white);
+            font-weight: 500;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            max-width: 800px;
+            margin: clamp(1rem, 3vw, 1.5rem) auto 0;
+            line-height: 1.7;
+        }
+
+        /* Quick Access Cards */
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        @media (max-width: 640px) {
+            .quick-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .quick-card {
+            text-align: center;
+            padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: clamp(16px, 3vw, 20px);
+            transition: all 0.3s ease;
+        }
+
+        .quick-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            transform: translateY(-5px);
+        }
+
+        .quick-card.zoom-card {
+            grid-column: 1 / -1;
+            border-color: rgba(255, 215, 0, 0.6);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+        }
+
+        .quick-icon {
+            width: clamp(48px, 10vw, 56px);
+            height: clamp(48px, 10vw, 56px);
+            margin: 0 auto clamp(1.5rem, 3vw, 2rem);
+            color: var(--gold);
+        }
+
+        .quick-title {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            font-weight: 700;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--white);
+        }
+
+        .quick-description {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: clamp(1rem, 2vw, 1.25rem);
+        }
+
+        .quick-description strong {
+            color: var(--white);
+        }
+
+        .zoom-link-display {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: clamp(8px, 2vw, 12px);
+            padding: clamp(1rem, 2vw, 1.25rem);
+            margin: clamp(1rem, 2vw, 1.25rem) 0;
+            word-break: break-all;
+            font-size: clamp(0.8125rem, 2vw, 0.9375rem);
+            color: var(--white);
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+        }
+
+        .zoom-link-display a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .zoom-link-display a:hover {
+            color: var(--gold-light);
+            text-decoration: underline;
+        }
+
+        /* Recap Cards */
+        .recap-grid {
+            display: grid;
+            gap: clamp(1.5rem, 3vw, 2rem);
+            margin-top: clamp(2rem, 5vw, 3rem);
+        }
+
+        .recap-card {
+            padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1.5rem, 5vw, 3rem);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: clamp(4px, 1vw, 5px) solid var(--gold);
+            border-radius: clamp(16px, 3vw, 20px);
+        }
+
+        .recap-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: clamp(1rem, 2vw, 1.25rem);
+            gap: clamp(0.75rem, 2vw, 1rem);
+            flex-wrap: wrap;
+        }
+
+        .recap-number {
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .recap-card-title {
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            margin: 0;
+            color: var(--white);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .recap-card-text {
+            color: var(--gray-200);
+            line-height: 1.8;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+        }
+
+        .recap-card-text strong {
+            color: var(--white);
+        }
+
+        /* VIP Section */
+        .vip-section {
+            background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.12) 0%, transparent 70%), var(--black);
+            border-top: 2px solid rgba(255, 215, 0, 0.4);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+        }
+
+        .vip-container {
+            padding: clamp(2rem, 6vw, 4rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            border: 3px solid rgba(255, 215, 0, 0.5);
+            border-radius: clamp(20px, 4vw, 32px);
+            box-shadow: 0 0 120px rgba(255, 215, 0, 0.3);
+        }
+
+        .vip-header {
+            text-align: center;
+            margin-bottom: clamp(2rem, 5vw, 3rem);
+        }
+
+        .vip-badge {
+            display: inline-block;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+            border: 2px solid var(--gold);
+            border-radius: 100px;
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .vip-badge-text {
+            color: var(--gold);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+        }
+
+        .vip-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.875rem, 5vw, 2.5rem);
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--gold);
+            line-height: 1.2;
+        }
+
+        .vip-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--gray-200);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .vip-price-container {
+            text-align: center;
+            padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 2.5rem);
+            background: rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--gold);
+            border-radius: clamp(16px, 3vw, 24px);
+            margin-bottom: clamp(2rem, 5vw, 3rem);
+        }
+
+        .vip-price-label {
+            font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+            color: var(--gray-300);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+        }
+
+        .vip-price {
+            font-size: clamp(3rem, 12vw, 5rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+        }
+
+        .vip-price-note {
+            color: var(--gold);
+            font-size: clamp(0.9375rem, 2.5vw, 1.25rem);
+            font-style: italic;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .vip-cta-note {
+            text-align: center;
+            margin-top: clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        .vip-container .btn {
+            width: 100%;
+        }
+
+        /* Quote */
+        .quote-block {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem);
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1.375rem, 4vw, 3rem);
+            line-height: 1.5;
+            font-style: italic;
+            color: var(--white);
+        }
+
+        /* Footer */
+        .footer {
+            padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 4vw, 3rem);
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-style: italic;
+            color: var(--gray-500);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .footer-contact {
+            color: var(--gray-300);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            line-height: 1.6;
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-legal {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        /* Additional Mobile Adjustments */
+        @media (max-width: 480px) {
+            .hero-title br {
+                display: none;
+            }
+
+            .time-zone-card {
+                padding: 1rem 0.75rem;
+            }
+
+            .vip-container {
+                padding: 1.5rem;
+            }
+
+            .recap-card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .recap-number {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* Ensure touch targets */
+        @media (max-width: 767px) {
+            .btn,
+            .time-zone-card,
+            .quick-card {
+                min-height: 44px;
+            }
+        }
+
+        /* Prevent zoom on input focus (iOS) */
+        @media (max-width: 767px) {
+            input,
+            select,
+            textarea {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="workshop-header">
+        <div class="container">
+            <p class="classification">Level 2 & Level 3 Members • Bonus Session</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container-tight">
+                <div class="today-badge">
+                    <span class="today-badge-text">🔴 LIVE TODAY</span>
+                </div>
+
+                <h1 class="hero-title">Wealth Engine<br>Bonus Session</h1>
+                <p class="hero-subtitle">Deep Dive Implementation Session</p>
+
+                <div class="date-display">October 19</div>
+
+                <div class="time-zones-container">
+                    <div class="time-zones-grid">
+                        <div class="time-zone-card">
+                            <div class="time-zone-abbr">PT</div>
+                            <div class="time-zone-time">1:00 PM</div>
+                        </div>
+                        <div class="time-zone-card">
+                            <div class="time-zone-abbr">MT</div>
+                            <div class="time-zone-time">2:00 PM</div>
+                        </div>
+                        <div class="time-zone-card">
+                            <div class="time-zone-abbr">CT</div>
+                            <div class="time-zone-time">3:00 PM</div>
+                        </div>
+                        <div class="time-zone-card">
+                            <div class="time-zone-abbr">ET</div>
+                            <div class="time-zone-time">4:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="date-details">Sunday • Live Session • Virtual</div>
+
+                <div class="cta-buttons-container">
+                    <a href="#zoom-link" class="btn btn-primary">Get Zoom Link Below</a>
+                    <a href="https://societysecrets.com/level3" class="btn btn-secondary">Level 3 Offer</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="zoom-link" class="bg-dark-gray">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">🔴 Join Today</span>
+                    <h2 class="section-title">Session Access</h2>
+                </div>
+                <div class="quick-grid">
+                    <div class="quick-card zoom-card">
+                        <svg class="quick-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                        <h3 class="quick-title">All L2 & L3 Members</h3>
+                        <p class="quick-description"><strong>Today at 1:00 PM PT / 4:00 PM ET</strong><br>Same Zoom link from yesterday's workshop:</p>
+                        <div class="zoom-link-display">
+                            <a href="https://neothink.zoom.us/j/82080837098?pwd=0v7P00h04N03vRnSeLi3QDYZI1aAbf.1" target="_blank" rel="noopener">https://neothink.zoom.us/j/82080837098?pwd=0v7P00h04N03vRnSeLi3QDYZI1aAbf.1</a>
+                        </div>
+                        <a href="https://neothink.zoom.us/j/82080837098?pwd=0v7P00h04N03vRnSeLi3QDYZI1aAbf.1" target="_blank" rel="noopener" class="btn btn-primary">Join Bonus Session</a>
+                    </div>
+                    <div class="quick-card">
+                        <svg class="quick-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        <h3 class="quick-title">VIP Private Session</h3>
+                        <p class="quick-description"><strong>Today at 3:00 PM PT / 6:00 PM ET</strong><br>VIP Members: Check your email for the separate private session Zoom link.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">What's Happening Today</span>
+                    <h2 class="section-title">The Wealth Engine Deep Dive</h2>
+                    <p class="section-subtitle">Today we implement. Yesterday you discovered your essence and learned the principles. Now we build your personal Wealth Engine—the system that creates money forever.</p>
+                </div>
+
+                <div class="recap-grid">
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">01</span>
+                            <h3 class="recap-card-title">Your Personal Freedom Numbers</h3>
+                        </div>
+                        <p class="recap-card-text">Calculate your exact Financial Security, Financial Vitality, and Financial Freedom targets. Know precisely what you need to build and by when.</p>
+                    </div>
+
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">02</span>
+                            <h3 class="recap-card-title">Building the Engine</h3>
+                        </div>
+                        <p class="recap-card-text">Step-by-step implementation of your Wealth Engine—the portfolio of value-producing assets that generates income while you sleep. Stocks, real estate, crypto, business equity.</p>
+                    </div>
+
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">03</span>
+                            <h3 class="recap-card-title">Accelerating Your Timeline</h3>
+                        </div>
+                        <p class="recap-card-text">How to cut years off your path to freedom by increasing income through value creation and optimizing your investment strategy. The compound effect in action.</p>
+                    </div>
+
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">04</span>
+                            <h3 class="recap-card-title">From Essence to Empire</h3>
+                        </div>
+                        <p class="recap-card-text">Connecting your Friday Night Essence to real revenue. Turning your natural creative drive into a business or income stream that feeds your Wealth Engine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vip-section">
+            <div class="container-narrow">
+                <div class="vip-container">
+                    <div class="vip-header">
+                        <div class="vip-badge">
+                            <span class="vip-badge-text">Level 3 Stargazer</span>
+                        </div>
+                        <h2 class="vip-title">Your Next Evolution</h2>
+                        <p class="vip-subtitle">3-Day intensive with 50 years of NeoThink secrets and direct mentorship</p>
+                    </div>
+
+                    <div class="vip-price-container">
+                        <p class="vip-price-label">Special Offer</p>
+                        <p class="vip-price">$1,997</p>
+                        <p class="vip-price-note">Down payment today • Remaining $3,003 due only after you earn $50,000+ from Level 3 techniques</p>
+                    </div>
+
+                    <div class="recap-grid">
+                        <div class="recap-card">
+                            <h3 class="recap-card-title">What's Included:</h3>
+                            <p class="recap-card-text">
+                                • 50 years of NeoThink/Neotech tools and secrets<br>
+                                • Direct mentorship over 3 intensive days<br>
+                                • Implementation strategies for removing negatives<br>
+                                • Your personal "launch pad" to reach your reachable star<br>
+                                • Access to the Level 3 Welcome Party on Monday
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="https://societysecrets.com/level3" class="btn btn-primary">Explore Level 3 Offer</a>
+
+                    <p class="vip-cta-note">Offer closes Friday • Based on honor system</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Yesterday's Breakthrough</span>
+                    <h2 class="section-title">Day of Enlightenment Recap</h2>
+                    <p class="section-subtitle">For those who missed it or want to reinforce what happened—here's what we discovered together:</p>
+                </div>
+
+                <div class="recap-grid">
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">Part 1</span>
+                            <h3 class="recap-card-title">Discovering Your Essence</h3>
+                        </div>
+                        <p class="recap-card-text">
+                            We identified your <strong>Friday Night Essence (FNE)</strong>—the value-creating activity you're naturally drawn to. Through guided visualization back through your life, you discovered the recurring themes that reveal your purpose.
+                            <br><br>
+                            We explored the difference between <strong>Upstream Focus</strong> (forcing yourself, obligation, resistance) and <strong>Downstream Focus</strong> (natural pull, aligned with essence, effortless creation).
+                            <br><br>
+                            The shift from <strong>Mortal Mentality</strong> (stagnation, burden, value producer) to <strong>Immortal Mentality</strong> (growth, exhilaration, value creator) was revealed.
+                        </p>
+                    </div>
+
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">Part 2</span>
+                            <h3 class="recap-card-title">Escaping the Matrix & Building Wealth</h3>
+                        </div>
+                        <p class="recap-card-text">
+                            <strong>Mark Hamilton</strong> surprised everyone with his appearance, sharing insights on removing negatives rather than just adding positives—the core of NeoThink philosophy.
+                            <br><br>
+                            We learned the <strong>Matrix of Illusions</strong>—how value destroyers control through Fear → Guilt → Dependence → Control. The escape isn't rebellion; it's redirection into creation.
+                            <br><br>
+                            The <strong>Wealth Engine</strong> was introduced: a system of value-producing assets generating passive income until reaching the <strong>Inflection Point</strong>—where annual engine growth equals annual expenses. Freedom achieved.
+                        </p>
+                    </div>
+
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <span class="recap-number">Key Concept</span>
+                            <h3 class="recap-card-title">The Millionaire Mindset Shift</h3>
+                        </div>
+                        <p class="recap-card-text">
+                            <strong>Broke:</strong> "I can't afford it." (Closes the mind)<br>
+                            <strong>Rich:</strong> "How can I afford it?" (Opens the mind)
+                            <br><br>
+                            Wealth isn't about making money—it's about creating value. Money is the echo. Value creation is the source. When you shift focus from "How do I make money?" to "How do I create value and remove limitations?", everything changes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">Yesterday you discovered who you are. Today you build the machine that sets you free.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="vip-section">
+            <div class="container-narrow">
+                <div class="vip-container">
+                    <div class="vip-header">
+                        <div class="vip-badge">
+                            <span class="vip-badge-text">⭐ VIP Members</span>
+                        </div>
+                        <h2 class="vip-title">Your Private Session Today</h2>
+                        <p class="vip-subtitle">Sunday • 3:00 PM PT / 6:00 PM ET • A separate intimate session with Wallace Hamilton and The Society Mentors awaits you. Check your email for the exclusive Zoom link.</p>
+                    </div>
+
+                    <div class="recap-grid">
+                        <div class="recap-card">
+                            <h3 class="recap-card-title">What VIP Members Experience:</h3>
+                            <p class="recap-card-text">
+                                • Direct access to mentors for personalized guidance<br>
+                                • Intimate group setting for deep Q&A<br>
+                                • Advanced implementation strategies<br>
+                                • Priority attention for your specific situation<br>
+                                • Extended time for breakthrough conversations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Coming Up</span>
+                    <h2 class="section-title">This Week's Events</h2>
+                </div>
+
+                <div class="recap-grid">
+                    <div class="recap-card">
+                        <div class="recap-card-header">
+                            <h3 class="recap-card-title">📅 Monday, October 20th • 3:00 PM PT / 6:00 PM ET</h3>
+                        </div>
+                        <p class="recap-card-text">
+                            <strong>Level 3 Welcome Party</strong><br>
+                            For new Level 3 "Stargazer" members. Zoom link will be emailed exclusively to Level 3 members on Monday.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">The Journey Continues</p>
+                <p class="footer-contact">
+                    Questions? Email us at<br>
+                    <a href="mailto:support@neothink.com">support@neothink.com</a>
+                </p>
+                <p class="footer-legal">The Society • Level 2 & Level 3 • Confidential</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
