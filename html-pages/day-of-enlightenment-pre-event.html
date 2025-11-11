@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Day of Enlightenment Workshop - October 18, 2025</title>
+    <style>
+        /* === FONTS === */
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        /* === CSS RESET === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* === ROOT VARIABLES === */
+        :root {
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #FFC700;
+            --gold-glow: rgba(255, 215, 0, 0.4);
+            --black: #000000;
+            --gray-950: #0a0a0a;
+            --gray-900: #0f0f0f;
+            --gray-850: #151515;
+            --gray-800: #1a1a1a;
+            --gray-700: #2a2a2a;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
+            --white: #ffffff;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --section-spacing: clamp(4rem, 10vw, 8rem);
+            --min-touch-target: 48px;
+        }
+
+        /* === BASE === */
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color-scheme: dark;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+            overflow-x: hidden;
+            text-rendering: optimizeLegibility;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.04) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+            will-change: transform;
+        }
+
+        /* === UTILITY CLASSES === */
+        .bg-dark-gray {
+            background: var(--gray-950);
+        }
+
+        /* Focus visible improvements for keyboard navigation */
+        *:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+        /* Improved link focus */
+        a:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 400;
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: clamp(2.25rem, 5vw, 4rem);
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+        }
+
+        .serif {
+            font-family: var(--font-serif);
+        }
+
+        /* === LAYOUT === */
+        .page-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 5vw, 3rem);
+        }
+
+        .container-narrow {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 5vw, 3rem);
+        }
+
+        .container-tight {
+             max-width: 750px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 5vw, 3rem);
+        }
+
+        section {
+            padding: var(--section-spacing) 0;
+        }
+
+        h2[id], h3[id] {
+            scroll-margin-top: 2rem;
+        }
+
+        /* === HEADER === */
+        .workshop-header {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--black);
+        }
+
+        .classification {
+            text-align: center;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 600;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px) {
+            .workshop-header {
+                padding: 1.5rem 0;
+            }
+
+            .classification {
+                letter-spacing: 0.2em;
+            }
+        }
+
+        /* === HERO === */
+        .hero-section {
+            text-align: center;
+            padding: clamp(2rem, 6vw, 4rem) 0;
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-title {
+            margin-bottom: 1.25rem;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            color: var(--gray-400);
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-subtitle {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .date-display {
+            font-size: clamp(3.5rem, 15vw, 8rem);
+            font-weight: 900;
+            line-height: 0.9;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.04em;
+            background: linear-gradient(180deg, var(--white) 0%, var(--gray-300) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .date-display {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .date-time {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            color: var(--white);
+            margin-bottom: 1.25rem;
+            font-weight: 500;
+        }
+
+        @media (min-width: 768px) {
+            .date-time {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .date-details {
+            color: var(--gray-300);
+            font-size: clamp(1.0625rem, 2.5vw, 1.5rem);
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .date-details {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .cta-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 768px) {
+            .cta-buttons-container {
+                gap: 1.5rem;
+            }
+        }
+
+        /* === BUTTONS === */
+        .btn {
+            display: inline-flex;
+            width: auto;
+            padding: 1.5rem 3rem;
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: var(--font-sans);
+            border-radius: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+            overflow: hidden;
+            min-height: var(--min-touch-target);
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:focus-visible {
+            outline: 4px solid var(--gold);
+            outline-offset: 4px;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            box-shadow:
+                0 0 60px var(--gold-glow),
+                0 12px 35px rgba(0, 0, 0, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary:hover, .btn-primary:focus-visible {
+            transform: translateY(-3px);
+            box-shadow:
+                0 0 80px var(--gold-glow),
+                0 18px 45px rgba(0, 0, 0, 0.7),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            box-shadow: none;
+        }
+
+        .btn-secondary:hover, .btn-secondary:focus-visible {
+            background: var(--gold);
+            color: var(--black);
+            transform: translateY(-3px);
+            box-shadow: 0 0 40px var(--gold-glow);
+        }
+
+        .btn-secondary:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .btn-small {
+            padding: 0.875rem 1.75rem;
+            font-size: clamp(0.9375rem, 2vw, 1rem);
+            font-weight: 700;
+            border-radius: 12px;
+            width: auto;
+        }
+
+        @media (max-width: 767px) {
+            .btn {
+                width: 100%;
+                padding: 1.25rem 2rem;
+            }
+
+            .btn-small {
+                width: auto;
+                padding: 0.875rem 1.75rem;
+            }
+        }
+
+        /* === SECTIONS === */
+        .section-header {
+            text-align: center;
+            margin-bottom: clamp(2.5rem, 7vw, 6rem);
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 100px;
+            color: var(--gold);
+            font-size: clamp(0.875rem, 2vw, 0.9375rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-label {
+                padding: 0.75rem 1.75rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .section-title {
+            margin-bottom: 1.25rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .section-subtitle {
+            color: var(--white);
+            font-weight: 500;
+            font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+            max-width: 800px;
+            margin: 1.25rem auto 0;
+            line-height: 1.7;
+        }
+
+        @media (min-width: 768px) {
+            .section-subtitle {
+                margin: 1.5rem auto 0;
+            }
+        }
+
+        /* === PRE-WORK SECTION === */
+        .pre-work-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .pre-work-grid {
+                gap: 2rem;
+            }
+        }
+
+        .pre-work-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 2rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            transition: border-color 0.3s ease, background 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .pre-work-item {
+                gap: 2rem;
+                padding: 2.5rem;
+                border-radius: 20px;
+            }
+        }
+
+        .pre-work-item:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .pre-work-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--gray-700) 0%, var(--gray-800) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--gold);
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        @media (min-width: 768px) {
+            .pre-work-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.75rem;
+            }
+        }
+
+        .pre-work-content h3 {
+            font-size: clamp(1.25rem, 3vw, 1.625rem);
+            margin-bottom: 0.875rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            .pre-work-content h3 {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .pre-work-content p {
+            color: var(--gray-300);
+            line-height: 1.7;
+            font-size: clamp(1rem, 2.5vw, 1.1875rem);
+        }
+
+        .pre-work-content .btn {
+            margin-top: 1.25rem;
+        }
+
+        .pre-work-content a:not(.btn) {
+            color: var(--gold);
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.3s ease;
+        }
+
+        .pre-work-content a:not(.btn):hover {
+            color: var(--gold-light);
+        }
+
+        .pre-work-content a:not(.btn):focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        /* === QUICK ACCESS === */
+        .quick-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .quick-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .quick-grid {
+                gap: 2.5rem;
+            }
+        }
+
+        .quick-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            will-change: transform;
+        }
+
+        @media (min-width: 768px) {
+            .quick-card {
+                padding: 3rem 2.5rem;
+                border-radius: 20px;
+            }
+        }
+
+        .quick-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            transform: translateY(-5px);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .quick-card:hover {
+                transform: none;
+            }
+        }
+
+        .quick-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1.5rem;
+            color: var(--gold);
+        }
+
+        @media (min-width: 768px) {
+            .quick-icon {
+                width: 56px;
+                height: 56px;
+                margin: 0 auto 2rem;
+            }
+        }
+
+        .quick-title {
+            font-size: clamp(1.25rem, 3vw, 1.625rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .quick-description {
+            font-size: clamp(1rem, 2.5vw, 1.1875rem);
+            color: var(--gray-300);
+            line-height: 1.7;
+        }
+
+        .quick-description a {
+            color: var(--gold);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.3s ease;
+        }
+
+        .quick-description a:hover {
+            color: var(--gold-light);
+        }
+
+        .quick-description a:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        /* === CONTENT CARDS === */
+        .content-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid {
+                gap: 2.5rem;
+            }
+        }
+
+        .content-card {
+            padding: 2rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--gold);
+            border-radius: 20px;
+            transition: border-color 0.3s ease, background 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .content-card {
+                padding: clamp(2.5rem, 5vw, 3.5rem);
+                border-left-width: 5px;
+                border-radius: 24px;
+            }
+        }
+
+        .content-card:hover {
+            border-left-color: var(--gold-light);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03));
+        }
+
+        .content-card-title {
+            font-size: clamp(1.375rem, 3vw, 2rem);
+            margin-bottom: 1rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            .content-card-title {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .content-card-text {
+            color: var(--gray-200);
+            line-height: 1.8;
+            font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+        }
+
+        /* === QUOTE === */
+        .quote-block {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .quote-block {
+                padding: 4rem 2rem;
+            }
+        }
+
+        .quote-text {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            line-height: 1.5;
+            font-style: italic;
+            color: var(--white);
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-text::before {
+            content: '"';
+            position: absolute;
+            top: -1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: clamp(6rem, 15vw, 10rem);
+            color: var(--gold);
+            opacity: 0.15;
+            font-family: Georgia, serif;
+            line-height: 1;
+            z-index: -1;
+        }
+
+        @media (min-width: 768px) {
+            .quote-text::before {
+                top: -2.5rem;
+            }
+        }
+
+        /* === VIP === */
+        .vip-section {
+            background:
+                radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.12) 0%, transparent 70%),
+                var(--black);
+            border-top: 2px solid rgba(255, 215, 0, 0.4);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+        }
+
+        .vip-container {
+            padding: clamp(2.5rem, 7vw, 6rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            border: 3px solid rgba(255, 215, 0, 0.5);
+            border-radius: 24px;
+            box-shadow:
+                0 0 120px rgba(255, 215, 0, 0.3),
+                inset 0 0 80px rgba(255, 215, 0, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .vip-container {
+                border-radius: 32px;
+            }
+        }
+
+        .vip-header {
+            text-align: center;
+            margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+        }
+
+        .vip-badge {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+            border: 2px solid var(--gold);
+            border-radius: 100px;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .vip-badge {
+                padding: 1rem 2rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .vip-badge-text {
+            color: var(--gold);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+        }
+
+        .vip-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--gold);
+        }
+
+        .vip-subtitle {
+            font-size: clamp(1.125rem, 3vw, 1.625rem);
+            color: var(--gray-200);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .vip-urgency {
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+        }
+
+        @media (min-width: 768px) {
+            .vip-urgency {
+                border-radius: 20px;
+                padding: 2.5rem;
+            }
+        }
+
+        .vip-urgency-title {
+            font-size: clamp(1.25rem, 3vw, 1.625rem);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .vip-urgency-text {
+            color: var(--white);
+            font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+            line-height: 1.7;
+        }
+
+        .vip-price-container {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background: rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+        }
+
+        @media (min-width: 768px) {
+            .vip-price-container {
+                padding: 3.5rem 2.5rem;
+                border-radius: 24px;
+            }
+        }
+
+        .vip-price-label {
+            font-size: clamp(0.9375rem, 2.5vw, 1.1875rem);
+            color: var(--gray-300);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.25rem;
+        }
+
+        .vip-price {
+            font-size: clamp(3.5rem, 10vw, 6rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 1.25rem;
+        }
+
+        .vip-price-note {
+            color: var(--gold);
+            font-size: clamp(1rem, 2.5vw, 1.375rem);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .vip-quote {
+            text-align: center;
+            margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+        }
+
+        .vip-quote-text {
+            font-size: clamp(1.25rem, 3vw, 1.875rem);
+            line-height: 1.6;
+            color: var(--gray-200);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .vip-quote-text {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .vip-quote-question {
+            color: var(--white);
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .vip-quote-benefits {
+            color: var(--gray-300);
+            font-size: clamp(1rem, 2.5vw, 1.1875rem);
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        .vip-container .btn {
+            width: 100%;
+        }
+
+        .vip-cta-note {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        @media (min-width: 768px) {
+            .vip-cta-note {
+                margin-top: 2rem;
+            }
+        }
+
+        /* === TRANSFORMATION === */
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .transformation-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+                margin-top: 4rem;
+            }
+        }
+
+        .transformation-card {
+            padding: 2rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--gold);
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            will-change: transform;
+        }
+
+        @media (min-width: 768px) {
+            .transformation-card {
+                padding: 3rem 2.5rem;
+                border-left-width: 5px;
+            }
+        }
+
+        .transformation-card:hover {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.04));
+            transform: translateY(-5px) scale(1.02);
+            border-left-color: var(--gold-light);
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .transformation-card:hover {
+                transform: none;
+            }
+        }
+
+        .transformation-card h3 {
+            font-size: clamp(1.0625rem, 2.5vw, 1.375rem);
+            margin-bottom: 0.75rem;
+            color: var(--white);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .transformation-card .highlight {
+            color: var(--gold);
+            font-weight: 800;
+            font-size: clamp(1.375rem, 3vw, 1.875rem);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .transformation-card p {
+            color: var(--gray-300);
+            font-size: clamp(1rem, 2.5vw, 1.1875rem);
+            line-height: 1.7;
+        }
+
+        /* === FOOTER === */
+        .footer {
+            padding: clamp(3.5rem, 10vw, 8rem) 0 2.5rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .footer {
+                padding: clamp(5rem, 10vw, 8rem) 0 3rem;
+            }
+        }
+
+        .footer-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .footer-tagline {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-style: italic;
+            color: var(--gray-500);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-tagline {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .footer-contact {
+            color: var(--gray-300);
+            margin-bottom: 1.5rem;
+            font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .footer-contact {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 600;
+            text-underline-offset: 3px;
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-light);
+            border-bottom-color: var(--gold-light);
+        }
+
+        .footer-contact a:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        .footer-legal {
+            font-size: clamp(0.8125rem, 2vw, 0.875rem);
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        /* === RESPONSIVE === */
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 374px) {
+            :root {
+                --section-spacing: 3rem;
+            }
+
+            .hero-section {
+                padding: 2rem 0;
+            }
+
+            .date-display {
+                font-size: 3.5rem;
+            }
+
+            .vip-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Mobile devices */
+        @media (max-width: 767px) {
+            :root {
+                --section-spacing: 3.5rem;
+            }
+
+            .pre-work-item {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 2rem 1.5rem;
+            }
+
+            .pre-work-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 1.25rem 2rem;
+            }
+
+            .btn-small {
+                width: auto;
+                padding: 0.875rem 1.75rem;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+                border-left-width: 4px;
+            }
+
+            .quick-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .quote-text::before {
+                font-size: 6rem;
+                top: -1.5rem;
+            }
+
+            .transformation-card {
+                padding: 2rem 1.5rem;
+                border-left-width: 4px;
+            }
+
+            .vip-price-container {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .cta-buttons-container {
+                gap: 1rem;
+            }
+        }
+
+        /* Tablets and up */
+        @media (min-width: 768px) {
+            .btn {
+                width: auto;
+            }
+
+            .transformation-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quick-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Desktop and up */
+        @media (min-width: 1024px) {
+            .quick-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Large screens */
+        @media (min-width: 1440px) {
+            :root {
+                --section-spacing: 8rem;
+            }
+        }
+
+        /* Landscape mobile orientation */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero-section {
+                padding: 2rem 0;
+            }
+
+            .date-display {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+            }
+
+            .date-time {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Safe area insets for modern mobile devices */
+        @supports (padding: max(0px)) {
+            .container,
+            .container-narrow,
+            .container-tight {
+                padding-left: max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-left));
+                padding-right: max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-right));
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="workshop-header">
+            <div class="container">
+                <p class="classification">Level 2 Members • Workshop Hub</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="container-tight">
+                    <h1 class="hero-title serif">Day of Enlightenment</h1>
+                    <p class="hero-subtitle serif">Your Complete Workshop Reference</p>
+
+                    <div class="date-display serif">October&nbsp;18</div>
+                    <div class="date-time">8:00&nbsp;AM PT sharp</div>
+                    <div class="date-details">Full Day • Live Workshop • Virtual</div>
+
+                    <div class="cta-buttons-container">
+                        <a href="#pre-work" class="btn btn-primary">Complete Your Pre-Work Now</a>
+                        <a href="#vip-upgrade" class="btn btn-secondary">Upgrade to VIP</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pre-work" class="bg-dark-gray">
+              <div class="container-tight">
+                <div class="section-header">
+                  <span class="section-label">Action Required</span>
+                  <h2 class="section-title serif">Mandatory Pre-Work</h2>
+                  <p class="section-subtitle">Completion is required for entry. Please complete these items before October 18th.</p>
+                </div>
+                <div class="pre-work-grid">
+                  <div class="pre-work-item">
+                    <div class="pre-work-number" aria-hidden="true">1</div>
+                    <div class="pre-work-content">
+                      <h3>Complete the Form</h3>
+                      <p>Fill out the pre-workshop questionnaire so we can tailor the experience to you.</p>
+                      <a href="https://neothink.typeform.com/to/R6zL32wy" target="_blank" rel="noopener" class="btn btn-secondary btn-small">Access The Form</a>
+                    </div>
+                  </div>
+                  <div class="pre-work-item">
+                    <div class="pre-work-number" aria-hidden="true">2</div>
+                    <div class="pre-work-content">
+                      <h3>Read the Manuscript</h3>
+                      <p>Read pages 1–50 of your secret manuscript, <em>The Super Puzzle</em>. This contains the foundation we'll build upon together.</p>
+                    </div>
+                  </div>
+                  <div class="pre-work-item">
+                    <div class="pre-work-number" aria-hidden="true">3</div>
+                    <div class="pre-work-content">
+                      <h3>Reflect on Questions</h3>
+                      <p>Consider: What pattern keeps repeating in your life? If you operated from absolute certainty, what would you create? What single breakthrough would transform everything?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="quick-access-section bg-dark-gray">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-label">Quick Access</span>
+                        <h2 class="section-title serif">Everything You Need</h2>
+                    </div>
+                    <div class="quick-grid">
+                        <div class="quick-card">
+                            <svg class="quick-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                            <h3 class="quick-title">Zoom Access</h3>
+                            <p class="quick-description">You'll receive your Zoom link on <strong>Friday, October&nbsp;17th</strong>, the day before the workshop.</p>
+                        </div>
+                        <div class="quick-card">
+                            <svg class="quick-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                            </svg>
+                            <h3 class="quick-title">Need Help?</h3>
+                            <p class="quick-description">Email us at <a href="mailto:support@neothink.com">support@neothink.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container-narrow">
+                    <div class="section-header">
+                        <span class="section-label">The Experience</span>
+                        <h2 class="section-title serif">What You'll Discover on October&nbsp;18th</h2>
+                    </div>
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <h3 class="content-card-title">Your Million-Dollar Vision</h3>
+                            <p class="content-card-text">You've been conditioned to think small. On October&nbsp;18th, you'll discover the vision that's been suppressed—the one worth millions. Your actual path to wealth, waiting to be activated.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="content-card-title">The Wealth Architecture</h3>
+                            <p class="content-card-text">The ultra-wealthy operate by different rules. We'll show you the exact mechanisms they use—the investment strategies, the wealth multiplication principles, the compounding secrets that turn modest income into seven-figure net&nbsp;worth.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="content-card-title">Business & Career Mastery</h3>
+                            <p class="content-card-text">Whether you own a business or work in one, everything changes. Customer acquisition systems, profit amplification strategies, negotiation from power, and how to position yourself as irreplaceable.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="content-card-title">The Biological Transformation</h3>
+                            <p class="content-card-text">Your brain has been wired for survival, not success. We're going to rewire the circuitry. You'll leave October&nbsp;18th operating from a different neurological baseline—the one you were meant to have.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="content-card-title">Breaking the Matrix</h3>
+                            <p class="content-card-text">Understand how the world really works—the power structures, the hidden players, the illusions keeping most people trapped. This knowledge changes everything.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote-section bg-dark-gray">
+                <div class="container">
+                    <blockquote class="quote-block">
+                        <p class="quote-text serif">This is not education. This is transformation. The difference between those who know The Secrets and those who live&nbsp;them.</p>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="vip-section" id="vip-upgrade">
+                <div class="container-narrow">
+                    <div class="vip-container">
+                        <div class="vip-header">
+                            <div class="vip-badge">
+                                <span class="vip-badge-text">VIP Experience</span>
+                            </div>
+                            <h2 class="vip-title serif">Beyond October&nbsp;18th</h2>
+                            <p class="vip-subtitle">An exclusive private session awaits those who want to go deeper</p>
+                        </div>
+
+                        <div class="vip-urgency">
+                            <div class="vip-urgency-title">⏰ Limited Availability</div>
+                            <p class="vip-urgency-text">This VIP upgrade closes October&nbsp;18th at 9:00&nbsp;AM&nbsp;PT—right when the workshop begins. Reserve your spot now.</p>
+                        </div>
+
+                        <div class="vip-price-container">
+                            <p class="vip-price-label">VIP Upgrade Investment</p>
+                            <p class="vip-price">$297</p>
+                            <p class="vip-price-note">Private session + direct mentor access</p>
+                        </div>
+
+                        <div class="vip-quote">
+                            <p class="vip-quote-text serif">
+                                "October&nbsp;18th transforms you.<br>
+                                October&nbsp;19th takes you deeper.<br>
+                                Much deeper."
+                            </p>
+                            <p class="vip-quote-question">
+                                What happens on October&nbsp;19th?
+                            </p>
+                            <p class="vip-quote-benefits">
+                                <strong style="color: var(--gold);">Private 1-Hour Session</strong> with Wallace Hamilton and The Society Mentors<br>
+                                <span style="display: inline-block; margin-top: 0.75rem;">Direct access • Personalized guidance • Elite group setting</span>
+                            </p>
+                        </div>
+
+                        <a href="https://societysecrets.com/get-vip-access" class="btn btn-primary">Reserve Your VIP Access</a>
+
+                        <p class="vip-cta-note">
+                            Limited to a select group. Secure your invitation now.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-dark-gray">
+                <div class="container-narrow">
+                    <div class="section-header">
+                        <span class="section-label">Requirements</span>
+                        <h2 class="section-title serif">What October&nbsp;18th Demands</h2>
+                    </div>
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <h3 class="content-card-title">✓ Complete Presence</h3>
+                            <p class="content-card-text">Block 8:00&nbsp;AM PT sharp through evening. Clear your calendar. Turn off all notifications. No partial attendance. Transformation requires total immersion.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="content-card-title">✓ Active Participation</h3>
+                            <p class="content-card-text">You'll engage in exercises, participate in breakout sessions, and implement in real time. Have ready: your manuscript, pen and paper, water, comfortable clothing.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="content-card-title">✓ No Recordings</h3>
+                            <p class="content-card-text">This workshop will not be recorded. The transformation happens in real-time, with the collective energy of Level&nbsp;2 members worldwide. Your presence creates the experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-label">Results</span>
+                        <h2 class="section-title serif">Your Transformation</h2>
+                        <p class="section-subtitle">By the end of October&nbsp;18th, you will experience extraordinary transformation in four essential areas:</p>
+                    </div>
+                    <div class="transformation-grid">
+                        <div class="transformation-card">
+                            <h3>
+                                <span class="highlight">Prosperity</span>
+                                Rewired for Extraordinary Prosperity
+                            </h3>
+                            <p>Unlock financial independence and wealth creation</p>
+                        </div>
+                        <div class="transformation-card">
+                            <h3>
+                                <span class="highlight">Happiness</span>
+                                Rewired for Extraordinary Happiness
+                            </h3>
+                            <p>Unlock emotional well-being, inner joy, and peace</p>
+                        </div>
+                        <div class="transformation-card">
+                            <h3>
+                                <span class="highlight">Longevity</span>
+                                Rewired for Extraordinary Longevity
+                            </h3>
+                            <p>Unlock dynamically vibrant health and longevity</p>
+                        </div>
+                        <div class="transformation-card">
+                            <h3>
+                                <span class="highlight">Intelligence</span>
+                                Rewired for Extraordinary Intelligence
+                            </h3>
+                            <p>Unlock enhanced cognitive abilities and clarity</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="footer-tagline serif">Welcome to the 1%</p>
+                    <p class="footer-contact">
+                        Questions? Email us at<br>
+                        <a href="mailto:support@neothink.com">support@neothink.com</a>
+                    </p>
+                    <p class="footer-legal">The Society • Level&nbsp;2 • Confidential</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
