@@ -159,7 +159,83 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
-### 4. doe-workshop-aftermath.html
+### 4. doe-preparation-4days.html
+**Day of Enlightenment Workshop - 4-Day Preparation with Questionnaire**
+
+**Purpose**: Second preparation email sent 4 days before October 18th (around October 14th) with urgency, homework, and pre-workshop questionnaire
+
+**Audience**: Level 2 members who registered for workshop
+
+**Key Features**:
+- "PREPARATION BEGINS • 4 DAYS OUT" header
+- **NEW**: Gold gradient CTA buttons (2x) - "View Complete Workshop Details"
+- **NEW**: Pre-workshop Typeform questionnaire to tailor experience
+- Reading assignment: Pages 1-50 of "The Super Puzzle" (manuscript title variation)
+- Same five reflection questions as 11-day email
+- Same three demands: Complete presence, Active participation, Full commitment
+- **NEW**: Multiple US time zones listed (PT, MT, CT, ET)
+- **NEW**: References "this Saturday" (more immediate)
+- Zoom credentials reminder: Oct 17th (Friday morning)
+- Alternative date option
+
+**Action Items**:
+1. Read pages 1-50 of The Super Puzzle
+2. Complete pre-workshop questionnaire (Typeform link)
+3. Reflect on 5 questions
+4. Block calendar completely
+
+**CTAs and Links**:
+- Primary (2x): "View Complete Workshop Details" (societysecrets.com/day-of-enlightenment-workshop) - Gold buttons
+- Questionnaire: "Complete Questionnaire" (neothink.typeform.com/to/R6zL32wy) - Gold button
+
+**Messaging Themes**:
+- Identical "This isn't what you're expecting" opening as 11-day email
+- Same transformation language (reprogram nervous system, etc.)
+- Same quote: "Transformation doesn't happen when you learn something new..."
+- Increased urgency: "this Saturday" vs "October 18th"
+- Preparation as action, not just reflection
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter (OLD - needs update)
+- **Gold buttons**: Linear gradient #FFD700 to #FFC700 with shadow effects
+- DOCTYPE: XHTML 1.0 Transitional
+- MSO Outlook comments
+- role="presentation" on tables
+- prefers-color-scheme dark mode
+- Mobile breakpoint: 600px
+- .date-display responsive class
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- First DOE email with prominent gold CTAs (shows brand evolution)
+- Only email with pre-workshop questionnaire
+- Time zone flexibility (4 zones listed vs just PT)
+- 2 external CTAs to workshop details page
+- References "The Super Puzzle" (vs generic "manuscript")
+- ✅ Uses correct support email: support@neothink.com
+- Same "Prepare well" sign-off as 11-day email
+
+**Comparison to 11-Day Email**:
+- Adds gold CTA buttons (major upgrade)
+- Adds questionnaire requirement
+- More urgent framing ("this Saturday")
+- Shows all US time zones
+- Otherwise nearly identical content structure
+
+**Branding Notes**:
+- ✅ Uses gold (#FFD700) buttons - GOOD!
+- ✅ Correct support email: support@neothink.com
+- ❌ Still uses "The Society" instead of "Neothink Society"
+- ❌ Still uses old fonts (Crimson Text + Inter)
+- Shows progression toward full brand alignment
+
+**Contact**: support@neothink.com ✅ (CORRECT)
+
+---
+
+### 5. doe-workshop-aftermath.html
 **Day of Enlightenment Workshop - Post-Event Follow-Up & Resources**
 
 **Purpose**: Post-workshop follow-up email sent AFTER the October 18th event with recap, resources, and Level 3 upgrade offer
@@ -251,13 +327,14 @@ All templates in this directory have these common issues:
 
 ### Contact Email
 - ❌ Templates 1-3: Use support@contact.neothink.com
-- ✅ Template 4: Uses correct support@neothink.com
+- ✅ Templates 4-5: Use correct support@neothink.com
 - ✅ Should use support@neothink.com
 
 ### Color Palette
 - ✅ Dark background (#1a1a1a) is correct across all templates
 - ❌ Templates 1-3: Missing gold accent (#FFD700)
-- ✅ Template 4: Uses gold extensively (#FFD700) - GOOD!
+- ✅ Template 4: Uses gold in buttons/CTAs - GOOD progression!
+- ✅ Template 5: Uses gold extensively (#FFD700) - EXCELLENT!
 - ✅ Gray scale usage is appropriate
 
 ### Logo
@@ -307,7 +384,8 @@ When creating updated versions, preserve these elements:
 Templates use descriptive, hyphenated lowercase names:
 - `doe-announcement.html` = Day of Enlightenment announcement (pre-event announcement)
 - `doe-secrets-revealed.html` = Day of Enlightenment secrets preview (pre-event details)
-- `doe-preparation-11days.html` = Day of Enlightenment preparation (11 days before, homework)
+- `doe-preparation-11days.html` = Day of Enlightenment prep (11 days before, homework)
+- `doe-preparation-4days.html` = Day of Enlightenment prep (4 days before, questionnaire)
 - `doe-workshop-aftermath.html` = Day of Enlightenment workshop recap (post-event follow-up)
 - Future examples: `vip-upgrade-offer.html`, `workshop-reminder.html`, `zoom-credentials.html`, etc.
 
