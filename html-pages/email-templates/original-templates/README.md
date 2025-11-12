@@ -44,6 +44,60 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
+### 2. doe-secrets-revealed.html
+**Day of Enlightenment Workshop - Detailed Secrets Preview**
+
+**Purpose**: Second email for same October 18th event, focusing on what will be revealed during the workshop
+
+**Audience**: Level 2 members
+
+**Key Features**:
+- CONFIDENTIAL classification header
+- Details 6 specific "secrets" to be revealed
+- Enhanced email client compatibility (XHTML DOCTYPE, MSO comments, role="presentation")
+- White-bordered date box for emphasis
+- "Why Now Matters" urgency section
+- Alternative date option with stronger CTA
+- More comprehensive preheader text
+
+**Six Secrets Covered**:
+1. **Your Million-Dollar Vision** - Discovering suppressed wealth potential
+2. **The Wealth Architecture** - Ultra-wealthy strategies and mechanisms
+3. **The System Behind the System** - How value/power/markets really work
+4. **Business Amplification Protocols** - Customer acquisition and profit multiplication
+5. **Career Leverage & Compensation Mastery** - Getting paid what you're worth
+6. **The Biological Transformation** - Rewiring brain/body for success
+
+**Messaging Themes**:
+- "Secrets the elite have always known"
+- Knowledge gap widening (AI, market changes)
+- Not conspiracy/theory - hidden knowledge
+- Transform in one day what others never learn
+- Urgency of timing ("Why Now Matters")
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter (OLD - needs update)
+- DOCTYPE: XHTML 1.0 Transitional
+- Outlook MSO comments for compatibility
+- role="presentation" on all tables
+- prefers-color-scheme media query
+- Mobile breakpoint: 600px
+- Image hosting: filesafe.space CDN
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- White 2px border on date announcement box (vs gradient in first email)
+- Much longer content with 6 detailed sections
+- "The secrets are yours" sign-off (vs "Welcome to the 1%")
+- Better structured for email clients (more semantic HTML)
+- format-detection meta tag to prevent auto-linking
+
+**Contact**: support@contact.neothink.com (OLD - needs update to support@neothink.com)
+
+---
+
 ## Known Branding Issues
 
 All templates in this directory have these common issues:
@@ -110,8 +164,9 @@ When creating updated versions, preserve these elements:
 ## File Naming Convention
 
 Templates use descriptive, hyphenated lowercase names:
-- `doe-announcement.html` = Day of Enlightenment announcement
-- Future: `vip-upgrade-offer.html`, `workshop-reminder.html`, etc.
+- `doe-announcement.html` = Day of Enlightenment announcement (initial)
+- `doe-secrets-revealed.html` = Day of Enlightenment secrets preview (follow-up)
+- Future examples: `vip-upgrade-offer.html`, `workshop-reminder.html`, etc.
 
 ---
 
