@@ -11,9 +11,10 @@ This folder contains the 4 new pages created specifically for the November 2025 
 **Audience:** Customers who purchased the workshop via direct mail
 **Features:**
 - GHL form integration (email, phone, address capture)
-- Countdown timer to Nov 22, 2025 at 9:00 AM EST
+- Countdown timer to Nov 22, 2025 at 11:00 AM ET (8am PT / 9am MT / 10am CT / 11am ET)
 - "What to Expect After Registration" information cards
 - Post-submit redirect to `thanks-vip-upsell.html`
+- Zoom link sent the night before or morning of event
 
 **Required Setup:**
 - Replace `YOUR-GHL-FORM-ID-HERE` with actual GHL form ID
