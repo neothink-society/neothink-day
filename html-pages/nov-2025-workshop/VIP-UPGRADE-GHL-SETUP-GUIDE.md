@@ -65,7 +65,7 @@ Before adding the form, create a product in GHL:
    - Phone (optional)
 
 4. **Form ID/Anchor:**
-   - Set form anchor or ID to: `checkout`
+   - Set form anchor or ID to: `order-form`
    - This allows the down arrows in Section 1 to scroll directly to the form
 
 5. **Styling Options in GHL:**
@@ -160,7 +160,7 @@ Before going live, test:
 - [ ] All three sections display correctly
 - [ ] CSS from top section applies properly (no style conflicts)
 - [ ] CTA arrow indicator points to form
-- [ ] Clicking/scrolling works smoothly from CTA to form (#checkout anchor)
+- [ ] Clicking/scrolling works smoothly from CTA to form (#order-form anchor)
 - [ ] Form displays all required fields
 - [ ] Form validation works (email, payment info)
 - [ ] Test payment processing (use Stripe test mode)
@@ -208,7 +208,7 @@ Ensure the GHL order form has mobile optimization enabled:
 
 ### Navigation Issues
 **Problem:** Down arrows don't scroll to form
-**Solution:** Ensure order form section has anchor ID set to `checkout` in GHL
+**Solution:** Ensure order form section has anchor ID set to `order-form` in GHL
 
 ### Payment Issues
 **Problem:** Payment not processing
