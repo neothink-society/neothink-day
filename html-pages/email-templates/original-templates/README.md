@@ -313,6 +313,107 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
+### 6. dec2025-registration-confirmation.html
+**Day of Enlightenment Workshop - Registration Confirmation (December 2025)**
+
+**Purpose**: Post-registration confirmation email for December 6-7, 2025 workshop with logistics and VIP upgrade offer
+
+**Audience**: Newly registered workshop attendees
+
+**Key Features**:
+- Gold "✓ REGISTRATION CONFIRMED" badge header with December 6-7, 2025 dates
+- Large gold success icon (80px circle with checkmark)
+- Two-day workshop schedule (Saturday Dec 6 + Sunday Dec 7)
+- Multiple US time zones listed (ET, CT, MT, PT)
+- "What Happens Next" 4-step guide (Zoom link, prep materials, calendar blocking, preparation)
+- Three core breakthrough experiences preview (FNE, Wealth Engine, Matrix)
+- VIP upgrade offer ($297) with 6 benefits
+- Quote: "The day you discover who you are is the day you begin building the machine that sets you free"
+- Email obfuscation in footer (CloudFlare protection)
+
+**Workshop Details**:
+- **Day 1**: Saturday, December 6, 2025 - 11:00 AM ET / 10:00 AM CT / 9:00 AM MT / 8:00 AM PT (Full Day Event)
+- **Day 2**: Sunday, December 7, 2025 - 12:00 PM ET / 11:00 AM CT / 10:00 AM MT / 9:00 AM PT
+
+**VIP Upgrade Benefits** ($297):
+1. VIP Status Recognition with exclusive Zoom background
+2. Priority Workshop Assistance on Day 1
+3. **GUARANTEED Personal 1-on-1 Mentorship** (emphasized)
+4. Private Elite Session on Day 2
+5. Implementation Accelerator Tools
+6. Surprise Bonus Gift(s)
+
+**What Happens Next (4-Step Guide)**:
+1. **Your Zoom Link**: Sent night before or morning of workshop
+2. **Pre-Workshop Materials**: Golden Life Sheet template and preparation guide
+3. **Block Your Calendar**: Protect two full days
+4. **Prepare to Break Through**: FNE, Wealth Engine, Matrix of Illusions
+
+**Three Core Experiences Previewed**:
+1. **Discover Your Friday Night Essence** - Value-creating activity for Downstream Focus
+2. **Calculate Your Wealth Engine** - Financial Security, Vitality, Freedom numbers + Inflection Point
+3. **Break Through the Matrix of Illusions** - Unlock Awareness, Independence, Value Creation doors
+
+**Messaging Themes**:
+- "Welcome to the Neothink family!" (note: uses "Neothink family" but footer still says "The Society")
+- Mortal Mentality → Immortal Mentality transformation
+- "Your golden life awaits"
+- VIP as "difference between good results and life-changing transformation"
+- Urgency: "Limited spots available"
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter + 800 weight (OLD - needs update)
+- **Enhanced mobile responsiveness**: .desktop-hide/.mobile-hide, .mobile-button, .mobile-text variants
+- Gold used extensively: Success badge, checkmark icon, borders, CTAs, accents
+- White CTA button (not gold) with gold glow: `box-shadow: 0 0 40px rgba(255, 215, 0, 0.5)`
+- DATE box: Gold gradient background + 3px gold border
+- Experience cards: Subtle gradient with 5px gold left border
+- VIP section: Gold gradient background + 3px gold border
+- Mobile breakpoint: 600px with comprehensive responsive classes
+- MSO conditional comments for Outlook
+- prefers-color-scheme dark mode support
+- Image hosting: filesafe.space CDN
+- Email variables: `{{unsubscribe}}`
+
+**CTAs and Links**:
+- Primary: "Upgrade to VIP Now" → https://neothinkevent.com/vip-upgrade
+- Workshop Info: https://neothinkevent.com/home (footer)
+- Email: support@neothink.com (via CloudFlare email protection)
+
+**Unique Elements**:
+- First **registration confirmation** email (vs pre-event announcements)
+- Two-day workshop format (Saturday + Sunday, not single day)
+- Different event domain: **neothinkevent.com** (vs societysecrets.com in October emails)
+- Success-oriented messaging ("You're All Set!") vs announcement/preparation tone
+- VIP upsell at $297 (much lower than Level 3 Stargazer $1,997)
+- CloudFlare email obfuscation: `<span class="__cf_email__" data-cfemail="...">`
+- White CTA button with gold shadow (vs gold gradient buttons in other emails)
+- References "Neothink family" in copy but "The Society" in footer (inconsistent)
+- Most comprehensive mobile optimization of all templates
+- No alternative date option (assumes registration already confirmed for specific dates)
+
+**Branding Notes**:
+- ✅ Uses gold (#FFD700) EXTENSIVELY throughout - EXCELLENT!
+- ✅ Correct support email: support@neothink.com (via CloudFlare protection)
+- ⚠️ Mixed messaging: "Neothink family" in body but "The Society" in footer
+- ❌ Still uses old fonts (Crimson Text + Inter)
+- ❌ Logo alt text: "The Society Logo" (should be "Neothink Society")
+- ✅ Most advanced mobile optimization with comprehensive responsive classes
+- ✅ Modern CSS techniques: border-radius, sophisticated gradients, box-shadows
+
+**Event Differentiation**:
+- **December 2025 workshop** (different from October 2024 emails)
+- Two full days vs single day format
+- Registration confirmation vs announcement/preparation sequence
+- Different pricing tier: VIP upgrade ($297) vs Level 3 Stargazer ($1,997)
+- Different domain: neothinkevent.com vs societysecrets.com
+
+**Contact**: support@neothink.com ✅ (CORRECT - via CloudFlare email protection)
+
+---
+
 ## Known Branding Issues
 
 All templates in this directory have these common issues:
@@ -387,7 +488,8 @@ Templates use descriptive, hyphenated lowercase names:
 - `doe-preparation-11days.html` = Day of Enlightenment prep (11 days before, homework)
 - `doe-preparation-4days.html` = Day of Enlightenment prep (4 days before, questionnaire)
 - `doe-workshop-aftermath.html` = Day of Enlightenment workshop recap (post-event follow-up)
-- Future examples: `vip-upgrade-offer.html`, `workshop-reminder.html`, `zoom-credentials.html`, etc.
+- `dec2025-registration-confirmation.html` = Registration confirmation for December 2025 workshop
+- Future examples: `vip-upgrade-offer.html`, `workshop-reminder.html`, `zoom-credentials.html`, `nov2025-registration-confirmation.html`, etc.
 
 ---
 
