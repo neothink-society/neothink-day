@@ -475,6 +475,41 @@
             flex-shrink: 0;
         }
 
+        /* Countdown Timer */
+        .urgency-banner {
+            margin: var(--space-xl) 0;
+            padding: var(--space-lg);
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 107, 107, 0.08));
+            border: 2px solid rgba(255, 107, 107, 0.4);
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .urgency-label {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-300);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .urgency-timer {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: #ff6b6b;
+            letter-spacing: 0.05em;
+        }
+
+        .urgency-message {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            margin-top: var(--space-sm);
+        }
+
         /* ===========================
            RESPONSIVE BREAKPOINTS
         =========================== */
@@ -544,6 +579,12 @@
                     <p class="content-subtitle">
                         Don't just attend—command attention. Get priority access, guaranteed personal mentorship, and an experience designed around YOU.
                     </p>
+
+                    <div class="urgency-banner fade-in-section">
+                        <div class="urgency-label">VIP Upgrade Closes In</div>
+                        <div class="urgency-timer" id="vip-countdown">Calculating...</div>
+                        <div class="urgency-message">Limited spots available for guaranteed 1-on-1 mentorship</div>
+                    </div>
                 </section>
 
                 <div class="divider fade-in-section"></div>
@@ -705,6 +746,36 @@
             sections.forEach(section => {
                 observer.observe(section);
             });
+
+            // VIP upgrade countdown timer - Ends Nov 22, 2025 at 8:00 AM PT (11:00 AM ET)
+            const vipDeadline = new Date('2025-11-22T08:00:00-08:00').getTime();
+            const vipCountdownEl = document.getElementById('vip-countdown');
+
+            function updateVIPCountdown() {
+                const now = new Date().getTime();
+                const distance = vipDeadline - now;
+
+                if (distance < 0) {
+                    vipCountdownEl.textContent = 'Upgrade Closed';
+                    clearInterval(vipInterval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                if (days > 0) {
+                    vipCountdownEl.textContent = `${days}d ${hours}h ${minutes}m`;
+                } else if (hours > 0) {
+                    vipCountdownEl.textContent = `${hours}h ${minutes}m`;
+                } else {
+                    vipCountdownEl.textContent = `${minutes}m`;
+                }
+            }
+
+            updateVIPCountdown();
+            const vipInterval = setInterval(updateVIPCountdown, 60000); // Update every minute
         });
     </script>
 </body>
