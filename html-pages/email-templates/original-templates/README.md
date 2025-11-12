@@ -98,7 +98,68 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
-### 3. doe-workshop-aftermath.html
+### 3. doe-preparation-11days.html
+**Day of Enlightenment Workshop - 11-Day Preparation & Homework**
+
+**Purpose**: Pre-workshop preparation email sent 11 days before October 18th (around October 7th) with reading assignment and reflection questions
+
+**Audience**: Level 2 members who registered for workshop
+
+**Key Features**:
+- "PREPARATION BEGINS • 11 DAYS OUT" header
+- Reading assignment: Pages 1-50 of The Secret Manuscript
+- Five reflection questions to "prime your mind"
+- Three demands: Complete presence, Active participation, Full commitment
+- What to have ready: manuscript, pen/paper, water, comfortable clothing
+- Logistics reminder: Zoom credentials arrive Oct 17th (24 hours before)
+- Alternative date option
+- "11 Days Until Transformation" countdown box
+
+**Reading Assignment**:
+- Pages 1-50 of manuscript
+- Notice what resonates, triggers recognition, challenges assumptions
+- Creates neural pathways before the live experience
+- Engagement matters more than understanding every detail
+
+**Five Reflection Questions**:
+1. What pattern keeps repeating that you're ready to break?
+2. If you operated from certainty not fear, what would you create?
+3. What single breakthrough would cascade transformation?
+4. Where are you settling when capable of extraordinary?
+5. Who would you become operating from highest capabilities?
+
+**Messaging Themes**:
+- "This isn't what you're expecting" - experiential vs passive
+- "Reprogram your nervous system, interrupt patterns, install new capabilities"
+- "Transformation doesn't happen when you learn something new. It happens when you become someone new."
+- Preparation as sacred responsibility
+- Full commitment = full results
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter (OLD - needs update)
+- DOCTYPE: XHTML 1.0 Transitional
+- MSO Outlook comments
+- role="presentation" on tables
+- prefers-color-scheme dark mode
+- Mobile breakpoint: 600px
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- Most homework-focused email of the series
+- Sets expectations about experiential vs passive learning
+- "Virtual does not mean passive" - breakout sessions, exercises
+- Quote block with white left border (vs gray in other emails)
+- Sign-off: "Prepare well" (unique to this email)
+- No CTAs to external pages - focus is on preparation
+- Countdown emphasis: "11 Days Until Transformation"
+
+**Contact**: support@contact.neothink.com (OLD - needs update to support@neothink.com)
+
+---
+
+### 4. doe-workshop-aftermath.html
 **Day of Enlightenment Workshop - Post-Event Follow-Up & Resources**
 
 **Purpose**: Post-workshop follow-up email sent AFTER the October 18th event with recap, resources, and Level 3 upgrade offer
@@ -189,14 +250,14 @@ All templates in this directory have these common issues:
 - ❌ References "The Society" instead of "Neothink Society"
 
 ### Contact Email
-- ❌ Templates 1-2: Use support@contact.neothink.com
-- ✅ Template 3: Uses correct support@neothink.com
+- ❌ Templates 1-3: Use support@contact.neothink.com
+- ✅ Template 4: Uses correct support@neothink.com
 - ✅ Should use support@neothink.com
 
 ### Color Palette
 - ✅ Dark background (#1a1a1a) is correct across all templates
-- ❌ Templates 1-2: Missing gold accent (#FFD700)
-- ✅ Template 3: Uses gold extensively (#FFD700) - GOOD!
+- ❌ Templates 1-3: Missing gold accent (#FFD700)
+- ✅ Template 4: Uses gold extensively (#FFD700) - GOOD!
 - ✅ Gray scale usage is appropriate
 
 ### Logo
@@ -244,10 +305,11 @@ When creating updated versions, preserve these elements:
 ## File Naming Convention
 
 Templates use descriptive, hyphenated lowercase names:
-- `doe-announcement.html` = Day of Enlightenment announcement (pre-event #1)
-- `doe-secrets-revealed.html` = Day of Enlightenment secrets preview (pre-event #2)
-- `doe-workshop-aftermath.html` = Day of Enlightenment workshop recap (post-event)
-- Future examples: `vip-upgrade-offer.html`, `workshop-reminder.html`, etc.
+- `doe-announcement.html` = Day of Enlightenment announcement (pre-event announcement)
+- `doe-secrets-revealed.html` = Day of Enlightenment secrets preview (pre-event details)
+- `doe-preparation-11days.html` = Day of Enlightenment preparation (11 days before, homework)
+- `doe-workshop-aftermath.html` = Day of Enlightenment workshop recap (post-event follow-up)
+- Future examples: `vip-upgrade-offer.html`, `workshop-reminder.html`, `zoom-credentials.html`, etc.
 
 ---
 
