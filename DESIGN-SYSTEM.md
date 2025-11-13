@@ -1,8 +1,138 @@
 # Neothink Society - Design System Documentation
-**Version 1.0** • November 2025
+**Version 2.0** • November 12, 2025
 
 ## Overview
 Premium gold and black theme emphasizing wealth, exclusivity, and transformation through metallic gold gradients, modern sans-serif typography, and dark mode aesthetics.
+
+**Latest Update (v2.0):** Applied 10/10 A+ technical design excellence across all 14 workshop pages with optical typography system, custom easing curves, layered shadows, and sophisticated micro-interactions.
+
+---
+
+## ✨ Technical Excellence Standards (v2.0)
+
+### Optical Typography System
+**Golden ratio line-heights + optical tracking adjustments**
+
+```css
+/* Typography - Optical tracking */
+--tracking-tighter: -0.04em;  /* Large titles */
+--tracking-tight: -0.02em;     /* Headings */
+--tracking-normal: 0em;        /* Body text */
+--tracking-wide: 0.05em;       /* Buttons, labels */
+--tracking-wider: 0.1em;       /* Small caps */
+--tracking-widest: 0.15em;     /* Eyebrows, badges */
+
+/* Typography - Golden ratio line heights */
+--leading-none: 1;             /* Tight titles */
+--leading-tight: 1.2;          /* H1, H2 */
+--leading-snug: 1.375;         /* H3-H6 */
+--leading-normal: 1.618;       /* Body (golden ratio) */
+--leading-relaxed: 1.8;        /* Long-form */
+--leading-loose: 2;            /* Spacious */
+```
+
+### Custom Easing Curves
+**Physics-based animation timing for natural motion**
+
+```css
+/* Animation - Custom easing curves */
+--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);      /* Smooth deceleration */
+--ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);  /* Subtle bounce */
+--ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);  /* Circular motion */
+--ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Playful bounce */
+```
+
+### Animation Timing System
+**Consistent duration scale across all interactions**
+
+```css
+--duration-instant: 100ms;  /* Immediate feedback */
+--duration-fast: 200ms;     /* Quick transitions */
+--duration-base: 300ms;     /* Standard interactions */
+--duration-slow: 500ms;     /* Deliberate animations */
+--duration-slower: 700ms;   /* Entrance animations */
+
+/* Stagger delays for sequential reveals */
+--delay-0: 0ms;
+--delay-1: 50ms;
+--delay-2: 100ms;
+--delay-3: 150ms;
+--delay-4: 200ms;
+```
+
+### Layered Shadow System
+**Depth hierarchy with gold glow variants**
+
+```css
+/* Standard shadows */
+--shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+--shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+--shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+--shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+/* Gold glow variants */
+--shadow-gold-sm: 0 0 20px rgba(255, 215, 0, 0.2);
+--shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+--shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+```
+
+### Blur Effects
+**Backdrop blur for depth and hierarchy**
+
+```css
+--blur-sm: 4px;   /* Subtle frosted glass */
+--blur-md: 8px;   /* Medium glass effect */
+--blur-lg: 12px;  /* Strong blur */
+--blur-xl: 16px;  /* Maximum blur */
+```
+
+### Micro-interactions Pattern
+**Sophisticated hover states with rotation + scale**
+
+```css
+/* Icon wrapper example */
+.icon-wrapper:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: var(--shadow-gold-sm);
+    transition:
+        transform var(--duration-base) var(--ease-out-back),
+        box-shadow var(--duration-base) var(--ease-out);
+}
+
+/* Nested icon counter-rotation */
+.icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+```
+
+### 8px Base Grid System
+**Consistent spacing rhythm**
+
+```css
+--space-xs: 0.5rem;   /* 8px */
+--space-sm: 1rem;     /* 16px */
+--space-md: 1.5rem;   /* 24px */
+--space-lg: 2rem;     /* 32px */
+--space-xl: 3rem;     /* 48px */
+--space-2xl: 4rem;    /* 64px */
+--space-3xl: 6rem;    /* 96px */
+```
+
+### Performance Optimization
+**will-change hints + separate transitions**
+
+```css
+.interactive-element {
+    will-change: transform;  /* GPU acceleration hint */
+    transition:
+        transform var(--duration-base) var(--ease-out-expo),
+        border-color var(--duration-base) var(--ease-out),
+        background var(--duration-base) var(--ease-out),
+        box-shadow var(--duration-base) var(--ease-out);
+}
+```
 
 ---
 
