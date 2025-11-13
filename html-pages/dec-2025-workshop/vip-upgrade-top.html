@@ -191,6 +191,19 @@
             }
         }
 
+        @keyframes gold-glow-pulse {
+            0%, 100% {
+                box-shadow:
+                    0 4px 16px rgba(255, 215, 0, 0.25),
+                    0 0 32px rgba(255, 215, 0, 0.15);
+            }
+            50% {
+                box-shadow:
+                    0 6px 20px rgba(255, 215, 0, 0.35),
+                    0 0 40px rgba(255, 215, 0, 0.2);
+            }
+        }
+
         .fade-in-section {
             opacity: 0;
             transform: translateY(20px);
@@ -203,8 +216,31 @@
         }
 
         /* ===========================
-           CONTENT SECTIONS
+           HERO SECTION
         =========================== */
+        .hero-wrapper {
+            position: relative;
+            padding: var(--space-xl) 0;
+        }
+
+        .hero-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .content-column {
+            position: relative;
+            z-index: 1;
+        }
+
         .content-column h1,
         .content-column h2,
         .content-column h3 {
@@ -234,22 +270,24 @@
             font-size: var(--text-5xl);
             font-weight: 400;
             margin-bottom: var(--space-md);
-            background: linear-gradient(180deg, var(--white) 0%, var(--gray-300) 100%);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            text-shadow: 0 0 40px rgba(255, 215, 0, 0.2);
         }
 
         .content-subtitle {
             font-size: var(--text-xl);
-            color: var(--gray-300);
+            color: var(--gray-200);
             font-weight: 500;
             margin-bottom: var(--space-lg);
+            line-height: 1.5;
         }
 
         .divider {
             height: 1px;
-            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%);
             margin: var(--space-2xl) 0;
         }
 
@@ -258,34 +296,97 @@
             font-size: var(--text-4xl);
             font-weight: 500;
             margin-bottom: var(--space-xl);
+            background: linear-gradient(135deg, var(--white) 0%, var(--gray-200) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
         /* ===========================
-           BENEFITS GRID
+           BENEFITS GRID - PREMIUM CARDS
         =========================== */
         .benefits-grid {
             display: grid;
-            gap: var(--space-md);
+            gap: var(--space-lg);
         }
 
         .benefit-card {
             display: flex;
             gap: var(--space-md);
             align-items: flex-start;
+            padding: var(--space-lg);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.03) 0%, rgba(255, 215, 0, 0.01) 100%);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.06) 0%, rgba(255, 215, 0, 0.02) 100%);
+            transform: translateY(-4px);
+            box-shadow:
+                0 8px 24px rgba(0, 0, 0, 0.4),
+                0 0 48px rgba(255, 215, 0, 0.15);
+        }
+
+        .benefit-card:hover::before {
+            opacity: 1;
+        }
+
+        .benefit-icon-wrapper {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover .benefit-icon-wrapper {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.08) 100%);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
         }
 
         .benefit-icon {
-            width: 40px;
-            height: 40px;
+            width: 28px;
+            height: 28px;
             color: var(--gold);
-            flex-shrink: 0;
-            margin-top: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover .benefit-icon {
+            transform: scale(1.1);
+        }
+
+        .benefit-content {
+            flex: 1;
         }
 
         .benefit-title {
             font-size: var(--text-xl);
             font-weight: 700;
             margin-bottom: var(--space-xs);
+            color: var(--white);
         }
 
         .benefit-description {
@@ -295,8 +396,17 @@
         }
 
         /* ===========================
-           COMPARISON GRID
+           COMPARISON SECTION
         =========================== */
+        .comparison-intro {
+            text-align: center;
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            max-width: 700px;
+            margin: 0 auto var(--space-2xl);
+            line-height: 1.6;
+        }
+
         .comparison-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -305,39 +415,22 @@
         }
 
         .comparison-card {
-            padding: var(--space-xl) var(--space-md) var(--space-lg);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            position: relative;
-        }
-
-        .comparison-card.highlight {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            padding: var(--space-xl) var(--space-lg) var(--space-lg);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 215, 0, 0.03) 100%);
             border: 2px solid var(--gold);
+            border-radius: 20px;
+            position: relative;
+            max-width: 650px;
+            margin: 0 auto;
             box-shadow: 0 0 60px rgba(255, 215, 0, 0.2);
-        }
-
-        .recommended-badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--gold);
-            color: var(--black);
-            padding: var(--space-xs) var(--space-sm);
-            border-radius: 100px;
-            font-size: var(--text-xs);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
 
         .comparison-title {
             font-size: var(--text-2xl);
             font-weight: 700;
-            margin-bottom: var(--space-md);
+            margin-bottom: var(--space-lg);
             text-align: center;
+            color: var(--white);
         }
 
         .comparison-list {
@@ -348,9 +441,10 @@
         .comparison-list li {
             padding-left: 2rem;
             position: relative;
-            margin-bottom: 0.75rem;
-            font-size: var(--text-sm);
-            color: var(--gray-300);
+            margin-bottom: 0.875rem;
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            line-height: 1.5;
         }
 
         .comparison-list li::before {
@@ -358,7 +452,7 @@
             left: 0;
             font-weight: 700;
             font-size: 1.25rem;
-            top: -3px;
+            top: -2px;
         }
 
         .comparison-list li.included::before {
@@ -366,21 +460,16 @@
             color: var(--gold);
         }
 
-        .comparison-list li.excluded {
-            color: var(--gray-600);
-            text-decoration: line-through;
-        }
-
-        .comparison-list li.excluded::before {
-            content: '✕';
-            color: var(--gray-700);
-        }
-
         /* ===========================
            QUOTE BLOCK
         =========================== */
         .quote-block {
             text-align: center;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.04) 0%, rgba(255, 215, 0, 0.01) 100%);
+            border-left: 3px solid var(--gold);
+            border-right: 3px solid var(--gold);
+            border-radius: 12px;
         }
 
         .quote-text {
@@ -388,12 +477,57 @@
             font-size: var(--text-3xl);
             font-style: italic;
             margin-bottom: var(--space-md);
+            line-height: 1.4;
+            color: var(--white);
         }
 
         .quote-author {
             color: var(--gold);
             font-weight: 600;
             font-size: var(--text-lg);
+        }
+
+        /* ===========================
+           URGENCY BANNER - GOLD THEMED
+        =========================== */
+        .urgency-banner {
+            margin: var(--space-xl) 0;
+            padding: var(--space-lg);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.12) 0%, rgba(255, 215, 0, 0.06) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 16px;
+            text-align: center;
+            animation: gold-glow-pulse 2s ease-in-out infinite;
+        }
+
+        .urgency-label {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .urgency-timer {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .urgency-message {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            margin-top: var(--space-sm);
+            font-weight: 500;
         }
 
         /* ===========================
@@ -427,6 +561,7 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.5;
         }
 
         .arrow-indicator {
@@ -475,47 +610,12 @@
             flex-shrink: 0;
         }
 
-        /* Countdown Timer */
-        .urgency-banner {
-            margin: var(--space-xl) 0;
-            padding: var(--space-lg);
-            background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 107, 107, 0.08));
-            border: 2px solid rgba(255, 107, 107, 0.4);
-            border-radius: 16px;
-            text-align: center;
-        }
-
-        .urgency-label {
-            font-family: var(--font-sans);
-            font-size: var(--text-sm);
-            font-weight: 600;
-            color: var(--gray-300);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-sm);
-        }
-
-        .urgency-timer {
-            font-family: var(--font-serif);
-            font-size: var(--text-4xl);
-            font-weight: 700;
-            color: #ff6b6b;
-            letter-spacing: 0.05em;
-        }
-
-        .urgency-message {
-            font-family: var(--font-sans);
-            font-size: var(--text-sm);
-            color: var(--gray-400);
-            margin-top: var(--space-sm);
-        }
-
         /* ===========================
            RESPONSIVE BREAKPOINTS
         =========================== */
         @media (min-width: 640px) {
             .comparison-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
         }
 
@@ -539,6 +639,11 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
+
+            .hero-wrapper::before {
+                width: 400px;
+                height: 400px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -552,8 +657,17 @@
                 gap: var(--space-sm);
             }
 
-            .benefit-icon {
-                margin-top: 0;
+            .benefit-icon-wrapper {
+                margin: 0 auto;
+            }
+
+            .benefit-content {
+                text-align: center;
+            }
+
+            .hero-wrapper::before {
+                width: 300px;
+                height: 300px;
             }
         }
     </style>
@@ -573,17 +687,17 @@
 
         <main id="main-content" class="main-container">
             <div class="content-column">
-                <section class="fade-in-section">
+                <section class="fade-in-section hero-wrapper">
                     <div class="content-eyebrow">Exclusive Invitation</div>
-                    <h1 class="content-title">Upgrade to VIP to Maximize Your Day of Enlightenment</h1>
+                    <h1 class="content-title">Upgrade to VIP to Dominate Your Day of Enlightenment</h1>
                     <p class="content-subtitle">
-                        Don't just attend—command attention. Get priority access, guaranteed personal mentorship, and an experience designed around YOU.
+                        Don't just attend—command the room. Get priority access, GUARANTEED personal mentorship, and an experience built around YOUR breakthrough.
                     </p>
 
                     <div class="urgency-banner fade-in-section">
-                        <div class="urgency-label">VIP Upgrade Closes In</div>
+                        <div class="urgency-label">VIP Access Closes In</div>
                         <div class="urgency-timer" id="vip-countdown">Calculating...</div>
-                        <div class="urgency-message">Limited spots available for guaranteed 1-on-1 mentorship</div>
+                        <div class="urgency-message">Limited spots • GUARANTEED 1-on-1 mentorship</div>
                     </div>
                 </section>
 
@@ -593,55 +707,67 @@
                     <h2 class="section-title">Your VIP Maximization Package</h2>
                     <div class="benefits-grid">
                         <div class="benefit-card">
-                            <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                            </svg>
-                            <div>
+                            <div class="benefit-icon-wrapper">
+                                <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
                                 <h3 class="benefit-title">VIP Status Recognition</h3>
                                 <p class="benefit-description">Receive your exclusive limited-edition VIP Zoom background that instantly identifies you to Wallace and the mentors, ensuring you receive priority attention throughout the entire event.</p>
                             </div>
                         </div>
                         <div class="benefit-card">
-                            <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                            </svg>
-                            <div>
+                            <div class="benefit-icon-wrapper">
+                                <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
                                 <h3 class="benefit-title">Priority Workshop Assistance (Dec 6th)</h3>
                                 <p class="benefit-description">Your questions get answered first. Your breakthroughs get immediate attention. VIP status means priority assistance during the main workshop—no waiting, no being overlooked.</p>
                             </div>
                         </div>
                         <div class="benefit-card">
-                            <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <div>
+                            <div class="benefit-icon-wrapper">
+                                <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
                                 <h3 class="benefit-title">GUARANTEED Personal Mentorship</h3>
                                 <p class="benefit-description">Not a chance—a guarantee. Every VIP receives dedicated one-on-one time with either Wallace Hamilton or a senior Society mentor. Your breakthrough is our priority.</p>
                             </div>
                         </div>
                         <div class="benefit-card">
-                            <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-                            <div>
+                            <div class="benefit-icon-wrapper">
+                                <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
                                 <h3 class="benefit-title">Exclusive VIP-Only Session (Dec 7th, time TBD)</h3>
-                                <p class="benefit-description">Join Wallace Hamilton and The Society's senior mentors in an intimate, VIP-only session on Day 2. This exclusive session is not part of the standard workshop—it's a focused strategy deep-dive where every VIP matters.</p>
+                                <p class="benefit-description">Join Wallace Hamilton and The Society's senior mentors in an intimate, VIP-only deep-dive on Day 2. This exclusive session is not part of the standard workshop—it's where transformations accelerate even further.</p>
                             </div>
                         </div>
                         <div class="benefit-card">
-                            <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                            <div>
+                            <div class="benefit-icon-wrapper">
+                                <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
                                 <h3 class="benefit-title">Implementation Accelerator</h3>
                                 <p class="benefit-description">Get your exact next steps, accountability structures, and enhanced clarity for immediate implementation. Turn insights into action with personalized guidance that accelerates your progress.</p>
                             </div>
                         </div>
                         <div class="benefit-card">
-                            <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
-                            </svg>
-                            <div>
+                            <div class="benefit-icon-wrapper">
+                                <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
                                 <h3 class="benefit-title">Surprise Bonus Gift(s)</h3>
                                 <p class="benefit-description">We don't spoil surprises, but VIPs always receive exclusive gifts designed to enhance your transformation journey. Consider it our way of honoring your commitment to excellence.</p>
                             </div>
@@ -653,9 +779,9 @@
 
                 <section class="fade-in-section">
                     <h2 class="section-title">What VIP Adds to Your Experience</h2>
-                    <p style="text-align: center; font-size: 1.125rem; color: var(--gray-300); max-width: 700px; margin: 0 auto 3rem;">You're already registered for the complete 2-day transformation workshop. VIP adds intensive support for those ready to accelerate their breakthrough.</p>
+                    <p class="comparison-intro">You're already registered for the complete 2-day transformation workshop. VIP adds intensive support for those ready to accelerate their breakthrough.</p>
                     <div class="comparison-grid">
-                        <div class="comparison-card highlight" style="max-width: 650px; margin: 0 auto;">
+                        <div class="comparison-card">
                             <h3 class="comparison-title">VIP Acceleration Includes</h3>
                             <ul class="comparison-list">
                                 <li class="included">GUARANTEED 1-on-1 personal mentorship</li>
