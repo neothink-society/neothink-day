@@ -1088,6 +1088,207 @@
                 min-height: 52px;
             }
         }
+
+        /* ===========================
+           PRE-WORK SECTION
+        =========================== */
+        .pre-work-section {
+            padding: var(--space-3xl) 0;
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .pre-work-grid {
+            display: grid;
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .pre-work-card {
+            display: flex;
+            gap: var(--space-lg);
+            align-items: flex-start;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 215, 0, 0.02));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 16px;
+            transition: all var(--duration-base) var(--ease-out);
+        }
+
+        .pre-work-card:hover {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+        }
+
+        .pre-work-number {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            color: var(--black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-2xl);
+            font-weight: 900;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .pre-work-content {
+            flex: 1;
+        }
+
+        .pre-work-content h3 {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            color: var(--white);
+        }
+
+        .pre-work-content p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .pre-work-questions {
+            list-style: none;
+            padding: 0;
+            margin: var(--space-md) 0 0 0;
+        }
+
+        .pre-work-questions li {
+            padding-left: var(--space-lg);
+            margin-bottom: var(--space-sm);
+            position: relative;
+            color: var(--gray-200);
+            font-size: var(--text-sm);
+            line-height: 1.6;
+        }
+
+        .pre-work-questions li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .pre-work-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-lg);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: var(--text-sm);
+            border-radius: 12px;
+            transition: all var(--duration-base) var(--ease-out);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        .pre-work-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .pre-work-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ===========================
+           WORKSHOP DETAILS SECTION
+        =========================== */
+        .workshop-details-section {
+            padding: var(--space-3xl) 0;
+            background: var(--gray-900);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        @media (min-width: 768px) {
+            .details-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .detail-card {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--gold);
+            border-radius: 16px;
+            transition: all var(--duration-base) var(--ease-out);
+        }
+
+        .detail-card:hover {
+            border-left-color: var(--gold-light);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            transform: translateY(-4px);
+        }
+
+        .detail-card h3 {
+            font-size: var(--text-lg);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            color: var(--white);
+        }
+
+        .detail-answer {
+            color: var(--gray-300);
+        }
+
+        .detail-answer p {
+            margin-bottom: var(--space-sm);
+            line-height: 1.7;
+        }
+
+        .detail-answer ul {
+            margin: var(--space-md) 0;
+            padding-left: var(--space-lg);
+        }
+
+        .detail-answer li {
+            margin-bottom: var(--space-xs);
+            line-height: 1.7;
+        }
+
+        .detail-note {
+            margin-top: var(--space-md);
+            padding: var(--space-sm) var(--space-md);
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 3px solid var(--gold);
+            border-radius: 8px;
+            font-style: italic;
+            color: var(--white);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 767px) {
+            .pre-work-card {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+
+            .pre-work-number {
+                width: 50px;
+                height: 50px;
+                font-size: var(--text-xl);
+            }
+        }
     </style>
 </head>
 <body>
@@ -1124,6 +1325,58 @@
                     </p>
 
                     <p class="hero-date" aria-label="Workshop dates">Saturday, December 6 • Sunday, December 7, 2025</p>
+                </div>
+            </section>
+
+            <!-- Pre-Work Section -->
+            <section class="pre-work-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>🎯 Required Pre-Work</h2>
+                        <p>Complete these 3 items before the workshop begins</p>
+                    </div>
+
+                    <div class="pre-work-grid">
+                        <!-- Pre-Work Item 1: Form -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number">1</div>
+                            <div class="pre-work-content">
+                                <h3>Complete the Questionnaire</h3>
+                                <p>Fill out the pre-workshop form so we can tailor the experience to you. Takes 5-10 minutes.</p>
+                                <a href="https://neothink.typeform.com/to/R6zL32wy" target="_blank" rel="noopener" class="pre-work-button" aria-label="Complete pre-workshop questionnaire">
+                                    Access The Form
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work Item 2: Manuscript -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number">2</div>
+                            <div class="pre-work-content">
+                                <h3>Read Pages 1-50 of Your Manuscript</h3>
+                                <p>Read the first 50 pages of <em>The Super Puzzle</em>. This establishes the foundation we'll build upon together. Focus on engagement, not perfection—notice what resonates, what challenges your assumptions, what creates curiosity.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work Item 3: Questions -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number">3</div>
+                            <div class="pre-work-content">
+                                <h3>Reflect on These Questions</h3>
+                                <p>Consider these throughout the coming days. Not to have perfect answers—to open pathways for transformation:</p>
+                                <ul class="pre-work-questions">
+                                    <li>What pattern keeps repeating in your life that you're finally ready to break?</li>
+                                    <li>If you operated from absolute certainty instead of fear, what would you create?</li>
+                                    <li>What single breakthrough would create cascading transformation across your entire life?</li>
+                                    <li>Where are you settling for less when you're capable of extraordinary?</li>
+                                    <li>Who would you become if you operated from your highest capabilities every day?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1204,6 +1457,87 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                         </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workshop Details Section -->
+            <section class="workshop-details-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Workshop Details — What You Need To Know</h2>
+                        <p>Everything at a glance</p>
+                    </div>
+
+                    <div class="details-grid">
+                        <!-- When Is It -->
+                        <div class="detail-card">
+                            <h3>📅 When is it?</h3>
+                            <div class="detail-answer">
+                                <p><strong>2 Full Days:</strong></p>
+                                <ul>
+                                    <li><strong>Saturday, December 6th</strong><br>11:00 AM ET / 8:00 AM PT → Late Evening</li>
+                                    <li><strong>Sunday, December 7th</strong><br>12:00 PM ET / 9:00 AM PT → Evening</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Duration -->
+                        <div class="detail-card">
+                            <h3>⏱️ How long is each day?</h3>
+                            <div class="detail-answer">
+                                <p><strong>Plan to clear out BOTH days completely from your calendar.</strong></p>
+                                <p>Saturday runs from 11am ET (8am PT) until late evening. Sunday starts at 12pm ET (9am PT) and goes until evening. This is full-day immersive transformation—no partial attendance.</p>
+                            </div>
+                        </div>
+
+                        <!-- Where -->
+                        <div class="detail-card">
+                            <h3>📍 Where is it?</h3>
+                            <div class="detail-answer">
+                                <p><strong>Live on Zoom</strong></p>
+                                <p>Virtual workshop accessible from anywhere. Ensure you have a reliable internet connection and a quiet, distraction-free space.</p>
+                            </div>
+                        </div>
+
+                        <!-- Zoom Link -->
+                        <div class="detail-card">
+                            <h3>🔗 When do I get the link to join?</h3>
+                            <div class="detail-answer">
+                                <p><strong>The morning of Saturday, December 6th</strong></p>
+                                <p>Your Zoom link will be texted AND emailed to you, and also updated on this page. Same link works for both days.</p>
+                            </div>
+                        </div>
+
+                        <!-- Preparation -->
+                        <div class="detail-card">
+                            <h3>✅ What do I need to prepare?</h3>
+                            <div class="detail-answer">
+                                <ul>
+                                    <li><strong>Clear your schedule:</strong> Block both days entirely. No meetings, no appointments.</li>
+                                    <li><strong>Plan in advance:</strong> Lunch break is only 30 minutes—no time to go out. Prepare meals ahead.</li>
+                                    <li><strong>Reschedule conflicts:</strong> If you have any appointments, reschedule them now.</li>
+                                    <li><strong>Create your space:</strong> Quiet environment, comfortable seating, water nearby.</li>
+                                    <li><strong>Have ready:</strong> Your manuscript, pen & paper, full presence.</li>
+                                </ul>
+                                <p class="detail-note">Remember: Plan your work, then work your plan for 10/10 A+ 100% excellence.</p>
+                            </div>
+                        </div>
+
+                        <!-- What to Bring -->
+                        <div class="detail-card">
+                            <h3>🎒 What should I have ready?</h3>
+                            <div class="detail-answer">
+                                <ul>
+                                    <li>Your manuscript (<em>The Super Puzzle</em>)</li>
+                                    <li>Pen and paper for notes</li>
+                                    <li>Water bottle</li>
+                                    <li>Comfortable clothing</li>
+                                    <li>Prepared meals/snacks (lunch is 30 min)</li>
+                                    <li>Phone silenced, notifications off</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
