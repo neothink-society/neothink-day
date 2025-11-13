@@ -95,10 +95,10 @@
 
 ---
 
-### 5. 9-Day Preparation Email
-**File**: `preparation-9days.html`
-**Automation Timing**: Send when event is 9 days away (or immediately if registered <9 days before)
-**Subject**: `9 Days: Your Pre-Work Starts Now`
+### 5. 8-Day Preparation Email
+**File**: `preparation-8days.html`
+**Automation Timing**: Send when event is 8 days away (or immediately if registered <8 days before)
+**Subject**: `8 Days: Your Pre-Work Starts Now`
 **Preview**: `Read pages 1-50 of The Secret Manuscript and answer 5 reflection questions. This preparation determines your breakthrough.`
 
 **Purpose**: Ensure pre-work completion, create accountability
@@ -282,7 +282,7 @@ The automation should work as follows:
 2. **Upon VIP Purchase** → Send VIP Confirmation immediately
 3. **20 Days Before Event** → Send 20-Day Welcome Email (EXTENDED)
 4. **14 Days Before Event** → Send 14-Day Methodology Email (EXTENDED)
-5. **9 Days Before Event** → Send 9-Day Prep Email
+5. **8 Days Before Event** → Send 8-Day Prep Email
 6. **7 Days Before Event** → Send 7-Day Accountability Email (EXTENDED)
 7. **4 Days Before Event** → Send 4-Day Calendar Email
 8. **3 Days Before Event** → Send 3-Day VIP Email
@@ -292,10 +292,10 @@ The automation should work as follows:
 
 ### Email Frequency Breakdown
 
-- **Days 23-9**: ~1 email every 5-6 days (building anticipation)
-  - Day 20, Day 14, Day 9
-- **Days 9-3**: ~1 email every 2 days (increasing urgency)
-  - Day 9, Day 7, Day 4, Day 3
+- **Days 23-8**: ~1 email every 5-6 days (building anticipation)
+  - Day 20, Day 14, Day 8
+- **Days 8-3**: ~1 email every 2 days (increasing urgency)
+  - Day 8, Day 7, Day 4, Day 3
 - **Days 3-0**: Daily (final countdown)
   - Day 3, Day 2, Day 1, Day 0
 
@@ -307,7 +307,7 @@ The automation should work as follows:
 - Examples:
   - Register 5 days before → Get Registration Confirmation + 4-Day Email immediately
   - Register 12 days before → Get Registration Confirmation + 14-Day Email immediately
-  - Register 8 days before → Get Registration Confirmation + 9-Day Email immediately
+  - Register 7 days before → Get Registration Confirmation + 8-Day Email immediately
 
 ### VIP Deadline
 
@@ -336,7 +336,7 @@ All emails follow the same design system:
 - **Urgent Red**: #FF0000 (day-of email only)
 
 ### Components
-- Classification headers (e.g., "PREPARATION BEGINS • 9 DAYS OUT")
+- Classification headers (e.g., "PREPARATION BEGINS • 8 DAYS OUT")
 - Gold-bordered content boxes
 - Gradient CTA buttons (gold to orange)
 - Mobile responsive design (320px-600px breakpoints)
@@ -358,7 +358,7 @@ All files in: `/templates/nov2025/`
 2. `vip-confirmation.html` - VIP purchase confirmation
 3. `preparation-20days.html` - 20-day welcome email (EXTENDED)
 4. `preparation-14days.html` - 14-day methodology email (EXTENDED)
-5. `preparation-9days.html` - 9-day pre-work email
+5. `preparation-8days.html` - 8-day pre-work email
 6. `preparation-7days.html` - 7-day accountability email (EXTENDED)
 7. `preparation-4days.html` - 4-day calendar blocking email
 8. `preparation-3days.html` - 3-day VIP upgrade email
@@ -408,7 +408,7 @@ Before sending any email:
 2. **VIP Confirm**: `⭐ VIP Access Confirmed - Day of Enlightenment`
 3. **20-Day**: `You're Part of Something Rare`
 4. **14-Day**: `Why This Workshop Actually Works`
-5. **9-Day**: `9 Days: Your Pre-Work Starts Now`
+5. **8-Day**: `8 Days: Your Pre-Work Starts Now`
 6. **7-Day**: `How's Your Pre-Work Going? (7 Days Out)`
 7. **4-Day**: `4 Days: Block BOTH Full Days Now`
 8. **3-Day VIP**: `⚡ 72 Hours: Last Chance for VIP`
@@ -424,7 +424,8 @@ Before sending any email:
 
 **Notes for Implementation**:
 - ✅ November Zoom link already updated in day-of.html (Meeting ID: 889 3874 4217)
+- ✅ Day 9 changed to Day 8 for November sequence (Nov 13 → Nov 22 = 8 days)
 - Extended sequence now matches December's 10-email countdown structure
 - Verify workshop hub URLs point to neothinkday.com/home (NOT neothinkevent.com)
-- Test automation workflow thoroughly with new Day 20, Day 14, Day 7 triggers
-- Ensure late registration logic accounts for all entry points (20-day, 14-day, 9-day, 7-day)
+- Test automation workflow thoroughly with new Day 20, Day 14, Day 8, Day 7 triggers
+- Ensure late registration logic accounts for all entry points (20-day, 14-day, 8-day, 7-day)

@@ -44,12 +44,12 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Subject**: `Why This Workshop Actually Works`
 - **Preview**: `Most workshops fail because they treat symptoms, not root causes. November 22-23 is different. Here's why transformation happens when most events only create temporary inspiration.`
 
-### Email #5: Day 9 - Pre-Work Assignment
-- **File**: `preparation-9days.html`
-- **Automation**: When event is 9 days away
-- **Send Date**: November 13, 2025
-- **Send Time**: **7:00 AM PT** (or 2:00 PM if sending today)
-- **Subject**: `9 Days: Your Pre-Work Starts Now`
+### Email #5: Day 8 - Pre-Work Assignment
+- **File**: `preparation-8days.html`
+- **Automation**: When event is 8 days away
+- **Send Date**: November 14, 2025
+- **Send Time**: **7:00 AM PT**
+- **Subject**: `8 Days: Your Pre-Work Starts Now`
 - **Preview**: `Read pages 1-50 of The Secret Manuscript and answer 5 reflection questions. This preparation determines your breakthrough.`
 
 ### Email #6: Day 7 - Accountability Check-In
@@ -214,13 +214,13 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 If someone registers late, catch them up to current email in sequence:
 - Register 18 days before → Send Day 20 email immediately
 - Register 12 days before → Send Day 14 email immediately
-- Register 8 days before → Send Day 9 email immediately
+- Register 7 days before → Send Day 8 email immediately
 - Register 5 days before → Send Day 4 email immediately
 - etc.
 
 ### Email Frequency (Automated Pacing)
-- **Days 20-9**: Every 5-6 days (building anticipation)
-- **Days 9-3**: Every 2 days (increasing urgency)
+- **Days 20-8**: Every 5-6 days (building anticipation)
+- **Days 8-3**: Every 2 days (increasing urgency)
 - **Days 3-0**: Daily (final countdown)
 
 ### Testing Checklist
