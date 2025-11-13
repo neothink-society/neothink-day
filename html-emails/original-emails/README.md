@@ -235,7 +235,297 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
-### 5. doe-workshop-aftermath.html
+### 5. doe-preparation-3days.html
+**Day of Enlightenment Workshop - 3-Day Preparation with VIP Upgrade**
+
+**Purpose**: Third preparation email sent 3 days before October 18th (around October 15th) with VIP upgrade emphasis and final pre-work reminder
+
+**Audience**: Level 2 members who registered for workshop
+
+**Key Features**:
+- "FINAL PREPARATION • 3 DAYS OUT" header
+- **VIP upgrade section** with 6 benefits detailed
+- Pre-work questionnaire reminder with gold CTA
+- Workshop date reminder (Saturday, October 18)
+- Multiple US time zones (PT, MT, CT, ET)
+- Gold gradient CTA buttons throughout
+- Wallace Hamilton quote about VIP maximizing transformation
+- 3-day countdown emphasis
+
+**VIP Benefits Highlighted**:
+1. VIP Zoom Background for priority recognition
+2. Priority Q&A During Workshop
+3. GUARANTEED 1-on-1 Mentorship
+4. Private Elite Session (Oct 19)
+5. Implementation Accelerator
+6. Surprise Bonus Gift(s)
+
+**Action Items**:
+1. Upgrade to VIP (last chance messaging)
+2. Complete pre-workshop questionnaire
+3. Block calendar completely for Saturday
+
+**CTAs and Links**:
+- Primary (2x): "View Complete Workshop Details" (societysecrets.com/day-of-enlightenment-workshop)
+- VIP: "Upgrade to VIP Now" (societysecrets.com/get-vip-access)
+- Questionnaire: "Complete Questionnaire Now" (neothink.typeform.com/to/R6zL32wy)
+
+**Messaging Themes**:
+- VIP maximizes transformation
+- Final opportunity for upgrade
+- Complete preparation now
+- "Saturday, you become someone new"
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter (OLD - needs update)
+- Gold gradient CTAs: Linear gradient #FFD700 to #FFC700
+- VIP section: Gold gradient background with 2px border
+- Mobile breakpoint: 600px
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- Strong VIP upgrade focus with detailed benefits
+- References "this Saturday" (more immediate than earlier emails)
+- Combines urgency with preparation checklist
+- Gold used extensively for CTAs and accents
+- Wallace Hamilton attributed quote
+
+**Branding Notes**:
+- ✅ Uses gold (#FFD700) extensively - EXCELLENT!
+- ✅ Correct support email: support@neothink.com
+- ❌ Still uses "The Society" instead of "Neothink Society"
+- ❌ Still uses old fonts (Crimson Text + Inter)
+
+**Contact**: support@neothink.com ✅ (CORRECT)
+
+---
+
+### 6. doe-preparation-2days.html
+**Day of Enlightenment Workshop - 48 Hours Final Logistics**
+
+**Purpose**: Fourth preparation email sent 2 days/48 hours before October 18th (around October 16th) with comprehensive final logistics and requirements
+
+**Audience**: Level 2 members who registered for workshop
+
+**Key Features**:
+- "FINAL LOGISTICS • 48 HOURS OUT" header
+- **Structured in 2 sections**: A) Take Action Now, B) Saturday Logistics & Requirements
+- Section headers with gold underlines and emoji labels
+- VIP last chance (closes Saturday 9am PT - 1 hour after start)
+- Complete schedule breakdown with all 4 US time zones
+- "What to Have Ready Saturday Morning" detailed list
+- "How to Prepare Tonight & Friday" checklist
+- Zoom access details (arrives Friday Oct 17)
+- "Workshop-Ready Checklist" with before/morning sections
+- 2-day countdown emphasis
+
+**Section A - Take Action Now**:
+- VIP upgrade last chance (closes 9am PT Saturday)
+- Pre-work reminder (5-minute questionnaire)
+
+**Section B - Saturday Logistics**:
+1. Schedule & Timing (8:00 AM SHARP start, plan until 6:00 PM)
+2. What to Have Ready (8 items: pen, water, snacks, manuscript, internet, camera, space, zero distractions)
+3. How to Prepare Tonight & Friday (5 items)
+4. Zoom Access Details (arrives Friday morning)
+5. Quick Reference Checklist (8 before items + 5 morning items)
+
+**CTAs and Links**:
+- Primary: "View Complete Workshop Details" (societysecrets.com/day-of-enlightenment-workshop)
+- VIP: "Upgrade to VIP Now" (societysecrets.com/get-vip-access)
+- Pre-work: "Complete Pre-Work Now" (neothink.typeform.com/to/R6zL32wy)
+
+**Messaging Themes**:
+- Final logistics and requirements
+- Everything needed to show up prepared
+- "Saturday at 8:00 AM, everything changes"
+- VIP closes 1 hour after we begin
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter (OLD - needs update)
+- Section headers: 2px gold bottom border with emoji + uppercase text
+- Gold gradient CTAs throughout
+- Comprehensive checklists with checkbox symbols
+- Mobile responsive classes
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- Most comprehensive logistics email
+- Structured with labeled sections (A, B with numbered subsections)
+- Detailed "What to Have Ready" lists
+- Preparation checklist split into "Before Saturday" and "Saturday Morning"
+- References "Super Puzzle Manuscript"
+- Zoom credentials timing specified (Friday morning)
+- Emphasizes 7:55 AM login time
+
+**Branding Notes**:
+- ✅ Uses gold (#FFD700) extensively - EXCELLENT!
+- ✅ Correct support email: support@neothink.com
+- ❌ Still uses "The Society" instead of "Neothink Society"
+- ❌ Still uses old fonts (Crimson Text + Inter)
+
+**Contact**: support@neothink.com ✅ (CORRECT)
+
+---
+
+### 7. doe-preparation-1day.html
+**Day of Enlightenment Workshop - 24 Hours Complete Guide**
+
+**Purpose**: Fifth preparation email sent 1 day/24 hours before October 18th (evening of October 17th) as complete workshop guide
+
+**Audience**: Level 2 members who registered for workshop
+
+**Key Features**:
+- "YOUR COMPLETE GUIDE • 24 HOURS OUT" header
+- Large "24" countdown visual in gold gradient box
+- **Structured in 6 sections** with numbered headers
+- Zoom access information (posted tomorrow morning + reminder emails)
+- VIP upgrade last chance + VIP members congratulations section
+- Complete schedule with "Doors Open 7:30 AM" callout
+- Tonight's preparation 4-step guide
+- Comprehensive final checklist
+- "This is it" urgency messaging
+
+**Six Sections**:
+1. **Your Zoom Access** - Link available tomorrow morning on workshop page + reminder emails
+2. **Final Actions Before Tomorrow** - VIP upgrade, VIP congratulations, pre-work reminder
+3. **Tomorrow's Complete Schedule** - Doors open 7:30 AM, starts 8:00 AM sharp, plan until 6:00 PM
+4. **What to Have Ready Tomorrow** - Physical items, technical setup, environment
+5. **What to Do Tonight** - 4-step preparation guide
+6. **Your Complete Checklist** - Tonight tasks + tomorrow morning ready
+
+**Four-Step Tonight Guide**:
+1. Bookmark the Workshop Page
+2. Prepare Your Workspace
+3. Get 7-8+ Hours of Sleep (non-negotiable)
+4. Set Your Intention (5-minute reflection)
+
+**CTAs and Links**:
+- Primary (3x): "View Complete Workshop Hub" / "Bookmark Workshop Page" (societysecrets.com/day-of-enlightenment-workshop)
+- VIP: "Secure VIP Access Now" (societysecrets.com/get-vip-access)
+- Pre-work: "Complete Pre-Work Now" (neothink.typeform.com/to/R6zL32wy)
+
+**Messaging Themes**:
+- Complete workshop guide
+- "This is it" - final preparation
+- "Tomorrow morning at 8:00 AM sharp, everything begins"
+- Tonight's preparation determines tomorrow's results
+- "Twenty-four hours... Rest well. Wake ready."
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter (OLD - needs update)
+- Large countdown number: 64px gold text in gradient box
+- Section headers: 2px gold bottom border
+- Multiple gold gradient CTAs
+- "Doors Open 7:30 AM" callout box with emoji
+- Mobile responsive with reduced font sizes
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- Most comprehensive single email (6 major sections)
+- Countdown visual with large "24" number
+- VIP members congratulations section (acknowledges those who upgraded)
+- Four-step tonight preparation guide with detailed explanations
+- "Doors open" timing emphasized in callout box
+- References checking both workshop page AND email for Zoom link
+- Emphasizes arriving early (7:30 AM) vs starting time (8:00 AM)
+
+**Branding Notes**:
+- ✅ Uses gold (#FFD700) extensively - EXCELLENT!
+- ✅ Correct support email: support@neothink.com
+- ❌ Still uses "The Society" instead of "Neothink Society"
+- ❌ Still uses old fonts (Crimson Text + Inter)
+
+**Contact**: support@neothink.com ✅ (CORRECT)
+
+---
+
+### 8. doe-day-of.html
+**Day of Enlightenment Workshop - Day Of Zoom Link**
+
+**Purpose**: Day-of email sent morning of October 18th (approximately 90 minutes before doors open) with Zoom link access
+
+**Audience**: Level 2 members registered for workshop
+
+**Key Features**:
+- "🔴 TODAY • DOORS OPEN IN 90 MINUTES" urgent header in gold
+- "Today's the Day" headline
+- Large time display with "Doors Open 7:30 AM" callout
+- **Primary focus: Get Zoom Link** - large gold CTA button with emoji
+- Final checklist (6 items)
+- VIP last call (closes 9:00 AM PT)
+- Motivational close: "This is your moment"
+- Minimal content, maximum urgency
+
+**Primary Call to Action**:
+- Massive gold gradient button: "🎥 GET ZOOM LINK"
+- Emphasis on workshop page containing Zoom link + all resources
+- Button is largest and most prominent of entire email series
+
+**Final Check Before 7:30 AM**:
+1. Camera ON & working
+2. Microphone tested
+3. Notifications OFF
+4. Pen & paper ready
+5. Water & snacks nearby
+6. Private, quiet space secured
+
+**Time Display**:
+- Saturday, October 18, 2025
+- Doors Open: 7:30 AM (with all 4 time zones in callout box)
+- Workshop Starts: 8:00 AM SHARP (large serif font, 44px)
+- All 4 US time zones listed
+
+**CTAs and Links**:
+- Primary: "🎥 GET ZOOM LINK" (societysecrets.com/day-of-enlightenment-workshop) - HUGE button
+- VIP: "Upgrade to VIP Now" (societysecrets.com/get-vip-access)
+
+**Messaging Themes**:
+- TODAY urgency
+- "This is your moment"
+- 90 minutes until transformation
+- Simple, direct, action-oriented
+- "Go to the workshop page. Get your Zoom link. Your transformation begins in 90 minutes."
+
+**Technical Specs**:
+- Width: 600px (responsive to 100% on mobile)
+- Background: Dark theme (#1a1a1a)
+- Fonts: Crimson Text + Inter + 800 weight for button (OLD - needs update)
+- Urgent header: Gold color (#FFD700) with red circle emoji
+- Primary button: 28px padding, 20px font, 800 weight, box-shadow glow
+- Time display: 44px serif font in gold gradient box
+- Minimal footer (no unsubscribe in main links)
+- Mobile responsive with reduced button/font sizes
+- Email variables: `{{unsubscribe}}`
+
+**Unique Elements**:
+- Only email with urgent emoji header (🔴)
+- Simplest content of preparation series (focus on action)
+- Largest CTA button of entire series
+- "90 minutes" specific timing in header
+- No detailed instructions (assumes they read previous emails)
+- Motivational/inspirational tone: "This is your moment"
+- VIP closes "at 9:00 AM PT" (1 hour after start) emphasized
+- References "transformation begins in 90 minutes"
+
+**Branding Notes**:
+- ✅ Uses gold (#FFD700) extensively - EXCELLENT!
+- ✅ Correct support email: support@neothink.com
+- ❌ Still uses "The Society" instead of "Neothink Society"
+- ❌ Still uses old fonts (Crimson Text + Inter)
+- ✅ Most urgent/action-oriented email of series
+
+**Contact**: support@neothink.com ✅ (CORRECT)
+
+---
+
+### 9. doe-workshop-aftermath.html
 **Day of Enlightenment Workshop - Post-Event Follow-Up & Resources**
 
 **Purpose**: Post-workshop follow-up email sent AFTER the October 18th event with recap, resources, and Level 3 upgrade offer
@@ -313,7 +603,7 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
-### 6. dec2025-registration-confirmation.html
+### 10. dec2025-registration-confirmation.html
 **Day of Enlightenment Workshop - Registration Confirmation (December 2025)**
 
 **Purpose**: Post-registration confirmation email for December 6-7, 2025 workshop with logistics and VIP upgrade offer
@@ -414,7 +704,7 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
-### 7. nov2025-vip-confirmation.html
+### 11. nov2025-vip-confirmation.html
 **VIP Access Confirmation - November 22-23, 2025**
 
 **Purpose**: VIP upgrade confirmation email sent after purchasing $297 VIP access for November workshop
@@ -508,7 +798,7 @@ This directory contains the source email templates from existing Neothink Societ
 
 ---
 
-### 8. dec2025-vip-confirmation.html
+### 12. dec2025-vip-confirmation.html
 **VIP Access Confirmation - December 6-7, 2025**
 
 **Purpose**: VIP upgrade confirmation email sent after purchasing $297 VIP access for December workshop
