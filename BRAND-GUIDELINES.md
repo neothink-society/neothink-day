@@ -257,6 +257,75 @@ Tripwire Booklet → Society Membership → Orientation Masterclass → Level 2 
 
 ---
 
+## VIP Messaging Standards (CRITICAL)
+
+### Core Principle: Never Throw Shade on Standard
+
+**Rule:** Standard attendees must NEVER feel they're getting inferior treatment or "less than" VIP. VIP should be positioned as ACCELERATION, not COMPLETION.
+
+### What This Means:
+
+❌ **NEVER DO:**
+- Show X marks for VIP features in Standard column
+- Use negative language: "without VIP", "standard doesn't include", "missing"
+- Create comparison grids that list what Standard "lacks"
+- Frame VIP as fixing problems with Standard
+- Make Standard feel incomplete or insufficient
+
+✅ **ALWAYS DO:**
+- Frame Standard as complete: "You already have everything you need for transformation"
+- Position VIP as optional enhancement: "For those ready to move with maximum momentum"
+- Use acceleration language: "VIP accelerates your breakthrough", "maximum momentum"
+- Emphasize choice: "Your transformation, your pace"
+- Present VIP benefits as additions, not necessities
+
+### Messaging Framework:
+
+**Standard Experience:**
+- "Complete 2-day transformation workshop"
+- "Everything you need for breakthrough"
+- "Full transformation experience"
+
+**VIP Positioning:**
+- "Want to accelerate your breakthrough?"
+- "VIP Acceleration Package"
+- "Everything You're Registered For PLUS Intensive Support"
+- "Optional Enhancement" (not "Recommended" or "Better")
+
+**Key Phrases:**
+- "Your transformation, your pace"
+- "Both paths lead to breakthrough"
+- "VIP simply accelerates your momentum"
+- "Choose what feels right for you"
+- "For those ready to move faster" (not "get more")
+
+### Brand Alignment:
+
+This standard aligns with core brand values:
+- **"We make them feel very special"** - Standard attendees ARE special
+- **"Pro the Individual"** - No hierarchy based on payment
+- **"Anyone can achieve extraordinary"** - Standard gets full transformation
+- **"Elite, Powerful, Mysterious"** - Maintain VIP mystique WITHOUT standard shade
+
+### Comparison Presentations:
+
+**Single-Column Approach (Preferred):**
+- Show ONLY VIP benefits
+- No Standard column at all
+- Intro: "You're already registered for the complete workshop. VIP adds..."
+
+**If Comparison Needed:**
+- Standard column: Show ONLY what's included (checkmarks)
+- NEVER show X marks for VIP-only items
+- VIP column: "Everything in Standard PLUS..."
+
+### Updated Quote from Wallace Hamilton:
+
+❌ Old: "VIP isn't about status—it's about maximizing your transformation."
+✅ New: "Your transformation, your pace. VIP accelerates your momentum with direct mentorship and intensive support for those ready to move faster."
+
+---
+
 ## Internal Resources & IP (CONFIDENTIAL)
 
 ### Inside Mark's Mind

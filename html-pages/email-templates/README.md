@@ -22,12 +22,23 @@ Following our established HTML page organization:
 
 ## Current Templates
 
-### Original Templates
+### Original Templates (8 files - MIXED)
 
-1. **doe-announcement.html** - Day of Enlightenment workshop announcement
-   - Audience: Level 2 members
-   - Purpose: Workshop date announcement with alternative date option
-   - Date reference: October 18th event
+⚠️ **Note:** This folder currently contains a mix of:
+- **5 emails from October 2024 event** (true originals for reference)
+- **3 emails already created for Nov/Dec 2025** (should be organized into separate folders)
+
+**October 2024 Event Emails (Reference):**
+1. **doe-announcement.html** - Day of Enlightenment workshop announcement (Oct 18, 2024)
+2. **doe-secrets-revealed.html** - Detailed secrets preview (Oct 18, 2024)
+3. **doe-preparation-11days.html** - Pre-workshop homework (Oct 7, 2024)
+4. **doe-preparation-4days.html** - Pre-workshop questionnaire (Oct 14, 2024)
+5. **doe-workshop-aftermath.html** - Post-workshop follow-up
+
+**Nov/Dec 2025 Event Emails (Already Created):**
+6. **dec2025-registration-confirmation.html** - Registration confirmation for December 6-7, 2025
+7. **nov2025-vip-confirmation.html** - VIP upgrade confirmation for November 22-23, 2025
+8. **dec2025-vip-confirmation.html** - VIP upgrade confirmation for December 6-7, 2025
 
 ## Branding Notes
 
@@ -68,11 +79,29 @@ Unlike our web landing pages, email templates must follow email client limitatio
 
 ## Next Steps
 
-1. Collect all original email templates
-2. Document each template's purpose and audience
-3. Create updated versions following DESIGN-SYSTEM.md
-4. Create email component library adapted from COMPONENT-LIBRARY.md
-5. Test across major email clients (Gmail, Outlook, Apple Mail, etc.)
+### Phase 1: Collection & Organization (IN PROGRESS)
+1. ✅ Document existing 8 email templates
+2. ⏳ **Collect remaining original email templates from campaigns**
+3. ⏳ Organize into proper folder structure:
+   - Keep Oct 2024 emails in `original-templates/`
+   - Move Nov 2025 emails to new `nov-2025-emails/` folder
+   - Move Dec 2025 emails to new `dec-2025-emails/` folder
+
+### Phase 2: Email Campaign Creation (WAITING)
+4. ⏳ Identify complete email sequence needed for Nov/Dec events:
+   - Pre-event announcement
+   - Registration confirmation (Dec ✅, Nov ❌)
+   - Preparation emails (11 days, 4 days)
+   - VIP confirmation (Nov ✅, Dec ✅)
+   - Post-event follow-up
+5. ⏳ Create missing emails for Nov 2025 campaign (based on originals)
+6. ⏳ Create missing emails for Dec 2025 campaign (based on originals)
+7. ⏳ Update all emails to follow DESIGN-SYSTEM.md (fonts, colors, branding)
+
+### Phase 3: Testing & Deployment
+8. ⏳ Create email component library adapted from COMPONENT-LIBRARY.md
+9. ⏳ Test across major email clients (Gmail, Outlook, Apple Mail, etc.)
+10. ⏳ Deploy email sequences in campaign automation
 
 ## Related Documentation
 
