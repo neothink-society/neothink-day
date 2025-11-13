@@ -5,24 +5,24 @@ This directory contains email templates for Neothink Society campaigns, organize
 ## Directory Structure
 
 ```
-email-templates/
+html-emails/
 ├── README.md                    # This file
-├── original-templates/          # Source emails from current campaigns
+├── BRANDING-ISSUES.md          # Email branding inconsistencies
+├── original-emails/            # Source emails from existing campaigns
 │   └── README.md
-└── updated-templates/           # Future: Brand-aligned versions
-    └── README.md
+└── [future: nov-2025-emails/, dec-2025-emails/]
 ```
 
 ## Organization Principles
 
 Following our established HTML page organization:
 
-1. **Original Templates** - Source emails from existing campaigns, preserved for reference
-2. **Updated Templates** - Future directory for brand-standardized versions following DESIGN-SYSTEM.md
+1. **Original Emails** - Source emails from existing campaigns, preserved for reference
+2. **Event-Specific Emails** - Future directories for brand-standardized Nov/Dec campaigns
 
 ## Current Templates
 
-### Original Templates (8 files - MIXED)
+### Original Emails (8 files - MIXED)
 
 ⚠️ **Note:** This folder currently contains a mix of:
 - **5 emails from October 2024 event** (true originals for reference)
@@ -81,35 +81,38 @@ Unlike our web landing pages, email templates must follow email client limitatio
 
 ### Phase 1: Collection & Organization (IN PROGRESS)
 1. ✅ Document existing 8 email templates
-2. ⏳ **Collect remaining original email templates from campaigns**
-3. ⏳ Organize into proper folder structure:
-   - Keep Oct 2024 emails in `original-templates/`
+2. ✅ Reorganize to `/html-emails/` folder (separate from pages)
+3. ⏳ **Collect remaining original email templates from campaigns**
+4. ⏳ Organize into proper folder structure:
+   - Keep Oct 2024 emails in `original-emails/`
    - Move Nov 2025 emails to new `nov-2025-emails/` folder
    - Move Dec 2025 emails to new `dec-2025-emails/` folder
 
 ### Phase 2: Email Campaign Creation (WAITING)
-4. ⏳ Identify complete email sequence needed for Nov/Dec events:
+5. ⏳ Identify complete email sequence needed for Nov/Dec events:
    - Pre-event announcement
    - Registration confirmation (Dec ✅, Nov ❌)
    - Preparation emails (11 days, 4 days)
    - VIP confirmation (Nov ✅, Dec ✅)
    - Post-event follow-up
-5. ⏳ Create missing emails for Nov 2025 campaign (based on originals)
-6. ⏳ Create missing emails for Dec 2025 campaign (based on originals)
-7. ⏳ Update all emails to follow DESIGN-SYSTEM.md (fonts, colors, branding)
+6. ⏳ Create missing emails for Nov 2025 campaign (based on originals)
+7. ⏳ Create missing emails for Dec 2025 campaign (based on originals)
+8. ⏳ Update all emails to follow DESIGN-SYSTEM.md (fonts, colors, branding)
 
 ### Phase 3: Testing & Deployment
-8. ⏳ Create email component library adapted from COMPONENT-LIBRARY.md
-9. ⏳ Test across major email clients (Gmail, Outlook, Apple Mail, etc.)
-10. ⏳ Deploy email sequences in campaign automation
+9. ⏳ Create email component library adapted from COMPONENT-LIBRARY.md
+10. ⏳ Test across major email clients (Gmail, Outlook, Apple Mail, etc.)
+11. ⏳ Deploy email sequences in campaign automation
 
 ## Related Documentation
 
-- `/BRAND-GUIDELINES.md` - Brand voice, messaging, customer journey
+- `/BRAND-GUIDELINES.md` - Brand voice, messaging, VIP standards
 - `/DESIGN-SYSTEM.md` - Typography, colors, spacing standards
 - `/COMPONENT-LIBRARY.md` - UI components (adapt for email)
 - `/html-pages/original-pages/` - Web landing page originals
-- `/html-pages/nov-2025-workshop/` - Web landing page current standards
+- `/html-pages/nov-2025-workshop/` - Nov 2025 web pages
+- `/html-pages/dec-2025-workshop/` - Dec 2025 web pages
+- `/html-emails/BRANDING-ISSUES.md` - Email-specific branding issues
 
 ## Support
 

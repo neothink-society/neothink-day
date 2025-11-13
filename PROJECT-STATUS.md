@@ -28,31 +28,33 @@ neothink-day/
 │   ├── NOV-2025-EVENT-PLAN.md      # November event planning & requirements
 │   └── RESEARCH-FINDINGS.md        # Analysis of 5 key original pages
 │
-└── 📁 html-pages/
+├── 📁 html-pages/
+│   │
+│   ├── 📄 README.md                # Main navigation guide (UPDATED ✅)
+│   ├── 📄 SEO-META-TAGS.md         # SEO metadata for all workshop pages
+│   │
+│   ├── 📦 original-pages/          # 13 archived reference pages
+│   │   ├── README.md
+│   │   └── [13 .html files from previous events]
+│   │
+│   ├── 📦 nov-2025-workshop/       # 8 pages for November event
+│   │   ├── README.md
+│   │   ├── VIP-UPGRADE-GHL-SETUP-GUIDE.md
+│   │   └── [8 .html files for neothinkday.com]
+│   │
+│   └── 📦 dec-2025-workshop/       # 6 pages for December event
+│       ├── README.md
+│       ├── VIP-UPGRADE-GHL-SETUP-GUIDE.md
+│       └── [6 .html files for neothinkevent.com]
+│
+└── 📁 html-emails/
     │
-    ├── 📄 README.md                # Main navigation guide (UPDATED ✅)
-    ├── 📄 SEO-META-TAGS.md         # SEO metadata for all workshop pages
+    ├── 📄 README.md                # Email campaign overview (UPDATED ✅)
+    ├── 📄 BRANDING-ISSUES.md       # Email branding inconsistencies
     │
-    ├── 📦 original-pages/          # 13 archived reference pages
-    │   ├── README.md
-    │   └── [13 .html files from previous events]
-    │
-    ├── 📦 nov-2025-workshop/       # 8 pages for November event
-    │   ├── README.md
-    │   ├── VIP-UPGRADE-GHL-SETUP-GUIDE.md
-    │   └── [8 .html files for neothinkday.com]
-    │
-    ├── 📦 dec-2025-workshop/       # 6 pages for December event
-    │   ├── README.md
-    │   ├── VIP-UPGRADE-GHL-SETUP-GUIDE.md
-    │   └── [6 .html files for neothinkevent.com]
-    │
-    └── 📦 email-templates/
-        ├── README.md               # Email campaign overview (UPDATED ✅)
-        ├── BRANDING-ISSUES.md      # Email branding inconsistencies
-        └── original-templates/
-            ├── README.md
-            └── [8 .html email files - MIXED Oct 2024 + Nov/Dec 2025]
+    └── 📦 original-emails/         # 8 emails (5 from Oct 2024, 3 for Nov/Dec 2025)
+        ├── README.md
+        └── [8 .html email files - MIXED originals + event-specific]
 ```
 
 ---
@@ -77,17 +79,18 @@ neothink-day/
 - **Next Steps:** Deploy to neothinkevent.com with GHL form IDs and Zoom links
 
 #### Documentation
-- **Status:** All core documentation complete
+- **Status:** All core documentation complete and restructured
 - **Files:** 6 root-level guides + READMEs in all subdirectories
 - **Updated:** html-pages/README.md now reflects all 3 workshop folders ✅
-- **Updated:** email-templates/README.md now documents mixed status ✅
+- **Updated:** html-emails/README.md now documents mixed status ✅
+- **Restructured:** Emails moved to separate /html-emails/ folder ✅
 
 ---
 
 ### ⏳ **IN PROGRESS - Needs Work**
 
 #### Email Templates Organization
-- **Current:** 8 email files in `original-templates/` folder
+- **Current:** 8 email files in `html-emails/original-emails/` folder
   - 5 from October 2024 event (reference)
   - 3 from Nov/Dec 2025 events (already created)
 - **Issue:** Mixed original + new emails in same folder

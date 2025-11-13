@@ -645,7 +645,7 @@ Templates use descriptive, hyphenated lowercase names:
 
 ## Related Files
 
-- Parent directory: `/html-pages/email-templates/README.md`
+- Parent directory: `/html-emails/README.md`
 - Brand guidelines: `/BRAND-GUIDELINES.md`
 - Design system: `/DESIGN-SYSTEM.md`
 - Web page originals: `/html-pages/original-pages/`

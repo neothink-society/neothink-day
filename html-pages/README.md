@@ -1,6 +1,8 @@
 # Neothink HTML Pages
 
-This directory contains all HTML pages for Neothink Society workshops and events, organized into **4 main folders**: original pages + email templates + two active workshop campaigns.
+This directory contains all HTML pages for Neothink Society workshops and events, organized into **3 main folders**: original pages + two active workshop campaigns.
+
+**Note:** Email templates are in separate `/html-emails/` folder at repository root.
 
 ## Folder Structure
 
@@ -34,21 +36,15 @@ html-pages/
 │   ├── README.md
 │   └── VIP-UPGRADE-GHL-SETUP-GUIDE.md
 │
-├── dec-2025-workshop/       # 6 new pages for Dec 6-7, 2025 event (neothinkevent.com)
-│   ├── register.html
-│   ├── thanks-vip-upsell.html
-│   ├── welcome-home.html
-│   ├── vip-upgrade-top.html
-│   ├── vip-upgrade-footer.html
-│   ├── vip-unlocked.html
-│   ├── README.md
-│   └── VIP-UPGRADE-GHL-SETUP-GUIDE.md
-│
-└── email-templates/         # Email campaigns (see email-templates/README.md)
-    ├── original-templates/  # 8 emails (5 from Oct 2024, 3 for Nov/Dec 2025)
-    │   ├── BRANDING-ISSUES.md
-    │   └── README.md
-    └── [future: nov-2025-emails/, dec-2025-emails/]
+└── dec-2025-workshop/       # 6 new pages for Dec 6-7, 2025 event (neothinkevent.com)
+    ├── register.html
+    ├── thanks-vip-upsell.html
+    ├── welcome-home.html
+    ├── vip-upgrade-top.html
+    ├── vip-upgrade-footer.html
+    ├── vip-unlocked.html
+    ├── README.md
+    └── VIP-UPGRADE-GHL-SETUP-GUIDE.md
 ```
 
 ---
