@@ -175,5 +175,9 @@ Track:
 
 ---
 
-**Version**: 1.0
+---
+
+**UPDATED**: This file is now **DEPRECATED**. Use the main **SEND-SCHEDULE-QUICK-REFERENCE.md** in the templates root folder instead. That file has all 11 emails with send times in PT.
+
+**Version**: 1.0 (Deprecated - Use SEND-SCHEDULE-QUICK-REFERENCE.md instead)
 **Last Updated**: November 13, 2025
