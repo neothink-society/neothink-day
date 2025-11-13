@@ -396,68 +396,102 @@
         }
 
         /* ===========================
-           COMPARISON SECTION
+           VIP POSITIONING SECTION
         =========================== */
-        .comparison-intro {
-            text-align: center;
-            font-size: var(--text-lg);
-            color: var(--gray-300);
-            max-width: 700px;
-            margin: 0 auto var(--space-2xl);
-            line-height: 1.6;
-        }
-
-        .comparison-grid {
+        .vip-positioning {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr auto 1fr;
             gap: var(--space-lg);
-            margin-top: var(--space-lg);
+            align-items: center;
+            margin-bottom: var(--space-2xl);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .comparison-card {
-            padding: var(--space-xl) var(--space-lg) var(--space-lg);
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 215, 0, 0.03) 100%);
-            border: 2px solid var(--gold);
-            border-radius: 20px;
-            position: relative;
-            max-width: 650px;
-            margin: 0 auto;
-            box-shadow: 0 0 60px rgba(255, 215, 0, 0.2);
-        }
-
-        .comparison-title {
-            font-size: var(--text-2xl);
-            font-weight: 700;
-            margin-bottom: var(--space-lg);
+        .positioning-card {
+            padding: var(--space-xl) var(--space-lg);
+            border-radius: 16px;
             text-align: center;
-            color: var(--white);
+            transition: all 0.3s ease;
         }
 
-        .comparison-list {
-            list-style: none;
-            padding: 0;
+        .contrast-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .comparison-list li {
-            padding-left: 2rem;
-            position: relative;
-            margin-bottom: 0.875rem;
-            font-size: var(--text-base);
-            color: var(--gray-200);
-            line-height: 1.5;
+        .vip-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.12) 0%, rgba(255, 215, 0, 0.06) 100%);
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.2);
         }
 
-        .comparison-list li::before {
-            position: absolute;
-            left: 0;
+        .vip-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 60px rgba(255, 215, 0, 0.3);
+        }
+
+        .positioning-label {
+            font-size: var(--text-sm);
             font-weight: 700;
-            font-size: 1.25rem;
-            top: -2px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+            color: var(--gray-400);
         }
 
-        .comparison-list li.included::before {
-            content: '✓';
+        .gold-label {
             color: var(--gold);
+        }
+
+        .positioning-text {
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--gray-200);
+        }
+
+        .vip-card .positioning-text {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .positioning-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .positioning-divider svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .vip-callout {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.04) 0%, rgba(255, 215, 0, 0.01) 100%);
+            border-radius: 12px;
+            border-left: 3px solid var(--gold);
+            border-right: 3px solid var(--gold);
+        }
+
+        .callout-text {
+            font-size: var(--text-xl);
+            font-weight: 600;
+            line-height: 1.5;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .callout-subtext {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
         }
 
         /* ===========================
@@ -613,12 +647,6 @@
         /* ===========================
            RESPONSIVE BREAKPOINTS
         =========================== */
-        @media (min-width: 640px) {
-            .comparison-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -644,6 +672,29 @@
                 width: 400px;
                 height: 400px;
             }
+
+            /* VIP Positioning - Stack on tablet */
+            .vip-positioning {
+                grid-template-columns: 1fr;
+                gap: var(--space-md);
+            }
+
+            .positioning-divider {
+                transform: rotate(90deg);
+            }
+
+            .positioning-divider svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .vip-callout {
+                padding: var(--space-lg);
+            }
+
+            .callout-text {
+                font-size: var(--text-lg);
+            }
         }
 
         @media (max-width: 480px) {
@@ -668,6 +719,27 @@
             .hero-wrapper::before {
                 width: 300px;
                 height: 300px;
+            }
+
+            /* VIP Positioning - Mobile optimization */
+            .positioning-card {
+                padding: var(--space-lg) var(--space-md);
+            }
+
+            .positioning-text {
+                font-size: var(--text-sm);
+            }
+
+            .vip-callout {
+                padding: var(--space-md);
+            }
+
+            .callout-text {
+                font-size: var(--text-base);
+            }
+
+            .callout-subtext {
+                font-size: var(--text-sm);
             }
         }
     </style>
@@ -778,20 +850,29 @@
                 <div class="divider fade-in-section"></div>
 
                 <section class="fade-in-section">
-                    <h2 class="section-title">What VIP Adds to Your Experience</h2>
-                    <p class="comparison-intro">You're already registered for the complete 2-day transformation workshop. VIP adds intensive support for those ready to accelerate their breakthrough.</p>
-                    <div class="comparison-grid">
-                        <div class="comparison-card">
-                            <h3 class="comparison-title">VIP Acceleration Includes</h3>
-                            <ul class="comparison-list">
-                                <li class="included">GUARANTEED 1-on-1 personal mentorship</li>
-                                <li class="included">Private mentor session (Nov 23)</li>
-                                <li class="included">Priority Q&A & assistance (Nov 22)</li>
-                                <li class="included">VIP Zoom background & recognition</li>
-                                <li class="included">Personalized breakthrough strategy</li>
-                                <li class="included">Surprise bonus gift(s)</li>
-                            </ul>
+                    <h2 class="section-title">Who VIP Is For</h2>
+
+                    <div class="vip-positioning">
+                        <div class="positioning-card contrast-card">
+                            <div class="positioning-label">Most Attendees</div>
+                            <p class="positioning-text">Absorb powerful insights. Leave inspired. Implement when life allows.</p>
                         </div>
+
+                        <div class="positioning-divider">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+
+                        <div class="positioning-card vip-card">
+                            <div class="positioning-label gold-label">VIP Members</div>
+                            <p class="positioning-text">Command attention. Lock in your strategy. Leave with your roadmap activated and mentor support guaranteed.</p>
+                        </div>
+                    </div>
+
+                    <div class="vip-callout">
+                        <p class="callout-text">VIP isn't for everyone. It's for those who refuse to leave transformation to chance—who demand certainty, priority access, and a personalized path forward.</p>
+                        <p class="callout-subtext">You're already registered for the complete 2-day workshop. VIP accelerates those ready to move faster.</p>
                     </div>
                 </section>
 
