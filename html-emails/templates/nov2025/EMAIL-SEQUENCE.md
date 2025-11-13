@@ -6,7 +6,9 @@
 
 ---
 
-## Complete Email Sequence (8 Emails)
+## Complete Email Sequence (11 Countdown Emails + 2 Confirmation Emails = 13 Total)
+
+**UPDATED**: November 13, 2025 - Extended sequence added (Day 20, Day 14, Day 7)
 
 ### 1. Registration Confirmation Email
 **File**: `registration-confirmation.html`
@@ -46,7 +48,54 @@
 
 ---
 
-### 3. 9-Day Preparation Email
+### 3. 20-Day Welcome Email (EXTENDED SEQUENCE)
+**File**: `preparation-20days.html`
+**Automation Timing**: Send when event is 20 days away (or immediately if registered <20 days before)
+**Subject**: `You're Part of Something Rare`
+**Preview**: `This isn't a webinar. It's not passive learning. November 22-23 is a live transformation experience where your nervous system gets rewired.`
+
+**Purpose**: Build exclusivity, set expectations, create anticipation
+**Key Elements**:
+- "You're Part of Something Rare" headline
+- What this workshop ISN'T (differentiation)
+- What this actually IS (3 key points):
+  - Not information transfer
+  - Nervous system reprogramming
+  - Collective transformation container
+- Who this is for (5 checkboxes showing ideal participant)
+- VIP upgrade opportunity (early mention)
+- Workshop hub link
+
+**Focus**: Establish exclusivity and differentiate from typical workshops
+
+---
+
+### 4. 14-Day Methodology Email (EXTENDED SEQUENCE)
+**File**: `preparation-14days.html`
+**Automation Timing**: Send when event is 14 days away
+**Subject**: `Why This Workshop Actually Works`
+**Preview**: `Most workshops fail because they treat symptoms, not root causes. November 22-23 is different. Here's why transformation happens when most events only create temporary inspiration.`
+
+**Purpose**: Address skepticism, explain methodology, build authority
+**Key Elements**:
+- "Why This Workshop Actually Works" headline
+- The problem with most workshops (3 points):
+  - Treat symptoms not root causes
+  - Create temporary inspiration not lasting change
+  - Focus on motivation instead of reprogramming
+- Why November 22-23 is different (3 points):
+  - Interrupt patterns at nervous system level
+  - Expose limiting programming installed decades ago
+  - Create actual neurological change, not just new information
+- The nervous system focus (explanation)
+- VIP upgrade mention (secondary)
+- Workshop hub link
+
+**Focus**: Build credibility and explain the "how" behind transformation
+
+---
+
+### 5. 9-Day Preparation Email
 **File**: `preparation-9days.html`
 **Automation Timing**: Send when event is 9 days away (or immediately if registered <9 days before)
 **Subject**: `9 Days: Your Pre-Work Starts Now`
@@ -69,7 +118,33 @@
 
 ---
 
-### 4. 4-Day Calendar Blocking Email
+### 6. 7-Day Accountability Email (EXTENDED SEQUENCE)
+**File**: `preparation-7days.html`
+**Automation Timing**: Send when event is 7 days away
+**Subject**: `How's Your Pre-Work Going? (7 Days Out)`
+**Preview**: `You should be done with pages 1-50 and the 5 reflection questions by now. If you're stuck or behind, here's how to catch up before Saturday.`
+
+**Purpose**: Check in on pre-work progress, provide catch-up plan, reduce anxiety
+**Key Elements**:
+- **If You're Done**: What to do next (review answers, go deeper, notice patterns)
+- **If You're Behind**: Catch-up plan (3-step prioritization):
+  1. Answer 5 questions first (most important)
+  2. Read pages 1-50 second (even if skimming)
+  3. Don't stress perfectionism
+- **If You're Stuck**: What to look for (4 guiding questions):
+  - What makes you uncomfortable to write about?
+  - What patterns keep repeating?
+  - Where do you feel resistance?
+  - What would you create if fear wasn't a factor?
+- Why pre-work sets your baseline
+- VIP upgrade still available (secondary mention)
+- Workshop hub link
+
+**Focus**: Accountability check-in + catch-up guidance
+
+---
+
+### 7. 4-Day Calendar Blocking Email
 **File**: `preparation-4days.html`
 **Automation Timing**: Send when event is 4 days away
 **Subject**: `4 Days: Block BOTH Full Days Now`
@@ -92,7 +167,7 @@
 
 ---
 
-### 5. 3-Day VIP Upgrade Email
+### 8. 3-Day VIP Upgrade Email
 **File**: `preparation-3days.html`
 **Automation Timing**: Send when event is 3 days away (72 hours)
 **Subject**: `⚡ 72 Hours: Last Chance for VIP`
@@ -115,7 +190,7 @@
 
 ---
 
-### 6. 2-Day Preparation Checklist Email
+### 9. 2-Day Preparation Checklist Email
 **File**: `preparation-2days.html`
 **Automation Timing**: Send when event is 2 days away (48 hours)
 **Subject**: `48 Hours: Your Final Preparation Checklist`
@@ -145,7 +220,7 @@
 
 ---
 
-### 7. 1-Day Logistics Email
+### 10. 1-Day Logistics Email
 **File**: `preparation-1day.html`
 **Automation Timing**: Send evening before event (Nov 21 evening)
 **Subject**: `Tomorrow 7am PT: Your Zoom Link Arrives`
@@ -172,7 +247,7 @@
 
 ---
 
-### 8. Day-Of Zoom Link Email
+### 11. Day-Of Zoom Link Email
 **File**: `day-of.html`
 **Automation Timing**: Send at 7:00 AM PT on event day (Nov 22)
 **Subject**: `🔴 LIVE IN 1 HOUR: Join Now`
@@ -205,19 +280,34 @@ The automation should work as follows:
 
 1. **Upon Registration** → Send Registration Confirmation immediately
 2. **Upon VIP Purchase** → Send VIP Confirmation immediately
-3. **9 Days Before Event** → Send 9-Day Prep Email
-4. **4 Days Before Event** → Send 4-Day Calendar Email
-5. **3 Days Before Event** → Send 3-Day VIP Email
-6. **2 Days Before Event** → Send 2-Day Checklist Email
-7. **1 Day Before Event (evening)** → Send 1-Day Logistics Email
-8. **Day Of Event @ 7am PT** → Send Day-Of Zoom Link Email
+3. **20 Days Before Event** → Send 20-Day Welcome Email (EXTENDED)
+4. **14 Days Before Event** → Send 14-Day Methodology Email (EXTENDED)
+5. **9 Days Before Event** → Send 9-Day Prep Email
+6. **7 Days Before Event** → Send 7-Day Accountability Email (EXTENDED)
+7. **4 Days Before Event** → Send 4-Day Calendar Email
+8. **3 Days Before Event** → Send 3-Day VIP Email
+9. **2 Days Before Event** → Send 2-Day Checklist Email
+10. **1 Day Before Event (evening)** → Send 1-Day Logistics Email
+11. **Day Of Event @ 7am PT** → Send Day-Of Zoom Link Email
+
+### Email Frequency Breakdown
+
+- **Days 23-9**: ~1 email every 5-6 days (building anticipation)
+  - Day 20, Day 14, Day 9
+- **Days 9-3**: ~1 email every 2 days (increasing urgency)
+  - Day 9, Day 7, Day 4, Day 3
+- **Days 3-0**: Daily (final countdown)
+  - Day 3, Day 2, Day 1, Day 0
 
 ### Late Registrations
 
-**If someone registers LESS than 9 days before the event:**
+**If someone registers LESS than 20 days before the event:**
 - Send Registration Confirmation immediately
 - Catch them up to the appropriate email in the sequence based on current date
-- Example: Register 5 days before → Get Registration Confirmation + 4-Day Email immediately
+- Examples:
+  - Register 5 days before → Get Registration Confirmation + 4-Day Email immediately
+  - Register 12 days before → Get Registration Confirmation + 14-Day Email immediately
+  - Register 8 days before → Get Registration Confirmation + 9-Day Email immediately
 
 ### VIP Deadline
 
@@ -266,12 +356,15 @@ All files in: `/templates/nov2025/`
 
 1. `registration-confirmation.html` - Registration confirmation
 2. `vip-confirmation.html` - VIP purchase confirmation
-3. `preparation-9days.html` - 9-day pre-work email
-4. `preparation-4days.html` - 4-day calendar blocking email
-5. `preparation-3days.html` - 3-day VIP upgrade email
-6. `preparation-2days.html` - 2-day preparation checklist
-7. `preparation-1day.html` - 1-day logistics email
-8. `day-of.html` - Day-of Zoom link email
+3. `preparation-20days.html` - 20-day welcome email (EXTENDED)
+4. `preparation-14days.html` - 14-day methodology email (EXTENDED)
+5. `preparation-9days.html` - 9-day pre-work email
+6. `preparation-7days.html` - 7-day accountability email (EXTENDED)
+7. `preparation-4days.html` - 4-day calendar blocking email
+8. `preparation-3days.html` - 3-day VIP upgrade email
+9. `preparation-2days.html` - 2-day preparation checklist
+10. `preparation-1day.html` - 1-day logistics email
+11. `day-of.html` - Day-of Zoom link email
 
 ### December 2025 Workshop
 All files in: `/templates/dec2025/`
@@ -313,21 +406,25 @@ Before sending any email:
 
 1. **Registration**: `✓ You're Registered: Day of Enlightenment Nov 22-23`
 2. **VIP Confirm**: `⭐ VIP Access Confirmed - Day of Enlightenment`
-3. **9-Day**: `9 Days: Your Pre-Work Starts Now`
-4. **4-Day**: `4 Days: Block BOTH Full Days Now`
-5. **3-Day VIP**: `⚡ 72 Hours: Last Chance for VIP`
-6. **2-Day**: `48 Hours: Your Final Preparation Checklist`
-7. **1-Day**: `Tomorrow 7am PT: Your Zoom Link Arrives`
-8. **Day-Of**: `🔴 LIVE IN 1 HOUR: Join Now`
+3. **20-Day**: `You're Part of Something Rare`
+4. **14-Day**: `Why This Workshop Actually Works`
+5. **9-Day**: `9 Days: Your Pre-Work Starts Now`
+6. **7-Day**: `How's Your Pre-Work Going? (7 Days Out)`
+7. **4-Day**: `4 Days: Block BOTH Full Days Now`
+8. **3-Day VIP**: `⚡ 72 Hours: Last Chance for VIP`
+9. **2-Day**: `48 Hours: Your Final Preparation Checklist`
+10. **1-Day**: `Tomorrow 7am PT: Your Zoom Link Arrives`
+11. **Day-Of**: `🔴 LIVE IN 1 HOUR: Join Now`
 
 ---
 
-**Version**: 1.0
-**Last Updated**: November 13, 2025
+**Version**: 2.0 - Extended Sequence
+**Last Updated**: November 13, 2025 (Extended with Day 20, Day 14, Day 7 emails)
 **Created By**: Claude Code
 
 **Notes for Implementation**:
-- Replace all `[REPLACE_WITH_MEETING_ID]` and `[REPLACE_WITH_PASSCODE]` placeholders with actual Zoom details
-- Replace all `https://zoom.us/j/YOUR_MEETING_ID` links with actual Zoom meeting URLs
-- Verify workshop hub URLs match your GoHighLevel setup
-- Test automation workflow thoroughly before Nov 22, 2025 event
+- ✅ November Zoom link already updated in day-of.html (Meeting ID: 889 3874 4217)
+- Extended sequence now matches December's 10-email countdown structure
+- Verify workshop hub URLs point to neothinkday.com/home (NOT neothinkevent.com)
+- Test automation workflow thoroughly with new Day 20, Day 14, Day 7 triggers
+- Ensure late registration logic accounts for all entry points (20-day, 14-day, 9-day, 7-day)
