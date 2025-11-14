@@ -68,8 +68,8 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **File**: `preparation-4days.html`
 - **Send Date**: **Tuesday, November 18, 2025**
 - **Send Time**: **10:00 AM PT**
-- **Subject**: `4 Days: Block BOTH Full Days Now`
-- **Preview**: `Saturday Nov 22 + Sunday Nov 23. Two complete days. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
+- **Subject**: `4 Days: Block Your Calendar Now`
+- **Preview**: `Saturday Nov 22 + Sunday Nov 23. Both days committed. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
 
 ### Email #7: Day 3 - VIP Final Push
 - **File**: `preparation-3days.html`
@@ -160,8 +160,8 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Automation**: When event is 4 days away
 - **Send Date**: December 2, 2025
 - **Send Time**: **10:00 AM PT**
-- **Subject**: `4 Days: Block BOTH Full Days Now`
-- **Preview**: `Saturday Dec 6 + Sunday Dec 7. Two complete days. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
+- **Subject**: `4 Days: Block Your Calendar Now`
+- **Preview**: `Saturday Dec 6 + Sunday Dec 7. Both days committed. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
 
 ### Email #8: Day 3 - VIP Final Push
 - **File**: `preparation-3days.html`
