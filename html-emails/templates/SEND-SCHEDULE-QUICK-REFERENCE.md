@@ -12,6 +12,11 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 **VIP Deadline**: 8:00 AM PT Saturday, November 22, 2025
 **Zoom Link**: https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
 
+**Workshop Timing:**
+- **Day 1 (Sat Nov 22)**: Doors open 7:30 AM PT | Workshop begins 8:00 AM PT
+- **Day 2 (Sun Nov 23)**: Doors open 8:30 AM PT | Workshop begins 9:00 AM PT
+- **Early Access**: 30 minutes for tech checks, settling in, community connection
+
 **⭐ STRUCTURE**: 2 Bridge Emails (Nov 13-16) + 6 Countdown Emails (Nov 17-22) = 8 emails + 2 confirmations
 
 ---
@@ -97,7 +102,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: **Saturday, November 22, 2025**
 - **Send Time**: **7:00 AM PT SHARP**
 - **Subject**: `🔴 LIVE IN 1 HOUR: Join Now`
-- **Preview**: `Click to join. Workshop starts 8:00 AM PT sharp. Doors close at 8:00 AM. Join now.`
+- **Preview**: `Doors open 7:30 AM PT. Workshop starts 8:00 AM SHARP. Join early to get settled. Your Zoom link inside.`
 
 ---
 
@@ -106,6 +111,11 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 **Workshop Hub**: https://neothinkevent.com/home
 **VIP Deadline**: 8:00 AM PT Saturday, December 6, 2025
 **Zoom Link**: https://neothink.zoom.us/j/89837898248?pwd=suocaa3N8IpFUqq9FHkyWZqlFhlvnv.1
+
+**Workshop Timing:**
+- **Day 1 (Sat Dec 6)**: Doors open 7:30 AM PT | Workshop begins 8:00 AM PT
+- **Day 2 (Sun Dec 7)**: Doors open 8:30 AM PT | Workshop begins 9:00 AM PT
+- **Early Access**: 30 minutes for tech checks, settling in, community connection
 
 ### Email #1: Registration Confirmation
 - **File**: `registration-confirmation.html`
@@ -193,7 +203,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: December 6, 2025
 - **Send Time**: **7:00 AM PT SHARP**
 - **Subject**: `🔴 LIVE IN 1 HOUR: Join Now`
-- **Preview**: `Click to join. Workshop starts 8:00 AM PT sharp. Doors close at 8:00 AM. Join now.`
+- **Preview**: `Doors open 7:30 AM PT. Workshop starts 8:00 AM SHARP. Join early to get settled. Your Zoom link inside.`
 
 ---
 
