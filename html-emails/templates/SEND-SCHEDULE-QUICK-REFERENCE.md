@@ -12,6 +12,12 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 **VIP Deadline**: 8:00 AM PT Saturday, November 22, 2025
 **Zoom Link**: https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
 
+**⭐ STRUCTURE**: 2 Bridge Emails (Nov 13-16) + 6 Countdown Emails (Nov 17-22) = 8 emails + 2 confirmations
+
+---
+
+### CONFIRMATION EMAILS (Immediate Triggers)
+
 ### Email #1: Registration Confirmation
 - **File**: `registration-confirmation.html`
 - **Trigger**: Immediately upon registration (24/7)
@@ -28,74 +34,67 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 
 ---
 
-### Email #3: Day 20 - Welcome Email
-- **File**: `preparation-20days.html`
-- **Automation**: When event is 20 days away
-- **Send Date**: November 2, 2025 (if registered before)
-- **Send Time**: **8:00 AM PT**
-- **Subject**: `You're Part of Something Rare`
-- **Preview**: `This isn't a webinar. It's not passive learning. November 22-23 is a live transformation experience where your nervous system gets rewired.`
+### BRIDGE EMAILS (Non-Countdown, Thu Nov 13 - Sun Nov 16)
 
-### Email #4: Day 14 - Methodology Email
-- **File**: `preparation-14days.html`
-- **Automation**: When event is 14 days away
-- **Send Date**: November 8, 2025
-- **Send Time**: **9:00 AM PT**
+### Email #3: Welcome Email (Bridge #1)
+- **File**: `welcome-email.html`
+- **Trigger**: Immediately upon registration
+- **Send Window**: Thu Nov 13 - Sun Nov 16
+- **Subject**: `You're Part of Something Rare`
+- **Preview**: `This isn't a webinar. It's not passive learning. November 22-23 is a live transformation experience where your nervous system gets rewired. Only those who show up fully will break through.`
+- **NO COUNTDOWN LANGUAGE** - Pure anticipation building
+
+### Email #4: Methodology Email (Bridge #2)
+- **File**: `methodology-email.html`
+- **Trigger**: 24 hours after registration
+- **Condition**: Skip if registered Sun Nov 16 or Mon Nov 17
 - **Subject**: `Why This Workshop Actually Works`
 - **Preview**: `Most workshops fail because they treat symptoms, not root causes. November 22-23 is different. Here's why transformation happens when most events only create temporary inspiration.`
+- **NO COUNTDOWN LANGUAGE** - Authority building
 
-### Email #5: Day 8 - Pre-Work Assignment
-- **File**: `preparation-8days.html`
-- **Automation**: When event is 8 days away
-- **Send Date**: November 14, 2025
-- **Send Time**: **7:00 AM PT**
-- **Subject**: `8 Days: Your Pre-Work Starts Now`
+---
+
+### COUNTDOWN SEQUENCE (Mon Nov 17 - Sat Nov 22)
+
+### Email #5: Day 5 - Pre-Work Assignment ⭐ CRITICAL
+- **File**: `preparation-5days.html`
+- **Send Date**: **Monday, November 17, 2025**
+- **Send Time**: **7:00 AM PT SHARP**
+- **Subject**: `5 Days: Your Pre-Work Starts Now`
 - **Preview**: `Read pages 1-50 of The Secret Manuscript and answer 5 reflection questions. This preparation determines your breakthrough.`
+- **NOTE**: ALL registrants (early + late) sync to this email on Monday morning
 
-### Email #6: Day 7 - Accountability Check-In
-- **File**: `preparation-7days.html`
-- **Automation**: When event is 7 days away
-- **Send Date**: November 15, 2025
-- **Send Time**: **8:00 AM PT**
-- **Subject**: `How's Your Pre-Work Going? (7 Days Out)`
-- **Preview**: `You should be done with pages 1-50 and the 5 reflection questions by now. If you're stuck or behind, here's how to catch up before Saturday.`
-
-### Email #7: Day 4 - Calendar Blocking
+### Email #6: Day 4 - Calendar Blocking
 - **File**: `preparation-4days.html`
-- **Automation**: When event is 4 days away
-- **Send Date**: November 18, 2025
+- **Send Date**: **Tuesday, November 18, 2025**
 - **Send Time**: **10:00 AM PT**
 - **Subject**: `4 Days: Block BOTH Full Days Now`
 - **Preview**: `Saturday Nov 22 + Sunday Nov 23. Two complete days. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
 
-### Email #8: Day 3 - VIP Final Push
+### Email #7: Day 3 - VIP Final Push
 - **File**: `preparation-3days.html`
-- **Automation**: When event is 3 days away (72 hours)
-- **Send Date**: November 19, 2025
+- **Send Date**: **Wednesday, November 19, 2025**
 - **Send Time**: **9:00 AM PT**
 - **Subject**: `⚡ 72 Hours: Last Chance for VIP`
 - **Preview**: `GUARANTEED 1-on-1 mentorship + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
 
-### Email #9: Day 2 - Final Preparation
+### Email #8: Day 2 - Final Preparation
 - **File**: `preparation-2days.html`
-- **Automation**: When event is 2 days away (48 hours)
-- **Send Date**: November 20, 2025
+- **Send Date**: **Thursday, November 20, 2025**
 - **Send Time**: **11:00 AM PT**
 - **Subject**: `48 Hours: Your Final Preparation Checklist`
 - **Preview**: `Tech check, materials ready, quiet space prepared. Your Zoom link arrives tomorrow morning. Complete this checklist tonight.`
 
-### Email #10: Day 1 - Logistics & Alarms
+### Email #9: Day 1 - Logistics & Alarms
 - **File**: `preparation-1day.html`
-- **Automation**: Evening before event
-- **Send Date**: November 21, 2025
+- **Send Date**: **Friday, November 21, 2025**
 - **Send Time**: **6:00 PM PT**
 - **Subject**: `Tomorrow 7am PT: Your Zoom Link Arrives`
 - **Preview**: `Your Zoom link arrives at 7am PT tomorrow. Set 3 alarms. Join 10 minutes early. Tonight: Rest well, review your pre-work, prepare your mindset.`
 
-### Email #11: Day 0 - Zoom Link Delivery
+### Email #10: Day 0 - Zoom Link Delivery
 - **File**: `day-of.html`
-- **Automation**: Morning of event
-- **Send Date**: November 22, 2025
+- **Send Date**: **Saturday, November 22, 2025**
 - **Send Time**: **7:00 AM PT SHARP**
 - **Subject**: `🔴 LIVE IN 1 HOUR: Join Now`
 - **Preview**: `Click to join. Workshop starts 8:00 AM PT sharp. Doors close at 8:00 AM. Join now.`
@@ -211,16 +210,35 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 4. Use "Wait until specific time" workflow step for each send time
 
 ### Late Registration Handling
-If someone registers late, catch them up to current email in sequence:
+
+**NOVEMBER (Bridge + Countdown Structure):**
+- **Register Thu Nov 13 - Sun Nov 16**: Get Bridge emails → Sync to countdown Mon Nov 17
+- **Register Mon Nov 17 or later**: Skip bridge emails → Catch up to current countdown day
+
+Examples:
+- Register Thu Nov 13 → Welcome immediately → Methodology +24h → Day 5 on Mon Nov 17
+- Register Sat Nov 15 → Welcome immediately → Methodology +24h → Day 5 on Mon Nov 17
+- Register Sun Nov 16 → Welcome immediately → Skip methodology → Day 5 on Mon Nov 17
+- Register Mon Nov 17 → Skip bridge → Day 5 immediately
+- Register Tue Nov 18 → Skip bridge → Day 4 immediately
+- Register Wed Nov 19 → Skip bridge → Day 3 immediately
+
+**DECEMBER (Standard Countdown):**
 - Register 18 days before → Send Day 20 email immediately
 - Register 12 days before → Send Day 14 email immediately
-- Register 7 days before → Send Day 8 email immediately
+- Register 8 days before → Send Day 9 email immediately
 - Register 5 days before → Send Day 4 email immediately
 - etc.
 
 ### Email Frequency (Automated Pacing)
-- **Days 20-8**: Every 5-6 days (building anticipation)
-- **Days 8-3**: Every 2 days (increasing urgency)
+
+**NOVEMBER:**
+- **Bridge Phase (Nov 13-16)**: 2 emails over 4 days (immediate + 24h)
+- **Countdown Phase (Nov 17-22)**: 6 emails over 6 days (daily)
+
+**DECEMBER:**
+- **Days 20-9**: Every 5-6 days (building anticipation)
+- **Days 9-3**: Every 2 days (increasing urgency)
 - **Days 3-0**: Daily (final countdown)
 
 ### Testing Checklist

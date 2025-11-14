@@ -6,9 +6,9 @@
 
 ---
 
-## Complete Email Sequence (11 Countdown Emails + 2 Confirmation Emails = 13 Total)
+## Complete Email Sequence (2 Bridge + 6 Countdown + 2 Confirmation = 10 Total)
 
-**UPDATED**: November 13, 2025 - Extended sequence added (Day 20, Day 14, Day 7)
+**UPDATED**: November 13, 2025 - Bridge emails + countdown sequence optimized for Nov 17 start
 
 ### 1. Registration Confirmation Email
 **File**: `registration-confirmation.html`
@@ -278,36 +278,47 @@
 
 The automation should work as follows:
 
+**BRIDGE PHASE (Thu Nov 13 - Sun Nov 16):**
 1. **Upon Registration** → Send Registration Confirmation immediately
 2. **Upon VIP Purchase** → Send VIP Confirmation immediately
-3. **20 Days Before Event** → Send 20-Day Welcome Email (EXTENDED)
-4. **14 Days Before Event** → Send 14-Day Methodology Email (EXTENDED)
-5. **8 Days Before Event** → Send 8-Day Prep Email
-6. **7 Days Before Event** → Send 7-Day Accountability Email (EXTENDED)
-7. **4 Days Before Event** → Send 4-Day Calendar Email
-8. **3 Days Before Event** → Send 3-Day VIP Email
-9. **2 Days Before Event** → Send 2-Day Checklist Email
-10. **1 Day Before Event (evening)** → Send 1-Day Logistics Email
-11. **Day Of Event @ 7am PT** → Send Day-Of Zoom Link Email
+3. **Upon Registration** → Send Welcome Email immediately (no countdown)
+4. **24 Hours After Registration** → Send Methodology Email (skip if registered Sun/Mon)
+
+**COUNTDOWN PHASE (Mon Nov 17 - Sat Nov 22):**
+5. **Monday, Nov 17 @ 7am PT** → Day 5 Pre-Work Email (ALL registrants synced)
+6. **Tuesday, Nov 18 @ 10am PT** → Day 4 Calendar Email
+7. **Wednesday, Nov 19 @ 9am PT** → Day 3 VIP Email
+8. **Thursday, Nov 20 @ 11am PT** → Day 2 Checklist Email
+9. **Friday, Nov 21 @ 6pm PT** → Day 1 Logistics Email
+10. **Saturday, Nov 22 @ 7am PT** → Day 0 Zoom Link Email
 
 ### Email Frequency Breakdown
 
-- **Days 23-8**: ~1 email every 5-6 days (building anticipation)
-  - Day 20, Day 14, Day 8
-- **Days 8-3**: ~1 email every 2 days (increasing urgency)
-  - Day 8, Day 7, Day 4, Day 3
-- **Days 3-0**: Daily (final countdown)
-  - Day 3, Day 2, Day 1, Day 0
+**BRIDGE PHASE (Nov 13-16)**: 2 emails over 4 days
+  - Welcome email (immediate)
+  - Methodology email (+24 hours)
+  - Focus: Anticipation building, no urgency
+
+**COUNTDOWN PHASE (Nov 17-22)**: 6 emails over 6 days (daily)
+  - Day 5, 4, 3, 2, 1, 0
+  - Focus: Escalating urgency, tactical preparation
 
 ### Late Registrations
 
-**If someone registers LESS than 20 days before the event:**
-- Send Registration Confirmation immediately
-- Catch them up to the appropriate email in the sequence based on current date
-- Examples:
-  - Register 5 days before → Get Registration Confirmation + 4-Day Email immediately
-  - Register 12 days before → Get Registration Confirmation + 14-Day Email immediately
-  - Register 7 days before → Get Registration Confirmation + 8-Day Email immediately
+**If someone registers Thu Nov 13 - Sun Nov 16 (Bridge Phase):**
+- Get Registration Confirmation immediately
+- Get Welcome Email immediately
+- Get Methodology Email 24 hours later (skip if registered Sun/Mon)
+- Sync to countdown on Monday Nov 17
+
+**If someone registers Mon Nov 17 or later (Countdown Phase):**
+- Get Registration Confirmation immediately
+- Skip bridge emails
+- Catch up to current day in countdown sequence:
+  - Register Mon Nov 17 → Get Day 5 email immediately
+  - Register Tue Nov 18 → Get Day 4 email immediately
+  - Register Wed Nov 19 → Get Day 3 email immediately
+  - etc.
 
 ### VIP Deadline
 
@@ -354,17 +365,21 @@ All emails follow the same design system:
 ### November 2025 Workshop
 All files in: `/templates/nov2025/`
 
+**Confirmation Emails:**
 1. `registration-confirmation.html` - Registration confirmation
 2. `vip-confirmation.html` - VIP purchase confirmation
-3. `preparation-20days.html` - 20-day welcome email (EXTENDED)
-4. `preparation-14days.html` - 14-day methodology email (EXTENDED)
-5. `preparation-8days.html` - 8-day pre-work email
-6. `preparation-7days.html` - 7-day accountability email (EXTENDED)
-7. `preparation-4days.html` - 4-day calendar blocking email
-8. `preparation-3days.html` - 3-day VIP upgrade email
-9. `preparation-2days.html` - 2-day preparation checklist
-10. `preparation-1day.html` - 1-day logistics email
-11. `day-of.html` - Day-of Zoom link email
+
+**Bridge Emails (Non-Countdown, Nov 13-16):**
+3. `welcome-email.html` - Welcome email (immediate upon registration)
+4. `methodology-email.html` - Methodology email (+24 hours after registration)
+
+**Countdown Emails (Mon Nov 17 - Sat Nov 22):**
+5. `preparation-5days.html` - Day 5 pre-work email (Mon Nov 17 @ 7am PT)
+6. `preparation-4days.html` - Day 4 calendar blocking (Tue Nov 18 @ 10am PT)
+7. `preparation-3days.html` - Day 3 VIP upgrade (Wed Nov 19 @ 9am PT)
+8. `preparation-2days.html` - Day 2 preparation checklist (Thu Nov 20 @ 11am PT)
+9. `preparation-1day.html` - Day 1 logistics (Fri Nov 21 @ 6pm PT)
+10. `day-of.html` - Day 0 Zoom link (Sat Nov 22 @ 7am PT)
 
 ### December 2025 Workshop
 All files in: `/templates/dec2025/`
@@ -404,28 +419,34 @@ Before sending any email:
 
 ## Subject Line Quick Reference
 
+**Confirmations:**
 1. **Registration**: `✓ You're Registered: Day of Enlightenment Nov 22-23`
 2. **VIP Confirm**: `⭐ VIP Access Confirmed - Day of Enlightenment`
-3. **20-Day**: `You're Part of Something Rare`
-4. **14-Day**: `Why This Workshop Actually Works`
-5. **8-Day**: `8 Days: Your Pre-Work Starts Now`
-6. **7-Day**: `How's Your Pre-Work Going? (7 Days Out)`
-7. **4-Day**: `4 Days: Block BOTH Full Days Now`
-8. **3-Day VIP**: `⚡ 72 Hours: Last Chance for VIP`
-9. **2-Day**: `48 Hours: Your Final Preparation Checklist`
-10. **1-Day**: `Tomorrow 7am PT: Your Zoom Link Arrives`
-11. **Day-Of**: `🔴 LIVE IN 1 HOUR: Join Now`
+
+**Bridge Emails:**
+3. **Welcome**: `You're Part of Something Rare`
+4. **Methodology**: `Why This Workshop Actually Works`
+
+**Countdown Sequence:**
+5. **Day 5**: `5 Days: Your Pre-Work Starts Now`
+6. **Day 4**: `4 Days: Block BOTH Full Days Now`
+7. **Day 3**: `⚡ 72 Hours: Last Chance for VIP`
+8. **Day 2**: `48 Hours: Your Final Preparation Checklist`
+9. **Day 1**: `Tomorrow 7am PT: Your Zoom Link Arrives`
+10. **Day 0**: `🔴 LIVE IN 1 HOUR: Join Now`
 
 ---
 
-**Version**: 2.0 - Extended Sequence
-**Last Updated**: November 13, 2025 (Extended with Day 20, Day 14, Day 7 emails)
+**Version**: 3.0 - Bridge + Countdown Optimization
+**Last Updated**: November 13, 2025 (Optimized for Nov 17 countdown start)
 **Created By**: Claude Code
 
 **Notes for Implementation**:
 - ✅ November Zoom link already updated in day-of.html (Meeting ID: 889 3874 4217)
-- ✅ Day 9 changed to Day 8 for November sequence (Nov 13 → Nov 22 = 8 days)
-- Extended sequence now matches December's 10-email countdown structure
+- ✅ Bridge + Countdown structure optimized for late direct mail recipients
+- ✅ Monday Nov 17 unified start ensures all registrants get pre-work
+- ✅ All fonts corrected to match reference template (Baskervville, Plus Jakarta Sans, Courier Prime)
 - Verify workshop hub URLs point to neothinkday.com/home (NOT neothinkevent.com)
-- Test automation workflow thoroughly with new Day 20, Day 14, Day 8, Day 7 triggers
-- Ensure late registration logic accounts for all entry points (20-day, 14-day, 8-day, 7-day)
+- Test automation workflow thoroughly with bridge email triggers (+24h logic)
+- Test countdown sync on Monday Nov 17 @ 7am PT for all registrants
+- Ensure late registration logic handles both bridge and countdown phases
