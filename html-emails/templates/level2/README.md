@@ -17,7 +17,7 @@ This directory contains email templates specifically designed for Level 2 Member
 **Key Features**:
 - Level 2 branding (white borders, educational tone)
 - Two date options presented with equal weight
-- Clear CTA to registration form: https://societysecrets.com/choose-your-day
+- Clear CTA to registration form: https://societysecrets.com/choose-your-date
 - Mobile-responsive design
 - Explains what happens after they choose (confirmation, prep materials, VIP opportunity)
 
@@ -100,7 +100,7 @@ Two workshops available: November 22-23 or December 6-7. Choose your preferred d
 
 **Prerequisites**:
 - Member has purchased Day of Enlightenment workshop
-- Registration form is live at https://societysecrets.com/choose-your-day
+- Registration form is live at https://societysecrets.com/choose-your-date
 - Both workshop dates (Nov 22-23 and Dec 6-7) are available
 
 **After They Choose**:
@@ -118,7 +118,7 @@ Update the "Available Dates Section" (lines 212-287) with current workshop dates
 ### To Change CTA URL
 Update both CTA buttons (lines 293 and 391):
 ```html
-<a href="https://societysecrets.com/choose-your-day" target="_blank">
+<a href="https://societysecrets.com/choose-your-date" target="_blank">
 ```
 
 ### To Modify Benefits List
