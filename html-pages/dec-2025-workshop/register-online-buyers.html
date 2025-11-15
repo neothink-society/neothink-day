@@ -655,6 +655,51 @@
         }
 
         /* ===========================
+           FAQ SECTION
+        =========================== */
+        .faq-section {
+            padding: var(--space-2xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            padding: var(--space-lg);
+            background: var(--gray-900);
+            border: 1px solid var(--gray-800);
+            border-radius: 8px;
+        }
+
+        .faq-question {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gray-300);
+            margin-bottom: var(--space-sm);
+        }
+
+        .faq-answer {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.6;
+        }
+
+        .faq-answer a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .faq-answer a:hover {
+            color: var(--gold-light);
+            text-decoration: underline;
+        }
+
+        /* ===========================
            FOOTER
         =========================== */
         .site-footer {
@@ -957,6 +1002,18 @@
                             <h3>VIP Upgrade Option</h3>
                             <p>After registration, you'll have the opportunity to upgrade to the VIP Experience with GUARANTEED 1-on-1 mentorship and exclusive benefits.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <p class="faq-question">What if I can't make this date?</p>
+                        <p class="faq-answer">
+                            Sooner the better. You don't want to wait on your Day of Enlightenment. Try to reschedule things around to make it. But if you really can't make it, then reach out to <a href="mailto:support@neothink.com">support@neothink.com</a> and let us know and we will figure out a date for a later event.
+                        </p>
                     </div>
                 </div>
             </section>
