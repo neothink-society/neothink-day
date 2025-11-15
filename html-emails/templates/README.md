@@ -13,7 +13,7 @@ Email templates for Level 2 Members (core audience)
 
 ### vip/
 Email templates for VIP Members (premium tier)
-- Members who upgraded to VIP access ($297)
+- Members who upgraded to VIP access ($187)
 - Gold branding throughout
 - ⭐ VIP badges and exclusive positioning
 - Recognition and priority-focused messaging

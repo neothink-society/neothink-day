@@ -274,7 +274,7 @@ font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
 | **Gold**: #FFD700 | ✅ Used | ✅ Match |
 | **Black**: #0a0a0a | ⚠️ Used #000000 | ⚠️ Minor |
 | **Support Email**: support@neothink.com | ✅ Used | ✅ Match |
-| **VIP Pricing**: $297 | ✅ Consistent | ✅ Match |
+| **VIP Pricing**: $187 | ✅ Consistent | ✅ Match |
 | **Event Date**: Nov 22-23, 2025 | ✅ Correct | ✅ Match |
 
 ---
@@ -381,7 +381,7 @@ display: flex;
 7. **Touch targets**: 44px+ for buttons ✅
 8. **Workshop details**: Nov 22-23, 2025, 8am-5pm PT ✅
 9. **Support email**: support@neothink.com ✅
-10. **VIP pricing**: $297 ✅
+10. **VIP pricing**: $187 ✅
 11. **Workshop hub link**: neothinkday.com/home ✅
 
 ### What's Appropriately Different

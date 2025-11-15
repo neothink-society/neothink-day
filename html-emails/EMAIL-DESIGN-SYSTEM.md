@@ -19,7 +19,7 @@ This document defines the complete design system for Neothink Society email comm
 **Badge**: None (standard member status)
 
 ### VIP Members (Premium Tier)
-**Who**: Members who upgraded to VIP access ($297)
+**Who**: Members who upgraded to VIP access ($187)
 **Access**: Priority Q&A, exclusive sessions, guaranteed mentorship
 **Color Coding**: Gold (#FFD700) throughout - maintain even at max urgency
 **Messaging Tone**: Exclusive, priority, recognition-focused
