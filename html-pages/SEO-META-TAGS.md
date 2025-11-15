@@ -9,49 +9,49 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 1. register.html
 **Title:** Register for Day of Enlightenment Workshop | Nov 22-23, 2025
-**Description:** Register now for the Day of Enlightenment Workshop, November 22-23, 2025. Two-day transformational experience with direct mail exclusive access. Secure your spot today.
+**Description:** Register for the Day of Enlightenment Workshop, November 22-23, 2025. Two-day transformational experience with direct mail access. Secure your spot.
 
-**Character Counts:** Title: 63 | Description: 159
+**Character Counts:** Title: 63 | Description: 154
 
 ---
 
 ### 2. welcome-home.html
 **Title:** Workshop Hub - Day of Enlightenment | November 22-23, 2025
-**Description:** Access your Day of Enlightenment workshop materials, Zoom links, and VIP upgrade options. Everything you need for November 22-23, 2025 transformation event.
+**Description:** Access workshop materials, Zoom links, and VIP upgrade options. Everything you need for your November 22-23, 2025 Day of Enlightenment experience.
 
-**Character Counts:** Title: 62 | Description: 160
+**Character Counts:** Title: 62 | Description: 151
 
 ---
 
 ### 3. vip-upgrade-top.html / vip-upgrade (full page)
 **Title:** Upgrade to VIP Experience - $187 | Day of Enlightenment Nov 2025
-**Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority assistance, and private elite session on Day 2. Limited spots available for November 22-23 workshop.
+**Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority support, and elite session on Day 2. Limited spots for November 22-23 workshop.
 
-**Character Counts:** Title: 67 | Description: 158
+**Character Counts:** Title: 67 | Description: 149
 
 ---
 
 ### 4. thanks-vip-upsell.html
 **Title:** Registration Confirmed! Upgrade to VIP | Day of Enlightenment
-**Description:** You're registered for November 22-23! See what's next and discover the exclusive VIP Experience with guaranteed mentorship, priority support, and elite access.
+**Description:** You're registered for November 22-23! Discover the VIP Experience with guaranteed mentorship, priority support, and exclusive elite access.
 
-**Character Counts:** Title: 64 | Description: 158
+**Character Counts:** Title: 64 | Description: 146
 
 ---
 
 ### 5. re-register.html
 **Title:** Choose Your Workshop Date | Day of Enlightenment 2025
-**Description:** Re-register for the enhanced 2-day Day of Enlightenment workshop. Choose between November 22-23 or December 6-7, 2025. Select your preferred date below.
+**Description:** Re-register for the enhanced 2-day Day of Enlightenment workshop. Choose between November 22-23 or December 6-7, 2025. Select your date.
 
-**Character Counts:** Title: 57 | Description: 156
+**Character Counts:** Title: 57 | Description: 148
 
 ---
 
 ### 6. vip-unlocked.html
 **Title:** VIP Access Unlocked! Day of Enlightenment | November 22-23
-**Description:** Your VIP upgrade is confirmed! Access exclusive materials, priority workshop support, and guaranteed 1-on-1 mentorship for November 22-23 transformation event.
+**Description:** VIP upgrade confirmed! Access exclusive materials, priority support, and guaranteed 1-on-1 mentorship for your November 22-23 transformation.
 
-**Character Counts:** Title: 63 | Description: 157
+**Character Counts:** Title: 63 | Description: 145
 
 ---
 
@@ -60,25 +60,25 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 1. register.html
 **Title:** Register for Day of Enlightenment Workshop | Dec 6-7, 2025
-**Description:** Register now for the Day of Enlightenment Workshop, December 6-7, 2025. Two-day transformational experience with direct mail exclusive access. Secure your spot today.
+**Description:** Register for the Day of Enlightenment Workshop, December 6-7, 2025. Two-day transformational experience with direct mail access. Secure your spot.
 
-**Character Counts:** Title: 62 | Description: 158
+**Character Counts:** Title: 62 | Description: 153
 
 ---
 
 ### 2. welcome-home.html
 **Title:** Workshop Hub - Day of Enlightenment | December 6-7, 2025
-**Description:** Access your Day of Enlightenment workshop materials, Zoom links, and VIP upgrade options. Everything you need for December 6-7, 2025 transformation event.
+**Description:** Access workshop materials, Zoom links, and VIP upgrade options. Everything you need for your December 6-7, 2025 Day of Enlightenment experience.
 
-**Character Counts:** Title: 61 | Description: 159
+**Character Counts:** Title: 61 | Description: 150
 
 ---
 
 ### 3. vip-upgrade-top.html / vip-upgrade (full page)
 **Title:** Upgrade to VIP Experience - $187 | Day of Enlightenment Dec 2025
-**Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority assistance, and private elite session on Day 2. Limited spots available for December 6-7 workshop.
+**Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority support, and elite session on Day 2. Limited spots for December 6-7 workshop.
 
-**Character Counts:** Title: 66 | Description: 157
+**Character Counts:** Title: 66 | Description: 148
 
 ---
 
@@ -92,19 +92,29 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 5. re-register.html
 **Title:** Choose Your Workshop Date | Day of Enlightenment 2025
-**Description:** Re-register for the enhanced 2-day Day of Enlightenment workshop. Choose between November 22-23 or December 6-7, 2025. Select your preferred date below.
+**Description:** Re-register for the enhanced 2-day Day of Enlightenment workshop. Choose between November 22-23 or December 6-7, 2025. Select your date.
 
 **Note:** This is the same universal re-register page (allows choosing between Nov or Dec dates)
 
-**Character Counts:** Title: 57 | Description: 156
+**Character Counts:** Title: 57 | Description: 148
 
 ---
 
 ### 6. vip-unlocked.html
 **Title:** VIP Access Unlocked! Day of Enlightenment | December 6-7
-**Description:** Your VIP upgrade is confirmed! Access exclusive materials, priority workshop support, and guaranteed 1-on-1 mentorship for December 6-7 transformation event.
+**Description:** VIP upgrade confirmed! Access exclusive materials, priority support, and guaranteed 1-on-1 mentorship for your December 6-7 transformation.
 
-**Character Counts:** Title: 62 | Description: 156
+**Character Counts:** Title: 62 | Description: 144
+
+---
+
+### 7. register-online-buyers.html
+**Title:** Confirm Your December Workshop Registration | Day of Enlightenment
+**Description:** Confirm your registration for the Day of Enlightenment Workshop, December 6-7, 2025. Complete registration for workshop materials and Zoom access.
+
+**Note:** Dedicated registration page for recent online Level 2 purchasers (December only, no date choice)
+
+**Character Counts:** Title: 68 | Description: 147
 
 ---
 
@@ -117,7 +127,7 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 - Include unique value propositions per page
 - Front-load important keywords
 
-### Meta Descriptions (150-160 characters ideal, max 160)
+### Meta Descriptions (145-150 characters ideal, max 155)
 - Compelling call-to-action
 - Specific dates and benefits
 - Unique selling propositions
@@ -135,14 +145,16 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 ## Implementation Notes
 
 1. All titles under 70 characters for full display in search results
-2. All descriptions under 160 characters for full display
+2. All descriptions under 155 characters for optimal display across devices
 3. Each page has unique title and description
 4. Dates clearly specified for time-sensitive searches
 5. Action-oriented language to improve click-through rates
 6. Key benefits highlighted in descriptions
 7. Consistent branding with "Day of Enlightenment" as primary identifier
+8. Title and domain name combinations are unique across all pages
 
 ---
 
 Created: November 12, 2025
+Updated: November 15, 2025
 For: November 22-23 and December 6-7, 2025 Workshop Events
