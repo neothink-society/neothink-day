@@ -40,7 +40,7 @@ This directory contains the complete email system for The Neothink Society, incl
 **Tone**: Educational, transformative
 
 ### VIP Members (Premium)
-**Who**: Upgraded to VIP access ($297)  
+**Who**: Upgraded to VIP access ($187)  
 **Design**: Gold throughout, ⭐ badges  
 **Tone**: Exclusive, recognition
 
