@@ -24,7 +24,7 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 ---
 
 ### 3. vip-upgrade-top.html / vip-upgrade (full page)
-**Title:** Upgrade to VIP Experience - $297 | Day of Enlightenment Nov 2025
+**Title:** Upgrade to VIP Experience - $187 | Day of Enlightenment Nov 2025
 **Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority assistance, and private elite session on Day 2. Limited spots available for November 22-23 workshop.
 
 **Character Counts:** Title: 67 | Description: 158
@@ -40,10 +40,10 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 ---
 
 ### 5. re-register.html
-**Title:** Re-Register for November Workshop | Day of Enlightenment 2025
-**Description:** Welcome back! Re-register for the enhanced 2-day Day of Enlightenment workshop, November 22-23, 2025. New format with expanded content and deeper transformation.
+**Title:** Choose Your Workshop Date | Day of Enlightenment 2025
+**Description:** Re-register for the enhanced 2-day Day of Enlightenment workshop. Choose between November 22-23 or December 6-7, 2025. Select your preferred date below.
 
-**Character Counts:** Title: 66 | Description: 159
+**Character Counts:** Title: 57 | Description: 156
 
 ---
 
@@ -75,7 +75,7 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 ---
 
 ### 3. vip-upgrade-top.html / vip-upgrade (full page)
-**Title:** Upgrade to VIP Experience - $297 | Day of Enlightenment Dec 2025
+**Title:** Upgrade to VIP Experience - $187 | Day of Enlightenment Dec 2025
 **Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority assistance, and private elite session on Day 2. Limited spots available for December 6-7 workshop.
 
 **Character Counts:** Title: 66 | Description: 157
@@ -91,10 +91,12 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 ---
 
 ### 5. re-register.html
-**Title:** Re-Register for December Workshop | Day of Enlightenment 2025
-**Description:** Welcome back! Re-register for the enhanced 2-day Day of Enlightenment workshop, December 6-7, 2025. New format with expanded content and deeper transformation.
+**Title:** Choose Your Workshop Date | Day of Enlightenment 2025
+**Description:** Re-register for the enhanced 2-day Day of Enlightenment workshop. Choose between November 22-23 or December 6-7, 2025. Select your preferred date below.
 
-**Character Counts:** Title: 66 | Description: 158
+**Note:** This is the same universal re-register page (allows choosing between Nov or Dec dates)
+
+**Character Counts:** Title: 57 | Description: 156
 
 ---
 
