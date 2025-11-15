@@ -30,7 +30,7 @@ This folder contains the 4 new pages created specifically for the December 2025 
 - Animated success checkmark
 - "What Happens Next" 4-step cards
 - Standard vs VIP comparison grid
-- 6 VIP benefits at $297 pricing
+- 6 VIP benefits at $187 pricing
 - Links to `welcome-home.html` for standard attendees
 
 **Required Setup:**
@@ -128,7 +128,7 @@ The following links connect to pages in `../original-pages/`:
 
 ## VIP Benefits & Pricing
 
-**VIP Price:** $297 (one-time upgrade)
+**VIP Price:** $187 (one-time upgrade)
 
 **VIP Benefits:**
 1. VIP Status Recognition (exclusive Zoom background)

@@ -48,7 +48,7 @@ Before adding the form, create a product in GHL:
 1. Go to **Payments → Products** in GHL
 2. Create new product:
    - **Name:** VIP Experience Upgrade
-   - **Price:** $297
+   - **Price:** $187
    - **Type:** One-time payment
    - **Description:** GUARANTEED 1-on-1 mentorship, priority workshop assistance, private elite session with Wallace Hamilton
 
@@ -56,7 +56,7 @@ Before adding the form, create a product in GHL:
 
 1. **Add Order Form Element** to page (below Section 1)
 
-2. **Select Product:** VIP Experience Upgrade ($297)
+2. **Select Product:** VIP Experience Upgrade ($187)
 
 3. **Form Fields Configuration:**
    - Email (required) - should auto-populate if user is logged in
