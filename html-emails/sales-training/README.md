@@ -22,6 +22,17 @@ Created: November 16, 2025
 
 ---
 
+### 3. training-recording-available.html
+**When to send:** After the training session (evening or next day)
+**Subject:** Your Sales Training Recording + Resources Are Ready
+**Preview:** Sunday's training is now available to watch. Access your sales team portal with the recording, meeting summary, and all upcoming training info.
+
+**Purpose:** Follow-up email providing access to the sales team portal with training recording, meeting summary, event details, and team form
+
+**Portal Link:** https://societysecrets.com/sales-team
+
+---
+
 ## What We're Training On
 
 **Main Offer:** The Society Level Three membership package
@@ -39,8 +50,15 @@ This is the next generation of core experiences for members of The Neothink Soci
 
 ---
 
-## Zoom Link
-Both emails use: https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1
+## Links
+
+**Training Zoom Link:** https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1
+
+**Sales Team Portal:** https://societysecrets.com/sales-team
+
+**Team Information Form:** https://docs.google.com/forms/d/1eZhmbOXv-1uH5ZEM_xOS2rNud_Ap1jdZ6mYzUQPagIE/viewform?edit_requested=true
+
+**Training Recording:** https://vimeo.com/1137485880
 
 ## Recipient List
 Extended sales team (~27 people)

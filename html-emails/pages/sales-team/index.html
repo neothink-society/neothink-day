@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sales Team Portal - The Neothink Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000000;
+            color: #e5e5e5;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+        }
+
+        h1 {
+            font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
+            font-size: 56px;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #FFD700;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #888888;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #111;
+            border-radius: 12px;
+            margin-bottom: 60px;
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 215, 0, 0.02));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
+            font-size: 36px;
+            font-weight: 400;
+            color: #FFD700;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #FFD700;
+            margin: 30px 0 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border-left: 4px solid #FFD700;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000000;
+            font-size: 18px;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 20px 50px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+            margin: 20px 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid #FFD700;
+            color: #FFD700;
+        }
+
+        .cta-button.secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .grid-item {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .grid-item h4 {
+            color: #FFD700;
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .grid-item p {
+            font-size: 15px;
+            margin: 0;
+            color: #cccccc;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid #FFD700;
+            color: #FFD700;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .thank-you {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1));
+            border: 2px solid #FFD700;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .thank-you h3 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://assets.cdn.filesafe.space/OWPT3ihPWINakwA0bGRQ/media/685f3d91844c01434843021f.png"
+                 alt="Neothink Society Logo"
+                 class="logo">
+            <p class="subtitle">Day of Enlightenment</p>
+            <h1>Sales Team Portal</h1>
+            <p class="tagline">Training Resources & Event Information</p>
+        </header>
+
+        <!-- Thank You Message -->
+        <div class="thank-you">
+            <h3>🙏 Thank You for Joining Us!</h3>
+            <p style="font-size: 18px; margin-bottom: 15px;">We appreciate everyone who attended the Sunday training session.</p>
+            <p style="font-size: 16px; margin: 0;">If you haven't filled out the team information form yet, please complete it below.</p>
+        </div>
+
+        <!-- Training Recording -->
+        <section class="section">
+            <h2>📹 Training Recording - November 16, 2025</h2>
+            <p>Watch the complete sales training session. This covers everything you need to know about supporting our members during the Day of Enlightenment events.</p>
+
+            <div class="video-container">
+                <iframe src="https://player.vimeo.com/video/1137485880?h=0&title=0&byline=0&portrait=0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://vimeo.com/1137485880" class="cta-button secondary" target="_blank">Open in Vimeo →</a>
+            </p>
+        </section>
+
+        <!-- Meeting Summary -->
+        <section class="section">
+            <h2>📝 Meeting Summary</h2>
+
+            <h3>🎯 Event Overview</h3>
+            <p>We're preparing for two upcoming Day of Enlightenment events - a transformative 2-day experience where members ascend from Level 2 to Level 3 in The Neothink Society.</p>
+
+            <div style="text-align: center; margin: 25px 0;">
+                <span class="date-badge">Nov 22-23, 2025</span>
+                <span class="date-badge">Dec 6-7, 2025</span>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <h4>📅 Saturday Schedule</h4>
+                    <p><strong>Start:</strong> 8:00 AM Pacific Time<br>
+                    <strong>Duration:</strong> Full day (8+ hours)<br>
+                    <strong>Format:</strong> Fully immersive experience</p>
+                </div>
+                <div class="grid-item">
+                    <h4>📅 Sunday Schedule</h4>
+                    <p><strong>Start:</strong> 9:00 AM Pacific Time<br>
+                    <strong>Duration:</strong> Partial day (TBD)<br>
+                    <strong>Format:</strong> Continuation of transformation</p>
+                </div>
+                <div class="grid-item">
+                    <h4>👥 Expected Attendance</h4>
+                    <p><strong>Participants:</strong> 500-600 people per day<br>
+                    <strong>Total:</strong> Both Saturday and Sunday<br>
+                    <strong>Support Needed:</strong> Extended sales team</p>
+                </div>
+            </div>
+
+            <h3>💼 Your Role as Sales Team</h3>
+            <p>As volunteer sales team members, you'll receive a special bonus for representing The Neothink Society during these events. Here's what you'll be doing:</p>
+
+            <ul>
+                <li><strong>Camera on entire time</strong> - Be visible and present throughout the event</li>
+                <li><strong>Keep chat active and positive</strong> - Respond to questions and maintain high energy</li>
+                <li><strong>Support Level 3 ascension</strong> - Help members who want to ascend to the next level</li>
+                <li><strong>Manage breakout rooms</strong> - Pull people into private conversations for assistance</li>
+                <li><strong>Experience the event yourself</strong> - Fully participate while supporting others</li>
+            </ul>
+
+            <div class="highlight">
+                <h3 style="margin-top: 0;">💡 Two Main Sales Scenarios</h3>
+
+                <p><strong>Scenario 1: Ready to Ascend (Majority of cases)</strong></p>
+                <ul>
+                    <li>Members have already decided they want to ascend to Level 3</li>
+                    <li>They need help processing their payment</li>
+                    <li>They want to discuss payment plan options</li>
+                    <li>Quick assistance to complete their purchase</li>
+                </ul>
+
+                <p><strong>Scenario 2: Seeking Information</strong></p>
+                <ul>
+                    <li>Members are highly interested but need more information</li>
+                    <li>They have questions before making their decision</li>
+                    <li>Requires more preparation and product knowledge</li>
+                    <li>Opportunity to guide them through the value proposition</li>
+                </ul>
+            </div>
+
+            <h3>📚 Training Schedule</h3>
+            <p>To ensure everyone is fully prepared, we have additional training sessions this week:</p>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <h4>Tue/Wed/Thu Training</h4>
+                    <p><strong>Time:</strong> 10:00 AM Pacific (1:00 PM Eastern)<br>
+                    <strong>Duration:</strong> 30 minutes to 1 hour<br>
+                    <strong>Required:</strong> Attend at least 2 out of 3<br>
+                    <strong>Format:</strong> Roleplay scenarios & Q&A</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Friday Run-Through</h4>
+                    <p><strong>Participants:</strong> Wallace Hamilton + full team<br>
+                    <strong>Purpose:</strong> Complete event walkthrough<br>
+                    <strong>Focus:</strong> Final preparation for Saturday/Sunday<br>
+                    <strong>Details:</strong> TBD - more info coming soon</p>
+                </div>
+            </div>
+
+            <h3>📦 Resources Coming Monday</h3>
+            <p>Marco will be sending comprehensive resources before Tuesday's training, including:</p>
+            <ul>
+                <li>Outline of all responsibilities</li>
+                <li>Common questions and answers</li>
+                <li>Payment processing guidelines</li>
+                <li>Chat moderation best practices</li>
+                <li>Handling negative comments</li>
+            </ul>
+
+            <h3>✨ Key Takeaways</h3>
+            <div class="highlight">
+                <ul>
+                    <li>This is a <strong>volunteer opportunity</strong> with a special bonus</li>
+                    <li>You'll <strong>fully experience the event</strong> as a participant while supporting others</li>
+                    <li>Being hyper-engaged actually <strong>enhances your own transformation</strong></li>
+                    <li>Most scenarios are straightforward - helping with <strong>payment processing</strong></li>
+                    <li>We're building the <strong>A-Team</strong> for these transformational events</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section" style="text-align: center;">
+            <h2>📋 Complete Your Team Information</h2>
+            <p style="max-width: 600px; margin: 0 auto 30px;">If you haven't filled out the team information form yet, please complete it now. This helps us prepare the right resources and ensure everyone is properly set up.</p>
+
+            <a href="https://docs.google.com/forms/d/1eZhmbOXv-1uH5ZEM_xOS2rNud_Ap1jdZ6mYzUQPagIE/viewform?edit_requested=true"
+               class="cta-button"
+               target="_blank">
+                Complete Team Form →
+            </a>
+
+            <p style="font-size: 15px; color: #888888; margin-top: 20px;">Just 2 quick questions - takes less than 1 minute</p>
+        </section>
+
+        <footer>
+            <p><strong style="color: #FFD700;">The Neothink Society</strong><br>
+            Day of Enlightenment Sales Team Portal</p>
+            <p style="margin-top: 15px;">Questions? Email <a href="mailto:josh@neothink.io" style="color: #FFD700; text-decoration: underline;">josh@neothink.io</a></p>
+        </footer>
+    </div>
+</body>
+</html>
