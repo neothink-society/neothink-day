@@ -46,7 +46,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Trigger**: Immediately upon registration
 - **Send Window**: Thu Nov 13 - Sun Nov 16
 - **Subject**: `You're Part of Something Rare`
-- **Preview**: `This isn't a webinar. It's not passive learning. November 22-23 is a live transformation experience where your nervous system gets rewired. Only those who show up fully will break through.`
+- **Preview**: `This is your live transformation experience. November 22-23. Come fully present, leave completely transformed. You're exactly where you need to be.`
 - **NO COUNTDOWN LANGUAGE** - Pure anticipation building
 
 ### Email #4: Methodology Email (Bridge #2)
@@ -54,7 +54,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Trigger**: 24 hours after registration
 - **Condition**: Skip if registered Sun Nov 16 or Mon Nov 17
 - **Subject**: `Why This Workshop Actually Works`
-- **Preview**: `Most workshops fail because they treat symptoms, not root causes. November 22-23 is different. Here's why transformation happens when most events only create temporary inspiration.`
+- **Preview**: `This workshop addresses root causes, not just symptoms. Real transformation, not temporary motivation. Here's exactly how it works.`
 - **NO COUNTDOWN LANGUAGE** - Authority building
 
 ---
@@ -74,14 +74,14 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: **Tuesday, November 18, 2025**
 - **Send Time**: **10:00 AM PT**
 - **Subject**: `4 Days: Block Your Calendar Now`
-- **Preview**: `Saturday Nov 22 + Sunday Nov 23. Both days committed. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
+- **Preview**: `Protect these two days completely. Saturday Nov 22 + Sunday Nov 23. Both days essential for your complete transformation. Full presence required.`
 
 ### Email #7: Day 3 - VIP Final Push
 - **File**: `preparation-3days.html`
 - **Send Date**: **Wednesday, November 19, 2025**
 - **Send Time**: **9:00 AM PT**
-- **Subject**: `⚡ 72 Hours: Last Chance for VIP`
-- **Preview**: `GUARANTEED 1-on-1 mentorship + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
+- **Subject**: `⚡ Final 72 Hours: VIP Elite Available`
+- **Preview**: `Add exclusive 1-on-1 mentorship with Wallace Hamilton to your workshop experience. VIP enhancement closes Saturday 8am PT.`
 
 ### Email #8: Day 2 - Final Preparation
 - **File**: `preparation-2days.html`
@@ -139,7 +139,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: November 16, 2025
 - **Send Time**: **8:00 AM PT**
 - **Subject**: `You're Part of Something Rare`
-- **Preview**: `This isn't a webinar. It's not passive learning. December 6-7 is a live transformation experience where your nervous system gets rewired.`
+- **Preview**: `This is your live transformation experience. December 6-7. Come fully present, leave completely transformed. You're exactly where you need to be.`
 
 ### Email #4: Day 14 - Methodology Email
 - **File**: `preparation-14days.html`
@@ -147,7 +147,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: November 22, 2025
 - **Send Time**: **9:00 AM PT**
 - **Subject**: `Why This Workshop Actually Works`
-- **Preview**: `Most workshops fail because they treat symptoms, not root causes. December 6-7 is different. Here's why transformation happens when most events only create temporary inspiration.`
+- **Preview**: `This workshop addresses root causes, not just symptoms. Real transformation, not temporary motivation. Here's exactly how it works.`
 
 ### Email #5: Day 9 - Pre-Work Assignment
 - **File**: `preparation-9days.html`
@@ -163,7 +163,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: November 29, 2025
 - **Send Time**: **8:00 AM PT**
 - **Subject**: `How's Your Pre-Work Going? (7 Days Out)`
-- **Preview**: `You should be done with pages 1-50 and the 5 reflection questions by now. If you're stuck or behind, here's how to catch up before Saturday.`
+- **Preview**: `Pre-work checkpoint: Pages 1-50 and 5 reflection questions. On track? Great. Need support? We're here to help you prepare.`
 
 ### Email #7: Day 4 - Calendar Blocking
 - **File**: `preparation-4days.html`
@@ -171,15 +171,15 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: December 2, 2025
 - **Send Time**: **10:00 AM PT**
 - **Subject**: `4 Days: Block Your Calendar Now`
-- **Preview**: `Saturday Dec 6 + Sunday Dec 7. Both days committed. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
+- **Preview**: `Protect these two days completely. Saturday Dec 6 + Sunday Dec 7. Both days essential for your complete transformation. Full presence required.`
 
 ### Email #8: Day 3 - VIP Final Push
 - **File**: `preparation-3days.html`
 - **Automation**: When event is 3 days away (72 hours)
 - **Send Date**: December 3, 2025
 - **Send Time**: **9:00 AM PT**
-- **Subject**: `⚡ 72 Hours: Last Chance for VIP`
-- **Preview**: `GUARANTEED 1-on-1 mentorship + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
+- **Subject**: `⚡ Final 72 Hours: VIP Elite Available`
+- **Preview**: `Add exclusive 1-on-1 mentorship with Wallace Hamilton to your workshop experience. VIP enhancement closes Saturday 8am PT.`
 
 ### Email #9: Day 2 - Final Preparation
 - **File**: `preparation-2days.html`
