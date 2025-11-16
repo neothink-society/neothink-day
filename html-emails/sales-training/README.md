@@ -29,7 +29,7 @@ Created: November 16, 2025
 
 **Purpose:** Follow-up email providing access to the sales team portal with training recording, meeting summary, event details, and team form
 
-**Portal Link:** https://societysecrets.com/sales-team
+**Portal Link:** https://neothinkday.com/sales-team
 
 ---
 
@@ -54,7 +54,7 @@ This is the next generation of core experiences for members of The Neothink Soci
 
 **Training Zoom Link:** https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1
 
-**Sales Team Portal:** https://societysecrets.com/sales-team
+**Sales Team Portal:** https://neothinkday.com/sales-team
 
 **Team Information Form:** https://docs.google.com/forms/d/1eZhmbOXv-1uH5ZEM_xOS2rNud_Ap1jdZ6mYzUQPagIE/viewform?edit_requested=true
 
