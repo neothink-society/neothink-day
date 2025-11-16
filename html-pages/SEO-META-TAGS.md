@@ -25,9 +25,9 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 3. vip-upgrade-top.html / vip-upgrade (full page)
 **Title:** Upgrade to VIP Experience - $187 | Day of Enlightenment Nov 2025
-**Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority support, and elite session on Day 2. Limited spots for November 22-23 workshop.
+**Description:** Upgrade to VIP for GUARANTEED private group mentorship, priority support, and elite VIP session. Limited spots for November 22-23 workshop.
 
-**Character Counts:** Title: 67 | Description: 149
+**Character Counts:** Title: 67 | Description: 146
 
 ---
 
@@ -49,9 +49,9 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 6. vip-unlocked.html
 **Title:** VIP Access Unlocked! Day of Enlightenment | November 22-23
-**Description:** VIP upgrade confirmed! Access exclusive materials, priority support, and guaranteed 1-on-1 mentorship for your November 22-23 transformation.
+**Description:** VIP upgrade confirmed! Access exclusive materials, priority support, and guaranteed private group mentorship for your November transformation.
 
-**Character Counts:** Title: 63 | Description: 145
+**Character Counts:** Title: 63 | Description: 147
 
 ---
 
@@ -76,9 +76,9 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 3. vip-upgrade-top.html / vip-upgrade (full page)
 **Title:** Upgrade to VIP Experience - $187 | Day of Enlightenment Dec 2025
-**Description:** Upgrade to VIP for GUARANTEED 1-on-1 mentorship, priority support, and elite session on Day 2. Limited spots for December 6-7 workshop.
+**Description:** Upgrade to VIP for GUARANTEED private group mentorship, priority support, and elite VIP session. Limited spots for December 6-7 workshop.
 
-**Character Counts:** Title: 66 | Description: 148
+**Character Counts:** Title: 66 | Description: 145
 
 ---
 
@@ -102,9 +102,9 @@ Optimized meta titles and descriptions for all workshop pages across both domain
 
 ### 6. vip-unlocked.html
 **Title:** VIP Access Unlocked! Day of Enlightenment | December 6-7
-**Description:** VIP upgrade confirmed! Access exclusive materials, priority support, and guaranteed 1-on-1 mentorship for your December 6-7 transformation.
+**Description:** VIP upgrade confirmed! Access exclusive materials, priority support, and guaranteed private group mentorship for your December transformation.
 
-**Character Counts:** Title: 62 | Description: 144
+**Character Counts:** Title: 62 | Description: 146
 
 ---
 
