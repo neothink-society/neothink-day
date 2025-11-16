@@ -33,7 +33,7 @@
 **File**: `vip-confirmation.html`
 **Trigger**: Immediately upon VIP purchase
 **Subject**: `⭐ VIP Access Confirmed - Day of Enlightenment`
-**Preview**: `Your VIP status is confirmed. Nov 22 priority access + exclusive VIP-only session on Nov 23. GUARANTEED 1-on-1 mentorship awaits.`
+**Preview**: `Your VIP status is confirmed. Nov 22 priority access + exclusive VIP-only session on Nov 23. GUARANTEED access to intimate VIP group session with Wallace Hamilton awaits.`
 
 **Purpose**: Confirm VIP upgrade, emphasize exclusive benefits
 **Key Elements**:
@@ -41,7 +41,7 @@
 - 5 VIP exclusive benefits detailed
 - Priority Zoom room access on Day 1
 - Exclusive VIP session on Day 2
-- GUARANTEED 1-on-1 mentorship
+- GUARANTEED access to intimate VIP group session with Wallace Hamilton
 - Workshop hub link
 
 **Audience**: VIP Members only (separate track)
@@ -171,7 +171,7 @@
 **File**: `preparation-3days.html`
 **Automation Timing**: Send when event is 3 days away (72 hours)
 **Subject**: `⚡ 72 Hours: Last Chance for VIP`
-**Preview**: `GUARANTEED 1-on-1 mentorship + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
+**Preview**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
 
 **Purpose**: Final VIP conversion push before deadline
 **Key Elements**:

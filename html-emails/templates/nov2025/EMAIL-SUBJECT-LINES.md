@@ -20,7 +20,7 @@ Quick reference for all email campaigns in the Nov 22-23, 2025 workshop sequence
 
 **Subject Line**: `⭐ VIP Access Confirmed - Day of Enlightenment`
 
-**Preview Text**: `Your VIP status is confirmed. Nov 22 priority access + exclusive VIP-only session on Nov 23. GUARANTEED 1-on-1 mentorship awaits.`
+**Preview Text**: `Your VIP status is confirmed. Nov 22 priority access + exclusive VIP-only session on Nov 23. GUARANTEED access to intimate VIP group session with Wallace Hamilton awaits.`
 
 ---
 
@@ -54,7 +54,7 @@ Quick reference for all email campaigns in the Nov 22-23, 2025 workshop sequence
 
 **Subject Line**: `⚡ 72 Hours: Last Chance for VIP`
 
-**Preview Text**: `GUARANTEED 1-on-1 mentorship + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
+**Preview Text**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
 
 **Send Date**: November 19, 2025
 

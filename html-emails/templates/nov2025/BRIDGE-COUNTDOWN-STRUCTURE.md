@@ -88,7 +88,7 @@
 **File**: `preparation-3days.html`
 **Automation Timing**: Wednesday, November 19 @ 9:00 AM PT
 **Subject**: `⚡ 72 Hours: Last Chance for VIP`
-**Preview**: `GUARANTEED 1-on-1 mentorship + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
+**Preview**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
 
 ---
 

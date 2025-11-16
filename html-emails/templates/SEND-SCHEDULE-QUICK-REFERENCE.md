@@ -35,7 +35,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Trigger**: Immediately upon VIP purchase (24/7)
 - **Send Time**: Immediate (no delay)
 - **Subject**: `⭐ VIP Access Confirmed - Day of Enlightenment`
-- **Preview**: `Your VIP status is confirmed. Nov 22 priority access + exclusive VIP-only session on Nov 23. GUARANTEED 1-on-1 mentorship awaits.`
+- **Preview**: `Your VIP status is confirmed. Nov 22 priority access + exclusive VIP-only group session on Nov 23. GUARANTEED access to intimate group mentorship with Wallace Hamilton.`
 
 ---
 
@@ -81,7 +81,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: **Wednesday, November 19, 2025**
 - **Send Time**: **9:00 AM PT**
 - **Subject**: `⚡ Final 72 Hours: VIP Elite Available`
-- **Preview**: `Add exclusive 1-on-1 mentorship with Wallace Hamilton to your workshop experience. VIP enhancement closes Saturday 8am PT.`
+- **Preview**: `Add exclusive intimate VIP group session with Wallace Hamilton to your workshop experience. VIP enhancement closes Saturday 8am PT.`
 
 ### Email #8: Day 2 - Final Preparation
 - **File**: `preparation-2days.html`
@@ -129,7 +129,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Trigger**: Immediately upon VIP purchase (24/7)
 - **Send Time**: Immediate (no delay)
 - **Subject**: `⭐ VIP Access Confirmed - Day of Enlightenment`
-- **Preview**: `Your VIP status is confirmed. Dec 6 priority access + exclusive VIP-only session on Dec 7. GUARANTEED 1-on-1 mentorship awaits.`
+- **Preview**: `Your VIP status is confirmed. Dec 6 priority access + exclusive VIP-only group session on Dec 7. GUARANTEED access to intimate group mentorship with Wallace Hamilton.`
 
 ---
 
@@ -179,7 +179,7 @@ Use this guide to set up your email automation in GoHighLevel. Copy/paste subjec
 - **Send Date**: December 3, 2025
 - **Send Time**: **9:00 AM PT**
 - **Subject**: `⚡ Final 72 Hours: VIP Elite Available`
-- **Preview**: `Add exclusive 1-on-1 mentorship with Wallace Hamilton to your workshop experience. VIP enhancement closes Saturday 8am PT.`
+- **Preview**: `Add exclusive intimate VIP group session with Wallace Hamilton to your workshop experience. VIP enhancement closes Saturday 8am PT.`
 
 ### Email #9: Day 2 - Final Preparation
 - **File**: `preparation-2days.html`
