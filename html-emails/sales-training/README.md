@@ -27,7 +27,7 @@ Created: November 16, 2025
 **Main Offer:** The Society Level Three membership package
 **Down-Sell:** New monthly subscription membership
 
-**Context:** This is short notice. The sales team is finding out about this today. They need to be ready to support hundreds of buyers during the workshop, many of whom are not technically inclined and will need assistance in breakout rooms.
+**Context:** This is short notice - for some this is their FIRST notice sent just hours before the training. They need to be ready to support hundreds of buyers on BOTH Saturday and Sunday during the workshop, many of whom are not technically inclined and will need assistance in breakout rooms.
 
 **What the team will do:**
 - Help members purchase The Society Level Three membership package
