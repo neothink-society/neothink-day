@@ -22,6 +22,23 @@ Created: November 16, 2025
 
 ---
 
+## What We're Training On
+
+**Main Offer:** The Society Level Three membership package
+**Down-Sell:** New monthly subscription membership
+
+**Context:** This is short notice. The sales team is finding out about this today. They need to be ready to support hundreds of buyers during the workshop, many of whom are not technically inclined and will need assistance in breakout rooms.
+
+**What the team will do:**
+- Help members purchase The Society Level Three membership package
+- Offer the monthly subscription as a down-sell option
+- Provide technical assistance in breakout rooms
+- Handle high volume of buyers during the workshop
+
+This is the next generation of core experiences for members of The Neothink Society.
+
+---
+
 ## Zoom Link
 Both emails use: https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1
 
