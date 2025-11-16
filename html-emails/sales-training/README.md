@@ -7,7 +7,7 @@ Created: November 16, 2025
 ### 1. training-reminder.html
 **When to send:** NOW (before 1pm PT today)
 **Subject:** Reminder: Sales Training Today at 1pm PT - Join Us!
-**Preview:** First sales training session starts in a few hours. Join us to prepare for Saturday's workshop breakout rooms.
+**Preview:** First sales training session starts in a few hours. Join us to prepare for the 2-day workshop breakout rooms (Sat + Sun).
 
 **Purpose:** Reminder for the 1pm PT sales training session happening today
 
@@ -27,7 +27,7 @@ Created: November 16, 2025
 **Main Offer:** The Society Level Three membership package
 **Down-Sell:** New monthly subscription membership
 
-**Context:** This is short notice - for some this is their FIRST notice sent just hours before the training. They need to be ready to support hundreds of buyers on BOTH Saturday and Sunday during the workshop, many of whom are not technically inclined and will need assistance in breakout rooms.
+**Context:** This is short notice - for some this is their FIRST notice sent just hours before the training. They need to be ready to support hundreds of buyers during BOTH upcoming 2-day workshops (Nov 22-23 AND Dec 6-7). Saturday is a full day, Sunday is at least partial day (TBD). Many buyers are not technically inclined and will need assistance in breakout rooms.
 
 **What the team will do:**
 - Help members purchase The Society Level Three membership package
@@ -45,9 +45,9 @@ Both emails use: https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJ
 ## Recipient List
 Extended sales team (~27 people)
 
-## Workshop Details
-- **November Event:** November 22-23, 2025
-- **December Event:** December 6-7, 2025
+## Workshop Details (Both 2-Day Events)
+- **November Event:** November 22-23, 2025 (Sat full day + Sun partial day)
+- **December Event:** December 6-7, 2025 (Sat full day + Sun partial day)
 
 ## Contact
 Josh - josh@neothink.io
