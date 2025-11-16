@@ -68,4 +68,4 @@ Extended sales team (~27 people)
 - **December Event:** December 6-7, 2025 (Sat full day + Sun partial day)
 
 ## Contact
-Josh - josh@neothink.io
+Josh - team@contact.neothink.com
