@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
     <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
+    <meta name="color-scheme" content="dark only">
+    <meta name="supported-color-schemes" content="dark">
     <title>Sales Training Recording Available</title>
 
     <!-- Subject Line: Your Sales Training Recording + Resources Are Ready -->
@@ -92,8 +92,19 @@
             }
         }
 
-        /* Dark mode optimization */
+        /* Force dark mode always */
         @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000 !important;
+            }
+
+            .dark-bg {
+                background-color: #000000 !important;
+            }
+        }
+
+        /* Force dark mode even in light mode */
+        @media (prefers-color-scheme: light) {
             body {
                 background-color: #000000 !important;
             }

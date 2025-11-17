@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
     <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
+    <meta name="color-scheme" content="dark only">
+    <meta name="supported-color-schemes" content="dark">
     <title>You're Registered for the Day of Enlightenment!</title>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Courier+Prime:wght@400;700&display=swap');
@@ -134,6 +134,17 @@
             }
             .dark-mode-text {
                 color: #e8e8e8 !important;
+            }
+        }
+
+        /* Force dark mode even in light mode */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #000000 !important;
+            }
+
+            .dark-bg {
+                background-color: #000000 !important;
             }
         }
     </style>

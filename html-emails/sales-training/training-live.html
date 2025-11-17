@@ -86,8 +86,19 @@
             }
         }
 
-        /* Dark mode optimization */
+        /* Force dark mode always */
         @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000 !important;
+            }
+
+            .dark-bg {
+                background-color: #000000 !important;
+            }
+        }
+
+        /* Force dark mode even in light mode */
+        @media (prefers-color-scheme: light) {
             body {
                 background-color: #000000 !important;
             }
