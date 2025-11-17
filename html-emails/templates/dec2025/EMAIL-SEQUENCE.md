@@ -47,13 +47,13 @@
 
 ---
 
-### 3. 20-Day Welcome Email (EXTENDED SEQUENCE)
-**File**: `preparation-20days.html`
-**Automation Timing**: Send when event is 20 days away (or immediately if registered <20 days before)
+### 3. Welcome Follow-Up Email (10 Minutes After Registration)
+**File**: `welcome-confirmation.html`
+**Automation Timing**: Send 10 minutes after registration confirmation
 **Subject**: `You're Part of Something Rare`
 **Preview**: `This isn't a webinar. It's not passive learning. December 6-7 is a live transformation experience where your nervous system gets rewired.`
 
-**Purpose**: Build exclusivity, set expectations, create anticipation
+**Purpose**: Build exclusivity, set expectations, create anticipation immediately after registration
 **Key Elements**:
 - "You're Part of Something Rare" headline
 - What this workshop ISN'T (differentiation)
@@ -301,11 +301,13 @@ The automation should work as follows:
 
 ### Late Registrations
 
-**If someone registers LESS than 20 days before the event:**
-- Send Registration Confirmation immediately
-- Catch them up to the appropriate email in the sequence based on current date
-- Example: Register 5 days before → Get Registration Confirmation + 4-Day Email immediately
-- Example: Register 12 days before → Get Registration Confirmation + 14-Day Email immediately
+**All registrations get:**
+- Registration Confirmation immediately
+- Welcome Follow-Up 10 minutes after registration
+
+**Then catch them up to the appropriate email in the sequence based on current date:**
+- Example: Register 5 days before → Get Registration Confirmation + Welcome Follow-Up + 4-Day Email
+- Example: Register 12 days before → Get Registration Confirmation + Welcome Follow-Up + 14-Day Email
 
 ### VIP Deadline
 
@@ -354,7 +356,7 @@ All files in: `/templates/dec2025/`
 
 1. `registration-confirmation.html` - Registration confirmation
 2. `vip-confirmation.html` - VIP purchase confirmation
-3. `preparation-20days.html` - 20-day welcome email (EXTENDED)
+3. `welcome-confirmation.html` - Welcome follow-up (10 min after registration)
 4. `preparation-14days.html` - 14-day methodology email (EXTENDED)
 5. `preparation-9days.html` - 9-day pre-work email
 6. `preparation-7days.html` - 7-day accountability email (NEW)
@@ -388,7 +390,8 @@ Before sending any email:
 
 ### Automation Setup
 - [ ] Confirm automation triggers based on December 6, 2025 event date
-- [ ] Test late registration catch-up logic (20-day, 14-day, 9-day, etc.)
+- [ ] Test welcome follow-up sent 10 minutes after registration
+- [ ] Test late registration catch-up logic (14-day, 9-day, 7-day, etc.)
 - [ ] Verify VIP/non-VIP segmentation
 - [ ] Test email timing (7am PT for day-of email on December 6)
 - [ ] Verify wait periods between emails (6 days, 5 days, 2 days, etc.)
@@ -439,7 +442,7 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 - **Workshop Hub**: neothinkevent.com/home (NOT neothinkday.com/home)
 - **Zoom Link**: Different for December vs November
 - **Email Count**: 11 total files (vs 8 for November)
-- **Engagement Runway**: 20-day start (vs 9-day start for November)
+- **Engagement Start**: Immediate welcome follow-up (10 min after registration), then 14-day sequence
 
 ---
 
@@ -452,4 +455,5 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 - Workshop hub is neothinkevent.com/home (NOT neothinkday.com/home)
 - Extended sequence provides more engagement touchpoints vs November
 - Test automation workflow thoroughly before December 6, 2025 event
-- Ensure late registration logic accounts for 20-day, 14-day, 9-day, 7-day entry points
+- Welcome follow-up sent 10 minutes after registration (not time-based)
+- Ensure late registration logic accounts for 14-day, 9-day, 7-day entry points
