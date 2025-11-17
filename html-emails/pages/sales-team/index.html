@@ -24,11 +24,67 @@
     <meta property="twitter:description" content="Day of Enlightenment sales training resources, recordings, and event information for our extended sales team.">
     <meta property="twitter:image" content="https://assets.cdn.filesafe.space/OWPT3ihPWINakwA0bGRQ/media/685f3d91844c01434843021f.png">
 
+    <!-- Font Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing - 8px base grid */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Focus */
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
         * {
             margin: 0;
             padding: 0;
@@ -36,52 +92,234 @@
         }
 
         body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #000000;
-            color: #e5e5e5;
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
             line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus States */
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        /* Skip to Content */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 100;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 0 var(--space-md);
         }
 
-        header {
+        main {
+            flex: 1;
+        }
+
+        /* ===========================
+           HEADER
+        =========================== */
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .header-subtitle {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ===========================
+           FOOTER
+        =========================== */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md) var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .footer-brand p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+        }
+
+        .footer-support {
+            text-align: right;
+        }
+
+        .support-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            margin-bottom: var(--space-xs);
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .support-link:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-bottom {
             text-align: center;
-            margin-bottom: 60px;
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
         }
 
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
+        .footer-bottom p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
         }
 
-        h1 {
-            font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
-            font-size: 56px;
-            font-weight: 400;
-            color: #ffffff;
-            margin-bottom: 20px;
-            line-height: 1.2;
+        /* ===========================
+           PAGE CONTENT
+        =========================== */
+        .page-header {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
         }
 
-        .subtitle {
-            font-size: 20px;
-            color: #FFD700;
+        .page-eyebrow {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            margin-bottom: var(--space-md);
         }
 
-        .tagline {
-            font-size: 18px;
-            color: #888888;
+        .page-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .page-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
             max-width: 600px;
             margin: 0 auto;
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-lg);
+        }
+
+        h3 {
+            font-size: var(--text-xl);
+            color: var(--gold);
+            margin: var(--space-lg) 0 var(--space-md);
+            font-weight: 700;
+        }
+
+        p {
+            font-size: var(--text-base);
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+            color: var(--gray-200);
+        }
+
+        ul {
+            list-style: none;
+            margin: var(--space-md) 0;
+        }
+
+        li {
+            padding: var(--space-sm) 0 var(--space-sm) 30px;
+            position: relative;
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--gray-200);
+        }
+
+        li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
         }
 
         .video-container {
@@ -89,9 +327,9 @@
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            background: #111;
+            background: var(--gray-900);
             border-radius: 12px;
-            margin-bottom: 60px;
+            margin-bottom: var(--space-2xl);
             box-shadow: 0 8px 30px rgba(255, 215, 0, 0.2);
         }
 
@@ -108,73 +346,32 @@
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 215, 0, 0.02));
             border: 2px solid rgba(255, 215, 0, 0.3);
             border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
-            font-size: 36px;
-            font-weight: 400;
-            color: #FFD700;
-            margin-bottom: 25px;
-        }
-
-        h3 {
-            font-size: 22px;
-            color: #FFD700;
-            margin: 30px 0 15px;
-            font-weight: 700;
-        }
-
-        p {
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style: none;
-            margin: 20px 0;
-        }
-
-        li {
-            padding: 12px 0 12px 30px;
-            position: relative;
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-        li:before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #FFD700;
-            font-weight: bold;
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
         }
 
         .highlight {
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
-            border-left: 4px solid #FFD700;
-            padding: 25px 30px;
-            margin: 30px 0;
+            border-left: 4px solid var(--gold);
+            padding: var(--space-lg) var(--space-xl);
+            margin: var(--space-xl) 0;
             border-radius: 8px;
         }
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #FFD700, #FFA500);
-            color: #000000;
-            font-size: 18px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            color: var(--black);
+            font-size: var(--text-lg);
             font-weight: 800;
             text-decoration: none;
-            padding: 20px 50px;
+            padding: 1.25rem 3rem;
             border-radius: 8px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.05em;
             box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
             transition: all 0.3s ease;
-            margin: 20px 10px;
+            margin: var(--space-md) var(--space-sm);
         }
 
         .cta-button:hover {
@@ -182,114 +379,83 @@
             box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
         }
 
-        .cta-button.secondary {
-            background: transparent;
-            border: 2px solid #FFD700;
-            color: #FFD700;
-        }
-
-        .cta-button.secondary:hover {
-            background: rgba(255, 215, 0, 0.1);
-        }
-
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 30px 0;
+            gap: var(--space-xl);
+            margin: var(--space-xl) 0;
         }
 
         .grid-item {
             background: rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 215, 0, 0.2);
             border-radius: 8px;
-            padding: 25px;
+            padding: var(--space-lg);
         }
 
         .grid-item h4 {
-            color: #FFD700;
-            font-size: 18px;
-            margin-bottom: 12px;
+            color: var(--gold);
+            font-size: var(--text-lg);
+            margin-bottom: var(--space-sm);
             font-weight: 700;
         }
 
         .grid-item p {
-            font-size: 15px;
+            font-size: var(--text-sm);
             margin: 0;
-            color: #cccccc;
+            color: var(--gray-300);
         }
 
         .date-badge {
             display: inline-block;
             background: rgba(255, 215, 0, 0.15);
-            border: 1px solid #FFD700;
-            color: #FFD700;
-            padding: 8px 16px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 0.5rem 1rem;
             border-radius: 20px;
-            font-size: 14px;
+            font-size: var(--text-sm);
             font-weight: 700;
-            margin: 5px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        footer p {
-            font-size: 14px;
-            color: #666666;
+            margin: 0.25rem;
         }
 
         .thank-you {
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1));
-            border: 2px solid #FFD700;
+            border: 2px solid var(--gold);
             border-radius: 12px;
-            padding: 30px;
+            padding: var(--space-xl);
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: var(--space-2xl);
         }
 
         .thank-you h3 {
             margin-top: 0;
-            font-size: 28px;
+            font-size: var(--text-2xl);
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 40px 16px;
+            .header-content {
+                flex-direction: column;
+                gap: var(--space-sm);
+                text-align: center;
             }
 
-            h1 {
-                font-size: 36px;
-                line-height: 1.2;
-            }
-
-            h2 {
-                font-size: 28px;
-                line-height: 1.3;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-
-            p, li {
-                font-size: 16px;
-                line-height: 1.7;
+            .footer-support {
+                text-align: left;
             }
 
             .section {
-                padding: 25px 20px;
+                padding: var(--space-lg);
+            }
+
+            .highlight {
+                padding: var(--space-md) var(--space-lg);
             }
 
             .cta-button {
                 display: block;
-                margin: 10px 0;
-                padding: 18px 40px;
-                font-size: 16px;
+                margin: var(--space-md) 0;
+                padding: 1.125rem 2.5rem;
+                font-size: var(--text-base);
             }
 
             .grid {
@@ -297,221 +463,227 @@
             }
 
             .thank-you {
-                padding: 25px 20px;
-            }
-
-            .highlight {
-                padding: 20px 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 30px 16px;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            .subtitle {
-                font-size: 16px;
-            }
-
-            .tagline {
-                font-size: 16px;
-            }
-
-            .cta-button {
-                padding: 16px 32px;
-                font-size: 15px;
+                padding: var(--space-lg);
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://assets.cdn.filesafe.space/OWPT3ihPWINakwA0bGRQ/media/685f3d91844c01434843021f.png"
-                 alt="Neothink Society Logo"
-                 class="logo">
-            <p class="subtitle">Day of Enlightenment</p>
-            <h1>Sales Team Portal</h1>
-            <p class="tagline">Training Resources & Event Information</p>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <span class="site-logo">Neothink Society</span>
+                    <div class="header-subtitle" aria-label="Page purpose">Sales Team Portal</div>
+                </div>
+            </div>
         </header>
 
-        <!-- Thank You Message -->
-        <div class="thank-you">
-            <h3>🙏 Thank You for Joining Us!</h3>
-            <p style="font-size: 18px; margin-bottom: 15px;">We appreciate everyone who attended the Sunday training session.</p>
-            <p style="font-size: 16px; margin: 0;">If you haven't filled out the team information form yet, please complete it below.</p>
-        </div>
-
-        <!-- Training Recording -->
-        <section class="section">
-            <h2>📹 Training Recording - November 16, 2025</h2>
-            <p>Quick overview and Q&A from Sunday's introductory session. The complete training you need to support sales is happening this week (Tue/Wed/Thu).</p>
-
-            <div class="video-container">
-                <iframe src="https://player.vimeo.com/video/1137485880?h=0&title=0&byline=0&portrait=0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
-        <!-- Meeting Summary -->
-        <section class="section">
-            <h2>📝 Meeting Summary</h2>
-
-            <h3>🎯 Event Overview</h3>
-            <p>We're preparing for two upcoming Day of Enlightenment events - a transformative 2-day experience where members ascend from Level 2 to Level 3 in The Neothink Society.</p>
-
-            <div style="text-align: center; margin: 25px 0;">
-                <span class="date-badge">Nov 22-23, 2025</span>
-                <span class="date-badge">Dec 6-7, 2025</span>
-            </div>
-
-            <div class="grid">
-                <div class="grid-item">
-                    <h4>📅 Saturday Schedule</h4>
-                    <p><strong>Start:</strong> 8:00 AM Pacific Time<br>
-                    <strong>Duration:</strong> Full day (8+ hours)<br>
-                    <strong>Format:</strong> Fully immersive experience</p>
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Page Header -->
+            <section class="page-header">
+                <div class="container">
+                    <p class="page-eyebrow">Day of Enlightenment</p>
+                    <h1 class="page-title">Sales Team Portal</h1>
+                    <p class="page-subtitle">Training Resources & Event Information</p>
                 </div>
-                <div class="grid-item">
-                    <h4>📅 Sunday Schedule</h4>
-                    <p><strong>Start:</strong> 9:00 AM Pacific Time<br>
-                    <strong>Duration:</strong> Partial day (TBD)<br>
-                    <strong>Format:</strong> Continuation of transformation</p>
+            </section>
+
+            <div class="container">
+                <!-- Thank You Message -->
+                <div class="thank-you">
+                    <h3>🙏 Thank You for Joining Us!</h3>
+                    <p style="font-size: 18px; margin-bottom: 15px;">We appreciate everyone who attended the Sunday training session.</p>
+                    <p style="font-size: 16px; margin: 0;">If you haven't filled out the team information form yet, please complete it below.</p>
                 </div>
-                <div class="grid-item">
-                    <h4>👥 Expected Attendance</h4>
-                    <p><strong>Participants:</strong> 500-600 people per day<br>
-                    <strong>Total:</strong> Both Saturday and Sunday<br>
-                    <strong>Support Needed:</strong> Extended sales team</p>
-                </div>
-            </div>
 
-            <h3>💼 Your Role as Sales Team</h3>
-            <p>As volunteer sales team members, you'll receive a special bonus for representing The Neothink Society during these events. Here's what you'll be doing:</p>
+                <!-- Training Recording -->
+                <section class="section">
+                    <h2>📹 Training Recording - November 16, 2025</h2>
+                    <p>Quick overview and Q&A from Sunday's introductory session. The complete training you need to support sales is happening this week (Tue/Wed/Thu).</p>
 
-            <ul>
-                <li><strong>Camera on entire time</strong> - Be visible and present throughout the event</li>
-                <li><strong>Keep chat active and positive</strong> - Respond to questions and maintain high energy</li>
-                <li><strong>Support Level 3 ascension</strong> - Help members who want to ascend to the next level</li>
-                <li><strong>Manage breakout rooms</strong> - Pull people into private conversations for assistance</li>
-                <li><strong>Experience the event yourself</strong> - Fully participate while supporting others</li>
-            </ul>
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/1137485880?h=0&title=0&byline=0&portrait=0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
 
-            <div class="highlight">
-                <h3 style="margin-top: 0;">💡 Two Main Sales Scenarios</h3>
+                <!-- Meeting Summary -->
+                <section class="section">
+                    <h2>📝 Meeting Summary</h2>
 
-                <p><strong>Scenario 1: Ready to Ascend (Majority of cases)</strong></p>
-                <ul>
-                    <li>Members have already decided they want to ascend to Level 3</li>
-                    <li>They need help processing their payment</li>
-                    <li>They want to discuss payment plan options</li>
-                    <li>Quick assistance to complete their purchase</li>
-                </ul>
+                    <h3>🎯 Event Overview</h3>
+                    <p>We're preparing for two upcoming Day of Enlightenment events - a transformative 2-day experience where members ascend from Level 2 to Level 3 in The Neothink Society.</p>
 
-                <p><strong>Scenario 2: Seeking Information</strong></p>
-                <ul>
-                    <li>Members are highly interested but need more information</li>
-                    <li>They have questions before making their decision</li>
-                    <li>Requires more preparation and product knowledge</li>
-                    <li>Opportunity to guide them through the value proposition</li>
-                </ul>
-            </div>
+                    <div style="text-align: center; margin: 25px 0;">
+                        <span class="date-badge">Nov 22-23, 2025</span>
+                        <span class="date-badge">Dec 6-7, 2025</span>
+                    </div>
 
-            <h3>📚 Training Schedule</h3>
-            <p><strong style="color: #FFD700;">This week's training sessions are where you'll learn everything you need to support sales.</strong> Make sure to attend!</p>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>📅 Saturday Schedule</h4>
+                            <p><strong>Start:</strong> 8:00 AM Pacific Time<br>
+                            <strong>Duration:</strong> Full day (8+ hours)<br>
+                            <strong>Format:</strong> Fully immersive experience</p>
+                        </div>
+                        <div class="grid-item">
+                            <h4>📅 Sunday Schedule</h4>
+                            <p><strong>Start:</strong> 9:00 AM Pacific Time<br>
+                            <strong>Duration:</strong> Partial day (TBD)<br>
+                            <strong>Format:</strong> Continuation of transformation</p>
+                        </div>
+                        <div class="grid-item">
+                            <h4>👥 Expected Attendance</h4>
+                            <p><strong>Participants:</strong> 500-600 people per day<br>
+                            <strong>Total:</strong> Both Saturday and Sunday<br>
+                            <strong>Support Needed:</strong> Extended sales team</p>
+                        </div>
+                    </div>
 
-            <div class="grid">
-                <div class="grid-item">
-                    <h4>Tue/Wed/Thu Training</h4>
-                    <p><strong>Time:</strong> 10:00 AM Pacific (1:00 PM Eastern)<br>
-                    <strong>Duration:</strong> 30 minutes to 1 hour<br>
-                    <strong>Required:</strong> Attend at least 2 out of 3<br>
-                    <strong>Format:</strong> Complete sales training, roleplay & Q&A</p>
-                </div>
-                <div class="grid-item">
-                    <h4>Friday Run-Through</h4>
-                    <p><strong>Participants:</strong> Wallace Hamilton + full team<br>
-                    <strong>Purpose:</strong> Complete event walkthrough<br>
-                    <strong>Focus:</strong> Final preparation for Saturday/Sunday<br>
-                    <strong>Details:</strong> TBD - more info coming soon</p>
-                </div>
-            </div>
+                    <h3>💼 Your Role as Sales Team</h3>
+                    <p>As volunteer sales team members, you'll receive a special bonus for representing The Neothink Society during these events. Here's what you'll be doing:</p>
 
-            <div class="highlight">
-                <h3 style="margin-top: 0; text-align: center;">🔗 Zoom Link for This Week's Training</h3>
-                <p style="text-align: center; margin-bottom: 25px;">Use this same Zoom link for all three training sessions (Tuesday, Wednesday, Thursday):</p>
+                    <ul>
+                        <li><strong>Camera on entire time</strong> - Be visible and present throughout the event</li>
+                        <li><strong>Keep chat active and positive</strong> - Respond to questions and maintain high energy</li>
+                        <li><strong>Support Level 3 ascension</strong> - Help members who want to ascend to the next level</li>
+                        <li><strong>Manage breakout rooms</strong> - Pull people into private conversations for assistance</li>
+                        <li><strong>Experience the event yourself</strong> - Fully participate while supporting others</li>
+                    </ul>
 
-                <p style="text-align: center; margin-bottom: 20px;">
-                    <a href="https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1"
+                    <div class="highlight">
+                        <h3 style="margin-top: 0;">💡 Two Main Sales Scenarios</h3>
+
+                        <p><strong>Scenario 1: Ready to Ascend (Majority of cases)</strong></p>
+                        <ul>
+                            <li>Members have already decided they want to ascend to Level 3</li>
+                            <li>They need help processing their payment</li>
+                            <li>They want to discuss payment plan options</li>
+                            <li>Quick assistance to complete their purchase</li>
+                        </ul>
+
+                        <p><strong>Scenario 2: Seeking Information</strong></p>
+                        <ul>
+                            <li>Members are highly interested but need more information</li>
+                            <li>They have questions before making their decision</li>
+                            <li>Requires more preparation and product knowledge</li>
+                            <li>Opportunity to guide them through the value proposition</li>
+                        </ul>
+                    </div>
+
+                    <h3>📚 Training Schedule</h3>
+                    <p><strong style="color: #FFD700;">This week's training sessions are where you'll learn everything you need to support sales.</strong> Make sure to attend!</p>
+
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>Tue/Wed/Thu Training</h4>
+                            <p><strong>Time:</strong> 10:00 AM Pacific (1:00 PM Eastern)<br>
+                            <strong>Duration:</strong> 30 minutes to 1 hour<br>
+                            <strong>Required:</strong> Attend at least 2 out of 3<br>
+                            <strong>Format:</strong> Complete sales training, roleplay & Q&A</p>
+                        </div>
+                        <div class="grid-item">
+                            <h4>Friday Run-Through</h4>
+                            <p><strong>Participants:</strong> Wallace Hamilton + full team<br>
+                            <strong>Purpose:</strong> Complete event walkthrough<br>
+                            <strong>Focus:</strong> Final preparation for Saturday/Sunday<br>
+                            <strong>Details:</strong> TBD - more info coming soon</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <h3 style="margin-top: 0; text-align: center;">🔗 Zoom Link for This Week's Training</h3>
+                        <p style="text-align: center; margin-bottom: 25px;">Use this same Zoom link for all three training sessions (Tuesday, Wednesday, Thursday):</p>
+
+                        <p style="text-align: center; margin-bottom: 20px;">
+                            <a href="https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1"
+                               class="cta-button"
+                               target="_blank">
+                                Join Training on Zoom →
+                            </a>
+                        </p>
+
+                        <p style="text-align: center; margin: 0; font-size: 13px; color: #888888;">
+                            Or copy link:
+                        </p>
+                        <p style="text-align: center; margin: 10px 0 0 0;">
+                            <a href="https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1"
+                               style="color: #FFD700; font-weight: 600; text-decoration: none; font-size: 14px; word-break: break-all; display: inline-block; max-width: 100%;"
+                               target="_blank">
+                                https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1
+                            </a>
+                        </p>
+                    </div>
+
+                    <h3>📦 Resources Coming Monday</h3>
+                    <p>Marko will be sending comprehensive resources before Tuesday's training, including:</p>
+                    <ul>
+                        <li>Outline of all responsibilities</li>
+                        <li>Common questions and answers</li>
+                        <li>Payment processing guidelines</li>
+                        <li>Chat moderation best practices</li>
+                        <li>Handling negative comments</li>
+                    </ul>
+
+                    <h3>✨ Key Takeaways</h3>
+                    <div class="highlight">
+                        <ul>
+                            <li>This is a <strong>volunteer opportunity</strong> with a special bonus</li>
+                            <li>You'll <strong>fully experience the event</strong> as a participant while supporting others</li>
+                            <li>Being hyper-engaged actually <strong>enhances your own transformation</strong></li>
+                            <li>Most scenarios are straightforward - helping with <strong>payment processing</strong></li>
+                            <li>We're building the <strong>A-Team</strong> for these transformational events</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="section" style="text-align: center;">
+                    <h2>📋 Complete Your Team Information</h2>
+                    <p style="max-width: 600px; margin: 0 auto 30px;">If you haven't filled out the team information form yet, please complete it now. This helps us prepare the right resources and ensure everyone is properly set up.</p>
+
+                    <a href="https://docs.google.com/forms/d/1eZhmbOXv-1uH5ZEM_xOS2rNud_Ap1jdZ6mYzUQPagIE/viewform?edit_requested=true"
                        class="cta-button"
                        target="_blank">
-                        Join Training on Zoom →
+                        Complete Team Form →
                     </a>
-                </p>
 
-                <p style="text-align: center; margin: 0; font-size: 13px; color: #888888;">
-                    Or copy link:
-                </p>
-                <p style="text-align: center; margin: 10px 0 0 0;">
-                    <a href="https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1"
-                       style="color: #FFD700; font-weight: 600; text-decoration: none; font-size: 14px; word-break: break-all; display: inline-block; max-width: 100%;"
-                       target="_blank">
-                        https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1
-                    </a>
-                </p>
+                    <p style="font-size: 15px; color: #888888; margin-top: 20px;">Just 2 quick questions - takes less than 1 minute</p>
+                </section>
             </div>
+        </main>
 
-            <h3>📦 Resources Coming Monday</h3>
-            <p>Marko will be sending comprehensive resources before Tuesday's training, including:</p>
-            <ul>
-                <li>Outline of all responsibilities</li>
-                <li>Common questions and answers</li>
-                <li>Payment processing guidelines</li>
-                <li>Chat moderation best practices</li>
-                <li>Handling negative comments</li>
-            </ul>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Neothink Society</h3>
+                        <p>Prosper Happily Forever</p>
+                    </div>
 
-            <h3>✨ Key Takeaways</h3>
-            <div class="highlight">
-                <ul>
-                    <li>This is a <strong>volunteer opportunity</strong> with a special bonus</li>
-                    <li>You'll <strong>fully experience the event</strong> as a participant while supporting others</li>
-                    <li>Being hyper-engaged actually <strong>enhances your own transformation</strong></li>
-                    <li>Most scenarios are straightforward - helping with <strong>payment processing</strong></li>
-                    <li>We're building the <strong>A-Team</strong> for these transformational events</li>
-                </ul>
+                    <div class="footer-support">
+                        <p class="support-label">Need Help?</p>
+                        <a href="mailto:team@contact.neothink.com" class="support-link" aria-label="Email support at team@contact.neothink.com">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            team@contact.neothink.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+                </div>
             </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="section" style="text-align: center;">
-            <h2>📋 Complete Your Team Information</h2>
-            <p style="max-width: 600px; margin: 0 auto 30px;">If you haven't filled out the team information form yet, please complete it now. This helps us prepare the right resources and ensure everyone is properly set up.</p>
-
-            <a href="https://docs.google.com/forms/d/1eZhmbOXv-1uH5ZEM_xOS2rNud_Ap1jdZ6mYzUQPagIE/viewform?edit_requested=true"
-               class="cta-button"
-               target="_blank">
-                Complete Team Form →
-            </a>
-
-            <p style="font-size: 15px; color: #888888; margin-top: 20px;">Just 2 quick questions - takes less than 1 minute</p>
-        </section>
-
-        <footer>
-            <p><strong style="color: #FFD700;">The Neothink Society</strong><br>
-            Day of Enlightenment Sales Team Portal</p>
-            <p style="margin-top: 15px;">Questions? Email <a href="mailto:team@contact.neothink.com" style="color: #FFD700; text-decoration: underline;">team@contact.neothink.com</a></p>
         </footer>
     </div>
 </body>
