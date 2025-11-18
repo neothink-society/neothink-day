@@ -710,6 +710,14 @@
            RESPONSIVE
         =========================== */
         @media (max-width: 768px) {
+            .success-section {
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .success-title {
+                font-size: var(--text-3xl);
+            }
+
             .step-card {
                 flex-direction: column;
                 text-align: center;
@@ -723,6 +731,10 @@
                 transform: scale(1);
             }
 
+            .vip-upgrade-section {
+                padding: var(--space-xl) var(--space-sm);
+            }
+
             .footer-content {
                 text-align: center;
             }
@@ -734,6 +746,20 @@
 
             .support-link {
                 justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .success-title {
+                font-size: var(--text-2xl);
+            }
+
+            .success-subtitle {
+                font-size: var(--text-sm);
+            }
+
+            .vip-header h2 {
+                font-size: var(--text-xl);
             }
         }
     </style>

@@ -755,8 +755,12 @@
                 gap: var(--space-sm);
             }
 
+            .content-title {
+                font-size: var(--text-3xl);
+            }
+
             .main-container {
-                padding: var(--space-xl) var(--space-md);
+                padding: var(--space-xl) var(--space-sm);
             }
 
             .cta-box {
@@ -800,6 +804,10 @@
         }
 
         @media (max-width: 480px) {
+            .content-title {
+                font-size: var(--text-2xl);
+            }
+
             .arrow-indicator span {
                 flex-basis: 100%;
                 text-align: center;
