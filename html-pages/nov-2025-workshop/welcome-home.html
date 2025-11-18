@@ -986,7 +986,11 @@
             }
 
             .hero-section {
-                padding: var(--space-2xl) var(--space-md);
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .hero-title {
+                font-size: var(--text-3xl);
             }
 
             .countdown-timer {
@@ -1057,6 +1061,10 @@
         }
 
         @media (max-width: 480px) {
+            .hero-title {
+                font-size: var(--text-2xl);
+            }
+
             .countdown-separator {
                 display: none;
             }

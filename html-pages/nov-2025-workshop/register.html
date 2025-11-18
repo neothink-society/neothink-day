@@ -737,7 +737,11 @@
             }
 
             .hero-section {
-                padding: var(--space-2xl) var(--space-md);
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .hero-title {
+                font-size: var(--text-3xl);
             }
 
             .countdown-timer {
@@ -753,23 +757,32 @@
                 font-size: var(--text-2xl);
             }
 
+            .form-section {
+                padding: var(--space-xl) 0;
+                max-width: 100%;
+            }
+
             .form-container {
-                padding: var(--space-lg);
+                padding: var(--space-md);
             }
 
             .ghl-form-wrapper {
-                padding: var(--space-md);
+                padding: var(--space-sm);
             }
 
             .form-footer {
-                padding: var(--space-md);
-                margin-left: calc(var(--space-md) * -1);
-                margin-right: calc(var(--space-md) * -1);
-                margin-bottom: calc(var(--space-md) * -1);
+                padding: var(--space-sm);
+                margin-left: calc(var(--space-sm) * -1);
+                margin-right: calc(var(--space-sm) * -1);
+                margin-bottom: calc(var(--space-sm) * -1);
             }
 
             .info-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .info-section {
+                padding: var(--space-xl) var(--space-sm);
             }
 
             .footer-content {
@@ -787,25 +800,33 @@
         }
 
         @media (max-width: 480px) {
+            .hero-title {
+                font-size: var(--text-2xl);
+            }
+
             .countdown-separator {
                 display: none;
             }
 
             .form-section {
-                padding: var(--space-xl) var(--space-md);
+                padding: var(--space-lg) 0;
             }
 
             .form-container {
-                padding: var(--space-md);
-                border-radius: 12px;
+                padding: var(--space-sm);
+                border-radius: 8px;
             }
 
             .ghl-form-wrapper {
-                padding: var(--space-sm);
+                padding: var(--space-xs);
             }
 
             .form-header h2 {
-                font-size: var(--text-2xl);
+                font-size: var(--text-xl);
+            }
+
+            .form-header p {
+                font-size: var(--text-sm);
             }
         }
     </style>
