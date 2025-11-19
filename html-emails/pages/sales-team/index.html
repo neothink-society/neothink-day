@@ -670,19 +670,26 @@
         .pricing-detail {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             padding: var(--space-sm) 0;
+            gap: var(--space-sm);
         }
 
         .pricing-detail-label {
             font-size: var(--text-sm);
             color: var(--gray-300);
+            flex: 1;
+            min-width: 0;
+            word-wrap: break-word;
         }
 
         .pricing-detail-value {
             font-size: var(--text-base);
             font-weight: 700;
             color: var(--white);
+            text-align: right;
+            flex-shrink: 0;
+            white-space: nowrap;
         }
 
         .pricing-card.special .pricing-card-name {
@@ -896,18 +903,25 @@
             .pricing-cards {
                 grid-template-columns: repeat(2, 1fr);
                 gap: var(--space-xl);
-            }
-        }
-
-        /* Large Desktop: Optional 4-column for all cards side-by-side */
-        @media (min-width: 1200px) {
-            .pricing-cards {
-                grid-template-columns: repeat(4, 1fr);
-                gap: var(--space-lg);
+                max-width: 1200px;
             }
 
             .pricing-card {
                 padding: var(--space-xl);
+            }
+
+            .pricing-detail {
+                padding: var(--space-md) 0;
+            }
+
+            .pricing-detail-label {
+                flex: 0 0 60%;
+                padding-right: var(--space-md);
+            }
+
+            .pricing-detail-value {
+                flex: 0 0 40%;
+                text-align: right;
             }
         }
 
@@ -1042,6 +1056,35 @@
             .pricing-footer {
                 font-size: var(--text-xs);
                 padding-top: var(--space-sm);
+            }
+
+            /* Mobile pricing card adjustments */
+            .pricing-cards {
+                gap: var(--space-md);
+            }
+
+            .pricing-card {
+                padding: var(--space-md);
+            }
+
+            .pricing-card-total {
+                font-size: var(--text-3xl);
+            }
+
+            .pricing-card-subtitle {
+                font-size: 10px;
+            }
+
+            .pricing-detail {
+                padding: 0.5rem 0;
+            }
+
+            .pricing-detail-label {
+                font-size: 13px;
+            }
+
+            .pricing-detail-value {
+                font-size: 15px;
             }
 
             /* Stack pricing table on very small screens */
