@@ -623,9 +623,11 @@
             transition: all 0.2s ease;
         }
 
-        .pricing-table tbody tr:hover {
-            background: rgba(255, 215, 0, 0.1);
-            transform: scale(1.01);
+        @media (hover: hover) and (min-width: 481px) {
+            .pricing-table tbody tr:hover {
+                background: rgba(255, 215, 0, 0.1);
+                transform: scale(1.01);
+            }
         }
 
         .pricing-table .price {
