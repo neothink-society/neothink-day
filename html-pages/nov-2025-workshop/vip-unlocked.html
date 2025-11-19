@@ -623,9 +623,55 @@
                 padding: var(--space-xl) var(--space-sm);
             }
 
+            /* Footer mobile optimization */
+            .site-footer {
+                padding: var(--space-xl) var(--space-md) var(--space-md);
+                margin-top: var(--space-2xl);
+            }
+
             .footer-content {
                 text-align: center;
+                gap: var(--space-xl);
+                margin-bottom: var(--space-xl);
             }
+
+            .footer-brand,
+            .footer-support {
+                text-align: center;
+            }
+
+            .footer-brand h3 {
+                font-size: var(--text-lg);
+                margin-bottom: var(--space-sm);
+            }
+
+            .footer-brand p {
+                font-size: var(--text-base);
+                color: var(--gray-300);
+            }
+
+            .support-label {
+                font-size: var(--text-base);
+                margin-bottom: var(--space-sm);
+                color: var(--gray-300);
+            }
+
+            .support-link {
+                justify-content: center;
+                font-size: var(--text-lg);
+                padding: var(--space-sm) var(--space-md);
+                min-height: 48px;
+            }
+
+            .footer-bottom {
+                padding-top: var(--space-md);
+            }
+
+            .footer-bottom p {
+                font-size: var(--text-sm);
+                line-height: 1.8;
+            }
+
 
             .footer-brand,
             .footer-support {
@@ -644,6 +690,33 @@
 
             .success-subtitle {
                 font-size: var(--text-sm);
+            }
+
+            /* Footer extra small mobile optimization */
+            .site-footer {
+                padding: var(--space-lg) var(--space-sm) var(--space-sm);
+            }
+
+            .footer-content {
+                gap: var(--space-lg);
+                margin-bottom: var(--space-lg);
+            }
+
+            .footer-brand h3 {
+                font-size: var(--text-base);
+            }
+
+            .footer-brand p {
+                font-size: var(--text-sm);
+            }
+
+            .support-label {
+                font-size: var(--text-sm);
+            }
+
+            .support-link {
+                font-size: var(--text-base);
+                padding: var(--space-xs) var(--space-sm);
             }
         }
     </style>
