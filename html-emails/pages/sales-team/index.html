@@ -486,6 +486,7 @@
             border-radius: 12px;
             padding: var(--space-xl);
             margin-bottom: var(--space-2xl);
+            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.1);
         }
 
         .quick-reference h2 {
@@ -509,12 +510,14 @@
             border-radius: 8px;
             padding: var(--space-lg);
             transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         .info-card:hover {
             border-color: var(--gold);
             background: rgba(0, 0, 0, 0.5);
             transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(255, 215, 0, 0.2);
         }
 
         .info-card h3 {
@@ -616,8 +619,13 @@
             border-bottom: none;
         }
 
+        .pricing-table tbody tr {
+            transition: all 0.2s ease;
+        }
+
         .pricing-table tbody tr:hover {
-            background: rgba(255, 215, 0, 0.05);
+            background: rgba(255, 215, 0, 0.1);
+            transform: scale(1.01);
         }
 
         .pricing-table .price {
@@ -662,9 +670,10 @@
         /* Video Grid */
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr;
             gap: var(--space-xl);
             margin: var(--space-xl) 0;
+            max-width: 900px;
         }
 
         .video-card {
@@ -673,11 +682,13 @@
             border-radius: 12px;
             padding: var(--space-lg);
             transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .video-card:hover {
             border-color: rgba(255, 215, 0, 0.5);
-            transform: translateY(-2px);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.15);
         }
 
         .video-card h3 {
@@ -1035,13 +1046,6 @@
                         <strong>What You're Selling:</strong> Level 3 "Stargazer" Membership + 3-Day "Reach Your Unreachable Star" Event
                     </div>
                 </section>
-
-                <!-- Thank You Message -->
-                <div class="thank-you">
-                    <h3>🙏 Welcome to Success Guide Training!</h3>
-                    <p style="font-size: 18px; margin-bottom: 15px;">Training is underway! Watch the recordings below if you missed any sessions.</p>
-                    <p style="font-size: 16px; margin: 0;">Next session: <strong>Wednesday, Nov 19 @ 10 AM Pacific</strong> | <strong>Thursday, Nov 20 @ 10 AM Pacific</strong></p>
-                </div>
 
                 <!-- Training Videos Zone -->
                 <section id="training-videos" class="section">
