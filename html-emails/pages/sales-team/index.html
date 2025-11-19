@@ -561,7 +561,7 @@
         /* Pricing Section Header */
         .pricing-header {
             text-align: center;
-            margin: var(--space-2xl) 0 var(--space-lg);
+            margin: var(--space-2xl) 0 var(--space-xl);
             padding: var(--space-md) 0;
             border-top: 1px solid rgba(255, 215, 0, 0.2);
             border-bottom: 1px solid rgba(255, 215, 0, 0.2);
@@ -577,13 +577,126 @@
             text-align: center;
             font-size: var(--text-sm);
             color: var(--gray-400);
-            margin-top: var(--space-lg);
+            margin-top: var(--space-xl);
             padding-top: var(--space-md);
             border-top: 1px solid rgba(255, 215, 0, 0.2);
         }
 
         .pricing-footer strong {
             color: var(--gold);
+        }
+
+        /* Modern Pricing Cards (Mobile-First 2025) */
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .pricing-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+        }
+
+        .pricing-card.recommended {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+        }
+
+        .pricing-card.recommended::before {
+            content: "⭐ Most Popular";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.25rem 1rem;
+            border-radius: 12px;
+            font-size: var(--text-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pricing-card-header {
+            text-align: center;
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            margin-bottom: var(--space-md);
+        }
+
+        .pricing-card-name {
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .pricing-card-total {
+            font-size: var(--text-4xl);
+            font-weight: 800;
+            color: var(--gold-light);
+            line-height: 1;
+            margin: var(--space-sm) 0;
+        }
+
+        .pricing-card-subtitle {
+            font-size: var(--text-xs);
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pricing-card-details {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .pricing-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-sm) 0;
+        }
+
+        .pricing-detail-label {
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+        }
+
+        .pricing-detail-value {
+            font-size: var(--text-base);
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .pricing-card.special .pricing-card-name {
+            color: var(--gray-300);
+        }
+
+        .pricing-card.special .pricing-card-total {
+            font-size: var(--text-2xl);
+            color: var(--gray-300);
+        }
+
+        .pricing-card.special .pricing-card-subtitle {
+            color: var(--gray-500);
+            font-style: italic;
         }
 
         /* Pricing Table */
@@ -776,6 +889,26 @@
 
         .collapsible-inner {
             padding: var(--space-lg) var(--space-md);
+        }
+
+        /* Tablet & Desktop: 2-column grid for pricing cards */
+        @media (min-width: 769px) {
+            .pricing-cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-xl);
+            }
+        }
+
+        /* Large Desktop: Optional 4-column for all cards side-by-side */
+        @media (min-width: 1200px) {
+            .pricing-cards {
+                grid-template-columns: repeat(4, 1fr);
+                gap: var(--space-lg);
+            }
+
+            .pricing-card {
+                padding: var(--space-xl);
+            }
         }
 
         @media (max-width: 768px) {
@@ -1007,42 +1140,83 @@
                         <h3>💰 Pricing Options - Level 3 "Stargazer"</h3>
                     </div>
 
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Payment Plan</th>
-                                <th>First Payment</th>
-                                <th>Subsequent Payments</th>
-                                <th class="price">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Payment Plan"><strong>Full Payment</strong></td>
-                                <td data-label="First Payment" class="price">$1,997</td>
-                                <td data-label="Subsequent Payments">—</td>
-                                <td data-label="Total" class="price">$1,997</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Payment Plan"><strong>2-Payment Plan</strong></td>
-                                <td data-label="First Payment" class="price">$1,000</td>
-                                <td data-label="Subsequent Payments">$1,000 (2nd payment)</td>
-                                <td data-label="Total" class="price">$2,000</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Payment Plan"><strong>3-Payment Plan</strong></td>
-                                <td data-label="First Payment" class="price">$667</td>
-                                <td data-label="Subsequent Payments">$667 × 2 (2nd & 3rd)</td>
-                                <td data-label="Total" class="price">$2,001</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Payment Plan"><strong>Custom Plan</strong> <span class="note">(special cases)</span></td>
-                                <td data-label="First Payment" class="price">$250 minimum</td>
-                                <td data-label="Subsequent Payments">Custom schedule</td>
-                                <td data-label="Total" class="price">$2,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="pricing-cards">
+                        <!-- Full Payment -->
+                        <div class="pricing-card recommended">
+                            <div class="pricing-card-header">
+                                <div class="pricing-card-name">Full Payment</div>
+                                <div class="pricing-card-total">$1,997</div>
+                                <div class="pricing-card-subtitle">Best Value</div>
+                            </div>
+                            <div class="pricing-card-details">
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">First Payment</span>
+                                    <span class="pricing-detail-value">$1,997</span>
+                                </div>
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">Additional Payments</span>
+                                    <span class="pricing-detail-value">None</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2-Payment Plan -->
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">
+                                <div class="pricing-card-name">2-Payment Plan</div>
+                                <div class="pricing-card-total">$2,000</div>
+                                <div class="pricing-card-subtitle">Split Payment</div>
+                            </div>
+                            <div class="pricing-card-details">
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">First Payment</span>
+                                    <span class="pricing-detail-value">$1,000</span>
+                                </div>
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">2nd Payment</span>
+                                    <span class="pricing-detail-value">$1,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3-Payment Plan -->
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">
+                                <div class="pricing-card-name">3-Payment Plan</div>
+                                <div class="pricing-card-total">$2,001</div>
+                                <div class="pricing-card-subtitle">Maximum Flexibility</div>
+                            </div>
+                            <div class="pricing-card-details">
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">First Payment</span>
+                                    <span class="pricing-detail-value">$667</span>
+                                </div>
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">2nd & 3rd Payments</span>
+                                    <span class="pricing-detail-value">$667 each</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom Plan -->
+                        <div class="pricing-card special">
+                            <div class="pricing-card-header">
+                                <div class="pricing-card-name">Custom Plan</div>
+                                <div class="pricing-card-total">$2,000</div>
+                                <div class="pricing-card-subtitle">Special Cases Only</div>
+                            </div>
+                            <div class="pricing-card-details">
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">First Payment</span>
+                                    <span class="pricing-detail-value">$250 min</span>
+                                </div>
+                                <div class="pricing-detail">
+                                    <span class="pricing-detail-label">Schedule</span>
+                                    <span class="pricing-detail-value">Custom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="pricing-footer">
                         <strong>What You're Selling:</strong> Level 3 "Stargazer" Membership + 3-Day "Reach Your Unreachable Star" Event
