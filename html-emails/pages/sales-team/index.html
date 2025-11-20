@@ -322,6 +322,11 @@
             font-weight: bold;
         }
 
+        /* Remove arrow for ordered list items */
+        ol > li:before {
+            content: none;
+        }
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -1319,28 +1324,28 @@
 
                                         <h4 style="color: var(--gold);">Call Flow for "Ready to Buy" Scenario</h4>
                                         <p style="margin-bottom: var(--space-sm);"><strong>This is the primary scenario you'll encounter (majority of calls):</strong></p>
-                                        <ol style="list-style: decimal; margin-left: 30px; color: var(--gray-200);">
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Rapport Building (1-2 minutes):</strong> "Hi [name]! Great to connect with you. How are you enjoying the event so far?"</li>
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Frame the Call as Success Guide:</strong> "I'm here as your Success Guide to help you with whatever you need. What brought you into this breakout room?"</li>
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Decision Check:</strong> "Have you already decided you want to ascend to Level 3, or do you need more information about what's included?"</li>
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Present Payment Options (if ready to buy):</strong> "Great! Let me walk you through your payment options..."
-                                                <ul style="margin-top: var(--space-xs); padding-left: 20px;">
-                                                    <li>Full payment: $1,997 (best value)</li>
-                                                    <li>2-payment: $1,000 today, $1,000 in 30 days</li>
-                                                    <li>3-payment: $667 today, $667 in 30 days, $667 in 60 days</li>
-                                                    <li>Custom plan: Available if needed (discuss with team first)</li>
+                                        <ol style="list-style: decimal; list-style-position: outside; margin-left: 40px; padding-left: 0; color: var(--gray-200);">
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Rapport Building (1-2 minutes):</strong> "Hi [name]! Great to connect with you. How are you enjoying the event so far?"</li>
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Frame the Call as Success Guide:</strong> "I'm here as your Success Guide to help you with whatever you need. What brought you into this breakout room?"</li>
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Decision Check:</strong> "Have you already decided you want to ascend to Level 3, or do you need more information about what's included?"</li>
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Present Payment Options (if ready to buy):</strong> "Great! Let me walk you through your payment options..."
+                                                <ul style="margin-top: var(--space-xs); padding-left: 0; margin-left: 20px; list-style-position: outside;">
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">Full payment: $1,997 (best value)</li>
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">2-payment: $1,000 today, $1,000 in 30 days</li>
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">3-payment: $667 today, $667 in 30 days, $667 in 60 days</li>
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">Custom plan: Available if needed (discuss with team first)</li>
                                                 </ul>
                                             </li>
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Process Payment:</strong> "Perfect! I'm going to pull up the payment form and walk you through it step by step..."
-                                                <ul style="margin-top: var(--space-xs); padding-left: 20px;">
-                                                    <li>Share payment form link</li>
-                                                    <li>Walk through each field together</li>
-                                                    <li>Collect card information</li>
-                                                    <li>Process payment in real-time</li>
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Process Payment:</strong> "Perfect! I'm going to pull up the payment form and walk you through it step by step..."
+                                                <ul style="margin-top: var(--space-xs); padding-left: 0; margin-left: 20px; list-style-position: outside;">
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">Share payment form link</li>
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">Walk through each field together</li>
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">Collect card information</li>
+                                                    <li style="margin: 0.25rem 0; padding-left: 10px;">Process payment in real-time</li>
                                                 </ul>
                                             </li>
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Congratulations & Excitement:</strong> "Congratulations on your ascension to Level 3! You've made an incredible decision. You're going to love the Stargazer experience..."</li>
-                                            <li style="margin: var(--space-sm) 0; padding-left: 10px;"><strong>Document in Group Chat:</strong> Share in WhatsApp group: "[Member Name] just ascended to Level 3! [Payment plan used]"</li>
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Congratulations & Excitement:</strong> "Congratulations on your ascension to Level 3! You've made an incredible decision. You're going to love the Stargazer experience..."</li>
+                                            <li style="margin: var(--space-sm) 0 var(--space-sm) 0; padding-left: 15px; position: static;"><strong>Document in Group Chat:</strong> Share in WhatsApp group: "[Member Name] just ascended to Level 3! [Payment plan used]"</li>
                                         </ol>
 
                                         <h4 style="color: var(--gold);">Handling Special Scenarios</h4>
