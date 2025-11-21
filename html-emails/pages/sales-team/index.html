@@ -22,7 +22,7 @@
             --bg-card: #121212;
             --bg-card-hover: #1a1a1a;
             --text-main: #ffffff;
-            --text-muted: #a1a1a1;
+            --text-muted: #b8b8b8; /* Lighter for better visibility */
             --success: #2ecc71;
             --danger: #ff6b6b;
 
@@ -41,17 +41,18 @@
             padding: 0;
             padding-bottom: calc(var(--bottom-nav-height) + 20px);
             font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px; /* Base size for accessibility */
             background-color: var(--bg-dark);
             color: var(--text-main);
-            line-height: 1.5;
+            line-height: 1.6;
             overflow-x: hidden;
         }
 
-        /* Typography */
+        /* Typography - larger for accessibility */
         h1, h2, h3 { font-family: 'Baskervville', serif; color: var(--gold); margin: 0; }
-        h1 { font-size: 2.2rem; line-height: 1.1; }
-        h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        h3 { font-size: 1.2rem; }
+        h1 { font-size: 2.5rem; line-height: 1.1; }
+        h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+        h3 { font-size: 1.3rem; }
         .mono { font-family: 'JetBrains Mono', monospace; }
 
         /* Utilities */
@@ -376,26 +377,28 @@
             position: absolute;
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            width: 60px; height: 60px;
-            background: rgba(255, 215, 0, 0.9);
+            width: 80px; height: 80px; /* Larger for visibility */
+            background: var(--gold);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
             transition: transform 0.2s;
         }
+        .play-button-overlay svg { width: 32px; height: 32px; } /* Larger icon */
         .video-facade:active .play-button-overlay { transform: translate(-50%, -50%) scale(0.9); }
 
-        .video-meta { padding: 1rem; }
+        .video-meta { padding: 1.25rem; }
         .tag {
-            font-size: 0.7rem;
-            padding: 2px 6px;
+            font-size: 0.8rem; /* Larger for readability */
+            padding: 4px 10px;
             border-radius: 4px;
-            border: 1px solid var(--success);
+            border: 2px solid var(--success); /* Thicker border */
             color: var(--success);
             text-transform: uppercase;
             margin-right: 8px;
+            font-weight: 700;
         }
         .tag.warning {
             border-color: #f59e0b;
@@ -494,17 +497,18 @@
             justify-content: center;
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.65rem;
+            font-size: 0.75rem; /* Larger for readability */
+            font-weight: 600;
             gap: 4px;
             position: relative;
         }
         .nav-item.active { color: var(--gold); }
-        .nav-item svg { width: 22px; height: 22px; }
+        .nav-item svg { width: 26px; height: 26px; } /* Larger icons */
 
         .nav-fab {
             background: var(--gold);
-            width: 50px;
-            height: 50px;
+            width: 56px; /* Larger */
+            height: 56px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -566,17 +570,17 @@
         <!-- Urgency -->
         <div class="countdown-banner">
             <span>&#128293;</span>
-            <span>2 DAYS LEFT: Event Starts Nov 22</span>
+            <span>TOMORROW: Event Starts Nov 22</span>
         </div>
 
         <!-- Hero Action -->
         <div class="hero-card">
-            <h2 style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 0.5rem; font-family: 'Plus Jakarta Sans', sans-serif;">Next Priority:</h2>
-            <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 1rem;">Friday Rehearsal</h3>
+            <h2 style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 0.5rem; font-family: 'Plus Jakarta Sans', sans-serif;">TODAY:</h2>
+            <h3 style="font-size: 1.75rem; color: #fff; margin-bottom: 1rem;">Friday Rehearsal</h3>
 
-            <div class="flex-between" style="background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 8px; margin-bottom: 1.5rem;">
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Fri Nov 21 @ 10:00 AM PT</span>
-                <span style="font-size: 0.75rem; color: var(--success);">&#9679; Mandatory</span>
+            <div class="flex-between" style="background: rgba(0,0,0,0.3); padding: 10px 14px; border-radius: 8px; margin-bottom: 1.5rem;">
+                <span class="mono" style="font-size: 0.9rem; color: white;">10:00 AM PT</span>
+                <span style="font-size: 0.85rem; color: var(--success); font-weight: 700;">&#9679; Mandatory</span>
             </div>
 
             <div class="action-grid">
@@ -720,7 +724,7 @@
 
         <!-- Session #3 - Featured -->
         <div class="video-card featured">
-            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1139058227?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="background-image: url('https://i.vimeocdn.com/video/default.jpg');">
+            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1139058227?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="background: #000;">
                 <div class="play-button-overlay">
                     <svg width="24" height="24" fill="black" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                 </div>
@@ -755,7 +759,7 @@
 
         <!-- Session #1 -->
         <div class="video-card">
-            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1034974564?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="background-image: url('https://i.vimeocdn.com/video/default.jpg');">
+            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1034974564?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="background: #000;">
                 <div class="play-button-overlay">
                     <svg width="24" height="24" fill="black" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                 </div>
@@ -772,7 +776,7 @@
 
         <!-- Intro Session -->
         <div class="video-card">
-            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1034972440?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="background-image: url('https://i.vimeocdn.com/video/default.jpg');">
+            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1034972440?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="background: #000;">
                 <div class="play-button-overlay">
                     <svg width="24" height="24" fill="black" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                 </div>
@@ -801,7 +805,7 @@
                 <div class="schedule-title">Friday Rehearsal</div>
                 <div class="schedule-detail">10:00 AM PT - Final run-through with Wallace</div>
             </div>
-            <span class="schedule-badge tomorrow">Tomorrow</span>
+            <span class="schedule-badge tomorrow">Today</span>
         </div>
 
         <div class="schedule-card">
