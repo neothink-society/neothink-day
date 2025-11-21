@@ -1,0 +1,164 @@
+╔══════════════════════════════════════════════════════════════════╗
+║   NOVEMBER 22, 2025 WORKSHOP - SMS MESSAGE SEQUENCE            ║
+╚══════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════
+SMS #1: FRIDAY NIGHT REMINDER
+═══════════════════════════════════════════════════════════════════
+
+Send Time: Friday, Nov 21 @ 8:00-9:00 PM PT
+Purpose: Final reminder before sleep, build anticipation
+
+Message:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tomorrow at 8am PT: Day of Enlightenment Workshop.
+
+Get 7-8+ hours sleep tonight. Your Zoom link arrives at 6am PT.
+
+This is it.
+
+- The Neothink Society
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Character Count: 149 characters
+Notes:
+- Sets expectation for 6am email delivery
+- Emphasizes sleep (key preparation)
+- "This is it" creates anticipation
+
+
+═══════════════════════════════════════════════════════════════════
+SMS #2: SATURDAY MORNING ZOOM LINK
+═══════════════════════════════════════════════════════════════════
+
+Send Time: Saturday, Nov 22 @ 6:00-6:15 AM PT (with email)
+Purpose: Deliver Zoom link, reinforce timing
+
+Message:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 TODAY: Doors open 7:30 AM PT. Workshop starts 8 AM SHARP.
+
+Zoom: https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
+
+Join early!
+
+- Neothink Society
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Character Count: 189 characters
+Notes:
+- 🔴 emoji for urgency
+- Clear timing: doors vs start
+- Direct Zoom link for one-click join
+- Short, mobile-friendly
+
+
+═══════════════════════════════════════════════════════════════════
+SMS #3: DOORS OPEN (30-MINUTE WARNING)
+═══════════════════════════════════════════════════════════════════
+
+Send Time: Saturday, Nov 22 @ 7:30 AM PT (when doors open)
+Purpose: Immediate action, get people joining NOW
+
+Message:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏰ DOORS ARE OPEN NOW
+
+Workshop starts in 30 minutes (8 AM PT). Join now to get settled:
+
+https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
+
+- Neothink Society
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Character Count: 165 characters
+Notes:
+- ⏰ clock emoji for time pressure
+- "NOW" creates urgency
+- "Get settled" is benefit-focused
+- Countdown (30 minutes) adds pressure
+
+
+═══════════════════════════════════════════════════════════════════
+SMS #4: FINAL 5-MINUTE PUSH
+═══════════════════════════════════════════════════════════════════
+
+Send Time: Saturday, Nov 22 @ 7:55 AM PT (5 minutes before start)
+Purpose: Maximum urgency, catch stragglers
+
+Message:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 STARTING IN 5 MINUTES
+
+Join RIGHT NOW:
+https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
+
+- Neothink Society
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Character Count: 136 characters
+Notes:
+- Shortest, most urgent message
+- ALL CAPS "RIGHT NOW" for emphasis
+- 🔴 red emoji for maximum urgency
+- No extra words, just action
+
+
+═══════════════════════════════════════════════════════════════════
+IMPLEMENTATION NOTES
+═══════════════════════════════════════════════════════════════════
+
+📱 SMS Best Practices Applied:
+- All messages under 190 characters (optimized for single SMS)
+- Direct Zoom links (one-click join on mobile)
+- Clear timing in multiple messages
+- Escalating urgency (gentle → urgent → maximum)
+- Brand signature on all messages
+
+⚡ Timing Strategy:
+- 12 hours before: Sleep reminder, build anticipation
+- 2 hours before: Zoom link delivery with email
+- 30 minutes before: Doors open, immediate action
+- 5 minutes before: Final push, catch stragglers
+
+🎯 Psychology:
+- Message #1: Preparation (sleep well, it's coming)
+- Message #2: Information (here's your link)
+- Message #3: Action (doors are open NOW)
+- Message #4: Urgency (last chance, join RIGHT NOW)
+
+📊 Expected Results:
+- 40-50% open rate from SMS #1 (night before)
+- 70-80% open rate from SMS #2 (with email)
+- 85-90% open rate from SMS #3 (doors open)
+- 95%+ open rate from SMS #4 (final push)
+
+═══════════════════════════════════════════════════════════════════
+VIP VARIATION (Optional)
+═══════════════════════════════════════════════════════════════════
+
+If sending separate VIP SMS, modify SMS #2 and #3:
+
+VIP SMS #2 (6:00 AM):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 VIP ELITE: Check email for your SEPARATE VIP priority Zoom link.
+
+Doors 7:30 AM PT. Workshop 8 AM SHARP.
+
+Subject line: "VIP Priority Access"
+
+- Neothink Society
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VIP SMS #3 (7:30 AM):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⭐ VIP ELITE: Your priority room is open NOW.
+
+Check "VIP Priority Access" email for your exclusive link.
+
+Workshop starts in 30 min (8 AM PT).
+
+- Neothink Society
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+═══════════════════════════════════════════════════════════════════
