@@ -32,7 +32,7 @@
             --gray-500: #999999;
 
             /* Sizing */
-            --bottom-nav-height: 80px;
+            --bottom-nav-height: 70px;
             --base-font: 18px;
         }
 
@@ -322,25 +322,27 @@
             border-top: 2px solid #444;
             display: grid; grid-template-columns: 1fr 1fr 1fr;
             z-index: 1000;
-            padding-bottom: calc(15px + env(safe-area-inset-bottom));
+            padding-bottom: env(safe-area-inset-bottom);
         }
         .nav-item {
             display: flex; flex-direction: column; align-items: center; justify-content: center;
-            color: #aaa; text-decoration: none; font-size: 0.85rem; gap: 6px;
+            color: #aaa; text-decoration: none; font-size: 0.8rem; gap: 4px;
             font-weight: 600;
+            padding-top: 8px;
         }
         .nav-item.active { color: var(--gold); }
         .nav-item.active svg { stroke-width: 3px; }
 
         .nav-fab {
             background: var(--danger);
-            width: 58px; height: 58px;
+            width: 50px; height: 50px;
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
             color: white;
-            transform: translateY(-28px);
-            box-shadow: 0 0 0 6px #111, 0 4px 15px rgba(0,0,0,0.5);
+            transform: translateY(-18px);
+            box-shadow: 0 0 0 5px #111, 0 4px 15px rgba(0,0,0,0.5);
         }
+        .nav-fab svg { width: 24px; height: 24px; }
 
         /* --- SMALL SCREEN OVERRIDES --- */
         @media (max-width: 400px) {
@@ -605,11 +607,11 @@
             <span>Home</span>
         </a>
 
-        <a href="https://neothinkday.com/vip-upgrade" class="nav-item" aria-label="Upgrade to VIP">
+        <a href="https://neothinkday.com/vip-upgrade" class="nav-item" aria-label="Upgrade to VIP" style="padding-top: 0;">
             <div class="nav-fab">
-                <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
-            <span style="font-weight: 700; color: var(--danger); margin-top: 2px;">VIP</span>
+            <span style="font-weight: 700; color: var(--danger); font-size: 0.75rem;">VIP</span>
         </a>
 
         <a href="#guide" class="nav-item">
