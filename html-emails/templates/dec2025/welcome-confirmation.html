@@ -7,6 +7,9 @@
     <meta name="format-detection" content="date=no" />
     <meta name="format-detection" content="address=no" />
     <meta name="format-detection" content="email=no" />
+    <!-- Force emails to always display in our dark theme (prevent email client dark mode) -->
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light only">
     <title>You're Part of Something Rare - Day of Enlightenment</title>
 
     <!-- Subject Line: You're Part of Something Rare -->
@@ -17,6 +20,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <style type="text/css">
+        /* Prevent email clients from applying dark mode to our intentional dark theme */
+        :root {
+            color-scheme: light only !important;
+            supported-color-schemes: light only !important;
+        }
+
+        [data-ogsc] body,
+        [data-ogsc] .dark-bg {
+            background-color: #000000 !important;
+        }
         /* Reset and base styles */
         body {
             margin: 0;
@@ -24,7 +37,7 @@
             width: 100% !important;
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
-            background-color: #000000;
+            background-color: #000000 !important;
         }
 
         img {
@@ -125,7 +138,7 @@
         }
     </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #000000;">
+<body style="margin: 0; padding: 0; background-color: #000000 !important;">
 
     <!-- Preheader text (hidden but shows in preview) -->
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
