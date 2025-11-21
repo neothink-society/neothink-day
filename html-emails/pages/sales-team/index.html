@@ -276,7 +276,99 @@
             font-size: var(--text-lg);
             color: var(--gray-300);
             max-width: 600px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: rgba(255, 100, 100, 0.15);
+            border: 2px solid #ff6b6b;
+            border-radius: 100px;
+            padding: 0.5rem 1.25rem;
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .urgency-badge {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .urgency-text {
+            font-size: var(--text-sm);
+            color: var(--gray-200);
+        }
+
+        .hero-cta {
+            margin-top: var(--space-lg);
+        }
+
+        .primary-cta {
+            font-size: var(--text-lg) !important;
+            padding: 1rem 2rem !important;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(255, 215, 0, 0.6); }
+        }
+
+        /* Sticky Action Bar */
+        .sticky-action-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--gray-900);
+            border-top: 2px solid var(--gold);
+            padding: var(--space-sm) var(--space-md);
+            z-index: 100;
+            display: none;
+        }
+
+        .sticky-action-bar.visible {
+            display: block;
+        }
+
+        .sticky-action-content {
+            max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .sticky-info {
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+        }
+
+        .sticky-info strong {
+            color: var(--gold);
+        }
+
+        .sticky-cta {
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: var(--text-sm);
+            white-space: nowrap;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
         }
 
         h2 {
@@ -853,6 +945,24 @@
             border: 1px solid var(--gold);
         }
 
+        .video-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: var(--space-sm);
+            gap: var(--space-sm);
+        }
+
+        .video-card-header h3 {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .video-card-header .status {
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
         /* Collapsible Sections */
         .collapsible {
             margin: var(--space-lg) 0;
@@ -1032,6 +1142,24 @@
                 padding: 0.4rem 0.75rem;
             }
 
+            /* Mobile video card header - stack vertically */
+            .video-card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .video-card-header .status {
+                margin-top: var(--space-xs);
+            }
+
+            .video-card {
+                padding: var(--space-md);
+            }
+
+            .video-card h3 {
+                font-size: var(--text-base);
+            }
+
             .info-cards {
                 gap: var(--space-sm);
                 margin-bottom: var(--space-lg);
@@ -1119,6 +1247,70 @@
                 display: block;
                 margin-bottom: 0.25rem;
             }
+
+            /* Mobile touch targets - minimum 44px */
+            .cta-button,
+            .collapsible-header,
+            .quick-nav-link,
+            .sticky-cta {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .collapsible-header {
+                padding: var(--space-md) !important;
+            }
+
+            /* Urgency banner mobile */
+            .urgency-banner {
+                flex-direction: column;
+                gap: var(--space-xs);
+                padding: 0.75rem 1rem;
+            }
+
+            .urgency-badge {
+                font-size: 11px;
+            }
+
+            .urgency-text {
+                font-size: 12px;
+            }
+
+            /* Sticky bar mobile optimization */
+            .sticky-action-bar {
+                padding: var(--space-sm);
+            }
+
+            .sticky-action-content {
+                flex-direction: column;
+                gap: var(--space-xs);
+                text-align: center;
+            }
+
+            .sticky-info {
+                font-size: var(--text-xs);
+            }
+
+            .sticky-cta {
+                width: 100%;
+                justify-content: center;
+                padding: 0.875rem 1rem;
+            }
+
+            /* Add bottom padding for sticky bar */
+            body {
+                padding-bottom: 100px;
+            }
+
+            /* Hero CTA mobile */
+            .hero-cta .primary-cta {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 1.5rem !important;
+                font-size: var(--text-sm) !important;
+            }
         }
     </style>
 </head>
@@ -1138,12 +1330,20 @@
 
         <!-- Main Content -->
         <main id="main-content">
-            <!-- Page Header -->
+            <!-- Page Header - Urgency Focus -->
             <section class="page-header">
                 <div class="container">
-                    <p class="page-eyebrow">Day of Enlightenment</p>
-                    <h1 class="page-title">Sales Team Portal</h1>
-                    <p class="page-subtitle">Training Resources & Event Information</p>
+                    <div class="urgency-banner">
+                        <span class="urgency-badge">🔥 2 DAYS TO GO</span>
+                        <span class="urgency-text">Event starts Saturday, Nov 22</span>
+                    </div>
+                    <h1 class="page-title">Sales Team HQ</h1>
+                    <p class="page-subtitle">Everything you need for the Day of Enlightenment</p>
+                    <div class="hero-cta">
+                        <a href="https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1" class="cta-button primary-cta" target="_blank">
+                            📍 Join Friday Rehearsal (10am PT)
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -1282,7 +1482,7 @@
                     <div class="video-grid">
                         <!-- Session #3 - Most Recent -->
                         <div class="video-card">
-                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-sm);">
+                            <div class="video-card-header">
                                 <h3>Session #3: Final Training & Common Scenarios</h3>
                                 <span class="status complete">✅ COMPLETE</span>
                             </div>
@@ -1428,7 +1628,7 @@
 
                         <!-- Session #2 - Most Recent (NO RECORDING) -->
                         <div class="video-card">
-                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-sm);">
+                            <div class="video-card-header">
                                 <h3>Session #2: Logistics & Roleplay Practice</h3>
                                 <span class="status complete">✅ COMPLETE (Notes Only)</span>
                             </div>
@@ -1541,7 +1741,7 @@
 
                         <!-- Session #1 -->
                         <div class="video-card">
-                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-sm);">
+                            <div class="video-card-header">
                                 <h3>Session #1: Success Guide Training</h3>
                                 <span class="status complete">✅ COMPLETE</span>
                             </div>
@@ -1581,7 +1781,7 @@
 
                         <!-- Intro Session -->
                         <div class="video-card">
-                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-sm);">
+                            <div class="video-card-header">
                                 <h3>Intro Session: Overview & Q&A</h3>
                                 <span class="status complete">✅ COMPLETE</span>
                             </div>
@@ -1604,11 +1804,11 @@
                 <section id="schedule" class="section">
                     <div class="zone-header">
                         <h2>Training Schedule</h2>
-                        <span class="zone-badge">Upcoming</span>
+                        <span class="zone-badge" style="background: rgba(34, 197, 94, 0.2); border-color: #22c55e; color: #22c55e;">✓ All Complete</span>
                     </div>
 
-                    <p style="text-align: center; font-size: var(--text-lg); color: var(--gold); margin-bottom: var(--space-xl);">
-                        Core training sessions - watch recordings if you missed any!
+                    <p style="text-align: center; font-size: var(--text-lg); color: var(--gray-300); margin-bottom: var(--space-xl);">
+                        All training complete! Watch recordings above if you need a refresher.
                     </p>
 
                     <div class="grid">
@@ -1670,83 +1870,36 @@
                 <!-- Meeting Summary / Background Info Zone -->
                 <section id="meeting-summary" class="section">
                     <div class="zone-header">
-                        <h2>Background Information</h2>
+                        <h2>Event Day Quick Facts</h2>
                         <span class="zone-badge">Reference</span>
-                    </div>
-
-                    <h3>🎯 Event Overview</h3>
-                    <p>We're preparing for three upcoming Day of Enlightenment events - a transformative 2-day experience where members ascend from Level 2 to Level 3 in The Neothink Society.</p>
-
-                    <div style="text-align: center; margin: 25px 0;">
-                        <span class="date-badge">Nov 22-23, 2025</span>
-                        <span class="date-badge">Dec 6-7, 2025</span>
-                        <span class="date-badge">Jan 24-25, 2026</span>
                     </div>
 
                     <div class="grid">
                         <div class="grid-item">
-                            <h4>📅 Saturday Schedule</h4>
-                            <p><strong>Start:</strong> 8:00 AM Pacific Time<br>
-                            <strong>Duration:</strong> Full day (8+ hours)<br>
-                            <strong>Format:</strong> Fully immersive experience</p>
+                            <h4>📅 Event Times</h4>
+                            <p><strong>Saturday:</strong> 8:00 AM PT start (full day)<br>
+                            <strong>Sunday:</strong> 9:00 AM PT start<br>
+                            <strong>Expected:</strong> 200-250 attendees (Nov 22-23)</p>
                         </div>
                         <div class="grid-item">
-                            <h4>📅 Sunday Schedule</h4>
-                            <p><strong>Start:</strong> 9:00 AM Pacific Time<br>
-                            <strong>Duration:</strong> Partial day (TBD)<br>
-                            <strong>Format:</strong> Continuation of transformation</p>
+                            <h4>💼 Your Core Tasks</h4>
+                            <p><strong>Camera ON</strong> the entire time<br>
+                            <strong>Keep chat</strong> active and positive<br>
+                            <strong>Help members</strong> in breakout rooms</p>
                         </div>
                         <div class="grid-item">
-                            <h4>👥 Expected Attendance</h4>
-                            <p><strong>Participants:</strong> 500-600 people per day<br>
-                            <strong>Total:</strong> Both Saturday and Sunday<br>
-                            <strong>Support Needed:</strong> Extended sales team</p>
+                            <h4>🔗 Key Link</h4>
+                            <p><strong>Payment URL:</strong><br>
+                            <a href="https://societysecrets.com/level3" target="_blank" style="color: var(--gold); font-weight: 700;">societysecrets.com/level3</a><br>
+                            <em style="color: var(--gray-400); font-size: var(--text-sm);">Commit this to memory!</em></p>
                         </div>
                     </div>
 
-                    <h3>💼 Your Role as Sales Team</h3>
-                    <p>As volunteer sales team members, you'll receive a special bonus for representing The Neothink Society during these events. Here's what you'll be doing:</p>
+                    <p style="text-align: center; color: var(--gray-400); margin-top: var(--space-lg);">
+                        <em>For detailed scenarios and scripts, see the Session #3 training notes above.</em>
+                    </p>
 
-                    <ul>
-                        <li><strong>Camera on entire time</strong> - Be visible and present throughout the event</li>
-                        <li><strong>Keep chat active and positive</strong> - Respond to questions and maintain high energy</li>
-                        <li><strong>Support Level 3 ascension</strong> - Help members who want to ascend to the next level</li>
-                        <li><strong>Manage breakout rooms</strong> - Pull people into private conversations for assistance</li>
-                        <li><strong>Experience the event yourself</strong> - Fully participate while supporting others</li>
-                    </ul>
-
-                    <div class="highlight">
-                        <h3 style="margin-top: 0;">💡 Two Main Sales Scenarios</h3>
-
-                        <p><strong>Scenario 1: Ready to Ascend (Majority of cases)</strong></p>
-                        <ul>
-                            <li>Members have already decided they want to ascend to Level 3</li>
-                            <li>They need help processing their payment</li>
-                            <li>They want to discuss payment plan options</li>
-                            <li>Quick assistance to complete their purchase</li>
-                        </ul>
-
-                        <p><strong>Scenario 2: Seeking Information</strong></p>
-                        <ul>
-                            <li>Members are highly interested but need more information</li>
-                            <li>They have questions before making their decision</li>
-                            <li>Requires more preparation and product knowledge</li>
-                            <li>Opportunity to guide them through the value proposition</li>
-                        </ul>
-                    </div>
-
-                    <h3>📦 Additional Resources</h3>
-                    <p>Comprehensive resources being shared during training sessions include:</p>
-                    <ul>
-                        <li>Outline of all Success Guide responsibilities</li>
-                        <li>Common questions and answers (FAQ sheet)</li>
-                        <li>Payment processing guidelines and walkthroughs</li>
-                        <li>Chat moderation best practices</li>
-                        <li>Handling objections and difficult situations</li>
-                        <li>Event day coordination protocols</li>
-                    </ul>
-
-                    <h3>✨ Key Takeaways</h3>
+                    <h3>✨ Remember</h3>
                     <div class="highlight">
                         <ul>
                             <li>This is a <strong>volunteer opportunity</strong> with a special bonus</li>
@@ -1799,19 +1952,49 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Sticky Action Bar (appears on scroll) -->
+        <div class="sticky-action-bar" id="stickyBar">
+            <div class="sticky-action-content">
+                <div class="sticky-info">
+                    <strong>Friday Rehearsal</strong> - 10am PT
+                </div>
+                <a href="https://neothink.zoom.us/j/86533270192?pwd=bHoxo1BfeLnyKMx09djJKXaYhCbLK1.1" class="sticky-cta" target="_blank">
+                    Join Zoom →
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
-        // Collapsible sections functionality
         document.addEventListener('DOMContentLoaded', function() {
+            // Collapsible sections - CLOSED by default
             const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
 
             collapsibleHeaders.forEach(header => {
+                // Ensure closed by default (remove 'open' class if present)
+                const collapsible = header.parentElement;
+                collapsible.classList.remove('open');
+
                 header.addEventListener('click', function() {
-                    const collapsible = this.parentElement;
                     collapsible.classList.toggle('open');
                 });
             });
+
+            // Sticky action bar - show after scrolling past hero
+            const stickyBar = document.getElementById('stickyBar');
+            const heroSection = document.querySelector('.page-header');
+
+            if (stickyBar && heroSection) {
+                window.addEventListener('scroll', function() {
+                    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+                    if (window.scrollY > heroBottom) {
+                        stickyBar.classList.add('visible');
+                    } else {
+                        stickyBar.classList.remove('visible');
+                    }
+                });
+            }
 
             // Smooth scroll for navigation links
             const navLinks = document.querySelectorAll('.quick-nav-link');
@@ -1823,7 +2006,7 @@
                     const targetElement = document.getElementById(targetId);
 
                     if (targetElement) {
-                        const offset = 80; // Account for sticky nav
+                        const offset = 80;
                         const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
 
                         window.scrollTo({
