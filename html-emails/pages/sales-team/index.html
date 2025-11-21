@@ -280,21 +280,26 @@
         /* --- ACCORDIONS --- */
         .accordion-item {
             border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding: 0.5rem 0;
+            padding: 0.25rem 0;
         }
         .accordion-btn {
             width: 100%;
             text-align: left;
-            background: none;
+            background: rgba(255,255,255,0.03);
             border: none;
+            border-radius: 12px;
             color: var(--text-main);
-            padding: 1rem 0;
-            font-size: 1rem;
+            padding: 1.25rem 1rem; /* Larger touch target: 56px+ height */
+            font-size: 1.05rem;
             font-weight: 600;
             display: flex;
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            min-height: 56px; /* Apple accessibility minimum */
+        }
+        .accordion-btn:active {
+            background: rgba(255, 215, 0, 0.1);
         }
         .accordion-content {
             max-height: 0;
