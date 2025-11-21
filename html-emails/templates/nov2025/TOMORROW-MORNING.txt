@@ -1,0 +1,34 @@
+═══════════════════════════════════════════════════════════════════
+  SATURDAY MORNING, NOVEMBER 22, 2025 - EXECUTION PLAN
+═══════════════════════════════════════════════════════════════════
+
+📧 6:00 AM PT - SEND EMAIL
+═══════════════════════════════════════════════════════════════════
+File: day-of.html
+To: All registered attendees
+Subject: 🔴 TODAY: Doors Open in 90 Minutes
+
+Zoom Link: https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
+
+═══════════════════════════════════════════════════════════════════
+📱 7:30 AM PT - SEND SMS
+═══════════════════════════════════════════════════════════════════
+To: All mobile numbers
+
+🔴 DOORS ARE OPEN NOW
+
+Workshop starts in 30 min (8 AM PT). Join now to get settled:
+
+https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
+
+- Neothink Society
+
+═══════════════════════════════════════════════════════════════════
+
+THAT'S IT! Just 2 touchpoints:
+✅ Email at 6:00 AM (comprehensive)
+✅ SMS at 7:30 AM (mobile backup at critical moment)
+
+Expected attendance: 85-95%
+
+Good luck! 🚀
