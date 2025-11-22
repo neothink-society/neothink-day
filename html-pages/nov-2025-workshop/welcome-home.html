@@ -393,6 +393,274 @@
         }
 
         /* ===========================
+           JOIN WORKSHOP CTA
+        =========================== */
+        .join-workshop-cta {
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            border-top: 3px solid var(--gold);
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .join-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .join-cta-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-lg);
+            line-height: 1.2;
+        }
+
+        .join-cta-subtitle {
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+            margin-bottom: var(--space-2xl);
+            line-height: 1.6;
+        }
+
+        .join-cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+            padding: 2rem 4rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-2xl);
+            font-weight: 800;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border: none;
+            border-radius: 16px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 80px;
+            box-shadow:
+                0 12px 40px rgba(255, 215, 0, 0.4),
+                0 0 80px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+
+        .join-cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.4),
+                transparent
+            );
+            transition: left 0.6s ease;
+        }
+
+        .join-cta-button:hover::before {
+            left: 100%;
+        }
+
+        .join-cta-button:hover {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            transform: translateY(-6px) scale(1.05);
+            box-shadow:
+                0 20px 60px rgba(255, 215, 0, 0.6),
+                0 0 120px rgba(255, 215, 0, 0.3);
+        }
+
+        .join-cta-button:active {
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        .join-cta-button svg {
+            transition: transform 0.3s ease;
+            width: 32px;
+            height: 32px;
+        }
+
+        .join-cta-button:hover svg {
+            transform: scale(1.2);
+        }
+
+        .join-cta-note {
+            margin-top: var(--space-xl);
+            font-family: var(--font-mono);
+            font-size: var(--text-base);
+            color: var(--gray-400);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        /* Mobile adjustments for Join CTA */
+        @media (max-width: 768px) {
+            .join-cta-title {
+                font-size: var(--text-2xl);
+            }
+
+            .join-cta-subtitle {
+                font-size: var(--text-base);
+            }
+
+            .join-cta-button {
+                padding: 1.5rem 2.5rem;
+                font-size: var(--text-xl);
+                min-height: 70px;
+            }
+
+            .join-cta-note {
+                font-size: var(--text-sm);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .join-cta-title {
+                font-size: var(--text-xl);
+            }
+
+            .join-cta-button {
+                padding: 1.25rem 2rem;
+                font-size: var(--text-lg);
+                min-height: 60px;
+                width: 100%;
+            }
+
+            .join-cta-button svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        /* ===========================
+           WORKBOOK DOWNLOAD CTA
+        =========================== */
+        .workbook-cta {
+            padding: var(--space-2xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .workbook-alert {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            display: flex;
+            gap: var(--space-xl);
+            align-items: center;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+            animation: subtle-pulse 3s ease-in-out infinite;
+        }
+
+        .workbook-alert-icon {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .workbook-alert-icon svg {
+            color: var(--black);
+        }
+
+        .workbook-alert-content {
+            flex: 1;
+        }
+
+        .workbook-alert-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+            line-height: 1.3;
+        }
+
+        .workbook-alert-text {
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            margin-bottom: var(--space-lg);
+            line-height: 1.6;
+        }
+
+        .workbook-download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: 1rem 2rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .workbook-download-btn:hover {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .workbook-download-btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .workbook-download-btn:hover svg {
+            transform: translateY(2px);
+        }
+
+        /* Mobile adjustments for Workbook CTA */
+        @media (max-width: 768px) {
+            .workbook-alert {
+                flex-direction: column;
+                text-align: center;
+                padding: var(--space-lg);
+            }
+
+            .workbook-alert-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .workbook-alert-icon svg {
+                width: 30px;
+                height: 30px;
+            }
+
+            .workbook-alert-title {
+                font-size: var(--text-xl);
+            }
+
+            .workbook-alert-text {
+                font-size: var(--text-sm);
+            }
+
+            .workbook-download-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* ===========================
            QUICK ACCESS SECTION - REDESIGNED 2025
         =========================== */
         .quick-access-section {
@@ -1449,6 +1717,54 @@
                 </div>
             </section>
 
+            <!-- Join Workshop CTA -->
+            <section class="join-workshop-cta">
+                <div class="container">
+                    <div class="join-cta-content">
+                        <h2 class="join-cta-title">🔴 The Workshop is Live</h2>
+                        <p class="join-cta-subtitle">Click below to join now. Both days use the same Zoom link.</p>
+                        <a href="https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="join-cta-button"
+                           aria-label="Join the workshop now on Zoom">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                            Join The Workshop Now
+                        </a>
+                        <p class="join-cta-note">Day 1: 8am PT / 11am ET • Day 2: 9am PT / 12pm ET</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workbook Download CTA -->
+            <section class="workbook-cta">
+                <div class="container">
+                    <div class="workbook-alert">
+                        <div class="workbook-alert-icon">
+                            <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="workbook-alert-content">
+                            <h3 class="workbook-alert-title">📋 Download Your Day 1 Workbook</h3>
+                            <p class="workbook-alert-text">Get the exercises we'll work through in the first half of the day. Download now so you have it ready when we start.</p>
+                            <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="workbook-download-btn"
+                               aria-label="Download Day 1 Workbook PDF">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                Download Workbook (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- VIP Upgrade Banner -->
             <section class="vip-banner-section">
                 <div class="vip-banner">
@@ -1588,13 +1904,28 @@
                 <div class="container">
                     <div class="section-header">
                         <h2>🎯 Required Pre-Work</h2>
-                        <p>Complete these 3 items before the workshop begins</p>
+                        <p>Complete these 4 items before the workshop begins</p>
                     </div>
 
                     <div class="pre-work-grid">
-                        <!-- Pre-Work Item 1: Form -->
+                        <!-- Pre-Work Item 1: Workbook -->
                         <div class="pre-work-card">
                             <div class="pre-work-number">1</div>
+                            <div class="pre-work-content">
+                                <h3>Download Your Day 1 Workbook</h3>
+                                <p>Download and have ready the exercises we'll work through during the first half of Day 1. Print it out or have it open on a second device.</p>
+                                <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" rel="noopener" class="pre-work-button" aria-label="Download Day 1 Workbook">
+                                    Download Workbook (PDF)
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work Item 2: Form -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number">2</div>
                             <div class="pre-work-content">
                                 <h3>Complete the Questionnaire</h3>
                                 <p>Fill out the pre-workshop form so we can tailor the experience to you. Takes 5-10 minutes.</p>
@@ -1607,18 +1938,18 @@
                             </div>
                         </div>
 
-                        <!-- Pre-Work Item 2: Manuscript -->
+                        <!-- Pre-Work Item 3: Manuscript -->
                         <div class="pre-work-card">
-                            <div class="pre-work-number">2</div>
+                            <div class="pre-work-number">3</div>
                             <div class="pre-work-content">
                                 <h3>Read Pages 1-50 of Your Manuscript</h3>
                                 <p>Read the first 50 pages of <em>The Super Puzzle</em>. This establishes the foundation we'll build upon together. Focus on engagement, not perfection—notice what resonates, what challenges your assumptions, what creates curiosity.</p>
                             </div>
                         </div>
 
-                        <!-- Pre-Work Item 3: Questions -->
+                        <!-- Pre-Work Item 4: Questions -->
                         <div class="pre-work-card">
-                            <div class="pre-work-number">3</div>
+                            <div class="pre-work-number">4</div>
                             <div class="pre-work-content">
                                 <h3>Reflect on These Questions</h3>
                                 <p>Consider these throughout the coming days. Not to have perfect answers—to open pathways for transformation:</p>
@@ -1656,6 +1987,24 @@
                             <p>Click below to join the workshop. Day 1 (Saturday, November 22) starts at 8am PT / 11am ET. Day 2 (Sunday, November 23) starts at 9am PT / 12pm ET. Same link works for both days.</p>
                             <a href="https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="Join workshop on Zoom">
                                 🔴 Join Workshop Now
+                            </a>
+                        </div>
+
+                        <!-- Day 1 Workbook Card - READY -->
+                        <div class="access-card featured">
+                            <span class="card-status available">📋 Available Now</span>
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Day 1 Workbook</h3>
+                            <p>Download the exercises we'll work through in the first half of Day 1. Have this ready and printed (or open on a second device) before the workshop starts.</p>
+                            <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="Download Day 1 Workbook PDF">
+                                Download Workbook (PDF)
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
                             </a>
                         </div>
 
