@@ -19,12 +19,12 @@
 Join immediately to get settled:
 https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
 
-Workshop starts 8 AM PT.
+Workshop starts 8am PT / 11am ET.
 
 - Neothink Society
 ```
 
-**Character Count:** 163 (fits in 1 SMS)
+**Character Count:** 170 (fits in 2 SMS)
 **Expected:** 98% open rate, 30-40% immediate joins
 
 ---
