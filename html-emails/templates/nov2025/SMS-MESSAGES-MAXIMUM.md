@@ -1,9 +1,9 @@
 # SMS Message Sequence - MAXIMUM STRATEGY
 ## November 22, 2025 - All SMS Messages
 
-**Total SMS:** 5 messages over 2.5 hours (7:30 AM - 8:55 AM)
+**Total SMS:** 6 messages over 3.5 hours (7:30 AM - 9:00 AM)
 **Purpose:** Maximum attendance through aggressive mobile-first reminders
-**Cost:** ~5 SMS × 500 attendees = 2,500 SMS = ~$125-250
+**Cost:** ~6 SMS × 500 attendees = 3,000 SMS = ~$150-300
 
 ---
 
@@ -114,22 +114,66 @@ This is it.
 
 ---
 
+## SMS #6: 9:00 AM PT (Wallace Revealing NOW) ⭐ NEW
+
+**Send Time:** Saturday, November 22 @ 9:00 AM PT
+**Purpose:** Wallace on stage revealing the breakthrough - FOMO push for absolute final stragglers
+
+```
+🔴 WALLACE IS REVEALING IT NOW
+
+He's on stage. The breakthrough is happening:
+https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1
+
+Don't miss this moment.
+
+- Neothink Society
+```
+
+**Character Count:** 166 (fits in 1 SMS)
+**Expected:** 98% open rate, 3-5% final final final stragglers
+
+**Why This Works:**
+- Wallace is ACTUALLY on stage revealing something transformational
+- Creates massive FOMO (fear of missing out)
+- "The breakthrough is happening" - urgency without revealing details
+- Catches anyone checking phone at 9am who hasn't joined yet
+- Not interrupting those already in (they're watching Wallace)
+
+---
+
 ## Recommended SMS Strategy
 
-### OPTION A: Maximum (5 SMS)
+### OPTION A: ULTRA MAXIMUM (6 SMS) ⭐ NEW - WALLACE REVEAL
 - 7:30 AM: Doors open
 - 8:00 AM: Starting now
 - 8:30 AM: Wallace in 30 min
 - 8:45 AM: Wallace in 15 min
-- 8:55 AM: Wallace in 5 min
+- 8:55 AM: Wallace in 5 min (optional)
+- **9:00 AM: Wallace revealing NOW** ← NEW
 
-**Total:** 5 SMS over 85 minutes
-**Cost:** ~$125-250
-**Expected attendance:** 92-96%
+**Total:** 6 SMS over 90 minutes
+**Cost:** ~$150-300
+**Expected attendance:** 93-97%
+**Why:** Catches absolute final stragglers when Wallace takes stage with big reveal
 
 ---
 
-### OPTION B: Aggressive (4 SMS) ⭐ RECOMMENDED
+### OPTION B: Maximum (5 SMS)
+- 7:30 AM: Doors open
+- 8:00 AM: Starting now
+- 8:30 AM: Wallace in 30 min
+- 8:45 AM: Wallace in 15 min
+- **9:00 AM: Wallace revealing NOW** ← Recommended to add this
+
+**Total:** 5 SMS over 90 minutes (skip 8:55 AM)
+**Cost:** ~$125-250
+**Expected attendance:** 92-96%
+**Why:** Skip 8:55 AM (too close), but 9:00 AM creates FOMO when Wallace actually takes stage
+
+---
+
+### OPTION C: Aggressive (4 SMS)
 - 7:30 AM: Doors open
 - 8:00 AM: Starting now
 - 8:30 AM: Wallace in 30 min
@@ -138,11 +182,11 @@ This is it.
 **Total:** 4 SMS over 75 minutes
 **Cost:** ~$100-200
 **Expected attendance:** 91-95%
-**Why:** 8:55 AM might be too much, 8:45 AM is final final call
+**Why:** Original recommendation, stop at 8:45 AM
 
 ---
 
-### OPTION C: Moderate (3 SMS)
+### OPTION D: Moderate (3 SMS)
 - 7:30 AM: Doors open
 - 8:00 AM: Starting now
 - 8:30 AM: Wallace in 30 min
@@ -153,20 +197,22 @@ This is it.
 
 ---
 
-## My Recommendation: OPTION B (4 SMS)
+## My Recommendation: OPTION B (5 SMS with 9:00 AM Wallace Reveal) ⭐ UPDATED
 
 **Why:**
-- 8:55 AM SMS is TOO close to Wallace (only 5 min before)
-- People already in Zoom by 8:45 if they're coming
-- 5 SMS in 85 minutes starts to feel desperate
-- 4 SMS is aggressive but professional
+- 7:30, 8:00, 8:30, 8:45 AM = essential countdown sequence
+- **SKIP 8:55 AM** (too close to Wallace, feels desperate)
+- **ADD 9:00 AM Wallace reveal** (creates FOMO when he's actually on stage)
+- Wallace reveal SMS catches final stragglers checking phone at top of hour
+- Not spammy: 5 SMS over 90 minutes = 1 every 18 minutes
+- Professional but maximally effective
 
 **Expected Results:**
 - By 7:30 AM: 25-35% joined (early birds)
 - By 8:00 AM: 50-60% joined (official start)
 - By 8:30 AM: 70-80% joined (Wallace countdown)
 - By 8:45 AM: 85-90% joined (final push)
-- By 9:00 AM: 91-95% attendance (Wallace takes stage)
+- By 9:00 AM Wallace SMS: 92-96% attendance (FOMO catches final 2-6%)
 
 ---
 
