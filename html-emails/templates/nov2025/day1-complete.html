@@ -1,232 +1,507 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
+    <meta name="color-scheme" content="dark only">
+    <meta name="supported-color-schemes" content="dark">
     <title>WOW! What a Day - Day 2 is TODAY at 9am PT</title>
-    <style>
+    <style type="text/css">
+        /* Prevent email clients from applying dark mode to our intentional dark theme */
+        :root {
+            color-scheme: light only !important;
+            supported-color-schemes: light only !important;
+        }
+
+        [data-ogsc] body,
+        [data-ogsc] .dark-bg {
+            background-color: #000000 !important;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Courier+Prime:wght@400;700&display=swap');
+
         body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background-color: #0a0a0a;
-            color: #ffffff;
+            margin: 0 !important;
+            padding: 0 !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
-        .email-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #0a0a0a;
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
         }
-        .header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 3px solid #FFD700;
-        }
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-        }
-        .header h1 {
-            font-size: 42px;
-            font-weight: 900;
-            margin: 0 0 10px 0;
-            color: #FFD700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            line-height: 1.2;
-        }
-        .header p {
-            font-size: 18px;
-            color: #cccccc;
-            margin: 0;
-        }
-        .content {
-            padding: 40px 30px;
-        }
-        .content h2 {
-            font-size: 28px;
-            color: #FFD700;
-            margin: 0 0 20px 0;
-            font-weight: 700;
-        }
-        .content p {
-            font-size: 17px;
-            line-height: 1.7;
-            color: #e5e5e5;
-            margin: 0 0 20px 0;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
-            border-left: 4px solid #FFD700;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        .highlight-box h3 {
-            font-size: 22px;
-            color: #FFD700;
-            margin: 0 0 15px 0;
-            font-weight: 700;
-        }
-        .highlight-box p {
-            margin: 0 0 10px 0;
-            font-size: 16px;
-            color: #ffffff;
-        }
-        .highlight-box p:last-child {
-            margin-bottom: 0;
-        }
-        .time-box {
-            background: linear-gradient(135deg, #FFD700, #FFC700);
-            color: #0a0a0a;
-            padding: 30px;
-            text-align: center;
-            margin: 30px 0;
-            border-radius: 12px;
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
-        }
-        .time-box h2 {
-            font-size: 32px;
-            margin: 0 0 15px 0;
-            color: #0a0a0a;
-            font-weight: 900;
-        }
-        .time-box p {
-            font-size: 20px;
-            margin: 0;
-            color: #1a1a1a;
-            font-weight: 700;
-        }
-        .time-box .timezone {
-            font-size: 16px;
-            margin-top: 10px;
-            color: #2a2a2a;
-        }
-        .button-container {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #FFD700, #FFC700);
-            color: #0a0a0a;
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
             text-decoration: none;
-            padding: 20px 50px;
-            font-size: 20px;
-            font-weight: 900;
-            border-radius: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+            -ms-interpolation-mode: bicubic;
         }
-        .quote-box {
-            border-left: 4px solid #FFD700;
-            padding-left: 20px;
-            margin: 30px 0;
-            font-style: italic;
-            color: #FFD700;
-            font-size: 19px;
-            line-height: 1.6;
+
+        a {
+            text-decoration: none;
         }
-        .footer {
-            background-color: #1a1a1a;
-            padding: 30px 20px;
-            text-align: center;
-            border-top: 1px solid #2a2a2a;
+
+        /* Hide mobile elements on desktop */
+        .desktop-hide {
+            display: none !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+            visibility: hidden !important;
         }
-        .footer p {
-            font-size: 14px;
-            color: #8a8a8a;
-            margin: 5px 0;
+
+        /* Mobile-first responsive styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .content-padding {
+                padding: 25px 16px !important;
+            }
+
+            .headline {
+                font-size: 32px !important;
+                line-height: 40px !important;
+            }
+
+            .headline-large {
+                font-size: 38px !important;
+                line-height: 46px !important;
+            }
+
+            .mobile-padding {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            .mobile-hide {
+                display: none !important;
+                max-height: 0 !important;
+                overflow: hidden !important;
+                visibility: hidden !important;
+                width: 0 !important;
+            }
+
+            .mobile-button {
+                padding: 16px 24px !important;
+                font-size: 14px !important;
+                letter-spacing: 0.5px !important;
+                line-height: 20px !important;
+            }
+
+            .mobile-text {
+                font-size: 15px !important;
+                line-height: 24px !important;
+            }
+
+            .mobile-text-small {
+                font-size: 14px !important;
+                line-height: 22px !important;
+            }
+
+            .mobile-title {
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            .mobile-subtitle {
+                font-size: 20px !important;
+                line-height: 28px !important;
+            }
+
+            /* Better mobile spacing */
+            .mobile-spacing-reduce {
+                padding: 20px 16px !important;
+            }
+
+            .mobile-margin-bottom {
+                margin-bottom: 20px !important;
+            }
+
+            /* Improve touch targets for links */
+            .mobile-touch-target {
+                padding: 12px 0 !important;
+            }
+
+            /* List items better spacing */
+            .mobile-list-item {
+                padding: 10px 0 !important;
+            }
         }
-        ul {
-            padding-left: 20px;
+
+        /* Enhanced dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .dark-mode-bg {
+                background-color: #000000 !important;
+            }
+            .dark-mode-text {
+                color: #e8e8e8 !important;
+            }
         }
-        li {
-            margin-bottom: 12px;
-            line-height: 1.6;
-            color: #e5e5e5;
-        }
-        strong {
-            color: #FFD700;
+
+        /* Force dark mode even in light mode */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #000000 !important;
+            }
+
+            .dark-bg {
+                background-color: #000000 !important;
+            }
         }
     </style>
 </head>
-<body>
-    <div class="email-container">
-        <div class="header">
-            <h1>🔥 WOW! WHAT A DAY! 🔥</h1>
-            <p>You Just Experienced Something Extraordinary</p>
-        </div>
+<body style="margin: 0 !important; padding: 0 !important; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #000000; width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
 
-        <div class="content">
-            <p>Can we just take a moment to acknowledge what happened today?</p>
-
-            <p><strong>You showed up.</strong> You stayed present. You went deep. You had breakthroughs. You discovered your Friday Night Essence. You connected with your Creator within.</p>
-
-            <p>The energy in that room was <em>electric</em>. The transformations were <em>real</em>. The breakthroughs were <em>profound</em>.</p>
-
-            <div class="highlight-box">
-                <h3>✨ Today's Highlights:</h3>
-                <p><strong>The Friday Night Essence Meditation</strong> — Many of you unlocked the core passion that's been waiting inside you your entire life.</p>
-                <p><strong>Value Creation Breakthroughs</strong> — You saw how your essence translates into unstoppable value for the world.</p>
-                <p><strong>Shared Transformations</strong> — VIP members and attendees stepped up and shared their aha moments with raw authenticity.</p>
-                <p><strong>Wallace's Mastery</strong> — Six+ hours of pure transformation, building the foundation for what's coming TODAY.</p>
-            </div>
-
-            <h2>But Here's the Truth...</h2>
-
-            <p>As incredible as yesterday was, <strong>yesterday was just the foundation.</strong></p>
-
-            <div class="quote-box">
-                "Today isn't just another day. Today is a revelation. Today is destiny. Today is the moment everything crystallizes."
-                <br>— Wallace Hamilton
-            </div>
-
-            <p>TODAY, <strong>Mark Hamilton</strong> himself—author of the NeoThink manuscripts, architect of this entire evolutionary journey—is revealing a <strong>brand new breakthrough for the first time in history.</strong></p>
-
-            <p>This revelation will <strong>change the trajectory of humanity</strong>, and you—the elite neo-thinkers who showed up yesterday—are the first to receive it.</p>
-
-            <div class="time-box">
-                <h2>📅 Day 2 is TODAY</h2>
-                <p>Sunday, November 23rd</p>
-                <p style="font-size: 28px; margin: 15px 0; font-weight: 900;">9:00 AM PT / 12:00 PM ET</p>
-                <p class="timezone">10am MT | 11am CT</p>
-            </div>
-
-            <div class="button-container">
-                <a href="https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1" class="cta-button">📍 Same Zoom Link</a>
-            </div>
-
-            <h2>🎯 What to Bring TODAY:</h2>
-
-            <p>Get ready for Day 2. Here's what you need:</p>
-
-            <div class="highlight-box">
-                <h3>📋 Day 2 Checklist:</h3>
-                <p><strong>Your manuscript</strong> (The Super Puzzle)</p>
-                <p><strong>Pen and paper</strong> for notes</p>
-                <p><strong>Water bottle</strong> (stay hydrated)</p>
-                <p><strong>Your full presence</strong> — Mark Hamilton's revelation demands it</p>
-                <p><strong>Prepared meals/snacks</strong> (lunch break is short)</p>
-            </div>
-
-            <p style="font-size: 19px; color: #FFD700; font-weight: 700;">The Creator in you woke up yesterday. TODAY, you will meet the mentor, live, who will show you how far that Creator can go.</p>
-
-            <p>This is the beginning of something world-changing.</p>
-
-            <p style="margin-top: 40px; font-size: 18px;">We are so proud of you. Join us at 9am PT sharp.</p>
-
-            <p style="font-size: 16px; margin-top: 30px; color: #8a8a8a;"><em>P.S. — Doors open at 8:30am PT. TODAY, history begins.</em></p>
-        </div>
-
-        <div class="footer">
-            <p><strong>Neothink Society</strong></p>
-            <p>Prosper Happily Forever</p>
-            <p style="margin-top: 15px;">Questions? Email <a href="mailto:support@neothink.com" style="color: #FFD700;">support@neothink.com</a></p>
-        </div>
+    <!-- Preheader -->
+    <div style="display: none; font-size: 1px; color: #000000; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        Day 1 was extraordinary! You discovered your Friday Night Essence and had breakthroughs. But yesterday was just the foundation. Day 2 TODAY at 9am PT - Mark Hamilton's historic revelation awaits.
     </div>
+
+    <!-- Main Container -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000; margin: 0; padding: 0; width: 100%; min-width: 100%;" class="dark-mode-bg">
+        <tr>
+            <td align="center" style="padding: 20px 15px;">
+
+                <!-- Content Container -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px; width: 100%;" class="container">
+
+                    <!-- Status Badge -->
+                    <tr>
+                        <td style="padding: 40px 0 30px 0; text-align: center;" class="mobile-padding">
+                            <p style="margin: 0; padding: 0; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 12px; color: #FFD700; text-transform: uppercase; letter-spacing: 3px; line-height: 18px; font-weight: 700;">
+                                🔥 DAY 2 IS TODAY • 9AM PT / 12PM ET
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Logo Section -->
+                    <tr>
+                        <td align="center" style="padding: 0 0 35px 0;">
+                            <img src="https://assets.cdn.filesafe.space/OWPT3ihPWINakwA0bGRQ/media/685f3d91844c01434843021f.png"
+                                 alt="Neothink Society Logo"
+                                 width="100"
+                                 height="100"
+                                 style="display: block; width: 100px; height: 100px; max-width: 100px; border: 0; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
+                        </td>
+                    </tr>
+
+                    <!-- Main Message -->
+                    <tr>
+                        <td style="padding: 0 40px 40px 40px;" class="content-padding">
+
+                            <!-- Main Headline -->
+                            <h1 style="margin: 0 0 25px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 54px; font-weight: 400; color: #FFD700; line-height: 60px; text-align: center;" class="headline-large">
+                                WOW!<br>What a Day!
+                            </h1>
+
+                            <!-- Opening Statement -->
+                            <p style="margin: 0 0 30px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 30px; color: #d0d0d0; font-weight: 400; text-align: center;" class="mobile-text">
+                                Can we just take a moment to acknowledge what happened yesterday?
+                            </p>
+
+                            <p style="margin: 0 0 35px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 30px; color: #ffffff; font-weight: 600; text-align: center;" class="mobile-text">
+                                You showed up. You stayed present. You went deep. You had breakthroughs. You discovered your Friday Night Essence. You connected with your Creator within.
+                            </p>
+
+                            <!-- Highlights Box -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 40px 0;">
+                                <tr>
+                                    <td style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05)); border: 2px solid #FFD700; border-radius: 16px; padding: 35px;" class="mobile-spacing-reduce">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <p style="margin: 0 0 25px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 24px; text-align: center;">
+                                                        ✨ Yesterday's Highlights
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Highlight 1 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 20px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0 0 5px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; color: #ffffff; font-weight: 700; line-height: 24px;">
+                                                        The Friday Night Essence Meditation
+                                                    </p>
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        Many of you unlocked the core passion that's been waiting inside you your entire life.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Highlight 2 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 20px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0 0 5px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; color: #ffffff; font-weight: 700; line-height: 24px;">
+                                                        Value Creation Breakthroughs
+                                                    </p>
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        You saw how your essence translates into unstoppable value for the world.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Highlight 3 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 20px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0 0 5px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; color: #ffffff; font-weight: 700; line-height: 24px;">
+                                                        Shared Transformations
+                                                    </p>
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        VIP members and attendees stepped up and shared their aha moments with raw authenticity.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Highlight 4 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0 0 5px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; color: #ffffff; font-weight: 700; line-height: 24px;">
+                                                        Wallace's Mastery
+                                                    </p>
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        Six+ hours of pure transformation, building the foundation for what's coming TODAY.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Section: But Here's the Truth -->
+                            <h2 style="margin: 0 0 25px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 32px; font-weight: 400; color: #FFD700; line-height: 40px; text-align: center;" class="mobile-title">
+                                But Here's the Truth...
+                            </h2>
+
+                            <p style="margin: 0 0 35px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 30px; color: #ffffff; font-weight: 600; text-align: center;" class="mobile-text">
+                                As incredible as yesterday was, <strong style="color: #FFD700;">yesterday was just the foundation.</strong>
+                            </p>
+
+                            <!-- Wallace Quote Box -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 35px 0;">
+                                <tr>
+                                    <td style="border-left: 4px solid #FFD700; padding-left: 25px;">
+                                        <p style="margin: 0 0 10px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: #FFD700; font-style: italic; line-height: 32px; font-weight: 400;">
+                                            "Today isn't just another day. Today is a revelation. Today is destiny. Today is the moment everything crystallizes."
+                                        </p>
+                                        <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; color: #aaaaaa; font-weight: 400; line-height: 20px;">
+                                            — Wallace Hamilton
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin: 0 0 35px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 30px; color: #d0d0d0; font-weight: 400; text-align: center;" class="mobile-text">
+                                TODAY, <strong style="color: #FFD700;">Mark Hamilton</strong> himself—author of the NeoThink manuscripts, architect of this entire evolutionary journey—is revealing a <strong style="color: #FFD700;">brand new breakthrough for the first time in history.</strong>
+                            </p>
+
+                            <p style="margin: 0 0 40px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 30px; color: #d0d0d0; font-weight: 400; text-align: center;" class="mobile-text">
+                                This revelation will <strong style="color: #FFD700;">change the trajectory of humanity</strong>, and you—the elite neo-thinkers who showed up yesterday—are the first to receive it.
+                            </p>
+
+                            <!-- Day 2 Time Box -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 40px 0;">
+                                <tr>
+                                    <td style="background: linear-gradient(135deg, #FFD700, #FFC700); border-radius: 12px; padding: 35px; box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);" class="mobile-spacing-reduce">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td align="center">
+                                                    <p style="margin: 0 0 10px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; color: #000000; text-transform: uppercase; letter-spacing: 1.5px; line-height: 20px;">
+                                                        📅 Day 2 is TODAY
+                                                    </p>
+                                                    <p style="margin: 0 0 5px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 36px; font-weight: 400; color: #000000; line-height: 1.1;" class="mobile-title">
+                                                        Sunday, November 23rd
+                                                    </p>
+                                                    <p style="margin: 0 0 5px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 32px; color: #000000; font-weight: 900; line-height: 1.2;">
+                                                        9:00 AM PT / 12:00 PM ET
+                                                    </p>
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #1a1a1a; font-weight: 600; line-height: 22px;" class="mobile-text-small">
+                                                        10am MT • 11am CT
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- CTA Button -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 40px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td align="center" style="background: linear-gradient(135deg, #FFD700, #FFC700); border-radius: 8px; box-shadow: 0 0 60px rgba(255, 215, 0, 0.5);">
+                                                    <a href="https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1" class="mobile-button" style="display: inline-block; padding: 22px 50px; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; color: #000000; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; line-height: 22px;">
+                                                        📍 Join on Zoom (Same Link)
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- What to Bring Box -->
+                            <h2 style="margin: 0 0 25px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; text-align: center; line-height: 30px;" class="mobile-subtitle">
+                                🎯 What to Bring TODAY
+                            </h2>
+
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 40px 0;">
+                                <tr>
+                                    <td style="background-color: #252525; border: 1px solid #3a3a3a; border-radius: 12px; padding: 35px;" class="mobile-spacing-reduce">
+
+                                        <!-- Item 1 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 15px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top; padding-right: 10px; width: 20px;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 24px;">
+                                                        ✓
+                                                    </p>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        <strong style="color: #ffffff;">Your manuscript</strong> (The Super Puzzle)
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Item 2 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 15px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top; padding-right: 10px; width: 20px;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 24px;">
+                                                        ✓
+                                                    </p>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        <strong style="color: #ffffff;">Pen and paper</strong> for notes
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Item 3 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 15px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top; padding-right: 10px; width: 20px;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 24px;">
+                                                        ✓
+                                                    </p>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        <strong style="color: #ffffff;">Water bottle</strong> (stay hydrated)
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Item 4 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 15px 0;">
+                                            <tr>
+                                                <td style="vertical-align: top; padding-right: 10px; width: 20px;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 24px;">
+                                                        ✓
+                                                    </p>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        <strong style="color: #ffffff;">Your full presence</strong> — Mark Hamilton's revelation demands it
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Item 5 -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="vertical-align: top; padding-right: 10px; width: 20px;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 24px;">
+                                                        ✓
+                                                    </p>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #d0d0d0; font-weight: 400; line-height: 24px;" class="mobile-text-small">
+                                                        <strong style="color: #ffffff;">Prepared meals/snacks</strong> (lunch break is short)
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Closing Statement -->
+                            <p style="margin: 0 0 30px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 19px; line-height: 32px; color: #FFD700; font-weight: 700; text-align: center;" class="mobile-text">
+                                The Creator in you woke up yesterday. TODAY, you will meet the mentor, live, who will show you how far that Creator can go.
+                            </p>
+
+                            <p style="margin: 0 0 35px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 30px; color: #d0d0d0; font-weight: 400; text-align: center;" class="mobile-text">
+                                This is the beginning of something world-changing.
+                            </p>
+
+                            <!-- Final Status -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding: 35px 0; border-top: 1px solid #3a3a3a; border-bottom: 1px solid #3a3a3a;" align="center">
+                                        <p style="margin: 0 0 10px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #d0d0d0; font-weight: 400; line-height: 26px; text-align: center;">
+                                            We are so proud of you.
+                                        </p>
+                                        <p style="margin: 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 22px; color: #FFD700; font-style: italic; font-weight: 400; text-align: center; line-height: 32px;">
+                                            Join us at 9am PT sharp.<br>Doors open at 8:30am PT.<br>TODAY, history begins.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 50px 40px 60px 40px; text-align: center;" class="mobile-padding">
+
+                            <p style="margin: 0 0 8px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: #aaaaaa; font-style: italic; line-height: 30px; font-weight: 400;">
+                                History begins today
+                            </p>
+
+                            <p style="margin: 0 0 20px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; color: #999999; line-height: 20px; font-weight: 400;">
+                                Questions? <a href="mailto:support@neothink.com" style="color: #ffffff; text-decoration: none; font-weight: 400;">support@neothink.com</a>
+                            </p>
+
+                            <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; color: #777777; text-transform: uppercase; letter-spacing: 1px; line-height: 18px; font-weight: 400;">
+                                <a href="#" style="color: #777777; text-decoration: none; font-weight: 400;">Neothink Society</a> •
+                                <a href="https://neothinkday.com/home" style="color: #777777; text-decoration: none; font-weight: 400;">Workshop Hub</a> •
+                                <a href="{{unsubscribe}}" style="color: #777777; text-decoration: none; font-weight: 400;">Unsubscribe</a>
+                            </p>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
