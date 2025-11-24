@@ -2,673 +2,1223 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download your Golden Life Sheet - A daily alignment tool to connect your essence to value creation. Six categories to track your transformation journey.">
-    <title>Golden Life Sheet | Neothink Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Your single-page synthesis of the Day of Enlightenment teachings. Six essential categories designed to keep you aligned with the Immortal Mentality.">
+    <meta name="format-detection" content="telephone=no">
 
-    <!-- Font Preconnect -->
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Golden Life Sheet - Your Daily Alignment Tool">
+    <meta property="og:description" content="Your single-page synthesis designed to keep you aligned with the Immortal Mentality and protect you from drifting back into the Matrix of Illusions.">
+    <meta property="og:site_name" content="The Neothink Society">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <title>The Golden Life Sheet - Your Daily Alignment Tool | The Society</title>
+
+    <!-- Preconnect to font provider -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <style>
-        /* ===========================
-           CSS CUSTOM PROPERTIES
-        =========================== */
+        /* CSS Custom Properties with fallbacks */
         :root {
-            /* Fonts */
-            --font-serif: 'Baskervville', Georgia, serif;
-            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'Courier Prime', 'Courier New', monospace;
-
-            /* Colors */
             --gold: #FFD700;
             --gold-light: #FFED4E;
-            --gold-dark: #B8860B;
-            --black: #0a0a0a;
-            --gray-900: #1a1a1a;
-            --gray-800: #2a2a2a;
-            --gray-700: #3a3a3a;
-            --gray-600: #4a4a4a;
-            --gray-500: #6a6a6a;
-            --gray-400: #8a8a8a;
-            --gray-300: #aaaaaa;
-            --gray-200: #cccccc;
-            --gray-100: #e5e5e5;
+            --gold-dark: #FFC700;
+            --black: #000000;
+            --gray-950: #0a0a0a;
+            --gray-900: #0f0f0f;
+            --gray-800: #1a1a1a;
+            --gray-700: #2a2a2a;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
             --white: #ffffff;
+            --font-serif: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', Courier, monospace;
 
-            /* Spacing */
-            --space-xs: 0.5rem;
-            --space-sm: 1rem;
-            --space-md: 1.5rem;
-            --space-lg: 2rem;
-            --space-xl: 3rem;
-            --space-2xl: 4rem;
-            --space-3xl: 6rem;
+            /* Spacing scale */
+            --space-xs: clamp(0.5rem, 1.5vw, 0.75rem);
+            --space-sm: clamp(0.75rem, 2vw, 1rem);
+            --space-md: clamp(1rem, 3vw, 1.5rem);
+            --space-lg: clamp(1.5rem, 4vw, 2rem);
+            --space-xl: clamp(2rem, 5vw, 3rem);
+            --space-2xl: clamp(2.5rem, 6vw, 4rem);
+            --space-3xl: clamp(3rem, 8vw, 5rem);
 
-            /* Typography */
-            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
-            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
-            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
-            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
-            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
-            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
-            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+            /* Border radius scale */
+            --radius-sm: clamp(6px, 1.5vw, 8px);
+            --radius-md: clamp(8px, 2vw, 12px);
+            --radius-lg: clamp(12px, 3vw, 16px);
+            --radius-xl: clamp(16px, 4vw, 20px);
+            --radius-full: 9999px;
 
-            /* Animation */
-            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-            --duration-base: 300ms;
-            --duration-slow: 500ms;
+            /* Transitions */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            /* Shadows */
-            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
-            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
-
-            /* Accessibility */
-            --min-touch-target: 44px;
-            --focus-ring: 3px solid var(--gold);
-            --focus-offset: 3px;
+            /* Z-index scale */
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal-backdrop: 1040;
+            --z-modal: 1050;
+            --z-popover: 1060;
+            --z-tooltip: 1070;
         }
 
-        /* ===========================
-           RESET & BASE STYLES
-        =========================== */
-        * {
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
+        /* Prevent font size inflation */
+        html {
+            -moz-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        /* Remove default margins */
+        body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+            margin: 0;
+        }
+
+        /* Remove list styles */
+        ul[role='list'], ol[role='list'] {
+            list-style: none;
+        }
+
+        /* Core body defaults */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+            hanging-punctuation: first last;
+        }
+
+        /* Improved text rendering */
         body {
             font-family: var(--font-sans);
-            font-size: var(--text-base);
-            line-height: 1.6;
-            color: var(--white);
             background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            min-height: 100vh;
+            min-height: 100dvh; /* Dynamic viewport height for mobile */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1;
+            font-kerning: normal;
+            overflow-x: hidden;
         }
 
-        *:focus-visible {
-            outline: var(--focus-ring);
-            outline-offset: var(--focus-offset);
+        /* Better font scaling */
+        @supports (font-size: clamp(1rem, 1vw, 2rem)) {
+            body {
+                font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            }
         }
 
+        /* Ensure text doesn't overflow */
+        h1, h2, h3, h4, h5, h6, p {
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        /* Improve media defaults */
+        img, picture, video, canvas, svg {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Inherit fonts for inputs and buttons */
+        input, button, textarea, select {
+            font: inherit;
+        }
+
+        /* Remove animations for people who prefer not to see them */
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
                 animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
             }
         }
 
-        /* Skip to Content */
-        .skip-to-content {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--gold);
-            color: var(--black);
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            font-weight: 600;
-            z-index: 100;
+        /* Focus visible for keyboard navigation */
+        :focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
         }
 
-        .skip-to-content:focus {
-            top: 0;
+        /* Remove default outline for mouse users */
+        :focus:not(:focus-visible) {
+            outline: none;
         }
 
-        /* ===========================
-           ANIMATIONS
-        =========================== */
-        @keyframes glow-pulse {
-            0%, 100% {
-                box-shadow:
-                    0 0 20px rgba(255, 215, 0, 0.3),
-                    0 0 40px rgba(255, 215, 0, 0.1);
-            }
-            50% {
-                box-shadow:
-                    0 0 30px rgba(255, 215, 0, 0.5),
-                    0 0 60px rgba(255, 215, 0, 0.2);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* ===========================
-           LAYOUT
-        =========================== */
-        .page-wrapper {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
+        /* Container system with safe areas */
         .container {
             width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--space-md);
+            max-width: 1100px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
         }
 
-        /* ===========================
-           HERO SECTION
-        =========================== */
+        .container-narrow {
+            width: 100%;
+            max-width: 850px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+        }
+
+        .container-tight {
+            width: 100%;
+            max-width: 750px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+        }
+
+        section {
+            padding-block: var(--space-2xl);
+            container-type: inline-size; /* Enable container queries */
+        }
+
+        /* Improved section spacing */
+        section + section {
+            padding-block-start: var(--space-2xl);
+        }
+
+        /* Header with safe area support */
+        .workshop-header {
+            padding-block: var(--space-md);
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+            padding-block-start: max(var(--space-md), env(safe-area-inset-top, 1rem));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--black);
+        }
+
+        .classification {
+            text-align: center;
+            font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.875rem);
+            font-weight: 600;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: clamp(0.1em, 0.5vw, 0.2em);
+            line-height: 1.5;
+        }
+
+        /* Hero Section with improved typography */
         .hero-section {
             text-align: center;
-            padding: var(--space-3xl) var(--space-md);
+            padding-block: var(--space-3xl);
             background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            position: relative;
+            isolation: isolate;
+        }
+
+        .hero-icon {
+            font-size: clamp(3rem, 5vw + 1rem, 5rem);
+            margin-bottom: var(--space-lg);
+            line-height: 1;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-icon {
+                animation: none;
+            }
         }
 
         .hero-title {
             font-family: var(--font-serif);
-            font-size: var(--text-5xl);
-            font-weight: 700;
-            line-height: 1.2;
-            color: var(--white);
-            margin-bottom: var(--space-md);
+            font-size: clamp(2.5rem, 4vw + 1rem, 5rem);
+            font-weight: 400;
+            margin-bottom: var(--space-lg);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-wrap: balance; /* Better text wrapping */
         }
 
-        .gradient-text {
-            display: block;
-            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        /* Fallback for browsers that don't support background-clip */
+        @supports not (-webkit-background-clip: text) {
+            .hero-title {
+                color: var(--gold);
+                background: none;
+            }
         }
 
         .hero-subtitle {
-            font-size: var(--text-lg);
-            color: var(--gray-300);
-            line-height: 1.6;
-            max-width: 700px;
-            margin: 0 auto var(--space-xl);
-        }
-
-        /* ===========================
-           DOWNLOAD CTA
-        =========================== */
-        .download-cta-section {
-            padding: var(--space-2xl) var(--space-md);
-            background: var(--black);
-        }
-
-        .download-cta-box {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: var(--space-2xl);
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
-            border: 3px solid var(--gold);
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
-            animation: glow-pulse 3s ease-in-out infinite;
-        }
-
-        .download-cta-box h2 {
             font-family: var(--font-serif);
-            font-size: var(--text-3xl);
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-md);
-        }
-
-        .download-cta-box p {
-            font-size: var(--text-lg);
-            color: var(--gray-200);
+            font-size: clamp(1.125rem, 2vw + 0.5rem, 2rem);
+            color: var(--gray-400);
+            font-style: italic;
             margin-bottom: var(--space-xl);
-            line-height: 1.6;
+            max-width: 45ch; /* Optimal reading width */
+            margin-inline: auto;
+            text-wrap: balance;
         }
 
-        .download-buttons {
+        /* Modern button system with accessibility */
+        .cta-buttons-container {
             display: flex;
+            flex-wrap: wrap;
             gap: var(--space-md);
             justify-content: center;
-            flex-wrap: wrap;
+            align-items: center;
+            margin-top: var(--space-xl);
         }
 
-        .download-btn {
+        .cta-button {
             display: inline-flex;
             align-items: center;
-            gap: var(--space-sm);
-            padding: 1.25rem 2.5rem;
-            font-family: var(--font-sans);
-            font-size: var(--text-lg);
+            justify-content: center;
+            gap: 0.75rem;
+            min-height: 48px; /* WCAG touch target size */
+            padding-block: var(--space-md);
+            padding-inline: var(--space-xl);
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
             font-weight: 700;
-            color: var(--black);
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
-            border: none;
-            border-radius: 12px;
             text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
             cursor: pointer;
-            transition: all 0.3s var(--ease-out-expo);
-            min-height: var(--min-touch-target);
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
-        }
-
-        .download-btn:hover {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
-        }
-
-        .download-btn svg {
-            transition: transform 0.3s ease;
-        }
-
-        .download-btn:hover svg {
-            transform: translateY(2px);
-        }
-
-        /* ===========================
-           CATEGORY GRID
-        =========================== */
-        .categories-section {
-            padding: var(--space-3xl) var(--space-md);
-            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 50%, var(--black) 100%);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: var(--space-3xl);
-        }
-
-        .section-header h2 {
-            font-family: var(--font-serif);
-            font-size: var(--text-4xl);
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-md);
-        }
-
-        .section-header p {
-            font-size: var(--text-xl);
-            color: var(--gray-300);
-        }
-
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--space-2xl);
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .category-card {
+            border: none;
+            font-family: var(--font-sans);
+            white-space: nowrap;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            padding: var(--space-2xl);
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.8));
-            border: 2px solid var(--gray-800);
-            border-radius: 20px;
-            transition: all 0.4s var(--ease-out-expo);
-            animation: fadeInUp 0.6s ease-out backwards;
+            overflow: hidden;
+            isolation: isolate;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
         }
 
-        .category-card:nth-child(1) { animation-delay: 0.1s; }
-        .category-card:nth-child(2) { animation-delay: 0.2s; }
-        .category-card:nth-child(3) { animation-delay: 0.3s; }
-        .category-card:nth-child(4) { animation-delay: 0.4s; }
-        .category-card:nth-child(5) { animation-delay: 0.5s; }
-        .category-card:nth-child(6) { animation-delay: 0.6s; }
+        /* Touch device optimization */
+        @media (hover: none) and (pointer: coarse) {
+            .cta-button {
+                min-height: 56px; /* Larger touch target for mobile */
+            }
+        }
 
-        .category-card::before {
+        /* Ripple effect on click */
+        .cta-button::after {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, var(--gray-700), transparent);
-            transition: all 0.4s ease;
+            inset: 0;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity var(--transition-fast), transform var(--transition-base);
         }
 
-        .category-card:hover {
-            border-color: rgba(255, 215, 0, 0.5);
-            transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.1);
+        .cta-button:active::after {
+            opacity: 1;
+            transform: scale(1);
+            transition: 0s;
         }
 
-        .category-card:hover::before {
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        .cta-button-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .category-icon {
-            width: 72px;
-            height: 72px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            border-radius: 50%;
-            margin-bottom: var(--space-lg);
-            transition: all 0.3s ease;
+        .cta-button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.15);
         }
 
-        .category-card:hover .category-icon {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.1));
-            border-color: rgba(255, 215, 0, 0.6);
-            transform: scale(1.1) rotate(5deg);
+        .cta-button-primary:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
-        .category-icon svg {
-            width: 36px;
-            height: 36px;
+        .cta-button-secondary {
+            background: transparent;
             color: var(--gold);
+            border: 2px solid var(--gold);
         }
 
-        .category-number {
-            font-family: var(--font-mono);
-            font-size: var(--text-xs);
-            font-weight: 700;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-sm);
+        .cta-button-secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+            border-color: var(--gold-light);
         }
 
-        .category-card h3 {
-            font-family: var(--font-serif);
-            font-size: var(--text-2xl);
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-md);
-            line-height: 1.3;
+        .cta-button-secondary:active {
+            transform: translateY(0);
+            background: rgba(255, 215, 0, 0.15);
         }
 
-        .category-card p {
-            font-size: var(--text-base);
-            color: var(--gray-300);
-            line-height: 1.8;
+        /* Disable hover effects on touch devices */
+        @media (hover: none) {
+            .cta-button-primary:hover,
+            .cta-button-secondary:hover {
+                transform: none;
+            }
         }
 
-        /* ===========================
-           IMPLEMENTATION GUIDE
-        =========================== */
-        .implementation-section {
-            padding: var(--space-3xl) var(--space-md);
-            background: var(--gray-900);
+        .button-icon {
+            font-size: 1.25em;
+            line-height: 1;
+            flex-shrink: 0;
         }
 
-        .implementation-content {
-            max-width: 800px;
-            margin: 0 auto;
+        /* Background variants */
+        .bg-dark-gray {
+            background: var(--gray-950);
         }
 
-        .implementation-content h2 {
-            font-family: var(--font-serif);
-            font-size: var(--text-4xl);
-            font-weight: 700;
-            color: var(--white);
+        .bg-gradient {
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-950) 50%, var(--black) 100%);
+        }
+
+        /* Section Headers with improved typography */
+        .section-header {
             text-align: center;
             margin-bottom: var(--space-2xl);
         }
 
-        .implementation-steps {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-xl);
+        .section-label {
+            display: inline-block;
+            font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.875rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: var(--space-md);
         }
 
-        .implementation-step {
-            display: flex;
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 3vw + 0.5rem, 3.5rem);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-lg);
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-wrap: balance;
+        }
+
+        @supports not (-webkit-background-clip: text) {
+            .section-title {
+                color: var(--white);
+                background: none;
+            }
+        }
+
+        .section-subtitle {
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
+            color: var(--gray-400);
+            max-width: 60ch;
+            margin-inline: auto;
+            text-wrap: balance;
+        }
+
+        /* Content Grid with container queries */
+        .content-grid {
+            display: grid;
             gap: var(--space-lg);
-            padding: var(--space-xl);
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            border-radius: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
         }
 
-        .step-number-badge {
-            flex-shrink: 0;
-            width: 48px;
-            height: 48px;
+        /* Single column on very small screens */
+        @media (max-width: 640px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Modern content cards */
+        .content-card {
+            background: linear-gradient(135deg, var(--gray-900), var(--gray-950));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-inline-start: 4px solid var(--gray-700);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            transition: all var(--transition-base);
+            container-type: inline-size;
+        }
+
+        .content-card:hover {
+            border-inline-start-color: var(--gold);
+            transform: translateX(4px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (hover: none) {
+            .content-card:hover {
+                transform: none;
+            }
+        }
+
+        .content-card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .content-number {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            width: clamp(3rem, 10cqi, 4rem); /* Container query units */
+            height: clamp(3rem, 10cqi, 4rem);
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+            border: 2px solid var(--gold);
             border-radius: 50%;
-            font-family: var(--font-serif);
-            font-size: var(--text-xl);
-            font-weight: 700;
-            color: var(--black);
+            font-size: clamp(1.25rem, 5cqi, 1.75rem);
+            font-weight: 900;
+            color: var(--gold);
+            flex-shrink: 0;
         }
 
-        .step-content h3 {
-            font-family: var(--font-serif);
-            font-size: var(--text-xl);
+        .content-card-title {
+            font-size: clamp(1.25rem, 4cqi, 1.75rem);
             font-weight: 700;
+            line-height: 1.3;
             color: var(--white);
-            margin-bottom: var(--space-sm);
+            text-wrap: balance;
         }
 
-        .step-content p {
-            font-size: var(--text-base);
+        .content-card-text {
             color: var(--gray-300);
+            line-height: 1.8;
+        }
+
+        .content-card-text strong {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Template Preview */
+        .template-preview {
+            background: var(--gray-900);
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            margin-block: var(--space-xl);
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .template-section {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: var(--radius-sm);
+            padding: var(--space-md);
+            transition: background var(--transition-base);
+        }
+
+        .template-section:hover {
+            background: rgba(255, 215, 0, 0.08);
+        }
+
+        .template-section-title {
+            font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .template-section-description {
+            font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+            color: var(--gray-400);
             line-height: 1.6;
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: var(--text-3xl);
-            }
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+            border-block: 1px solid rgba(255, 215, 0, 0.3);
+        }
 
-            .categories-grid {
+        .quote-block {
+            max-width: 65ch;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.5rem);
+            font-style: italic;
+            line-height: 1.5;
+            color: var(--gray-200);
+            margin-bottom: var(--space-lg);
+            text-wrap: balance;
+        }
+
+        .quote-text::before {
+            content: '"';
+            color: var(--gold);
+        }
+
+        .quote-text::after {
+            content: '"';
+            color: var(--gold);
+        }
+
+        .quote-author {
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Warning Box with modern design */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin-block: var(--space-xl);
+        }
+
+        .warning-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-md);
+        }
+
+        .warning-icon {
+            font-size: 1.5em;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        /* Footer with safe areas */
+        .footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-block: var(--space-xl);
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+            padding-block-end: max(var(--space-xl), env(safe-area-inset-bottom, 2rem));
+            background: var(--gray-950);
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem);
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-contact {
+            color: var(--gray-400);
+            margin-bottom: var(--space-lg);
+            line-height: 1.8;
+            font-style: normal; /* Override address italic default */
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color var(--transition-base);
+            text-decoration-line: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2em;
+            text-decoration-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-light);
+            text-decoration-color: var(--gold-light);
+        }
+
+        .footer-legal {
+            font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+            color: var(--gray-500);
+        }
+
+        /* List Styling */
+        .styled-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-inline-start: 2rem;
+            margin-bottom: var(--space-sm);
+            color: var(--gray-300);
+        }
+
+        .styled-list li::before {
+            content: "→";
+            position: absolute;
+            inset-inline-start: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Emphasis Box */
+        .emphasis-box {
+            background: linear-gradient(135deg, var(--gray-800), var(--gray-900));
+            border-inline-start: 4px solid var(--gold);
+            border-radius: var(--radius-sm);
+            padding: var(--space-lg);
+            margin-block: var(--space-lg);
+        }
+
+        .emphasis-box p {
+            margin: 0;
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            line-height: 1.8;
+            color: var(--gray-300);
+        }
+
+        .emphasis-box strong {
+            color: var(--gold);
+        }
+
+        /* Responsive breakpoints */
+        @media (max-width: 1024px) {
+            :root {
+                --space-3xl: clamp(2.5rem, 6vw, 4rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .template-grid {
                 grid-template-columns: 1fr;
             }
 
-            .download-buttons {
+            .cta-buttons-container {
                 flex-direction: column;
-            }
-
-            .download-btn {
                 width: 100%;
             }
 
-            .implementation-step {
+            .cta-button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-card-header {
                 flex-direction: column;
                 text-align: center;
             }
+        }
 
-            .step-number-badge {
-                margin: 0 auto;
+        /* Print styles */
+        @media print {
+            .workshop-header,
+            .cta-button,
+            .footer {
+                display: none;
+            }
+
+            .content-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .content-card {
+                border: 2px solid currentColor;
+            }
+
+            .cta-button {
+                border: 2px solid currentColor;
+            }
+        }
+
+        /* Dark mode support (already dark, but good practice) */
+        @media (prefers-color-scheme: light) {
+            /* This site is intentionally dark, but we respect preferences */
+            body {
+                background: var(--black);
+                color: var(--white);
             }
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <!-- Skip to main content for screen readers and keyboard users -->
+    <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 1rem; background: var(--gold); color: var(--black); text-decoration: none; font-weight: 700;">Skip to main content</a>
 
-    <div class="page-wrapper">
-        <main id="main-content">
-            <!-- Hero Section -->
-            <section class="hero-section">
-                <div class="container">
-                    <h1 class="hero-title">
-                        Your
-                        <span class="gradient-text">Golden Life Sheet</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        A daily alignment tool to connect your essence to value creation. Track your transformation across six essential categories.
+    <style>
+        .skip-link:focus {
+            left: 50%;
+            top: 1rem;
+            transform: translateX(-50%);
+        }
+    </style>
+
+    <header class="workshop-header" role="banner">
+        <div class="container">
+            <p class="classification">Level 2 • Implementation Tool</p>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="container-tight">
+                <div class="hero-icon" aria-hidden="true">✨</div>
+                <h1 id="hero-title" class="hero-title">The Golden Life Sheet</h1>
+                <p class="hero-subtitle">Your single-page synthesis of everything you learned, designed to keep you aligned with the Immortal Mentality and protect you from drifting back into the Matrix of Illusions.</p>
+
+                <div class="cta-buttons-container" role="group" aria-label="Download options">
+                    <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/68f81385ebeabfe9ba9ce6f3.pdf" class="cta-button cta-button-primary" download target="_blank" rel="noopener noreferrer" aria-label="Download PDF Template - Fillable document">
+                        <span class="button-icon" aria-hidden="true">📄</span>
+                        <span>Download PDF Template</span>
+                    </a>
+                    <a href="https://www.canva.com/design/DAG2d_C1bZ0/0QrZMs4xu9ywtcObPi4iIQ/view?utm_content=DAG2d_C1bZ0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer" aria-label="Open Canva Template - Opens in new tab">
+                        <span class="button-icon" aria-hidden="true">🎨</span>
+                        <span>Open Canva Template</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="what-is-this">
+            <div class="container-narrow">
+                <header class="section-header">
+                    <span class="section-label">What Is This?</span>
+                    <h2 id="what-is-this" class="section-title">Your Daily Realignment Tool</h2>
+                    <p class="section-subtitle">A single sheet of paper that synthesizes the Day of Enlightenment teachings into six essential categories—designed to be posted on your mirror and reviewed daily.</p>
+                </header>
+
+                <div class="emphasis-box" role="complementary" aria-label="Critical truth about the Golden Life Sheet">
+                    <p><strong>Critical Truth:</strong> In the anti-civilization (the Matrix of Illusions), your peers will try to draw you back into their world of non-reality. This sheet reconnects you to who you really are every single day, reharmonizing you with your nature and the universe.</p>
+                </div>
+
+                <article class="content-card">
+                    <h3 class="content-card-title">Why You Need This</h3>
+                    <div class="content-card-text">
+                        <p>Yesterday, you experienced a breakthrough. You discovered your Friday Night Essence. You felt the exhilaration of the Immortal Mentality. You calculated your path to financial freedom.</p>
+                        <p>But here's what happens next: The gravitational pull of the false world is strong. Without a daily anchor, you'll drift. The Golden Life Sheet is that anchor.</p>
+                        <p><strong>This is not optional. This is your commitment to yourself.</strong></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">The Six Categories</span>
+                    <h2 class="section-title">What Goes on Your Sheet</h2>
+                </div>
+
+                <div class="template-preview">
+                    <h3 style="font-family: var(--font-serif); font-size: clamp(1.5rem, 4vw, 2rem); color: var(--gold); text-align: center; margin-bottom: clamp(1.5rem, 4vw, 2rem);">Template Layout</h3>
+
+                    <div class="template-grid">
+                        <div class="template-section">
+                            <div class="template-section-title">1. Who I Am</div>
+                            <div class="template-section-description">1-3 emotional sentences describing you in the Immortal Mentality—your ultimate, pure version</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">2. Friday Night Essence</div>
+                            <div class="template-section-description">Your value-creation activity that connects you to growth and prevents stagnation</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">3. My Dreams</div>
+                            <div class="template-section-description">Tangible projects or problems (big or small) that align with your FNE</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">4. Current Focuses</div>
+                            <div class="template-section-description">Action items, skills, habits, or behavioral changes needed right now—often the things you're avoiding</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">5. Celebrations</div>
+                            <div class="template-section-description">Value Reflection activities—time with loved ones, travel, hobbies that bring joy</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">6. Health & Longevity</div>
+                            <div class="template-section-description">Specific actions for both current physical health and long-term vitality habits</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">1</span>
+                            <h3 class="content-card-title">Who I Am</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Define your identity in the Immortal Mentality
+                            <br><br>
+                            Write 1-3 emotional sentences describing yourself as the person you were always meant to be. Use present tense, as if you're already living it.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "I am a creator of transformational education. I build systems that free minds and unleash human potential. I live in exhilaration."<br>
+                            • "I am a builder of businesses that serve humanity. I create value relentlessly and live in freedom."<br>
+                            • "I am an artist expressing truth through my work. I inspire others to see beauty and live authentically."
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">2</span>
+                            <h3 class="content-card-title">Friday Night Essence (FNE)</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Name your core value-creation activity
+                            <br><br>
+                            This is what you discovered during the visualization exercise. The productive activity you'd naturally do with unlimited time and money.
+                            <br><br>
+                            <strong>If you found a specific topic:</strong> Write it (e.g., "Writing," "Teaching," "Building systems," "Health coaching")<br>
+                            <strong>If still unclear:</strong> Write "Value Creation"—this is the ultimate essence and completely valid.
+                            <br><br>
+                            <em>Remember: This may evolve as your life expands. You can have multiple FNEs (e.g., "Teaching + Family" for a mother with a business).</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">3</span>
+                            <h3 class="content-card-title">My Dreams</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Tangible outcomes aligned with your FNE
+                            <br><br>
+                            List the specific projects or problems you're working on—big or small. These are your seeds planted in the soil of your essence.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "Launch my coaching program by December"<br>
+                            • "Build schools for underserved children"<br>
+                            • "Create a family porch for quality time"<br>
+                            • "Write and publish my first book"<br>
+                            • "Make baseball free for every child in the U.S."
+                            <br><br>
+                            <em>You can have multiple dreams. Focus on the ones you're actively pursuing now.</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">4</span>
+                            <h3 class="content-card-title">Current Focuses</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> The specific actions, habits, and changes needed RIGHT NOW
+                            <br><br>
+                            These are often the things you're avoiding. Skills to develop, behaviors to change, habits to install.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "Go to bed by 10pm consistently"<br>
+                            • "Create 3 pieces of content weekly"<br>
+                            • "Be more playful with my children"<br>
+                            • "Study marketing 1 hour daily"<br>
+                            • "Complete my Golden Life Sheet today"<br>
+                            • "Block FNE time in my calendar"<br>
+                            • "Stop seeking external validation"
+                            <br><br>
+                            <strong>This section changes most frequently as you master each focus.</strong>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">5</span>
+                            <h3 class="content-card-title">Celebrations (Value Reflection)</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Schedule joy and connection—the reason for living
+                            <br><br>
+                            Remember the two movements of life: Value Creation (generating happiness) and Value Reflection (experiencing happiness). Don't neglect loved ones while working hard.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "Weekly date night with my partner"<br>
+                            • "Monthly family adventure"<br>
+                            • "Quarterly solo retreat"<br>
+                            • "Daily playtime with children"<br>
+                            • "Annual trip to Italy"<br>
+                            • "Weekend hikes in nature"
+                            <br><br>
+                            <em>These activities recharge you and remind you why you're creating value in the first place.</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">6</span>
+                            <h3 class="content-card-title">Health & Longevity</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Ensure you remain vital for the future choice of extended life
+                            <br><br>
+                            Split this into two parts: <strong>Health (now)</strong> and <strong>Longevity (long-term habits)</strong>.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            <strong>Health:</strong><br>
+                            • "Walk 30 minutes daily"<br>
+                            • "Strength train 3x per week"<br>
+                            • "8 hours sleep minimum"<br>
+                            • "Mediterranean diet"
+                            <br><br>
+                            <strong>Longevity:</strong><br>
+                            • "Take Longevity supplement"<br>
+                            • "Annual full health screening"<br>
+                            • "Maintain healthy weight"<br>
+                            • "Practice stress management daily"
+                            <br><br>
+                            <em>The word "longevity" forces long-term thinking into your awareness.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">How to Use It</span>
+                    <h2 class="section-title">Your Implementation Process</h2>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">1</span>
+                            <h3 class="content-card-title">Create It</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Step 1:</strong> Work on scratch paper first for each section<br>
+                            <strong>Step 2:</strong> Synthesize down to the essence—compress and clarify<br>
+                            <strong>Step 3:</strong> Transfer to your final sheet (PDF template or Canva)<br>
+                            <strong>Step 4:</strong> Print it on quality paper
+                            <br><br>
+                            <em>Don't overthink it. Your first version doesn't need to be perfect. It will evolve.</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">2</span>
+                            <h3 class="content-card-title">Display It</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Post it on your bathroom mirror</strong> where you'll see it multiple times daily.
+                            <br><br>
+                            If you're worried about roommates or partners seeing it: <strong>Own it.</strong> Come from your base of power. It's unusual to want to improve your life, so yes, they may say something. But they're going to respect you for it.
+                            <br><br>
+                            <em>"People may call you crazy. But you're going after your dreams." — Wallace Hamilton</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">3</span>
+                            <h3 class="content-card-title">Read It Daily</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>First 30 days:</strong> Read it every morning when you wake up and every night before bed. Fully read each section.
+                            <br><br>
+                            <strong>After integration:</strong> Glance at it throughout the day. Even seeing it in the corner of your eye keeps you aligned.
+                            <br><br>
+                            <strong>Long-term:</strong> When you've mastered it and feel it inside your body, you're ready to evolve it.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">4</span>
+                            <h3 class="content-card-title">Evolve It</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>This sheet WILL change.</strong> As your life evolves and expands, your Golden Life Sheet must evolve with it. Stagnation is death; evolution is life.
+                            <br><br>
+                            When you've achieved dreams, they get replaced with new ones. When you've mastered current focuses, new skills become the priority.
+                            <br><br>
+                            <strong>Important:</strong> Keep your old versions! Take photos. Track your growth journey. Looking back will be beautiful.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-narrow">
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <span class="warning-icon">⚠️</span>
+                        <span>The Matrix Will Pull You Back</span>
+                    </div>
+                    <p class="content-card-text">
+                        Without this daily anchor, you WILL drift back into the anti-civilization. Your peers will try to draw you into their world of illusions. The gravitational pull is strong.
+                        <br><br>
+                        <strong>This sheet is your return.</strong> Your return to reality. Your return to your essence. Your return to the person you were always meant to be.
+                        <br><br>
+                        The Matrix tries to make you forget. This sheet makes you remember.
                     </p>
                 </div>
-            </section>
 
-            <!-- Download CTA -->
-            <section class="download-cta-section">
-                <div class="container">
-                    <div class="download-cta-box">
-                        <h2>Download Your Template</h2>
-                        <p>Get your Golden Life Sheet in PDF format or customize it in Canva. Start your daily practice today.</p>
-                        <div class="download-buttons">
-                            <a href="#" class="download-btn" download>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                    <polyline points="7 10 12 15 17 10"/>
-                                    <line x1="12" y1="15" x2="12" y2="3"/>
-                                </svg>
-                                Download PDF
-                            </a>
-                            <a href="#" class="download-btn" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15 3 21 3 21 9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Open in Canva
-                            </a>
-                        </div>
+                <div class="content-card">
+                    <h3 class="content-card-title">Additional Integration Points</h3>
+                    <p class="content-card-text">
+                        Beyond the Golden Life Sheet, here are other ways to stay connected to the Immortal Mentality:
+                    </p>
+                    <ul class="styled-list" role="list" style="margin-top: 1.5rem;">
+                        <li>Return to the <strong>Prime Literature</strong> and secret manuscripts regularly</li>
+                        <li>Attend the <strong>weekly community calls and meetings</strong></li>
+                        <li>Join a local <strong>Clubhouse</strong> (Los Angeles, Oklahoma, Dallas, New Jersey, and growing)</li>
+                        <li>Engage with the <strong>Day of Enlightenment recording</strong> when you need a boost</li>
+                        <li>Connect with other <strong>Level 2 and Level 3 members</strong> for support</li>
+                        <li>Review your <strong>Wealth Engine calculations</strong> monthly to track progress</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">This sheet will evolve as your life expands. It can't remain the same—that would be stagnation. And stagnation is the antithesis to creation.</p>
+                    <p class="quote-author">— Wallace Hamilton, Platinum Mentor</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Get Started Now</span>
+                    <h2 class="section-title">Download Your Template</h2>
+                    <p class="section-subtitle">Choose your preferred method: Fill out the PDF template or customize it in Canva. Either way, complete it today.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <h3 class="content-card-title">📄 PDF Template (Fillable)</h3>
+                        <p class="content-card-text" style="margin-bottom: 1.5rem;">
+                            Download the pre-formatted PDF with all six sections. Fill it out on your computer or print it and write by hand. Simple, clean, effective.
+                        </p>
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/68f81385ebeabfe9ba9ce6f3.pdf" class="cta-button cta-button-primary" download target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                            Download PDF Template
+                        </a>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <h3 class="content-card-title">🎨 Canva Template (Customizable)</h3>
+                        <p class="content-card-text" style="margin-bottom: 1.5rem;">
+                            Open the Canva template to fully customize colors, fonts, and layout. Make it beautiful and uniquely yours. Then download and print.
+                        </p>
+                        <a href="https://www.canva.com/design/DAG2d_C1bZ0/0QrZMs4xu9ywtcObPi4iIQ/view?utm_content=DAG2d_C1bZ0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                            Open Canva Template
+                        </a>
                     </div>
                 </div>
-            </section>
 
-            <!-- Six Categories -->
-            <section class="categories-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Six Categories of Transformation</h2>
-                        <p>Track your progress across these essential areas of your life</p>
-                    </div>
-
-                    <div class="categories-grid">
-                        <!-- Category 1: Who I Am -->
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="12" cy="7" r="4"/>
-                                </svg>
-                            </div>
-                            <div class="category-number">Category 1</div>
-                            <h3>Who I Am</h3>
-                            <p>Define your essence identity. Who are you when operating from certainty and confidence? Your authentic self beyond roles and labels.</p>
-                        </div>
-
-                        <!-- Category 2: Friday Night Essence -->
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-                                </svg>
-                            </div>
-                            <div class="category-number">Category 2</div>
-                            <h3>Friday Night Essence (FNE)</h3>
-                            <p>Capture what excites you most. What do you want to do when obligations are complete? Your deepest desires and passions.</p>
-                        </div>
-
-                        <!-- Category 3: My Dreams -->
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                                </svg>
-                            </div>
-                            <div class="category-number">Category 3</div>
-                            <h3>My Dreams</h3>
-                            <p>List your impossible dreams. What would you create if you operated from certainty without fear? Your ultimate vision.</p>
-                        </div>
-
-                        <!-- Category 4: Current Focuses -->
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <circle cx="12" cy="12" r="6"/>
-                                    <circle cx="12" cy="12" r="2"/>
-                                </svg>
-                            </div>
-                            <div class="category-number">Category 4</div>
-                            <h3>Current Focuses</h3>
-                            <p>Track your active projects and goals. What are you working on now to move toward your dreams? Actionable focus areas.</p>
-                        </div>
-
-                        <!-- Category 5: Celebrations -->
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                                </svg>
-                            </div>
-                            <div class="category-number">Category 5</div>
-                            <h3>Celebrations (Value Reflection)</h3>
-                            <p>Acknowledge value created. What genuine value did you create for others? Measure wealth through contribution.</p>
-                        </div>
-
-                        <!-- Category 6: Health & Longevity -->
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                                </svg>
-                            </div>
-                            <div class="category-number">Category 6</div>
-                            <h3>Health & Longevity</h3>
-                            <p>Track physical and mental vitality. What actions support your desire to live indefinitely? Health as prerequisite for creation.</p>
-                        </div>
-                    </div>
+                <div class="content-card" style="margin-top: 2rem; border-left-color: var(--gold);">
+                    <h3 class="content-card-title">📹 Need Help Filling It Out?</h3>
+                    <p class="content-card-text" style="margin-bottom: 1.5rem;">
+                        Watch the detailed explanation from the Day of Enlightenment workshop. The step-by-step walkthrough begins at timestamp <strong>2:04:38</strong>.
+                    </p>
+                    <a href="https://societysecrets.com/day-of-enlightenment-recordings" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                        Watch the Recording
+                    </a>
                 </div>
-            </section>
 
-            <!-- Implementation Guide -->
-            <section class="implementation-section">
-                <div class="container">
-                    <div class="implementation-content">
-                        <h2>How to Use Your Golden Life Sheet</h2>
-
-                        <div class="implementation-steps">
-                            <div class="implementation-step">
-                                <div class="step-number-badge">1</div>
-                                <div class="step-content">
-                                    <h3>Daily Morning Review</h3>
-                                    <p>Start each day by reviewing your six categories. Reconnect with your essence, dreams, and current focuses. Set intention for value creation.</p>
-                                </div>
-                            </div>
-
-                            <div class="implementation-step">
-                                <div class="step-number-badge">2</div>
-                                <div class="step-content">
-                                    <h3>Evening Reflection</h3>
-                                    <p>End each day by updating your celebrations. What value did you create? What progress did you make? Acknowledge wins, however small.</p>
-                                </div>
-                            </div>
-
-                            <div class="implementation-step">
-                                <div class="step-number-badge">3</div>
-                                <div class="step-content">
-                                    <h3>Weekly Deep Dive</h3>
-                                    <p>Once per week, review and update all six categories. Are your focuses aligned with your dreams? Is your FNE clear? Adjust as needed.</p>
-                                </div>
-                            </div>
-
-                            <div class="implementation-step">
-                                <div class="step-number-badge">4</div>
-                                <div class="step-content">
-                                    <h3>Monthly Evolution</h3>
-                                    <p>At month end, notice transformation patterns. How have your dreams evolved? What new capabilities emerged? Celebrate growth systematically.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="emphasis-box" style="margin-top: 3rem;">
+                    <p><strong>Your Commitment:</strong> Don't just download this and let it sit. Complete it TODAY. Print it TODAY. Post it TODAY. Read it tonight before bed and tomorrow morning when you wake. This is where your transformation becomes permanent.</p>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-tight">
+                <div class="section-header">
+                    <span class="section-label">Questions?</span>
+                    <h2 class="section-title">We're Here to Support You</h2>
+                </div>
+
+                <div class="content-card">
+                    <p class="content-card-text">
+                        If you need help completing your Golden Life Sheet, have questions about any of the six categories, or want guidance on your implementation:
+                        <br><br>
+                        <strong>Email:</strong> <a href="mailto:support@neothink.com" style="color: var(--gold); text-decoration: none;">support@neothink.com</a><br>
+                        <strong>VIP Members:</strong> Access the private VIP portal for personalized assistance
+                        <br><br>
+                        Remember: This is your journey, but you're not alone. We're your Neothink family.
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://societysecrets.com/day-of-enlightenment-workshop-aftermath" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer">
+                        ← Back to Day of Enlightenment Hub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">The Life You Were Always Meant to Live</p>
+                <address class="footer-contact">
+                    Questions? Need support?<br>
+                    <a href="mailto:support@neothink.com">support@neothink.com</a>
+                </address>
+                <p class="footer-legal">The Neothink Society • Level 2 Members</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
