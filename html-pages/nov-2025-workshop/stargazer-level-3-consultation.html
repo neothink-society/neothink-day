@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your Level 3 Stargazer consultation. Discover how to achieve financial freedom and create value that makes money chase you.">
+    <title>Level 3 Stargazer Consultation | Neothink Society</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Animation */
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --duration-base: 300ms;
+            --duration-slow: 500ms;
+
+            /* Shadows */
+            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ===========================
+           ANIMATIONS
+        =========================== */
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow:
+                    0 0 20px rgba(255, 215, 0, 0.3),
+                    0 0 40px rgba(255, 215, 0, 0.1),
+                    inset 0 0 20px rgba(255, 215, 0, 0.05);
+            }
+            50% {
+                box-shadow:
+                    0 0 30px rgba(255, 215, 0, 0.5),
+                    0 0 60px rgba(255, 215, 0, 0.2),
+                    inset 0 0 30px rgba(255, 215, 0, 0.1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero-section {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 30px;
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-lg);
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .hero-cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+            padding: 1.75rem 4rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-2xl);
+            font-weight: 800;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border: none;
+            border-radius: 16px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s var(--ease-out-expo);
+            min-height: 80px;
+            box-shadow:
+                0 12px 40px rgba(255, 215, 0, 0.4),
+                0 0 80px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+
+        .hero-cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.4),
+                transparent
+            );
+            transition: left 0.6s ease;
+        }
+
+        .hero-cta-button:hover::before {
+            left: 100%;
+        }
+
+        .hero-cta-button:hover {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            transform: translateY(-6px) scale(1.05);
+            box-shadow:
+                0 20px 60px rgba(255, 215, 0, 0.6),
+                0 0 120px rgba(255, 215, 0, 0.3);
+        }
+
+        .hero-cta-button:active {
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        .hero-cta-button svg {
+            transition: transform 0.3s ease;
+            width: 32px;
+            height: 32px;
+        }
+
+        .hero-cta-button:hover svg {
+            transform: scale(1.2);
+        }
+
+        .hero-note {
+            margin-top: var(--space-xl);
+            font-family: var(--font-mono);
+            font-size: var(--text-base);
+            color: var(--gray-400);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        /* ===========================
+           BENEFITS SECTION
+        =========================== */
+        .benefits-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 50%, var(--black) 100%);
+        }
+
+        .benefits-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .benefits-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .benefits-header p {
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 16px;
+            transition: all 0.3s var(--ease-out-expo);
+        }
+
+        .benefit-card:hover {
+            border-color: rgba(255, 215, 0, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .benefit-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 50%;
+            margin-bottom: var(--space-md);
+        }
+
+        .benefit-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--gold);
+        }
+
+        .benefit-card h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .benefit-card p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           MODAL
+        =========================== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-container {
+            position: relative;
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            background: var(--gray-900);
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 60px rgba(255, 215, 0, 0.4);
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gray-800);
+            border: 2px solid var(--gray-700);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            transform: rotate(90deg);
+        }
+
+        .modal-close svg {
+            width: 20px;
+            height: 20px;
+            color: var(--white);
+        }
+
+        .modal-close:hover svg {
+            color: var(--black);
+        }
+
+        .modal-body {
+            width: 100%;
+            height: 100%;
+            min-height: 700px;
+        }
+
+        .modal-body iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            min-height: 700px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: auto;
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .hero-title {
+                font-size: var(--text-3xl);
+            }
+
+            .hero-description {
+                font-size: var(--text-base);
+            }
+
+            .hero-cta-button {
+                width: 100%;
+                padding: 1.5rem 2.5rem;
+                font-size: var(--text-xl);
+                min-height: 70px;
+            }
+
+            .hero-cta-button svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-container {
+                width: 95%;
+                max-height: 80vh;
+            }
+
+            .modal-body,
+            .modal-body iframe {
+                min-height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">⭐ Level 3 Stargazer</div>
+                        <h1 class="hero-title">
+                            Achieve
+                            <span class="gradient-text">Financial Freedom</span>
+                        </h1>
+                        <p class="hero-description">
+                            Learn the Prosperity Code that makes money chase you. Discover how to create genuine value, achieve real freedom, and live with the power to say NO to anything that doesn't align with your essence.
+                        </p>
+                        <button class="hero-cta-button" onclick="openCalendar()">
+                            <span>Book Your Consultation</span>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </button>
+                        <p class="hero-note">30-minute private consultation • Zero pressure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="benefits-section">
+                <div class="container">
+                    <div class="benefits-header">
+                        <h2>What You'll Discover</h2>
+                        <p>In your private consultation, we'll explore:</p>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <h3>The Prosperity Code</h3>
+                            <p>Understand why value creation, not money chasing, is the only path to real wealth. Learn the system that connects your essence to financial freedom.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <h3>Your Freedom Timeline</h3>
+                            <p>Calculate your exact path to financial independence. Discover the three levels: Security (3-6 months), Vitality (1 year), and Freedom (forever).</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                                </svg>
+                            </div>
+                            <h3>Essence to Value</h3>
+                            <p>Learn to identify your unique value creation abilities. Connect your Friday Night Essence to genuine value that others will pay for.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3>Remove the Negative</h3>
+                            <p>Discover Mark Hamilton's most powerful principle: Removing one negative has exponentially more leverage than adding positives.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                </svg>
+                            </div>
+                            <h3>Power to Say NO</h3>
+                            <p>Understand what real freedom means: the ability to make decisions based on your values, not your resources. No one owns your time.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </div>
+                            <h3>Your Impossible Dream</h3>
+                            <p>Clarify and activate your impossible dream. Operate from certainty and confidence instead of fear and limitation. Create what seems impossible today.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Calendar Modal -->
+    <div class="modal-overlay" id="calendarModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeModalBtn" onclick="closeCalendar()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <iframe
+                    id="calendarIframe"
+                    src="https://api.leadconnectorhq.com/widget/booking/4ZT88Baj70uw1uYlzrlP"
+                    title="Book Level 3 Stargazer Consultation"
+                    allow="geolocation; microphone; camera"
+                >
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCalendar() {
+            const modal = document.getElementById('calendarModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCalendar() {
+            const modal = document.getElementById('calendarModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('calendarModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeCalendar();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeCalendar();
+            }
+        });
+
+        // Listen for messages from the iframe (if booking is completed)
+        window.addEventListener('message', function(event) {
+            // Handle booking completion messages here if needed
+            if (event.data && event.data.type === 'booking-complete') {
+                // Optional: Close modal after successful booking
+                // closeCalendar();
+            }
+        });
+    </script>
+</body>
+</html>

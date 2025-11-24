@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your path to financial freedom. Discover how much you need to achieve Security, Vitality, and complete Freedom.">
+    <title>Wealth Engine Calculator | Neothink Society</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Animation */
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --duration-base: 300ms;
+            --duration-slow: 500ms;
+
+            /* Shadows */
+            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ===========================
+           ANIMATIONS
+        =========================== */
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow:
+                    0 0 20px rgba(255, 215, 0, 0.3),
+                    0 0 40px rgba(255, 215, 0, 0.1);
+            }
+            50% {
+                box-shadow:
+                    0 0 30px rgba(255, 215, 0, 0.5),
+                    0 0 60px rgba(255, 215, 0, 0.2);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero-section {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ===========================
+           CALCULATOR SECTION
+        =========================== */
+        .calculator-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .calculator-card {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.8));
+            border: 2px solid var(--gray-800);
+            border-radius: 24px;
+            padding: var(--space-2xl);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .step.active {
+            color: var(--gold);
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gray-800);
+            border: 2px solid var(--gray-700);
+            border-radius: 50%;
+            font-weight: 700;
+        }
+
+        .step.active .step-number {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            border-color: var(--gold);
+            color: var(--black);
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: var(--space-xl);
+        }
+
+        .form-label {
+            display: block;
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .form-help {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            margin-bottom: var(--space-md);
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-prefix {
+            position: absolute;
+            left: 1.5rem;
+            font-size: var(--text-2xl);
+            font-weight: 600;
+            color: var(--gold);
+            pointer-events: none;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1.25rem 1.5rem 1.25rem 3rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-2xl);
+            font-weight: 600;
+            color: var(--white);
+            background: var(--gray-900);
+            border: 2px solid var(--gray-700);
+            border-radius: 12px;
+            transition: all var(--duration-base) var(--ease-out-expo);
+        }
+
+        .form-input:focus {
+            border-color: var(--gold);
+            background: var(--gray-800);
+            box-shadow: var(--shadow-gold-md);
+        }
+
+        .form-input::placeholder {
+            color: var(--gray-500);
+        }
+
+        /* Button Styles */
+        .button-group {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            margin-top: var(--space-2xl);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: 1.25rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-expo);
+            min-height: var(--min-touch-target);
+        }
+
+        .btn-primary {
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .btn-secondary {
+            color: var(--white);
+            background: var(--gray-800);
+            border: 2px solid var(--gray-700);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gray-700);
+            border-color: var(--gray-600);
+        }
+
+        /* Results Display */
+        .results-grid {
+            display: grid;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .result-card {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 16px;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .result-card:nth-child(2) { animation-delay: 0.1s; }
+        .result-card:nth-child(3) { animation-delay: 0.2s; }
+
+        .result-level {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .result-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .result-amount {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-md);
+        }
+
+        .result-timeline {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* Email Form */
+        .email-form {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .email-form h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .email-form p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            margin-bottom: var(--space-lg);
+        }
+
+        .email-input-group {
+            display: flex;
+            gap: var(--space-md);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .email-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            color: var(--white);
+            background: var(--gray-900);
+            border: 2px solid var(--gray-700);
+            border-radius: 12px;
+        }
+
+        .email-input:focus {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-gold-md);
+        }
+
+        /* Hidden States */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: var(--text-3xl);
+            }
+
+            .calculator-card {
+                padding: var(--space-lg);
+            }
+
+            .step-indicator {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .email-input-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <h1 class="hero-title">
+                        Your Path to
+                        <span class="gradient-text">Financial Freedom</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Calculate your personal wealth numbers. Discover the exact amounts needed to achieve Security, Vitality, and complete Freedom.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Calculator Section -->
+            <section class="calculator-section">
+                <div class="container">
+                    <div class="calculator-card">
+                        <!-- Step Indicator -->
+                        <div class="step-indicator">
+                            <div class="step active" id="step1-indicator">
+                                <span class="step-number">1</span>
+                                <span>Expenses</span>
+                            </div>
+                            <div class="step" id="step2-indicator">
+                                <span class="step-number">2</span>
+                                <span>Results</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Monthly Expenses -->
+                        <div id="step1-content">
+                            <div class="form-group">
+                                <label class="form-label" for="monthlyExpenses">
+                                    What are your monthly living expenses?
+                                </label>
+                                <p class="form-help">
+                                    Include rent/mortgage, utilities, food, transportation, insurance, and other essential costs.
+                                </p>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">$</span>
+                                    <input
+                                        type="number"
+                                        id="monthlyExpenses"
+                                        class="form-input"
+                                        placeholder="5,000"
+                                        min="0"
+                                        step="100"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="button-group">
+                                <button class="btn btn-primary" onclick="calculateResults()">
+                                    Calculate My Numbers
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Results -->
+                        <div id="step2-content" class="hidden">
+                            <div class="results-grid">
+                                <!-- Security Level -->
+                                <div class="result-card">
+                                    <div class="result-level">Level 1: Security</div>
+                                    <h3 class="result-title">3-6 Months of Freedom</h3>
+                                    <div class="result-amount" id="securityAmount">$15,000</div>
+                                    <p class="result-timeline" id="securityTimeline">
+                                        Save $500/month = 30 months<br>
+                                        Save $1,000/month = 15 months
+                                    </p>
+                                </div>
+
+                                <!-- Vitality Level -->
+                                <div class="result-card">
+                                    <div class="result-level">Level 2: Vitality</div>
+                                    <h3 class="result-title">1 Year of Complete Freedom</h3>
+                                    <div class="result-amount" id="vitalityAmount">$60,000</div>
+                                    <p class="result-timeline" id="vitalityTimeline">
+                                        Save $500/month = 10 years<br>
+                                        Save $1,000/month = 5 years
+                                    </p>
+                                </div>
+
+                                <!-- Freedom Level -->
+                                <div class="result-card">
+                                    <div class="result-level">Level 3: Freedom</div>
+                                    <h3 class="result-title">Financial Independence Forever</h3>
+                                    <div class="result-amount" id="freedomAmount">$600,000</div>
+                                    <p class="result-timeline" id="freedomTimeline">
+                                        12% annual return generates $72,000/year passive income
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Email Form -->
+                            <div class="email-form">
+                                <h3>Save Your Results</h3>
+                                <p>Enter your email to receive your personalized wealth plan and next steps.</p>
+                                <form id="emailForm" onsubmit="handleEmailSubmit(event)">
+                                    <div class="email-input-group">
+                                        <input
+                                            type="email"
+                                            id="emailInput"
+                                            class="email-input"
+                                            placeholder="your@email.com"
+                                            required
+                                        >
+                                        <button type="submit" class="btn btn-primary">
+                                            Send Results
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="button-group">
+                                <button class="btn btn-secondary" onclick="resetCalculator()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                                    </svg>
+                                    Start Over
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        let calculatedResults = {};
+
+        function calculateResults() {
+            const monthlyExpenses = parseFloat(document.getElementById('monthlyExpenses').value);
+
+            if (!monthlyExpenses || monthlyExpenses <= 0) {
+                alert('Please enter a valid monthly expense amount.');
+                return;
+            }
+
+            // Calculate three levels
+            const security = monthlyExpenses * 3; // 3 months
+            const vitality = monthlyExpenses * 12; // 1 year
+            const freedom = monthlyExpenses * 100; // 12% rule (annual expenses / 0.12)
+
+            calculatedResults = {
+                monthlyExpenses: monthlyExpenses,
+                security: security,
+                vitality: vitality,
+                freedom: freedom
+            };
+
+            // Update results display
+            document.getElementById('securityAmount').textContent = `$${security.toLocaleString()}`;
+            document.getElementById('vitalityAmount').textContent = `$${vitality.toLocaleString()}`;
+            document.getElementById('freedomAmount').textContent = `$${freedom.toLocaleString()}`;
+
+            // Calculate timelines
+            const annualIncome = freedom * 0.12;
+            document.getElementById('securityTimeline').innerHTML = `
+                Save $500/month = ${Math.ceil(security / 500)} months<br>
+                Save $1,000/month = ${Math.ceil(security / 1000)} months
+            `;
+            document.getElementById('vitalityTimeline').innerHTML = `
+                Save $500/month = ${Math.ceil(vitality / 500)} months<br>
+                Save $1,000/month = ${Math.ceil(vitality / 1000)} months
+            `;
+            document.getElementById('freedomTimeline').innerHTML = `
+                12% annual return generates $${annualIncome.toLocaleString()}/year passive income
+            `;
+
+            // Show results
+            showStep2();
+        }
+
+        function showStep2() {
+            document.getElementById('step1-content').classList.add('hidden');
+            document.getElementById('step2-content').classList.remove('hidden');
+            document.getElementById('step1-indicator').classList.remove('active');
+            document.getElementById('step2-indicator').classList.add('active');
+
+            // Scroll to results
+            document.getElementById('step2-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function resetCalculator() {
+            document.getElementById('step1-content').classList.remove('hidden');
+            document.getElementById('step2-content').classList.add('hidden');
+            document.getElementById('step1-indicator').classList.add('active');
+            document.getElementById('step2-indicator').classList.remove('active');
+            document.getElementById('monthlyExpenses').value = '';
+            document.getElementById('emailInput').value = '';
+
+            // Scroll to top
+            document.getElementById('step1-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function handleEmailSubmit(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('emailInput').value;
+            if (!email || !calculatedResults.monthlyExpenses) {
+                alert('Please complete the calculation first.');
+                return;
+            }
+
+            // Google Apps Script endpoint (replace with actual endpoint)
+            const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+            const formData = {
+                email: email,
+                monthlyExpenses: calculatedResults.monthlyExpenses,
+                security: calculatedResults.security,
+                vitality: calculatedResults.vitality,
+                freedom: calculatedResults.freedom,
+                timestamp: new Date().toISOString()
+            };
+
+            // Send to Google Apps Script
+            fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(() => {
+                alert('✅ Results sent! Check your email for your personalized wealth plan.');
+                document.getElementById('emailInput').value = '';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an issue sending your results. Please try again.');
+            });
+        }
+
+        // Allow Enter key to calculate
+        document.getElementById('monthlyExpenses').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                calculateResults();
+            }
+        });
+    </script>
+</body>
+</html>

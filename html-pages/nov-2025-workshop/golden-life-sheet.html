@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download your Golden Life Sheet - A daily alignment tool to connect your essence to value creation. Six categories to track your transformation journey.">
+    <title>Golden Life Sheet | Neothink Society</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Animation */
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --duration-base: 300ms;
+            --duration-slow: 500ms;
+
+            /* Shadows */
+            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Skip to Content */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 100;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* ===========================
+           ANIMATIONS
+        =========================== */
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow:
+                    0 0 20px rgba(255, 215, 0, 0.3),
+                    0 0 40px rgba(255, 215, 0, 0.1);
+            }
+            50% {
+                box-shadow:
+                    0 0 30px rgba(255, 215, 0, 0.5),
+                    0 0 60px rgba(255, 215, 0, 0.2);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero-section {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        /* ===========================
+           DOWNLOAD CTA
+        =========================== */
+        .download-cta-section {
+            padding: var(--space-2xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .download-cta-box {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+
+        .download-cta-box h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .download-cta-box p {
+            font-size: var(--text-lg);
+            color: var(--gray-200);
+            margin-bottom: var(--space-xl);
+            line-height: 1.6;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: 1.25rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-expo);
+            min-height: var(--min-touch-target);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .download-btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .download-btn:hover svg {
+            transform: translateY(2px);
+        }
+
+        /* ===========================
+           CATEGORY GRID
+        =========================== */
+        .categories-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 50%, var(--black) 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-header p {
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.8));
+            border: 2px solid var(--gray-800);
+            border-radius: 20px;
+            transition: all 0.4s var(--ease-out-expo);
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .category-card:nth-child(1) { animation-delay: 0.1s; }
+        .category-card:nth-child(2) { animation-delay: 0.2s; }
+        .category-card:nth-child(3) { animation-delay: 0.3s; }
+        .category-card:nth-child(4) { animation-delay: 0.4s; }
+        .category-card:nth-child(5) { animation-delay: 0.5s; }
+        .category-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--gray-700), transparent);
+            transition: all 0.4s ease;
+        }
+
+        .category-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.1);
+        }
+
+        .category-card:hover::before {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .category-icon {
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            margin-bottom: var(--space-lg);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .category-icon {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.1));
+            border-color: rgba(255, 215, 0, 0.6);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .category-icon svg {
+            width: 36px;
+            height: 36px;
+            color: var(--gold);
+        }
+
+        .category-number {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .category-card h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            line-height: 1.3;
+        }
+
+        .category-card p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.8;
+        }
+
+        /* ===========================
+           IMPLEMENTATION GUIDE
+        =========================== */
+        .implementation-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--gray-900);
+        }
+
+        .implementation-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .implementation-content h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .implementation-steps {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+        }
+
+        .implementation-step {
+            display: flex;
+            gap: var(--space-lg);
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 16px;
+        }
+
+        .step-number-badge {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            border-radius: 50%;
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .step-content h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .step-content p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: var(--text-3xl);
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .download-btn {
+                width: 100%;
+            }
+
+            .implementation-step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number-badge {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <div class="page-wrapper">
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <h1 class="hero-title">
+                        Your
+                        <span class="gradient-text">Golden Life Sheet</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        A daily alignment tool to connect your essence to value creation. Track your transformation across six essential categories.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Download CTA -->
+            <section class="download-cta-section">
+                <div class="container">
+                    <div class="download-cta-box">
+                        <h2>Download Your Template</h2>
+                        <p>Get your Golden Life Sheet in PDF format or customize it in Canva. Start your daily practice today.</p>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn" download>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Download PDF
+                            </a>
+                            <a href="#" class="download-btn" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Open in Canva
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Six Categories -->
+            <section class="categories-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Six Categories of Transformation</h2>
+                        <p>Track your progress across these essential areas of your life</p>
+                    </div>
+
+                    <div class="categories-grid">
+                        <!-- Category 1: Who I Am -->
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div class="category-number">Category 1</div>
+                            <h3>Who I Am</h3>
+                            <p>Define your essence identity. Who are you when operating from certainty and confidence? Your authentic self beyond roles and labels.</p>
+                        </div>
+
+                        <!-- Category 2: Friday Night Essence -->
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                                </svg>
+                            </div>
+                            <div class="category-number">Category 2</div>
+                            <h3>Friday Night Essence (FNE)</h3>
+                            <p>Capture what excites you most. What do you want to do when obligations are complete? Your deepest desires and passions.</p>
+                        </div>
+
+                        <!-- Category 3: My Dreams -->
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </div>
+                            <div class="category-number">Category 3</div>
+                            <h3>My Dreams</h3>
+                            <p>List your impossible dreams. What would you create if you operated from certainty without fear? Your ultimate vision.</p>
+                        </div>
+
+                        <!-- Category 4: Current Focuses -->
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="12" r="6"/>
+                                    <circle cx="12" cy="12" r="2"/>
+                                </svg>
+                            </div>
+                            <div class="category-number">Category 4</div>
+                            <h3>Current Focuses</h3>
+                            <p>Track your active projects and goals. What are you working on now to move toward your dreams? Actionable focus areas.</p>
+                        </div>
+
+                        <!-- Category 5: Celebrations -->
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <div class="category-number">Category 5</div>
+                            <h3>Celebrations (Value Reflection)</h3>
+                            <p>Acknowledge value created. What genuine value did you create for others? Measure wealth through contribution.</p>
+                        </div>
+
+                        <!-- Category 6: Health & Longevity -->
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </div>
+                            <div class="category-number">Category 6</div>
+                            <h3>Health & Longevity</h3>
+                            <p>Track physical and mental vitality. What actions support your desire to live indefinitely? Health as prerequisite for creation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Guide -->
+            <section class="implementation-section">
+                <div class="container">
+                    <div class="implementation-content">
+                        <h2>How to Use Your Golden Life Sheet</h2>
+
+                        <div class="implementation-steps">
+                            <div class="implementation-step">
+                                <div class="step-number-badge">1</div>
+                                <div class="step-content">
+                                    <h3>Daily Morning Review</h3>
+                                    <p>Start each day by reviewing your six categories. Reconnect with your essence, dreams, and current focuses. Set intention for value creation.</p>
+                                </div>
+                            </div>
+
+                            <div class="implementation-step">
+                                <div class="step-number-badge">2</div>
+                                <div class="step-content">
+                                    <h3>Evening Reflection</h3>
+                                    <p>End each day by updating your celebrations. What value did you create? What progress did you make? Acknowledge wins, however small.</p>
+                                </div>
+                            </div>
+
+                            <div class="implementation-step">
+                                <div class="step-number-badge">3</div>
+                                <div class="step-content">
+                                    <h3>Weekly Deep Dive</h3>
+                                    <p>Once per week, review and update all six categories. Are your focuses aligned with your dreams? Is your FNE clear? Adjust as needed.</p>
+                                </div>
+                            </div>
+
+                            <div class="implementation-step">
+                                <div class="step-number-badge">4</div>
+                                <div class="step-content">
+                                    <h3>Monthly Evolution</h3>
+                                    <p>At month end, notice transformation patterns. How have your dreams evolved? What new capabilities emerged? Celebrate growth systematically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
