@@ -823,7 +823,33 @@
             }
         }
 
+        @media (max-width: 900px) {
+            /* Footer stacks on tablets */
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: var(--space-lg);
+            }
+
+            .footer-support {
+                text-align: center;
+            }
+
+            .support-link {
+                justify-content: center;
+            }
+        }
+
         @media (max-width: 768px) {
+            /* Reduce section padding */
+            section {
+                padding-block: var(--space-xl);
+            }
+
+            .hero-section {
+                padding-block: var(--space-2xl);
+            }
+
             .template-grid {
                 grid-template-columns: 1fr;
             }
@@ -835,6 +861,80 @@
 
             .cta-button {
                 width: 100%;
+                padding-block: var(--space-md);
+                font-size: 1rem;
+            }
+
+            /* Template preview adjustments */
+            .template-preview {
+                padding: var(--space-lg);
+            }
+
+            /* Container padding adjustments */
+            .container,
+            .container-narrow,
+            .container-tight {
+                padding-inline: var(--space-sm);
+            }
+
+            /* Content card adjustments */
+            .content-card {
+                padding: var(--space-md);
+            }
+
+            /* Quote section */
+            .quote-text {
+                font-size: clamp(1.25rem, 4vw, 1.75rem);
+            }
+
+            /* Warning box */
+            .warning-box {
+                padding: var(--space-md);
+            }
+
+            /* Emphasis box */
+            .emphasis-box {
+                padding: var(--space-md);
+            }
+        }
+
+        @media (max-width: 600px) {
+            /* Header stacks on mobile */
+            .header-content {
+                flex-direction: column;
+                gap: var(--space-xs);
+                text-align: center;
+            }
+
+            .header-date {
+                font-size: var(--text-xs);
+            }
+
+            /* Hero adjustments */
+            .hero-title {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+
+            .hero-subtitle {
+                font-size: clamp(1rem, 3.5vw, 1.25rem);
+            }
+
+            /* Section title adjustments */
+            .section-title {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+            }
+
+            /* Template section adjustments */
+            .template-section {
+                padding: var(--space-sm);
+            }
+
+            .template-section-title {
+                font-size: 0.8rem;
+            }
+
+            .template-section-description {
+                font-size: 0.85rem;
             }
         }
 
@@ -842,6 +942,123 @@
             .content-card-header {
                 flex-direction: column;
                 text-align: center;
+            }
+
+            /* Even smaller section padding */
+            section {
+                padding-block: var(--space-lg);
+            }
+
+            /* Hero further reduced */
+            .hero-section {
+                padding-block: var(--space-xl);
+            }
+
+            .hero-icon {
+                font-size: 2.5rem;
+                margin-bottom: var(--space-md);
+            }
+
+            /* Content number sizing */
+            .content-number {
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1rem;
+            }
+
+            /* Card title sizing */
+            .content-card-title {
+                font-size: 1.125rem;
+            }
+
+            /* Card text sizing */
+            .content-card-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+
+            /* Styled list adjustments */
+            .styled-list li {
+                padding-inline-start: 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            /* Footer adjustments */
+            .site-footer {
+                padding: var(--space-xl) var(--space-sm) var(--space-md);
+            }
+
+            .footer-brand h3 {
+                font-size: var(--text-lg);
+            }
+
+            /* Button touch targets */
+            .cta-button {
+                min-height: 52px;
+                padding: var(--space-md) var(--space-lg);
+            }
+        }
+
+        @media (max-width: 375px) {
+            /* Extra small screens (iPhone SE, etc.) */
+            .container,
+            .container-narrow,
+            .container-tight {
+                padding-inline: 12px;
+            }
+
+            .hero-title {
+                font-size: 1.75rem;
+            }
+
+            .section-title {
+                font-size: 1.35rem;
+            }
+
+            .section-label {
+                font-size: 0.7rem;
+                letter-spacing: 0.15em;
+            }
+
+            .content-card {
+                padding: var(--space-sm);
+            }
+
+            .template-preview {
+                padding: var(--space-sm);
+            }
+
+            .warning-box,
+            .emphasis-box {
+                padding: var(--space-sm);
+            }
+
+            .quote-text {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            /* Tiny screens */
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+
+            .content-card-title {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 0.9rem;
+                padding: var(--space-sm) var(--space-md);
             }
         }
 
@@ -1216,7 +1433,6 @@
                         <li>Return to the <strong>Prime Literature</strong> and secret manuscripts regularly</li>
                         <li>Attend the <strong>weekly community calls and meetings</strong></li>
                         <li>Join a local <strong>Clubhouse</strong> (Los Angeles, Oklahoma, Dallas, New Jersey, and growing)</li>
-                        <li>Engage with the <strong>Day of Enlightenment recording</strong> when you need a boost</li>
                         <li>Connect with other <strong>Level 2 and Level 3 members</strong> for support</li>
                         <li>Review your <strong>Wealth Engine calculations</strong> monthly to track progress</li>
                     </ul>
@@ -1263,17 +1479,7 @@
                     </div>
                 </div>
 
-                <div class="content-card" style="margin-top: 2rem; border-left-color: var(--gold);">
-                    <h3 class="content-card-title">📹 Need Help Filling It Out?</h3>
-                    <p class="content-card-text" style="margin-bottom: 1.5rem;">
-                        Watch the detailed explanation from the Day of Enlightenment workshop. The step-by-step walkthrough begins at timestamp <strong>2:04:38</strong>.
-                    </p>
-                    <a href="https://societysecrets.com/day-of-enlightenment-recordings" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%;">
-                        Watch the Recording
-                    </a>
-                </div>
-
-                <div class="emphasis-box" style="margin-top: 3rem;">
+                <div class="emphasis-box" style="margin-top: 2rem;">
                     <p><strong>Your Commitment:</strong> Don't just download this and let it sit. Complete it TODAY. Print it TODAY. Post it TODAY. Read it tonight before bed and tomorrow morning when you wake. This is where your transformation becomes permanent.</p>
                 </div>
             </div>
