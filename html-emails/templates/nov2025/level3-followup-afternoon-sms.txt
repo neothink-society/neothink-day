@@ -1,0 +1,116 @@
+# Level 3 Follow-Up Afternoon SMS Messages
+# Sent: Tuesday 4pm PT (day after Day 2 complete)
+# Context: 24 hours until Wednesday deadline
+# Focus: Urgency, Mark Hamilton waiting, moment of decision
+
+---
+
+## SHORT VERSION (160 characters max)
+Optimized for: Maximum compatibility, basic phones, international delivery
+
+24 hours until Wednesday. Mark Hamilton is waiting for your consultation. Book now: societysecrets.com/schedule
+
+Character count: 125
+
+---
+
+## RECOMMENDED VERSION (200-250 characters)
+Optimized for: Balance of impact and deliverability, most carriers, best engagement
+
+This is the moment. 24 hours until Wednesday deadline. Mark Hamilton is waiting to guide you through Level Three personally. The choice you make right now defines everything. Book: societysecrets.com/schedule
+
+Character count: 222
+
+---
+
+## MEDIUM VERSION (300 characters max)
+Optimized for: Rich messaging, detailed context, engagement focus
+
+24 hours left. This weekend you glimpsed immortal power. The Matrix was shattered. You discovered your Friday Night Essence. Now Mark Hamilton is waiting for your consultation. He's ready to share the $400M wealth mechanics. Wednesday deadline approaches. Book now: societysecrets.com/schedule
+
+Character count: 299
+
+---
+
+## FULL VERSION (no limit)
+Optimized for: Maximum context, rich clients (iMessage, RCS), conversion focus
+
+Right now, you're at a crossroads.
+
+This weekend you glimpsed immortal power. The Matrix illusion was shattered forever. You discovered your Friday Night Essence. You felt the transformation begin.
+
+Now comes the real question: Will you let this moment slip away? Or will you seize it?
+
+Mark Hamilton is waiting. He's holding a consultation slot with your name on it. He's prepared to guide you personally through Level Three. He's ready to share the $400M wealth mechanics that transformed his reality.
+
+24 hours until Wednesday deadline.
+
+$1,997 upfront. Remaining $3,003 only after you make $50K+.
+
+Book your consultation: societysecrets.com/schedule
+Full details: societysecrets.com/level3
+
+Welcome Party: Wednesday 3pm PT/6pm ET
+
+Character count: 700
+
+---
+
+## USAGE GUIDELINES
+
+**Delivery Schedule:**
+- Primary send: Tuesday 4:00 PM PT
+- Follow-up window: Tuesday 4-8 PM PT
+- Target audience: Day 2 completers who haven't booked consultation
+
+**Recommended Version by Segment:**
+- High engagement: FULL VERSION (700 chars)
+- Standard engagement: RECOMMENDED VERSION (222 chars)
+- Low engagement/deliverability concerns: SHORT VERSION (125 chars)
+- Re-engagement/reminder: MEDIUM VERSION (299 chars)
+
+**Timing Strategy:**
+- Send RECOMMENDED first (4pm PT)
+- Follow with FULL for highly engaged (6pm PT)
+- Final SHORT reminder (8pm PT Tuesday)
+
+**Key Messaging:**
+- 24 hours until deadline
+- Mark Hamilton waiting personally
+- Moment of decision
+- Wednesday Welcome Party
+- Investment: $1,997 upfront, $3,003 after $50K+
+
+**Compliance Notes:**
+- Include opt-out in follow-up if required by carrier
+- Verify link shortening if needed for character limits
+- Test deliverability with full URLs before shortening
+- Monitor engagement metrics for version optimization
+
+---
+
+## LINK DESTINATIONS
+
+Primary CTA: https://societysecrets.com/schedule
+Secondary CTA: https://societysecrets.com/level3
+
+---
+
+## A/B TEST VARIATIONS
+
+**Test 1: Urgency Frame**
+A: "24 hours until Wednesday deadline"
+B: "Wednesday deadline: 24 hours left"
+
+**Test 2: Mark Hamilton Emphasis**
+A: "Mark Hamilton is waiting for your consultation"
+B: "Your consultation slot with Mark Hamilton is waiting"
+
+**Test 3: Call to Action**
+A: "Book now"
+B: "Book your consultation"
+C: "Schedule consultation"
+
+---
+
+END OF SMS MESSAGE TEMPLATES

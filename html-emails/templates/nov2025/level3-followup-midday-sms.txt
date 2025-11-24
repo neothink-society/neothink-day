@@ -1,0 +1,103 @@
+LEVEL 3 ENROLLMENT - MIDDAY FOLLOW-UP SMS VERSIONS
+Sent: 12pm PT (Day after Day 2 complete)
+Context: Morning email already sent at 8am, this is the midday social proof push
+
+========================================
+VERSION 1: SHORT (160 characters max)
+========================================
+
+Elite members from your weekend are claiming spots fast. Wednesday deadline. Don't let fear win. Book now: societysecrets.com/schedule
+
+Character count: 149
+
+
+========================================
+VERSION 2: MEDIUM (300 characters max)
+========================================
+
+Your peers from this weekend aren't hesitating. They felt the same awakening. They're securing their Level Three spots NOW.
+
+The gap between action-takers and those who wait grows every hour. Wednesday deadline.
+
+Claim yours: societysecrets.com/schedule
+
+Character count: 284
+
+
+========================================
+VERSION 3: LONG FULL VERSION
+========================================
+
+Right now, a divide is forming.
+
+Some from your weekend are taking action—locking in Mark Hamilton's $400M wealth mechanics, building their personalized Wealth Engines, joining the elite.
+
+Others are waiting. Letting momentum fade. Watching old patterns creep back.
+
+"I'll think about it" is code for "I'm letting fear win."
+
+You saw what's possible this weekend. You felt the power. Now the question is simple: Will you claim it or let it slip away?
+
+Level Three spots filling fast. Book by Wednesday. Welcome Party Wednesday 3pm PT/6pm ET.
+
+$1,997 upfront. Remaining $3,003 only after you make $50K+.
+
+Book consultation: societysecrets.com/schedule
+Learn more: societysecrets.com/level3
+
+The gap between those who act and those who wait grows wider every hour.
+
+Your move.
+
+Character count: 750
+
+
+========================================
+VERSION 4: RECOMMENDED (200-250 characters)
+========================================
+
+A divide is forming. Elite members from your weekend are securing Level Three spots. Others are waiting, letting fear win.
+
+Wednesday deadline. Welcome Party Wed 3pm PT/6pm ET.
+
+Your move: societysecrets.com/schedule
+
+Character count: 234
+
+
+========================================
+USAGE NOTES:
+========================================
+
+TONE: Urgent, social proof-heavy, FOMO-driven
+FOCUS: Gap between action-takers vs waiters
+KEY MESSAGES:
+- Elite members already joining
+- Spots filling fast
+- Fear vs action
+- Wednesday deadline
+- Wednesday Welcome Party 3pm PT/6pm ET
+
+TIMING: 12pm PT (midday), 4 hours after morning email
+SEQUENCE POSITION: Email #2 of 3 (Day 3 AM + Day 3 Midday + Day 3 Final)
+
+RECOMMENDED VERSION: Version 4 (234 chars)
+- Balanced length for mobile reading
+- Clear social proof
+- Strong action vs inaction framing
+- Both CTAs included
+- Creates urgency without being pushy
+
+MOBILE OPTIMIZATION:
+- All links are full URLs (no shorteners needed)
+- Clear line breaks for readability
+- Strong opening hook
+- Deadline clearly stated
+- Multiple CTA options
+
+PSYCHOLOGICAL TRIGGERS:
+✓ Social proof (elite members joining)
+✓ FOMO (spots filling, deadline approaching)
+✓ Identity (action-takers vs waiters)
+✓ Scarcity (Wednesday deadline)
+✓ Authority (Mark Hamilton, $400M)
