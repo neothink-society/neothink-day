@@ -940,14 +940,16 @@
         }
 
         .hero-cta-primary {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border: 2px solid var(--gold);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
         }
 
         .hero-cta-primary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.4);
-            transform: translateY(-2px);
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            border-color: var(--gold-light);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.5);
+            transform: translateY(-3px);
         }
 
         .hero-cta-gold {
@@ -971,7 +973,7 @@
         }
 
         .hero-cta-primary .hero-cta-label {
-            color: var(--gray-400);
+            color: rgba(0, 0, 0, 0.7);
         }
 
         .hero-cta-gold .hero-cta-label {
@@ -984,7 +986,7 @@
         }
 
         .hero-cta-primary .hero-cta-text {
-            color: var(--white);
+            color: var(--black);
         }
 
         .hero-cta-gold .hero-cta-text {
@@ -1321,9 +1323,9 @@
                             <span class="hero-resource-icon">💰</span>
                             <span>Wealth Engine Calculator</span>
                         </a>
-                        <a href="#resources" class="hero-resource-link">
-                            <span class="hero-resource-icon">▶️</span>
-                            <span>Session Recordings</span>
+                        <a href="#action-plan" class="hero-resource-link">
+                            <span class="hero-resource-icon">✅</span>
+                            <span>Your Action Plan</span>
                         </a>
                     </div>
                 </div>
@@ -1623,6 +1625,15 @@
                 <div class="content-grid">
                     <div class="resource-card">
                         <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <h3 class="resource-title">Friday-Night Essence Workbook</h3>
+                        <p class="resource-description">Your comprehensive workbook for discovering and developing your Friday-Night Essence—the value-creation activity that connects you to growth and prevents stagnation.</p>
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" class="btn btn-secondary" target="_blank">Download Workbook</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                         </svg>
                         <h3 class="resource-title">Wealth Engine Calculator</h3>
@@ -1821,7 +1832,7 @@
         </section>
 
         <!-- Action Plan Section -->
-        <section class="bg-dark-gray">
+        <section id="action-plan" class="bg-dark-gray">
             <div class="container-narrow">
                 <div class="section-header">
                     <span class="section-label">Next Steps</span>
