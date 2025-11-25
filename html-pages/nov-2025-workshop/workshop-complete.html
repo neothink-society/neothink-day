@@ -918,149 +918,145 @@
             font-style: italic;
         }
 
-        /* Hero Action Cards */
-        .hero-actions-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: clamp(0.75rem, 2vw, 1.25rem);
+        /* Hero CTA Row */
+        .hero-cta-row {
+            display: flex;
+            justify-content: center;
+            gap: clamp(0.75rem, 2vw, 1.5rem);
             margin-top: var(--space-xl);
+            flex-wrap: wrap;
         }
 
-        .hero-action-card {
+        .hero-cta-primary,
+        .hero-cta-gold {
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
-            padding: clamp(1.25rem, 3vw, 1.75rem) clamp(1rem, 2vw, 1.5rem);
-            background: rgba(255, 255, 255, 0.03);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(1.5rem, 4vw, 2.5rem);
+            border-radius: 12px;
+            text-decoration: none;
             transition: all var(--duration-normal) var(--ease-out-expo);
+            min-width: 220px;
         }
 
-        .hero-action-card:hover {
-            background: rgba(255, 215, 0, 0.05);
-            border-color: rgba(255, 215, 0, 0.3);
+        .hero-cta-primary {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
-        .hero-action-featured {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.03));
-            border-color: rgba(255, 215, 0, 0.4);
+        .hero-cta-primary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
         }
 
-        .hero-action-featured:hover {
-            border-color: var(--gold);
-            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.15);
+        .hero-cta-gold {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid var(--gold);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
         }
 
-        .hero-action-icon {
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
-            margin-bottom: var(--space-sm);
+        .hero-cta-gold:hover {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.1));
+            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
         }
 
-        .hero-action-title {
-            font-size: clamp(0.95rem, 2vw, 1.125rem);
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-xs);
+        .hero-cta-label {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.25rem;
         }
 
-        .hero-action-featured .hero-action-title {
+        .hero-cta-primary .hero-cta-label {
+            color: var(--gray-400);
+        }
+
+        .hero-cta-gold .hero-cta-label {
             color: var(--gold);
         }
 
-        .hero-action-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-grow: 1;
-        }
-
-        .hero-action-desc {
-            font-size: clamp(0.8rem, 1.5vw, 0.875rem);
-            color: var(--gray-400);
-            line-height: 1.5;
-            margin-bottom: var(--space-md);
-            flex-grow: 1;
-        }
-
-        .hero-action-btn {
-            display: inline-block;
-            padding: 0.6rem 1.25rem;
-            font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+        .hero-cta-text {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
             font-weight: 700;
+        }
+
+        .hero-cta-primary .hero-cta-text {
             color: var(--white);
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-cta-gold .hero-cta-text {
+            color: var(--gold);
+        }
+
+        /* Hero Resources */
+        .hero-resources {
+            margin-top: var(--space-2xl);
+            text-align: center;
+        }
+
+        .hero-resources-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: var(--space-md);
+        }
+
+        .hero-resources-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: clamp(0.5rem, 2vw, 1rem);
+        }
+
+        .hero-resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1rem;
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
             border-radius: 8px;
+            color: var(--gray-200);
+            font-size: var(--text-sm);
             text-decoration: none;
             transition: all var(--duration-fast) var(--ease-out-expo);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
 
-        .hero-action-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--white);
-        }
-
-        .hero-action-btn-gold {
-            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        .hero-resource-link:hover {
+            background: rgba(255, 215, 0, 0.1);
             border-color: var(--gold);
-            color: var(--black);
+            color: var(--gold);
         }
 
-        .hero-action-btn-gold:hover {
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
-            border-color: var(--gold-light);
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
-        }
-
-        /* Responsive: Tablet */
-        @media (max-width: 900px) {
-            .hero-actions-grid {
-                gap: 0.75rem;
-            }
+        .hero-resource-icon {
+            font-size: 1rem;
         }
 
         /* Responsive: Mobile */
         @media (max-width: 640px) {
-            .hero-actions-grid {
-                grid-template-columns: 1fr;
-                gap: 0.75rem;
+            .hero-cta-row {
+                flex-direction: column;
+                align-items: stretch;
             }
 
-            .hero-action-card {
-                flex-direction: row;
-                text-align: left;
-                padding: 1rem 1.25rem;
-                gap: 1rem;
-                align-items: center;
+            .hero-cta-primary,
+            .hero-cta-gold {
+                min-width: unset;
             }
 
-            .hero-action-icon {
-                font-size: 1.75rem;
-                margin-bottom: 0;
-                flex-shrink: 0;
+            .hero-resources-grid {
+                flex-direction: column;
+                align-items: stretch;
             }
 
-            .hero-action-content {
-                flex: 1;
-                min-width: 0;
-                align-items: flex-start;
-            }
-
-            .hero-action-title {
-                margin-bottom: 0.25rem;
-            }
-
-            .hero-action-desc {
-                margin-bottom: 0.625rem;
-            }
-
-            .hero-action-btn {
-                padding: 0.5rem 1rem;
-                font-size: 0.75rem;
+            .hero-resource-link {
+                justify-content: center;
             }
         }
 
@@ -1297,34 +1293,38 @@
                 <p class="hero-tagline">We laughed. We cried. We became family.</p>
                 <p class="hero-subtitle">Your transformation is complete. Now it's time to implement.</p>
 
-                <!-- 3 Action Cards -->
-                <div class="hero-actions-grid">
-                    <!-- Schedule -->
-                    <div class="hero-action-card">
-                        <div class="hero-action-icon">📅</div>
-                        <div class="hero-action-content">
-                            <div class="hero-action-title">Mentor Consultation</div>
-                            <div class="hero-action-desc">Lock in your breakthroughs while your clarity is at its peak</div>
-                            <a href="https://societysecrets.com/schedule" target="_blank" class="hero-action-btn">Schedule Now</a>
-                        </div>
-                    </div>
-                    <!-- Level 3 -->
-                    <div class="hero-action-card hero-action-featured">
-                        <div class="hero-action-icon">⭐</div>
-                        <div class="hero-action-content">
-                            <div class="hero-action-title">Level 3 Stargazer</div>
-                            <div class="hero-action-desc">Remove all limitations—self, money, and world</div>
-                            <a href="#level-3" class="hero-action-btn hero-action-btn-gold">Ascend Now</a>
-                        </div>
-                    </div>
-                    <!-- Resources -->
-                    <div class="hero-action-card">
-                        <div class="hero-action-icon">📚</div>
-                        <div class="hero-action-content">
-                            <div class="hero-action-title">Your Resources</div>
-                            <div class="hero-action-desc">Golden Life Sheet, Wealth Engine Calculator & recordings</div>
-                            <a href="#resources" class="hero-action-btn">Access Now</a>
-                        </div>
+                <!-- Primary CTAs -->
+                <div class="hero-cta-row">
+                    <a href="https://societysecrets.com/schedule" target="_blank" class="hero-cta-primary">
+                        <span class="hero-cta-label">Next Step</span>
+                        <span class="hero-cta-text">Schedule Mentor Consultation</span>
+                    </a>
+                    <a href="#level-3" class="hero-cta-gold">
+                        <span class="hero-cta-label">Go Deeper</span>
+                        <span class="hero-cta-text">Ascend to Level 3</span>
+                    </a>
+                </div>
+
+                <!-- Quick Access Resources -->
+                <div class="hero-resources">
+                    <span class="hero-resources-label">Your Resources</span>
+                    <div class="hero-resources-grid">
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" class="hero-resource-link">
+                            <span class="hero-resource-icon">📓</span>
+                            <span>Friday-Night Essence Workbook</span>
+                        </a>
+                        <a href="#golden-life-sheet" class="hero-resource-link">
+                            <span class="hero-resource-icon">📄</span>
+                            <span>Golden Life Sheet</span>
+                        </a>
+                        <a href="#wealth-engine" class="hero-resource-link">
+                            <span class="hero-resource-icon">💰</span>
+                            <span>Wealth Engine Calculator</span>
+                        </a>
+                        <a href="#resources" class="hero-resource-link">
+                            <span class="hero-resource-icon">▶️</span>
+                            <span>Session Recordings</span>
+                        </a>
                     </div>
                 </div>
             </div>
