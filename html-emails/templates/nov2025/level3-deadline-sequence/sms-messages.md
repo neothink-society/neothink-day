@@ -1,7 +1,10 @@
 # Level 3 Deadline SMS Sequence
-## November 25-26, 2025 (Deadline: Wednesday Midnight ET)
+## November 25-26, 2025 (Deadline: Wednesday 9pm PT)
 
 **REVISED SCHEDULE** - Starting Tuesday afternoon
+**LINKS:**
+- Enroll: societysecrets.com/level3
+- Mentor Sessions: societysecrets.com/schedule
 
 ---
 
@@ -9,13 +12,13 @@
 **Send Time:** Tuesday 2pm ET / 11am PT
 
 ```
-This weekend changed something in you. Level 3 is where you lock it in.
+Still have questions about Level 3? That's okay.
 
-$1,997 now. $3,003 only after you earn $50K+ (honor system).
+Two ways to help:
+→ Talk to a mentor: societysecrets.com/schedule
+→ Join our Q&A Wed 2pm PT (before Welcome Party at 3pm)
 
-Expires Wed midnight ET.
-
-→ societysecrets.com/level3
+Honor system closes Wed 9pm PT.
 ```
 
 ---
@@ -28,11 +31,9 @@ Day 1: Mind
 Day 2: Money
 Day 3: Reality
 
-That's Level 3. 3 days that change everything.
+That's Level 3. Here's what happens → societysecrets.com/level3
 
-Honor system pricing ends tomorrow midnight.
-
-→ societysecrets.com/level3
+Questions? Schedule a mentor call: societysecrets.com/schedule
 ```
 
 ---
@@ -44,9 +45,9 @@ Honor system pricing ends tomorrow midnight.
 "I took the leap. And I am so glad. I have no regrets."
 — David G., Level 3 Member
 
-Tomorrow at midnight, the honor system disappears.
+Tomorrow: Q&A at 2pm PT, Welcome Party at 3pm PT.
 
-→ societysecrets.com/level3
+Questions? societysecrets.com/schedule
 ```
 
 ---
@@ -55,13 +56,12 @@ Tomorrow at midnight, the honor system disappears.
 **Send Time:** Wednesday 9am ET / 6am PT
 
 ```
-24 HOURS LEFT
+TODAY:
+→ 2pm PT: Level 3 Q&A (bring your questions)
+→ 3pm PT: Welcome Party (for those who've enrolled)
+→ 9pm PT: Honor system closes
 
-Level 3 honor system pricing expires tonight at midnight Eastern.
-
-After that: $5,000 upfront. No exceptions.
-
-Lock it in: societysecrets.com/level3
+Not sure yet? Join us at 2pm PT or book a mentor call: societysecrets.com/schedule
 ```
 
 ---
@@ -70,11 +70,11 @@ Lock it in: societysecrets.com/level3
 **Send Time:** Wednesday 3pm ET / 12pm PT
 
 ```
-Tonight at midnight, this door closes.
+Q&A in 2 hours (2pm PT).
 
-$1,997 now → $5,000 after midnight.
+If you're still deciding, this is your chance to ask anything and get real answers.
 
-This is your final day to decide.
+See you there?
 
 → societysecrets.com/level3
 ```
@@ -85,18 +85,18 @@ This is your final day to decide.
 **Send Time:** Wednesday 9pm ET / 6pm PT
 
 ```
-Just checking in one more time.
+Checking in one more time.
 
-Level 3 honor system closes at midnight. We believe in what it can do for you.
+Honor system closes at 9pm PT tonight. If you've been thinking about it, we understand — it's a meaningful decision.
 
-If it feels right, we're here.
+Questions? societysecrets.com/schedule
 
-→ societysecrets.com/level3
+Learn more: societysecrets.com/level3
 ```
 
 ---
 
-### SMS 7: Final Hour
+### SMS 7: Final Note
 **Send Time:** Wednesday 11pm ET / 8pm PT
 
 ```
@@ -114,17 +114,22 @@ Whatever you decide, grateful you were with us.
 ## Notes for Implementation
 
 **Character Counts:**
-- All messages are under 160 characters where possible for single SMS delivery
-- Messages with emojis may count as 2 segments depending on carrier
+- Most messages are optimized for single SMS delivery (<160 chars)
+- Longer messages may split into 2 segments
 
 **Link Tracking:**
-- Replace `societysecrets.com/level3` with tracked short links if using GoHighLevel SMS tracking
+- Replace links with tracked short links if using GoHighLevel SMS tracking
 
 **Personalization (Optional):**
 - Add `{{contact.first_name}}` at start: "Hey {{contact.first_name}},"
-- Example: "Hey {{contact.first_name}}, 24 HOURS LEFT..."
 
 **Compliance:**
 - Ensure SMS opt-in compliance
-- Include opt-out instructions if required by carrier/regulations
-- Consider adding "Reply STOP to unsubscribe" to first message of sequence
+- Consider adding "Reply STOP to unsubscribe" to first message
+
+**Key Elements in Each Message:**
+- Mentor session link (societysecrets.com/schedule)
+- Q&A meeting reminder (Wed 2pm PT)
+- Welcome Party mention (Wed 3pm PT)
+- Deadline (Wed 9pm PT)
+- Soft, trust-based tone throughout
