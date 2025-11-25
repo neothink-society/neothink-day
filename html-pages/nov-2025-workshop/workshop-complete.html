@@ -922,6 +922,35 @@
             }
         }
 
+        /* Level 3 Days Grid */
+        .level3-days-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        @media (max-width: 768px) {
+            .level3-days-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        /* Level 3 Bottom Grid (Price + Honor) */
+        .level3-bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: clamp(1rem, 2vw, 1.5rem);
+            align-items: stretch;
+        }
+
+        @media (max-width: 768px) {
+            .level3-bottom-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
         /* Mobile Adjustments */
         @media (max-width: 480px) {
             .hero-title br {
@@ -1471,8 +1500,8 @@
         <section class="quote-section">
             <div class="container">
                 <blockquote class="quote-block">
-                    <p class="quote-text">"I'm 72 years old. And I realize today that I have successfully saved enough money to be comfortable. I've been worried about it for so long. Such a relief."</p>
-                    <footer style="color: var(--gold); font-size: var(--text-lg); margin-top: var(--space-lg); font-style: normal;">— Kathleen, Level 3 Member, November 2025</footer>
+                    <p class="quote-text">"Doubt is not in my mind, no. I know I will get there, because I am doing the work. I feel happy, I feel connected, very connected."</p>
+                    <footer style="color: var(--gold); font-size: var(--text-lg); margin-top: var(--space-lg); font-style: normal;">— Graciela Jurado, Level 3 Member, November 2025</footer>
                 </blockquote>
             </div>
         </section>
@@ -1481,46 +1510,82 @@
         <section id="level-3" class="vip-section">
             <div class="container-narrow">
                 <div class="vip-container">
+                    <!-- Header -->
                     <div class="vip-header">
                         <div class="vip-badge">
                             <span class="vip-badge-text">⭐ Level 3 Stargazer</span>
                         </div>
                         <h2 class="vip-title">Your Next Evolution</h2>
-                        <p class="vip-subtitle">3-Day intensive implementation event where you remove all limitations—self, money, and world—to reach your Impossible Dream</p>
+                        <p class="vip-subtitle">3-Day intensive where you remove all limitations—self, money, and world—to reach your Impossible Dream</p>
                     </div>
 
-                    <div class="vip-price-container">
-                        <p class="vip-price-label">Investment</p>
-                        <p class="vip-price">$1,997</p>
-                        <p class="vip-price-note">Down payment today • Remaining $3,003 due only after you earn $50,000+ using Level 3 techniques</p>
+                    <!-- The 3 Days Grid -->
+                    <div style="margin-bottom: var(--space-2xl);">
+                        <h3 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--white); text-align: center; margin: 0 0 var(--space-xl) 0;">The 3-Day Journey</h3>
+                        <div class="level3-days-grid">
+                            <!-- Day 1 -->
+                            <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: var(--space-xl); text-align: center;">
+                                <div style="font-size: var(--text-4xl); margin-bottom: var(--space-sm);">🔓</div>
+                                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-xs);">Day 1</div>
+                                <div style="font-size: var(--text-lg); font-weight: 700; color: var(--white); margin-bottom: var(--space-sm);">Remove Self Limitations</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Breakthrough all internal blockers and become the creator you're meant to be</div>
+                            </div>
+                            <!-- Day 2 -->
+                            <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: var(--space-xl); text-align: center;">
+                                <div style="font-size: var(--text-4xl); margin-bottom: var(--space-sm);">💎</div>
+                                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-xs);">Day 2</div>
+                                <div style="font-size: var(--text-lg); font-weight: 700; color: var(--white); margin-bottom: var(--space-sm);">Master Money</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Mark Hamilton's personal $400M wealth mechanics + your personalized financial plan</div>
+                            </div>
+                            <!-- Day 3 -->
+                            <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: var(--space-xl); text-align: center;">
+                                <div style="font-size: var(--text-4xl); margin-bottom: var(--space-sm);">🌍</div>
+                                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-xs);">Day 3</div>
+                                <div style="font-size: var(--text-lg); font-weight: 700; color: var(--white); margin-bottom: var(--space-sm);">Architect Reality</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Build the world around your vision and remove all external obstacles</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="content-grid">
-                        <div class="content-card" style="border-left-color: var(--gold);">
-                            <h3 class="content-card-title">What Level 3 Unlocks:</h3>
-                            <ul class="content-list">
-                                <li><strong>Day 1 - Remove Self Limitations:</strong> Breakthrough all internal blockers and become the creator you're meant to be</li>
-                                <li><strong>Day 2 - Master Money:</strong> Prime Mentor Mark Hamilton's personal $400 million wealth mechanics + your personalized financial plan</li>
-                                <li><strong>Day 3 - Architect Reality:</strong> How to build the world around your vision and remove external obstacles</li>
-                                <li><strong>50 Years of Neothink Secrets:</strong> Direct access to techniques refined over five decades</li>
-                                <li><strong>Direct Mentorship:</strong> Personal guidance from Platinum Mentors throughout the 3-day intensive</li>
-                                <li><strong>Level 3 Welcome Party:</strong> Exclusive community event on Friday, November 28th</li>
-                            </ul>
+                    <!-- Bonuses Row -->
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-lg); margin-bottom: var(--space-2xl); padding: var(--space-xl); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> 50 Years of Neothink Secrets
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> Direct Platinum Mentorship
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> Welcome Party Nov 28th
+                        </div>
+                    </div>
+
+                    <!-- Price + Honor System Side by Side -->
+                    <div class="level3-bottom-grid">
+                        <!-- Price Card -->
+                        <div style="background: rgba(0, 0, 0, 0.6); border: 3px solid var(--gold); border-radius: 20px; padding: var(--space-2xl); text-align: center;">
+                            <p style="font-size: var(--text-sm); color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 var(--space-sm) 0;">Investment</p>
+                            <p style="font-size: var(--text-5xl); font-weight: 900; color: var(--gold); line-height: 1; margin: 0 0 var(--space-md) 0; text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);">$1,997</p>
+                            <p style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6; margin: 0;">Down payment today<br><span style="color: var(--gold);">$3,003 due only after you earn $50K+</span></p>
                         </div>
 
-                        <div class="content-card" style="border-left-color: var(--gold);">
-                            <h3 class="content-card-title">The Honor System Guarantee:</h3>
-                            <p class="content-card-text">
-                                This offer operates entirely on trust. You pay $1,997 today to join the 3-day Stargazer event. The remaining $3,003 is due only after you make $50,000+ directly from Level 3 techniques. No contracts. No enforcement. Pure honor.
-                                <br><br>
-                                <strong>Why?</strong> Because skin in the game guarantees results. When you invest, you commit. When you commit, you transform.
+                        <!-- Honor System Card -->
+                        <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02)); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 20px; padding: var(--space-2xl);">
+                            <h3 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin: 0 0 var(--space-md) 0;">The Honor System</h3>
+                            <p style="font-size: var(--text-base); color: var(--gray-200); line-height: 1.7; margin: 0 0 var(--space-md) 0;">
+                                This offer operates entirely on trust. No contracts. No enforcement. Pure honor.
+                            </p>
+                            <p style="font-size: var(--text-base); color: var(--white); line-height: 1.7; margin: 0; font-weight: 600;">
+                                Why? Because skin in the game guarantees results. When you invest, you commit. When you commit, you transform.
                             </p>
                         </div>
                     </div>
 
-                    <a href="https://societysecrets.com/level3" class="btn btn-primary" target="_blank">Ascend to Level 3</a>
-
-                    <p class="vip-cta-note">Offer closes Friday, November 28th, 2025 • VIP members can apply their VIP fee toward enrollment</p>
+                    <!-- CTA -->
+                    <div style="text-align: center; margin-top: var(--space-2xl);">
+                        <a href="https://societysecrets.com/level3" class="btn btn-primary" target="_blank" style="font-size: var(--text-xl); padding: 1.25rem 3rem;">Ascend to Level 3</a>
+                        <p class="vip-cta-note">Offer closes Friday, November 28th, 2025 • VIP members can apply their VIP fee toward enrollment</p>
+                    </div>
                 </div>
             </div>
         </section>
