@@ -231,15 +231,23 @@
         /* Container system with safe areas */
         .container {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1200px;
             margin-inline: auto;
             padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
             padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
         }
 
+        .container-wide {
+            width: 100%;
+            max-width: 1300px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-lg), env(safe-area-inset-right, 1.5rem));
+            padding-inline: max(var(--space-lg), env(safe-area-inset-left, 1.5rem));
+        }
+
         .container-narrow {
             width: 100%;
-            max-width: 850px;
+            max-width: 900px;
             margin-inline: auto;
             padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
             padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
@@ -517,7 +525,40 @@
         .content-grid {
             display: grid;
             gap: var(--space-lg);
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+        }
+
+        /* 3-column grid for 6 category cards on large screens */
+        .content-grid-3col {
+            display: grid;
+            gap: var(--space-lg);
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid-3col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .content-grid-3col {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-xl);
+            }
+        }
+
+        /* 2x2 grid for implementation cards on large screens */
+        .content-grid-2x2 {
+            display: grid;
+            gap: var(--space-lg);
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid-2x2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         /* Single column on very small screens */
@@ -602,9 +643,22 @@
 
         .template-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+            grid-template-columns: 1fr;
             gap: var(--space-md);
             margin-top: var(--space-lg);
+        }
+
+        @media (min-width: 600px) {
+            .template-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .template-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-lg);
+            }
         }
 
         .template-section {
@@ -1167,7 +1221,7 @@
         </section>
 
         <section class="bg-dark-gray">
-            <div class="container-narrow">
+            <div class="container-wide">
                 <div class="section-header">
                     <span class="section-label">The Six Categories</span>
                     <h2 class="section-title">What Goes on Your Sheet</h2>
@@ -1209,7 +1263,7 @@
                     </div>
                 </div>
 
-                <div class="content-grid">
+                <div class="content-grid-3col">
                     <div class="content-card">
                         <div class="content-card-header">
                             <span class="content-number">1</span>
@@ -1341,13 +1395,13 @@
         </section>
 
         <section class="bg-gradient">
-            <div class="container-narrow">
+            <div class="container">
                 <div class="section-header">
                     <span class="section-label">How to Use It</span>
                     <h2 class="section-title">Your Implementation Process</h2>
                 </div>
 
-                <div class="content-grid">
+                <div class="content-grid-2x2">
                     <div class="content-card" style="border-left-color: var(--gold);">
                         <div class="content-card-header">
                             <span class="content-number">1</span>
@@ -1450,7 +1504,7 @@
         </section>
 
         <section class="bg-dark-gray">
-            <div class="container-narrow">
+            <div class="container">
                 <div class="section-header">
                     <span class="section-label">Get Started Now</span>
                     <h2 class="section-title">Download Your Template</h2>
