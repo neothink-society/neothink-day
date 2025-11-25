@@ -147,48 +147,58 @@
             text-align: center;
         }
 
-        /* Hero Section */
+        /* Hero Section - Excellence Design */
         .hero-section {
-            padding: var(--space-3xl) 0;
-            background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+            padding: clamp(4rem, 10vw, 7rem) 0 clamp(3rem, 8vw, 5rem);
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 215, 0, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 50% 100%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+            position: relative;
+            overflow: hidden;
         }
 
-        .completion-badge {
-            text-align: center;
-            margin-bottom: var(--space-2xl);
-        }
-
-        .completion-badge-text {
-            display: inline-block;
-            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem);
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
-            border: 3px solid var(--gold);
-            border-radius: 100px;
-            color: var(--gold);
-            font-family: var(--font-sans);
-            font-weight: 800;
-            font-size: var(--text-base);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 80px;
+            background: linear-gradient(to bottom, var(--gold), transparent);
+            opacity: 0.5;
         }
 
         .hero-title {
             font-family: var(--font-serif);
-            font-size: clamp(2.5rem, 10vw, 5rem);
+            font-size: clamp(3.5rem, 12vw, 6rem);
             font-weight: 700;
-            line-height: 1.1;
+            line-height: 1;
             text-align: center;
-            margin: 0 0 clamp(1rem, 3vw, 1.5rem) 0;
+            margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
             color: var(--white);
+            text-shadow: 0 0 80px rgba(255, 215, 0, 0.3);
+            letter-spacing: -0.02em;
         }
 
-        .hero-subtitle {
-            font-size: var(--text-xl);
+        .hero-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            font-style: italic;
+            text-align: center;
+            color: var(--gold);
+            margin: 0 0 clamp(1.5rem, 4vw, 2rem) 0;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .hero-body {
+            font-size: var(--text-lg);
             text-align: center;
             color: var(--gray-300);
-            margin: 0 0 var(--space-2xl) 0;
-            line-height: 1.6;
-            font-weight: 500;
+            margin: 0 auto clamp(2rem, 5vw, 3rem);
+            line-height: 1.7;
+            max-width: 600px;
         }
 
         /* Stats Grid */
@@ -918,85 +928,122 @@
             font-style: italic;
         }
 
-        /* Hero CTA Row */
-        .hero-cta-row {
-            display: flex;
-            justify-content: center;
-            gap: clamp(0.75rem, 2vw, 1.5rem);
-            margin-top: var(--space-xl);
-            flex-wrap: wrap;
-        }
-
-        .hero-cta-primary,
-        .hero-cta-gold {
+        /* Hero Primary CTA - The Main Action */
+        .hero-primary-cta {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: clamp(1rem, 3vw, 1.5rem) clamp(1.5rem, 4vw, 2.5rem);
-            border-radius: 12px;
+            gap: clamp(0.5rem, 1.5vw, 0.75rem);
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+        }
+
+        .hero-primary-cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: clamp(1.25rem, 3vw, 1.5rem) clamp(2.5rem, 6vw, 4rem);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            border: none;
+            border-radius: 16px;
             text-decoration: none;
-            transition: all var(--duration-normal) var(--ease-out-expo);
-            min-width: 220px;
-        }
-
-        .hero-cta-primary {
-            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
-            border: 2px solid var(--gold);
-            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
-        }
-
-        .hero-cta-primary:hover {
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-            border-color: var(--gold-light);
-            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.5);
-            transform: translateY(-3px);
-        }
-
-        .hero-cta-gold {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
-            border: 2px solid var(--gold);
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
-        }
-
-        .hero-cta-gold:hover {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.1));
-            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .hero-cta-label {
-            font-family: var(--font-mono);
-            font-size: var(--text-xs);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 0.25rem;
-        }
-
-        .hero-cta-primary .hero-cta-label {
-            color: rgba(0, 0, 0, 0.7);
-        }
-
-        .hero-cta-gold .hero-cta-label {
-            color: var(--gold);
-        }
-
-        .hero-cta-text {
-            font-size: clamp(1rem, 2.5vw, 1.25rem);
-            font-weight: 700;
-        }
-
-        .hero-cta-primary .hero-cta-text {
+            font-family: var(--font-sans);
+            font-size: clamp(1.125rem, 3vw, 1.375rem);
+            font-weight: 800;
             color: var(--black);
+            box-shadow:
+                0 4px 0 var(--gold-dark),
+                0 8px 20px rgba(255, 215, 0, 0.4),
+                0 0 60px rgba(255, 215, 0, 0.2);
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .hero-cta-gold .hero-cta-text {
-            color: var(--gold);
+        .hero-primary-cta a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
         }
 
-        /* Hero Resources */
-        .hero-resources {
-            margin-top: var(--space-2xl);
+        .hero-primary-cta a:hover::before {
+            left: 100%;
+        }
+
+        .hero-primary-cta a:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 6px 0 var(--gold-dark),
+                0 12px 30px rgba(255, 215, 0, 0.5),
+                0 0 80px rgba(255, 215, 0, 0.3);
+        }
+
+        .hero-primary-cta a:active {
+            transform: translateY(2px);
+            box-shadow:
+                0 2px 0 var(--gold-dark),
+                0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .hero-primary-cta .cta-subtitle {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        /* Hero Secondary Link */
+        .hero-secondary-link {
             text-align: center;
+            margin-bottom: clamp(2.5rem, 6vw, 4rem);
+        }
+
+        .hero-secondary-link a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: var(--text-base);
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: all var(--duration-fast) ease;
+        }
+
+        .hero-secondary-link a:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .hero-secondary-link a svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .hero-secondary-link a:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* Hero Resources Section */
+        .hero-resources {
+            position: relative;
+            padding-top: clamp(2rem, 5vw, 3rem);
+        }
+
+        .hero-resources::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(100%, 500px);
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
         }
 
         .hero-resources-label {
@@ -1005,39 +1052,66 @@
             font-size: var(--text-xs);
             color: var(--gray-500);
             text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-bottom: var(--space-md);
+            letter-spacing: 0.25em;
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+            text-align: center;
         }
 
         .hero-resources-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: clamp(0.5rem, 2vw, 1rem);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(0.75rem, 2vw, 1rem);
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .hero-resource-link {
-            display: inline-flex;
+        @media (max-width: 768px) {
+            .hero-resources-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-resources-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+        }
+
+        .hero-resource-card {
+            display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.6rem 1rem;
-            background: rgba(255, 215, 0, 0.05);
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            border-radius: 8px;
-            color: var(--gray-200);
-            font-size: var(--text-sm);
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(0.75rem, 2vw, 1rem);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
             text-decoration: none;
-            transition: all var(--duration-fast) var(--ease-out-expo);
+            transition: all var(--duration-normal) var(--ease-out-expo);
         }
 
-        .hero-resource-link:hover {
-            background: rgba(255, 215, 0, 0.1);
-            border-color: var(--gold);
-            color: var(--gold);
+        .hero-resource-card:hover {
+            background: rgba(255, 215, 0, 0.08);
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
         }
 
         .hero-resource-icon {
-            font-size: 1rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1;
+        }
+
+        .hero-resource-title {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 600;
+            color: var(--white);
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .hero-resource-card:hover .hero-resource-title {
+            color: var(--gold);
         }
 
         /* Responsive: Mobile */
@@ -1290,42 +1364,51 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container-tight">
-                <!-- Headline -->
+                <!-- Emotional Opening -->
                 <h1 class="hero-title">You Did It.</h1>
                 <p class="hero-tagline">We laughed. We cried. We became family.</p>
-                <p class="hero-subtitle">Your transformation is complete. Now it's time to implement.</p>
+                <p class="hero-body">What an incredible weekend. Your transformation journey has begun—and everything you need to keep moving forward is right here.</p>
 
-                <!-- Primary CTAs -->
-                <div class="hero-cta-row">
-                    <a href="https://societysecrets.com/schedule" target="_blank" class="hero-cta-primary">
-                        <span class="hero-cta-label">Next Step</span>
-                        <span class="hero-cta-text">Schedule Mentor Consultation</span>
+                <!-- Primary CTA - The One Action -->
+                <div class="hero-primary-cta">
+                    <a href="https://societysecrets.com/schedule" target="_blank">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        Schedule Your Mentor Consultation
                     </a>
-                    <a href="#level-3" class="hero-cta-gold">
-                        <span class="hero-cta-label">Go Deeper</span>
-                        <span class="hero-cta-text">Ascend to Level 3</span>
+                    <span class="cta-subtitle">Lock in your transformation with one-on-one guidance</span>
+                </div>
+
+                <!-- Secondary Link - Level 3 -->
+                <div class="hero-secondary-link">
+                    <a href="#level-3">
+                        Ready for the next level? Discover Level 3 Stargazer
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
                     </a>
                 </div>
 
-                <!-- Quick Access Resources -->
+                <!-- Resources Grid -->
                 <div class="hero-resources">
-                    <span class="hero-resources-label">Your Resources</span>
+                    <span class="hero-resources-label">Your Workshop Resources</span>
                     <div class="hero-resources-grid">
-                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" class="hero-resource-link">
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" class="hero-resource-card">
                             <span class="hero-resource-icon">📓</span>
-                            <span>Friday-Night Essence Workbook</span>
+                            <span class="hero-resource-title">FNE Workbook</span>
                         </a>
-                        <a href="#golden-life-sheet" class="hero-resource-link">
+                        <a href="#golden-life-sheet" class="hero-resource-card">
                             <span class="hero-resource-icon">📄</span>
-                            <span>Golden Life Sheet</span>
+                            <span class="hero-resource-title">Golden Life Sheet</span>
                         </a>
-                        <a href="#wealth-engine" class="hero-resource-link">
+                        <a href="#resources" class="hero-resource-card">
                             <span class="hero-resource-icon">💰</span>
-                            <span>Wealth Engine Calculator</span>
+                            <span class="hero-resource-title">Wealth Engine</span>
                         </a>
-                        <a href="#action-plan" class="hero-resource-link">
+                        <a href="#action-plan" class="hero-resource-card">
                             <span class="hero-resource-icon">✅</span>
-                            <span>Your Action Plan</span>
+                            <span class="hero-resource-title">Action Plan</span>
                         </a>
                     </div>
                 </div>
