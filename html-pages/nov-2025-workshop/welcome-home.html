@@ -661,6 +661,86 @@
         }
 
         /* ===========================
+           MEMBER STORIES SECTION
+        =========================== */
+        .member-stories-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 100%);
+        }
+
+        .member-stories-section .section-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .story-card {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.6));
+            border: 1px solid var(--gray-800);
+            border-left: 4px solid var(--gold);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .story-card:hover {
+            border-color: rgba(255, 215, 0, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .story-quote {
+            font-family: var(--font-serif);
+            font-size: var(--text-lg);
+            font-style: italic;
+            color: var(--gray-200);
+            line-height: 1.7;
+            margin: 0 0 var(--space-lg) 0;
+        }
+
+        .story-author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .story-author-name {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .story-author-role {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+        }
+
+        @media (max-width: 768px) {
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .story-quote {
+                font-size: var(--text-base);
+            }
+        }
+
+        /* ===========================
            QUICK ACCESS SECTION - REDESIGNED 2025
         =========================== */
         .quick-access-section {
@@ -2153,6 +2233,91 @@
                             <a href="mailto:support@neothink.com" class="card-link secondary" aria-label="Contact support at support@neothink.com">
                                 Contact Support
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Member Stories Section -->
+            <section class="member-stories-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-label">November 2025 Workshop</span>
+                        <h2>What Members Are Saying</h2>
+                        <p>Real moments from this weekend's transformation</p>
+                    </div>
+
+                    <div class="stories-grid">
+                        <div class="story-card">
+                            <p class="story-quote">"Like we just got back from a super-light-year journey, in two days, from the beginnings of our universe... and you all look like you haven't aged a day since our quickenings and re-births over the weekend."</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Roy L. Cochran</span>
+                                <span class="story-author-role">VIP Member</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"You just answered something that was given to me 45 years ago that I have never received an answer to and you just gave me that answer. I am forever indebted to you Sir."</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Mario Smalls</span>
+                                <span class="story-author-role">Member</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"This morning, I am my Future self. Yesterday was my old self."</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Irma Nodal</span>
+                                <span class="story-author-role">Member</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"That was the greatest speech ever delivered in all of history to this moment in time and we witnessed it live."</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Peggy Sue</span>
+                                <span class="story-author-role">Success Guide</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"I have been my own authority since June 4, 1974. It has cost me many jobs and opportunities through my life, but look where I am now."</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Gary Brown</span>
+                                <span class="story-author-role">Member</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"I haven't calmed down from yesterday. Very energized. It was electrifying!"</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Pamela Chase</span>
+                                <span class="story-author-role">Success Guide</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"Yes, Peggy Sue really took me on a journey back to my childhood! Unbelievable!!! Another Ah-Ha moment for me was when Wallace introduced us to the Wealth Engine. Amazing!"</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Gary Schleitwiler</span>
+                                <span class="story-author-role">VIP Member</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"I am experiencing the GREAT AWAKENING! What an awakening!"</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Phylis Carlman</span>
+                                <span class="story-author-role">Member</span>
+                            </div>
+                        </div>
+
+                        <div class="story-card">
+                            <p class="story-quote">"Good morning everyone!! I love my new family!!!"</p>
+                            <div class="story-author">
+                                <span class="story-author-name">Paula Bodnar</span>
+                                <span class="story-author-role">Member</span>
+                            </div>
                         </div>
                     </div>
                 </div>
