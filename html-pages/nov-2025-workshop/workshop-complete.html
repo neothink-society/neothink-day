@@ -908,6 +908,88 @@
             letter-spacing: 0.15em;
         }
 
+        /* Hero Action Cards */
+        .hero-actions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 1.5rem);
+            margin-top: var(--space-2xl);
+        }
+
+        .hero-action-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: var(--space-xl) var(--space-lg);
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            text-decoration: none;
+            transition: all var(--duration-normal) var(--ease-out-expo);
+        }
+
+        .hero-action-card:hover {
+            background: rgba(255, 215, 0, 0.08);
+            border-color: rgba(255, 215, 0, 0.4);
+            transform: translateY(-4px);
+        }
+
+        .hero-action-featured {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.03));
+            border-color: rgba(255, 215, 0, 0.4);
+        }
+
+        .hero-action-featured:hover {
+            border-color: var(--gold);
+            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+        }
+
+        .hero-action-icon {
+            font-size: var(--text-4xl);
+            margin-bottom: var(--space-md);
+        }
+
+        .hero-action-title {
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-xs);
+        }
+
+        .hero-action-featured .hero-action-title {
+            color: var(--gold);
+        }
+
+        .hero-action-desc {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .hero-actions-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .hero-action-card {
+                flex-direction: row;
+                text-align: left;
+                padding: var(--space-lg);
+                gap: var(--space-md);
+            }
+
+            .hero-action-icon {
+                font-size: var(--text-2xl);
+                margin-bottom: 0;
+            }
+
+            .hero-action-card > div:last-child {
+                flex: 1;
+            }
+        }
+
         /* Mentor Benefits Grid */
         .mentor-benefits-grid {
             display: grid;
@@ -1136,48 +1218,38 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container-tight">
-                <!-- Completion Badge -->
+                <!-- Badge -->
                 <div class="completion-badge">
                     <span class="completion-badge-text">✓ November 22-23, 2025</span>
                 </div>
 
                 <!-- Headline -->
                 <h1 class="hero-title">You Did It.</h1>
-                <p style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--gold); text-align: center; margin: 0 0 var(--space-lg) 0; font-style: italic;">We laughed. We cried. We became family.</p>
+                <p style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--gold); text-align: center; margin: 0 0 var(--space-xl) 0; font-style: italic;">We laughed. We cried. We became family.</p>
 
                 <!-- Subtitle -->
-                <p class="hero-subtitle">Your transformation is complete. Now it's time to implement.<br>Everything you need is right here.</p>
+                <p class="hero-subtitle">Your transformation is complete. Now it's time to implement.</p>
 
-                <!-- Stats Row -->
-                <div style="display: flex; justify-content: center; gap: var(--space-2xl); flex-wrap: wrap; margin: var(--space-2xl) 0; padding: var(--space-xl) 0; border-top: 1px solid rgba(255, 215, 0, 0.2); border-bottom: 1px solid rgba(255, 215, 0, 0.2);">
-                    <div style="text-align: center;">
-                        <div style="font-size: var(--text-3xl); margin-bottom: var(--space-xs);">🎓</div>
-                        <div style="font-size: var(--text-sm); color: var(--gray-300);">12+ Hours of Training</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: var(--text-3xl); margin-bottom: var(--space-xs);">⭐</div>
-                        <div style="font-size: var(--text-sm); color: var(--gray-300);">Mark Hamilton LIVE</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: var(--text-3xl); margin-bottom: var(--space-xs);">📄</div>
-                        <div style="font-size: var(--text-sm); color: var(--gray-300);">Your Golden Life Sheet</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: var(--text-3xl); margin-bottom: var(--space-xs);">💰</div>
-                        <div style="font-size: var(--text-sm); color: var(--gray-300);">Wealth Engine Calculator</div>
-                    </div>
-                </div>
-
-                <!-- Primary CTA -->
-                <div style="text-align: center;">
-                    <a href="https://societysecrets.com/schedule" class="btn btn-primary" target="_blank" style="font-size: var(--text-xl); padding: 1.25rem 2.5rem; margin-bottom: var(--space-lg);">Schedule Your Mentor Consultation</a>
-                    <p style="color: var(--gray-400); font-size: var(--text-sm); margin: 0;">Lock in your breakthroughs while clarity is high</p>
-                </div>
-
-                <!-- Secondary Links -->
-                <div style="display: flex; justify-content: center; gap: var(--space-xl); margin-top: var(--space-2xl); flex-wrap: wrap;">
-                    <a href="#resources" style="color: var(--gold); font-size: var(--text-base); text-decoration: none; border-bottom: 1px solid var(--gold);">↓ View Resources</a>
-                    <a href="#level-3" style="color: var(--gold); font-size: var(--text-base); text-decoration: none; border-bottom: 1px solid var(--gold);">↓ Explore Level 3</a>
+                <!-- 3 Action Cards -->
+                <div class="hero-actions-grid">
+                    <!-- Schedule -->
+                    <a href="https://societysecrets.com/schedule" target="_blank" class="hero-action-card">
+                        <div class="hero-action-icon">📅</div>
+                        <div class="hero-action-title">Schedule Consultation</div>
+                        <div class="hero-action-desc">Lock in your breakthroughs with a mentor</div>
+                    </a>
+                    <!-- Level 3 -->
+                    <a href="#level-3" class="hero-action-card hero-action-featured">
+                        <div class="hero-action-icon">⭐</div>
+                        <div class="hero-action-title">Ascend to Level 3</div>
+                        <div class="hero-action-desc">Remove all limitations—Jan 10-12, 2026</div>
+                    </a>
+                    <!-- Resources -->
+                    <a href="#resources" class="hero-action-card">
+                        <div class="hero-action-icon">📚</div>
+                        <div class="hero-action-title">Your Resources</div>
+                        <div class="hero-action-desc">Golden Life Sheet, Wealth Engine & more</div>
+                    </a>
                 </div>
             </div>
         </section>
