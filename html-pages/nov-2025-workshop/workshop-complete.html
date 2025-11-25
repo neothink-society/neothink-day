@@ -908,6 +908,20 @@
             letter-spacing: 0.15em;
         }
 
+        /* Mentor Benefits Grid */
+        .mentor-benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        @media (max-width: 768px) {
+            .mentor-benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
         /* Mobile Adjustments */
         @media (max-width: 480px) {
             .hero-title br {
@@ -1301,24 +1315,41 @@
                 </div>
 
                 <div class="mentor-card">
-                    <div class="content-grid">
-                        <div class="content-card" style="border-left-color: var(--gold); border-left-width: 6px;">
-                            <h3 class="content-card-title">Your 30-Minute Strategy Session:</h3>
-                            <ul class="content-list">
-                                <li><strong>Golden Life Sheet Review:</strong> Refine your Friday Night Essence and ensure your dream projects align with your true self</li>
-                                <li><strong>Wealth Engine Roadmap:</strong> Lock in your path to Financial Freedom with specific timelines and milestones</li>
-                                <li><strong>Next 30 Days Plan:</strong> Walk away with clear action steps—what to do Monday morning, next week, and beyond</li>
-                            </ul>
-                        </div>
+                    <!-- Strategy Session Card -->
+                    <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: clamp(1.5rem, 3vw, 2rem);">
+                        <h3 style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--gold); margin: 0 0 var(--space-xl) 0; text-align: center;">Your 30-Minute Strategy Session</h3>
 
-                        <div class="content-card" style="border-left-color: var(--gold); border-left-width: 6px;">
-                            <h3 class="content-card-title">The Critical Window:</h3>
-                            <p class="content-card-text">
-                                Right now, your clarity is at its peak. Your breakthroughs are fresh. But without action, the anti-civilization pulls you back—old patterns reassert, doubt creeps in, and transformation fades.
-                                <br><br>
-                                Your mentor helps you <strong>lock in what you gained</strong> and convert insight into committed action. This is pure implementation support. We want you to succeed.
-                            </p>
+                        <div class="mentor-benefits-grid">
+                            <!-- Item 1 -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                                <div style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">📄</div>
+                                <div style="font-size: var(--text-base); font-weight: 700; color: var(--gold); margin-bottom: var(--space-xs);">Golden Life Sheet Review</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Refine your Friday Night Essence and align your dreams with your true self</div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                                <div style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">💰</div>
+                                <div style="font-size: var(--text-base); font-weight: 700; color: var(--gold); margin-bottom: var(--space-xs);">Wealth Engine Roadmap</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Lock in your path to Financial Freedom with specific timelines</div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                                <div style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">🎯</div>
+                                <div style="font-size: var(--text-base); font-weight: 700; color: var(--gold); margin-bottom: var(--space-xs);">Next 30 Days Plan</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Clear action steps—what to do Monday morning and beyond</div>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Critical Window Card -->
+                    <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02)); border: 2px solid rgba(255, 215, 0, 0.4); border-radius: 16px; padding: clamp(1.5rem, 4vw, 2.5rem); text-align: center;">
+                        <h3 style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--white); margin: 0 0 var(--space-lg) 0;">The Critical Window</h3>
+                        <p style="font-size: var(--text-lg); color: var(--gray-200); line-height: 1.8; margin: 0 auto var(--space-lg); max-width: 700px;">
+                            Right now, your clarity is at its peak. Your breakthroughs are fresh. But without action, the anti-civilization pulls you back—old patterns reassert, doubt creeps in, and transformation fades.
+                        </p>
+                        <p style="font-size: var(--text-lg); color: var(--gold); line-height: 1.8; margin: 0 auto; max-width: 700px; font-weight: 600;">
+                            Your mentor helps you lock in what you gained and convert insight into committed action.
+                        </p>
                     </div>
 
                     <div style="text-align: center; margin-top: var(--space-2xl);">
