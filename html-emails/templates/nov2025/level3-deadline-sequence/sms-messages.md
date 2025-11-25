@@ -1,10 +1,12 @@
 # Level 3 Deadline SMS Sequence
 ## November 25-26, 2025 (Deadline: Wednesday Midnight ET)
 
+**REVISED SCHEDULE** - Starting Tuesday afternoon
+
 ---
 
-### SMS 1: Tuesday Morning
-**Send Time:** Tuesday 10am ET / 7am PT
+### SMS 1: Tuesday Afternoon (SEND IMMEDIATELY)
+**Send Time:** Tuesday 2pm ET / 11am PT
 
 ```
 This weekend changed something in you. Level 3 is where you lock it in.
@@ -18,8 +20,8 @@ Expires Wed midnight ET.
 
 ---
 
-### SMS 2: Tuesday Afternoon
-**Send Time:** Tuesday 3pm ET / 12pm PT
+### SMS 2: Tuesday Late Afternoon
+**Send Time:** Tuesday 7pm ET / 4pm PT
 
 ```
 Day 1: Mind
@@ -36,7 +38,7 @@ Honor system pricing ends tomorrow midnight.
 ---
 
 ### SMS 3: Tuesday Evening
-**Send Time:** Tuesday 9pm ET / 6pm PT
+**Send Time:** Tuesday 10pm ET / 7pm PT
 
 ```
 "I took the leap. And I am so glad. I have no regrets."
