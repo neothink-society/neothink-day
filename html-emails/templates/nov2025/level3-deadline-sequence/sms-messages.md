@@ -85,11 +85,11 @@ This is your final day to decide.
 **Send Time:** Wednesday 9pm ET / 6pm PT
 
 ```
-⏰ 3 HOURS LEFT
+Just checking in one more time.
 
-Level 3 honor system expires at midnight ET.
+Level 3 honor system closes at midnight. We believe in what it can do for you.
 
-That feeling from this weekend? Level 3 makes it permanent.
+If it feels right, we're here.
 
 → societysecrets.com/level3
 ```
@@ -100,13 +100,11 @@ That feeling from this weekend? Level 3 makes it permanent.
 **Send Time:** Wednesday 11pm ET / 8pm PT
 
 ```
-🚨 FINAL HOUR
+A final note — honor system closes in about an hour.
 
-Level 3 closes in 60 minutes.
+No pressure. You know what felt true this weekend.
 
-$1,997 now, $3,003 after $50K earnings.
-
-Don't wake up tomorrow wishing you had.
+Whatever you decide, grateful you were with us.
 
 → societysecrets.com/level3
 ```
