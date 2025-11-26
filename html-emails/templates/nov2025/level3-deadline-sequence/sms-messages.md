@@ -18,7 +18,7 @@ $1,997 to start. The rest ($3,003) only after you've earned $50K+ using what you
 
 Questions? Talk to a mentor: societysecrets.com/schedule
 
-Or join our Q&A Wed 2pm PT → societysecrets.com/level3
+Or join our Q&A Wed 5pm ET / 2pm PT → societysecrets.com/level3
 ```
 
 ---
@@ -50,7 +50,7 @@ See the full breakdown → societysecrets.com/level3
 "I can really create values and follow my heart's desire."
 — Pari M., Level 3 Member
 
-Tomorrow: Q&A at 2pm PT, Welcome Party at 3pm.
+Tomorrow: Q&A 5pm-7pm ET, Welcome Party at 7pm ET.
 
 → societysecrets.com/level3
 ```
@@ -65,9 +65,9 @@ Today's the day.
 
 We believe in Level 3 so deeply, we'll wait until you've earned $50K+ to ask for the rest. That's the honor system.
 
-→ 2pm PT: Q&A (ask anything)
-→ 3pm PT: Welcome Party
-→ 9pm PT: Honor system closes
+→ 5pm ET / 2pm PT: Q&A (ask anything)
+→ 7pm ET / 4pm PT: Welcome Party
+→ 12am ET / 9pm PT: Honor system closes
 
 Still deciding? Talk to a mentor: societysecrets.com/schedule
 ```
@@ -78,7 +78,7 @@ Still deciding? Talk to a mentor: societysecrets.com/schedule
 **Send Time:** Wednesday 3pm ET / 12pm PT
 
 ```
-Q&A starts in 2 hours (2pm PT).
+Q&A starts in 2 hours (5pm ET / 2pm PT).
 
 You felt something this weekend. That clarity, that energy — Level 3 is where it becomes permanent.
 
@@ -144,8 +144,8 @@ Whatever you decide — grateful you were with us this weekend.
 - Unreachable star becoming reachable
 - Millionaire mindset reframe ("How can I afford this?")
 - Member testimonials
-- Q&A meeting reminder (Wed 2pm PT)
-- Welcome Party mention (Wed 3pm PT)
+- Q&A meeting reminder (Wed 5pm-7pm ET / 2pm-4pm PT)
+- Welcome Party mention (Wed 7pm ET / 4pm PT)
 - Deadline (Wed 9pm PT)
 - Mentor session link (societysecrets.com/schedule)
 - Soft, trust-based tone throughout
