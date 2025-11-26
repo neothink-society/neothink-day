@@ -107,11 +107,11 @@ $1,997 to start. The rest only after you've earned $50K+. On your honor.
 ```
 Happy Thanksgiving 🧡
 
-We've been hearing stories of lives changing this week. Whether you enrolled in Level 3 or not — we're grateful you were with us.
+We've been hearing stories of lives changing this week.
 
 Your journey doesn't end here. The best is yet to come.
 
-Access your workshop resources: societysecrets.com/level3
+Access your workshop resources: neothinkday.com/home
 ```
 
 ---
