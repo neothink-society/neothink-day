@@ -84,17 +84,15 @@ Passcode: 787672
 
 ---
 
-### SMS 5: Wednesday 11pm — FINAL HOUR
+### SMS 5: Wednesday 11pm — FINAL NOTE
 **Send Time:** Wednesday 11pm Eastern (8pm Pacific)
 
 ```
-One hour left.
+A final note.
 
-At midnight Eastern, the Level 3 honor system offer closes.
+The honor system pricing closes at midnight Eastern tonight.
 
-If you've been thinking about it — now is the moment.
-
-$1,997 to start. The rest only after you've earned $50K+. On your honor.
+You already have everything you need inside you. Level 3 is simply here if you're ready to go further, faster.
 
 → societysecrets.com/level3
 ```
