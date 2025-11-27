@@ -88,11 +88,15 @@ Passcode: 787672
 **Send Time:** Wednesday 11pm Eastern (8pm Pacific)
 
 ```
-A final note.
+A final note before midnight.
 
-The honor system pricing closes at midnight Eastern tonight.
+You already carry everything you need inside you.
 
-You already have everything you need inside you. Level 3 is simply here if you're ready to go further, faster.
+The Stargazer Event is simply here if you're ready to go further, faster—with us beside you, building your plan together.
+
+Honor system closes at midnight Eastern.
+
+Readiness isn't the prerequisite. Courage is.
 
 → societysecrets.com/level3
 ```
