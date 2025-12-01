@@ -1,10 +1,25 @@
 # Neothink Society - Design System Documentation
-**Version 2.0** • November 12, 2025
+**Version 2.1** • November 27, 2025
+
+> **Canonical Source of Truth** for all design tokens, typography, colors, spacing, and component standards across the Neothink platform.
 
 ## Overview
 Premium gold and black theme emphasizing wealth, exclusivity, and transformation through metallic gold gradients, modern sans-serif typography, and dark mode aesthetics.
 
-**Latest Update (v2.0):** Applied 10/10 A+ technical design excellence across all 14 workshop pages with optical typography system, custom easing curves, layered shadows, and sophisticated micro-interactions.
+**Philosophy:** Premium, accessible, fast. Every page embodies wealth and transformation through:
+- **Premium gold & black aesthetic** - Metallic gradients, sophisticated shadows, refined typography
+- **Accessibility-first** - Keyboard navigation, screen readers, WCAG contrast, reduced motion
+- **Performance-focused** - Fast, responsive, optimized for all devices
+- **Conversion-optimized** - Clear CTAs, frictionless forms, trust-building design
+
+### Related Documentation
+| Document | Purpose |
+|----------|---------|
+| **DESIGN-SYSTEM.md** (this file) | Canonical design tokens, colors, typography, components |
+| **BRAND-GUIDELINES.md** | Brand identity, voice, customer journey, pricing |
+| **DESIGN-APPROACH.md** | Implementation guide: interactions, forms, performance, event states |
+| **html-emails/EMAIL-DESIGN-SYSTEM.md** | Email-specific standards and components |
+| **COMPONENT-LIBRARY.md** | Reusable HTML/CSS blocks for web pages |
 
 ---
 

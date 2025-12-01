@@ -1,5 +1,16 @@
 # Neothink Component Library
-**Reusable HTML/CSS Blocks for Nov 2025 Event Pages**
+**Reusable HTML/CSS Blocks for Web Pages**
+**Version 1.1 | November 27, 2025**
+
+> **Ready-to-use HTML/CSS components** for web pages. Design tokens sourced from **DESIGN-SYSTEM.md**.
+
+### Related Documentation
+| Document | Purpose |
+|----------|---------|
+| **DESIGN-SYSTEM.md** | Canonical design tokens (colors, typography, spacing) |
+| **COMPONENT-LIBRARY.md** (this file) | Reusable web page components |
+| **DESIGN-APPROACH.md** | Implementation patterns, interactions, performance |
+| **html-emails/EMAIL-DESIGN-SYSTEM.md** | Email-specific components |
 
 ---
 
@@ -16,7 +27,7 @@
     /* Colors */
     --gold: #FFD700;
     --gold-light: #FFED4E;
-    --gold-dark: #B8860B;
+    --gold-dark: #D4AF37;  /* Standardized - depth, shadows, muted accents */
     --black: #0a0a0a;
     --gray-900: #1a1a1a;
     --gray-800: #2a2a2a;

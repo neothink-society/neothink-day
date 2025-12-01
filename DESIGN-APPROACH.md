@@ -1,16 +1,16 @@
-# Neothink Society - Design Approach & Standards
-**Premium Gold & Dark Theme Implementation Guide**
-**Version 2.0** • November 2025
+# Neothink Society - Implementation Guide
+**Premium Gold & Dark Theme Implementation Standards**
+**Version 2.1** • November 27, 2025
 
----
+> **Implementation-focused guide** for interactions, forms, performance, and event states. For design tokens (colors, typography, spacing), see **DESIGN-SYSTEM.md**.
 
-## Philosophy
-
-**Premium, accessible, fast.** Every page embodies wealth and transformation through:
-- **Premium gold & black aesthetic** - Metallic gradients, sophisticated shadows, refined typography
-- **Accessibility-first** - Keyboard navigation, screen readers, WCAG contrast, reduced motion
-- **Performance-focused** - Fast, responsive, optimized for all devices
-- **Conversion-optimized** - Clear CTAs, frictionless forms, trust-building design
+### Related Documentation
+| Document | Purpose |
+|----------|---------|
+| **DESIGN-SYSTEM.md** | Canonical design tokens (use this for colors, typography, spacing) |
+| **DESIGN-APPROACH.md** (this file) | Implementation patterns, interactions, performance |
+| **BRAND-GUIDELINES.md** | Brand identity, voice, customer journey |
+| **html-emails/EMAIL-DESIGN-SYSTEM.md** | Email-specific standards |
 
 ---
 
@@ -979,5 +979,5 @@ For every new page, verify:
 ---
 
 **Document Status**: Living Standard
-**Last Updated**: November 11, 2025
-**Next Review**: After first 4 pages built
+**Last Updated**: November 27, 2025
+**Canonical Tokens**: See DESIGN-SYSTEM.md

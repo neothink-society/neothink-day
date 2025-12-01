@@ -1,11 +1,21 @@
 # Neothink Society Email Design System
-**Version 1.0 | November 2025**
+**Version 1.1 | November 27, 2025**
+
+> **Email-specific design standards** for HTML email templates. For web design tokens, see **DESIGN-SYSTEM.md**.
 
 ## Overview
 
 This document defines the complete design system for Neothink Society email communications. All email templates must follow these standards to ensure brand consistency, technical reliability, and optimal user experience across all devices and email clients.
 
 **Reference Template**: `level3-welcome-recording.html` - The gold standard for all future emails.
+
+### Related Documentation
+| Document | Purpose |
+|----------|---------|
+| **DESIGN-SYSTEM.md** | Canonical web design tokens (colors, typography, spacing) |
+| **BRAND-GUIDELINES.md** | Brand identity, voice, customer journey |
+| **EMAIL-DESIGN-SYSTEM.md** (this file) | Email-specific standards and components |
+| **BRANDING-ISSUES.md** | Migration tracking for email templates |
 
 ---
 

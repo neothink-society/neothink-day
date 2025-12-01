@@ -4,7 +4,7 @@
 **Dates**: December 6-7, 2025
 **Day 1**: 11:00 AM Eastern / 8:00 AM Pacific (all day, may go late)
 **Day 2**: 12:00 PM Eastern / 9:00 AM Pacific (all day)
-**VIP Deadline**: 11:00 AM Eastern, Saturday December 6
+**VIP Deadline**: 11:00 AM Eastern / 8:00 AM Pacific, Saturday December 6
 
 ---
 
@@ -62,7 +62,7 @@ Block your calendar NOW. Day of Enlightenment is THIS Saturday + Sunday. Two ful
 **Pairs with**: preparation-3days.html
 
 ```
-⚡ 72 HOURS: VIP upgrade closes Saturday at 11am Eastern. GUARANTEED access to intimate group session with Wallace Hamilton. Last chance → neothinkevent.com/home
+⚡ 72 HOURS: VIP closes Sat 11am Eastern / 8am Pacific. GUARANTEED intimate session with Wallace Hamilton. Last chance → neothinkevent.com/home
 ```
 
 ---
@@ -166,8 +166,8 @@ Day 2 starts in 1 HOUR at 12pm Eastern / 9am Pacific. Same Zoom link as yesterda
 
 ## SMS Send Schedule Summary
 
-| Day | Date | Time | SMS |
-|-----|------|------|-----|
+| Day | Date | Time (Eastern / Pacific) | SMS |
+|-----|------|--------------------------|-----|
 | Registration | Any | Immediate | Confirmation |
 | VIP Purchase | Any | Immediate | VIP Confirmation |
 | 5 Days | Mon, Dec 1 | Morning | Pre-work reminder |
@@ -175,11 +175,11 @@ Day 2 starts in 1 HOUR at 12pm Eastern / 9am Pacific. Same Zoom link as yesterda
 | 3 Days | Wed, Dec 3 | Morning | VIP deadline (72hr) |
 | 2 Days | Thu, Dec 4 | Morning | Tech check |
 | 1 Day | Fri, Dec 5 | Evening | Final reminder |
-| Day 1 | Sat, Dec 6 | 10am ET | Zoom link delivery |
-| Day 1 | Sat, Dec 6 | 11am ET | Starting now |
+| Day 1 | Sat, Dec 6 | 10am ET / 7am PT | Zoom link delivery |
+| Day 1 | Sat, Dec 6 | 11am ET / 8am PT | Starting now |
 | Day 1 | Sat, Dec 6 | Evening | Day 1 complete |
-| Day 2 | Sun, Dec 7 | 11am ET | 1-hour reminder |
-| Day 2 | Sun, Dec 7 | 12pm ET | Starting now |
+| Day 2 | Sun, Dec 7 | 11am ET / 8am PT | 1-hour reminder |
+| Day 2 | Sun, Dec 7 | 12pm ET / 9am PT | Starting now |
 
 ---
 

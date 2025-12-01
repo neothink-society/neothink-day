@@ -1,6 +1,16 @@
 # Neothink Society Brand Guidelines & Project Context
 
-**Last Updated:** November 11, 2025
+**Last Updated:** November 27, 2025
+
+> **Brand identity, voice, and customer journey** for the Neothink Society platform. For design tokens, see **DESIGN-SYSTEM.md**.
+
+### Related Documentation
+| Document | Purpose |
+|----------|---------|
+| **BRAND-GUIDELINES.md** (this file) | Brand identity, voice, customer journey, pricing |
+| **DESIGN-SYSTEM.md** | Canonical design tokens (colors, typography, spacing) |
+| **DESIGN-APPROACH.md** | Implementation patterns, interactions, performance |
+| **html-emails/EMAIL-DESIGN-SYSTEM.md** | Email-specific standards |
 
 ---
 
@@ -447,7 +457,7 @@ This standard aligns with core brand values:
 ### Color Palette
 - **Primary:** Gold #FFD700
 - **Accent Gold Light:** #FFED4E
-- **Accent Gold Dark:** #B8860B
+- **Accent Gold Dark:** #D4AF37
 - **Background:** Black #0a0a0a
 - **Surfaces:** Grays #1a1a1a to #e5e5e5
 - **Text:** White #ffffff
