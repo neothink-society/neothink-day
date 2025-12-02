@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="January 2026 Neothink Workshop - Access your resources, Golden Life Sheet, Wealth Engine Calculator, and schedule your mentor consultation">
+    <title>Workshop Complete - January 2026 Neothink Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Colors */
+            --black: #000000;
+            --white: #ffffff;
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #D4AF37;
+            --gray-900: #0a0a0a;
+            --gray-800: #141414;
+            --gray-700: #1f1f1f;
+            --gray-600: #2d2d2d;
+            --gray-500: #666666;
+            --gray-400: #888888;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --red: #ff0000;
+
+            /* Typography */
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
+            --font-mono: 'Courier Prime', 'Courier New', Courier, monospace;
+
+            /* Spacing */
+            --space-xs: clamp(0.25rem, 1vw, 0.5rem);
+            --space-sm: clamp(0.5rem, 2vw, 0.75rem);
+            --space-md: clamp(0.75rem, 2vw, 1rem);
+            --space-lg: clamp(1rem, 3vw, 1.5rem);
+            --space-xl: clamp(1.5rem, 4vw, 2rem);
+            --space-2xl: clamp(2rem, 5vw, 3rem);
+            --space-3xl: clamp(3rem, 8vw, 5rem);
+
+            /* Text sizes */
+            --text-xs: clamp(0.75rem, 2vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 2vw, 1rem);
+            --text-base: clamp(1rem, 2.5vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 3vw, 1.25rem);
+            --text-xl: clamp(1.25rem, 3.5vw, 1.5rem);
+            --text-2xl: clamp(1.5rem, 4vw, 2rem);
+            --text-3xl: clamp(2rem, 5vw, 2.5rem);
+            --text-4xl: clamp(2.5rem, 6vw, 3.5rem);
+            --text-5xl: clamp(3rem, 8vw, 4.5rem);
+
+            /* Animation timing */
+            --duration-fast: 200ms;
+            --duration-normal: 300ms;
+            --duration-slow: 500ms;
+            --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+            --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.7;
+            color: var(--white);
+            background-color: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: var(--gold);
+            color: var(--black);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Container Utilities */
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        .container-narrow {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        .container-tight {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        /* Section Utilities */
+        section {
+            padding: var(--space-3xl) 0;
+        }
+
+        .bg-dark-gray {
+            background-color: var(--gray-900);
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 215, 0, 0.01));
+        }
+
+        /* Header */
+        .workshop-header {
+            padding: clamp(1rem, 3vw, 1.5rem) 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .classification {
+            margin: 0;
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-align: center;
+        }
+
+        /* Hero Section - Excellence Design */
+        .hero-section {
+            padding: clamp(4rem, 10vw, 7rem) 0 clamp(3rem, 8vw, 5rem);
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 215, 0, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 50% 100%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 80px;
+            background: linear-gradient(to bottom, var(--gold), transparent);
+            opacity: 0.5;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
+            color: var(--white);
+            text-shadow: 0 0 80px rgba(255, 215, 0, 0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            font-style: italic;
+            text-align: center;
+            color: var(--gold);
+            margin: 0 0 clamp(1.5rem, 4vw, 2rem) 0;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .hero-body {
+            font-size: var(--text-lg);
+            text-align: center;
+            color: var(--gray-300);
+            margin: 0 auto clamp(2rem, 5vw, 3rem);
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: var(--space-2xl) 0;
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: clamp(16px, 3vw, 24px);
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            text-align: center;
+            transition: all var(--duration-normal) var(--ease-out-expo);
+        }
+
+        .stat-card:hover {
+            border-color: rgba(255, 215, 0, 0.6);
+            transform: translateY(-4px);
+        }
+
+        .stat-number {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+        }
+
+        .stat-label {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            font-weight: 600;
+        }
+
+        /* CTA Buttons */
+        .cta-buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: clamp(1rem, 3vw, 1.25rem) clamp(1.5rem, 4vw, 2.5rem);
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: clamp(12px, 2vw, 16px);
+            transition: all var(--duration-normal) var(--ease-in-out);
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            line-height: 1.4;
+            min-width: 280px;
+            max-width: 600px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            color: var(--black);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus-visible {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:focus-visible {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 640px) {
+            .btn {
+                width: 100%;
+                min-width: auto;
+            }
+        }
+
+        /* Value Banner Section (HIGH PROMINENCE) */
+        .vip-banner-section {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,
+                rgba(255, 215, 0, 0.12) 0%,
+                rgba(255, 154, 0, 0.08) 50%,
+                rgba(255, 215, 0, 0.12) 100%
+            );
+            border-top: 3px solid rgba(255, 215, 0, 0.4);
+            border-bottom: 3px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 0 60px rgba(255, 215, 0, 0.15);
+        }
+
+        .vip-banner {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: var(--space-3xl);
+            align-items: center;
+            padding: var(--space-3xl) 0;
+        }
+
+        @media (max-width: 768px) {
+            .vip-banner {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+                padding: var(--space-2xl) var(--space-md);
+            }
+        }
+
+        .vip-banner-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .vip-banner-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            font-weight: 800;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            background: rgba(255, 215, 0, 0.15);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            align-self: flex-start;
+        }
+
+        .vip-banner-eyebrow svg {
+            width: 24px;
+            height: 24px;
+            animation: pulse-glow-gold 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow-gold {
+            0%, 100% {
+                opacity: 1;
+                filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                filter: drop-shadow(0 0 12px rgba(255, 215, 0, 1));
+                transform: scale(1.1);
+            }
+        }
+
+        .vip-banner-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            margin: var(--space-sm) 0 0 0;
+        }
+
+        .vip-banner-title .highlight {
+            color: var(--gold);
+        }
+
+        .vip-banner-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-200);
+            line-height: 1.6;
+            margin: var(--space-sm) 0 0 0;
+        }
+
+        .vip-banner-benefits {
+            list-style: none;
+            padding: 0;
+            margin: var(--space-lg) 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .vip-benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            line-height: 1.6;
+        }
+
+        .vip-benefit-item svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            color: var(--gold);
+            margin-top: 2px;
+        }
+
+        .vip-benefit-item strong {
+            color: var(--gold);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .vip-banner-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-lg);
+        }
+
+        .vip-banner-value {
+            background: rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--gold);
+            border-radius: clamp(16px, 3vw, 24px);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+        }
+
+        .vip-value-label {
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .vip-value-price {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: var(--space-sm);
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .vip-value-note {
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            font-style: italic;
+            line-height: 1.6;
+            max-width: 320px;
+        }
+
+        .vip-banner-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: 1.5rem 3rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-xl);
+            font-weight: 800;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border: none;
+            border-radius: 16px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 70px;
+            box-shadow:
+                0 12px 40px rgba(255, 215, 0, 0.5),
+                0 0 80px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: glow-pulse 2.5s ease-in-out infinite;
+        }
+
+        .vip-banner-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .vip-banner-button:hover::before {
+            left: 100%;
+        }
+
+        .vip-banner-button:hover {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            box-shadow:
+                0 16px 50px rgba(255, 215, 0, 0.7),
+                0 0 100px rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow:
+                    0 12px 40px rgba(255, 215, 0, 0.5),
+                    0 0 80px rgba(255, 215, 0, 0.2);
+            }
+            50% {
+                box-shadow:
+                    0 16px 50px rgba(255, 215, 0, 0.7),
+                    0 0 100px rgba(255, 215, 0, 0.3);
+            }
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
+            color: var(--white);
+        }
+
+        .section-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            line-height: 1.6;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        .content-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid rgba(255, 215, 0, 0.6);
+            border-radius: clamp(16px, 3vw, 20px);
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            transition: all var(--duration-normal) var(--ease-out-expo);
+        }
+
+        .content-card:hover {
+            transform: translateY(-2px);
+            border-left-width: clamp(6px, 1.5vw, 8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .content-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: clamp(1rem, 2vw, 1.25rem);
+            gap: clamp(0.75rem, 2vw, 1rem);
+            flex-wrap: wrap;
+        }
+
+        .content-number {
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .content-card-title {
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            margin: 0;
+            color: var(--white);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .content-card-text {
+            color: var(--gray-200);
+            line-height: 1.8;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            overflow-x: hidden;
+        }
+
+        .content-card-text strong {
+            color: var(--white);
+        }
+
+        .content-list {
+            list-style: none;
+            padding: 0;
+            margin-top: clamp(1rem, 2vw, 1.25rem);
+        }
+
+        .content-list li {
+            padding-left: clamp(1.5rem, 3vw, 2rem);
+            position: relative;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--gray-200);
+        }
+
+        .content-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Golden Life Sheet Section */
+        .golden-sheet-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(1rem, 2vw, 1.5rem);
+            margin-top: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        @media (max-width: 640px) {
+            .golden-sheet-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .sheet-item {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: clamp(12px, 2vw, 16px);
+            padding: clamp(1.25rem, 3vw, 1.75rem);
+            transition: all var(--duration-normal) var(--ease-in-out);
+        }
+
+        .sheet-item:hover {
+            transform: scale(1.02);
+            border-color: rgba(255, 215, 0, 0.5);
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .sheet-item-number {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 900;
+            color: var(--gold);
+            margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+        }
+
+        .sheet-item-title {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+        }
+
+        .sheet-item-desc {
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* Resources Section */
+        .resource-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: clamp(16px, 3vw, 20px);
+            padding: clamp(2rem, 4vw, 2.5rem);
+            text-align: center;
+            transition: all var(--duration-normal) var(--ease-out-expo);
+        }
+
+        .resource-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 60px rgba(255, 215, 0, 0.2);
+        }
+
+        .resource-icon {
+            width: clamp(48px, 10vw, 64px);
+            height: clamp(48px, 10vw, 64px);
+            margin: 0 auto clamp(1rem, 2vw, 1.5rem);
+            color: var(--gold);
+        }
+
+        .resource-title {
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            font-weight: 700;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--white);
+        }
+
+        .resource-description {
+            font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+            color: var(--gray-300);
+            line-height: 1.6;
+            margin-bottom: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        /* Mentor Consultation Section */
+        .mentor-section {
+            background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 70%), var(--gray-900);
+        }
+
+        .mentor-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.05));
+            border: 3px solid rgba(255, 215, 0, 0.4);
+            border-radius: clamp(20px, 4vw, 32px);
+            padding: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+        }
+
+        /* VIP Section (Full Value Section) */
+        .vip-section {
+            background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.12) 0%, transparent 70%), var(--black);
+            border-top: 2px solid rgba(255, 215, 0, 0.4);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+        }
+
+        .vip-container {
+            padding: clamp(2rem, 6vw, 4rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            border: 3px solid rgba(255, 215, 0, 0.5);
+            border-radius: clamp(20px, 4vw, 32px);
+            box-shadow: 0 0 120px rgba(255, 215, 0, 0.3);
+            transition: all var(--duration-normal) var(--ease-out-expo);
+        }
+
+        @media (hover: hover) {
+            .vip-container:hover {
+                box-shadow: 0 0 140px rgba(255, 215, 0, 0.35), 0 24px 48px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .vip-header {
+            text-align: center;
+            margin-bottom: clamp(2rem, 5vw, 3rem);
+        }
+
+        .vip-badge {
+            display: inline-block;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+            border: 2px solid var(--gold);
+            border-radius: 100px;
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .vip-badge-text {
+            color: var(--gold);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+        }
+
+        .vip-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.875rem, 5vw, 2.5rem);
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--gold);
+            line-height: 1.2;
+        }
+
+        .vip-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--gray-200);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .vip-price-container {
+            text-align: center;
+            padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 2.5rem);
+            background: rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--gold);
+            border-radius: clamp(16px, 3vw, 24px);
+            margin-bottom: clamp(2rem, 5vw, 3rem);
+        }
+
+        .vip-price-label {
+            font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+            color: var(--gray-300);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+        }
+
+        .vip-price {
+            font-size: clamp(3rem, 12vw, 5rem);
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+        }
+
+        .vip-price-note {
+            color: var(--gold);
+            font-size: clamp(0.9375rem, 2.5vw, 1.25rem);
+            font-style: italic;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .vip-cta-note {
+            text-align: center;
+            margin-top: clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        .vip-container .btn {
+            width: 100%;
+        }
+
+        /* Quote */
+        .quote-block {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem);
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1.375rem, 4vw, 3rem);
+            line-height: 1.5;
+            font-style: italic;
+            color: var(--white);
+        }
+
+        /* Footer */
+        .footer {
+            padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 4vw, 3rem);
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-style: italic;
+            color: var(--gray-500);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .footer-contact {
+            color: var(--gray-300);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            line-height: 1.6;
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid var(--gold);
+            transition: color var(--duration-fast) var(--ease-in-out);
+        }
+
+        .footer-contact a:hover,
+        .footer-contact a:focus-visible {
+            color: var(--gold-light);
+            border-bottom-color: var(--gold-light);
+        }
+
+        .footer-legal {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        /* Hero Tagline */
+        .hero-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            color: var(--gold);
+            text-align: center;
+            margin: 0 0 var(--space-md) 0;
+            font-style: italic;
+        }
+
+        /* Hero Primary CTA - The Main Action */
+        .hero-primary-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(0.5rem, 1.5vw, 0.75rem);
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+        }
+
+        .hero-primary-cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: clamp(1.25rem, 3vw, 1.5rem) clamp(2.5rem, 6vw, 4rem);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            border: none;
+            border-radius: 16px;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-size: clamp(1.125rem, 3vw, 1.375rem);
+            font-weight: 800;
+            color: var(--black);
+            box-shadow:
+                0 4px 0 var(--gold-dark),
+                0 8px 20px rgba(255, 215, 0, 0.4),
+                0 0 60px rgba(255, 215, 0, 0.2);
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-primary-cta a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-primary-cta a:hover::before {
+            left: 100%;
+        }
+
+        .hero-primary-cta a:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 6px 0 var(--gold-dark),
+                0 12px 30px rgba(255, 215, 0, 0.5),
+                0 0 80px rgba(255, 215, 0, 0.3);
+        }
+
+        .hero-primary-cta a:active {
+            transform: translateY(2px);
+            box-shadow:
+                0 2px 0 var(--gold-dark),
+                0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .hero-primary-cta .cta-subtitle {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        /* Hero Secondary Link */
+        .hero-secondary-link {
+            text-align: center;
+            margin-bottom: clamp(2.5rem, 6vw, 4rem);
+        }
+
+        .hero-secondary-link a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: var(--text-base);
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: all var(--duration-fast) ease;
+        }
+
+        .hero-secondary-link a:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .hero-secondary-link a svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .hero-secondary-link a:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* Hero Resources Section */
+        .hero-resources {
+            position: relative;
+            padding-top: clamp(2rem, 5vw, 3rem);
+        }
+
+        .hero-resources::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(100%, 500px);
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+        }
+
+        .hero-resources-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+            text-align: center;
+        }
+
+        .hero-resources-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(0.75rem, 2vw, 1rem);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-resources-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-resources-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+        }
+
+        .hero-resource-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(0.75rem, 2vw, 1rem);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all var(--duration-normal) var(--ease-out-expo);
+        }
+
+        .hero-resource-card:hover {
+            background: rgba(255, 215, 0, 0.08);
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .hero-resource-icon {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1;
+        }
+
+        .hero-resource-title {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 600;
+            color: var(--white);
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .hero-resource-card:hover .hero-resource-title {
+            color: var(--gold);
+        }
+
+        /* Responsive: Mobile */
+        @media (max-width: 640px) {
+            .hero-cta-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-cta-primary,
+            .hero-cta-gold {
+                min-width: unset;
+            }
+
+            .hero-resources-grid {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-resource-link {
+                justify-content: center;
+            }
+        }
+
+        /* Mentor Benefits Grid */
+        .mentor-benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        @media (max-width: 768px) {
+            .mentor-benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        /* Pillars/Steps Grid */
+        .level3-days-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        @media (max-width: 768px) {
+            .level3-days-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        /* Bottom Grid (Side by Side Cards) */
+        .level3-bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: clamp(1rem, 2vw, 1.5rem);
+            align-items: stretch;
+        }
+
+        @media (max-width: 768px) {
+            .level3-bottom-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 480px) {
+            .hero-title br {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: clamp(2rem, 12vw, 2.5rem);
+                line-height: 1.1;
+            }
+
+            .section-title {
+                font-size: clamp(1.75rem, 10vw, 2rem);
+            }
+
+            .content-card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .content-number {
+                margin-bottom: 0.5rem;
+            }
+
+            .vip-container {
+                padding: 1.5rem;
+            }
+
+            .sheet-item {
+                padding: 1.25rem;
+            }
+
+            .golden-sheet-grid {
+                gap: 1rem;
+            }
+
+            .vip-banner {
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .vip-banner-eyebrow {
+                font-size: var(--text-xs);
+                letter-spacing: 0.1em;
+            }
+
+            .vip-banner-title {
+                font-size: var(--text-xl);
+            }
+
+            .vip-banner-subtitle {
+                font-size: var(--text-sm);
+            }
+
+            .vip-benefit-item {
+                font-size: var(--text-sm);
+            }
+
+            .vip-value-price {
+                font-size: var(--text-3xl);
+            }
+
+            .vip-value-note {
+                font-size: var(--text-xs);
+            }
+
+            .vip-banner-button {
+                font-size: var(--text-base);
+                padding: 1.125rem 1.5rem;
+                min-height: 56px;
+            }
+        }
+
+        /* Tablet Adjustments */
+        @media (min-width: 641px) and (max-width: 900px) {
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+
+            .vip-banner-eyebrow {
+                font-size: var(--text-sm);
+                padding: var(--space-xs) var(--space-sm);
+            }
+
+            .vip-banner-eyebrow svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .vip-banner-title {
+                font-size: var(--text-2xl);
+            }
+
+            .vip-banner-subtitle {
+                font-size: var(--text-base);
+            }
+
+            .vip-banner-benefits {
+                margin-top: var(--space-md);
+            }
+
+            .vip-benefit-item {
+                font-size: var(--text-base);
+            }
+
+            .vip-banner-cta {
+                align-items: stretch;
+                gap: var(--space-xl);
+            }
+
+            .vip-banner-value {
+                padding: var(--space-xl);
+            }
+
+            .vip-value-price {
+                font-size: var(--text-4xl);
+            }
+
+            .vip-value-note {
+                font-size: var(--text-sm);
+            }
+
+            .vip-banner-button {
+                width: 100%;
+                padding: 1.25rem 2rem;
+                font-size: var(--text-lg);
+                min-height: 64px;
+            }
+        }
+
+        /* Touch Targets */
+        @media (max-width: 767px) {
+            .btn,
+            .stat-card,
+            .resource-card {
+                min-height: 44px;
+            }
+        }
+
+        /* Safe Area Support */
+        @supports (padding: env(safe-area-inset-left)) {
+            body {
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
+            }
+
+            .container,
+            .container-narrow,
+            .container-tight {
+                padding-left: max(clamp(1rem, 5vw, 1.5rem), env(safe-area-inset-left));
+                padding-right: max(clamp(1rem, 5vw, 1.5rem), env(safe-area-inset-right));
+            }
+        }
+
+        /* Focus Styles */
+        *:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* Hover States (Desktop Only) */
+        @media (hover: none) {
+            .content-card:active,
+            .stat-card:active,
+            .resource-card:active {
+                transform: scale(0.98);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip link for keyboard navigation accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="workshop-header">
+        <div class="container">
+            <p class="classification">Your Day of Enlightenment is Complete</p>
+        </div>
+    </header>
+
+    <main role="main" id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container-tight">
+                <!-- Emotional Opening -->
+                <h1 class="hero-title">You Did It.</h1>
+                <p class="hero-tagline">We laughed. We cried. We became family.</p>
+                <p class="hero-body">What an incredible weekend. Your transformation journey has begun—and everything you need to keep moving forward is right here.</p>
+
+                <!-- Primary CTA - The One Action -->
+                <div class="hero-primary-cta">
+                    <a href="https://societysecrets.com/schedule" target="_blank">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        Schedule Your Mentor Consultation
+                    </a>
+                    <span class="cta-subtitle">Lock in your transformation with one-on-one guidance</span>
+                </div>
+
+                <!-- Secondary Link - Resources -->
+                <div class="hero-secondary-link">
+                    <a href="#golden-life-sheet">
+                        Start with your Golden Life Sheet
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Resources Grid -->
+                <div class="hero-resources">
+                    <span class="hero-resources-label">Your Workshop Resources</span>
+                    <div class="hero-resources-grid">
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" class="hero-resource-card">
+                            <span class="hero-resource-icon">📓</span>
+                            <span class="hero-resource-title">FNE Workbook</span>
+                        </a>
+                        <a href="#golden-life-sheet" class="hero-resource-card">
+                            <span class="hero-resource-icon">📄</span>
+                            <span class="hero-resource-title">Golden Life Sheet</span>
+                        </a>
+                        <a href="#resources" class="hero-resource-card">
+                            <span class="hero-resource-icon">💰</span>
+                            <span class="hero-resource-title">Wealth Engine</span>
+                        </a>
+                        <a href="#action-plan" class="hero-resource-card">
+                            <span class="hero-resource-icon">✅</span>
+                            <span class="hero-resource-title">Action Plan</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Did Together Section -->
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">January 24-25, 2026</span>
+                    <h2 class="section-title">What We Did Together</h2>
+                    <p class="section-subtitle">A weekend of transformation, connection, and breakthrough moments that changed everything.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 1</span>
+                            <h3 class="content-card-title">The Awakening</h3>
+                        </div>
+                        <p class="content-card-text">
+                            We gathered as fellow soulmates seeking better lives. <strong>Peggy Sue's guided meditation</strong> took us on a powerful journey back to our childhood selves—reconnecting us with our original creative essence before the anti-civilization taught us to dim our light. Many felt tears, breakthroughs, and an electrifying sense of coming home.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 1</span>
+                            <h3 class="content-card-title">The Friday Night Essence</h3>
+                        </div>
+                        <p class="content-card-text">
+                            We discovered (or rediscovered) our <strong>Friday Night Essence</strong>—that value-creation activity that connects us to growth and prevents stagnation. The moment you know your FNE, everything shifts. You stop floating and start building.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 1</span>
+                            <h3 class="content-card-title">The Wealth Engine</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Wallace Hamilton</strong> introduced the Wealth Engine—and the room was electrified. We calculated our Financial Security, Vitality, and Freedom numbers. For many, this was an "Ah-Ha moment" of clarity: seeing exactly what it takes to reach independence and knowing it's achievable.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 1</span>
+                            <h3 class="content-card-title">Mark Hamilton's Message</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Prime Mentor <strong>Mark Hamilton</strong> addressed us directly with a powerful message about his ultimate mission: <strong>removing the greatest negative on humankind</strong>—the unavoidable abyss of age-related chronic diseases. He revealed that the Day of Enlightenment provides the launch pad—the foundation you need to begin living the Immortal Mentality.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 2</span>
+                            <h3 class="content-card-title">Shattering the Matrix of Illusions</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Day 2 began with breaking through the <strong>Matrix of Illusions</strong>—the fear, guilt, dependence, and control that keeps ordinary people from their extraordinary potential. We learned to see reality as it truly is, freeing ourselves from the anti-civilization's grip on our minds.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 2</span>
+                            <h3 class="content-card-title">Mark Hamilton's LIVE Address</h3>
+                        </div>
+                        <p class="content-card-text">
+                            The highlight of the weekend: <strong>Mark Hamilton</strong> delivered a LIVE address that many called "the greatest speech ever delivered in all of history." We witnessed it together. We felt the tears. We understood why we're here—not just for ourselves, but to build a new world.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 2</span>
+                            <h3 class="content-card-title">Path to Financial Freedom</h3>
+                        </div>
+                        <p class="content-card-text">
+                            We calculated our numbers—<strong>financial security, vitality, and freedom</strong>. Wallace walked us through the Wealth Engine Calculator, showing exactly how close each of us is to never worrying about money again. Some discovered they're just 3 years away. The path became clear.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 2</span>
+                            <h3 class="content-card-title">The Golden Life Sheet</h3>
+                        </div>
+                        <p class="content-card-text">
+                            We synthesized everything into one powerful document: your <strong>Golden Life Sheet</strong>. Six categories. One page. A daily reminder of who you are in the Immortal Mentality, your Friday Night Essence, your dreams, your focuses, your celebrations, and your health & longevity plan.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">Day 2</span>
+                            <h3 class="content-card-title">VIP Elite Session</h3>
+                        </div>
+                        <p class="content-card-text">
+                            VIP members gathered for an intimate <strong>Elite Session</strong> with Wallace Hamilton—implementation coaching, personalized guidance, and mastermind discussion. Direct mentorship to ensure transformation sticks.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">∞</span>
+                            <h3 class="content-card-title">The New Family</h3>
+                        </div>
+                        <p class="content-card-text">
+                            We laughed. We cried. We became <strong>family</strong>. Fellow soulmates who understand the journey, who share the vision of better lives and a better world. "I love my new family" wasn't just a sentiment—it was the truth of what we built together this weekend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your Transformation Continues Banner -->
+        <section class="vip-banner-section" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.12) 0%, rgba(255, 154, 0, 0.08) 50%, rgba(255, 215, 0, 0.12) 100%); border-top-color: rgba(255, 215, 0, 0.4); border-bottom-color: rgba(255, 215, 0, 0.4); box-shadow: 0 0 60px rgba(255, 215, 0, 0.15);">
+            <div class="container-narrow">
+                <div class="vip-banner">
+                    <div class="vip-banner-content">
+                        <div class="vip-banner-eyebrow" style="background: rgba(255, 215, 0, 0.15); border-color: rgba(255, 215, 0, 0.4); color: var(--gold);">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span style="color: var(--gold);">Day of Enlightenment Complete</span>
+                        </div>
+
+                        <h2 class="vip-banner-title" style="color: var(--white);">You Now Have <span class="highlight" style="color: var(--gold);">Everything You Need</span></h2>
+
+                        <p class="vip-banner-subtitle">
+                            The Day of Enlightenment delivered a complete transformation system. Your journey continues with implementation. Schedule a consultation to create your personalized roadmap.
+                        </p>
+
+                        <ul class="vip-banner-benefits">
+                            <li class="vip-benefit-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>The complete Prosperity Code for wealth and happiness</span>
+                            </li>
+                            <li class="vip-benefit-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Your Friday Night Essence discovered and activated</span>
+                            </li>
+                            <li class="vip-benefit-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>The Wealth Engine blueprint to Financial Freedom</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="vip-banner-cta">
+                        <div class="vip-banner-value" style="border-color: var(--gold);">
+                            <p class="vip-value-label">Your Next Step</p>
+                            <p class="vip-value-price" style="color: var(--gold); font-size: var(--text-3xl);">Implement</p>
+                            <p class="vip-value-note" style="color: var(--gray-200);">Schedule a consultation to create your personalized implementation roadmap.</p>
+                        </div>
+
+                        <a href="https://societysecrets.com/schedule" class="vip-banner-button" target="_blank" style="background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);">
+                            Schedule Your Consultation →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentor Consultation Section -->
+        <section class="mentor-section">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Personalized Guidance</span>
+                    <h2 class="section-title">Schedule Your Mentor Consultation</h2>
+                    <p class="section-subtitle">One-on-one guidance to help you implement what you learned and accelerate your transformation</p>
+                </div>
+
+                <div class="mentor-card">
+                    <!-- Strategy Session Card -->
+                    <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: clamp(1.5rem, 3vw, 2rem);">
+                        <h3 style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--gold); margin: 0 0 var(--space-xl) 0; text-align: center;">Your 30-Minute Strategy Session</h3>
+
+                        <div class="mentor-benefits-grid">
+                            <!-- Item 1 -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                                <div style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">📄</div>
+                                <div style="font-size: var(--text-base); font-weight: 700; color: var(--gold); margin-bottom: var(--space-xs);">Golden Life Sheet Review</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Refine your Friday Night Essence and align your dreams with your true self</div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                                <div style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">💰</div>
+                                <div style="font-size: var(--text-base); font-weight: 700; color: var(--gold); margin-bottom: var(--space-xs);">Wealth Engine Roadmap</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Lock in your path to Financial Freedom with specific timelines</div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                                <div style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">🎯</div>
+                                <div style="font-size: var(--text-base); font-weight: 700; color: var(--gold); margin-bottom: var(--space-xs);">Next 30 Days Plan</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Clear action steps—what to do Monday morning and beyond</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Critical Window Card -->
+                    <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02)); border: 2px solid rgba(255, 215, 0, 0.4); border-radius: 16px; padding: clamp(1.5rem, 4vw, 2.5rem); text-align: center;">
+                        <h3 style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--white); margin: 0 0 var(--space-lg) 0;">The Critical Window</h3>
+                        <p style="font-size: var(--text-lg); color: var(--gray-200); line-height: 1.8; margin: 0 auto var(--space-lg); max-width: 700px;">
+                            Right now, your clarity is at its peak. Your breakthroughs are fresh. But without action, the anti-civilization pulls you back—old patterns reassert, doubt creeps in, and transformation fades.
+                        </p>
+                        <p style="font-size: var(--text-lg); color: var(--gold); line-height: 1.8; margin: 0 auto; max-width: 700px; font-weight: 600;">
+                            Your mentor helps you lock in what you gained and convert insight into committed action.
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; margin-top: var(--space-2xl);">
+                        <a href="https://societysecrets.com/schedule" class="btn btn-primary" target="_blank">Schedule Your Consultation Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Golden Life Sheet Section -->
+        <section id="golden-life-sheet">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">✅ Unlocked - Your Daily Reminder</span>
+                    <h2 class="section-title">The Golden Life Sheet</h2>
+                    <p class="section-subtitle">Six categories synthesizing everything you learned—post this on your bathroom mirror and review it daily to stay aligned with your new vector.</p>
+                </div>
+
+                <div class="content-card" style="border-left-color: var(--gold); border-left-width: 8px;">
+                    <p class="content-card-text" style="margin-bottom: 1.5rem;">
+                        This single-page document prevents you from drifting back into the Matrix of Illusions. It evolves as your life expands—create new sheets as you master and outgrow each one.
+                    </p>
+
+                    <div class="golden-sheet-grid">
+                        <div class="sheet-item">
+                            <div class="sheet-item-number">1</div>
+                            <div class="sheet-item-title">Who I Am</div>
+                            <div class="sheet-item-desc">1-3 emotional sentences describing yourself in the Immortal Mentality—the ultimate, pure version of you</div>
+                        </div>
+
+                        <div class="sheet-item">
+                            <div class="sheet-item-number">2</div>
+                            <div class="sheet-item-title">Friday Night Essence</div>
+                            <div class="sheet-item-desc">Your value-creation activity that connects you to growth and prevents stagnation</div>
+                        </div>
+
+                        <div class="sheet-item">
+                            <div class="sheet-item-number">3</div>
+                            <div class="sheet-item-title">My Dreams</div>
+                            <div class="sheet-item-desc">Tangible projects or problems (big or small) that align with your FNE</div>
+                        </div>
+
+                        <div class="sheet-item">
+                            <div class="sheet-item-number">4</div>
+                            <div class="sheet-item-title">Current Focuses</div>
+                            <div class="sheet-item-desc">Action items, skills, habits you need to accomplish your dreams—often things you avoid</div>
+                        </div>
+
+                        <div class="sheet-item">
+                            <div class="sheet-item-number">5</div>
+                            <div class="sheet-item-title">Celebrations</div>
+                            <div class="sheet-item-desc">Value Reflection activities—experiencing happiness with loved ones while you create</div>
+                        </div>
+
+                        <div class="sheet-item">
+                            <div class="sheet-item-number">6</div>
+                            <div class="sheet-item-title">Health & Longevity</div>
+                            <div class="sheet-item-desc">Actions for current physical health and long-term vitality for the future choice of extended life</div>
+                        </div>
+                    </div>
+
+                    <p class="content-card-text" style="margin-top: 1.5rem; text-align: center; font-style: italic;">
+                        <strong>Read it every morning and night.</strong> Tape it to your bathroom mirror. Let it transfer into your body. Keep old sheets to track how your golden life keeps getting more golden.
+                    </p>
+
+                    <div style="text-align: center; margin-top: var(--space-xl);">
+                        <a href="https://neothinkday.com/golden-life-sheet" class="btn btn-primary">Create Your Golden Life Sheet →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="bg-dark-gray" id="resources">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">✅ Unlocked - Implementation Tools</span>
+                    <h2 class="section-title">Your Resources</h2>
+                    <p class="section-subtitle">Everything you need to implement what you learned and build your Wealth Engine.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="resource-card">
+                        <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <h3 class="resource-title">Friday-Night Essence Workbook</h3>
+                        <p class="resource-description">Your comprehensive workbook for discovering and developing your Friday-Night Essence—the value-creation activity that connects you to growth and prevents stagnation.</p>
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" class="btn btn-secondary" target="_blank">Download Workbook</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                        <h3 class="resource-title">Wealth Engine Calculator</h3>
+                        <p class="resource-description">Online calculator to determine your Financial Security, Vitality, and Freedom numbers based on the 12% annual return formula.</p>
+                        <a href="https://neothinkday.com/wealth-engine-calculator" class="btn btn-secondary">Access Calculator</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <h3 class="resource-title">Golden Life Sheet Template</h3>
+                        <p class="resource-description">Printable PDF template with all six categories pre-formatted for easy completion and daily review.</p>
+                        <a href="https://neothinkday.com/your-golden-life" class="btn btn-secondary">Download Template</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <h3 class="resource-title">Ambassador Program</h3>
+                        <p class="resource-description">Become a Society Ambassador and invite new members. Ambassadors receive prestigious recognition, affiliate commissions, and exclusive affiliate training. Earn 50% commission ($250) per Level 2 invite and help others discover Neothink.</p>
+                        <a href="https://societysecrets.com/ambassador-signup" class="btn btn-secondary" target="_blank">Get Ambassador Link</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                        </svg>
+                        <h3 class="resource-title">Event Feedback Form</h3>
+                        <p class="resource-description">Share your experience and insights from the January 2026 workshop. Your feedback helps us create even more transformative events for the community.</p>
+                        <a href="https://neothink.typeform.com/to/CiMxtG50" class="btn btn-secondary" target="_blank">Share Your Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">"Doubt is not in my mind, no. I know I will get there, because I am doing the work. I feel happy, I feel connected, very connected."</p>
+                    <footer style="color: var(--gold); font-size: var(--text-lg); margin-top: var(--space-lg); font-style: normal;">— Graciela Jurado, January 2026 Workshop</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- What You Received Section -->
+        <section id="value-delivered" class="vip-section" style="background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 70%), var(--black); border-top-color: rgba(255, 215, 0, 0.3); border-bottom-color: rgba(255, 215, 0, 0.3);">
+            <div class="container-narrow">
+                <div class="vip-container" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.06), rgba(255, 215, 0, 0.02)); border-color: rgba(255, 215, 0, 0.3);">
+                    <!-- Header -->
+                    <div class="vip-header">
+                        <div class="vip-badge" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.15)); border-color: var(--gold);">
+                            <span class="vip-badge-text" style="color: var(--gold);">✦ Day of Enlightenment Complete</span>
+                        </div>
+                        <h2 class="vip-title" style="color: var(--white);">The Value You Received</h2>
+                        <p class="vip-subtitle">Your Day of Enlightenment delivered a comprehensive transformation system—philosophical breakthroughs, personal discovery tools, and a complete financial roadmap. This is your foundation for the rest of your life.</p>
+                    </div>
+
+                    <!-- Three Pillars of Value -->
+                    <div style="margin-bottom: var(--space-2xl);">
+                        <h3 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--white); text-align: center; margin: 0 0 var(--space-xl) 0;">Three Pillars of Transformation</h3>
+                        <div class="level3-days-grid">
+                            <!-- Pillar 1: Consciousness -->
+                            <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: var(--space-xl); text-align: center;">
+                                <div style="font-size: var(--text-4xl); margin-bottom: var(--space-sm);">💡</div>
+                                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-xs);">Pillar 1</div>
+                                <div style="font-size: var(--text-lg); font-weight: 700; color: var(--white); margin-bottom: var(--space-sm);">Consciousness Transformation</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">From mortal to immortal mentality. The meaning of life revealed: deep, fulfilling happiness through value creation.</div>
+                            </div>
+                            <!-- Pillar 2: Personal -->
+                            <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: var(--space-xl); text-align: center;">
+                                <div style="font-size: var(--text-4xl); margin-bottom: var(--space-sm);">🔑</div>
+                                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-xs);">Pillar 2</div>
+                                <div style="font-size: var(--text-lg); font-weight: 700; color: var(--white); margin-bottom: var(--space-sm);">Personal Discovery</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">Your Friday Night Essence discovered. The key to who you were meant to be. Your downstream focus activated.</div>
+                            </div>
+                            <!-- Pillar 3: Financial -->
+                            <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px; padding: var(--space-xl); text-align: center;">
+                                <div style="font-size: var(--text-4xl); margin-bottom: var(--space-sm);">💰</div>
+                                <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-xs);">Pillar 3</div>
+                                <div style="font-size: var(--text-lg); font-weight: 700; color: var(--white); margin-bottom: var(--space-sm);">Financial Roadmap</div>
+                                <div style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6;">The Wealth Engine blueprint. Your path to Financial Security, Independence, and Freedom calculated.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What You Now Have -->
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-lg); margin-bottom: var(--space-2xl); padding: var(--space-xl); background: rgba(255, 215, 0, 0.05); border-radius: 12px;">
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> The Prosperity Code
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> Golden Life Sheet
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> Wealth Engine Calculator
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> Millionaire Mindset
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--space-sm); color: var(--gray-200); font-size: var(--text-sm);">
+                            <span style="color: var(--gold);">✦</span> FNE Workbook
+                        </div>
+                    </div>
+
+                    <!-- Implementation + Support Side by Side -->
+                    <div class="level3-bottom-grid">
+                        <!-- Implementation Card -->
+                        <div style="background: rgba(0, 0, 0, 0.6); border: 3px solid var(--gold); border-radius: 20px; padding: var(--space-2xl); text-align: center;">
+                            <p style="font-size: var(--text-sm); color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 var(--space-sm) 0;">Your Mission Now</p>
+                            <p style="font-size: var(--text-2xl); font-weight: 900; color: var(--white); line-height: 1.2; margin: 0 0 var(--space-md) 0;">Implement What You Learned</p>
+                            <p style="font-size: var(--text-sm); color: var(--gray-300); line-height: 1.6; margin: 0;">Use your tools daily. Live the Prosperity Code.<br>Create value. Build your Wealth Engine.</p>
+                        </div>
+
+                        <!-- Support Card -->
+                        <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02)); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 20px; padding: var(--space-2xl);">
+                            <h3 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin: 0 0 var(--space-md) 0;">We're Here to Help</h3>
+                            <p style="font-size: var(--text-base); color: var(--gray-200); line-height: 1.7; margin: 0 0 var(--space-md) 0;">
+                                You carry everything you need inside you. The Golden Life Sheet, the Wealth Engine, the Friday Night Essence—these are yours forever.
+                            </p>
+                            <p style="font-size: var(--text-base); color: var(--white); line-height: 1.7; margin: 0; font-weight: 600;">
+                                Schedule a consultation to create your personalized implementation roadmap and accelerate your transformation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div style="text-align: center; margin-top: var(--space-2xl);">
+                        <a href="https://societysecrets.com/schedule" class="btn btn-primary" target="_blank" style="font-size: var(--text-xl); padding: 1.25rem 3rem;">Schedule Your Consultation</a>
+                        <p class="vip-cta-note">Personalized guidance to help you implement everything you learned</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Member Transformations Section - January 2026 -->
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">January 2026 Breakthroughs</span>
+                    <h2 class="section-title">Voices From This Weekend</h2>
+                    <p class="section-subtitle">Real breakthroughs shared by your fellow members—straight from the workshop.</p>
+                </div>
+
+                <div class="content-grid">
+
+                    <!-- Graciela Jurado -->
+                    <div class="content-card" style="border-left: 3px solid var(--gold);">
+                        <p class="content-card-text" style="font-style: italic; font-size: 1.05rem; line-height: 1.7;">
+                            "Doubt is not in my mind, no. I know I will get there, because I am doing the work. It's like a vibration racing up. I feel happy, I feel connected, very connected."
+                        </p>
+                        <p style="color: var(--gold); font-size: var(--text-sm); margin-top: 1rem; font-weight: 600;">
+                            — Graciela Jurado, January 2026 Workshop
+                        </p>
+                    </div>
+
+                    <!-- David Groode -->
+                    <div class="content-card" style="border-left: 3px solid var(--gold);">
+                        <p class="content-card-text" style="font-style: italic; font-size: 1.05rem; line-height: 1.7;">
+                            "I took the leap. And I am so glad. I have no regrets. It plugged me in in such a magnified way to the essence of everything that I've come into this world for."
+                        </p>
+                        <p style="color: var(--gold); font-size: var(--text-sm); margin-top: 1rem; font-weight: 600;">
+                            — David Groode, January 2026 Workshop
+                        </p>
+                    </div>
+
+                    <!-- Pari Foroutan Mahinpey -->
+                    <div class="content-card" style="border-left: 3px solid var(--gold);">
+                        <p class="content-card-text" style="font-style: italic; font-size: 1.05rem; line-height: 1.7;">
+                            "It lit up something in me again. It was like, okay, here I am. I can do this again. I can really create values and follow my heart's desire. It really woke me up again."
+                        </p>
+                        <p style="color: var(--gold); font-size: var(--text-sm); margin-top: 1rem; font-weight: 600;">
+                            — Pari Foroutan Mahinpey, January 2026 Workshop
+                        </p>
+                    </div>
+
+                    <!-- John Esquibel -->
+                    <div class="content-card" style="border-left: 3px solid var(--gold);">
+                        <p class="content-card-text" style="font-style: italic; font-size: 1.05rem; line-height: 1.7;">
+                            "I feel much more clarity—in my business, in my Friday Night Essence. I found that Neothink is very much one of my Friday Night Essences at a core level."
+                        </p>
+                        <p style="color: var(--gold); font-size: var(--text-sm); margin-top: 1rem; font-weight: 600;">
+                            — John Esquibel, January 2026 Workshop
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Share Your Transformation CTA -->
+                <div style="margin-top: 3rem; text-align: center; padding: 2.5rem; background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 215, 0, 0.02) 100%); border-radius: 16px; border: 1px solid rgba(255, 215, 0, 0.25);">
+                    <h3 style="font-family: var(--font-serif); font-size: 1.75rem; color: var(--gold); margin-bottom: 1rem;">What Was Your Breakthrough?</h3>
+                    <p style="color: var(--text-secondary); max-width: 520px; margin: 0 auto 1.75rem; line-height: 1.7; font-size: 1.05rem;">
+                        Was it Peggy Sue's childhood journey? The Wealth Engine numbers clicking? Mark Hamilton's speech? Your Golden Life Sheet?
+                        <strong style="color: var(--text-primary);">We want to hear your story.</strong>
+                    </p>
+                    <a href="https://neothink.typeform.com/to/CiMxtG50" class="btn btn-primary" target="_blank" style="display: inline-block; font-size: 1.1rem; padding: 1rem 2rem;">Share Your Transformation</a>
+                    <p style="color: var(--text-muted); font-size: var(--text-xs); margin-top: 1rem;">Your feedback helps us make every future workshop even more powerful.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Plan Section -->
+        <section id="action-plan" class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Next Steps</span>
+                    <h2 class="section-title">Your Action Plan</h2>
+                    <p class="section-subtitle">What to do right now to maintain momentum and accelerate your transformation.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">1</span>
+                            <h3 class="content-card-title">Schedule Your Mentor Consultation</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Don't wait. Book your one-on-one consultation now while momentum is high. Your mentor will help you create a personalized implementation roadmap and lock in your transformation. This is your most important next step.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">2</span>
+                            <h3 class="content-card-title">Implement the Prosperity Code Daily</h3>
+                        </div>
+                        <p class="content-card-text">
+                            You learned the complete Prosperity Code loop: Create Value → Generate Wealth → Gain Freedom → Expand Your Genius. Live this cycle daily. Ask yourself "How can I create more value?" instead of "Can I afford this?" The millionaire mindset is yours.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">3</span>
+                            <h3 class="content-card-title">Complete Your Golden Life Sheet Today</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Don't wait. Fill in all six categories. Print it. Tape it to your bathroom mirror. Read it every morning and night for the next 30 days minimum.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">4</span>
+                            <h3 class="content-card-title">Calculate Your Freedom Numbers</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Use the Wealth Engine calculator to determine your Financial Security, Vitality, and Freedom targets. Know your exact Inflection Point. This clarity transforms everything.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">5</span>
+                            <h3 class="content-card-title">Schedule Your First FNE Time Block</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Open your calendar right now. Block out time for your Friday Night Essence work. Make it non-negotiable. This is where creation happens. This is where your new life begins.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">6</span>
+                            <h3 class="content-card-title">Get Your Ambassador Link</h3>
+                        </div>
+                        <p class="content-card-text">
+                            Become a Society Ambassador and share this transformation with others. Ambassadors earn 50% commission ($250) per new member and receive exclusive training every Friday. Sign up for your Ambassador link (check spam folder). Share the gift of Neothink with genuine searchers who are ready. Value creation starts now.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Quote -->
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">"This morning, I am my Future self. Yesterday was my old self."</p>
+                    <footer style="color: var(--gold); font-size: var(--text-lg); margin-top: var(--space-lg); font-style: normal;">— Irma Nodal, January 2026 Workshop</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="bg-dark-gray">
+            <div class="container-tight">
+                <div class="section-header">
+                    <h2 class="section-title">Your Transformation Continues</h2>
+                    <p class="section-subtitle">You received everything you need to transform your life. Now it's time to implement. Schedule your mentor consultation to create your personalized roadmap.</p>
+                </div>
+
+                <div class="cta-buttons-container">
+                    <a href="https://societysecrets.com/schedule" class="btn btn-primary" target="_blank">Schedule Your Consultation →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Prosper Happily Forever</p>
+                <p class="footer-contact">
+                    Questions? Need support?<br>
+                    <a href="mailto:support@neothink.com">support@neothink.com</a>
+                </p>
+                <p class="footer-legal">The Neothink Society • Level 2 Members</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>Wealth Engine Calculator | The Society</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing - 8px base grid */
+            --space-xs: 0.5rem;     /* 8px */
+            --space-sm: 1rem;       /* 16px */
+            --space-md: 1.5rem;     /* 24px */
+            --space-lg: 2rem;       /* 32px */
+            --space-xl: 3rem;       /* 48px */
+            --space-2xl: 4rem;      /* 64px */
+            --space-3xl: 6rem;      /* 96px */
+
+            /* Typography - Responsive with optical adjustments */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Typography - Optical tracking */
+            --tracking-tighter: -0.04em;
+            --tracking-tight: -0.02em;
+            --tracking-normal: 0em;
+            --tracking-wide: 0.05em;
+            --tracking-wider: 0.1em;
+            --tracking-widest: 0.15em;
+
+            /* Typography - Golden ratio line heights */
+            --leading-none: 1;
+            --leading-tight: 1.2;
+            --leading-snug: 1.375;
+            --leading-normal: 1.618;  /* Golden ratio */
+            --leading-relaxed: 1.8;
+            --leading-loose: 2;
+
+            /* Animation - Custom easing curves */
+            --ease-linear: linear;
+            --ease-in: cubic-bezier(0.4, 0, 1, 1);
+            --ease-out: cubic-bezier(0, 0, 0.2, 1);
+            --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+            --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            /* Animation - Timing */
+            --duration-instant: 100ms;
+            --duration-fast: 200ms;
+            --duration-base: 300ms;
+            --duration-slow: 500ms;
+            --duration-slower: 700ms;
+
+            /* Animation - Delays for stagger */
+            --delay-0: 0ms;
+            --delay-1: 50ms;
+            --delay-2: 100ms;
+            --delay-3: 150ms;
+            --delay-4: 200ms;
+
+            /* Shadows - Layered system */
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+            --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+            /* Shadows - Gold glow variants */
+            --shadow-gold-sm: 0 0 20px rgba(255, 215, 0, 0.2);
+            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+
+            /* Blur effects */
+            --blur-sm: 4px;
+            --blur-md: 8px;
+            --blur-lg: 12px;
+            --blur-xl: 16px;
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: 16px;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .container-narrow {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .container-tight {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .calculator-section {
+            padding-bottom: 3rem;
+        }
+
+        /* Header */
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .header-date {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 3.5rem 0 2.5rem 0;
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+            border: 3px solid var(--gold);
+            border-radius: 100px;
+            margin-bottom: 1.5rem;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+            50% { box-shadow: 0 0 50px rgba(255, 215, 0, 0.6); }
+        }
+
+        .hero-badge-text {
+            color: var(--gold);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 1rem;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1rem, 2.5vw, 1.375rem);
+            color: var(--gray-400);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        .hero-quote {
+            font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
+            color: var(--gold);
+            font-weight: 600;
+            font-style: italic;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        .bg-dark-gray {
+            background: var(--gray-950);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 0.625rem 1.5rem;
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 100px;
+            color: var(--gold);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1.25rem;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            margin-bottom: 0.875rem;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            color: var(--gray-300);
+            font-weight: 400;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0.875rem auto 0;
+            line-height: 1.6;
+        }
+
+        /* Calculator Container */
+        .calculator-container {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.04));
+            border: 3px solid rgba(255, 215, 0, 0.5);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 0 100px rgba(255, 215, 0, 0.25);
+        }
+
+        /* Input Section */
+        .input-section {
+            margin-bottom: 2rem;
+        }
+
+        .input-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .step-number {
+            font-family: var(--font-serif);
+            font-size: 2.25rem;
+            color: var(--gold);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .input-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.375rem, 3vw, 1.875rem);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .input-description {
+            color: var(--gray-300);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .input-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-label {
+            display: block;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 0.9375rem;
+        }
+
+        .input-field-container {
+            position: relative;
+        }
+
+        .currency-symbol {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 1.125rem;
+            pointer-events: none;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 1rem 1.25rem 1rem 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 1.125rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: var(--font-sans);
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .input-field::placeholder {
+            color: var(--gray-500);
+        }
+
+        .input-hint {
+            margin-top: 0.625rem;
+            font-size: 0.8125rem;
+            color: var(--gray-400);
+            font-style: italic;
+        }
+
+        /* Calculate Button */
+        .calculate-btn {
+            width: 100%;
+            padding: 1.375rem;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            border: none;
+            border-radius: 14px;
+            font-size: 1.0625rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.6);
+        }
+
+        .calculate-btn:active {
+            transform: translateY(0);
+        }
+
+        .calculate-btn.calculating {
+            background: linear-gradient(135deg, var(--gray-600) 0%, var(--gray-700) 100%);
+            cursor: wait;
+        }
+
+        .calculate-btn.calculating::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 1.5s infinite;
+        }
+
+        @keyframes shimmer {
+            to { left: 100%; }
+        }
+
+        /* Results Section */
+        .results-section {
+            display: none;
+            margin-top: 2.5rem;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .results-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .results-grid {
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 16px;
+            padding: 1.75rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .result-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.3);
+        }
+
+        .result-level {
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.625rem;
+        }
+
+        .result-title {
+            font-family: var(--font-serif);
+            font-size: 1.375rem;
+            margin-bottom: 0.75rem;
+            color: var(--white);
+        }
+
+        .result-annual {
+            font-size: 0.875rem;
+            color: var(--gray-300);
+            margin-bottom: 0.75rem;
+        }
+
+        .result-target {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            word-break: break-word;
+        }
+
+        .result-label {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            margin-top: 0.625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Email Capture Section */
+        .email-capture {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .email-capture-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .email-capture-text {
+            color: var(--gray-300);
+            margin-bottom: 1.5rem;
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        .email-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 640px) {
+            .email-input-group {
+                flex-direction: row;
+                align-items: stretch;
+            }
+        }
+
+        .email-input {
+            flex: 1;
+            min-width: 0;
+            padding: 1rem 1.25rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 0.9375rem;
+            font-family: var(--font-sans);
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .email-submit-btn {
+            padding: 1rem 1.5rem;
+            background: var(--gold);
+            color: var(--black);
+            border: none;
+            border-radius: 10px;
+            font-size: 0.875rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 639px) {
+            .email-submit-btn {
+                width: 100%;
+            }
+        }
+
+        .email-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        .email-submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .email-success {
+            display: none;
+            padding: 1rem;
+            background: rgba(34, 197, 94, 0.2);
+            border: 2px solid rgb(34, 197, 94);
+            border-radius: 10px;
+            color: rgb(34, 197, 94);
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .email-success.visible {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            display: none;
+            padding-top: 0;
+            padding-bottom: 3rem;
+        }
+
+        .timeline-section.visible {
+            display: block;
+        }
+
+        .timeline-result {
+            display: none;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .timeline-result.visible {
+            display: block;
+        }
+
+        /* Investment Platforms */
+        .investment-platforms {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .platform-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 18px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .platform-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.25rem;
+        }
+
+        .platform-name {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            color: var(--gold);
+            margin: 0;
+        }
+
+        .platform-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid var(--gold);
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .platform-description {
+            color: var(--gray-300);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .platform-bonus {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid var(--gold);
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin-bottom: 1.25rem;
+        }
+
+        .platform-bonus p {
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin: 0;
+        }
+
+        .platform-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--gold);
+            color: var(--black);
+            text-align: center;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .platform-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .platforms-note {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding: 1.75rem;
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 14px;
+        }
+
+        .platforms-note p {
+            color: var(--gray-300);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.03));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 18px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-card-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.375rem, 3vw, 1.875rem);
+            color: var(--gold);
+            margin-bottom: 1.25rem;
+        }
+
+        .info-card-text {
+            color: var(--gray-300);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .info-card-text strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 640px) {
+            .calculator-container {
+                padding: 1.75rem;
+            }
+
+            .hero-section {
+                padding: 2.5rem 0 2rem 0;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+
+            .input-header {
+                gap: 0.75rem;
+            }
+
+            .step-number {
+                font-size: 2rem;
+            }
+
+            .email-capture {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md) var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .footer-brand p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.5;
+        }
+
+        .footer-support {
+            text-align: right;
+        }
+
+        .support-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            margin-bottom: var(--space-sm);
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: 6px;
+            min-height: var(--min-touch-target);
+        }
+
+        .support-link:hover {
+            color: var(--gold-light);
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .support-link:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
+        }
+
+        .footer-bottom p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <span class="site-logo">Neothink Society</span>
+                <div class="header-date" aria-label="Workshop date">Jan 24-25, 2026</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="hero-badge-text">The Wealth Engine Calculator</span>
+                </div>
+                <h1 class="hero-title">Calculate Your Path to Financial Freedom</h1>
+                <p class="hero-subtitle">Discover your precise Wealth Engine target numbers and timeline to reach Financial Security, Vitality, and ultimate Freedom.</p>
+                <p class="hero-quote">"The inflection point is not a dream. It's a calculation. Your calculation."</p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container-tight">
+                <div class="calculator-container">
+                    <!-- Step 1: Basic Inputs -->
+                    <div class="input-section">
+                        <div class="input-header">
+                            <div class="step-number">1</div>
+                            <h2 class="input-title">Your Monthly Expenses</h2>
+                        </div>
+                        <p class="input-description">
+                            Enter your average monthly costs. Be honest and accurate—your freedom numbers depend on it.
+                        </p>
+                        <div class="input-grid">
+                            <div class="input-wrapper">
+                                <label class="input-label" for="basicCosts">Basic Living Costs</label>
+                                <div class="input-field-container">
+                                    <span class="currency-symbol">$</span>
+                                    <input type="number" id="basicCosts" class="input-field" placeholder="2500" min="0">
+                                </div>
+                                <p class="input-hint">Housing, utilities, food, transportation, insurance</p>
+                            </div>
+                            <div class="input-wrapper">
+                                <label class="input-label" for="discretionary">Discretionary/Fun Spending</label>
+                                <div class="input-field-container">
+                                    <span class="currency-symbol">$</span>
+                                    <input type="number" id="discretionary" class="input-field" placeholder="1000" min="0">
+                                </div>
+                                <p class="input-hint">Dining out, entertainment, hobbies, subscriptions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="calculate-btn" onclick="calculateWealth()">
+                        <span id="btnText">Calculate My Freedom Numbers</span>
+                    </button>
+
+                    <!-- Results Section -->
+                    <div id="results" class="results-section">
+                        <div class="section-header" style="margin-top: 2rem;">
+                            <span class="section-label">Your Results</span>
+                            <h2 class="section-title">Your Three Wealth Engine Targets</h2>
+                        </div>
+
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-level">Level 1</div>
+                                <h3 class="result-title">Financial Security</h3>
+                                <p class="result-annual">Annual Need: <span id="securityAnnual">$0</span></p>
+                                <div class="result-target" id="securityTarget">$0</div>
+                                <p class="result-label">Wealth Engine Target</p>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-level">Level 2</div>
+                                <h3 class="result-title">Financial Vitality</h3>
+                                <p class="result-annual">Annual Need: <span id="vitalityAnnual">$0</span></p>
+                                <div class="result-target" id="vitalityTarget">$0</div>
+                                <p class="result-label">Wealth Engine Target</p>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-level">Level 3</div>
+                                <h3 class="result-title">Financial Freedom</h3>
+                                <p class="result-annual">Annual Need: <span id="freedomAnnual">$0</span></p>
+                                <div class="result-target" id="freedomTarget">$0</div>
+                                <p class="result-label">Wealth Engine Target</p>
+                            </div>
+                        </div>
+
+                        <!-- Next Step CTA -->
+                        <div style="text-align: center; margin-top: 2rem; padding: 1.75rem; background: rgba(255, 215, 0, 0.1); border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 16px;">
+                            <p style="font-size: 1.125rem; color: var(--gold); font-weight: 700; margin-bottom: 0.5rem;">
+                                ✨ Next Step: Calculate Your Timeline
+                            </p>
+                            <p style="font-size: 0.9375rem; color: var(--gray-300); margin-bottom: 1.25rem;">
+                                Scroll down to Step 2 to discover exactly how many years until you reach each level
+                            </p>
+                            <button onclick="scrollToTimeline()" style="padding: 0.875rem 1.75rem; background: var(--gold); color: var(--black); border: none; border-radius: 10px; font-size: 0.9375rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);">
+                                Continue to Step 2 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Calculator -->
+        <section id="timelineSection" class="timeline-section bg-dark-gray">
+            <div class="container-tight">
+                <div class="calculator-container">
+                    <div class="input-section">
+                        <div class="input-header">
+                            <div class="step-number">2</div>
+                            <h2 class="input-title">Your Timeline to Freedom</h2>
+                        </div>
+                        <p class="input-description">
+                            How much do you currently have invested, and how much can you invest monthly? Let's calculate your timeline to each level.
+                        </p>
+                        <div class="input-grid">
+                            <div class="input-wrapper">
+                                <label class="input-label" for="currentBalance">Current Invested Balance</label>
+                                <div class="input-field-container">
+                                    <span class="currency-symbol">$</span>
+                                    <input type="number" id="currentBalance" class="input-field" placeholder="10000" min="0">
+                                </div>
+                                <p class="input-hint">Total currently in stocks, crypto, real estate, etc.</p>
+                            </div>
+                            <div class="input-wrapper">
+                                <label class="input-label" for="monthlyInvestment">Monthly Investment Amount</label>
+                                <div class="input-field-container">
+                                    <span class="currency-symbol">$</span>
+                                    <input type="number" id="monthlyInvestment" class="input-field" placeholder="1000" min="0">
+                                </div>
+                                <p class="input-hint">How much can you invest each month?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="calculate-btn" onclick="calculateTimeline()">
+                        <span>Calculate My Timeline</span>
+                    </button>
+
+                    <!-- Timeline Result -->
+                    <div id="timelineResult" class="timeline-result">
+                        <!-- Timeline Overview -->
+                        <div style="text-align: center; margin-top: 2.5rem; margin-bottom: 2.5rem;">
+                            <h3 style="font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--gold); margin-bottom: 1rem;">Your Timeline to Each Level</h3>
+                            <p style="color: var(--gray-300); font-size: 1rem;">Based on <span id="overviewStarting" style="color: var(--white); font-weight: 600;">$0</span> starting balance and <span id="overviewMonthly" style="color: var(--white); font-weight: 600;">$0</span> monthly investment</p>
+                        </div>
+
+                        <!-- Three Timeline Cards -->
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
+                            <!-- Security Timeline -->
+                            <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05)); border: 2px solid rgba(255, 215, 0, 0.4); border-radius: 16px; padding: 1.75rem; text-align: center;">
+                                <div style="font-size: 0.8125rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.75rem;">Level 1</div>
+                                <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--white); margin-bottom: 1rem;">Financial Security</h4>
+                                <div style="font-family: var(--font-serif); font-size: clamp(2.5rem, 7vw, 3.5rem); font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;"><span id="yearsToSecurity">0</span></div>
+                                <div style="font-size: 0.9375rem; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Years</div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.75rem 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 8px; border-left: 3px solid var(--gold);">
+                                    <span style="color: var(--gray-300); font-size: 0.875rem;">Target:</span>
+                                    <span style="color: var(--white); font-weight: 700; font-size: 0.875rem;" id="securityTargetTimeline">$0</span>
+                                </div>
+                            </div>
+
+                            <!-- Vitality Timeline -->
+                            <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05)); border: 2px solid rgba(255, 215, 0, 0.4); border-radius: 16px; padding: 1.75rem; text-align: center;">
+                                <div style="font-size: 0.8125rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.75rem;">Level 2</div>
+                                <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--white); margin-bottom: 1rem;">Financial Vitality</h4>
+                                <div style="font-family: var(--font-serif); font-size: clamp(2.5rem, 7vw, 3.5rem); font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;"><span id="yearsToVitality">0</span></div>
+                                <div style="font-size: 0.9375rem; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Years</div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.75rem 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 8px; border-left: 3px solid var(--gold);">
+                                    <span style="color: var(--gray-300); font-size: 0.875rem;">Target:</span>
+                                    <span style="color: var(--white); font-weight: 700; font-size: 0.875rem;" id="vitalityTargetTimeline">$0</span>
+                                </div>
+                            </div>
+
+                            <!-- Freedom Timeline -->
+                            <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1)); border: 3px solid var(--gold); border-radius: 16px; padding: 1.75rem; text-align: center; box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);">
+                                <div style="font-size: 0.8125rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.75rem;">Level 3 • Ultimate Goal</div>
+                                <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--white); margin-bottom: 1rem;">Financial Freedom</h4>
+                                <div style="font-family: var(--font-serif); font-size: clamp(3rem, 8vw, 4rem); font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;"><span id="yearsToFreedom">0</span></div>
+                                <div style="font-size: 1rem; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Years</div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.875rem 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 8px; border-left: 3px solid var(--gold); margin-bottom: 0.75rem;">
+                                    <span style="color: var(--gray-300); font-size: 0.875rem;">Target:</span>
+                                    <span style="color: var(--white); font-weight: 700; font-size: 0.875rem;" id="freedomTargetDisplay">$0</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.875rem 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 8px; border-left: 3px solid var(--gold);">
+                                    <span style="color: var(--gray-300); font-size: 0.875rem;">Freedom Year:</span>
+                                    <span style="color: var(--white); font-weight: 700; font-size: 0.875rem;" id="targetYear">2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Capture -->
+                        <div class="email-capture">
+                            <h3 class="email-capture-title">📧 Get Your Complete Results Emailed</h3>
+                            <p class="email-capture-text">Receive a personalized breakdown of your Wealth Engine targets, timeline for all three levels, and actionable next steps directly in your inbox.</p>
+                            <div class="email-input-group">
+                                <input type="email" id="userEmail" class="email-input" placeholder="your@email.com" required>
+                                <input type="text" id="userName" class="email-input" placeholder="Your Name (Optional)">
+                                <button class="email-submit-btn" onclick="sendResults()">Send My Results</button>
+                            </div>
+                            <div id="emailSuccess" class="email-success">
+                                ✓ Success! Check your inbox for your personalized Wealth Engine report.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investment Platforms -->
+                <div class="investment-platforms">
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <h3 class="platform-name">Robinhood</h3>
+                            <span class="platform-badge">Get Free Stock</span>
+                        </div>
+                        <p class="platform-description">
+                            The most popular platform for commission-free stock investing. Clean interface, instant deposits, and earn 4.5% APY on uninvested cash.
+                        </p>
+                        <div class="platform-bonus">
+                            <p>💰 <strong>Sign-Up Bonus:</strong> Get a free stock worth up to $200 when you open an account</p>
+                        </div>
+                        <a href="https://join.robinhood.com/andrest1146" target="_blank" rel="noopener noreferrer" class="platform-btn">
+                            Open Your Robinhood Account →
+                        </a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <h3 class="platform-name">Coinbase</h3>
+                            <span class="platform-badge">$30 Free Crypto</span>
+                        </div>
+                        <p class="platform-description">
+                            Leading platform for Bitcoin and cryptocurrency investing. Secure wallet, competitive APY on cash (4%+), and easy automated purchases.
+                        </p>
+                        <div class="platform-bonus">
+                            <p>💰 <strong>Sign-Up Bonus:</strong> Invest $20 or more and get $30 in free cryptocurrency</p>
+                        </div>
+                        <a href="https://coinbase.com/join/E6TQQAN" target="_blank" rel="noopener noreferrer" class="platform-btn">
+                            Open Your Coinbase Account →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="platforms-note">
+                    <p>
+                        <strong style="color: var(--gold);">Why these platforms?</strong><br>
+                        Both Robinhood and Coinbase make it simple to set up automatic weekly or monthly investments. Instead of letting cash sit idle in a bank account earning minimal interest, these platforms offer competitive APY rates on cash balances while providing easy access to stocks, crypto, and other wealth-building assets. The key is to start now—time is your greatest multiplier.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="section-label">Understanding the Formula</span>
+                    <h2 class="section-title">How the Wealth Engine Works</h2>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="info-card-title">The 12% Annual Return Formula</h3>
+                    <p class="info-card-text">
+                        The calculator uses a <strong>12% annual return</strong>—the stock market's historical average since 2010. When you invest in index funds like VOO (S&P 500) or QQQ (NASDAQ), your money compounds at approximately this rate over time.
+                        <br><br>
+                        This isn't speculation. This is historical data. The market has consistently returned about 12% annually for over a decade. Your Wealth Engine uses this predictable growth to reach the Inflection Point.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="info-card-title">The Inflection Point: Annual Expenses ÷ 0.12</h3>
+                    <p class="info-card-text">
+                        To calculate how much you need in your Wealth Engine:
+                        <br><br>
+                        <strong>Wealth Engine Target = Annual Expenses ÷ 0.12</strong>
+                        <br><br>
+                        Why 0.12? Because when your portfolio returns 12% per year, and that 12% equals your annual expenses, you've reached the <strong>Inflection Point</strong>—the point of no return. The moment where you no longer need to work or earn a paycheck for survival ever again.
+                        <br><br>
+                        Example: If your annual expenses are $60,000, you need $500,000 in your Wealth Engine. At 12% return, that generates $60,000 per year—exactly what you need, forever.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="info-card-title">What Are Value-Producing Assets?</h3>
+                    <p class="info-card-text">
+                        Your Wealth Engine consists of assets that make money while you sleep:
+                        <br><br>
+                        <strong>→ Stocks & ETFs:</strong> Appreciate over time, pay dividends. Examples: VOO (S&P 500), QQQ (NASDAQ), individual stocks like Tesla
+                        <br>
+                        <strong>→ Real Estate:</strong> Rental income plus property appreciation over time
+                        <br>
+                        <strong>→ Cryptocurrency:</strong> Long-term holds like Bitcoin that appreciate significantly
+                        <br>
+                        <strong>→ Business Equity:</strong> Ownership stakes in value-creating companies you build or invest in
+                        <br><br>
+                        These assets work 24/7, compounding your wealth toward the Inflection Point. They're the engine. You're the mechanic. Value creation is the fuel.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="info-card-title">The Prosperity Code: From "Can I?" to "How Can I?"</h3>
+                    <p class="info-card-text">
+                        The secret to accelerating your path to freedom lies in a profound mindset shift:
+                        <br><br>
+                        <strong>Broke Mindset:</strong> "Can I afford this?"<br>
+                        <strong>Millionaire Mindset:</strong> "HOW can I afford this?"
+                        <br><br>
+                        The first question shuts your brain down. The second activates your creativity and turns you into a creator. Money is just an echo of value. The only real source of wealth is <strong>Value Creation</strong>—solving problems, making life better, removing limitations for others.
+                        <br><br>
+                        If your timeline to freedom is too long, you have the power to change it. Start a side hustle. Increase your income. Accelerate your monthly contributions. Your freedom is yours to create.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="info-card-title">Compounding: The Eighth Wonder of the World</h3>
+                    <p class="info-card-text">
+                        <strong>"Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it."</strong> — Often attributed to Einstein
+                        <br><br>
+                        Time is your most valuable asset in wealth building. The earlier you start, the more time your money has to compound. Every year of delay costs you exponentially.
+                        <br><br>
+                        A 25-year-old investing $500/month reaches $1 million by age 55 (30 years). A 35-year-old investing the same amount needs until age 70 (35 years) to reach the same goal—and contributes $30,000 more.
+                        <br><br>
+                        Start now. Not tomorrow. Now.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Neothink Society</h3>
+                    <p>Prosper Happily Forever</p>
+                </div>
+
+                <div class="footer-support">
+                    <p class="support-label">Need Help?</p>
+                    <a href="mailto:support@neothink.com" class="support-link" aria-label="Email support at support@neothink.com">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@neothink.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Google Apps Script URL - PRODUCTION
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyoT1A3aKJg5SQLXdsh3Wiy2q6R9rO7Yu3Pambs0SvO-6VnFnnyVWPyTZQiVaJJAmllZA/exec';
+
+        // Store calculation results
+        window.calculationResults = null;
+
+        function scrollToTimeline() {
+            document.getElementById('timelineSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(value);
+        }
+
+        function calculateWealth() {
+            const basicCosts = parseFloat(document.getElementById('basicCosts').value) || 0;
+            const discretionary = parseFloat(document.getElementById('discretionary').value) || 0;
+
+            if (basicCosts === 0 && discretionary === 0) {
+                alert('Please enter at least one expense amount to calculate your freedom numbers.');
+                return;
+            }
+
+            // Add loading state
+            document.querySelector('.calculate-btn').classList.add('calculating');
+            document.getElementById('btnText').textContent = 'Calculating...';
+
+            setTimeout(() => {
+                // Calculate totals
+                const monthlyTotal = basicCosts + discretionary;
+                const annualBasic = basicCosts * 12;
+                const annualDiscretionary = discretionary * 12;
+                const annualTotal = monthlyTotal * 12;
+
+                // Calculate targets (Annual expenses / 0.12)
+                const securityTarget = annualBasic / 0.12;
+                const vitalityTarget = (annualBasic + (annualDiscretionary / 2)) / 0.12;
+                const freedomTarget = annualTotal / 0.12;
+
+                // Store results for email
+                window.calculationResults = {
+                    basicCosts: basicCosts,
+                    discretionary: discretionary,
+                    monthlyTotal: monthlyTotal,
+                    annualBasic: annualBasic,
+                    annualDiscretionary: annualDiscretionary,
+                    annualTotal: annualTotal,
+                    securityTarget: securityTarget,
+                    vitalityTarget: vitalityTarget,
+                    freedomTarget: freedomTarget
+                };
+
+                // Update display
+                document.getElementById('securityAnnual').textContent = formatCurrency(annualBasic);
+                document.getElementById('securityTarget').textContent = formatCurrency(securityTarget);
+
+                document.getElementById('vitalityAnnual').textContent = formatCurrency(annualBasic + (annualDiscretionary / 2));
+                document.getElementById('vitalityTarget').textContent = formatCurrency(vitalityTarget);
+
+                document.getElementById('freedomAnnual').textContent = formatCurrency(annualTotal);
+                document.getElementById('freedomTarget').textContent = formatCurrency(freedomTarget);
+
+                // Store targets for timeline calculator
+                window.securityTargetAmount = securityTarget;
+                window.vitalityTargetAmount = vitalityTarget;
+                window.freedomTargetAmount = freedomTarget;
+                window.annualExpenses = annualTotal;
+
+                // Remove loading state
+                document.querySelector('.calculate-btn').classList.remove('calculating');
+                document.getElementById('btnText').textContent = 'Recalculate Your Numbers';
+
+                // Show results
+                document.getElementById('results').classList.add('visible');
+                document.getElementById('timelineSection').classList.add('visible');
+
+                // Smooth scroll to results
+                setTimeout(() => {
+                    document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            }, 300);
+        }
+
+        function calculateTimeline() {
+            const currentBalance = parseFloat(document.getElementById('currentBalance').value) || 0;
+            const monthlyInvestment = parseFloat(document.getElementById('monthlyInvestment').value) || 0;
+
+            if (!window.freedomTargetAmount) {
+                alert('Please calculate your freedom numbers first (Step 1 above).');
+                return;
+            }
+
+            if (monthlyInvestment === 0 && currentBalance === 0) {
+                alert('Please enter either your current balance or monthly investment amount (or both).');
+                return;
+            }
+
+            if (monthlyInvestment === 0) {
+                alert('Please enter your monthly investment amount to see your timeline.');
+                return;
+            }
+
+            // Add loading state
+            document.querySelectorAll('.calculate-btn')[1].classList.add('calculating');
+
+            setTimeout(() => {
+                const monthlyRate = 0.12 / 12; // 12% annual = 1% monthly
+
+                // Calculate timeline for all three levels
+                const monthsToSecurity = calculateMonthsToTarget(currentBalance, monthlyInvestment, window.securityTargetAmount, monthlyRate);
+                const monthsToVitality = calculateMonthsToTarget(currentBalance, monthlyInvestment, window.vitalityTargetAmount, monthlyRate);
+                const monthsToFreedom = calculateMonthsToTarget(currentBalance, monthlyInvestment, window.freedomTargetAmount, monthlyRate);
+
+                const yearsToSecurity = monthsToSecurity / 12;
+                const yearsToVitality = monthsToVitality / 12;
+                const yearsToFreedom = monthsToFreedom / 12;
+
+                // Store timeline results
+                if (window.calculationResults) {
+                    window.calculationResults.currentBalance = currentBalance;
+                    window.calculationResults.monthlyInvestment = monthlyInvestment;
+                    window.calculationResults.yearsToSecurity = yearsToSecurity;
+                    window.calculationResults.yearsToVitality = yearsToVitality;
+                    window.calculationResults.yearsToFreedom = yearsToFreedom;
+                    window.calculationResults.targetYearSecurity = new Date().getFullYear() + Math.ceil(yearsToSecurity);
+                    window.calculationResults.targetYearVitality = new Date().getFullYear() + Math.ceil(yearsToVitality);
+                    window.calculationResults.targetYear = new Date().getFullYear() + Math.ceil(yearsToFreedom);
+                }
+
+                // Update display - Overview
+                document.getElementById('overviewStarting').textContent = formatCurrency(currentBalance);
+                document.getElementById('overviewMonthly').textContent = formatCurrency(monthlyInvestment);
+
+                // Update display - Security
+                document.getElementById('yearsToSecurity').textContent = yearsToSecurity.toFixed(1);
+                document.getElementById('securityTargetTimeline').textContent = formatCurrency(window.securityTargetAmount);
+
+                // Update display - Vitality
+                document.getElementById('yearsToVitality').textContent = yearsToVitality.toFixed(1);
+                document.getElementById('vitalityTargetTimeline').textContent = formatCurrency(window.vitalityTargetAmount);
+
+                // Update display - Freedom
+                document.getElementById('yearsToFreedom').textContent = yearsToFreedom.toFixed(1);
+                document.getElementById('freedomTargetDisplay').textContent = formatCurrency(window.freedomTargetAmount);
+
+                const currentYear = new Date().getFullYear();
+                const targetYear = currentYear + Math.ceil(yearsToFreedom);
+                document.getElementById('targetYear').textContent = targetYear;
+
+                // Remove loading state
+                document.querySelectorAll('.calculate-btn')[1].classList.remove('calculating');
+
+                // Show timeline result
+                document.getElementById('timelineResult').classList.add('visible');
+
+                // Smooth scroll to result
+                setTimeout(() => {
+                    document.getElementById('timelineResult').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+            }, 300);
+        }
+
+        function calculateMonthsToTarget(pv, pmt, fv, rate) {
+            // Handle edge case where already at target
+            if (pv >= fv) return 0;
+
+            // Using iterative approach for compound interest with monthly contributions
+            let balance = pv;
+            let months = 0;
+            const maxMonths = 600; // 50 years max
+
+            while (balance < fv && months < maxMonths) {
+                balance = balance * (1 + rate) + pmt;
+                months++;
+            }
+
+            return months;
+        }
+
+        async function sendResults() {
+            const email = document.getElementById('userEmail').value;
+            const name = document.getElementById('userName').value || 'Friend';
+
+            if (!email) {
+                alert('Please enter your email address.');
+                return;
+            }
+
+            if (!window.calculationResults) {
+                alert('Please calculate your numbers first before sending results.');
+                return;
+            }
+
+            // Check if timeline has been calculated
+            if (!window.calculationResults.yearsToFreedom) {
+                alert('Please complete Step 2 (Timeline Calculation) before sending your results.');
+                return;
+            }
+
+            const button = document.querySelector('.email-submit-btn');
+            button.disabled = true;
+            button.textContent = 'Sending...';
+
+            try {
+                const data = {
+                    email: email,
+                    name: name,
+                    timestamp: new Date().toISOString(),
+                    ...window.calculationResults
+                };
+
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                // With no-cors, we can't check response status, so assume success
+                document.getElementById('emailSuccess').classList.add('visible');
+                document.getElementById('userEmail').value = '';
+                document.getElementById('userName').value = '';
+
+                button.textContent = '✓ Sent!';
+                setTimeout(() => {
+                    button.disabled = false;
+                    button.textContent = 'Send My Results';
+                    document.getElementById('emailSuccess').classList.remove('visible');
+                }, 5000);
+
+            } catch (error) {
+                console.error('Error sending results:', error);
+                alert('There was an error sending your results. Please try again or contact support@neothink.com');
+                button.disabled = false;
+                button.textContent = 'Send My Results';
+            }
+        }
+
+        // Format currency inputs as user types
+        document.querySelectorAll('.input-field').forEach(input => {
+            input.addEventListener('input', function(e) {
+                // Remove non-numeric characters except decimal
+                let value = this.value.replace(/[^\d]/g, '');
+                this.value = value;
+            });
+
+            // Add focus effect
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'scale(1.01)';
+            });
+
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'scale(1)';
+            });
+        });
+
+        // Allow Enter key to trigger calculation
+        document.getElementById('discretionary').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calculateWealth();
+            }
+        });
+
+        document.getElementById('monthlyInvestment').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calculateTimeline();
+            }
+        });
+
+        document.getElementById('userEmail').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendResults();
+            }
+        });
+    </script>
+</body>
+</html>

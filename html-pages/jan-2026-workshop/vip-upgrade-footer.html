@@ -1,0 +1,220 @@
+<style>
+    /* ===========================
+       FOOTER STYLES
+       Self-contained for GHL Custom HTML Element
+    =========================== */
+
+    /* CSS Variables for Footer */
+    .vip-footer-section {
+        /* Fonts */
+        --font-serif: 'Baskervville', Georgia, serif;
+        --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+        /* Colors */
+        --gold: #FFD700;
+        --gold-light: #FFED4E;
+        --black: #0a0a0a;
+        --gray-900: #1a1a1a;
+        --gray-800: #2a2a2a;
+        --gray-500: #6a6a6a;
+        --gray-400: #8a8a8a;
+        --white: #ffffff;
+
+        /* Spacing */
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 1.5rem;
+        --space-lg: 2rem;
+        --space-2xl: 4rem;
+
+        /* Typography */
+        --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+        --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+        --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+        --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+    }
+
+    .vip-footer-section * {
+        box-sizing: border-box;
+    }
+
+    .vip-footer-section .site-footer {
+        background: var(--gray-900);
+        border-top: 1px solid var(--gray-800);
+        padding: var(--space-2xl) var(--space-md) var(--space-lg);
+        margin-top: var(--space-2xl);
+        font-family: var(--font-sans);
+        color: var(--white);
+    }
+
+    .vip-footer-section .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--space-md);
+    }
+
+    .vip-footer-section .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--space-2xl);
+        margin: 0 auto var(--space-2xl);
+    }
+
+    .vip-footer-section .footer-brand h3 {
+        font-family: var(--font-serif);
+        font-size: var(--text-xl);
+        font-weight: 700;
+        color: var(--gold);
+        margin: 0 0 var(--space-xs) 0;
+    }
+
+    .vip-footer-section .footer-brand p {
+        font-size: var(--text-sm);
+        color: var(--gray-400);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .vip-footer-section .footer-support {
+        text-align: right;
+    }
+
+    .vip-footer-section .support-label {
+        font-size: var(--text-sm);
+        font-weight: 600;
+        color: var(--gray-400);
+        margin: 0 0 var(--space-sm) 0;
+    }
+
+    .vip-footer-section .support-link {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-xs);
+        font-size: var(--text-base);
+        font-weight: 600;
+        color: var(--gold);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: 6px;
+        min-height: 44px;
+    }
+
+    .vip-footer-section .support-link:hover {
+        color: var(--gold-light);
+        background: rgba(255, 215, 0, 0.1);
+    }
+
+    .vip-footer-section .support-link:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+    }
+
+    .vip-footer-section .footer-bottom {
+        text-align: center;
+        padding-top: var(--space-lg);
+        border-top: 1px solid var(--gray-800);
+    }
+
+    .vip-footer-section .footer-bottom p {
+        font-family: var(--font-mono);
+        font-size: var(--text-xs);
+        color: var(--gray-500);
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .vip-footer-section .site-footer {
+            padding: var(--space-lg) var(--space-md) var(--space-md);
+        }
+
+        .vip-footer-section .footer-content {
+            text-align: center;
+            gap: var(--space-lg);
+        }
+
+        .vip-footer-section .footer-brand,
+        .vip-footer-section .footer-support {
+            text-align: center;
+        }
+
+        .vip-footer-section .footer-brand h3 {
+            font-size: var(--text-base);
+        }
+
+        .vip-footer-section .footer-brand p {
+            font-size: var(--text-base);
+            color: var(--gray-400);
+        }
+
+        .vip-footer-section .support-label {
+            font-size: var(--text-base);
+            color: var(--gray-400);
+        }
+
+        .vip-footer-section .support-link {
+            justify-content: center;
+            font-size: var(--text-base);
+            padding: var(--space-sm) var(--space-md);
+            min-height: 48px;
+        }
+
+        .vip-footer-section .footer-bottom p {
+            font-size: var(--text-sm);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .vip-footer-section .site-footer {
+            padding: var(--space-md) var(--space-sm) var(--space-sm);
+        }
+
+        .vip-footer-section .footer-brand h3 {
+            font-size: var(--text-sm);
+        }
+
+        .vip-footer-section .footer-brand p {
+            font-size: var(--text-sm);
+        }
+
+        .vip-footer-section .support-label {
+            font-size: var(--text-sm);
+        }
+
+        .vip-footer-section .support-link {
+            font-size: var(--text-sm);
+            padding: var(--space-xs) var(--space-sm);
+        }
+    }
+</style>
+
+<!-- Footer Section -->
+<div class="vip-footer-section">
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Neothink Society</h3>
+                    <p>Prosper Happily Forever</p>
+                </div>
+
+                <div class="footer-support">
+                    <p class="support-label">Need Help?</p>
+                    <a href="mailto:support@neothink.com" class="support-link" aria-label="Email support at support@neothink.com">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@neothink.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
