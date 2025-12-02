@@ -1,217 +1,429 @@
-# December 2025 Day of Enlightenment - SMS Sequence
+# December 2025 Day of Enlightenment - Full SMS Sequence
 
-**Event**: Day of Enlightenment Workshop
-**Dates**: December 6-7, 2025
-**Day 1**: 11:00 AM Eastern / 8:00 AM Pacific (all day, may go late)
-**Day 2**: 12:00 PM Eastern / 9:00 AM Pacific (all day)
-**VIP Deadline**: 11:00 AM Eastern / 8:00 AM Pacific, Saturday December 6
+**Event:** Day of Enlightenment Workshop
+**Dates:** December 6-7, 2025
 
----
+**Day 1:** Saturday, Dec 6 — 11:00 AM ET / 8:00 AM PT (all day)
+**Day 2:** Sunday, Dec 7 — 12:00 PM ET / 9:00 AM PT (all day)
+**VIP Deadline:** Saturday, Dec 6 at 11:00 AM ET / 8:00 AM PT
 
-## SMS Guidelines
-
-- Keep messages under 160 characters when possible (1 SMS segment)
-- Include clear call-to-action
-- Link to workshop hub: neothinkevent.com/home
-- All times show Eastern first, then Pacific
+**Zoom Details:**
+- Link: https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+- Meeting ID: 890 3406 5077
+- Passcode: 160734
 
 ---
 
-## 1. Registration Confirmation SMS
-**Trigger**: Immediately upon registration
-**Pairs with**: registration-confirmation.html
-
-```
-You're in! Day of Enlightenment Dec 6-7 confirmed. Check your email for full details + pre-work instructions. Your transformation starts now.
-```
+## PRE-EVENT SEQUENCE
 
 ---
 
-## 2. VIP Confirmation SMS
-**Trigger**: Immediately upon VIP purchase
-**Pairs with**: vip-confirmation.html
+### 1. Registration Confirmation
+**Trigger:** Immediately upon registration
+**Pairs with:** registration-confirmation.html
 
 ```
-⭐ VIP CONFIRMED! You have GUARANTEED access to the intimate VIP group session with Wallace Hamilton. Check email for exclusive VIP details.
-```
+✓ You're registered for Day of Enlightenment (Dec 6-7)
 
----
+Check your email for:
+• Pre-work instructions
+• Workbook download
+• Workshop hub access
 
-## 3. 5-Day SMS (Monday, Dec 1)
-**Trigger**: 5 days before event
-**Pairs with**: preparation-5days.html
+Your transformation begins now.
 
-```
-5 days to transformation. Your pre-work: Read pages 1-50 of The Secret Manuscript + download your workbook. Start now → neothinkevent.com/home
+Questions? support@neothink.com
 ```
 
 ---
 
-## 4. 4-Day SMS (Tuesday, Dec 2)
-**Trigger**: 4 days before event
-**Pairs with**: preparation-4days.html
+### 2. VIP Confirmation
+**Trigger:** Immediately upon VIP purchase
+**Pairs with:** vip-confirmation.html
 
 ```
-Block your calendar NOW. Day of Enlightenment is THIS Saturday + Sunday. Two full days. No meetings. No distractions. Your breakthrough requires full commitment.
-```
+⭐ VIP ELITE CONFIRMED
 
----
+You have GUARANTEED access to the intimate VIP group session with Wallace Hamilton.
 
-## 5. 3-Day VIP SMS (Wednesday, Dec 3)
-**Trigger**: 3 days before event (72 hours)
-**Pairs with**: preparation-3days.html
+Check your email for exclusive VIP details and preparation instructions.
 
-```
-⚡ 72 HOURS: VIP closes Sat 11am Eastern / 8am Pacific. GUARANTEED intimate session with Wallace Hamilton. Last chance → neothinkevent.com/home
+Welcome to the inner circle.
 ```
 
 ---
 
-## 6. 2-Day SMS (Thursday, Dec 4)
-**Trigger**: 2 days before event (48 hours)
-**Pairs with**: preparation-2days.html
+### 3. 5 Days Out (Monday, Dec 1)
+**Trigger:** 5 days before event
+**Pairs with:** preparation-5days.html
 
 ```
-48 hours out. Tech check time: Test Zoom, update it, secure your quiet space. Your Zoom link arrives Saturday morning. Checklist in your email.
-```
+📅 5 DAYS until Day of Enlightenment
 
----
+Your pre-work checklist:
+☐ Read pages 1-50 of The Secret Manuscript
+☐ Download & print your workbook
+☐ Complete the questionnaire
 
-## 7. 1-Day SMS (Friday, Dec 5 - Evening)
-**Trigger**: Evening before event
-**Pairs with**: preparation-1day.html
+Start now → neothinkevent.com/home
 
-```
-Tomorrow is the day. Set 3 alarms tonight. Your Zoom link arrives Saturday morning. Rest well. Review your pre-work. Everything changes tomorrow.
-```
-
----
-
-## 8. Day 1 - Morning Zoom Link SMS (Saturday, Dec 6 - 10:00 AM Eastern)
-**Trigger**: Morning of Day 1 (1 hour before start)
-**Pairs with**: day-of.html or separate Zoom delivery
-
-```
-🔴 YOUR ZOOM LINK IS HERE
-
-Day of Enlightenment starts in 1 HOUR at 11am Eastern / 8am Pacific.
-
-Join now: neothink.zoom.us/j/89034065077
-
-Meeting ID: 890 3406 5077
-Passcode: 160734
-
-Doors close at start time. Join early!
+This preparation amplifies your breakthrough.
 ```
 
 ---
 
-## 9. Day 1 - Starting Now SMS (Saturday, Dec 6 - 11:00 AM Eastern)
-**Trigger**: Workshop start time
-**Pairs with**: day-of-live emails
+### 4. 4 Days Out (Tuesday, Dec 2)
+**Trigger:** 4 days before event
+**Pairs with:** preparation-4days.html
 
 ```
-🔴 WE'RE LIVE! Day of Enlightenment is starting NOW. If you're not in the Zoom room, join immediately. This is your moment.
-```
+🗓️ BLOCK YOUR CALENDAR
 
----
+Day of Enlightenment is THIS Saturday + Sunday.
 
-## 10. Day 1 - End of Day SMS (Saturday, Dec 6 - Evening)
-**Trigger**: After Day 1 ends
-**Pairs with**: day-of-live/05-day1-end.html
+Two full days. No meetings. No distractions.
 
-```
-Day 1 complete. Incredible work today. Rest well tonight—let it integrate. Day 2 starts tomorrow at 12pm Eastern / 9am Pacific. Same Zoom link.
+Your breakthrough requires your full presence.
+
+Clear your schedule now. You'll thank yourself later.
 ```
 
 ---
 
-## 11. Day 2 - Morning Reminder SMS (Sunday, Dec 7 - 11:00 AM Eastern)
-**Trigger**: 1 hour before Day 2
+### 5. 3 Days Out — VIP Deadline (Wednesday, Dec 3)
+**Trigger:** 72 hours before event
+**Pairs with:** preparation-3days.html
 
 ```
-Day 2 starts in 1 HOUR at 12pm Eastern / 9am Pacific. Same Zoom link as yesterday. Today we put it all together. See you soon.
-```
+⚡ 72 HOURS — VIP closes Saturday at 11am ET
 
----
+Last chance for GUARANTEED intimate session with Wallace Hamilton.
 
-## 12. Day 2 - Starting Now SMS (Sunday, Dec 7 - 12:00 PM Eastern)
-**Trigger**: Day 2 start time
+After Saturday 11am ET, no upgrades. No exceptions.
 
-```
-🔴 DAY 2 IS LIVE! We're starting now. Join the Zoom room immediately if you're not already there. Let's finish what we started.
+Upgrade now → neothinkevent.com/home
 ```
 
 ---
 
-## Optional: VIP-Specific SMS Messages
-
-### VIP Day 1 Reminder
-**Trigger**: 30 min before VIP session
-**Audience**: VIP members only
+### 6. 2 Days Out (Thursday, Dec 4)
+**Trigger:** 48 hours before event
+**Pairs with:** preparation-2days.html
 
 ```
-⭐ VIP: Your intimate group session with Wallace Hamilton is coming up. Stay in the main room—you'll be moved to breakout when it's time.
-```
+⚙️ TECH CHECK TIME — 48 hours out
 
-### VIP Day 2 Session Reminder
-**Trigger**: Before VIP-only session on Day 2
-**Audience**: VIP members only
+Before Saturday:
+☐ Update Zoom to latest version
+☐ Test camera & microphone
+☐ Secure your quiet space
+☐ Charge all devices
 
-```
-⭐ VIP SESSION STARTING SOON: Your exclusive VIP-only session is next. This is what you upgraded for. Get ready for direct access.
+Your Zoom link arrives Saturday morning.
+
+Tech issues = missed moments. Prepare now.
 ```
 
 ---
 
-## SMS Send Schedule Summary
+### 7. 1 Day Out (Friday, Dec 5 — Evening)
+**Trigger:** Evening before event
+**Pairs with:** preparation-1day.html
 
-| Day | Date | Time (Eastern / Pacific) | SMS |
-|-----|------|--------------------------|-----|
-| Registration | Any | Immediate | Confirmation |
-| VIP Purchase | Any | Immediate | VIP Confirmation |
-| 5 Days | Mon, Dec 1 | Morning | Pre-work reminder |
-| 4 Days | Tue, Dec 2 | Morning | Calendar blocking |
-| 3 Days | Wed, Dec 3 | Morning | VIP deadline (72hr) |
-| 2 Days | Thu, Dec 4 | Morning | Tech check |
-| 1 Day | Fri, Dec 5 | Evening | Final reminder |
-| Day 1 | Sat, Dec 6 | 10am ET / 7am PT | Zoom link delivery |
-| Day 1 | Sat, Dec 6 | 11am ET / 8am PT | Starting now |
-| Day 1 | Sat, Dec 6 | Evening | Day 1 complete |
-| Day 2 | Sun, Dec 7 | 11am ET / 8am PT | 1-hour reminder |
-| Day 2 | Sun, Dec 7 | 12pm ET / 9am PT | Starting now |
+```
+🌙 Tomorrow is the day.
 
----
+Set 3 alarms tonight.
 
-## Character Counts
+Your Zoom link arrives Saturday morning at 10am ET.
 
-All messages optimized for SMS delivery:
+Rest well. Review your pre-work one more time.
 
-1. Registration: 152 chars (1 segment)
-2. VIP Confirm: 148 chars (1 segment)
-3. 5-Day: 157 chars (1 segment)
-4. 4-Day: 158 chars (1 segment)
-5. 3-Day VIP: 159 chars (1 segment)
-6. 2-Day: 148 chars (1 segment)
-7. 1-Day: 151 chars (1 segment)
-8. Zoom Link: 248 chars (2 segments) - critical info requires length
-9. Day 1 Live: 134 chars (1 segment)
-10. Day 1 End: 156 chars (1 segment)
-11. Day 2 Reminder: 139 chars (1 segment)
-12. Day 2 Live: 131 chars (1 segment)
+Tomorrow, everything changes.
+
+See you there.
+```
 
 ---
 
-## Notes
-
-- **Zoom Link SMS**: The most critical SMS. Include full link, meeting ID, and passcode.
-- **Timing**: All "starting now" messages should be sent at exact start times.
-- **VIP Messages**: Only send to VIP segment, not all attendees.
-- **Link Shortening**: Consider using bit.ly or similar for workshop hub links to save characters.
-- **Eastern Time First**: Always display Eastern time first per brand guidelines.
+## DAY 1 COUNTDOWN (Saturday, December 6)
 
 ---
 
-**Version**: 1.0
-**Last Updated**: December 1, 2025
-**Created By**: Claude Code
+### 8. Day 1 — 2 Hours Before (9:00 AM ET)
+**Trigger:** 2 hours before start
+
+```
+⏰ Day of Enlightenment begins in 2 HOURS
+
+11am ET / 8am PT — your transformation starts
+
+☑️ Workbook printed & ready
+☑️ Quiet space secured
+☑️ Water, pen, paper nearby
+
+Zoom link arriving in 1 hour.
+
+This is the day everything changes.
+```
+
+---
+
+### 9. Day 1 — Zoom Link Delivery (10:00 AM ET)
+**Trigger:** 1 hour before start
+
+```
+🔴 YOUR ZOOM LINK — 1 HOUR TO GO
+
+Doors open: 10:30am ET
+Start time: 11am ET / 8am PT SHARP
+
+JOIN HERE:
+https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+
+ID: 890 3406 5077
+Pass: 160734
+
+The opening moment creates the container for everything. Be early.
+```
+
+---
+
+### 10. Day 1 — Doors Open (10:30 AM ET)
+**Trigger:** Doors open, 30 minutes to start
+
+```
+🚪 DOORS ARE OPEN — 30 minutes to start
+
+Enter the room NOW:
+https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+
+Get settled. Test your audio. Breathe.
+
+The energy you bring in the opening becomes the foundation for your entire transformation.
+
+See you inside.
+```
+
+---
+
+### 11. Day 1 — WE ARE LIVE (11:00 AM ET)
+**Trigger:** Workshop start time
+
+```
+🔴 WE ARE LIVE!
+
+Day of Enlightenment has BEGUN.
+
+JOIN NOW:
+https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+
+The opening is happening RIGHT NOW.
+
+Every moment matters. Enter the room.
+```
+
+---
+
+### 12. Day 1 — End of Day (Evening)
+**Trigger:** After Day 1 ends
+
+```
+✓ Day 1 complete.
+
+You showed up. You did the work. You're already different.
+
+Tonight: Rest well. Let today's breakthroughs integrate.
+
+Tomorrow (Day 2): 12pm ET / 9am PT
+Same Zoom link.
+
+"Tomorrow, we put it all together."
+
+See you then.
+```
+
+---
+
+## DAY 2 COUNTDOWN (Sunday, December 7)
+
+---
+
+### 13. Day 2 — 2 Hours Before (10:00 AM ET)
+**Trigger:** 2 hours before Day 2
+
+```
+⏰ Day 2 begins in 2 HOURS
+
+12pm ET / 9am PT — we go deeper
+
+Yesterday you felt it. Today, we build on that foundation.
+
+Have ready:
+• Workbook + Day 1 notes
+• Water, pen, paper
+• Full presence
+
+Same Zoom link. See you soon.
+```
+
+---
+
+### 14. Day 2 — 45 Minutes (11:15 AM ET)
+**Trigger:** 45 minutes before Day 2
+
+```
+🚨 45 MINUTES until Day 2
+
+Doors open in 15 min (11:30am ET)
+Start: 12pm ET / 9am PT SHARP
+
+JOIN HERE:
+https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+
+ID: 890 3406 5077
+Pass: 160734
+
+If Day 1 moved something in you — Day 2 goes even deeper.
+```
+
+---
+
+### 15. Day 2 — Doors Open (11:45 AM ET)
+**Trigger:** Doors open, 15 minutes to start
+
+```
+🚪 DOORS OPEN — 15 minutes to Day 2
+
+Enter now:
+https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+
+12pm ET / 9am PT SHARP
+
+Yesterday laid the foundation.
+Today, we put it all together.
+
+Get settled. We start in 15 minutes.
+```
+
+---
+
+### 16. Day 2 — WE ARE LIVE (12:00 PM ET)
+**Trigger:** Day 2 start time
+
+```
+🔴 DAY 2 IS LIVE!
+
+We're starting NOW.
+
+JOIN:
+https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+
+This is where everything comes together.
+
+Enter the room NOW.
+```
+
+---
+
+### 17. Day 2 — Workshop Complete (Evening)
+**Trigger:** After Day 2 ends
+
+```
+✓ You did it.
+
+Two days. Total transformation.
+
+You're not the same person you were on Friday.
+
+Watch your inbox — next steps coming soon.
+
+Welcome to the Neothink Society.
+
+Your golden life has begun.
+```
+
+---
+
+## VIP-ONLY MESSAGES
+
+---
+
+### VIP — Day 1 Session Reminder
+**Trigger:** 30 minutes before VIP session
+**Audience:** VIP members only
+
+```
+⭐ VIP: Your intimate group session is coming up.
+
+Stay in the main room — you'll be moved to breakout when it's time.
+
+This is what you upgraded for. Get ready for direct access to Wallace Hamilton.
+```
+
+---
+
+### VIP — Day 2 Session Reminder
+**Trigger:** Before VIP-only session on Day 2
+**Audience:** VIP members only
+
+```
+⭐ VIP EXCLUSIVE SESSION STARTING
+
+Your private VIP-only session is next.
+
+Stay present. This is your moment for personalized breakthrough guidance.
+
+Direct access begins now.
+```
+
+---
+
+## COMPLETE SEND SCHEDULE
+
+| # | Message | Day | Time (ET) | Time (PT) |
+|---|---------|-----|-----------|-----------|
+| 1 | Registration | On signup | Immediate | Immediate |
+| 2 | VIP Confirmation | On purchase | Immediate | Immediate |
+| 3 | 5 Days | Mon, Dec 1 | Morning | Morning |
+| 4 | 4 Days | Tue, Dec 2 | Morning | Morning |
+| 5 | 3 Days (VIP) | Wed, Dec 3 | Morning | Morning |
+| 6 | 2 Days | Thu, Dec 4 | Morning | Morning |
+| 7 | 1 Day | Fri, Dec 5 | Evening | Evening |
+| 8 | 2 Hours | Sat, Dec 6 | 9:00 AM | 6:00 AM |
+| 9 | Zoom Link | Sat, Dec 6 | 10:00 AM | 7:00 AM |
+| 10 | Doors Open | Sat, Dec 6 | 10:30 AM | 7:30 AM |
+| 11 | LIVE | Sat, Dec 6 | 11:00 AM | 8:00 AM |
+| 12 | Day 1 End | Sat, Dec 6 | Evening | Evening |
+| 13 | 2 Hours | Sun, Dec 7 | 10:00 AM | 7:00 AM |
+| 14 | 45 Minutes | Sun, Dec 7 | 11:15 AM | 8:15 AM |
+| 15 | Doors Open | Sun, Dec 7 | 11:45 AM | 8:45 AM |
+| 16 | LIVE | Sun, Dec 7 | 12:00 PM | 9:00 AM |
+| 17 | Complete | Sun, Dec 7 | Evening | Evening |
+
+---
+
+## MESSAGING PRINCIPLES
+
+**Tone:**
+- Urgent but not panicked
+- Confident and clear
+- Personal ("you" not "attendees")
+- Action-oriented
+
+**Structure:**
+- Lead with emoji for visual scanning
+- Most important info first
+- Short, punchy sentences
+- Clear call-to-action
+
+**Urgency Arc:**
+- Pre-event: Preparation focus
+- Day-of countdown: Building urgency
+- LIVE messages: Maximum urgency
+- Post-event: Celebration + next steps
+
+---
+
+**Version:** 2.0
+**Updated:** December 1, 2025

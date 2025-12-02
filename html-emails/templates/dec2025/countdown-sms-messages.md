@@ -1,178 +1,218 @@
 # December 2025 Day of Enlightenment - Countdown SMS Messages
 
-Workshop Details:
-- **Day 1 (Saturday, Dec 6):** Doors 10:30 AM ET / 7:30 AM PT, Workshop 11:00 AM ET / 8:00 AM PT
-- **Day 2 (Sunday, Dec 7):** Doors 11:30 AM ET / 8:30 AM PT, Workshop 12:00 PM ET / 9:00 AM PT
-- **Zoom Link:** https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
-- **Meeting ID:** 890 3406 5077
-- **Passcode:** 160734
+**Event:** Day of Enlightenment Workshop
+**Dates:** December 6-7, 2025
+
+**Day 1 Schedule (Saturday, Dec 6):**
+- Doors Open: 10:30 AM ET / 7:30 AM PT
+- Workshop Begins: 11:00 AM ET / 8:00 AM PT
+
+**Day 2 Schedule (Sunday, Dec 7):**
+- Doors Open: 11:30 AM ET / 8:30 AM PT
+- Workshop Begins: 12:00 PM ET / 9:00 AM PT
+
+**Zoom Details:**
+- Link: https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+- Meeting ID: 890 3406 5077
+- Passcode: 160734
 
 ---
 
-## DAY 1 SMS MESSAGES (Saturday, Dec 6)
+## DAY 1 COUNTDOWN (Saturday, December 6)
 
 ---
 
-### SMS #1: 2 Hours Before (9:00 AM Eastern / 6:00 AM Pacific)
+### SMS #1: 2 Hours Before
+**Send Time:** 9:00 AM Eastern / 6:00 AM Pacific
 
 ```
-⏰ 2 HOURS until Day of Enlightenment begins!
+⏰ Day of Enlightenment begins in 2 HOURS
 
-Workshop starts: 11am ET / 8am PT
-Doors open: 10:30am ET / 7:30am PT
+11am ET / 8am PT — your transformation starts
 
-The opening sets the foundation for everything. Be there from the start.
+☑️ Workbook printed & ready
+☑️ Quiet space secured
+☑️ Water, pen, paper nearby
 
-Have ready: Workbook, water, pen & paper
+Zoom link arriving in 1 hour.
 
-Join link coming in 1 hour.
-
-See you soon!
+This is the day everything changes.
 ```
 
 ---
 
-### SMS #2: 1 Hour Before (10:00 AM Eastern / 7:00 AM Pacific)
+### SMS #2: 1 Hour Before (Zoom Link Delivery)
+**Send Time:** 10:00 AM Eastern / 7:00 AM Pacific
 
 ```
-⏰ 1 HOUR until we begin!
+🔴 YOUR ZOOM LINK — 1 HOUR TO GO
 
-Doors open in 30 minutes (10:30am ET / 7:30am PT)
-Workshop starts at 11am ET / 8am PT
+Doors open: 10:30am ET
+Start time: 11am ET / 8am PT SHARP
 
-🔗 JOIN HERE:
+JOIN HERE:
 https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
 
-Meeting ID: 890 3406 5077
-Passcode: 160734
+ID: 890 3406 5077
+Pass: 160734
 
-Be there from the opening — every moment matters.
+The opening moment creates the container for everything. Be early.
 ```
 
 ---
 
-### SMS #3: 30 Minutes / Doors Open (10:30 AM Eastern / 7:30 AM Pacific)
+### SMS #3: Doors Open (30 Minutes)
+**Send Time:** 10:30 AM Eastern / 7:30 AM Pacific
 
 ```
-🔴 DOORS ARE OPEN!
+🚪 DOORS ARE OPEN — 30 minutes to start
 
-Day of Enlightenment starts in 30 min at 11am ET / 8am PT
-
-Join now and get settled:
+Enter the room NOW:
 https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
 
-The opening sets the tone for everything. Enter the room now.
+Get settled. Test your audio. Breathe.
+
+The energy you bring in the opening becomes the foundation for your entire transformation.
+
+See you inside.
 ```
 
 ---
 
-### SMS #4: WE ARE LIVE (11:00 AM Eastern / 8:00 AM Pacific)
+### SMS #4: WE ARE LIVE
+**Send Time:** 11:00 AM Eastern / 8:00 AM Pacific
 
 ```
 🔴 WE ARE LIVE!
 
-Day of Enlightenment has BEGUN!
+Day of Enlightenment has BEGUN.
 
 JOIN NOW:
 https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
 
-The opening is happening NOW. Don't miss another moment.
+The opening is happening RIGHT NOW.
+
+Every moment matters. Enter the room.
 ```
 
 ---
 
-## DAY 2 SMS MESSAGES (Sunday, Dec 7)
+## DAY 2 COUNTDOWN (Sunday, December 7)
 
 ---
 
-### SMS #5: 2 Hours Before (10:00 AM Eastern / 7:00 AM Pacific)
+### SMS #5: 2 Hours Before
+**Send Time:** 10:00 AM Eastern / 7:00 AM Pacific
 
 ```
-⏰ 2 HOURS until Day 2 begins!
+⏰ Day 2 begins in 2 HOURS
 
-Yesterday laid the foundation. Today goes deeper.
+12pm ET / 9am PT — we go deeper
 
-Day 2 starts: 12pm ET / 9am PT
-Doors open: 11:30am ET / 8:30am PT
+Yesterday you felt it. Today, we build on that foundation.
 
-Have ready: Your workbook, notes from Day 1, water, pen & paper
+Have ready:
+• Workbook + Day 1 notes
+• Water, pen, paper
+• Full presence
 
-Same Zoom link as yesterday.
+Same Zoom link. See you soon.
 ```
 
 ---
 
-### SMS #6: 45 Minutes Before (11:15 AM Eastern / 8:15 AM Pacific)
+### SMS #6: 45 Minutes Before
+**Send Time:** 11:15 AM Eastern / 8:15 AM Pacific
 
 ```
-🚨 45 MINUTES until Day 2!
+🚨 45 MINUTES until Day 2
 
-Doors opening soon. Be ready.
+Doors open in 15 min (11:30am ET)
+Start: 12pm ET / 9am PT SHARP
 
-🔗 JOIN HERE (same link):
+JOIN HERE:
 https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
 
-Meeting ID: 890 3406 5077
-Passcode: 160734
+ID: 890 3406 5077
+Pass: 160734
 
-Today we build on everything from Day 1.
+If Day 1 moved something in you — Day 2 goes even deeper.
 ```
 
 ---
 
-### SMS #7: 15 Minutes / Doors Open (11:45 AM Eastern / 8:45 AM Pacific)
+### SMS #7: Doors Open (15 Minutes)
+**Send Time:** 11:45 AM Eastern / 8:45 AM Pacific
 
 ```
-🔴 15 MINUTES! Doors are OPEN!
+🚪 DOORS OPEN — 15 minutes to Day 2
 
-Day 2 starts at 12pm ET / 9pm PT SHARP
-
-Enter the room now:
+Enter now:
 https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
 
-Get settled before we begin. Every moment matters.
+12pm ET / 9am PT SHARP
+
+Yesterday laid the foundation.
+Today, we put it all together.
+
+Get settled. We start in 15 minutes.
 ```
 
 ---
 
-### SMS #8: DAY 2 LIVE (12:00 PM Eastern / 9:00 AM Pacific)
+### SMS #8: DAY 2 LIVE
+**Send Time:** 12:00 PM Eastern / 9:00 AM Pacific
 
 ```
 🔴 DAY 2 IS LIVE!
 
-We're building on yesterday's foundation. Join NOW:
+We're starting NOW.
 
+JOIN:
 https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
 
-The opening has begun. Don't miss another moment.
+This is where everything comes together.
+
+Enter the room NOW.
 ```
 
 ---
 
-## SEND TIME SUMMARY
+## SEND SCHEDULE SUMMARY
 
-| Message | Day | Send Time (Eastern) | Send Time (Pacific) |
-|---------|-----|---------------------|---------------------|
-| SMS #1 | Day 1 | 9:00 AM | 6:00 AM |
-| SMS #2 | Day 1 | 10:00 AM | 7:00 AM |
-| SMS #3 | Day 1 | 10:30 AM | 7:30 AM |
-| SMS #4 | Day 1 | 11:00 AM | 8:00 AM |
-| SMS #5 | Day 2 | 10:00 AM | 7:00 AM |
-| SMS #6 | Day 2 | 11:15 AM | 8:15 AM |
-| SMS #7 | Day 2 | 11:45 AM | 8:45 AM |
-| SMS #8 | Day 2 | 12:00 PM | 9:00 AM |
+| # | Day | Send Time (ET) | Send Time (PT) | Message Type |
+|---|-----|----------------|----------------|--------------|
+| 1 | Sat | 9:00 AM | 6:00 AM | 2-hour countdown |
+| 2 | Sat | 10:00 AM | 7:00 AM | Zoom link + 1 hour |
+| 3 | Sat | 10:30 AM | 7:30 AM | Doors open |
+| 4 | Sat | 11:00 AM | 8:00 AM | WE ARE LIVE |
+| 5 | Sun | 10:00 AM | 7:00 AM | 2-hour countdown |
+| 6 | Sun | 11:15 AM | 8:15 AM | 45 minutes |
+| 7 | Sun | 11:45 AM | 8:45 AM | Doors open |
+| 8 | Sun | 12:00 PM | 9:00 AM | DAY 2 LIVE |
 
 ---
 
-## STRATEGIC NOTES
+## MESSAGING STRATEGY
 
-**Key Messaging Principles:**
-- Emphasize "opening sets the foundation" and "every moment matters"
-- Create urgency to be there from the start without revealing specific content
-- Day 2 messages reference "building on Day 1 foundation"
-- Progressive urgency: informational → reminder → urgent → LIVE
+**Urgency Arc:**
+- 2 hours: Preparation mindset, checklist focus
+- 1 hour: Zoom delivery, practical details
+- Doors open: Emotional urgency, "enter now"
+- LIVE: Maximum urgency, immediate action
 
-**Character Counts:**
-- All messages optimized for SMS delivery (under 320 characters where possible)
-- Links included starting at 1-hour mark when Zoom room typically opens
-- Zoom credentials included in "1 hour before" messages for manual entry backup
+**Key Themes:**
+- "The opening creates the container" — be there from the start
+- "Every moment matters" — no part is skippable
+- Day 2 "builds on" and "goes deeper" — continuity from Day 1
+- Short, punchy sentences for mobile reading
+
+**Character Optimization:**
+- All messages under 450 characters (fits in 3 SMS segments max)
+- Critical "LIVE" messages under 200 characters for fast delivery
+- Zoom link always included from 1-hour mark onward
+
+---
+
+**Version:** 2.0
+**Updated:** December 1, 2025
