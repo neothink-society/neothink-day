@@ -1832,9 +1832,9 @@
             const interval = setInterval(updateCountdown, 1000);
         }
 
-        // VIP upgrade countdown timer - Ends Dec 6, 2025 at 11:00 AM ET (8:00 AM PT)
+        // VIP upgrade countdown timer - Ends Dec 6, 2025 at 9:00 AM PT (12:00 PM ET)
         function initVIPCountdown() {
-            const vipDeadline = new Date('2025-12-06T11:00:00-05:00').getTime();
+            const vipDeadline = new Date('2025-12-06T12:00:00-05:00').getTime(); // 9am PT / 12pm ET
             const vipCountdownEl = document.getElementById('vip-countdown');
 
             function updateVIPCountdown() {
