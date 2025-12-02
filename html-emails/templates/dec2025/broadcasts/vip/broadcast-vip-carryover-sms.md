@@ -11,41 +11,48 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-⭐ VIP — You're already in.
+⭐ VIP Family —
 
-Your October/November VIP status carries forward to December. That's our gift to you.
+You saw behind the Matrix of Illusions. You stepped into the Immortal Mentality. And you committed to the inner circle.
 
-AND... Mark Hamilton has prepared a BRAND NEW breakthrough presentation.
+Your VIP status from Oct/Nov carries forward to December. That's our gift to you.
 
-Not a replay. Beyond October. Beyond November.
+Mark Hamilton is returning with NEW material — a new piece of the Super Puzzle to help you remove the negative and lock in your Friday Night Essence.
 
-New transmissions. New power.
-
-Choose your date:
+THE ENCORE EXPERIENCE:
 ⚡ Dec 6-7 — VIP STATUS ACTIVE
 📅 Jan 24-25, 2026
 
-Claim your VIP seat:
+Your seat at the front of the room is waiting:
 https://societysecrets.com/choose-your-date
 
-See you at the front of the room.
+We leave no one behind.
 
-— Your Neothink Family
+— The Hamilton Family
 ```
 
-**Character count:** ~450 characters (fits in 3 SMS segments)
+**Character count:** ~580 characters (fits in 4 SMS segments)
 
 ---
 
 ## Key Messaging Notes
 
+### Neothink Language Used:
+- "Matrix of Illusions" — the false reality
+- "Immortal Mentality" — the awakened state
+- "Friday Night Essence" — the creative spark
+- "Super Puzzle" — Mark Hamilton's knowledge framework
+- "Remove the negative" — eliminating stagnation
+
 ### What TO Include:
+- "VIP Family" salutation (inner circle)
 - VIP status carries forward to December (gift)
-- Mark Hamilton BRAND NEW breakthrough
+- Mark Hamilton NEW material
 - December = VIP active (no additional purchase)
-- January = standard VIP upgrade available
+- January = option available
 - Inner circle / front of the room language
-- High energy Wallace tone
+- "We leave no one behind"
+- Sign from "The Hamilton Family"
 
 ### What NOT to Include:
 - NO Level 3 specific language
@@ -57,5 +64,5 @@ VIP carryover to December is a ONE-TIME gift. For January events, standard VIP u
 
 ---
 
-**Version:** 1.0
-**Created:** December 2, 2025
+**Version:** 2.0
+**Updated:** December 2, 2025
