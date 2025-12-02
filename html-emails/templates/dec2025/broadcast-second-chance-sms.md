@@ -1,7 +1,7 @@
 # Second Chance SMS Messages - Level 2 Members (Oct/Nov Attendees)
 
 **Purpose:** Invite Level 2 members who attended Oct/Nov Day of Enlightenment to register for December or January event
-**Audience:** Level 2 members ONLY (excluding VIP upgrades/Level 3)
+**Audience:** Level 2 members ONLY (EXCLUDING VIP upgrades/Level 3 - they get separate messaging)
 **Send Time:** Immediate broadcast
 
 ---
@@ -11,27 +11,29 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-A gift from our family to yours...
+🔥 This is NOT a replay.
 
-Mark Hamilton has prepared ANOTHER historic breakthrough — beyond what was shared in October or November.
+Mark Hamilton has prepared a BRAND NEW breakthrough presentation — beyond October, beyond November.
 
-These secrets are too powerful for anyone to miss.
+New transmissions. New revelations. New power.
+
+You experienced Day of Enlightenment. You FELT it.
+
+Now there's MORE.
 
 Choose your date:
-📅 December 6-7, 2025
-📅 January 24-25, 2026
+⚡ Dec 6-7 (THIS WEEKEND!)
+📅 Jan 24-25, 2026
 
-Already VIP from Oct/Nov? Your VIP carries forward to December — our gift to you.
-
-Register now:
+Register NOW:
 https://societysecrets.com/choose-your-date
 
-Your seat is waiting.
+Don't let this one pass you by.
 
-— The Neothink Society
+— Your Neothink Family
 ```
 
-**Character count:** ~430 characters (fits in 3 SMS segments)
+**Character count:** ~410 characters (fits in 3 SMS segments)
 
 ---
 
@@ -40,50 +42,52 @@ Your seat is waiting.
 **Registration Link:** https://neothinkday.com/choose
 
 ```
-A gift from our family to yours...
+🔥 This is NOT a replay.
 
-Mark Hamilton has prepared ANOTHER historic breakthrough — beyond what was shared in October or November.
+Mark Hamilton has prepared a BRAND NEW breakthrough presentation — beyond October, beyond November.
 
-These secrets are too powerful for anyone to miss.
+New transmissions. New revelations. New power.
+
+You experienced Day of Enlightenment. You FELT it.
+
+Now there's MORE.
 
 Choose your date:
-📅 December 6-7, 2025
-📅 January 24-25, 2026
+⚡ Dec 6-7 (THIS WEEKEND!)
+📅 Jan 24-25, 2026
 
-Haven't received your Secret Manuscript yet? Choose January to allow time for it to arrive.
-
-Already VIP from Oct/Nov? Your VIP carries forward to December.
+Still waiting for your Manuscript? Choose January.
 
 Register:
 https://neothinkday.com/choose
 
-— The Neothink Society
+— Your Neothink Family
 ```
 
-**Character count:** ~470 characters (fits in 3 SMS segments)
+**Character count:** ~440 characters (fits in 3 SMS segments)
 
 ---
 
 ## Key Messaging Notes
 
 ### What TO Include:
-- Mark Hamilton new breakthrough
-- Family/intimate tone
-- VIP carryover to December (one-time gift)
-- Two date options with flexibility
+- Mark Hamilton BRAND NEW breakthrough (not replay)
+- High energy, urgent Wallace Hamilton tone
+- December urgency (this weekend!)
+- Family language
 - Direct registration link
 
 ### What NOT to Include:
+- NO VIP messaging (separate segment)
 - NO Level 3 mention
 - NO specific event details/spoilers
-- NO pressure tactics
-- NO "sales" language
+- NO "second chance" framing (leads with NEW content instead)
 
 ### Segment-Specific Notes:
-- **Online Buyers:** Standard registration link (societysecrets.com)
-- **Direct Mail Buyers:** Different link (neothinkday.com) + Manuscript arrival note for January recommendation
+- **Online Buyers:** societysecrets.com link
+- **Direct Mail Buyers:** neothinkday.com link + Manuscript note for January
 
 ---
 
-**Version:** 1.0
-**Created:** December 2, 2025
+**Version:** 2.0
+**Updated:** December 2, 2025
