@@ -107,7 +107,7 @@ Every moment matters. Enter the room.
 ```
 ⏰ Day 2 begins in 2 HOURS
 
-12pm ET / 9am PT — we go deeper
+12pm Eastern / 9am Pacific — we go deeper
 
 Yesterday you felt it. Today, we build on that foundation.
 
@@ -127,8 +127,8 @@ Same Zoom link. See you soon.
 ```
 🚨 45 MINUTES until Day 2
 
-Doors open in 15 min (11:30am ET)
-Start: 12pm ET / 9am PT SHARP
+Doors open in 15 min (11:30am Eastern)
+Start: 12pm Eastern / 9am Pacific SHARP
 
 JOIN HERE:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -150,7 +150,7 @@ If Day 1 moved something in you — Day 2 goes even deeper.
 Enter now:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-12pm ET / 9am PT SHARP
+12pm Eastern / 9am Pacific SHARP
 
 Yesterday laid the foundation.
 Today, we put it all together.
@@ -180,7 +180,7 @@ Enter the room NOW.
 
 ## SEND SCHEDULE SUMMARY
 
-| # | Day | Send Time (ET) | Send Time (PT) | Message Type |
+| # | Day | Send Time (Eastern) | Send Time (Pacific) | Message Type |
 |---|-----|----------------|----------------|--------------|
 | 1 | Sat | 9:00 AM | 6:00 AM | 2-hour countdown |
 | 2 | Sat | 10:00 AM | 7:00 AM | Zoom link + 1 hour |

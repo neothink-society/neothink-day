@@ -51,10 +51,10 @@ These emails exist for Nov 2025 and need December adaptation:
 **Email 8: preparation-3days.html**
 - **Source**: `/templates/nov2025/preparation-3days.html`
 - **Changes Needed**:
-  - VIP deadline: 9am PT Saturday, December 6, 2025
+  - VIP deadline: 9am Pacific Saturday, December 6, 2025
   - Workshop hub: `https://neothinkevent.com/home`
   - Subject line: Keep "⚡ 72 Hours: Last Chance for VIP"
-  - Preview text: Update "Upgrade closes 9am PT Saturday"
+  - Preview text: Update "Upgrade closes 9am Pacific Saturday"
   - Deadline box: "December 6, 2025"
   - Footer: December 6-7, 2025
 - **Complexity**: Low (find/replace dates and URLs)
@@ -67,7 +67,7 @@ These emails exist for Nov 2025 and need December adaptation:
   - Workshop hub: `https://neothinkevent.com/home`
   - Subject line: Keep "48 Hours: Your Final Preparation Checklist"
   - Preview text: Update date reference
-  - "Tomorrow morning" text: "Friday morning at 7am PT"
+  - "Tomorrow morning" text: "Friday morning at 7am Pacific"
   - Footer: December 6-7, 2025
 - **Complexity**: Low (find/replace dates and URLs)
 - **Time Estimate**: 5 minutes
@@ -77,7 +77,7 @@ These emails exist for Nov 2025 and need December adaptation:
 - **Changes Needed**:
   - Event dates: December 6-7, 2025
   - Workshop hub: `https://neothinkevent.com/home`
-  - Subject line: Keep "Tomorrow 7am PT: Your Zoom Link Arrives"
+  - Subject line: Keep "Tomorrow 7am Pacific: Your Zoom Link Arrives"
   - Preview text: Update date reference
   - Date box: "Saturday, December 6, 7:00 AM Pacific Time"
   - Footer: December 6-7, 2025
@@ -90,7 +90,7 @@ These emails exist for Nov 2025 and need December adaptation:
   - Event dates: December 6-7, 2025
   - Workshop hub: `https://neothinkevent.com/home`
   - Subject line: Keep "🔴 LIVE IN 1 HOUR: Join Now"
-  - Preview text: Update "starts 8:00 AM PT sharp"
+  - Preview text: Update "starts 8:00 AM Pacific sharp"
   - Zoom link: `https://zoom.us/j/YOUR_MEETING_ID` (placeholder)
   - Footer: December 6-7, 2025
 - **Complexity**: Low (find/replace dates and URLs)
@@ -210,7 +210,7 @@ Passcode: suocaa3N8IpFUqq9FHkyWZqlFhlvnv.1
 ## 📅 December 2025 Email Sequence Timeline
 
 **Event**: Saturday-Sunday, December 6-7, 2025
-**VIP Deadline**: 8:00 AM PT Saturday, December 6
+**VIP Deadline**: 8:00 AM Pacific Saturday, December 6
 **Workshop Hub**: https://neothinkevent.com/home
 
 ### Complete Sequence (10 emails):
@@ -225,7 +225,7 @@ Wait ~3 days → Email 6 (Day 4: Dec 2)
 Wait ~1 day → Email 7 (Day 3: Dec 3)
 Wait ~1 day → Email 8 (Day 2: Dec 4)
 Wait ~1 day → Email 9 (Day 1: Dec 5 evening)
-Wait ~12 hours → Email 10 (Day 0: Dec 6 @ 7am PT)
+Wait ~12 hours → Email 10 (Day 0: Dec 6 @ 7am Pacific)
 ```
 
 **Email Frequency**:

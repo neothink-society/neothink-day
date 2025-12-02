@@ -17,7 +17,7 @@
 
 **Purpose**: Confirm registration, set expectations, introduce VIP upgrade
 **Key Elements**:
-- Workshop dates and times (Saturday Dec 6 + Sunday Dec 7, 8am-5pm PT)
+- Workshop dates and times (Saturday Dec 6 + Sunday Dec 7, 8am-5pm Pacific)
 - What You'll Discover (3 mysterious benefits)
 - What Happens Next (4 steps)
 - Pre-work introduction (pages 1-50 + 5 reflection questions)
@@ -170,11 +170,11 @@
 **File**: `preparation-3days.html`
 **Automation Timing**: Send when event is 3 days away (72 hours)
 **Subject**: `⚡ 72 Hours: Last Chance for VIP`
-**Preview**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 9am PT Saturday. 72 hours left to maximize your transformation.`
+**Preview**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 9am Pacific Saturday. 72 hours left to maximize your transformation.`
 
 **Purpose**: Final VIP conversion push before deadline
 **Key Elements**:
-- Countdown to VIP deadline (9am PT Saturday Dec 6)
+- Countdown to VIP deadline (9am Pacific Saturday Dec 6)
 - All 5 VIP benefits with ⭐ icons:
   1. GUARANTEED 1-on-1 Mentorship
   2. Exclusive VIP-Only Session (Day 2)
@@ -211,7 +211,7 @@
   - Prepare note-taking tools
   - Review pre-work answers
   - Come ready to engage
-- Reminder: Zoom link arrives tomorrow at 7am PT
+- Reminder: Zoom link arrives tomorrow at 7am Pacific
 - VIP upgrade closing soon (secondary)
 - Workshop hub link
 
@@ -222,35 +222,35 @@
 ### 10. 1-Day Logistics Email
 **File**: `preparation-1day.html`
 **Automation Timing**: Send evening before event (Dec 5 evening)
-**Subject**: `Tomorrow 7am PT: Your Zoom Link Arrives`
-**Preview**: `Your Zoom link arrives at 7am PT tomorrow. Set 3 alarms. Join 10 minutes early. Tonight: Rest well, review your pre-work, prepare your mindset.`
+**Subject**: `Tomorrow 7am Pacific: Your Zoom Link Arrives`
+**Preview**: `Your Zoom link arrives at 7am Pacific tomorrow. Set 3 alarms. Join 10 minutes early. Tonight: Rest well, review your pre-work, prepare your mindset.`
 
 **Purpose**: Final reminders, reduce anxiety, ensure they're ready
 **Key Elements**:
-- Clear timing: Zoom link arrives 7am PT tomorrow
+- Clear timing: Zoom link arrives 7am Pacific tomorrow
 - **Set 3 Alarms Tonight**:
-  - Alarm 1: 6:45 AM PT – Wake up
-  - Alarm 2: 7:00 AM PT – Check email for Zoom link
-  - Alarm 3: 7:40 AM PT – Join Zoom room
+  - Alarm 1: 6:45 AM Pacific – Wake up
+  - Alarm 2: 7:00 AM Pacific – Check email for Zoom link
+  - Alarm 3: 7:40 AM Pacific – Join Zoom room
 - **What to Do Tonight** (4 items):
   - Rest well
   - Review your pre-work
   - Prepare your mindset
   - Set your intention
 - Quick reminders checklist (7 items)
-- Final VIP reminder (closes tomorrow at 9am PT)
+- Final VIP reminder (closes tomorrow at 9am Pacific)
 - Workshop hub link
 - Inspirational quote: "Tomorrow, everything changes."
 
-**Focus**: Your Zoom link arrives tomorrow morning at 7am PT
+**Focus**: Your Zoom link arrives tomorrow morning at 7am Pacific
 
 ---
 
 ### 11. Day-Of Zoom Link Email
 **File**: `day-of.html`
-**Automation Timing**: Send at 7:00 AM PT on event day (Dec 6)
+**Automation Timing**: Send at 7:00 AM Pacific on event day (Dec 6)
 **Subject**: `🔴 LIVE IN 1 HOUR: Join Now`
-**Preview**: `Click to join. Workshop starts 8:00 AM PT sharp. Doors close at 8:00 AM. Join now.`
+**Preview**: `Click to join. Workshop starts 8:00 AM Pacific sharp. Doors close at 8:00 AM. Join now.`
 
 **Purpose**: Deliver Zoom link with maximum urgency
 **Key Elements**:
@@ -261,9 +261,9 @@
 - Backup text link (for people who can't click buttons)
 - Before You Join checklist (5 items)
 - **Today's Schedule**:
-  - 8:00 AM – 12:00 PM PT: Morning Session
-  - 12:00 PM – 1:00 PM PT: Lunch Break
-  - 1:00 PM – 5:00 PM PT: Afternoon Session
+  - 8:00 AM – 12:00 PM Pacific: Morning Session
+  - 12:00 PM – 1:00 PM Pacific: Lunch Break
+  - 1:00 PM – 5:00 PM Pacific: Afternoon Session
 - VIP note about separate priority access email
 - Second Zoom CTA button (repeated for emphasis)
 - Support email for technical issues
@@ -288,7 +288,7 @@ The automation should work as follows:
 8. **3 Days Before Event** → Send 3-Day VIP Email
 9. **2 Days Before Event** → Send 2-Day Checklist Email
 10. **1 Day Before Event (evening)** → Send 1-Day Logistics Email
-11. **Day Of Event @ 7am PT** → Send Day-Of Zoom Link Email
+11. **Day Of Event @ 7am Pacific** → Send Day-Of Zoom Link Email
 
 ### Email Frequency Breakdown
 
@@ -311,7 +311,7 @@ The automation should work as follows:
 
 ### VIP Deadline
 
-**VIP Upgrade Closes**: 9:00 AM PT on Saturday, December 6, 2025
+**VIP Upgrade Closes**: 9:00 AM Pacific on Saturday, December 6, 2025
 - All emails before 3-day email promote VIP upgrade
 - 3-day email is the MAIN VIP conversion push
 - 2-day and 1-day emails mention VIP upgrade closing soon
@@ -383,8 +383,8 @@ Before sending any email:
 ### Content Verification
 - [ ] Confirm event dates (December 6-7, 2025)
 - [ ] Verify workshop hub URL (neothinkevent.com/home - NOT neothinkday.com)
-- [ ] Check VIP deadline timing (9am PT Saturday, December 6)
-- [ ] Confirm timezone displayed (PT = Pacific Time)
+- [ ] Check VIP deadline timing (9am Pacific Saturday, December 6)
+- [ ] Confirm timezone displayed (Pacific Time)
 - [ ] Verify pre-work references match (pages 1-50, 5 questions)
 - [ ] Verify Zoom link in day-of.html matches December meeting
 
@@ -393,7 +393,7 @@ Before sending any email:
 - [ ] Test welcome follow-up sent 10 minutes after registration
 - [ ] Test late registration catch-up logic (14-day, 9-day, 7-day, etc.)
 - [ ] Verify VIP/non-VIP segmentation
-- [ ] Test email timing (7am PT for day-of email on December 6)
+- [ ] Test email timing (7am Pacific for day-of email on December 6)
 - [ ] Verify wait periods between emails (6 days, 5 days, 2 days, etc.)
 
 ### Zoom Link Verification (CRITICAL)
@@ -419,7 +419,7 @@ Before sending any email:
 7. **4-Day**: `4 Days: Block BOTH Full Days Now`
 8. **3-Day VIP**: `⚡ 72 Hours: Last Chance for VIP`
 9. **2-Day**: `48 Hours: Your Final Preparation Checklist`
-10. **1-Day**: `Tomorrow 7am PT: Your Zoom Link Arrives`
+10. **1-Day**: `Tomorrow 7am Pacific: Your Zoom Link Arrives`
 11. **Day-Of**: `🔴 LIVE IN 1 HOUR: Join Now`
 
 ---
