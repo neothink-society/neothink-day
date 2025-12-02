@@ -3,9 +3,9 @@
 **Event:** Day of Enlightenment Workshop
 **Dates:** December 6-7, 2025
 
-**Day 1:** Saturday, Dec 6 — 11:00 AM ET / 8:00 AM PT (all day)
-**Day 2:** Sunday, Dec 7 — 12:00 PM ET / 9:00 AM PT (all day)
-**VIP Deadline:** Saturday, Dec 6 at 11:00 AM ET / 8:00 AM PT
+**Day 1:** Saturday, Dec 6 — 11:00 AM Eastern / 8:00 AM Pacific (all day)
+**Day 2:** Sunday, Dec 7 — 12:00 PM Eastern / 9:00 AM Pacific (all day)
+**VIP Deadline:** Saturday, Dec 6 at 12:00 PM Eastern / 9:00 AM Pacific
 
 **Zoom Details:**
 - Link: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -153,7 +153,7 @@ Quick gut check: Are you ready to get the most out of this weekend?
 
 VIP Elite adds GUARANTEED access to an intimate group session with Wallace Hamilton on Day 2 — personalized guidance on YOUR specific breakthrough.
 
-Upgrade closes Saturday at 12pm ET / 9am PT. No exceptions after that.
+Upgrade closes Saturday at 12pm Eastern / 9am Pacific. No exceptions after that.
 
 If you're curious: https://neothinkevent.com/home
 
@@ -256,7 +256,7 @@ Tonight:
 • Lay out water, pen, paper
 • Get your workbook ready
 
-Your Zoom link arrives tomorrow morning at 10am ET.
+Your Zoom link arrives tomorrow morning at 10am Eastern.
 
 Whatever you did or didn't do to prepare — you're ready enough. Show up tomorrow and be present. That's what matters.
 
@@ -283,7 +283,7 @@ Tonight:
 • Review your questions for Wallace
 • Get your workbook ready
 
-Your Zoom link arrives tomorrow morning at 10am ET.
+Your Zoom link arrives tomorrow morning at 10am Eastern.
 
 Rest well. You're about to experience something most people never will.
 
@@ -298,7 +298,7 @@ See you in the inner circle.
 
 ---
 
-### 8. Day 1 — 2 Hours Before (9:00 AM ET / 6:00 AM PT)
+### 8. Day 1 — 2 Hours Before (9:00 AM Eastern / 6:00 AM Pacific)
 **Emotional state:** Pacific folks might be asleep! Eastern folks getting ready. Anticipation building.
 **What they need:** Gentle wake-up, not aggressive alarm
 
@@ -321,15 +321,15 @@ See you soon.
 
 ---
 
-### 9. Day 1 — Zoom Link (10:00 AM ET / 7:00 AM PT)
+### 9. Day 1 — Zoom Link (10:00 AM Eastern / 7:00 AM Pacific)
 **Emotional state:** Relief (finally have the link!), eager to get in
 **What they need:** Clear access info, no friction
 
 ```
 🔴 YOUR ZOOM LINK
 
-Doors open: NOW (10:30am ET)
-Start time: 11am ET / 8am PT SHARP
+Doors open: NOW (10:30am Eastern)
+Start time: 11am Eastern / 8am Pacific SHARP
 
 JOIN HERE:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -346,7 +346,7 @@ See you inside.
 
 ---
 
-### 10. Day 1 — Doors Open (10:30 AM ET)
+### 10. Day 1 — Doors Open (10:30 AM Eastern)
 **Emotional state:** Eager beavers already in! Others still getting ready.
 **What they need:** Acknowledge both states
 
@@ -367,7 +367,7 @@ The energy in the room right now is already building.
 
 ---
 
-### 11. Day 1 — WE'RE LIVE (11:00 AM ET)
+### 11. Day 1 — WE'RE LIVE (11:00 AM Eastern)
 **Emotional state:** MOST PEOPLE ARE ALREADY IN THE ROOM. Some are rushing.
 **What they need:** Acknowledge both — don't make people in the room feel this message isn't for them
 
@@ -402,7 +402,7 @@ Tonight:
 • Let your subconscious process while you sleep
 • Rest well
 
-Tomorrow (Day 2): 12pm ET / 9am PT
+Tomorrow (Day 2): 12pm Eastern / 9am Pacific
 Same Zoom link.
 
 You're not the same person you were this morning.
@@ -416,7 +416,7 @@ See you tomorrow.
 
 ---
 
-### 13. Day 2 — 2 Hours Before (10:00 AM ET)
+### 13. Day 2 — 2 Hours Before (10:00 AM Eastern)
 **Emotional state:** Tired but different. Know what to expect now. Some eager, some need caffeine.
 **What they need:** Gentle energy, acknowledgment they know the drill
 
@@ -425,7 +425,7 @@ See you tomorrow.
 
 You know what to do now. You've been here before (yesterday).
 
-12pm ET / 9am PT — we go deeper.
+12pm Eastern / 9am Pacific — we go deeper.
 
 Have ready:
 • Workbook + your notes from Day 1
@@ -441,14 +441,14 @@ See you soon.
 
 ---
 
-### 14. Day 2 — 45 Minutes Before (11:15 AM ET)
+### 14. Day 2 — 45 Minutes Before (11:15 AM Eastern)
 **Emotional state:** Getting back into workshop mode. Maybe still processing Day 1.
 **What they need:** Gentle activation, practical reminder
 
 ```
 🚨 45 MINUTES until Day 2
 
-Doors open in 15 min (11:30am ET)
+Doors open in 15 min (11:30am Eastern)
 
 If you need a few more minutes with your coffee — take it.
 
@@ -463,7 +463,7 @@ Whatever Day 1 stirred up in you — today we work with it.
 
 ---
 
-### 15. Day 2 — Doors Open (11:45 AM ET)
+### 15. Day 2 — Doors Open (11:45 AM Eastern)
 **Emotional state:** Familiar now. Community feeling. Some already in room.
 **What they need:** Acknowledge the returning community
 
@@ -475,7 +475,7 @@ If you're already in the room — welcome back. The energy is already building.
 If you're joining now:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-12pm ET / 9am PT SHARP
+12pm Eastern / 9am Pacific SHARP
 
 Yesterday we laid the foundation.
 Today, we put it all together.
@@ -485,7 +485,7 @@ Get settled. We begin soon.
 
 ---
 
-### 16. Day 2 — WE'RE LIVE (12:00 PM ET)
+### 16. Day 2 — WE'RE LIVE (12:00 PM Eastern)
 **Emotional state:** Most in room. Ready to complete the journey.
 **What they need:** Honor where they are, gentle urgency for stragglers
 
@@ -576,7 +576,7 @@ Make the most of this moment.
 
 ## COMPLETE SEND SCHEDULE
 
-| # | Message | Audience | Day | Time (ET) |
+| # | Message | Audience | Day | Time (Eastern) |
 |---|---------|----------|-----|-----------|
 | 1 | Registration | All | On signup | Immediate |
 | 2 | VIP Confirmation | VIP | On purchase | Immediate |

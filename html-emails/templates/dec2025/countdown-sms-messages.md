@@ -4,12 +4,12 @@
 **Dates:** December 6-7, 2025
 
 **Day 1 Schedule (Saturday, Dec 6):**
-- Doors Open: 10:30 AM ET / 7:30 AM PT
-- Workshop Begins: 11:00 AM ET / 8:00 AM PT
+- Doors Open: 10:30 AM Eastern / 7:30 AM Pacific
+- Workshop Begins: 11:00 AM Eastern / 8:00 AM Pacific
 
 **Day 2 Schedule (Sunday, Dec 7):**
-- Doors Open: 11:30 AM ET / 8:30 AM PT
-- Workshop Begins: 12:00 PM ET / 9:00 AM PT
+- Doors Open: 11:30 AM Eastern / 8:30 AM Pacific
+- Workshop Begins: 12:00 PM Eastern / 9:00 AM Pacific
 
 **Zoom Details:**
 - Link: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -28,7 +28,7 @@
 ```
 ⏰ Day of Enlightenment begins in 2 HOURS
 
-11am ET / 8am PT — your transformation starts
+11am Eastern / 8am Pacific — your transformation starts
 
 ☑️ Workbook printed & ready
 ☑️ Quiet space secured
@@ -47,8 +47,8 @@ This is the day everything changes.
 ```
 🔴 YOUR ZOOM LINK — 1 HOUR TO GO
 
-Doors open: 10:30am ET
-Start time: 11am ET / 8am PT SHARP
+Doors open: 10:30am Eastern
+Start time: 11am Eastern / 8am Pacific SHARP
 
 JOIN HERE:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
