@@ -393,354 +393,6 @@
         }
 
         /* ===========================
-           JOIN WORKSHOP CTA
-        =========================== */
-        .join-workshop-cta {
-            padding: var(--space-3xl) var(--space-md);
-            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
-            border-top: 3px solid var(--gold);
-            border-bottom: 3px solid var(--gold);
-        }
-
-        .join-cta-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .join-cta-title {
-            font-family: var(--font-serif);
-            font-size: var(--text-4xl);
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-lg);
-            line-height: 1.2;
-        }
-
-        .join-cta-subtitle {
-            font-size: var(--text-xl);
-            color: var(--gray-300);
-            margin-bottom: var(--space-2xl);
-            line-height: 1.6;
-        }
-
-        .join-cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-md);
-            padding: 2rem 4rem;
-            font-family: var(--font-sans);
-            font-size: var(--text-2xl);
-            font-weight: 800;
-            color: var(--black);
-            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
-            border: none;
-            border-radius: 16px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            min-height: 80px;
-            box-shadow:
-                0 12px 40px rgba(255, 215, 0, 0.4),
-                0 0 80px rgba(255, 215, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-            animation: glow-pulse 2s ease-in-out infinite;
-        }
-
-        .join-cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg,
-                transparent,
-                rgba(255, 255, 255, 0.4),
-                transparent
-            );
-            transition: left 0.6s ease;
-        }
-
-        .join-cta-button:hover::before {
-            left: 100%;
-        }
-
-        .join-cta-button:hover {
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-            transform: translateY(-6px) scale(1.05);
-            box-shadow:
-                0 20px 60px rgba(255, 215, 0, 0.6),
-                0 0 120px rgba(255, 215, 0, 0.3);
-        }
-
-        .join-cta-button:active {
-            transform: translateY(-3px) scale(1.03);
-        }
-
-        .join-cta-button svg {
-            transition: transform 0.3s ease;
-            width: 32px;
-            height: 32px;
-        }
-
-        .join-cta-button:hover svg {
-            transform: scale(1.2);
-        }
-
-        .join-cta-note {
-            margin-top: var(--space-xl);
-            font-family: var(--font-mono);
-            font-size: var(--text-base);
-            color: var(--gray-400);
-            font-weight: 600;
-            letter-spacing: 0.05em;
-        }
-
-        /* Mobile adjustments for Join CTA */
-        @media (max-width: 768px) {
-            .join-cta-title {
-                font-size: var(--text-2xl);
-            }
-
-            .join-cta-subtitle {
-                font-size: var(--text-base);
-            }
-
-            .join-cta-button {
-                padding: 1.5rem 2.5rem;
-                font-size: var(--text-xl);
-                min-height: 70px;
-            }
-
-            .join-cta-note {
-                font-size: var(--text-sm);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .join-cta-title {
-                font-size: var(--text-xl);
-            }
-
-            .join-cta-button {
-                padding: 1.25rem 2rem;
-                font-size: var(--text-lg);
-                min-height: 60px;
-                width: 100%;
-            }
-
-            .join-cta-button svg {
-                width: 24px;
-                height: 24px;
-            }
-        }
-
-        /* ===========================
-           WORKBOOK DOWNLOAD CTA
-        =========================== */
-        .workbook-cta {
-            padding: var(--space-2xl) var(--space-md);
-            background: var(--black);
-        }
-
-        .workbook-alert {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: var(--space-xl);
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
-            border: 3px solid var(--gold);
-            border-radius: 20px;
-            display: flex;
-            gap: var(--space-xl);
-            align-items: center;
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
-            animation: subtle-pulse 3s ease-in-out infinite;
-        }
-
-        .workbook-alert-icon {
-            flex-shrink: 0;
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-        }
-
-        .workbook-alert-icon svg {
-            color: var(--black);
-        }
-
-        .workbook-alert-content {
-            flex: 1;
-        }
-
-        .workbook-alert-title {
-            font-family: var(--font-serif);
-            font-size: var(--text-2xl);
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-sm);
-            line-height: 1.3;
-        }
-
-        .workbook-alert-text {
-            font-size: var(--text-base);
-            color: var(--gray-200);
-            margin-bottom: var(--space-lg);
-            line-height: 1.6;
-        }
-
-        .workbook-download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-sm);
-            padding: 1rem 2rem;
-            font-family: var(--font-sans);
-            font-size: var(--text-lg);
-            font-weight: 700;
-            color: var(--black);
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
-            border: none;
-            border-radius: 12px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
-        }
-
-        .workbook-download-btn:hover {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
-        }
-
-        .workbook-download-btn svg {
-            transition: transform 0.3s ease;
-        }
-
-        .workbook-download-btn:hover svg {
-            transform: translateY(2px);
-        }
-
-        /* Mobile adjustments for Workbook CTA */
-        @media (max-width: 768px) {
-            .workbook-alert {
-                flex-direction: column;
-                text-align: center;
-                padding: var(--space-lg);
-            }
-
-            .workbook-alert-icon {
-                width: 60px;
-                height: 60px;
-            }
-
-            .workbook-alert-icon svg {
-                width: 30px;
-                height: 30px;
-            }
-
-            .workbook-alert-title {
-                font-size: var(--text-xl);
-            }
-
-            .workbook-alert-text {
-                font-size: var(--text-sm);
-            }
-
-            .workbook-download-btn {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-        /* ===========================
-           MEMBER STORIES SECTION
-        =========================== */
-        .member-stories-section {
-            padding: var(--space-3xl) var(--space-md);
-            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 100%);
-        }
-
-        .member-stories-section .section-label {
-            display: block;
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: var(--space-sm);
-        }
-
-        .stories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: var(--space-xl);
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .story-card {
-            padding: var(--space-xl);
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.6));
-            border: 1px solid var(--gray-800);
-            border-left: 4px solid var(--gold);
-            border-radius: 12px;
-            transition: all 0.3s ease;
-        }
-
-        .story-card:hover {
-            border-color: rgba(255, 215, 0, 0.4);
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        .story-quote {
-            font-family: var(--font-serif);
-            font-size: var(--text-lg);
-            font-style: italic;
-            color: var(--gray-200);
-            line-height: 1.7;
-            margin: 0 0 var(--space-lg) 0;
-        }
-
-        .story-author {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-
-        .story-author-name {
-            font-family: var(--font-sans);
-            font-size: var(--text-sm);
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        .story-author-role {
-            font-family: var(--font-sans);
-            font-size: var(--text-sm);
-            color: var(--gray-400);
-        }
-
-        @media (max-width: 768px) {
-            .stories-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .story-quote {
-                font-size: var(--text-base);
-            }
-        }
-
-        /* ===========================
            QUICK ACCESS SECTION - REDESIGNED 2025
         =========================== */
         .quick-access-section {
@@ -988,7 +640,6 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             min-height: 56px;
             box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
-            white-space: nowrap;
         }
 
         .card-link:hover {
@@ -1115,13 +766,12 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg,
-                rgba(255, 215, 0, 0.12) 0%,
+                rgba(255, 107, 107, 0.08) 0%,
                 rgba(255, 154, 0, 0.08) 50%,
-                rgba(255, 215, 0, 0.12) 100%
+                rgba(255, 215, 0, 0.08) 100%
             );
-            border-top: 3px solid rgba(255, 215, 0, 0.4);
-            border-bottom: 3px solid rgba(255, 215, 0, 0.4);
-            box-shadow: 0 0 60px rgba(255, 215, 0, 0.15);
+            border-top: 2px solid rgba(255, 107, 107, 0.2);
+            border-bottom: 2px solid rgba(255, 107, 107, 0.2);
         }
 
         .vip-banner {
@@ -1145,43 +795,37 @@
             align-items: center;
             gap: var(--space-xs);
             font-family: var(--font-sans);
-            font-size: var(--text-base);
-            font-weight: 800;
-            color: var(--gold);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: #ff6b6b;
             text-transform: uppercase;
-            letter-spacing: 0.15em;
-            background: rgba(255, 215, 0, 0.15);
-            padding: var(--space-xs) var(--space-md);
-            border-radius: 20px;
-            border: 2px solid rgba(255, 215, 0, 0.4);
+            letter-spacing: 0.1em;
         }
 
         .vip-banner-eyebrow svg {
-            width: 24px;
-            height: 24px;
-            animation: pulse-glow-gold 2s ease-in-out infinite;
+            width: 20px;
+            height: 20px;
+            animation: pulse-glow 2s ease-in-out infinite;
         }
 
-        @keyframes pulse-glow-gold {
+        @keyframes pulse-glow {
             0%, 100% {
                 opacity: 1;
-                filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
-                transform: scale(1);
+                filter: drop-shadow(0 0 4px rgba(255, 107, 107, 0.6));
             }
             50% {
-                opacity: 0.8;
-                filter: drop-shadow(0 0 12px rgba(255, 215, 0, 1));
-                transform: scale(1.1);
+                opacity: 0.7;
+                filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.9));
             }
         }
 
         .vip-banner-title {
             font-family: var(--font-serif);
-            font-size: var(--text-4xl);
+            font-size: var(--text-3xl);
             font-weight: 700;
             color: var(--white);
             line-height: 1.2;
-            margin: var(--space-sm) 0 0 0;
+            margin: 0;
         }
 
         .vip-banner-title .highlight {
@@ -1220,7 +864,6 @@
         .vip-benefit-item strong {
             color: var(--gold);
             font-weight: 700;
-            white-space: nowrap;
         }
 
         .vip-benefit-item svg {
@@ -1254,21 +897,18 @@
 
         .vip-value-price {
             font-family: var(--font-serif);
-            font-size: var(--text-5xl);
+            font-size: var(--text-4xl);
             font-weight: 700;
             color: var(--gold);
             line-height: 1;
-            margin-bottom: var(--space-sm);
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            margin-bottom: var(--space-xs);
         }
 
         .vip-value-note {
             font-family: var(--font-sans);
-            font-size: var(--text-sm);
-            color: var(--gray-300);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
             font-style: italic;
-            line-height: 1.6;
-            max-width: 320px;
         }
 
         .vip-banner-button {
@@ -1276,25 +916,24 @@
             align-items: center;
             justify-content: center;
             gap: var(--space-sm);
-            padding: 1.5rem 3rem;
+            padding: 1.25rem 2.5rem;
             font-family: var(--font-sans);
-            font-size: var(--text-xl);
-            font-weight: 800;
+            font-size: var(--text-lg);
+            font-weight: 700;
             color: var(--black);
             background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
             border: none;
-            border-radius: 16px;
+            border-radius: 12px;
             text-decoration: none;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            min-height: 70px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 60px;
             box-shadow:
-                0 12px 40px rgba(255, 215, 0, 0.5),
-                0 0 80px rgba(255, 215, 0, 0.2);
+                0 8px 30px rgba(255, 215, 0, 0.3),
+                0 0 60px rgba(255, 215, 0, 0.1);
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-            animation: glow-pulse 2.5s ease-in-out infinite;
         }
 
         .vip-banner-button::before {
@@ -1445,58 +1084,25 @@
 
             .vip-banner {
                 grid-template-columns: 1fr;
-                gap: var(--space-2xl);
-                padding: var(--space-2xl) var(--space-md);
-            }
-
-            .vip-banner-eyebrow {
-                font-size: var(--text-sm);
-                padding: var(--space-xs) var(--space-sm);
-            }
-
-            .vip-banner-eyebrow svg {
-                width: 20px;
-                height: 20px;
+                gap: var(--space-xl);
+                padding: var(--space-xl) var(--space-md);
             }
 
             .vip-banner-title {
                 font-size: var(--text-2xl);
             }
 
-            .vip-banner-subtitle {
-                font-size: var(--text-base);
-            }
-
-            .vip-banner-benefits {
-                margin-top: var(--space-md);
-            }
-
-            .vip-benefit-item {
-                font-size: var(--text-base);
-            }
-
             .vip-banner-cta {
                 align-items: stretch;
-                gap: var(--space-xl);
             }
 
-            .vip-banner-value {
+            .vip-banner-countdown {
                 text-align: center;
-            }
-
-            .vip-value-price {
-                font-size: var(--text-4xl);
-            }
-
-            .vip-value-note {
-                font-size: var(--text-sm);
             }
 
             .vip-banner-button {
                 width: 100%;
-                padding: 1.25rem 2rem;
-                font-size: var(--text-lg);
-                min-height: 64px;
+                padding: 1.125rem 2rem;
             }
         }
 
@@ -1522,39 +1128,26 @@
                 font-size: var(--text-2xl);
             }
 
-            .vip-banner {
-                padding: var(--space-xl) var(--space-sm);
-            }
-
-            .vip-banner-eyebrow {
-                font-size: var(--text-xs);
-                letter-spacing: 0.1em;
-            }
-
             .vip-banner-title {
                 font-size: var(--text-xl);
             }
 
-            .vip-banner-subtitle {
-                font-size: var(--text-sm);
+            .vip-banner-benefits {
+                gap: var(--space-sm);
             }
 
             .vip-benefit-item {
-                font-size: var(--text-sm);
-            }
-
-            .vip-value-price {
-                font-size: var(--text-3xl);
-            }
-
-            .vip-value-note {
                 font-size: var(--text-xs);
+            }
+
+            .vip-banner-countdown-timer {
+                font-size: var(--text-xl);
             }
 
             .vip-banner-button {
                 font-size: var(--text-base);
-                padding: 1.125rem 1.5rem;
-                min-height: 56px;
+                padding: 1rem 1.5rem;
+                min-height: 52px;
             }
         }
 
@@ -1661,7 +1254,6 @@
             border-radius: 12px;
             transition: all var(--duration-base) var(--ease-out);
             box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
-            white-space: nowrap;
         }
 
         .pre-work-button:hover {
@@ -1853,103 +1445,52 @@
                 </div>
             </section>
 
-            <!-- Join Workshop CTA -->
-            <section class="join-workshop-cta">
-                <div class="container">
-                    <div class="join-cta-content">
-                        <h2 class="join-cta-title">🔴 Day 2 Starts at 9am PT / 12pm ET</h2>
-                        <p class="join-cta-subtitle">Welcome to Day 2! Click below to join. Same Zoom link as yesterday.</p>
-                        <a href="https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="join-cta-button"
-                           aria-label="Join Day 2 of the workshop on Zoom">
-                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                            </svg>
-                            Join Day 2 Now
-                        </a>
-                        <p class="join-cta-note">Sunday, January 25 • 9am PT / 10am MT / 11am CT / 12pm ET</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Day 1 Highlights Section -->
-            <section class="workbook-cta">
-                <div class="container">
-                    <div class="workbook-alert">
-                        <div class="workbook-alert-icon">
-                            <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <div class="workbook-alert-content">
-                            <h3 class="workbook-alert-title">✨ Day 1 Complete - Key Highlights</h3>
-                            <p class="workbook-alert-text">Yesterday's transformation journey covered:</p>
-                            <ul style="margin: var(--space-md) 0; padding-left: var(--space-lg); color: var(--gray-200); line-height: 1.8;">
-                                <li><strong style="color: var(--gold);">Achieving Your Impossible Dream</strong> - The core theme: Happiness comes from achieving dreams that provide value to others</li>
-                                <li><strong style="color: var(--gold);">Downstream Focus (The Great Secret)</strong> - Moving from upstream struggle to downstream flow where success becomes inevitable</li>
-                                <li><strong style="color: var(--gold);">Friday Night Essence Discovery</strong> - Identifying your natural productive joy activity through powerful guided meditation</li>
-                                <li><strong style="color: var(--gold);">Million Dollar Vision</strong> - Turning your essence into tangible dreams with scheduled action blocks in your calendar</li>
-                                <li><strong style="color: var(--gold);">The Neothink Prosperity Code</strong> - "I create value, I generate wealth, I gain freedom, I expand my genius"</li>
-                                <li><strong style="color: var(--gold);">Wealth Engine & Financial Freedom</strong> - Calculating your specific path from Security to Independence to Freedom</li>
-                            </ul>
-                            <p class="workbook-alert-text" style="margin-top: var(--space-md); font-style: italic; color: var(--gray-300);">Note: Day 1 recordings are not available. Day 2 continues building on these foundations with a special live appearance from Prime Mentor Mark Hamilton.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Level 3: Stargazer Event Banner -->
+            <!-- VIP Upgrade Banner -->
             <section class="vip-banner-section">
                 <div class="vip-banner">
                     <div class="vip-banner-content">
-                        <div class="vip-banner-eyebrow">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        <span class="vip-banner-eyebrow">
+                            <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                             </svg>
-                            Level 3: Stargazer Event
-                        </div>
+                            🔒 VIP Upgrade - Limited Spots Available
+                        </span>
                         <h2 class="vip-banner-title">
-                            Ready to Reach Your <span class="highlight">Unreachable Star?</span>
+                            Don't Leave Your Breakthrough to Chance—<span class="highlight">Get VIP</span>
                         </h2>
                         <p class="vip-banner-subtitle">
-                            The 3-Day Stargazer Event is your implementation phase—designed to remove all limitations blocking your path to total freedom and wealth.
+                            VIP members receive guaranteed private group mentorship with Wallace Hamilton and priority assistance. Upgrade closes when workshop starts.
                         </p>
                         <div class="vip-banner-benefits">
                             <div class="vip-benefit-item">
-                                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <strong>Day 1:</strong> Remove internal limitations—feel your original power in complete form
+                                <span><strong>GUARANTEED</strong> private intimate group session with Wallace Hamilton</span>
                             </div>
                             <div class="vip-benefit-item">
-                                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <strong>Day 2:</strong> Prime Mentor's $400M wealth mechanics—build your personal Wealth Engine
+                                <span><strong>PRIORITY</strong> assistance during Day 1 (your questions answered first)</span>
                             </div>
                             <div class="vip-benefit-item">
-                                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <strong>Day 3:</strong> Become an architect of reality—bend time, people, and opportunity toward you
+                                <span><strong>EXCLUSIVE</strong> VIP-only session on Day 2 (time TBD)</span>
                             </div>
                         </div>
                     </div>
                     <div class="vip-banner-cta">
                         <div class="vip-banner-value">
-                            <p class="vip-value-label">Special Commitment Offer</p>
-                            <p class="vip-value-price">$1,997</p>
-                            <p class="vip-value-note">Remaining $3,003 only due after you make $50,000 from the secrets taught</p>
+                            <div class="vip-value-label">VIP Upgrade</div>
+                            <div class="vip-value-price">Only $187</div>
+                            <div class="vip-value-note">Closes at workshop start</div>
                         </div>
-                        <a href="https://societysecrets.com/level3"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="vip-banner-button"
-                           aria-label="Discover Level 3 Stargazer Event">
-                            Discover Level 3
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="https://neothinkevent.com/vip-upgrade" target="_blank" rel="noopener" class="vip-banner-button" aria-label="Upgrade to VIP Experience for $187">
+                            Secure VIP Access Now
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                         </a>
@@ -1972,8 +1513,8 @@
                             <div class="detail-answer">
                                 <p><strong>2 Full Days:</strong></p>
                                 <ul>
-                                    <li><strong>Saturday, January 24th</strong><br>11:00 AM ET / 8:00 AM PT → Late Evening</li>
-                                    <li><strong>Sunday, January 25th</strong><br>12:00 PM ET / 9:00 AM PT → Evening</li>
+                                    <li><strong>Saturday, January 24th</strong><br>11:00 AM Eastern / 10:00 AM Central / 9:00 AM Mountain / 8:00 AM Pacific → Late Evening</li>
+                                    <li><strong>Sunday, January 25th</strong><br>12:00 PM Eastern / 11:00 AM Central / 10:00 AM Mountain / 9:00 AM Pacific → Evening</li>
                                 </ul>
                             </div>
                         </div>
@@ -1983,7 +1524,7 @@
                             <h3>⏱️ How long is each day?</h3>
                             <div class="detail-answer">
                                 <p><strong>Plan to clear out BOTH days completely from your calendar.</strong></p>
-                                <p>Saturday runs from 11am ET (8am PT) until late evening. Sunday starts at 12pm ET (9am PT) and goes until evening. This is full-day immersive transformation—no partial attendance.</p>
+                                <p>Saturday runs from 11:00 AM Eastern (8:00 AM Pacific) until late evening. Sunday starts at 12:00 PM Eastern (9:00 AM Pacific) and goes until evening. This is full-day immersive transformation—no partial attendance.</p>
                             </div>
                         </div>
 
@@ -2047,24 +1588,9 @@
                     </div>
 
                     <div class="pre-work-grid">
-                        <!-- Pre-Work Item 1: Workbook -->
+                        <!-- Pre-Work Item 1: Form -->
                         <div class="pre-work-card">
                             <div class="pre-work-number">1</div>
-                            <div class="pre-work-content">
-                                <h3>Download Your Day 1 Workbook</h3>
-                                <p>Download and have ready the exercises we'll work through during the first half of Day 1. Print it out or have it open on a second device.</p>
-                                <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" rel="noopener" class="pre-work-button" aria-label="Download Day 1 Workbook">
-                                    Download Workbook (PDF)
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Pre-Work Item 2: Form -->
-                        <div class="pre-work-card">
-                            <div class="pre-work-number">2</div>
                             <div class="pre-work-content">
                                 <h3>Complete the Questionnaire</h3>
                                 <p>Fill out the pre-workshop form so we can tailor the experience to you. Takes 5-10 minutes.</p>
@@ -2077,12 +1603,27 @@
                             </div>
                         </div>
 
-                        <!-- Pre-Work Item 3: Manuscript -->
+                        <!-- Pre-Work Item 2: Manuscript -->
                         <div class="pre-work-card">
-                            <div class="pre-work-number">3</div>
+                            <div class="pre-work-number">2</div>
                             <div class="pre-work-content">
                                 <h3>Read Pages 1-50 of Your Manuscript</h3>
                                 <p>Read the first 50 pages of <em>The Super Puzzle</em>. This establishes the foundation we'll build upon together. Focus on engagement, not perfection—notice what resonates, what challenges your assumptions, what creates curiosity.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work Item 3: Download Workbook -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number">3</div>
+                            <div class="pre-work-content">
+                                <h3>Download & Print Your Workbook</h3>
+                                <p>This is your Day of Enlightenment workbook—print it before the workshop so you can follow along and capture your breakthroughs. Having this ready is essential for your full participation.</p>
+                                <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" target="_blank" rel="noopener" class="pre-work-button" aria-label="Download Day of Enlightenment Workbook PDF">
+                                    Download Workbook (PDF)
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
 
@@ -2114,36 +1655,21 @@
                     </div>
 
                     <div class="access-grid">
-                        <!-- Zoom Link Card - READY -->
-                        <div class="access-card featured">
-                            <span class="card-status ready">🔴 Ready Now</span>
+                        <!-- Zoom Link Card - LOCKED -->
+                        <div class="access-card locked">
+                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span class="card-status locked">Available Soon</span>
                             <div class="card-icon">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
                             <h3>Join Workshop on Zoom</h3>
-                            <p>Click below to join the workshop. Day 1 (Saturday, January 24) starts at 8am PT / 11am ET. Day 2 (Sunday, January 25) starts at 9am PT / 12pm ET. Same link works for both days.</p>
-                            <a href="https://neothink.zoom.us/j/88938744217?pwd=QkeqPiJPthaXZPK3IpZX2iSd4wCgj3.1" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="Join workshop on Zoom">
-                                🔴 Join Workshop Now
-                            </a>
-                        </div>
-
-                        <!-- Day 1 Workbook Card - READY -->
-                        <div class="access-card featured">
-                            <span class="card-status available">📋 Available Now</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
-                            </div>
-                            <h3>Day 1 Workbook</h3>
-                            <p>Download the exercises we'll work through in the first half of Day 1. Have this ready and printed (or open on a second device) before the workshop starts.</p>
-                            <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921d28ca6ad08bc79df59b4.pdf" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="Download Day 1 Workbook PDF">
-                                Download Workbook (PDF)
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
+                            <p>Your Zoom link will be sent the morning of January 24th via email and text, and will be available here. Day 1 starts at 11:00 AM Eastern (8:00 AM Pacific). Day 2 starts at 12:00 PM Eastern (9:00 AM Pacific). Same link works for both days.</p>
+                            <a href="#zoom-link" class="card-link locked" aria-label="Zoom link coming soon">
+                                Link Coming Soon
                             </a>
                         </div>
 
@@ -2165,18 +1691,22 @@
                             </a>
                         </div>
 
-                        <!-- Level 3: Stargazer Event -->
+                        <!-- VIP Upgrade Card - AVAILABLE -->
                         <div class="access-card featured">
-                            <span class="card-status available">⭐ Available Now</span>
+                            <span class="card-status urgent">⚡ Limited Time</span>
                             <div class="card-icon">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
                                 </svg>
                             </div>
-                            <h3>Level 3: Stargazer Event</h3>
-                            <p>Ready to reach your unreachable star? The 3-Day Stargazer Event includes deep implementation, mentorship, and the Prime Mentor's $400M wealth mechanics. Your launching pad to extraordinary success.</p>
-                            <a href="https://societysecrets.com/level3" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="Learn about Level 3 Stargazer Event">
-                                Discover Level 3
+                            <h3>Upgrade to VIP</h3>
+                            <p>Get GUARANTEED private group mentorship with Wallace Hamilton, Priority Workshop Assistance on Day 1, and exclusive VIP-only session on Day 2 (time TBD). Upgrade opportunity ends at workshop start!</p>
+                            <div class="vip-countdown">
+                                <span class="vip-countdown-label">VIP Upgrade Ends In</span>
+                                <div class="vip-countdown-timer" id="vip-countdown">Calculating...</div>
+                            </div>
+                            <a href="https://neothinkevent.com/vip-upgrade" target="_blank" rel="noopener" class="card-link" aria-label="Upgrade to VIP Experience for $187">
+                                Upgrade to VIP - $187
                                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                                 </svg>
@@ -2237,91 +1767,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- Member Stories Section -->
-            <section class="member-stories-section">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-label">January 2026 Workshop</span>
-                        <h2>What Members Are Saying</h2>
-                        <p>Real moments from this weekend's transformation</p>
-                    </div>
-
-                    <div class="stories-grid">
-                        <div class="story-card">
-                            <p class="story-quote">"Like we just got back from a super-light-year journey, in two days, from the beginnings of our universe... and you all look like you haven't aged a day since our quickenings and re-births over the weekend."</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Roy L. Cochran</span>
-                                <span class="story-author-role">VIP Member</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"You just answered something that was given to me 45 years ago that I have never received an answer to and you just gave me that answer. I am forever indebted to you Sir."</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Mario Smalls</span>
-                                <span class="story-author-role">Member</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"This morning, I am my Future self. Yesterday was my old self."</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Irma Nodal</span>
-                                <span class="story-author-role">Member</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"That was the greatest speech ever delivered in all of history to this moment in time and we witnessed it live."</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Peggy Sue</span>
-                                <span class="story-author-role">Success Guide</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"I have been my own authority since June 4, 1974. It has cost me many jobs and opportunities through my life, but look where I am now."</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Gary Brown</span>
-                                <span class="story-author-role">Member</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"I haven't calmed down from yesterday. Very energized. It was electrifying!"</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Pamela Chase</span>
-                                <span class="story-author-role">Success Guide</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"Yes, Peggy Sue really took me on a journey back to my childhood! Unbelievable!!! Another Ah-Ha moment for me was when Wallace introduced us to the Wealth Engine. Amazing!"</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Gary Schleitwiler</span>
-                                <span class="story-author-role">VIP Member</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"I am experiencing the GREAT AWAKENING! What an awakening!"</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Phylis Carlman</span>
-                                <span class="story-author-role">Member</span>
-                            </div>
-                        </div>
-
-                        <div class="story-card">
-                            <p class="story-quote">"Good morning everyone!! I love my new family!!!"</p>
-                            <div class="story-author">
-                                <span class="story-author-name">Paula Bodnar</span>
-                                <span class="story-author-role">Member</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <!-- Footer -->
@@ -2345,7 +1790,7 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+                    <p>&copy; 2026 Neothink Society. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -2387,9 +1832,45 @@
             const interval = setInterval(updateCountdown, 1000);
         }
 
-        // Initialize countdown on page load
+        // VIP upgrade countdown timer - Ends Jan 24, 2026 at 9:00 AM PT (12:00 PM ET)
+        function initVIPCountdown() {
+            const vipDeadline = new Date('2026-01-24T12:00:00-05:00').getTime(); // 9am PT / 12pm ET
+            const vipCountdownEl = document.getElementById('vip-countdown');
+
+            function updateVIPCountdown() {
+                const now = new Date().getTime();
+                const distance = vipDeadline - now;
+
+                if (distance < 0) {
+                    if (vipCountdownEl) vipCountdownEl.textContent = 'Upgrade Closed';
+                    clearInterval(vipInterval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                let timeString = '';
+                if (days > 0) {
+                    timeString = `${days}d ${hours}h ${minutes}m`;
+                } else if (hours > 0) {
+                    timeString = `${hours}h ${minutes}m`;
+                } else {
+                    timeString = `${minutes}m`;
+                }
+
+                if (vipCountdownEl) vipCountdownEl.textContent = timeString;
+            }
+
+            updateVIPCountdown();
+            const vipInterval = setInterval(updateVIPCountdown, 60000); // Update every minute
+        }
+
+        // Initialize both countdowns on page load
         document.addEventListener('DOMContentLoaded', function() {
             initWorkshopCountdown();
+            initVIPCountdown();
         });
     </script>
 </body>
