@@ -8,9 +8,9 @@
 **VIP Deadline:** Saturday, Dec 6 at 11:00 AM ET / 8:00 AM PT
 
 **Zoom Details:**
-- Link: https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
-- Meeting ID: 890 3406 5077
-- Passcode: 160734
+- Link: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
+- Meeting ID: {{custom_values.doe_zoom_id}}
+- Passcode: {{custom_values.doe_zoom_passcode}}
 
 ---
 
@@ -332,10 +332,10 @@ Doors open: NOW (10:30am ET)
 Start time: 11am ET / 8am PT SHARP
 
 JOIN HERE:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-ID: 890 3406 5077
-Pass: 160734
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
 
 Join early. Get settled. Breathe.
 
@@ -356,7 +356,7 @@ See you inside.
 If you're already in the room — welcome. You're in the right place.
 
 If you're not in yet — join now:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 30 minutes until we begin.
 
@@ -377,7 +377,7 @@ The energy in the room right now is already building.
 If you're in the room — we see you. Stay present. This is it.
 
 If you're not in yet — join NOW:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 The opening has begun.
 
@@ -453,10 +453,10 @@ Doors open in 15 min (11:30am ET)
 If you need a few more minutes with your coffee — take it.
 
 Then join us:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-ID: 890 3406 5077
-Pass: 160734
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
 
 Whatever Day 1 stirred up in you — today we work with it.
 ```
@@ -473,7 +473,7 @@ Whatever Day 1 stirred up in you — today we work with it.
 If you're already in the room — welcome back. The energy is already building.
 
 If you're joining now:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 12pm ET / 9am PT SHARP
 
@@ -495,7 +495,7 @@ Get settled. We begin soon.
 If you're in the room — thank you for showing up again. This is where it comes together.
 
 If you're not in yet:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 We've already begun.
 

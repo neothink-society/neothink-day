@@ -12,9 +12,9 @@
 - Workshop Begins: 12:00 PM ET / 9:00 AM PT
 
 **Zoom Details:**
-- Link: https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
-- Meeting ID: 890 3406 5077
-- Passcode: 160734
+- Link: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
+- Meeting ID: {{custom_values.doe_zoom_id}}
+- Passcode: {{custom_values.doe_zoom_passcode}}
 
 ---
 
@@ -51,10 +51,10 @@ Doors open: 10:30am ET
 Start time: 11am ET / 8am PT SHARP
 
 JOIN HERE:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-ID: 890 3406 5077
-Pass: 160734
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
 
 The opening moment creates the container for everything. Be early.
 ```
@@ -68,7 +68,7 @@ The opening moment creates the container for everything. Be early.
 🚪 DOORS ARE OPEN — 30 minutes to start
 
 Enter the room NOW:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 Get settled. Test your audio. Breathe.
 
@@ -88,7 +88,7 @@ See you inside.
 Day of Enlightenment has BEGUN.
 
 JOIN NOW:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 The opening is happening RIGHT NOW.
 
@@ -131,10 +131,10 @@ Doors open in 15 min (11:30am ET)
 Start: 12pm ET / 9am PT SHARP
 
 JOIN HERE:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-ID: 890 3406 5077
-Pass: 160734
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
 
 If Day 1 moved something in you — Day 2 goes even deeper.
 ```
@@ -148,7 +148,7 @@ If Day 1 moved something in you — Day 2 goes even deeper.
 🚪 DOORS OPEN — 15 minutes to Day 2
 
 Enter now:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 12pm ET / 9am PT SHARP
 
@@ -169,7 +169,7 @@ Get settled. We start in 15 minutes.
 We're starting NOW.
 
 JOIN:
-https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 This is where everything comes together.
 

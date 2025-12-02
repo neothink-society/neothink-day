@@ -9,16 +9,18 @@
     <meta name="supported-color-schemes" content="light">
     <title>Day 2 Break - Back at [TIME]</title>
 
-    <!-- Subject Line: Day 2 Break - We Resume at [TIME] ET -->
-    <!-- Preview Text: Quick break. The final integration session is coming. We resume at [TIME] ET. -->
+    <!-- Subject Line: Day 2 Break - We Resume at {{custom_values.doe_day_2_return_time}} ET -->
+    <!-- Preview Text: Quick break. The final integration session is coming. We resume at {{custom_values.doe_day_2_return_time}} ET. -->
 
     <!--
     ============================================
-    BEFORE SENDING: Replace these placeholders:
-    [TIME] = Return time (e.g., "5:00 PM")
-    [TIME_CT] = Central time
-    [TIME_MT] = Mountain time
-    [TIME_PT] = Pacific time
+    GHL CUSTOM VALUES IN USE:
+    {{custom_values.doe_day_2_return_time}} = Return time (Eastern)
+
+    NOTE: Other timezone conversions (CT/MT/PT) are calculated from ET:
+    - CT = ET - 1 hour
+    - MT = ET - 2 hours
+    - PT = ET - 3 hours
     ============================================
     -->
 
@@ -44,7 +46,7 @@
 <body class="body dark-bg" style="margin: 0 !important; padding: 0 !important; background-color: #000000;" bgcolor="#000000">
 
     <div style="display: none; font-size: 1px; color: #000000; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-        Quick break. The final integration session is coming. We resume at [TIME] ET.
+        Quick break. The final integration session is coming. We resume at {{custom_values.doe_day_2_return_time}} ET.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg">
@@ -83,10 +85,10 @@
                                             We Resume At
                                         </p>
                                         <p style="margin: 0 0 8px 0; font-family: 'Baskervville', Georgia, serif; font-size: 42px; font-weight: 400; color: #ffffff;">
-                                            [TIME] ET
+                                            {{custom_values.doe_day_2_return_time}} ET
                                         </p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #aaaaaa;">
-                                            [TIME_CT] CT • [TIME_MT] MT • [TIME_PT] PT
+                                            (Eastern Time)
                                         </p>
                                     </td>
                                 </tr>
