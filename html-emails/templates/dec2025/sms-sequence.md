@@ -90,8 +90,9 @@ Clear your schedule now. You'll thank yourself later.
 
 ---
 
-### 5. 3 Days Out — VIP Deadline (Wednesday, Dec 3)
+### 5a. 3 Days Out — Non-VIP (Wednesday, Dec 3)
 **Trigger:** 72 hours before event
+**Audience:** Non-VIP members only
 **Pairs with:** preparation-3days.html
 
 ```
@@ -102,6 +103,29 @@ Last chance for GUARANTEED intimate session with Wallace Hamilton.
 After Saturday 11am ET, no upgrades. No exceptions.
 
 Upgrade now → https://neothinkevent.com/home
+```
+
+---
+
+### 5b. 3 Days Out — VIP Member (Wednesday, Dec 3)
+**Trigger:** 72 hours before event
+**Audience:** VIP members only
+**Pairs with:** preparation-3days-vip.html
+
+```
+⭐ VIP ELITE: 72 hours until your transformation
+
+Your GUARANTEED intimate session with Wallace Hamilton awaits on Day 2.
+
+Final prep checklist:
+☐ Workbook printed
+☐ Pre-work complete
+☐ Quiet space secured
+☐ Questions ready for Wallace
+
+Workshop Hub → https://neothinkevent.com/home
+
+See you in the inner circle.
 ```
 
 ---
@@ -387,7 +411,8 @@ Direct access begins now.
 | 2 | VIP Confirmation | On purchase | Immediate | Immediate |
 | 3 | 5 Days | Mon, Dec 1 | Morning | Morning |
 | 4 | 4 Days | Tue, Dec 2 | Morning | Morning |
-| 5 | 3 Days (VIP) | Wed, Dec 3 | Morning | Morning |
+| 5a | 3 Days (Non-VIP) | Wed, Dec 3 | Morning | Morning |
+| 5b | 3 Days (VIP) | Wed, Dec 3 | Morning | Morning |
 | 6 | 2 Days | Thu, Dec 4 | Morning | Morning |
 | 7 | 1 Day | Fri, Dec 5 | Evening | Evening |
 | 8 | 2 Hours | Sat, Dec 6 | 9:00 AM | 6:00 AM |
