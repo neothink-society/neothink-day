@@ -14,6 +14,27 @@
 
 ---
 
+## AUDIENCE SEGMENTATION GUIDE
+
+### Before VIP Deadline (Through Saturday 11am ET)
+| Segment | Description | VIP Messaging |
+|---------|-------------|---------------|
+| **VIP Members** | Already purchased VIP upgrade | No upgrade pitch. Focus on VIP benefits reminder + prep |
+| **Non-VIP Members** | Registered but haven't upgraded | Include VIP upgrade opportunity in relevant messages |
+
+### After VIP Deadline (Saturday 11am ET Onward)
+| Segment | Description | VIP Messaging |
+|---------|-------------|---------------|
+| **VIP Members** | Purchased VIP before deadline | VIP session reminders, priority treatment |
+| **General Members** | Did not upgrade (offer expired) | Standard messaging, no VIP pitch (offer closed) |
+
+### Message Routing Logic
+- **Messages 1-7 (Pre-event):** May have VIP/Non-VIP variations
+- **Messages 8-17 (Day-of):** Same for all attendees (VIP offer expired)
+- **VIP Session Reminders:** VIP members only
+
+---
+
 ## PRE-EVENT SEQUENCE
 
 ---
@@ -130,12 +151,13 @@ See you in the inner circle.
 
 ---
 
-### 6. 2 Days Out (Thursday, Dec 4)
+### 6a. 2 Days Out — Non-VIP (Thursday, Dec 4)
 **Trigger:** 48 hours before event
+**Audience:** Non-VIP members
 **Pairs with:** preparation-2days.html
 
 ```
-⚙️ TECH CHECK TIME — 48 hours out
+⚙️ TECH CHECK — 48 hours out
 
 Before Saturday:
 ☐ Update Zoom to latest version
@@ -146,12 +168,38 @@ Before Saturday:
 Your Zoom link arrives Saturday morning.
 
 Tech issues = missed moments. Prepare now.
+
+⚡ Final VIP chance: https://neothinkevent.com/home
 ```
 
 ---
 
-### 7. 1 Day Out (Friday, Dec 5 — Evening)
+### 6b. 2 Days Out — VIP (Thursday, Dec 4)
+**Trigger:** 48 hours before event
+**Audience:** VIP members only
+**Pairs with:** preparation-2days.html
+
+```
+⭐ VIP: TECH CHECK — 48 hours out
+
+Before Saturday:
+☐ Update Zoom to latest version
+☐ Test camera & microphone
+☐ Secure your quiet space
+☐ Questions ready for Wallace
+
+Your Zoom link arrives Saturday morning.
+
+As VIP Elite, you'll have priority access from the start.
+
+Tech issues = missed moments. Prepare now.
+```
+
+---
+
+### 7a. 1 Day Out — Non-VIP (Friday, Dec 5 — Evening)
 **Trigger:** Evening before event
+**Audience:** Non-VIP members
 **Pairs with:** preparation-1day.html
 
 ```
@@ -166,6 +214,32 @@ Rest well. Review your pre-work one more time.
 Tomorrow, everything changes.
 
 See you there.
+```
+
+---
+
+### 7b. 1 Day Out — VIP (Friday, Dec 5 — Evening)
+**Trigger:** Evening before event
+**Audience:** VIP members only
+**Pairs with:** preparation-1day.html
+
+```
+⭐ VIP: Tomorrow is your day.
+
+Set 3 alarms tonight.
+
+Your Zoom link arrives Saturday morning at 10am ET.
+
+As VIP Elite, you'll have:
+• Priority access from the start
+• GUARANTEED intimate session with Wallace (Day 2)
+• Exclusive VIP-only session after main workshop
+
+Rest well. Review your questions for Wallace.
+
+Tomorrow, everything changes.
+
+See you in the inner circle.
 ```
 
 ---
@@ -413,8 +487,10 @@ Direct access begins now.
 | 4 | 4 Days | Tue, Dec 2 | Morning | Morning |
 | 5a | 3 Days (Non-VIP) | Wed, Dec 3 | Morning | Morning |
 | 5b | 3 Days (VIP) | Wed, Dec 3 | Morning | Morning |
-| 6 | 2 Days | Thu, Dec 4 | Morning | Morning |
-| 7 | 1 Day | Fri, Dec 5 | Evening | Evening |
+| 6a | 2 Days (Non-VIP) | Thu, Dec 4 | Morning | Morning |
+| 6b | 2 Days (VIP) | Thu, Dec 4 | Morning | Morning |
+| 7a | 1 Day (Non-VIP) | Fri, Dec 5 | Evening | Evening |
+| 7b | 1 Day (VIP) | Fri, Dec 5 | Evening | Evening |
 | 8 | 2 Hours | Sat, Dec 6 | 9:00 AM | 6:00 AM |
 | 9 | Zoom Link | Sat, Dec 6 | 10:00 AM | 7:00 AM |
 | 10 | Doors Open | Sat, Dec 6 | 10:30 AM | 7:30 AM |
