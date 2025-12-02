@@ -10,18 +10,14 @@
     <meta name="supported-color-schemes" content="light">
     <title>Day 2 Break - Back at [TIME]</title>
 
-    <!-- Subject Line: Day 2 Break - We Resume at {{custom_values.doe_day_2_return_time}} ET -->
-    <!-- Preview Text: Quick break. The final integration session is coming. We resume at {{custom_values.doe_day_2_return_time}} ET. -->
+    <!-- Subject Line: Day 2 Break - We Resume Soon -->
+    <!-- Preview Text: Quick break. The final integration session is coming. We resume at {{custom_values.doe_day_2_return_time}}. -->
 
     <!--
     ============================================
     GHL CUSTOM VALUES IN USE:
-    {{custom_values.doe_day_2_return_time}} = Return time (Eastern)
-
-    NOTE: Other timezone conversions (CT/MT/PT) are calculated from ET:
-    - CT = ET - 1 hour
-    - MT = ET - 2 hours
-    - PT = ET - 3 hours
+    {{custom_values.doe_day_2_return_time}} = Return time with all timezones
+    Example value: "2:00 PM Eastern / 1:00 PM Central / 12:00 PM Mountain / 11:00 AM Pacific"
     ============================================
     -->
 
@@ -65,7 +61,7 @@
 <body class="body dark-bg" style="margin: 0 !important; padding: 0 !important; background-color: #000000;" bgcolor="#000000">
 
     <div style="display: none; font-size: 1px; color: #000000; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-        Quick break. The final integration session is coming. We resume at {{custom_values.doe_day_2_return_time}} ET.
+        Quick break. The final integration session is coming. We resume at {{custom_values.doe_day_2_return_time}}.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" bgcolor="#000000" class="dark-bg">
@@ -103,11 +99,8 @@
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px;">
                                             We Resume At
                                         </p>
-                                        <p style="margin: 0 0 8px 0; font-family: 'Baskervville', Georgia, serif; font-size: 42px; font-weight: 400; color: #ffffff;">
-                                            {{custom_values.doe_day_2_return_time}} ET
-                                        </p>
-                                        <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #aaaaaa;">
-                                            (Eastern Time)
+                                        <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 400; color: #ffffff; line-height: 36px;">
+                                            {{custom_values.doe_day_2_return_time}}
                                         </p>
                                     </td>
                                 </tr>

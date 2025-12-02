@@ -10,18 +10,14 @@
     <meta name="supported-color-schemes" content="light">
     <title>Break Time - Back at [TIME]</title>
 
-    <!-- Subject Line: Lunch Break - We Resume at [TIME] ET -->
-    <!-- Preview Text: Grab a bite, stretch, reflect on this morning's breakthroughs. We resume at {{custom_values.doe_day_1_return_time}} ET. -->
+    <!-- Subject Line: Lunch Break - We Resume Soon -->
+    <!-- Preview Text: Grab a bite, stretch, reflect on this morning's breakthroughs. We resume at {{custom_values.doe_day_1_return_time}}. -->
 
     <!--
     ============================================
     GHL CUSTOM VALUES IN USE:
-    {{custom_values.doe_day_1_return_time}} = Return time (Eastern)
-
-    NOTE: Other timezone conversions (CT/MT/PT) are calculated from ET:
-    - CT = ET - 1 hour
-    - MT = ET - 2 hours
-    - PT = ET - 3 hours
+    {{custom_values.doe_day_1_return_time}} = Return time with all timezones
+    Example value: "2:00 PM Eastern / 1:00 PM Central / 12:00 PM Mountain / 11:00 AM Pacific"
     ============================================
     -->
 
@@ -65,7 +61,7 @@
 <body class="body dark-bg" style="margin: 0 !important; padding: 0 !important; background-color: #000000;" bgcolor="#000000">
 
     <div style="display: none; font-size: 1px; color: #000000; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-        Grab a bite, stretch, reflect on this morning's breakthroughs. We resume at {{custom_values.doe_day_1_return_time}} ET.
+        Grab a bite, stretch, reflect on this morning's breakthroughs. We resume at {{custom_values.doe_day_1_return_time}}.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" bgcolor="#000000" class="dark-bg">
@@ -103,11 +99,8 @@
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px;">
                                             We Resume At
                                         </p>
-                                        <p style="margin: 0 0 8px 0; font-family: 'Baskervville', Georgia, serif; font-size: 42px; font-weight: 400; color: #ffffff;">
-                                            {{custom_values.doe_day_1_return_time}} ET
-                                        </p>
-                                        <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #aaaaaa;">
-                                            (Eastern Time)
+                                        <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 400; color: #ffffff; line-height: 36px;">
+                                            {{custom_values.doe_day_1_return_time}}
                                         </p>
                                     </td>
                                 </tr>
@@ -137,7 +130,7 @@
                     <tr>
                         <td style="padding: 30px 40px 50px 40px; border-top: 1px solid #333333;" class="mobile-padding">
                             <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: #888888; text-align: center; line-height: 20px;">
-                                See you at {{custom_values.doe_day_1_return_time}} ET<br>
+                                See you soon!<br>
                                 Day of Enlightenment • December 6, 2025
                             </p>
                         </td>
