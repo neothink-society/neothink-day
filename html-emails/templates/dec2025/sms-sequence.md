@@ -65,7 +65,7 @@ Your pre-work checklist:
 ☐ Download & print your workbook
 ☐ Complete the questionnaire
 
-Start now → neothinkevent.com/home
+Start now → https://neothinkevent.com/home
 
 This preparation amplifies your breakthrough.
 ```
@@ -101,7 +101,7 @@ Last chance for GUARANTEED intimate session with Wallace Hamilton.
 
 After Saturday 11am ET, no upgrades. No exceptions.
 
-Upgrade now → neothinkevent.com/home
+Upgrade now → https://neothinkevent.com/home
 ```
 
 ---
