@@ -51,10 +51,10 @@ These emails exist for Nov 2025 and need December adaptation:
 **Email 8: preparation-3days.html**
 - **Source**: `/templates/nov2025/preparation-3days.html`
 - **Changes Needed**:
-  - VIP deadline: 8am PT Saturday, December 6, 2025
+  - VIP deadline: 9am PT Saturday, December 6, 2025
   - Workshop hub: `https://neothinkevent.com/home`
   - Subject line: Keep "⚡ 72 Hours: Last Chance for VIP"
-  - Preview text: Update "Upgrade closes 8am PT Saturday"
+  - Preview text: Update "Upgrade closes 9am PT Saturday"
   - Deadline box: "December 6, 2025"
   - Footer: December 6-7, 2025
 - **Complexity**: Low (find/replace dates and URLs)

@@ -170,11 +170,11 @@
 **File**: `preparation-3days.html`
 **Automation Timing**: Send when event is 3 days away (72 hours)
 **Subject**: `⚡ 72 Hours: Last Chance for VIP`
-**Preview**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 8am PT Saturday. 72 hours left to maximize your transformation.`
+**Preview**: `GUARANTEED access to intimate VIP group session with Wallace Hamilton + exclusive VIP session on Day 2. Upgrade closes 9am PT Saturday. 72 hours left to maximize your transformation.`
 
 **Purpose**: Final VIP conversion push before deadline
 **Key Elements**:
-- Countdown to VIP deadline (8am PT Saturday Dec 6)
+- Countdown to VIP deadline (9am PT Saturday Dec 6)
 - All 5 VIP benefits with ⭐ icons:
   1. GUARANTEED 1-on-1 Mentorship
   2. Exclusive VIP-Only Session (Day 2)
@@ -238,7 +238,7 @@
   - Prepare your mindset
   - Set your intention
 - Quick reminders checklist (7 items)
-- Final VIP reminder (closes tomorrow at 8am PT)
+- Final VIP reminder (closes tomorrow at 9am PT)
 - Workshop hub link
 - Inspirational quote: "Tomorrow, everything changes."
 
@@ -311,7 +311,7 @@ The automation should work as follows:
 
 ### VIP Deadline
 
-**VIP Upgrade Closes**: 8:00 AM PT on Saturday, December 6, 2025
+**VIP Upgrade Closes**: 9:00 AM PT on Saturday, December 6, 2025
 - All emails before 3-day email promote VIP upgrade
 - 3-day email is the MAIN VIP conversion push
 - 2-day and 1-day emails mention VIP upgrade closing soon
@@ -383,7 +383,7 @@ Before sending any email:
 ### Content Verification
 - [ ] Confirm event dates (December 6-7, 2025)
 - [ ] Verify workshop hub URL (neothinkevent.com/home - NOT neothinkday.com)
-- [ ] Check VIP deadline timing (8am PT Saturday, December 6)
+- [ ] Check VIP deadline timing (9am PT Saturday, December 6)
 - [ ] Confirm timezone displayed (PT = Pacific Time)
 - [ ] Verify pre-work references match (pages 1-50, 5 questions)
 - [ ] Verify Zoom link in day-of.html matches December meeting
