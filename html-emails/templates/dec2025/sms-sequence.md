@@ -153,7 +153,7 @@ Quick gut check: Are you ready to get the most out of this weekend?
 
 VIP Elite adds GUARANTEED access to an intimate group session with Wallace Hamilton on Day 2 — personalized guidance on YOUR specific breakthrough.
 
-Upgrade closes Saturday at 11am ET. No exceptions after that.
+Upgrade closes Saturday at 12pm ET / 9am PT. No exceptions after that.
 
 If you're curious: https://neothinkevent.com/home
 
