@@ -32,7 +32,7 @@ Confirm in WhatsApp if you can make it!
 - Marko & Josh
 ```
 
-## Version 3: Day-of Reminder
+## Version 3: Day-of Reminder (30 min before)
 ```
 A-Team: Training in 30 min (10am PT)!
 
@@ -41,7 +41,16 @@ Join here: https://neothink.zoom.us/j/83118173967?pwd=YQWgiukfmVUbZqlA2JDj5eEkjx
 - Marko & Josh
 ```
 
-## Version 4: Event Day Reminder
+## Version 4: LIVE NOW
+```
+🔴 A-Team: We're LIVE!
+
+Join now: https://neothink.zoom.us/j/83118173967?pwd=YQWgiukfmVUbZqlA2JDj5eEkjxU2b0.1
+
+- Marko & Josh
+```
+
+## Version 5: Event Day Reminder
 ```
 A-Team: Dec 6-7 event starts tomorrow at 9am PT!
 
