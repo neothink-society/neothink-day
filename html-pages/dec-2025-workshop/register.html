@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Register now for the Day of Enlightenment Workshop, December 6-7, 2025. Two-day transformational experience with direct mail exclusive access. Secure your spot today.">
-    <title>Register for Day of Enlightenment Workshop | Dec 6-7, 2025</title>
+    <meta name="description" content="Complete your Day of Enlightenment workshop registration. Direct mail purchasers: choose between December 6-7, 2025 or January 24-25, 2026.">
+    <title>Complete Your Registration | Day of Enlightenment 2025</title>
 
     <!-- Font Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -374,6 +374,56 @@
         }
 
         /* ===========================
+           ALERT SECTION
+        =========================== */
+        .alert-section {
+            padding: var(--space-xl) var(--space-md);
+            background: rgba(255, 215, 0, 0.05);
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .alert-box {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            gap: var(--space-md);
+            align-items: flex-start;
+        }
+
+        .alert-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+        }
+
+        .alert-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--gold);
+        }
+
+        .alert-content h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .alert-content p {
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            line-height: 1.6;
+        }
+
+        /* ===========================
            FORM SECTION
         =========================== */
         .form-section {
@@ -655,6 +705,51 @@
         }
 
         /* ===========================
+           FAQ SECTION
+        =========================== */
+        .faq-section {
+            padding: var(--space-2xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            padding: var(--space-lg);
+            background: var(--gray-900);
+            border: 1px solid var(--gray-800);
+            border-radius: 8px;
+        }
+
+        .faq-question {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gray-300);
+            margin-bottom: var(--space-sm);
+        }
+
+        .faq-answer {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.6;
+        }
+
+        .faq-answer a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .faq-answer a:hover {
+            color: var(--gold-light);
+            text-decoration: underline;
+        }
+
+        /* ===========================
            FOOTER
         =========================== */
         .site-footer {
@@ -766,6 +861,15 @@
 
             .countdown-separator {
                 font-size: var(--text-2xl);
+            }
+
+            .alert-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .alert-icon {
+                margin: 0 auto;
             }
 
             .form-section {
@@ -914,7 +1018,7 @@
             <div class="container">
                 <div class="header-content">
                     <span class="site-logo">Neothink Society</span>
-                    <div class="header-date" aria-label="Workshop date">Dec 6-7, 2025</div>
+                    <div class="header-date" aria-label="Workshop dates">Dec 6-7, 2025 or Jan 24-25, 2026</div>
                 </div>
             </div>
         </header>
@@ -925,46 +1029,37 @@
             <section class="hero-section">
                 <div class="container">
                     <div class="eyebrow-badge">
-                        <span>Direct Mail Exclusive</span>
+                        <span>Direct Mail Purchase</span>
                     </div>
 
                     <h1 class="hero-title">
-                        Secure Your Spot for the
-                        <span class="gradient-text">Day of Enlightenment</span>
+                        Complete Your Registration
+                        <span class="gradient-text">for Your Day of Enlightenment</span>
                     </h1>
 
                     <p class="hero-subtitle">
-                        You've already purchased this life-changing workshop through direct mail.
-                        Complete your registration below to receive your workshop confirmation and exclusive materials.
+                        You've secured your spot via direct mail. Now complete your registration to receive your workshop materials, Zoom link, and all event communications.
                     </p>
 
-                    <p class="hero-date" aria-label="Workshop dates">Saturday, December 6 • Sunday, December 7, 2025</p>
+                    <p class="hero-date" aria-label="Workshop dates">Dec 6-7, 2025 or Jan 24-25, 2026</p>
                 </div>
             </section>
 
-            <!-- Countdown Section -->
-            <section class="countdown-section">
-                <div class="countdown-container">
-                    <div class="countdown-label">Workshop Begins In:</div>
-                    <div class="countdown-timer" id="countdown" aria-live="polite">
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="days" aria-label="Days remaining">00</span>
-                            <span class="countdown-unit-label">Days</span>
+            <!-- Alert Section -->
+            <section class="alert-section">
+                <div class="container">
+                    <div class="alert-box">
+                        <div class="alert-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                         </div>
-                        <div class="countdown-separator" aria-hidden="true">:</div>
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="hours" aria-label="Hours remaining">00</span>
-                            <span class="countdown-unit-label">Hours</span>
-                        </div>
-                        <div class="countdown-separator" aria-hidden="true">:</div>
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="minutes" aria-label="Minutes remaining">00</span>
-                            <span class="countdown-unit-label">Minutes</span>
-                        </div>
-                        <div class="countdown-separator" aria-hidden="true">:</div>
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="seconds" aria-label="Seconds remaining">00</span>
-                            <span class="countdown-unit-label">Seconds</span>
+                        <div class="alert-content">
+                            <h3>Choose Your Workshop Date</h3>
+                            <p>
+                                Select either December 6-7, 2025 or January 24-25, 2026. Both workshops are identical in content.
+                                After registration, you'll receive your workshop materials, Zoom link, and all event communications.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -975,18 +1070,18 @@
                 <div class="form-container">
                     <div class="form-header">
                         <div class="eyebrow-badge">
-                            <span>Reserve Your Seat</span>
+                            <span>Choose Your Date</span>
                         </div>
                         <h2>Complete Your Registration</h2>
-                        <p>Enter your contact information to receive your workshop confirmation and access to all materials. Your Zoom link will be sent the night before or morning of the event.</p>
+                        <p>Select your preferred workshop date and confirm your contact information. You'll receive immediate confirmation and workshop access details.</p>
                     </div>
 
                     <div class="ghl-form-wrapper">
-                        <!-- GHL Form Injection Point -->
+                        <!-- Direct Mail Buyers - Choose Your Date Form -->
                         <iframe
-                            src="https://api.leadconnectorhq.com/widget/form/hASl3JhZMJ8kBs5eulkr"
+                            src="https://api.leadconnectorhq.com/widget/form/pUv3sTcKkNkYnYqUSZtB"
                             style="width:100%;height:100%;border:none;border-radius:8px"
-                            id="inline-hASl3JhZMJ8kBs5eulkr"
+                            id="inline-pUv3sTcKkNkYnYqUSZtB"
                             data-layout="{'id':'INLINE'}"
                             data-trigger-type="alwaysShow"
                             data-trigger-value=""
@@ -994,12 +1089,13 @@
                             data-activation-value=""
                             data-deactivation-type="neverDeactivate"
                             data-deactivation-value=""
-                            data-form-name="Direct Mail Register NeothinkEvent.com"
-                            data-height="925"
-                            data-layout-iframe-id="inline-hASl3JhZMJ8kBs5eulkr"
-                            data-form-id="hASl3JhZMJ8kBs5eulkr"
-                            title="Direct Mail Register NeothinkEvent.com">
-                        </iframe>
+                            data-form-name="Direct Mail Buyers - Choose Your Date NeothinkDay.com"
+                            data-height="677"
+                            data-layout-iframe-id="inline-pUv3sTcKkNkYnYqUSZtB"
+                            data-form-id="pUv3sTcKkNkYnYqUSZtB"
+                            title="Direct Mail Buyers - Choose Your Date NeothinkDay.com"
+                        ></iframe>
+                        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
                     </div>
 
                     <div class="form-footer">
@@ -1013,23 +1109,23 @@
                 </div>
             </section>
 
-            <!-- What to Expect Section -->
+            <!-- What's Included Section -->
             <section class="info-section">
                 <div class="container">
                     <div class="info-section-header">
-                        <h2>What to Expect After Registration</h2>
-                        <p>Here's what happens once you complete your registration</p>
+                        <h2>What's Included</h2>
+                        <p>Your workshop experience includes new resources and opportunities</p>
                     </div>
 
                     <div class="info-grid">
                         <div class="info-card">
                             <div class="card-icon">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
-                            <h3>Instant Confirmation</h3>
-                            <p>You'll receive a confirmation email within minutes with your workshop details and calendar invite for both days. Your Zoom link will be provided the night before or morning of the event.</p>
+                            <h3>Two Full Days</h3>
+                            <p>This workshop spans two complete days for deeper transformation and implementation support with actionable takeaways.</p>
                         </div>
 
                         <div class="info-card">
@@ -1038,19 +1134,31 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                                 </svg>
                             </div>
-                            <h3>Pre-Workshop Materials</h3>
-                            <p>Access your exclusive Golden Life Sheet template and preparatory materials to help you get the most from your transformation.</p>
+                            <h3>Enhanced Materials</h3>
+                            <p>Access Golden Life Sheet templates, implementation tools, and exclusive resources to accelerate your breakthrough.</p>
                         </div>
 
                         <div class="info-card">
                             <div class="card-icon">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
                                 </svg>
                             </div>
-                            <h3>VIP Upgrade Option</h3>
-                            <p>After registration, you'll have the opportunity to upgrade to the VIP Experience with GUARANTEED private group mentorship with Wallace Hamilton and exclusive benefits.</p>
+                            <h3>VIP Upgrade Available</h3>
+                            <p>After registration, you'll have the opportunity to upgrade to VIP for GUARANTEED private group mentorship with Wallace Hamilton and exclusive Day 2 benefits.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <p class="faq-question">What if I can't make either date?</p>
+                        <p class="faq-answer">
+                            We want you when you're ready. Both dates feature identical content and transformational value. If neither works for your schedule, reach out to <a href="mailto:support@neothink.com">support@neothink.com</a> and we'll explore other upcoming events. The timing that works for YOUR life is the right timing.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -1082,50 +1190,5 @@
             </div>
         </footer>
     </div>
-
-    <!-- Countdown Timer Script -->
-    <script>
-        // Countdown Timer Implementation
-        function initCountdown(targetDate) {
-            const countdownEl = document.getElementById('countdown');
-            const daysEl = document.getElementById('days');
-            const hoursEl = document.getElementById('hours');
-            const minutesEl = document.getElementById('minutes');
-            const secondsEl = document.getElementById('seconds');
-
-            function updateCountdown() {
-                const now = new Date().getTime();
-                const distance = targetDate - now;
-
-                if (distance < 0) {
-                    countdownEl.innerHTML = '<div class="countdown-expired">Workshop Has Begun!</div>';
-                    clearInterval(interval);
-                    return;
-                }
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                daysEl.textContent = String(days).padStart(2, '0');
-                hoursEl.textContent = String(hours).padStart(2, '0');
-                minutesEl.textContent = String(minutes).padStart(2, '0');
-                secondsEl.textContent = String(seconds).padStart(2, '0');
-            }
-
-            updateCountdown();
-            const interval = setInterval(updateCountdown, 1000);
-        }
-
-        // Initialize countdown to Dec 6, 2025 at 11:00 AM ET (8am PT / 9am MT / 10am CT / 11am ET)
-        document.addEventListener('DOMContentLoaded', function() {
-            const workshopDate = new Date('2025-12-06T11:00:00-05:00').getTime();
-            initCountdown(workshopDate);
-        });
-    </script>
-
-    <!-- GHL Form Script -->
-    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 </body>
 </html>
