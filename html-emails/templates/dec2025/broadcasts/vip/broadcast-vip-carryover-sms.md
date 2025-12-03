@@ -13,15 +13,14 @@
 ```
 ⭐ VIP Family —
 
-Your VIP status from Oct/Nov carries forward to December — our gift to you.
+Your VIP status carries forward to December — our gift to you. Just register to secure your seat.
 
-Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it. A new piece of the Super Puzzle.
+Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it.
 
-THE ENCORE EXPERIENCE:
-⚡ Dec 6-7 — VIP STATUS ACTIVE
-📅 Jan 24-25, 2026
+📅 Dec 6-7 — YOUR VIP IS ACTIVE (no extra purchase)
+📅 Jan 24-25 — VIP upgrade available
 
-Your seat is waiting:
+Register now:
 https://societysecrets.com/choose-your-date
 
 We will see you among the stars.
