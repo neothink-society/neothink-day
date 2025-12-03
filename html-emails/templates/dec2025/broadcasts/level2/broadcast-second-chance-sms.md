@@ -15,7 +15,7 @@ Dear Fellow Creator —
 
 The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
-Mark Hamilton has paused his work in world governments to bring NEW material — a missing piece of the "Super Puzzle."
+Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it. A new piece of the "Super Puzzle."
 
 IMPORTANT: There will be no recordings. You must be present to receive the transmission.
 
@@ -43,7 +43,7 @@ Dear Fellow Creator —
 
 The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
-Mark Hamilton has paused his work in world governments to bring NEW material — a missing piece of the "Super Puzzle."
+Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it. A new piece of the "Super Puzzle."
 
 IMPORTANT: There will be no recordings. You must be present to receive the transmission.
 
@@ -73,7 +73,8 @@ https://neothinkday.com/choose
 - "Dear Fellow Creator" salutation
 - "No recordings" urgency
 - "Must be present"
-- Mark Hamilton NEW material
+- Mark Hamilton's latest breakthrough / NEW material
+- "You are among the first to receive it"
 - Both date options
 - "We will see you among the stars"
 - Sign from "The Hamilton Family"
