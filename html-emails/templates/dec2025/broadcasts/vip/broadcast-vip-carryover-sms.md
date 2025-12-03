@@ -13,20 +13,18 @@
 ```
 ⭐ VIP Family —
 
-You saw behind the Matrix of Illusions. You stepped into the Immortal Mentality. And you committed to the inner circle.
+Your VIP status from Oct/Nov carries forward to December — our gift to you.
 
-Your VIP status from Oct/Nov carries forward to December. That's our gift to you.
-
-Mark Hamilton is returning with NEW material — a new piece of the Super Puzzle to help you remove the negative and lock in your Friday Night Essence.
+Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it. A new piece of the Super Puzzle.
 
 THE ENCORE EXPERIENCE:
 ⚡ Dec 6-7 — VIP STATUS ACTIVE
 📅 Jan 24-25, 2026
 
-Your seat at the front of the room is waiting:
+Your seat is waiting:
 https://societysecrets.com/choose-your-date
 
-We leave no one behind.
+We will see you among the stars.
 
 — The Hamilton Family
 ```
@@ -47,11 +45,11 @@ We leave no one behind.
 ### What TO Include:
 - "VIP Family" salutation (inner circle)
 - VIP status carries forward to December (gift)
-- Mark Hamilton NEW material
+- Mark Hamilton's latest breakthrough
+- "You are among the first to receive it"
 - December = VIP active (no additional purchase)
 - January = option available
-- Inner circle / front of the room language
-- "We leave no one behind"
+- "We will see you among the stars"
 - Sign from "The Hamilton Family"
 
 ### What NOT to Include:
