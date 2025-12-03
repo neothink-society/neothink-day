@@ -1,6 +1,6 @@
-# Encore Experience SMS Messages - Level 2 Members
+# The Final Transmission SMS Messages - Level 2 Members
 
-**Purpose:** Invite Level 2 members to register for December or January event
+**Purpose:** Invite Level 2 members to register for December or January Day of Enlightenment
 **Audience:** Level 2 members ONLY (EXCLUDING VIP upgrades/Level 3) - includes BOTH those who attended Oct/Nov AND those who registered but couldn't attend
 **Send Time:** Immediate broadcast
 
@@ -11,24 +11,21 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-Family —
+Dear Fellow Creator —
 
-You registered because something in you recognized the truth.
+The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
-Whether you experienced the Day of Enlightenment firsthand or life pulled you away — you belong here. We don't forget our own.
+Mark Hamilton has paused his work in world governments to bring NEW material — a missing piece of the "Super Puzzle."
 
-Mark Hamilton is returning with NEW material — a new piece of the Super Puzzle to help you remove the negative.
+IMPORTANT: There will be no recordings. You must be present to receive the transmission.
 
-THE ENCORE EXPERIENCE:
 📅 Dec 6-7, 2025
 📅 Jan 24-25, 2026
-
-This is your moment.
 
 Choose your date:
 https://societysecrets.com/choose-your-date
 
-We leave no one behind.
+We will see you among the stars.
 
 — The Hamilton Family
 ```
@@ -42,15 +39,14 @@ We leave no one behind.
 **Registration Link:** https://neothinkday.com/choose
 
 ```
-Family —
+Dear Fellow Creator —
 
-You registered because something in you recognized the truth.
+The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
-Whether you experienced the Day of Enlightenment firsthand or life pulled you away — you belong here. We don't forget our own.
+Mark Hamilton has paused his work in world governments to bring NEW material — a missing piece of the "Super Puzzle."
 
-Mark Hamilton is returning with NEW material — a new piece of the Super Puzzle to help you remove the negative.
+IMPORTANT: There will be no recordings. You must be present to receive the transmission.
 
-THE ENCORE EXPERIENCE:
 📅 Dec 6-7, 2025
 📅 Jan 24-25, 2026
 
@@ -62,7 +58,7 @@ https://neothinkday.com/choose
 — The Hamilton Family
 ```
 
-**Character count:** ~550 characters (fits in 4 SMS segments)
+**Character count:** ~560 characters (fits in 4 SMS segments)
 
 ---
 
@@ -70,25 +66,30 @@ https://neothinkday.com/choose
 
 ### Neothink Language Used:
 - "Super Puzzle" — Mark Hamilton's knowledge framework
-- "Remove the negative" — eliminating stagnation
-- "Friday Night Essence" — the creative spark (used in emails, optional in SMS)
+- "Fellow Creator" — elevating their identity
+- "The transmission" — mystical, important, exclusive
 
 ### What TO Include:
-- "Family" salutation
-- Acknowledge they registered (not assume they attended)
-- "You belong here" — inclusive messaging
-- "We don't forget our own"
+- "Dear Fellow Creator" salutation
+- "No recordings" urgency
+- "Must be present"
 - Mark Hamilton NEW material
-- "We leave no one behind"
 - Both date options
+- "We will see you among the stars"
+- Sign from "The Hamilton Family"
 
 ### What NOT to Include:
 - NO VIP messaging (separate segment)
 - NO Level 3 mention
-- NO specific workshop content spoilers
+- NO spoilers about content
 - NO language that assumes everyone attended
+
+### Urgency Elements:
+- "There will be no recordings"
+- "You must be present to receive the transmission"
+- Creates FOMO and exclusivity
 
 ---
 
-**Version:** 4.0
+**Version:** 5.0
 **Updated:** December 2, 2025
