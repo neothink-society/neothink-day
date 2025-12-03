@@ -50,10 +50,10 @@ IMPORTANT: There will be no recordings. You must be present to receive the trans
 📅 Dec 6-7, 2025
 📅 Jan 24-25, 2026
 
-Still waiting for your Manuscript? Choose January.
-
 Choose your date:
 https://neothinkday.com/choose
+
+We will see you among the stars.
 
 — The Hamilton Family
 ```
