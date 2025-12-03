@@ -737,7 +737,7 @@ From `workshop-complete-hub.html`:
 - **Level 3 Upgrade**: https://societysecrets.com/level3
 
 **Affiliate Links:**
-- Robinhood: https://join.robinhood.com/andrest1146
+- Robinhood: https://join.robinhood.com/wallacw55
 - Coinbase: https://coinbase.com/join/E6TQQAN
 
 **Templates:**
