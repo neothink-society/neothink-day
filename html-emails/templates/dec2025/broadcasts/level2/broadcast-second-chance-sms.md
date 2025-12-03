@@ -1,4 +1,4 @@
-# The Final Transmission SMS Messages - Level 2 Members
+# The Transmission SMS Messages - Level 2 Members
 
 **Purpose:** Invite Level 2 members to register for December or January Day of Enlightenment
 **Audience:** Level 2 members ONLY (EXCLUDING VIP upgrades/Level 3) - includes BOTH those who attended Oct/Nov AND those who registered but couldn't attend
