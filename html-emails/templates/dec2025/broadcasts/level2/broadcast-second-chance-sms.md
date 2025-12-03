@@ -11,7 +11,7 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-Dear Fellow Creator —
+Dear Member —
 
 The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
@@ -39,7 +39,7 @@ We will see you among the stars.
 **Registration Link:** https://neothinkday.com/choose
 
 ```
-Dear Fellow Creator —
+Dear Member —
 
 The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
@@ -66,11 +66,11 @@ https://neothinkday.com/choose
 
 ### Neothink Language Used:
 - "Super Puzzle" — Mark Hamilton's knowledge framework
-- "Fellow Creator" — elevating their identity
 - "The transmission" — mystical, important, exclusive
+- "Among the stars" — aspirational closing
 
 ### What TO Include:
-- "Dear Fellow Creator" salutation
+- "Dear Member" salutation
 - "No recordings" urgency
 - "Must be present"
 - Mark Hamilton's latest breakthrough / NEW material
