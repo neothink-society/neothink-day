@@ -69,9 +69,9 @@ See you there!
 ---
 
 ## Training Schedule
-- **Wed Dec 3** @ 10am PT - Session #1 (Intro + Foundation)
-- **Thu Dec 4** @ 10am PT - Session #2 (Objections + Roleplay)
-- **Fri Dec 5** @ 10am PT - Final Rehearsal
+- **Wed Dec 3** @ 10am PT - Intro + Foundation
+- **Thu Dec 4** @ 10am PT - Objections + Roleplay
+- **Fri Dec 5** @ 10am PT - Final Run-Through + Q&A
 
 ## Event Schedule
 - **Sat Dec 6** @ 9am PT - Day 1
