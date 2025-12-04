@@ -994,14 +994,14 @@
 
             <!-- Training Schedule -->
             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px;">
+                <div style="display: flex; align-items: center; gap: 1rem; background: rgba(46, 204, 113, 0.1); padding: 1rem; border-radius: 8px; border: 1px solid rgba(46, 204, 113, 0.3);">
                     <div style="text-align: center; min-width: 50px;">
-                        <div style="font-size: 1.5rem; font-weight: 800; color: var(--gold); line-height: 1;">3</div>
+                        <div style="font-size: 1.5rem; font-weight: 800; color: var(--success); line-height: 1;">3</div>
                         <div style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">DEC</div>
                     </div>
                     <div style="flex: 1;">
-                        <div style="font-weight: 700; color: white; font-size: 0.95rem;">Wednesday</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted);">Intro & Success Guide Foundation</div>
+                        <div style="font-weight: 700; color: white; font-size: 0.95rem;">Wednesday <span style="color: var(--success); font-size: 0.75rem;">✓ COMPLETE</span></div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);">Intro & Live Tracker Training</div>
                     </div>
                 </div>
 
@@ -1053,8 +1053,35 @@
             <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0; padding: 0 0.5rem;">Past training sessions available for review if needed</p>
         </div>
 
-        <!-- Friday Rehearsal -->
+        <!-- December Training Section Header -->
+        <div style="background: rgba(255, 215, 0, 0.1); border-left: 3px solid var(--gold); padding: 0.75rem 1rem; border-radius: 0 8px 8px 0; margin-bottom: 1rem;">
+            <div style="color: var(--gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">December 2025 Training</div>
+        </div>
+
+        <!-- Wednesday Dec 3 Training -->
         <div class="video-card featured">
+            <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1143190694?badge=0&autopause=0&player_id=0&app_id=58479">
+                <div class="play-button-overlay">
+                    <svg fill="black" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                </div>
+            </div>
+            <div class="video-meta">
+                <div style="margin-bottom: 0.5rem;">
+                    <span class="badge-new">NEW</span>
+                    <span class="tag">Wednesday Dec 3</span>
+                </div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Intro & Live Tracker Training</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">WhatsApp setup, A-Team Portal walkthrough, Live Tracker training, and efficiency improvements from last event</p>
+            </div>
+        </div>
+
+        <!-- November Training Section Header -->
+        <div style="background: rgba(255, 255, 255, 0.05); border-left: 3px solid rgba(255,255,255,0.3); padding: 0.75rem 1rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0 1rem 0;">
+            <div style="color: var(--text-muted); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">November 2025 Training</div>
+        </div>
+
+        <!-- Friday Rehearsal -->
+        <div class="video-card">
             <div class="video-facade" onclick="loadVideo(this)" data-src="https://player.vimeo.com/video/1139447319?badge=0&autopause=0&player_id=0&app_id=58479">
                 <div class="play-button-overlay">
                     <svg fill="black" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
