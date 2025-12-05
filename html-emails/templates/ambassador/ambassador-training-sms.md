@@ -4,7 +4,7 @@
 **TRAINING TIME:** Fridays at 1pm PT / 2pm MT / 3pm CT / 4pm ET
 
 **ZOOM DETAILS:**
-- Link: https://neothink.zoom.us/launch/edl?muid=81255020962_1733098790000
+- Link: https://neothink.zoom.us/j/81255020962?pwd=HodDJoaBoGN3X7kcqMXveaW3jk5NFr.1
 - Meeting ID: 812 5502 0962
 - Passcode: 483077
 
@@ -93,7 +93,7 @@ Passcode: 483077
 - All messages optimized for readability
 
 **Link Tracking:**
-- Replace [Zoom Link] with: https://neothink.zoom.us/launch/edl?muid=81255020962_1733098790000
+- Replace [Zoom Link] with: https://neothink.zoom.us/j/81255020962?pwd=HodDJoaBoGN3X7kcqMXveaW3jk5NFr.1
 - Or use tracked short link if using GoHighLevel SMS tracking
 
 **Personalization (Optional):**
