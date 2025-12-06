@@ -482,18 +482,23 @@
 
         .zoom-details-bar {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: var(--space-lg);
-            padding: var(--space-md) var(--space-xl);
+            gap: var(--space-md) var(--space-lg);
+            padding: var(--space-md) var(--space-lg);
             background: rgba(255, 215, 0, 0.1);
             border: 2px solid rgba(255, 215, 0, 0.3);
             border-radius: 12px;
             max-width: 600px;
             margin: 0 auto;
             font-family: var(--font-mono);
-            font-size: var(--text-lg);
+            font-size: var(--text-base);
             color: var(--gray-200);
+        }
+
+        .zoom-details-bar span {
+            white-space: nowrap;
         }
 
         .zoom-details-bar strong {
