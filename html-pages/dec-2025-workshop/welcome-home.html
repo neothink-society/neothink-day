@@ -2356,7 +2356,8 @@
                 const distance = vipDeadline - now;
 
                 if (distance < 0) {
-                    if (vipCountdownEl) vipCountdownEl.textContent = 'Upgrade Closed';
+                    // Hide countdown but keep VIP available for purchase
+                    if (vipCountdownEl) vipCountdownEl.parentElement.style.display = 'none';
                     if (vipInterval) clearInterval(vipInterval);
                     return;
                 }
