@@ -469,6 +469,231 @@
         }
 
         /* ===========================
+           MEETING DETAILS BOX
+        =========================== */
+        .meeting-details-section {
+            background: linear-gradient(135deg, var(--gray-900) 0%, rgba(45, 140, 255, 0.08) 100%);
+            padding: var(--space-2xl) var(--space-md);
+            border-bottom: 1px solid var(--gray-800);
+        }
+
+        .meeting-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--gray-800);
+            border: 3px solid var(--blue);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .meeting-box-header {
+            background: var(--blue);
+            padding: var(--space-lg);
+            text-align: center;
+        }
+
+        .meeting-box-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .meeting-box-content {
+            padding: var(--space-xl);
+        }
+
+        .join-button-large {
+            display: block;
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--black);
+            text-decoration: none;
+            font-size: var(--text-xl);
+            font-weight: 800;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: var(--space-xl);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .join-button-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .meeting-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .meeting-info-item {
+            background: var(--gray-700);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            text-align: center;
+        }
+
+        .meeting-info-label {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gray-400);
+            margin-bottom: var(--space-xs);
+        }
+
+        .meeting-info-value {
+            font-family: var(--font-sans);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 0.05em;
+        }
+
+        .phone-dial-section {
+            background: var(--gray-700);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            margin-top: var(--space-lg);
+        }
+
+        .phone-dial-title {
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .phone-numbers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-sm);
+        }
+
+        .phone-number {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            padding: var(--space-xs) 0;
+        }
+
+        .one-tap-mobile {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            border-radius: 8px;
+            padding: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .one-tap-title {
+            font-weight: 700;
+            color: var(--green);
+            margin-bottom: var(--space-xs);
+        }
+
+        .one-tap-number {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            word-break: break-all;
+        }
+
+        /* ===========================
+           VIDEO TUTORIALS
+        =========================== */
+        .video-tutorials {
+            background: var(--gray-900);
+            padding: var(--space-2xl) var(--space-md);
+            border-bottom: 1px solid var(--gray-800);
+        }
+
+        .tutorials-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tutorials-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            text-align: center;
+            margin-bottom: var(--space-sm);
+        }
+
+        .tutorials-subtitle {
+            font-size: var(--text-base);
+            color: var(--gray-400);
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .tutorial-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .tutorial-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: var(--gray-800);
+            border: 2px solid var(--gray-700);
+            border-radius: 12px;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .tutorial-link:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+            background: var(--gray-700);
+        }
+
+        .tutorial-icon {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        .tutorial-icon svg {
+            width: 28px;
+            height: 28px;
+            color: #ff0000;
+        }
+
+        .tutorial-text h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .tutorial-text p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            margin: 0;
+        }
+
+        /* ===========================
            VIP SECTION
         =========================== */
         .vip-section {
@@ -766,6 +991,130 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- YOUR MEETING DETAILS -->
+            <section class="meeting-details-section">
+                <div class="meeting-box">
+                    <div class="meeting-box-header">
+                        <h2>📍 Your Workshop Meeting Details</h2>
+                    </div>
+                    <div class="meeting-box-content">
+                        <!-- Big Join Button -->
+                        <a href="https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1" target="_blank" class="join-button-large">
+                            🚀 Click Here to Join the Workshop on Zoom
+                        </a>
+
+                        <!-- Meeting ID and Passcode -->
+                        <div class="meeting-info-grid">
+                            <div class="meeting-info-item">
+                                <p class="meeting-info-label">Meeting ID</p>
+                                <p class="meeting-info-value">890 3406 5077</p>
+                            </div>
+                            <div class="meeting-info-item">
+                                <p class="meeting-info-label">Passcode</p>
+                                <p class="meeting-info-value">160734</p>
+                            </div>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 0;">
+                            <p class="tip-box-title">💡 Save This Information</p>
+                            <p>Write down or screenshot the Meeting ID and Passcode. You may need them if the link doesn't work automatically.</p>
+                        </div>
+
+                        <!-- Phone Dial-In -->
+                        <div class="phone-dial-section">
+                            <p class="phone-dial-title">📞 Prefer to Join by Phone? (Audio Only)</p>
+
+                            <div class="one-tap-mobile">
+                                <p class="one-tap-title">📱 One-Tap Mobile (Easiest for Phone)</p>
+                                <p class="one-tap-number">+1 312 626 6799,,89034065077#,,,,*160734# (Chicago)</p>
+                                <p class="one-tap-number">+1 346 248 7799,,89034065077#,,,,*160734# (Houston)</p>
+                            </div>
+
+                            <p style="color: var(--gray-300); margin-bottom: var(--space-md);"><strong>Or dial any number below</strong>, then enter Meeting ID: <strong>890 3406 5077</strong> and Passcode: <strong>160734</strong></p>
+
+                            <div class="phone-numbers">
+                                <span class="phone-number">+1 312 626 6799 (Chicago)</span>
+                                <span class="phone-number">+1 346 248 7799 (Houston)</span>
+                                <span class="phone-number">+1 646 876 9923 (New York)</span>
+                                <span class="phone-number">+1 301 715 8592 (Washington DC)</span>
+                                <span class="phone-number">+1 253 215 8782 (Tacoma)</span>
+                                <span class="phone-number">+1 669 900 6833 (San Jose)</span>
+                                <span class="phone-number">+1 408 638 0968 (San Jose)</span>
+                                <span class="phone-number">+1 253 205 0468 (US)</span>
+                                <span class="phone-number">+1 305 224 1968 (US)</span>
+                                <span class="phone-number">+1 309 205 3325 (US)</span>
+                                <span class="phone-number">+1 360 209 5623 (US)</span>
+                                <span class="phone-number">+1 386 347 5053 (US)</span>
+                                <span class="phone-number">+1 507 473 4847 (US)</span>
+                                <span class="phone-number">+1 564 217 2000 (US)</span>
+                                <span class="phone-number">+1 646 931 3860 (US)</span>
+                                <span class="phone-number">+1 669 444 9171 (US)</span>
+                                <span class="phone-number">+1 689 278 1000 (US)</span>
+                                <span class="phone-number">+1 719 359 4580 (US)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEO TUTORIALS -->
+            <section class="video-tutorials">
+                <div class="tutorials-container">
+                    <h2 class="tutorials-title">🎬 Helpful Video Tutorials</h2>
+                    <p class="tutorials-subtitle">Watch these short videos from Zoom to learn how to use the app</p>
+
+                    <div class="tutorial-links">
+                        <a href="https://www.youtube.com/watch?v=QOUwumKCW7M" target="_blank" class="tutorial-link">
+                            <div class="tutorial-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 9.5a5 5 0 00-5-5H6a5 5 0 00-5 5v5a5 5 0 005 5h12a5 5 0 005-5v-5zM10 15V9l5 3-5 3z"/>
+                                </svg>
+                            </div>
+                            <div class="tutorial-text">
+                                <h4>How to Join a Zoom Meeting</h4>
+                                <p>Official Zoom tutorial • 2 minutes</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=hIkCmbvAHQQ" target="_blank" class="tutorial-link">
+                            <div class="tutorial-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 9.5a5 5 0 00-5-5H6a5 5 0 00-5 5v5a5 5 0 005 5h12a5 5 0 005-5v-5zM10 15V9l5 3-5 3z"/>
+                                </svg>
+                            </div>
+                            <div class="tutorial-text">
+                                <h4>Zoom Controls & Settings</h4>
+                                <p>Audio, video, and chat basics • 3 minutes</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=3Zq-b51A3dA" target="_blank" class="tutorial-link">
+                            <div class="tutorial-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 9.5a5 5 0 00-5-5H6a5 5 0 00-5 5v5a5 5 0 005 5h12a5 5 0 005-5v-5zM10 15V9l5 3-5 3z"/>
+                                </svg>
+                            </div>
+                            <div class="tutorial-text">
+                                <h4>Virtual Backgrounds in Zoom</h4>
+                                <p>How to change your background • 2 minutes</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=ygZ96J_z4AY" target="_blank" class="tutorial-link">
+                            <div class="tutorial-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 9.5a5 5 0 00-5-5H6a5 5 0 00-5 5v5a5 5 0 005 5h12a5 5 0 005-5v-5zM10 15V9l5 3-5 3z"/>
+                                </svg>
+                            </div>
+                            <div class="tutorial-text">
+                                <h4>Zoom for Beginners</h4>
+                                <p>Complete walkthrough • 10 minutes</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
             <!-- Section 1: Download Zoom -->
             <section id="download" class="content-section">
