@@ -320,6 +320,188 @@
         }
 
         /* ===========================
+           ESSENTIAL LINKS - TOP OF PAGE
+        =========================== */
+        .essential-links-section {
+            padding: var(--space-xl) var(--space-md);
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 100%);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .essential-links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+            max-width: 1000px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .essential-link-card {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.8));
+            border: 2px solid var(--gray-700);
+            border-radius: 16px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .essential-link-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .essential-link-card.zoom-card {
+            border-color: rgba(255, 0, 0, 0.5);
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(26, 26, 26, 0.95));
+        }
+
+        .essential-link-card.zoom-card:hover {
+            border-color: #ff4444;
+            box-shadow: 0 10px 40px rgba(255, 0, 0, 0.3);
+        }
+
+        .essential-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .essential-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--gold);
+        }
+
+        .zoom-card .essential-icon {
+            background: rgba(255, 0, 0, 0.15);
+            border-color: rgba(255, 0, 0, 0.4);
+        }
+
+        .zoom-card .essential-icon svg {
+            color: #ff4444;
+        }
+
+        .essential-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .essential-badge {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(255, 215, 0, 0.15);
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .essential-badge.live {
+            background: rgba(255, 0, 0, 0.2);
+            color: #ff4444;
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .essential-content h3 {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            font-weight: 700;
+            color: var(--white);
+            margin: 0 0 0.25rem 0;
+        }
+
+        .essential-content p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            margin: 0;
+        }
+
+        .essential-arrow {
+            width: 24px;
+            height: 24px;
+            color: var(--gold);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .essential-link-card:hover .essential-arrow {
+            transform: translateX(4px);
+        }
+
+        .zoom-details-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-sm) var(--space-lg);
+            background: rgba(255, 215, 0, 0.08);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 0 auto;
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+        }
+
+        .zoom-details-bar strong {
+            color: var(--gold);
+        }
+
+        .zoom-divider {
+            color: var(--gray-600);
+        }
+
+        @media (max-width: 900px) {
+            .essential-links-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+
+            .essential-link-card {
+                padding: var(--space-md);
+            }
+
+            .essential-icon {
+                width: 48px;
+                height: 48px;
+            }
+
+            .essential-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .zoom-details-bar {
+                flex-direction: column;
+                gap: var(--space-xs);
+            }
+
+            .zoom-divider {
+                display: none;
+            }
+        }
+
+        /* ===========================
            COUNTDOWN TIMER
         =========================== */
         .countdown-section {
@@ -1414,6 +1596,71 @@
                     </p>
 
                     <p class="hero-date" aria-label="Workshop dates">Saturday, December 6 • Sunday, December 7, 2025</p>
+                </div>
+            </section>
+
+            <!-- ESSENTIAL LINKS - TOP OF PAGE -->
+            <section class="essential-links-section">
+                <div class="container">
+                    <div class="essential-links-grid">
+                        <!-- Join Zoom -->
+                        <a href="https://neothink.zoom.us/j/89034065077?pwd=VQuVBn8Igr59jQxE3DRCRDtnqRzO7j.1" target="_blank" rel="noopener" class="essential-link-card zoom-card">
+                            <div class="essential-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="essential-content">
+                                <span class="essential-badge live">🔴 LIVE</span>
+                                <h3>Join Workshop on Zoom</h3>
+                                <p>Click here to join now</p>
+                            </div>
+                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+
+                        <!-- Workbook -->
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6931f8cd7037848979a406f8.pdf" target="_blank" rel="noopener" class="essential-link-card workbook-card">
+                            <div class="essential-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="essential-content">
+                                <span class="essential-badge">📖 PDF</span>
+                                <h3>Download Workbook</h3>
+                                <p>Print & follow along</p>
+                            </div>
+                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                        </a>
+
+                        <!-- Zoom Help -->
+                        <a href="https://neothinkevent.com/zoom" target="_blank" rel="noopener" class="essential-link-card help-card">
+                            <div class="essential-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="essential-content">
+                                <span class="essential-badge">💻 HELP</span>
+                                <h3>Zoom Guide</h3>
+                                <p>How to join & use Zoom</p>
+                            </div>
+                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Zoom Details -->
+                    <div class="zoom-details-bar">
+                        <span><strong>Meeting ID:</strong> 890 3406 5077</span>
+                        <span class="zoom-divider">|</span>
+                        <span><strong>Passcode:</strong> 160734</span>
+                    </div>
                 </div>
             </section>
 
