@@ -69,6 +69,22 @@ This won't be repeated.
 
 ---
 
+### SMS #1c: WH Live Now (Simple)
+**Trigger:** Anytime during Day 1 when WH is on stage
+**Corresponding Email:** 01c-day1-wh-live-now.html
+
+```
+🔴 LIVE NOW — Wallace Hamilton is on stage.
+
+Join: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+📖 Workbook: https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6931f8cd7037848979a406f8.pdf
+
+💻 Zoom help: https://neothinkevent.com/zoom
+```
+
+---
+
 ### SMS #2: Day 1 Lunch Break
 **Trigger:** When we break for lunch
 **Corresponding Email:** 02-day1-lunch-break.html
