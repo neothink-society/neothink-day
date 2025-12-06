@@ -919,16 +919,16 @@
         <main id="main-content" class="main-container">
             <div class="content-column">
                 <section class="fade-in-section hero-wrapper">
-                    <div class="content-eyebrow">Exclusive Invitation</div>
-                    <h1 class="content-title">Upgrade to VIP for Intensive Group Mentorship</h1>
+                    <div class="content-eyebrow">🔴 Workshop Is Live</div>
+                    <h1 class="content-title">It's Not Too Late — Upgrade to VIP Now</h1>
                     <p class="content-subtitle">
                         You're already registered for the complete transformation. VIP adds a private intimate group session with Wallace Hamilton and priority support for those who want accelerated guidance alongside the main workshop.
                     </p>
 
                     <div class="urgency-banner fade-in-section">
-                        <div class="urgency-label">VIP Access Closes In</div>
-                        <div class="urgency-timer" id="vip-countdown">Calculating...</div>
-                        <div class="urgency-message">We maintain small VIP cohorts to ensure intimate group dynamics and quality attention</div>
+                        <div class="urgency-label">Workshop Is Live Now</div>
+                        <div class="urgency-timer">VIP Still Available</div>
+                        <div class="urgency-message">Upgrade now to get VIP benefits for the remainder of the workshop + Day 2 exclusive session</div>
                     </div>
                 </section>
 
@@ -1098,35 +1098,7 @@
                 observer.observe(section);
             });
 
-            // VIP upgrade countdown timer - Ends Dec 6, 2025 at 9:00 AM PT (12:00 PM ET)
-            const vipDeadline = new Date('2025-12-06T09:00:00-08:00').getTime(); // 9am PT
-            const vipCountdownEl = document.getElementById('vip-countdown');
-
-            function updateVIPCountdown() {
-                const now = new Date().getTime();
-                const distance = vipDeadline - now;
-
-                if (distance < 0) {
-                    vipCountdownEl.textContent = 'Upgrade Closed';
-                    clearInterval(vipInterval);
-                    return;
-                }
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-                if (days > 0) {
-                    vipCountdownEl.textContent = `${days}d ${hours}h ${minutes}m`;
-                } else if (hours > 0) {
-                    vipCountdownEl.textContent = `${hours}h ${minutes}m`;
-                } else {
-                    vipCountdownEl.textContent = `${minutes}m`;
-                }
-            }
-
-            updateVIPCountdown();
-            const vipInterval = setInterval(updateVIPCountdown, 60000); // Update every minute
+            // Countdown removed - workshop is live, VIP still available
         });
     </script>
 </body>
