@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step Zoom guide for Day of Enlightenment workshop. Learn how to download Zoom, join the meeting, use virtual backgrounds, and raise your hand.">
+    <title>Zoom Guide - Day of Enlightenment | December 6-7, 2025</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+            --blue: #2D8CFF;
+            --green: #4CAF50;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.7;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* ===========================
+           HEADER
+        =========================== */
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--gold);
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero-section {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto var(--space-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(45, 140, 255, 0.2), rgba(45, 140, 255, 0.1));
+            border: 3px solid var(--blue);
+            border-radius: 50%;
+        }
+
+        .hero-icon svg {
+            width: 50px;
+            height: 50px;
+            color: var(--blue);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ===========================
+           QUICK NAV
+        =========================== */
+        .quick-nav {
+            background: var(--gray-900);
+            padding: var(--space-lg) var(--space-md);
+            border-bottom: 1px solid var(--gray-800);
+        }
+
+        .quick-nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .quick-nav h2 {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gray-400);
+            margin-bottom: var(--space-md);
+            text-align: center;
+        }
+
+        .quick-nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-sm);
+        }
+
+        .quick-nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: 0.75rem 1.25rem;
+            background: var(--gray-800);
+            border: 1px solid var(--gray-700);
+            border-radius: 30px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: var(--text-sm);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .quick-nav-link:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--black);
+            transform: translateY(-2px);
+        }
+
+        /* ===========================
+           CONTENT SECTIONS
+        =========================== */
+        .content-section {
+            padding: var(--space-3xl) var(--space-md);
+            border-bottom: 1px solid var(--gray-800);
+        }
+
+        .content-section:nth-child(even) {
+            background: var(--gray-900);
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--black);
+            background: var(--gold);
+            border-radius: 50%;
+            margin-bottom: var(--space-md);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .section-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            margin-bottom: var(--space-xl);
+        }
+
+        /* ===========================
+           STEP CARDS
+        =========================== */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .step-card {
+            background: var(--gray-800);
+            border: 2px solid var(--gray-700);
+            border-radius: 16px;
+            padding: var(--space-xl);
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            border-color: var(--gold);
+            transform: translateX(8px);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--black);
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .step-title {
+            font-family: var(--font-sans);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.3;
+        }
+
+        .step-content {
+            padding-left: calc(50px + var(--space-md));
+            color: var(--gray-200);
+            font-size: var(--text-lg);
+            line-height: 1.8;
+        }
+
+        .step-content p {
+            margin-bottom: var(--space-md);
+        }
+
+        .step-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===========================
+           HIGHLIGHT BOXES
+        =========================== */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            margin: var(--space-md) 0;
+        }
+
+        .highlight-box.blue {
+            background: linear-gradient(135deg, rgba(45, 140, 255, 0.12), rgba(45, 140, 255, 0.05));
+            border-color: rgba(45, 140, 255, 0.4);
+        }
+
+        .highlight-box.green {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(76, 175, 80, 0.05));
+            border-color: rgba(76, 175, 80, 0.4);
+        }
+
+        .highlight-box-title {
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .highlight-box.blue .highlight-box-title {
+            color: var(--blue);
+        }
+
+        .highlight-box.green .highlight-box-title {
+            color: var(--green);
+        }
+
+        /* ===========================
+           DOWNLOAD BUTTONS
+        =========================== */
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: 1rem 2rem;
+            background: var(--blue);
+            color: var(--white);
+            text-decoration: none;
+            font-size: var(--text-lg);
+            font-weight: 700;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: #1a7ae8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(45, 140, 255, 0.3);
+        }
+
+        .download-btn svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        /* ===========================
+           TIP BOXES
+        =========================== */
+        .tip-box {
+            background: var(--gray-800);
+            border-left: 4px solid var(--gold);
+            border-radius: 0 12px 12px 0;
+            padding: var(--space-lg);
+            margin: var(--space-lg) 0;
+        }
+
+        .tip-box-title {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            margin-bottom: var(--space-sm);
+        }
+
+        .tip-box p {
+            color: var(--gray-200);
+            font-size: var(--text-base);
+            line-height: 1.7;
+        }
+
+        /* ===========================
+           VIP SECTION
+        =========================== */
+        .vip-section {
+            background: linear-gradient(135deg, var(--gray-900) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            padding: var(--space-2xl);
+            margin-top: var(--space-xl);
+        }
+
+        .vip-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin-bottom: var(--space-md);
+        }
+
+        .vip-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        /* ===========================
+           IMAGE PLACEHOLDER
+        =========================== */
+        .image-placeholder {
+            background: var(--gray-700);
+            border: 2px dashed var(--gray-600);
+            border-radius: 12px;
+            padding: var(--space-xl);
+            text-align: center;
+            margin: var(--space-lg) 0;
+        }
+
+        .image-placeholder p {
+            color: var(--gray-400);
+            font-size: var(--text-sm);
+            font-style: italic;
+        }
+
+        /* ===========================
+           BUTTON VISUAL
+        =========================== */
+        .button-visual {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: 0.75rem 1.5rem;
+            background: var(--gray-700);
+            border: 2px solid var(--gray-600);
+            border-radius: 8px;
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--white);
+            margin: var(--space-xs) 0;
+        }
+
+        .button-visual.blue-btn {
+            background: var(--blue);
+            border-color: var(--blue);
+        }
+
+        .button-visual.gold-btn {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--black);
+        }
+
+        /* ===========================
+           FAQ SECTION
+        =========================== */
+        .faq-item {
+            background: var(--gray-800);
+            border: 1px solid var(--gray-700);
+            border-radius: 12px;
+            margin-bottom: var(--space-md);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: var(--space-lg);
+            background: transparent;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--space-md);
+            color: var(--white);
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--gray-700);
+        }
+
+        .faq-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--gold);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 var(--space-lg) var(--space-lg);
+            color: var(--gray-300);
+            font-size: var(--text-base);
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        /* ===========================
+           HELP BOX
+        =========================== */
+        .help-box {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(76, 175, 80, 0.05));
+            border: 2px solid rgba(76, 175, 80, 0.4);
+            border-radius: 16px;
+            padding: var(--space-2xl);
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+
+        .help-box h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .help-box p {
+            color: var(--gray-300);
+            font-size: var(--text-lg);
+            margin-bottom: var(--space-lg);
+        }
+
+        .help-email {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: 1rem 2rem;
+            background: var(--green);
+            color: var(--white);
+            text-decoration: none;
+            font-size: var(--text-lg);
+            font-weight: 700;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .help-email:hover {
+            background: #43a047;
+            transform: translateY(-3px);
+        }
+
+        /* ===========================
+           FOOTER
+        =========================== */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md);
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: var(--text-sm);
+            color: var(--gray-500);
+            line-height: 1.8;
+        }
+
+        .footer-text a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===========================
+           RESPONSIVE
+        =========================== */
+        @media (max-width: 768px) {
+            .step-content {
+                padding-left: 0;
+                margin-top: var(--space-md);
+            }
+
+            .step-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .download-btn {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="https://neothinkevent.com/home" class="site-logo">Day of Enlightenment</a>
+                    <a href="https://neothinkevent.com/home" class="back-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Workshop Hub
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 10l5 5-5 5"/>
+                            <path d="M4 4v7a4 4 0 004 4h12"/>
+                        </svg>
+                    </div>
+                    <h1 class="hero-title">
+                        Your Complete
+                        <span class="gradient-text">Zoom Guide</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Everything you need to join the Day of Enlightenment workshop on Zoom.
+                        Follow these simple steps and you'll be ready for December 6th.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Quick Navigation -->
+            <nav class="quick-nav">
+                <div class="quick-nav-container">
+                    <h2>Jump to Section</h2>
+                    <div class="quick-nav-links">
+                        <a href="#download" class="quick-nav-link">
+                            <span>📥</span> Download Zoom
+                        </a>
+                        <a href="#join" class="quick-nav-link">
+                            <span>🚪</span> Join Meeting
+                        </a>
+                        <a href="#controls" class="quick-nav-link">
+                            <span>🎛️</span> Basic Controls
+                        </a>
+                        <a href="#hand" class="quick-nav-link">
+                            <span>✋</span> Raise Hand
+                        </a>
+                        <a href="#background" class="quick-nav-link">
+                            <span>🖼️</span> Virtual Background
+                        </a>
+                        <a href="#troubleshoot" class="quick-nav-link">
+                            <span>🔧</span> Troubleshooting
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Section 1: Download Zoom -->
+            <section id="download" class="content-section">
+                <div class="container">
+                    <span class="section-number">1</span>
+                    <h2 class="section-title">Download Zoom</h2>
+                    <p class="section-subtitle">First, let's get Zoom installed on your device. Choose your device type below.</p>
+
+                    <div class="steps-container">
+                        <!-- Computer -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">💻</span>
+                                <h3 class="step-title">For Computer (Windows or Mac)</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Click the blue button below to go to Zoom's download page.</p>
+                                <p><strong>Step 2:</strong> Click the big blue button that says <strong>"Download"</strong> under "Zoom Workplace for desktop".</p>
+                                <p><strong>Step 3:</strong> Once downloaded, open the file and follow the simple installation steps.</p>
+                                <p><strong>Step 4:</strong> When installation is complete, you'll see the Zoom icon on your desktop or in your applications.</p>
+
+                                <div class="download-buttons">
+                                    <a href="https://zoom.us/download" target="_blank" class="download-btn">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                            <polyline points="7 10 12 15 17 10"/>
+                                            <line x1="12" y1="15" x2="12" y2="3"/>
+                                        </svg>
+                                        Download Zoom for Computer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone/Tablet -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">📱</span>
+                                <h3 class="step-title">For Phone or Tablet (iPhone, iPad, Android)</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Open the <strong>App Store</strong> (iPhone/iPad) or <strong>Google Play Store</strong> (Android).</p>
+                                <p><strong>Step 2:</strong> Search for <strong>"Zoom"</strong> or <strong>"Zoom Workplace"</strong>.</p>
+                                <p><strong>Step 3:</strong> Tap the <strong>Install</strong> or <strong>Get</strong> button.</p>
+                                <p><strong>Step 4:</strong> Wait for it to download, then you'll see the Zoom icon on your home screen.</p>
+
+                                <div class="tip-box">
+                                    <p class="tip-box-title">💡 Tip</p>
+                                    <p>We recommend using a <strong>computer</strong> for the best experience during the workshop. The screen is larger and easier to see. However, a phone or tablet will work if that's what you have.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box green">
+                        <p class="highlight-box-title">✅ Already Have Zoom?</p>
+                        <p>If you already have Zoom installed, make sure it's updated to the latest version. Open Zoom, click your profile picture in the top right, then click <strong>"Check for Updates"</strong>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Join the Meeting -->
+            <section id="join" class="content-section">
+                <div class="container">
+                    <span class="section-number">2</span>
+                    <h2 class="section-title">Join the Meeting</h2>
+                    <p class="section-subtitle">When it's time to join, you have two easy options.</p>
+
+                    <div class="steps-container">
+                        <!-- Option A: Click the Link -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">A</span>
+                                <h3 class="step-title">Option A: Click the Link (Easiest!)</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Find the email or text message we sent you with the Zoom link.</p>
+                                <p><strong>Step 2:</strong> Click the link. It will look something like: <br><code style="color: var(--blue); background: var(--gray-700); padding: 0.25rem 0.5rem; border-radius: 4px;">https://neothink.zoom.us/j/...</code></p>
+                                <p><strong>Step 3:</strong> Zoom will automatically open. If asked, click <strong>"Open Zoom"</strong> or <strong>"Launch Meeting"</strong>.</p>
+                                <p><strong>Step 4:</strong> If asked for a passcode, enter the one from your email/text.</p>
+                                <p><strong>Step 5:</strong> Click <strong>"Join with Video"</strong> to enter the workshop!</p>
+
+                                <div class="highlight-box blue">
+                                    <p class="highlight-box-title">📧 Can't Find the Link?</p>
+                                    <p>Check your email from <strong>support@neothink.com</strong>. Also check your spam/junk folder. The subject line will mention "Day of Enlightenment" and "Zoom".</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Option B: Enter Meeting ID -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">B</span>
+                                <h3 class="step-title">Option B: Enter the Meeting ID Manually</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Open the Zoom app on your device.</p>
+                                <p><strong>Step 2:</strong> Click the big blue <span class="button-visual blue-btn">Join</span> button.</p>
+                                <p><strong>Step 3:</strong> Enter the <strong>Meeting ID</strong> number (from your email/text).</p>
+                                <p><strong>Step 4:</strong> Type your name so we know who you are.</p>
+                                <p><strong>Step 5:</strong> Click <strong>"Join"</strong>.</p>
+                                <p><strong>Step 6:</strong> Enter the <strong>Passcode</strong> when asked (from your email/text).</p>
+                                <p><strong>Step 7:</strong> Click <strong>"Join with Video"</strong> to enter!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tip-box">
+                        <p class="tip-box-title">⏰ Join Early</p>
+                        <p>We recommend joining <strong>15-30 minutes before</strong> the workshop starts. This gives you time to test your audio and video, and make sure everything is working properly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Basic Controls -->
+            <section id="controls" class="content-section">
+                <div class="container">
+                    <span class="section-number">3</span>
+                    <h2 class="section-title">Basic Zoom Controls</h2>
+                    <p class="section-subtitle">Once you're in the meeting, here are the important buttons you'll use.</p>
+
+                    <div class="steps-container">
+                        <!-- Mute/Unmute -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">🎤</span>
+                                <h3 class="step-title">Mute / Unmute (Your Microphone)</h3>
+                            </div>
+                            <div class="step-content">
+                                <p>In the <strong>bottom left corner</strong> of your screen, you'll see a microphone icon.</p>
+                                <p><strong>• Microphone with a red line through it</strong> = You are MUTED (others can't hear you)</p>
+                                <p><strong>• Microphone without a line</strong> = You are UNMUTED (others can hear you)</p>
+                                <p><strong>Click the microphone icon</strong> to switch between muted and unmuted.</p>
+
+                                <div class="highlight-box">
+                                    <p class="highlight-box-title">🔇 Important</p>
+                                    <p>During the workshop, please <strong>stay muted</strong> unless you're asked to speak. This prevents background noise from disrupting the presentation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">📹</span>
+                                <h3 class="step-title">Video On / Off (Your Camera)</h3>
+                            </div>
+                            <div class="step-content">
+                                <p>Next to the microphone, you'll see a <strong>camera icon</strong>.</p>
+                                <p><strong>• Camera with a red line through it</strong> = Your video is OFF (others can't see you)</p>
+                                <p><strong>• Camera without a line</strong> = Your video is ON (others can see you)</p>
+                                <p><strong>Click the camera icon</strong> to turn your video on or off.</p>
+
+                                <div class="tip-box">
+                                    <p class="tip-box-title">💡 Tip</p>
+                                    <p>We encourage you to turn your video ON so we can see your smiling face! But it's okay to leave it off if you prefer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chat -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">💬</span>
+                                <h3 class="step-title">Chat (Send Messages)</h3>
+                            </div>
+                            <div class="step-content">
+                                <p>Look at the <strong>bottom of your screen</strong> for a button that says <strong>"Chat"</strong> (it may look like a speech bubble).</p>
+                                <p><strong>Step 1:</strong> Click "Chat" to open the chat panel on the right side of your screen.</p>
+                                <p><strong>Step 2:</strong> Type your message in the box at the bottom.</p>
+                                <p><strong>Step 3:</strong> Press <strong>Enter</strong> on your keyboard (or tap Send) to send it.</p>
+                                <p>The chat is a great way to ask questions or share your thoughts without interrupting!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Raise Your Hand -->
+            <section id="hand" class="content-section">
+                <div class="container">
+                    <span class="section-number">4</span>
+                    <h2 class="section-title">How to Raise Your Hand</h2>
+                    <p class="section-subtitle">If you want to ask a question or get attention, use the "Raise Hand" feature.</p>
+
+                    <div class="steps-container">
+                        <!-- Computer -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">💻</span>
+                                <h3 class="step-title">On Computer</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Look at the bottom of your Zoom window for a button called <strong>"Reactions"</strong> (it may show a smiley face or emoji icon).</p>
+                                <p><strong>Step 2:</strong> Click on <strong>"Reactions"</strong>.</p>
+                                <p><strong>Step 3:</strong> Click <strong>"Raise Hand"</strong> ✋</p>
+                                <p>You'll see a small hand icon appear next to your name. The host will see that you have your hand raised.</p>
+                                <p><strong>To lower your hand:</strong> Click "Reactions" again, then "Lower Hand".</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone/Tablet -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">📱</span>
+                                <h3 class="step-title">On Phone or Tablet</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Tap anywhere on the screen to show the controls.</p>
+                                <p><strong>Step 2:</strong> Tap <strong>"More"</strong> (three dots ••• at the bottom).</p>
+                                <p><strong>Step 3:</strong> Tap <strong>"Raise Hand"</strong> ✋</p>
+                                <p>The host will see your raised hand and can call on you.</p>
+                                <p><strong>To lower your hand:</strong> Tap "More" again, then "Lower Hand".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p class="highlight-box-title">✋ When to Raise Your Hand</p>
+                        <p>Raise your hand when:</p>
+                        <ul style="margin: var(--space-sm) 0 0 var(--space-lg); color: var(--gray-200);">
+                            <li>You have a question</li>
+                            <li>The presenter asks for volunteers</li>
+                            <li>You want to share something with the group</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Virtual Background (with VIP section) -->
+            <section id="background" class="content-section">
+                <div class="container">
+                    <span class="section-number">5</span>
+                    <h2 class="section-title">Virtual Background</h2>
+                    <p class="section-subtitle">A virtual background replaces whatever is behind you with an image. Great for privacy or fun!</p>
+
+                    <div class="steps-container">
+                        <!-- Before the Meeting -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">A</span>
+                                <h3 class="step-title">Set Up BEFORE Joining a Meeting</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Open the Zoom app on your computer.</p>
+                                <p><strong>Step 2:</strong> Click the <strong>gear icon</strong> ⚙️ (Settings) in the top right corner.</p>
+                                <p><strong>Step 3:</strong> Click <strong>"Background & Effects"</strong> in the left menu.</p>
+                                <p><strong>Step 4:</strong> You'll see some built-in backgrounds. Click one to try it!</p>
+                                <p><strong>Step 5:</strong> To add your own image, click the <strong>"+"</strong> button and select an image from your computer.</p>
+                            </div>
+                        </div>
+
+                        <!-- During the Meeting -->
+                        <div class="step-card">
+                            <div class="step-header">
+                                <span class="step-number">B</span>
+                                <h3 class="step-title">Change Background DURING a Meeting</h3>
+                            </div>
+                            <div class="step-content">
+                                <p><strong>Step 1:</strong> Click the small arrow <strong>^</strong> next to the camera/video icon at the bottom.</p>
+                                <p><strong>Step 2:</strong> Click <strong>"Choose Virtual Background"</strong> or <strong>"Background & Effects"</strong>.</p>
+                                <p><strong>Step 3:</strong> Select the background you want.</p>
+                                <p><strong>Step 4:</strong> Close the settings window. Your new background is now active!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VIP Background Section -->
+                    <div class="vip-section">
+                        <span class="vip-badge">⭐ VIP ELITE MEMBERS</span>
+                        <h3 class="vip-title">Your Exclusive VIP Background</h3>
+                        <p style="color: var(--gray-300); margin-bottom: var(--space-lg);">As a VIP Elite member, you have an exclusive virtual background that shows your VIP status. Here's how to use it:</p>
+
+                        <div class="steps-container">
+                            <div class="step-card" style="background: rgba(255, 215, 0, 0.05); border-color: rgba(255, 215, 0, 0.3);">
+                                <div class="step-header">
+                                    <span class="step-number" style="background: var(--gold); color: var(--black);">1</span>
+                                    <h3 class="step-title">Download Your VIP Background</h3>
+                                </div>
+                                <div class="step-content">
+                                    <p>First, download the VIP background image to your computer. Check your VIP welcome email or the VIP section of the Workshop Hub for the download link.</p>
+                                    <p><strong>Save the image</strong> somewhere easy to find, like your Desktop or Downloads folder.</p>
+                                </div>
+                            </div>
+
+                            <div class="step-card" style="background: rgba(255, 215, 0, 0.05); border-color: rgba(255, 215, 0, 0.3);">
+                                <div class="step-header">
+                                    <span class="step-number" style="background: var(--gold); color: var(--black);">2</span>
+                                    <h3 class="step-title">Add It to Zoom</h3>
+                                </div>
+                                <div class="step-content">
+                                    <p><strong>Step 1:</strong> Open Zoom and go to <strong>Settings</strong> (gear icon ⚙️).</p>
+                                    <p><strong>Step 2:</strong> Click <strong>"Background & Effects"</strong>.</p>
+                                    <p><strong>Step 3:</strong> Click the <strong>"+"</strong> button.</p>
+                                    <p><strong>Step 4:</strong> Navigate to where you saved your VIP background image.</p>
+                                    <p><strong>Step 5:</strong> Select the image and click <strong>"Open"</strong>.</p>
+                                    <p><strong>Step 6:</strong> Click on your new VIP background to activate it!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: var(--space-lg); border-left-color: var(--gold);">
+                            <p class="tip-box-title">⭐ Stand Out as VIP</p>
+                            <p>Your VIP background lets everyone in the workshop see your elite status. It's a great conversation starter and shows your commitment to transformation!</p>
+                        </div>
+                    </div>
+
+                    <div class="tip-box">
+                        <p class="tip-box-title">🖼️ Background Tips</p>
+                        <p><strong>Good lighting helps!</strong> Sit facing a window or lamp so your face is well-lit. This helps Zoom separate you from the background better.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: Troubleshooting -->
+            <section id="troubleshoot" class="content-section">
+                <div class="container">
+                    <span class="section-number">6</span>
+                    <h2 class="section-title">Troubleshooting</h2>
+                    <p class="section-subtitle">Having issues? Here are solutions to common problems.</p>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span>I can't hear anything</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>1. Check your computer/phone volume.</strong> Make sure it's not muted or turned all the way down.</p>
+                            <p><strong>2. Check Zoom's audio settings.</strong> Click the small arrow next to the microphone icon, then "Audio Settings". Make sure the correct speaker is selected.</p>
+                            <p><strong>3. Try clicking "Test Speaker"</strong> in the audio settings to hear if sound is working.</p>
+                            <p><strong>4. Close and reopen Zoom.</strong> Sometimes this fixes audio issues.</p>
+                            <p><strong>5. Restart your computer/device</strong> if nothing else works.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span>Others can't hear me</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>1. Make sure you're not muted!</strong> Check for the red line through the microphone icon.</p>
+                            <p><strong>2. Check Zoom's audio settings.</strong> Click the arrow next to the microphone icon, then "Audio Settings". Make sure the correct microphone is selected.</p>
+                            <p><strong>3. Test your microphone.</strong> In audio settings, speak and watch the bar next to "Input Level". If it moves, your mic is working.</p>
+                            <p><strong>4. Check if other apps can use your microphone.</strong> Close other apps that might be using it.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span>My video isn't working</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>1. Check if your camera is covered</strong> (some laptops have a privacy slider).</p>
+                            <p><strong>2. Make sure video is turned on.</strong> Check for the red line through the camera icon.</p>
+                            <p><strong>3. Check Zoom's video settings.</strong> Click the arrow next to the camera icon, then "Video Settings". Make sure the correct camera is selected.</p>
+                            <p><strong>4. Close other apps</strong> that might be using your camera (like FaceTime or another video app).</p>
+                            <p><strong>5. Restart Zoom</strong> and try again.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span>The meeting link isn't working</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>1. Make sure you copied the entire link.</strong> It should start with "https://neothink.zoom.us/..."</p>
+                            <p><strong>2. Try the Meeting ID method instead.</strong> Open Zoom, click "Join", and enter the Meeting ID and Passcode from your email.</p>
+                            <p><strong>3. Check that Zoom is updated</strong> to the latest version.</p>
+                            <p><strong>4. The meeting may not be open yet.</strong> Try again closer to the start time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span>My virtual background looks strange</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>1. Improve your lighting.</strong> Sit facing a window or lamp so your face is well-lit.</p>
+                            <p><strong>2. Use a plain background behind you</strong> if possible (a solid-colored wall works best).</p>
+                            <p><strong>3. Check "I have a green screen"</strong> is unchecked in Background settings (unless you actually have one).</p>
+                            <p><strong>4. Some older computers</strong> may not support virtual backgrounds well. If it's too distracting, you can turn it off.</p>
+                        </div>
+                    </div>
+
+                    <div class="help-box">
+                        <h3>Still Need Help?</h3>
+                        <p>Don't worry — we're here for you! Contact our support team and we'll help you get set up.</p>
+                        <a href="mailto:support@neothink.com" class="help-email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            support@neothink.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <p class="footer-text">
+                    Day of Enlightenment Workshop • December 6-7, 2025<br>
+                    <a href="https://neothinkevent.com/home">Return to Workshop Hub</a> •
+                    <a href="mailto:support@neothink.com">support@neothink.com</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('open');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
