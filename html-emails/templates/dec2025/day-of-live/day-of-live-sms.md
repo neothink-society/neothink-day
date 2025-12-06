@@ -48,6 +48,27 @@ Your Day of Enlightenment has begun.
 
 ---
 
+### SMS #1b: WH In Session - Mid-Morning Update
+**Trigger:** Mid-morning Day 1, when Wallace is deep into his teaching
+**Corresponding Email:** 01b-day1-wh-in-session.html
+
+```
+🔴 HAPPENING NOW — Wallace Hamilton is revealing the Two Mentalities framework.
+
+He's teaching:
+• How "impossible dreams" become routine achievements
+• The shift from Mortal to Immortal mentality
+• Why value creation is your path to happiness
+
+If you're not in the room, you're missing this.
+
+Join NOW: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+This won't be repeated.
+```
+
+---
+
 ### SMS #2: Day 1 Lunch Break
 **Trigger:** When we break for lunch
 **Corresponding Email:** 02-day1-lunch-break.html
