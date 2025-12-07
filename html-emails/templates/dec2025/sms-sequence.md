@@ -574,6 +574,31 @@ Make the most of this moment.
 
 ---
 
+### VIP — Zoom Background
+**Trigger:** After VIP confirmation or 1-2 days before event
+**Emotional state:** Excited about VIP perks, wants to maximize their investment
+**What they need:** Clear download + setup instructions, feel special
+**Corresponding Email:** vip-zoom-background.html
+
+```
+⭐ VIP EXCLUSIVE: Your Custom Zoom Background
+
+Stand out in the workshop with your VIP background.
+
+📥 Download: https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921b0a35408c646432ae105.png
+
+Setup takes 60 seconds:
+1. Download the image
+2. Open Zoom → Settings → Background & Effects
+3. Click + to add your VIP background
+
+Need help? https://neothinkevent.com/zoom
+
+Your VIP status will be instantly recognizable.
+```
+
+---
+
 ## COMPLETE SEND SCHEDULE
 
 | # | Message | Audience | Day | Time (Eastern) |
@@ -600,6 +625,7 @@ Make the most of this moment.
 | 17 | Complete | All | Sun, Dec 7 | Evening |
 | VIP-1 | Session Reminder | VIP only | Sat, Dec 6 | Before VIP session |
 | VIP-2 | Exclusive Session | VIP only | Sun, Dec 7 | Before VIP session |
+| VIP-3 | Zoom Background | VIP only | Thu-Fri | After confirmation or 1-2 days before |
 
 ---
 
