@@ -264,15 +264,15 @@ Don't miss this.
 ```
 ✓ YOU DID IT.
 
-Two days. Total transformation.
+Two days. Historic transformation.
 
-You're not the same person you were on Friday.
+You witnessed something that took 2,400 years to reveal. You're not the same person you were on Friday.
 
 Whatever you're feeling — exhausted, energized, overwhelmed — it's all valid. Your system is integrating something profound.
 
 Watch your inbox for next steps.
 
-Welcome to your golden life. 🌟
+Welcome to your golden life. Welcome to Neovia. 🌟
 ```
 
 ---
