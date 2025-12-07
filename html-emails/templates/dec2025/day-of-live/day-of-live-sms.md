@@ -150,10 +150,11 @@ Don't miss this.
 
 You showed up. You did the work. You're already different than you were this morning.
 
-Tonight:
-• Let it settle — don't try to figure it all out
-• Rest well — your subconscious is processing
-• Hydrate
+Tonight: Rest well. Let today's breakthroughs integrate.
+
+→ Wealth Engine Calculator: https://neothinkevent.com/wealth-engine-calculator
+
+→ Share your Day 1 feedback: https://neothink.typeform.com/to/CiMxtG50
 
 TOMORROW — Day 2
 12pm Eastern / 9am Pacific
