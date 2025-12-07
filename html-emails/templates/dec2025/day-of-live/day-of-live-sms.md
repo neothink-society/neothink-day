@@ -331,39 +331,40 @@ Welcome to your golden life. 🌟
 ## LEVEL 3 ENROLLMENT SMS
 
 ### SMS #12: Level 3 Segment (Stargazer 3-Day Event)
-**Trigger:** During Level 3 segment presentation
+**Trigger:** When Wallace makes the Level 3 offer (near end of Day 1)
 **Corresponding Email:** 12-level3-segment.html
 
 ```
 Level 3 enrollment is now open.
 
-The Stargazer 3-Day Event:
-→ $1,997 today
-→ Remaining $3,003 only due AFTER you make $50K
-→ No questions asked. Honor system.
+For those ready to go deeper:
 
-3 days to remove every limitation between you and your million-dollar vision.
+The Stargazer 3-Day Event
+→ $1,997 today
+→ Remaining $3,003 only after you make $50K
+→ 100% honor system
+
+Private mentorship with Wallace Hamilton. Limited spots.
 
 VIP members: Your upgrade is credited.
 
-Limited spots. Enroll now:
 https://societysecrets.com/level3
 ```
 
 ---
 
 ### SMS #12b: Level 3 Reminder (Short)
-**Trigger:** Follow-up during Level 3 segment
+**Trigger:** Follow-up after Level 3 offer
 **Corresponding Email:** 12-level3-segment.html
 
 ```
-Level 3 is open.
+Level 3 enrollment is open.
 
 $1,997 now. The rest only after you make $50K.
 
-This is the implementation.
+Private mentorship. Limited spots.
 
-Enroll: https://societysecrets.com/level3
+https://societysecrets.com/level3
 ```
 
 ---
