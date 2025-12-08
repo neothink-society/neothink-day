@@ -467,6 +467,27 @@
             line-height: 1.5;
         }
 
+        .card-button {
+            display: inline-block;
+            margin-top: var(--space-sm);
+            padding: 0.625rem 1.25rem;
+            background: linear-gradient(135deg, var(--gold) 0%, #FFA500 100%);
+            color: #000;
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .essential-link-card:hover .card-button {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+        }
+
         .essential-arrow {
             width: 24px;
             height: 24px;
@@ -1920,10 +1941,8 @@
                                 <span class="essential-badge live">⭐ START HERE</span>
                                 <h3>Golden Life Sheet</h3>
                                 <p>Fill out your personal blueprint now</p>
+                                <span class="card-button">Open Sheet →</span>
                             </div>
-                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
                         </a>
 
                         <!-- Wealth Engine Calculator -->
@@ -1937,10 +1956,8 @@
                                 <span class="essential-badge">💰 INTERACTIVE</span>
                                 <h3>Wealth Engine Calculator</h3>
                                 <p>See your path to financial freedom</p>
+                                <span class="card-button">Open Calculator →</span>
                             </div>
-                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
                         </a>
 
                         <!-- Share Your Feedback -->
@@ -1954,10 +1971,8 @@
                                 <span class="essential-badge">💬 7 MIN</span>
                                 <h3>Share Your Feedback</h3>
                                 <p>Tell us about your experience</p>
+                                <span class="card-button">Start Survey →</span>
                             </div>
-                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
                         </a>
 
                         <!-- Workshop Workbook -->
@@ -1971,10 +1986,8 @@
                                 <span class="essential-badge">📖 PDF</span>
                                 <h3>Workshop Workbook</h3>
                                 <p>Download and print your workbook</p>
+                                <span class="card-button">Download PDF →</span>
                             </div>
-                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
                         </a>
                     </div>
                 </div>
