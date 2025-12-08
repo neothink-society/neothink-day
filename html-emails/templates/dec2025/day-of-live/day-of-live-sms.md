@@ -344,6 +344,56 @@ As Wallace said: "The burden disappears, and what replaces it is something so po
 
 ---
 
+### SMS #L3-ASCEND: Level 3 Stargazer Promotion
+**Trigger:** After VIP session or as standalone promotion
+**Corresponding Email:** level3-ascend.html
+**Audience:** Level 2 members who are NOT yet enrolled in Level 3
+
+```
+You felt something this weekend.
+
+A shift. A clarity. Something real.
+
+The question: Will you let it fade—or finish what you started?
+
+Level 3 Stargazer is open.
+
+→ $1,997 today
+→ The remaining $3,003 due ONLY after you make $50K
+→ 100% honor system. We're betting on you.
+
+3 days. Private mentorship with Wallace Hamilton. Total transformation.
+
+VIPs: Your $297 is credited.
+
+⏰ Workshop pricing ends Wed, Dec 10 midnight ET
+
+https://societysecrets.com/level3
+```
+
+---
+
+### SMS #L3-ASCEND-SHORT: Level 3 Short Version
+**Trigger:** Follow-up or reminder
+**Corresponding Email:** level3-ascend.html
+**Audience:** Level 2 members who are NOT yet enrolled in Level 3
+
+```
+Level 3 is open.
+
+$1,997 today. The rest ($3,003) only after you make $50K.
+
+Honor system. No contracts. We're betting on you.
+
+3 days with Wallace Hamilton. Private mentorship. Your star is waiting.
+
+⏰ Expires Wed midnight ET
+
+https://societysecrets.com/level3
+```
+
+---
+
 ### SMS #VIP-REMINDER: VIP Session Reminder (Monday, Dec 8 @ 2:30pm PT)
 **Trigger:** ~90 minutes before VIP session
 **Corresponding Email:** vip-session-reminder.html
