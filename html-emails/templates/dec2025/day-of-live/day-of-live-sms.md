@@ -278,10 +278,10 @@ Welcome to your golden life. Welcome to Neovia. 🌟
 
 ---
 
-### SMS #12: Morning After (Monday, Dec 8) — ALL MEMBERS
+### SMS #12: Morning After (Monday, Dec 8) — L2 MEMBERS (Non-VIP, Non-L3)
 **Trigger:** Monday morning after the workshop
 **Corresponding Email:** 12-morning-after.html
-**Audience:** All Level 2 graduates
+**Audience:** Level 2 graduates who are NOT VIPs and NOT enrolled in Level 3
 
 ```
 Good morning, Level 2 Neothinker. 🌟
@@ -290,10 +290,11 @@ You did it. You discovered your Friday Night Essence—the spark that never dies
 
 As Wallace said: "You can finally step into harmony with yourself, with the world, with the universe. And when you do, the burden disappears."
 
-📢 VIPs: TONIGHT 4pm PT / 7pm ET
-📢 L3 Welcome Party: Wed 4pm PT / 7pm ET
-
+Your resources:
 → https://neothinkevent.com/home
+
+⏰ L3 pricing expires Wed, Dec 10 midnight ET:
+→ https://societysecrets.com/level3
 ```
 
 ---
@@ -360,9 +361,9 @@ As Wallace said: "The burden disappears, and what replaces it is something so po
 | 9 | Sun | Back from lunch | All | Final Session Resumes |
 | 10 | Sun | Integration starts | All | Integration Segment Alert |
 | 11 | Sun | Workshop ends | All | Workshop Complete |
-| 12 | Mon | Morning after | All L2 | Morning After (General) |
-| 12-VIP | Mon | Morning after | VIPs | Morning After (VIP) |
-| 12-L3 | Mon | Morning after | L3 | Morning After (Stargazer) |
+| 12 | Mon | Morning after | L2 (non-VIP, non-L3) | Morning After + L3 CTA |
+| 12-VIP | Mon | Morning after | VIPs only | Morning After (VIP) |
+| 12-L3 | Mon | Morning after | L3 only | Morning After (Stargazer) |
 
 ---
 
