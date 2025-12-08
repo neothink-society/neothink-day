@@ -295,6 +295,9 @@ Your resources are ready:
 ⏰ Level 3 special pricing expires Wed, Dec 10 at midnight ET:
 https://societysecrets.com/level3
 
+📞 Questions about Level 3? Talk to a mentor (free, no pressure):
+https://societysecrets.com/schedule
+
 Haven't shared your feedback yet?
 https://neothink.typeform.com/to/CiMxtG50
 
