@@ -286,16 +286,15 @@ Welcome to your golden life. Welcome to Neovia. 🌟
 ```
 Good morning, Level 2 Neothinker. 🌟
 
-You did it. You discovered your Friday Night Essence—the spark that never dies. You saw through the Matrix of Illusions. You're on your vector now.
+You did it. You discovered your Friday Night Essence—the spark that never dies.
+
+As Wallace said: "The things you need in this life don't come from anything external. They all come from internal."
 
 Your resources:
 → https://neothinkevent.com/home
 
-📢 VIPs: Extended session TONIGHT 4pm PT / 7pm ET
+📢 VIPs: TONIGHT 4pm PT / 7pm ET
 📢 L3 Welcome Party: Wed 4pm PT / 7pm ET
-
-⏰ L3 pricing expires Wed, Dec 10 midnight ET:
-https://societysecrets.com/level3
 
 Your golden life has begun.
 ```
@@ -310,17 +309,17 @@ Your golden life has begun.
 ```
 Good morning, VIP. 🌟
 
-You went all-in, and it showed. Tonight's extended session with Wallace is your reward.
+You went all-in. Tonight's extended session with Wallace is your reward.
 
 📢 TONIGHT: 4pm PT / 7pm ET
-Zoom link coming to your inbox today.
+Zoom link coming to your inbox.
+
+Remember what Mark said: "We Neothinkers have the gift of seeing through illusions—seeing appearances down to reality."
 
 Your resources:
 → https://neothinkevent.com/home
 
-Already enrolled in Level 3? Your Welcome Party is Wed 4pm PT / 7pm ET.
-
-You're on your vector. Stay re-synced with your Golden Life Sheet daily.
+L3 Welcome Party: Wed 4pm PT / 7pm ET
 
 See you tonight.
 ```
@@ -335,19 +334,18 @@ See you tonight.
 ```
 Good morning, Stargazer. 🌟
 
-You made the decision. You're going deeper. We see you.
+You made the decision. You're going deeper.
 
 📢 WELCOME PARTY: Wed, Dec 10 at 4pm PT / 7pm ET
 Zoom link coming to your inbox.
 
-Your Stargazer 3-Day Event begins Jan 24-26, 2025.
+Your 3-Day Event: Jan 24-26, 2025
 
-Your resources:
-→ https://neothinkevent.com/home
+As Wallace said: "The things you need in this life don't come from anything external. They all come from internal."
 
 You discovered your Friday Night Essence. Now you'll master it.
 
-Welcome to Level 3.
+→ https://neothinkevent.com/home
 ```
 
 ---
