@@ -362,13 +362,16 @@ Level 3 Stargazer is open.
 → The remaining $3,003 due ONLY after you make $50K
 → 100% honor system. We're betting on you.
 
-3 days. Private mentorship with Wallace Hamilton. Total transformation.
+3 days. Private mentorship with Wallace Hamilton.
 
 VIPs: Your $297 is credited.
 
-⏰ Workshop pricing ends Wed, Dec 10 midnight ET
+⏰ Expires Wed, Dec 10 midnight ET
 
-https://societysecrets.com/level3
+Enroll: https://societysecrets.com/level3
+
+Not sure? Talk to a mentor first:
+https://societysecrets.com/schedule-level-three-consultation
 ```
 
 ---
@@ -385,11 +388,14 @@ $1,997 today. The rest ($3,003) only after you make $50K.
 
 Honor system. No contracts. We're betting on you.
 
-3 days with Wallace Hamilton. Private mentorship. Your star is waiting.
+3 days with Wallace Hamilton. Your star is waiting.
 
 ⏰ Expires Wed midnight ET
 
-https://societysecrets.com/level3
+Enroll: https://societysecrets.com/level3
+
+Questions? Talk to a mentor:
+https://societysecrets.com/schedule-level-three-consultation
 ```
 
 ---
