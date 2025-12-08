@@ -337,8 +337,6 @@ You made the decision. You're going deeper.
 📢 WELCOME PARTY: Wed, Dec 10 at 4pm PT / 7pm ET
 Zoom link coming to your inbox.
 
-Your 3-Day Event: Jan 10-12, 2026
-
 As Wallace said: "The burden disappears, and what replaces it is something so powerful, so joyful, you'll feel it for the rest of your life."
 
 → https://neothinkevent.com/home

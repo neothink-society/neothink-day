@@ -126,7 +126,7 @@ Tripwire Booklet → Society Membership → Orientation Masterclass → Level 2 
 
 **Event Details:**
 - 3-day event
-- Date: January 10-12, 2026
+- Date: Dates TBD
 - 50 years of Neothink/Neotech tools and secrets
 - Direct mentorship
 - VIP members receive $300 discount
@@ -500,7 +500,7 @@ neothink-day/
 | Audio Bump | $17 | Audio version of booklet |
 | Level 2 | $497 | Secret Manuscript (1,200 pages) + Day of Enlightenment Workshop |
 | VIP Upgrade | $297 | 6 exclusive benefits, GUARANTEED mentorship |
-| Level 3 Stargazer | $1,997 + $3,003* | 3-day intensive (Jan 10-12, 2026), direct mentorship |
+| Level 3 Stargazer | $1,997 + $3,003* | 3-day intensive (Dates TBD), direct mentorship |
 
 *$3,003 paid after earning $50K+ (honor system)
 

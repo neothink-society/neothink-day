@@ -72,7 +72,7 @@ This folder contains the 13 original HTML pages from previous workshops and even
     - Level 3 sales page with honor system offer
     - Countdown timer to October 24, 2025 deadline
     - $1,997 upfront + $3,003 after earning $50K+
-    - 3-day event (Jan 10-12, 2026)
+    - 3-day event (Dates TBD)
     - 8 FAQs
 
 11. **stargazer-level-3-consultation.html**

@@ -694,7 +694,7 @@ function scrollToTimeline() {
 - **Balance**: $3,003 (due ONLY after earning $50,000+ using Level 3 techniques)
 - **Total**: $5,000
 - **Structure**: "Honor System" - no contracts, no enforcement, pure trust
-- **Event**: 3-day intensive (Jan 10-12, 2026 reference)
+- **Event**: 3-day intensive (Dates TBD reference)
 - **Positioning**: "Skin in the game guarantees results"
 
 **Level 3 Breakdown:**
