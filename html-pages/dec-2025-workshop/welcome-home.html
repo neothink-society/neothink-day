@@ -1993,12 +1993,18 @@
                 </div>
             </section>
 
-            <!-- Level 3 Deadline Banner -->
-            <section style="padding: 1rem 0; background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%);">
+            <!-- Level 3 Deadline Banner with Countdown -->
+            <section style="padding: 1rem 0; background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%); border-top: 1px solid rgba(220, 38, 38, 0.3); border-bottom: 1px solid rgba(220, 38, 38, 0.3);">
                 <div class="container" style="text-align: center;">
-                    <p style="margin: 0; font-family: var(--font-sans); font-size: var(--text-sm); color: #FF6B6B;">
+                    <p style="margin: 0 0 0.5rem 0; font-family: var(--font-sans); font-size: var(--text-sm); color: #FF6B6B;">
                         <strong>⏰ Level 3 Special Pricing Expires:</strong> Wednesday, December 10 at Midnight ET
                     </p>
+                    <div id="level3-countdown" style="display: flex; justify-content: center; gap: 1rem; font-family: var(--font-mono); font-size: var(--text-lg); color: #FF6B6B;">
+                        <span><span id="l3-days">0</span>d</span>
+                        <span><span id="l3-hours">0</span>h</span>
+                        <span><span id="l3-mins">0</span>m</span>
+                        <span><span id="l3-secs">0</span>s</span>
+                    </div>
                 </div>
             </section>
 
@@ -2167,118 +2173,15 @@
                 </div>
             </section>
 
-            <!-- Workshop Materials Section -->
-            <section class="quick-access-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Workshop Materials</h2>
-                        <p>Your transformation tools</p>
-                    </div>
-
-                    <div class="access-grid">
-                        <!-- Workshop Workbook -->
-                        <div class="access-card featured">
-                            <span class="card-status">📖 Reference</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
-                            </div>
-                            <h3>Workshop Workbook</h3>
-                            <p>Your Day of Enlightenment workbook with all exercises and breakthroughs. Review your notes and continue implementing.</p>
-                            <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6931f8cd7037848979a406f8.pdf" target="_blank" rel="noopener" class="card-link" aria-label="Download Workshop Workbook PDF">
-                                Download Workbook (PDF)
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                                </svg>
-                            </a>
-                        </div>
-
-                        <!-- Golden Life Sheet -->
-                        <div class="access-card featured">
-                            <span class="card-status urgent">⭐ Your Blueprint</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                </svg>
-                            </div>
-                            <h3>Your Golden Life Sheet</h3>
-                            <p>Your personal transformation blueprint. Review and refine your golden life plan as you implement your breakthroughs.</p>
-                            <a href="https://neothinkevent.com/your-golden-life" target="_blank" rel="noopener" class="card-link" aria-label="Access Your Golden Life Sheet">
-                                Access Golden Life Sheet
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
-                            </a>
-                        </div>
-
-                        <!-- Wealth Engine Calculator -->
-                        <div class="access-card featured">
-                            <span class="card-status urgent">💰 From Day 1</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                                </svg>
-                            </div>
-                            <h3>Wealth Engine Calculator</h3>
-                            <p>Calculate your exact path to financial freedom. See your personalized timeline when you build your Wealth Engine.</p>
-                            <a href="https://neothinkevent.com/wealth-engine-calculator" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Open Wealth Engine Calculator">
-                                Open Calculator
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                </svg>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Your Journey Continues Section -->
+            <!-- Your Next Steps Section -->
             <section class="quick-access-section" style="padding-top: 0;">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Your Journey Continues</h2>
-                        <p>Next steps and opportunities</p>
+                        <h2>Need Help?</h2>
+                        <p>We're here for you</p>
                     </div>
 
-                    <div class="access-grid">
-                        <!-- Ambassador Program - NOW UNLOCKED -->
-                        <div class="access-card featured">
-                            <span class="card-status urgent">🌟 Now Open</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                </svg>
-                            </div>
-                            <h3>Ambassador Program</h3>
-                            <p>Share the gift of transformation. Become an Ambassador and help others discover their path to prosperity and happiness.</p>
-                            <a href="https://societysecrets.com/ambassador-signup" target="_blank" rel="noopener" class="card-link" aria-label="Join the Ambassador Program">
-                                Learn More
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
-                            </a>
-                        </div>
-
-                        <!-- Day 1 Feedback -->
-                        <div class="access-card">
-                            <span class="card-status available">📝 Share</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
-                                </svg>
-                            </div>
-                            <h3>Day 1 Feedback</h3>
-                            <p>Share your Day 1 experience and breakthroughs. Your feedback helps us serve you better.</p>
-                            <a href="https://neothink.typeform.com/to/CiMxtG50" target="_blank" rel="noopener" class="card-link" aria-label="Share Day 1 Feedback">
-                                Share Feedback
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
-                            </a>
-                        </div>
-
+                    <div class="access-grid" style="max-width: 600px; margin: 0 auto;">
                         <!-- Schedule a Session -->
                         <div class="access-card featured">
                             <span class="card-status urgent">📞 Free Call</span>
@@ -2345,13 +2248,32 @@
 
     <!-- Countdown Timer Scripts -->
     <script>
-        // Day 2 countdown timer - Dec 7, 2025 at 12:00 PM ET (9am PT)
-        // Workshop is complete - show completed state
         document.addEventListener('DOMContentLoaded', function() {
-            const countdownEl = document.getElementById('countdown');
-            if (countdownEl) {
-                countdownEl.innerHTML = '<div class="countdown-expired">✓ Workshop Complete — You are a Level 2 Neothinker</div>';
+            // Level 3 Deadline Countdown - Dec 11, 2025 at 12:00 AM ET (midnight Dec 10)
+            const level3Deadline = new Date('2025-12-11T05:00:00Z').getTime(); // Midnight ET = 5am UTC
+
+            function updateLevel3Countdown() {
+                const now = new Date().getTime();
+                const distance = level3Deadline - now;
+
+                if (distance < 0) {
+                    document.getElementById('level3-countdown').innerHTML = '<span style="color: #FF6B6B;">Offer Expired</span>';
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('l3-days').textContent = days;
+                document.getElementById('l3-hours').textContent = hours;
+                document.getElementById('l3-mins').textContent = mins;
+                document.getElementById('l3-secs').textContent = secs;
             }
+
+            updateLevel3Countdown();
+            setInterval(updateLevel3Countdown, 1000);
         });
     </script>
 </body>
