@@ -288,15 +288,12 @@ Good morning, Level 2 Neothinker. 🌟
 
 You did it. You discovered your Friday Night Essence—the spark that never dies.
 
-As Wallace said: "The things you need in this life don't come from anything external. They all come from internal."
-
-Your resources:
-→ https://neothinkevent.com/home
+As Wallace said: "You can finally step into harmony with yourself, with the world, with the universe. And when you do, the burden disappears."
 
 📢 VIPs: TONIGHT 4pm PT / 7pm ET
 📢 L3 Welcome Party: Wed 4pm PT / 7pm ET
 
-Your golden life has begun.
+→ https://neothinkevent.com/home
 ```
 
 ---
@@ -341,9 +338,7 @@ Zoom link coming to your inbox.
 
 Your 3-Day Event: Jan 24-26, 2025
 
-As Wallace said: "The things you need in this life don't come from anything external. They all come from internal."
-
-You discovered your Friday Night Essence. Now you'll master it.
+As Wallace said: "The burden disappears, and what replaces it is something so powerful, so joyful, you'll feel it for the rest of your life."
 
 → https://neothinkevent.com/home
 ```
