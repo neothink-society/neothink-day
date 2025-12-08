@@ -278,23 +278,23 @@ Welcome to your golden life. Welcome to Neovia. 🌟
 
 ---
 
-### SMS #12: Morning After (Monday, Dec 8)
+### SMS #12: Morning After (Monday, Dec 8) — ALL MEMBERS
 **Trigger:** Monday morning after the workshop
 **Corresponding Email:** 12-morning-after.html
+**Audience:** All Level 2 graduates
 
 ```
 Good morning, Level 2 Neothinker. 🌟
 
-You discovered your Friday Night Essence—the spark that never dies. You're on your vector now. Stay re-synced with your Golden Life Sheet.
+You did it. You discovered your Friday Night Essence—the spark that never dies. You saw through the Matrix of Illusions. You're on your vector now.
 
 Your resources:
 → https://neothinkevent.com/home
 
-📢 VIPs: Extended session TONIGHT 4pm PT / 7pm ET. Zoom link coming.
+📢 VIPs: Extended session TONIGHT 4pm PT / 7pm ET
+📢 L3 Welcome Party: Wed 4pm PT / 7pm ET
 
-📢 Level 3 Welcome Party: Wed 4pm PT / 7pm ET
-
-⏰ Level 3 pricing expires Wed, Dec 10 at midnight ET:
+⏰ L3 pricing expires Wed, Dec 10 midnight ET:
 https://societysecrets.com/level3
 
 Your golden life has begun.
@@ -302,22 +302,74 @@ Your golden life has begun.
 
 ---
 
+### SMS #12-VIP: Morning After — VIP MEMBERS
+**Trigger:** Monday morning after the workshop (VIP segment)
+**Corresponding Email:** 12-morning-after.html
+**Audience:** VIP members only
+
+```
+Good morning, VIP. 🌟
+
+You went all-in, and it showed. Tonight's extended session with Wallace is your reward.
+
+📢 TONIGHT: 4pm PT / 7pm ET
+Zoom link coming to your inbox today.
+
+Your resources:
+→ https://neothinkevent.com/home
+
+Already enrolled in Level 3? Your Welcome Party is Wed 4pm PT / 7pm ET.
+
+You're on your vector. Stay re-synced with your Golden Life Sheet daily.
+
+See you tonight.
+```
+
+---
+
+### SMS #12-L3: Morning After — LEVEL 3 STARGAZERS
+**Trigger:** Monday morning after the workshop (L3 segment)
+**Corresponding Email:** 12-morning-after.html
+**Audience:** Level 3 enrollees only
+
+```
+Good morning, Stargazer. 🌟
+
+You made the decision. You're going deeper. We see you.
+
+📢 WELCOME PARTY: Wed, Dec 10 at 4pm PT / 7pm ET
+Zoom link coming to your inbox.
+
+Your Stargazer 3-Day Event begins Jan 24-26, 2025.
+
+Your resources:
+→ https://neothinkevent.com/home
+
+You discovered your Friday Night Essence. Now you'll master it.
+
+Welcome to Level 3.
+```
+
+---
+
 ## SEND SCHEDULE SUMMARY
 
-| # | Day | Trigger | Message |
-|---|-----|---------|---------|
-| 1 | Sat | WH takes stage | Day 1 Opening / LIVE |
-| 2 | Sat | Lunch break starts | Day 1 Lunch Break |
-| 3 | Sat | Back from lunch | Day 1 Afternoon Resumes |
-| 4 | Sat | Wealth segment starts | Wealth Segment Alert |
-| 5 | Sat | Day 1 ends | Day 1 Complete |
-| 6 | Sun | Day 2 starts | Day 2 Opening / LIVE |
-| 7 | Sun | MH takes stage | Mark Hamilton Alert |
-| 8 | Sun | Lunch break starts | Day 2 Lunch Break |
-| 9 | Sun | Back from lunch | Final Session Resumes |
-| 10 | Sun | Integration starts | Integration Segment Alert |
-| 11 | Sun | Workshop ends | Workshop Complete |
-| 12 | Mon | Morning after | Resources + VIP/L3 Info |
+| # | Day | Trigger | Audience | Message |
+|---|-----|---------|----------|---------|
+| 1 | Sat | WH takes stage | All | Day 1 Opening / LIVE |
+| 2 | Sat | Lunch break starts | All | Day 1 Lunch Break |
+| 3 | Sat | Back from lunch | All | Day 1 Afternoon Resumes |
+| 4 | Sat | Wealth segment starts | All | Wealth Segment Alert |
+| 5 | Sat | Day 1 ends | All | Day 1 Complete |
+| 6 | Sun | Day 2 starts | All | Day 2 Opening / LIVE |
+| 7 | Sun | MH takes stage | All | Mark Hamilton Alert |
+| 8 | Sun | Lunch break starts | All | Day 2 Lunch Break |
+| 9 | Sun | Back from lunch | All | Final Session Resumes |
+| 10 | Sun | Integration starts | All | Integration Segment Alert |
+| 11 | Sun | Workshop ends | All | Workshop Complete |
+| 12 | Mon | Morning after | All L2 | Morning After (General) |
+| 12-VIP | Mon | Morning after | VIPs | Morning After (VIP) |
+| 12-L3 | Mon | Morning after | L3 | Morning After (Stargazer) |
 
 ---
 
@@ -396,7 +448,7 @@ https://societysecrets.com/level3
 
 ---
 
-**Version:** 1.1
+**Version:** 1.2
 **Created:** December 5, 2025
-**Updated:** December 6, 2025 (Added Level 3 SMS)
-**Based on:** Wallace Hamilton's original broadcast notes
+**Updated:** December 8, 2025 (Added segment-specific morning after SMS for VIPs and L3 Stargazers)
+**Based on:** Wallace Hamilton's original broadcast notes + Day of Enlightenment transcript review
