@@ -344,6 +344,48 @@ As Wallace said: "The burden disappears, and what replaces it is something so po
 
 ---
 
+### SMS #VIP-REMINDER: VIP Session Reminder (Monday, Dec 8 @ 2:30pm PT)
+**Trigger:** ~90 minutes before VIP session
+**Corresponding Email:** vip-session-reminder.html
+**Audience:** VIP members only
+
+```
+⭐ VIP REMINDER
+
+Your exclusive session with Wallace Hamilton starts in 90 minutes.
+
+📅 TODAY: 4pm PT / 7pm ET
+
+Have your questions ready. This is your time with the mentors.
+
+Join link:
+https://neothink.zoom.us/j/83104712692?pwd=oXTI0RnDlZoQLwKDubo5ZcV5ORHrH7.1
+
+Meeting ID: 831 0471 2692
+
+See you soon.
+```
+
+---
+
+### SMS #VIP-LIVE: VIP Session LIVE (Monday, Dec 8 @ 4pm PT)
+**Trigger:** When VIP session goes live
+**Corresponding Email:** vip-session-live.html
+**Audience:** VIP members only
+
+```
+🔴 LIVE NOW — Your VIP session has started.
+
+Wallace Hamilton and the senior mentors are waiting.
+
+JOIN NOW:
+https://neothink.zoom.us/j/83104712692?pwd=oXTI0RnDlZoQLwKDubo5ZcV5ORHrH7.1
+
+Meeting ID: 831 0471 2692
+```
+
+---
+
 ## SEND SCHEDULE SUMMARY
 
 | # | Day | Trigger | Audience | Message |
@@ -362,6 +404,8 @@ As Wallace said: "The burden disappears, and what replaces it is something so po
 | 12 | Mon | Morning after | L2 (non-VIP, non-L3) | Morning After + L3 CTA |
 | 12-VIP | Mon | Morning after | VIPs only | Morning After (VIP) |
 | 12-L3 | Mon | Morning after | L3 only | Morning After (Stargazer) |
+| VIP-REMINDER | Mon | ~2:30pm PT | VIPs only | VIP Session Reminder |
+| VIP-LIVE | Mon | 4pm PT / 7pm ET | VIPs only | VIP Session LIVE |
 
 ---
 
@@ -440,7 +484,7 @@ https://societysecrets.com/level3
 
 ---
 
-**Version:** 1.2
+**Version:** 1.3
 **Created:** December 5, 2025
-**Updated:** December 8, 2025 (Added segment-specific morning after SMS for VIPs and L3 Stargazers)
+**Updated:** December 8, 2025 (Added VIP session reminder and LIVE SMS for 4pm PT session)
 **Based on:** Wallace Hamilton's original broadcast notes + Day of Enlightenment transcript review
