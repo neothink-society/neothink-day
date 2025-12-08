@@ -347,10 +347,10 @@
 
         .essential-links-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: var(--space-lg);
-            max-width: 1100px;
-            margin: 0 auto var(--space-xl);
+            max-width: 900px;
+            margin: 0 auto;
             padding: 0 var(--space-sm);
         }
 
@@ -511,10 +511,11 @@
         }
 
         /* Tablet breakpoint */
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .essential-links-grid {
+                grid-template-columns: 1fr;
                 gap: var(--space-md);
-                max-width: 600px;
+                max-width: 500px;
             }
 
             .essential-link-card {
@@ -1958,12 +1959,22 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                         </a>
-                    </div>
 
-                    <!-- Additional Resources -->
-                    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6931f8cd7037848979a406f8.pdf" target="_blank" rel="noopener" style="font-family: var(--font-sans); font-size: var(--text-sm); color: var(--gold); text-decoration: underline;">
-                            📖 Download Workbook (PDF)
+                        <!-- Workshop Workbook -->
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6931f8cd7037848979a406f8.pdf" target="_blank" rel="noopener" class="essential-link-card">
+                            <div class="essential-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <div class="essential-content">
+                                <span class="essential-badge">📖 PDF</span>
+                                <h3>Workshop Workbook</h3>
+                                <p>Download and print your workbook</p>
+                            </div>
+                            <svg class="essential-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
