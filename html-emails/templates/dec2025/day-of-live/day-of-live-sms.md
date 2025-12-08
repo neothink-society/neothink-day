@@ -268,11 +268,37 @@ You took the oath. You are now a Level 2 Neo-Thinker.
 
 Two days. Historic transformation. You witnessed something that took 2,400 years to reveal.
 
-Whatever you're feeling — exhausted, energized, overwhelmed — it's all valid. Your system is integrating something profound.
+Before you rest — share your experience while it's fresh:
+https://neothink.typeform.com/to/CiMxtG50
 
-Check your inbox for next steps + the Ambassador Program.
+Check your email for full resources + the Ambassador Program.
 
 Welcome to your golden life. Welcome to Neovia. 🌟
+```
+
+---
+
+### SMS #12: Morning After (Monday, Dec 8)
+**Trigger:** Monday morning after the workshop
+**Corresponding Email:** 12-morning-after.html
+
+```
+Good morning, Level 2 Neo-Thinker. 🌟
+
+Your resources are ready:
+→ Workshop Hub: https://neothinkevent.com/home
+
+📢 VIPs: Your extended session is TONIGHT at 4pm PT / 7pm ET. Zoom link coming today.
+
+📢 Level 3: Welcome Party is Wednesday 4pm PT / 7pm ET.
+
+⏰ Level 3 special pricing expires Wed, Dec 10 at midnight ET:
+https://societysecrets.com/level3
+
+Haven't shared your feedback yet?
+https://neothink.typeform.com/to/CiMxtG50
+
+Your golden life has begun.
 ```
 
 ---
@@ -292,6 +318,7 @@ Welcome to your golden life. Welcome to Neovia. 🌟
 | 9 | Sun | Back from lunch | Final Session Resumes |
 | 10 | Sun | Integration starts | Integration Segment Alert |
 | 11 | Sun | Workshop ends | Workshop Complete |
+| 12 | Mon | Morning after | Resources + VIP/L3 Info |
 
 ---
 
