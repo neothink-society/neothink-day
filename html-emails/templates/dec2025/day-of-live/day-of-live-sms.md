@@ -285,21 +285,17 @@ Welcome to your golden life. Welcome to Neovia. 🌟
 ```
 Good morning, Level 2 Neothinker. 🌟
 
-Your resources are ready:
-→ Workshop Hub: https://neothinkevent.com/home
+You discovered your Friday Night Essence—the spark that never dies. You're on your vector now. Stay re-synced with your Golden Life Sheet.
 
-📢 VIPs: Your extended session is TONIGHT at 4pm PT / 7pm ET. Zoom link coming today.
+Your resources:
+→ https://neothinkevent.com/home
 
-📢 Level 3: Welcome Party is Wednesday 4pm PT / 7pm ET.
+📢 VIPs: Extended session TONIGHT 4pm PT / 7pm ET. Zoom link coming.
 
-⏰ Level 3 special pricing expires Wed, Dec 10 at midnight ET:
+📢 Level 3 Welcome Party: Wed 4pm PT / 7pm ET
+
+⏰ Level 3 pricing expires Wed, Dec 10 at midnight ET:
 https://societysecrets.com/level3
-
-📞 Questions about Level 3? Talk to a mentor (free, no pressure):
-https://societysecrets.com/schedule
-
-Haven't shared your feedback yet?
-https://neothink.typeform.com/to/CiMxtG50
 
 Your golden life has begun.
 ```
