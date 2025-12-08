@@ -264,7 +264,7 @@ Don't miss this.
 ```
 ✓ YOU DID IT.
 
-You took the oath. You are now a Level 2 Neo-Thinker.
+You took the oath. You are now a Level 2 Neothinker.
 
 Two days. Historic transformation. You witnessed something that took 2,400 years to reveal.
 
@@ -283,7 +283,7 @@ Welcome to your golden life. Welcome to Neovia. 🌟
 **Corresponding Email:** 12-morning-after.html
 
 ```
-Good morning, Level 2 Neo-Thinker. 🌟
+Good morning, Level 2 Neothinker. 🌟
 
 Your resources are ready:
 → Workshop Hub: https://neothinkevent.com/home
