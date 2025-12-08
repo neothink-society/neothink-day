@@ -154,7 +154,7 @@ Tonight: Rest well. Let today's breakthroughs integrate.
 
 → Wealth Engine Calculator: https://neothinkevent.com/wealth-engine-calculator
 
-→ Share your Day 1 feedback: https://neothink.typeform.com/to/CiMxtG50
+→ Share your feedback: https://neothink.typeform.com/to/CiMxtG50
 
 TOMORROW — Day 2
 12pm Eastern / 9am Pacific
