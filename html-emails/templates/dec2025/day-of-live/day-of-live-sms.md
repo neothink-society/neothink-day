@@ -540,7 +540,74 @@ https://societysecrets.com/level3
 
 ---
 
-**Version:** 1.3
+---
+
+## AMBASSADOR PROGRAM SMS
+
+### SMS #AMBASSADOR: Ambassador Program Invitation
+**Trigger:** Post-workshop or standalone promotion
+**Corresponding Email:** ambassador-program.html
+**Audience:** Level 2 members
+
+```
+Your Searchers are out there right now.
+
+The friend who always says "someday." The colleague who's brilliant but stuck. The stranger wondering if anyone else sees what they see.
+
+The Ambassador program lets you be the bridge.
+
+→ Share a $9.95 booklet
+→ The Society handles vetting + follow-up
+→ You receive $250 when someone completes Level 2
+→ 50/50 split. Zero cost to join.
+
+Friday trainings with Marko Hamilton:
+1pm PT / 2pm MT / 3pm CT / 4pm ET
+
+Sign up: https://societysecrets.com/ambassador-signup
+
+Go find your Searchers. Show them they're not alone.
+```
+
+---
+
+### SMS #AMBASSADOR-SHORT: Ambassador Program (Short)
+**Trigger:** Follow-up or reminder
+**Audience:** Level 2 members
+
+```
+The Ambassador program is open.
+
+Share a booklet. Help someone find what you found. Earn $250 per Level 2 enrollment.
+
+50/50 commission. Zero cost to join.
+
+Weekly trainings with Marko Hamilton every Friday:
+1pm PT / 2pm MT / 3pm CT / 4pm ET
+
+Sign up: https://societysecrets.com/ambassador-signup
+```
+
+---
+
+### SMS #AMBASSADOR-FRIDAY: Friday Training Reminder
+**Trigger:** Friday morning
+**Audience:** Existing Ambassadors
+
+```
+📅 TODAY: Ambassador Training with Marko Hamilton
+
+1pm Pacific / 2pm Mountain
+3pm Central / 4pm Eastern
+
+Share what's working. Learn from other Ambassadors. Develop the skill together.
+
+See you there.
+```
+
+---
+
+**Version:** 1.4
 **Created:** December 5, 2025
-**Updated:** December 8, 2025 (Added VIP session reminder and LIVE SMS for 4pm PT session)
+**Updated:** December 8, 2025 (Added Ambassador program SMS)
 **Based on:** Wallace Hamilton's original broadcast notes + Day of Enlightenment transcript review
