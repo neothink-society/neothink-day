@@ -5,9 +5,8 @@
 ---
 
 ## Zoom Details
-- **Link:** {{WELCOME_PARTY_ZOOM_LINK}}
-- **Meeting ID:** {{MEETING_ID}}
-- **Passcode:** {{PASSCODE}}
+- **Link:** https://neothink.zoom.us/j/82532742248?pwd=ab9sYNwEzlzTMFZIkkpnRJxm3qeCY2.1
+- **Meeting ID:** 825 3274 2248
 
 ---
 
@@ -22,7 +21,7 @@ Your Level 3 Welcome Party is TONIGHT at 7pm Eastern (4pm Pacific).
 We'll be celebrating your transformation, introducing you to your fellow Level 3 members, and revealing your Stargazer Event invitation.
 
 Save the Zoom link:
-{{WELCOME_PARTY_ZOOM_LINK}}
+https://neothink.zoom.us/j/82532742248?pwd=ab9sYNwEzlzTMFZIkkpnRJxm3qeCY2.1
 
 See you tonight!
 ```
@@ -39,10 +38,9 @@ Level 3 Welcome Party starts at 7pm Eastern (4pm Pacific).
 
 Find a quiet spot and get ready to celebrate.
 
-Join here: {{WELCOME_PARTY_ZOOM_LINK}}
+Join here: https://neothink.zoom.us/j/82532742248?pwd=ab9sYNwEzlzTMFZIkkpnRJxm3qeCY2.1
 
-Meeting ID: {{MEETING_ID}}
-Passcode: {{PASSCODE}}
+Meeting ID: 825 3274 2248
 ```
 
 ---
@@ -55,7 +53,7 @@ We're LIVE!
 
 The Level 3 Welcome Party is starting NOW.
 
-Join us: {{WELCOME_PARTY_ZOOM_LINK}}
+Join us: https://neothink.zoom.us/j/82532742248?pwd=ab9sYNwEzlzTMFZIkkpnRJxm3qeCY2.1
 
 We can't wait to see you inside!
 ```
@@ -67,4 +65,4 @@ We can't wait to see you inside!
 - Do NOT send to Level 2 members or general list
 - Keep messages short for SMS character limits
 - Zoom link is included in every message for easy access
-- Replace {{WELCOME_PARTY_ZOOM_LINK}}, {{MEETING_ID}}, and {{PASSCODE}} with actual values before sending
+- Zoom link and Meeting ID are pre-populated
