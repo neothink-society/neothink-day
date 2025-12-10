@@ -28,19 +28,17 @@ See you tonight!
 
 ---
 
-## SMS 2: One Hour Reminder
-**Send Time:** Wednesday 6pm Eastern / 3pm Pacific
+## SMS 2: 30 Minute Reminder
+**Send Time:** Wednesday 6:30pm Eastern / 3:30pm Pacific
 
 ```
-1 HOUR until your Welcome Party!
+30 MINUTES until your Welcome Party!
 
 Level 3 Welcome Party starts at 7pm Eastern (4pm Pacific).
 
 Find a quiet spot and get ready to celebrate.
 
 Join here: https://neothink.zoom.us/j/82532742248?pwd=ab9sYNwEzlzTMFZIkkpnRJxm3qeCY2.1
-
-Meeting ID: 825 3274 2248
 ```
 
 ---

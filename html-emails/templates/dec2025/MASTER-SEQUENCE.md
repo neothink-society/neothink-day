@@ -99,7 +99,7 @@ dec2025/
 │   │   ├── level3-confirmation-sms.md
 │   │   ├── welcome-party-reminder.html
 │   │   ├── welcome-party-today.html
-│   │   ├── welcome-party-1hour.html
+│   │   ├── welcome-party-30min.html
 │   │   ├── welcome-party-live.html
 │   │   └── welcome-party-sms.md
 │   │
@@ -363,7 +363,7 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 |-----------|------|---------|
 | Tue PM | `welcome-party-reminder.html` | Tomorrow: Your Welcome Party |
 | 10:00 AM | `welcome-party-today.html` | Tonight We Celebrate |
-| 6:00 PM | `welcome-party-1hour.html` | 🔴 Welcome Party in 1 Hour |
+| 6:30 PM | `welcome-party-30min.html` | 🔴 Welcome Party in 30 Minutes |
 | 7:00 PM | `welcome-party-live.html` | 🔴 Welcome Party Is LIVE |
 
 **SMS:** `welcome-party-sms.md`
