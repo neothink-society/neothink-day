@@ -3,7 +3,7 @@
 
 **Event:** Day of Enlightenment Workshop
 **Dates:** Saturday-Sunday, December 6-7, 2025
-**Post-Event:** December 8-11, 2025
+**Post-Event:** December 8-15, 2025
 **Location:** Virtual (Zoom)
 
 ---
@@ -99,6 +99,7 @@ dec2025/
 │   │   ├── level3-confirmation-sms.md
 │   │   ├── welcome-party-reminder.html
 │   │   ├── welcome-party-today.html
+│   │   ├── welcome-party-correction.html
 │   │   ├── welcome-party-30min.html
 │   │   ├── welcome-party-live.html
 │   │   └── welcome-party-sms.md
@@ -107,8 +108,16 @@ dec2025/
 │   │   ├── workshop-recap-celebration.html
 │   │   └── workshop-recap-sms.md
 │   │
+│   ├── all-attendees/              ← Dec 11-15 (Value Series)
+│   │   ├── 01-golden-life-sheet.html
+│   │   ├── 02-wealth-engine-calculator.html
+│   │   ├── 03-fne-workbook.html
+│   │   ├── 04-how-it-all-fits-together.html
+│   │   └── post-event-value-sms.md
+│   │
 │   └── ambassador/
-│       └── ambassador-program.html
+│       ├── ambassador-program.html
+│       └── ambassador-program-sms.md
 │
 └── broadcasts/                     ← Marketing broadcasts (separate)
     ├── README.md
@@ -138,9 +147,9 @@ dec2025/
 | Day 2 Countdown | `04-day2-countdown/` | Dec 7 AM | 4 | - |
 | Day 2 Workshop | `05-day2-workshop/` | Dec 7 Live | 8 | - |
 | Workshop SMS | `06-workshop-sms/` | Dec 6-7 | - | 1 file |
-| Post-Event | `07-post-event/` | Dec 8-11 | 22 | 6 files |
+| Post-Event | `07-post-event/` | Dec 8-15 | 27 | 8 files |
 | Broadcasts | `broadcasts/` | Various | 6 | 4 files |
-| **TOTAL** | | | **66** | **12 files** |
+| **TOTAL** | | | **71** | **14 files** |
 
 ---
 
@@ -168,6 +177,7 @@ dec2025/
 | L3 Consultation | `societysecrets.com/schedule-level-three-consultation` |
 | Golden Life Sheet | `neothinkevent.com/your-golden-life` |
 | Wealth Engine Calculator | `neothinkevent.com/wealth-engine-calculator` |
+| FNE Workbook | `storage.googleapis.com/.../6931f8cd...a406f8.pdf` |
 | VIP Recording | `neothinkevent.com/vip-recording` |
 | Ambassador Signup | `societysecrets.com/ambassador-signup` |
 
@@ -286,7 +296,7 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 # PHASE 7: POST-EVENT
 
 **Directory:** `07-post-event/`
-**Dates:** December 8-11, 2025
+**Dates:** December 8-15, 2025
 
 ## Monday Morning (Dec 8)
 **Subdirectory:** `monday-morning/`
@@ -363,6 +373,7 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 |-----------|------|---------|
 | Tue PM | `welcome-party-reminder.html` | Tomorrow: Your Welcome Party |
 | 10:00 AM | `welcome-party-today.html` | Tonight We Celebrate |
+| 6:00 PM | `welcome-party-correction.html` | Correction: Welcome Party starts at 7pm Eastern |
 | 6:30 PM | `welcome-party-30min.html` | 🔴 Welcome Party in 30 Minutes |
 | 7:00 PM | `welcome-party-live.html` | 🔴 Welcome Party Is LIVE |
 
@@ -381,12 +392,59 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 
 ---
 
+## Post-Event Value Series (Dec 11-15)
+**Subdirectory:** `all-attendees/`
+
+Four-part drip sequence delivering the core workshop tools and framework synthesis to ALL attendees.
+
+### Thursday, December 11
+
+| Time (ET) | File | Subject |
+|-----------|------|---------|
+| 9:00 AM | `01-golden-life-sheet.html` | Your Golden Life Sheet is waiting |
+
+### Friday, December 12
+
+| Time (ET) | File | Subject |
+|-----------|------|---------|
+| 9:00 AM | `02-wealth-engine-calculator.html` | Calculate your path to financial freedom |
+
+### Saturday, December 13
+
+| Time (ET) | File | Subject |
+|-----------|------|---------|
+| 10:00 AM | `03-fne-workbook.html` | Discover your Friday-Night Essence |
+
+### Monday, December 15
+
+| Time (ET) | File | Subject |
+|-----------|------|---------|
+| 9:00 AM | `04-how-it-all-fits-together.html` | How It All Fits Together |
+
+**SMS:** `post-event-value-sms.md`
+
+**Tools Delivered:**
+- **Golden Life Sheet** — Daily alignment tool (6 categories)
+- **Wealth Engine Calculator** — Financial freedom calculator (3 levels)
+- **Friday-Night Essence Workbook** — Core value-creation discovery
+- **Framework Synthesis** — How all tools work together as an integrated system
+
+---
+
 ## Ambassador Program
 **Subdirectory:** `ambassador/`
 
-| File | Subject | Audience |
-|------|---------|----------|
-| `ambassador-program.html` | Your Searchers are out there | All L2 |
+| Time | File | Subject | Audience |
+|------|------|---------|----------|
+| Sat Dec 13 PM | `ambassador-program.html` | The people you're actually looking for | All L2 |
+
+**SMS:** `ambassador-program-sms.md`
+
+**Program Details:**
+- **Commission:** $250 per Level 2 enrollment (50/50 split)
+- **Cost:** Zero — Society covers all infrastructure
+- **Process:** Ambassador shares link → Searcher requests $9.95 booklet → Society vets → Commission earned
+- **Training:** Weekly Friday sessions with Marko Hamilton (1pm Pacific / 4pm Eastern)
 
 ---
 
@@ -460,7 +518,8 @@ To create January 2025 event:
 
 ---
 
-**Version:** 2.0
+**Version:** 2.2
 **Created:** December 9, 2025
-**Last Updated:** December 9, 2025
+**Last Updated:** December 10, 2025
 **Structure:** Reorganized with numbered chronological directories
+**Changes:** Added synthesis email (04-how-it-all-fits-together.html), extended value series to Dec 15
