@@ -53,20 +53,17 @@
 **What they need:** Validation of their decision, clear next steps
 
 ```
-✓ You're in.
+Neothink Society: You're in.
 
 Day of Enlightenment — Dec 6-7, 2025
 
 You just made a decision that most people never make: to invest in your own transformation.
 
-Check your email for:
-• Pre-work instructions
-• Workbook download
-• Workshop hub access
+Check your email for pre-work instructions and workshop hub access.
 
 Questions? support@neothink.com
 
-See you soon.
+Reply STOP to opt out
 ```
 
 ---
@@ -77,17 +74,17 @@ See you soon.
 **What they need:** Reassurance they made the right choice
 
 ```
-⭐ VIP ELITE CONFIRMED
+Neothink Society: VIP Elite confirmed.
 
-You just claimed your seat in the inner circle.
+Your seat in the inner circle is reserved.
 
-GUARANTEED access to the intimate VIP group session with Wallace Hamilton awaits you on Day 2.
+Your intimate VIP group session with Wallace Hamilton awaits on Day 2.
 
 Check your email for exclusive VIP details.
 
-This decision says something about you: you're serious about transformation.
-
 Welcome to the inner circle.
+
+Reply STOP to opt out
 ```
 
 ---
@@ -151,7 +148,7 @@ Day of Enlightenment is almost here.
 
 Quick gut check: Are you ready to get the most out of this weekend?
 
-VIP Elite adds GUARANTEED access to an intimate group session with Wallace Hamilton on Day 2 — personalized guidance on YOUR specific breakthrough.
+VIP Elite includes an intimate group session with Wallace Hamilton on Day 2 — personalized guidance on YOUR specific breakthrough.
 
 Upgrade closes Saturday at 12pm Eastern / 9am Pacific. No exceptions after that.
 
@@ -230,7 +227,7 @@ VIP prep:
 ☐ Review your questions for Wallace
 ☐ Think about where you want personalized guidance
 
-As VIP Elite, you'll have priority access and guaranteed interaction time.
+As VIP Elite, you'll have priority access and dedicated interaction time.
 
 Your Zoom link arrives Saturday morning.
 
@@ -275,7 +272,7 @@ Rest well. Tomorrow, everything changes.
 
 You've invested in the full experience. Here's what awaits:
 • Priority access from the moment doors open
-• GUARANTEED intimate session with Wallace Hamilton (Day 2)
+• Intimate session with Wallace Hamilton (Day 2)
 • Exclusive VIP-only session after main workshop
 
 Tonight:
@@ -656,5 +653,9 @@ Your VIP status will be instantly recognizable.
 
 ---
 
-**Version:** 3.0
-**Updated:** December 1, 2025
+**Version:** 3.1
+**Updated:** December 11, 2025 (SMS Compliance Update)
+- Added sender identification "Neothink Society:" to first messages
+- Added opt-out language "Reply STOP to opt out"
+- Replaced "GUARANTEED" with compliant alternatives
+- See SMS-COMPLIANCE-AUDIT.md for full guidelines

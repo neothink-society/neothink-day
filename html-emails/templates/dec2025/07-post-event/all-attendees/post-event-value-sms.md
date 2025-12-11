@@ -13,19 +13,36 @@
 
 ---
 
+## COMPLIANCE NOTES (Updated Dec 11, 2025)
+
+**Required Elements:**
+- Sender identification: "Neothink Society:" at start
+- Opt-out language: "Reply STOP to opt out" in first message of sequence
+- No spam trigger words (FREE, GUARANTEE, etc.)
+- No unusual/flagged language (removed "Matrix of Illusions")
+- Full URLs only (no shorteners)
+
+**Reference:** See `SMS-COMPLIANCE-AUDIT.md` for full guidelines.
+
+---
+
 ### SMS 1: Thursday Morning — Golden Life Sheet
 **Send Time:** Thursday Dec 11, 9:00 AM Eastern (6:00 AM Pacific)
 **Offset:** +118h from T=0
 
 ```
-Your Golden Life Sheet is ready.
+Neothink Society: Your Golden Life Sheet is ready.
 
-One page. Six categories. Your daily anchor against the Matrix of Illusions.
+One page. Six categories. Your daily anchor for clarity and focus.
 
-Fill it out today. Revisit it each morning.
+Fill it out today and revisit each morning.
 
--> neothinkevent.com/your-golden-life
+neothinkevent.com/your-golden-life
+
+Reply STOP to opt out
 ```
+
+**Character Count:** ~195 chars (may split into 2 segments)
 
 ---
 
@@ -34,14 +51,14 @@ Fill it out today. Revisit it each morning.
 **Offset:** +124h from T=0
 
 ```
-Your Friday-Night Essence Workbook is ready.
+Neothink Society: Your Friday-Night Essence Workbook is ready.
 
-The one activity you'd do even if you weren't getting paid — that's the seed of your life's work.
-
-Set aside 30-60 minutes this week.
+The activity you'd do even without being paid — that's the seed of your life's work.
 
 Check your email for the download link.
 ```
+
+**Character Count:** ~175 chars (may split into 2 segments)
 
 ---
 
@@ -50,14 +67,14 @@ Check your email for the download link.
 **Offset:** +142h from T=0
 
 ```
-Calculate your path to financial freedom.
+Neothink Society: Your Wealth Engine Calculator is ready.
 
-Three levels: Security, Vitality, Freedom.
+Map your path from where you are to where you want to be.
 
-The Wealth Engine Calculator shows you exactly how much you need — and how quickly you can get there.
-
--> neothinkevent.com/wealth-engine-calculator
+neothinkevent.com/wealth-engine-calculator
 ```
+
+**Character Count:** ~155 chars (single segment)
 
 ---
 
@@ -66,41 +83,59 @@ The Wealth Engine Calculator shows you exactly how much you need — and how qui
 **Offset:** +148h from T=0
 
 ```
-Final piece: How it all fits together.
+Neothink Society: Final resource in your inbox.
 
-Your Golden Life Sheet, Wealth Engine, and Friday-Night Essence aren't separate tools — they're one integrated system.
+Your Golden Life Sheet, Wealth Engine, and Friday-Night Essence work together as one system.
 
 Check your email for the complete framework.
 
-Your golden life has begun.
-
--> neothinkevent.com/home
+neothinkevent.com/home
 ```
+
+**Character Count:** ~195 chars (may split into 2 segments)
 
 ---
 
 ## Notes for Implementation
 
-**Character Counts:**
-- SMS 1: ~185 chars (may split into 2 segments)
-- SMS 2: ~180 chars (may split into 2 segments)
-- SMS 3: ~215 chars (may split into 2 segments)
-- SMS 4: ~215 chars (may split into 2 segments)
+**Compliance Checklist:**
+- [x] Sender identification in each message
+- [x] Opt-out language in first message of sequence
+- [x] No spam trigger words
+- [x] No unusual language that could be flagged
+- [x] Full URLs (no shorteners)
+- [x] Character counts optimized
 
 **Link Tracking:**
-- Replace links with tracked short links if using GoHighLevel SMS tracking
+- Use GHL's built-in link tracking (auto-wraps full URLs)
+- Do NOT use external shorteners (bit.ly, tinyurl) — these are blocked by carriers
 - Note: FNE Workbook is a direct PDF download, so SMS points to email
 
 **Personalization (Optional):**
-- Add `{{contact.first_name}}` at start: "Hey {{contact.first_name}},"
+- Can add `{{contact.first_name}}` after "Neothink Society:"
+- Example: "Neothink Society: Hi {{contact.first_name}}, your Golden Life Sheet..."
 
 **Tone:**
 - Honoring and celebratory, not pushy
 - Focused on providing value they already earned
 - No urgency or pressure language
+- Simple, direct, helpful
 
 **Compressed Timeline Rationale:**
 - Delivers all value resources before the weekend
 - Allows attendees to have tools in hand for weekend reflection
 - Closes the value loop on Friday, avoiding Monday overlap with other sequences
 - Aligns with Level 3 Welcome Party (Wed) and deadline (Wed midnight) timing
+
+---
+
+## What Changed (Dec 11, 2025)
+
+| Issue | Before | After |
+|-------|--------|-------|
+| Missing sender ID | None | "Neothink Society:" |
+| Missing opt-out | None | "Reply STOP to opt out" in SMS 1 |
+| Flagged language | "Matrix of Illusions" | "clarity and focus" |
+| Arrow syntax | "-> url" | Just the URL |
+| Financial language | "financial freedom" | Removed from SMS 3 |
+| Character optimization | 185-215 chars | 155-195 chars |

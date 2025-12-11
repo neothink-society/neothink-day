@@ -36,14 +36,16 @@ These SMS messages correspond to Wallace's requested day-of broadcasts:
 **Corresponding Email:** 01-day1-opening.html
 
 ```
-🔴 WE'RE LIVE — Wallace Hamilton has taken the stage.
+Neothink Society: We're live — Wallace Hamilton has taken the stage.
 
-If you're in the room — stay present. We see you.
+If you're in the room — stay present.
 
 If you're not in yet — join NOW:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 Your Day of Enlightenment has begun.
+
+Reply STOP to opt out
 ```
 
 ---
@@ -152,9 +154,9 @@ You showed up. You did the work. You're already different than you were this mor
 
 Tonight: Rest well. Let today's breakthroughs integrate.
 
-→ Wealth Engine Calculator: https://neothinkevent.com/wealth-engine-calculator
+Wealth Engine Calculator: https://neothinkevent.com/wealth-engine-calculator
 
-→ Share your feedback: https://neothink.typeform.com/to/CiMxtG50
+Share your feedback: https://neothink.typeform.com/to/CiMxtG50
 
 TOMORROW — Day 2
 12pm Eastern / 9am Pacific
@@ -290,11 +292,10 @@ You did it. You discovered your Friday Night Essence—the spark that never dies
 
 As Wallace said: "You can finally step into harmony with yourself, with the world, with the universe. And when you do, the burden disappears."
 
-Your resources:
-→ https://neothinkevent.com/home
+Your resources: neothinkevent.com/home
 
-⏰ L3 pricing expires Wed, Dec 10 midnight ET:
-→ https://societysecrets.com/level3
+L3 enrollment expires Wed, Dec 10 midnight ET.
+Details in your email.
 ```
 
 ---
@@ -314,8 +315,7 @@ Zoom link coming to your inbox.
 
 Remember what Mark said: "We Neothinkers have the gift of seeing through illusions—seeing appearances down to reality."
 
-Your resources:
-→ https://neothinkevent.com/home
+Your resources: neothinkevent.com/home
 
 L3 Welcome Party: Wed 4pm PT / 7pm ET
 
@@ -339,7 +339,7 @@ Zoom link coming to your inbox.
 
 As Wallace said: "The burden disappears, and what replaces it is something so powerful, so joyful, you'll feel it for the rest of your life."
 
-→ https://neothinkevent.com/home
+neothinkevent.com/home
 ```
 
 ---
@@ -358,20 +358,18 @@ The question: Will you let it fade—or finish what you started?
 
 Level 3 Stargazer is open.
 
-→ $1,997 today
-→ The remaining $3,003 due ONLY after you make $50K
-→ 100% honor system. We're betting on you.
+Honor system enrollment — details in your email.
+We're betting on you.
 
 3 days. Private mentorship with Wallace Hamilton.
 
 VIPs: Your $297 is credited.
 
-⏰ Expires Wed, Dec 10 midnight ET
+Expires Wed, Dec 10 midnight ET
 
-Enroll: https://societysecrets.com/level3
+Enroll: societysecrets.com/level3
 
-Not sure? Talk to a mentor first:
-https://societysecrets.com/schedule-level-three-consultation
+Questions? Talk to a mentor: societysecrets.com/schedule-level-three-consultation
 ```
 
 ---
@@ -384,18 +382,15 @@ https://societysecrets.com/schedule-level-three-consultation
 ```
 Level 3 is open.
 
-$1,997 today. The rest ($3,003) only after you make $50K.
-
-Honor system. No contracts. We're betting on you.
+Honor system enrollment. We're betting on you.
 
 3 days with Wallace Hamilton. Your star is waiting.
 
-⏰ Expires Wed midnight ET
+Expires Wed midnight ET. Check your email for details.
 
-Enroll: https://societysecrets.com/level3
+Enroll: societysecrets.com/level3
 
-Questions? Talk to a mentor:
-https://societysecrets.com/schedule-level-three-consultation
+Questions? societysecrets.com/schedule-level-three-consultation
 ```
 
 ---
@@ -511,9 +506,7 @@ Level 3 enrollment is now open.
 For those ready to go deeper:
 
 The Stargazer 3-Day Event
-→ $1,997 today
-→ Remaining $3,003 only after you make $50K
-→ 100% honor system
+Honor system enrollment. Details in your email.
 
 Private mentorship with Wallace Hamilton. Limited spots.
 
@@ -531,7 +524,7 @@ https://societysecrets.com/level3
 ```
 Level 3 enrollment is open.
 
-$1,997 now. The rest only after you make $50K.
+Honor system enrollment. Details in your email.
 
 Private mentorship. Limited spots.
 
@@ -556,10 +549,9 @@ The friend who always says "someday." The colleague who's brilliant but stuck. T
 
 The Ambassador program lets you be the bridge.
 
-→ Share a $9.95 booklet
-→ The Society handles vetting + follow-up
-→ You receive $250 when someone completes Level 2
-→ 50/50 split. Zero cost to join.
+Share a booklet. Help someone find what you found.
+The Society handles vetting + follow-up.
+Details and commission info in your email.
 
 Friday trainings with Marko Hamilton:
 1pm PT / 2pm MT / 3pm CT / 4pm ET
@@ -578,9 +570,9 @@ Go find your Searchers. Show them they're not alone.
 ```
 The Ambassador program is open.
 
-Share a booklet. Help someone find what you found. Earn $250 per Level 2 enrollment.
+Share a booklet. Help someone find what you found.
 
-50/50 commission. Zero cost to join.
+Zero cost to join. Details in your email.
 
 Weekly trainings with Marko Hamilton every Friday:
 1pm PT / 2pm MT / 3pm CT / 4pm ET
@@ -607,7 +599,12 @@ See you there.
 
 ---
 
-**Version:** 1.4
+**Version:** 1.5
 **Created:** December 5, 2025
-**Updated:** December 8, 2025 (Added Ambassador program SMS)
+**Updated:** December 11, 2025 (SMS Compliance Update)
+- Added sender identification "Neothink Society:" to first message
+- Added opt-out language "Reply STOP to opt out"
+- Removed dollar amounts from SMS (moved to email)
+- Replaced arrow syntax with standard URL formatting
+- See SMS-COMPLIANCE-AUDIT.md for full guidelines
 **Based on:** Wallace Hamilton's original broadcast notes + Day of Enlightenment transcript review

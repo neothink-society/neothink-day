@@ -17,15 +17,15 @@
 **Send Time:** Tuesday 9am Eastern (6am Pacific)
 
 ```
-24 hours until your transformation.
+Neothink Society: 24 hours until Level 3 enrollment closes.
 
-Level 3 honor system expires tomorrow at midnight Eastern.
+Honor system offer expires tomorrow at midnight Eastern.
 
-$1,997 to start. The rest ($3,003) only after you've earned $50K+ using what you learn. On your honor.
+Details and pricing in your email. Questions? Talk to a mentor.
 
-Questions? Talk to a mentor: societysecrets.com/schedule-level-three-consultation
+societysecrets.com/schedule-level-three-consultation
 
--> societysecrets.com/level3
+Reply STOP to opt out
 ```
 
 ---
@@ -34,15 +34,13 @@ Questions? Talk to a mentor: societysecrets.com/schedule-level-three-consultatio
 **Send Time:** Tuesday 2pm Eastern (11am Pacific)
 
 ```
-Level 3 — 3 days that change everything:
+Neothink Society: Level 3 — 3 days that change everything.
 
 Day 1: Mind — Remove false commands. Reclaim your original power.
-
-Day 2: Money — The $400M wealth mechanics. Build your Wealth Engine.
-
+Day 2: Money — Advanced wealth mechanics. Build your Wealth Engine.
 Day 3: Reality — Become the architect of your golden life.
 
-See the full breakdown -> societysecrets.com/level3
+Full breakdown: societysecrets.com/level3
 ```
 
 ---
@@ -51,13 +49,13 @@ See the full breakdown -> societysecrets.com/level3
 **Send Time:** Tuesday 8pm Eastern (5pm Pacific)
 
 ```
-Tomorrow is your last day.
+Neothink Society: Tomorrow is your last day for Level 3.
 
-The Level 3 honor system expires at midnight Eastern tomorrow (Wednesday).
+Honor system expires at midnight Eastern tomorrow (Wednesday).
 
-After tonight, sleep on it. But know this: the version of you that attended Day of Enlightenment already knows what to do.
+Sleep on it. But the version of you that attended Day of Enlightenment already knows what to do.
 
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---
@@ -70,13 +68,13 @@ After tonight, sleep on it. But know this: the version of you that attended Day 
 **Send Time:** Wednesday 9am Eastern (6am Pacific)
 
 ```
-Today is your last day to enroll in Level 3 with the honor system.
+Neothink Society: Final day to enroll in Level 3 with the honor system.
 
-Welcome Party is tonight at 7pm Eastern (4pm Pacific) — join us to celebrate with your fellow new members.
+Welcome Party tonight at 7pm Eastern (4pm Pacific).
 
-We'll send you two gentle reminders before the offer expires at midnight Eastern tonight.
+Two gentle reminders coming before the offer expires at midnight Eastern.
 
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---
@@ -85,7 +83,7 @@ We'll send you two gentle reminders before the offer expires at midnight Eastern
 **Send Time:** Wednesday 3pm Eastern (12pm Pacific)
 
 ```
-Hours left.
+Neothink Society: Hours left.
 
 Welcome Party starts at 7pm Eastern (4pm Pacific) tonight.
 
@@ -93,7 +91,7 @@ Honor system expires at midnight Eastern.
 
 You already have so much from Level 2. Level 3 is for those who feel called to fly.
 
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---
@@ -102,17 +100,15 @@ You already have so much from Level 2. Level 3 is for those who feel called to f
 **Send Time:** Wednesday 11pm Eastern (8pm Pacific)
 
 ```
-A final note before midnight.
+Neothink Society: A final note before midnight.
 
 You already carry everything you need inside you.
 
-The Stargazer Event is simply here if you're ready to go further, faster—with us beside you, building your plan together.
+The Stargazer Event is here if you're ready to go further, faster — with us beside you, building your plan together.
 
-Honor system closes at midnight Eastern.
+Honor system closes at midnight Eastern. Readiness isn't the prerequisite. Courage is.
 
-Readiness isn't the prerequisite. Courage is.
-
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---
@@ -129,9 +125,12 @@ Readiness isn't the prerequisite. Courage is.
 **Personalization (Optional):**
 - Add `{{contact.first_name}}` at start: "Hey {{contact.first_name}},"
 
-**Compliance:**
-- Ensure SMS opt-in compliance
-- Consider adding "Reply STOP to unsubscribe" to first message
+**Compliance (Updated Dec 11, 2025):**
+- [x] Sender identification "Neothink Society:" added to each message
+- [x] Opt-out language "Reply STOP to opt out" added to first message
+- [x] Dollar amounts removed (moved to email only)
+- [x] Arrow syntax "->" removed
+- [x] See SMS-COMPLIANCE-AUDIT.md for full guidelines
 
 **Key Details:**
 - Deadline: Midnight Eastern Wednesday Dec 10, 2025
