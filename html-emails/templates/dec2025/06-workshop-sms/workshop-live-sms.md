@@ -44,8 +44,6 @@ If you're not in yet — join NOW:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 Your Day of Enlightenment has begun.
-
-Reply STOP to opt out
 ```
 
 ---
@@ -363,7 +361,7 @@ We're betting on you.
 
 3 days. Private mentorship with Wallace Hamilton.
 
-VIPs: Your $297 is credited.
+VIPs: Your upgrade credit is applied.
 
 Expires Wed, Dec 10 midnight ET
 

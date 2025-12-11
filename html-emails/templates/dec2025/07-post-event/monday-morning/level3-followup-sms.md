@@ -13,15 +13,15 @@
 **Send Time:** Monday 9am ET / 6am PT
 
 ```
-Good morning.
+Neothink Society: Good morning.
 
 If you're feeling the pull toward Level 3, trust it. That feeling knows something your doubt doesn't.
 
 The Stargazer Event is where Mark Hamilton helps you build your personal 2025 roadmap.
 
-$1,997 to start. The rest on your honor.
+Honor system enrollment. Details in your email.
 
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---
@@ -30,15 +30,15 @@ $1,997 to start. The rest on your honor.
 **Send Time:** Monday 2pm ET / 11am PT
 
 ```
-Spots are filling up.
+Neothink Society: Spots are filling up.
 
-We've already welcomed new Level 3 members since yesterday. The Welcome Party is Wednesday at 7pm ET.
+We've welcomed new Level 3 members since yesterday. Welcome Party is Wednesday at 7pm ET.
 
 Will you be there?
 
-Questions? Our mentors are ready to talk: societysecrets.com/schedule-level-three-consultation
+Questions? societysecrets.com/schedule-level-three-consultation
 
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---
@@ -47,15 +47,15 @@ Questions? Our mentors are ready to talk: societysecrets.com/schedule-level-thre
 **Send Time:** Monday 7pm ET / 4pm PT
 
 ```
-48 hours until Wednesday.
+Neothink Society: 48 hours until Wednesday.
 
-The Level 3 honor system expires Wednesday at midnight.
+Level 3 honor system expires Wednesday at midnight.
 
 You're at a crossroads. One path leads back to life as usual. The other leads to the Stargazer Event.
 
 Mark Hamilton is waiting for you.
 
--> societysecrets.com/level3
+societysecrets.com/level3
 ```
 
 ---

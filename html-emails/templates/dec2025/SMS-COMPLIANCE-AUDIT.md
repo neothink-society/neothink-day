@@ -29,7 +29,7 @@ Based on [GoHighLevel documentation](https://help.gohighlevel.com/support/soluti
 | Requirement | Details | Source |
 |-------------|---------|--------|
 | **A2P 10DLC Registration** | Must be registered with The Campaign Registry | [GHL A2P Guide](https://help.gohighlevel.com/support/solutions/articles/155000002380-what-is-a2p-10-dlc-brand-and-campaign-registration) |
-| **Opt-Out Language** | "Reply STOP to unsubscribe" in first message and every 30 days | TCPA 2025 |
+| **Opt-Out Language** | "Reply STOP to unsubscribe" — *Handled automatically by GHL account settings* | TCPA 2025 |
 | **Sender Identification** | Business name in first message to new contacts | TCPA 2025 |
 | **Prior Consent** | Explicit opt-in required before sending | TCPA 2025 |
 | **Quiet Hours** | No messages 9pm-8am recipient's local time | TCPA 2025 |
@@ -248,26 +248,27 @@ Reply STOP to opt out
 
 ## ACTION ITEMS
 
-### Immediate (Before Next Send)
+### Completed (Dec 11, 2025)
 
-1. **Add opt-out language** to all active SMS automations
-2. **Add sender identification** ("Neothink Society:") to first messages
-3. **Remove "Matrix of Illusions"** from Golden Life Sheet SMS
-4. **Remove financial details** from Level 3 deadline SMS
-5. **Verify A2P 10DLC registration** is active and approved
+1. ✅ **Opt-out language** — Handled automatically by GHL account settings
+2. ✅ **Sender identification** ("Neothink Society:") added to all SMS files
+3. ✅ **Removed "Matrix of Illusions"** from Golden Life Sheet SMS
+4. ✅ **Removed financial details** ($1,997, $3,003, $297, $250, etc.) — moved to email
+5. ✅ **Removed arrow syntax** ("->") from all SMS files
+6. ✅ **Rewrote post-event-value-sms.md** — full compliance
+7. ✅ **Rewrote level3-deadline/sms-messages.md** — full compliance
+8. ✅ **Updated pre-event-sms.md** — removed "GUARANTEED"
+9. ✅ **Updated workshop-live-sms.md** — removed financial language
+10. ✅ **Updated all broadcast SMS files** — added sender ID
 
-### Before December Event Emails Resume
+### Still Required
 
-1. Rewrite all SMS in `post-event-value-sms.md`
-2. Rewrite all SMS in `level3-deadline/sms-messages.md`
-3. Audit and update `pre-event-sms.md`
-4. Create simplified SMS versions (point to email for details)
+1. **Verify A2P 10DLC registration** is active and approved
 
 ### Ongoing
 
-1. Monitor GHL analytics for opt-out and error rates
-2. Re-send opt-out language every 30 days to recurring contacts
-3. Document all consent sources
+1. Monitor GHL analytics for opt-out and error rates (keep under 2%/6%)
+2. Document all consent sources
 
 ---
 

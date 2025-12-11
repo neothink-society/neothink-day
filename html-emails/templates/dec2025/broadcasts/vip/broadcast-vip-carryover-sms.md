@@ -11,7 +11,7 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-⭐ VIP Family —
+Neothink Society: VIP Family —
 
 Your VIP status carries forward to December — our gift to you. Just register to secure your seat.
 

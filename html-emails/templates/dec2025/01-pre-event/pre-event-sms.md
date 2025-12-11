@@ -62,8 +62,6 @@ You just made a decision that most people never make: to invest in your own tran
 Check your email for pre-work instructions and workshop hub access.
 
 Questions? support@neothink.com
-
-Reply STOP to opt out
 ```
 
 ---
@@ -83,8 +81,6 @@ Your intimate VIP group session with Wallace Hamilton awaits on Day 2.
 Check your email for exclusive VIP details.
 
 Welcome to the inner circle.
-
-Reply STOP to opt out
 ```
 
 ---

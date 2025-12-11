@@ -17,7 +17,7 @@
 
 **Required Elements:**
 - Sender identification: "Neothink Society:" at start
-- Opt-out language: "Reply STOP to opt out" in first message of sequence
+- Opt-out language: Handled automatically by GHL account settings
 - No spam trigger words (FREE, GUARANTEE, etc.)
 - No unusual/flagged language (removed "Matrix of Illusions")
 - Full URLs only (no shorteners)
@@ -38,8 +38,6 @@ One page. Six categories. Your daily anchor for clarity and focus.
 Fill it out today and revisit each morning.
 
 neothinkevent.com/your-golden-life
-
-Reply STOP to opt out
 ```
 
 **Character Count:** ~195 chars (may split into 2 segments)
@@ -100,7 +98,7 @@ neothinkevent.com/home
 
 **Compliance Checklist:**
 - [x] Sender identification in each message
-- [x] Opt-out language in first message of sequence
+- [x] Opt-out language handled by GHL account settings
 - [x] No spam trigger words
 - [x] No unusual language that could be flagged
 - [x] Full URLs (no shorteners)

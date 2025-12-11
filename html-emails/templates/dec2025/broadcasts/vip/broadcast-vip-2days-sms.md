@@ -11,7 +11,7 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-⭐ VIP Family —
+Neothink Society: VIP Family —
 
 2 days away.
 

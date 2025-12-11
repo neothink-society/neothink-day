@@ -10,15 +10,13 @@
 **Send Time:** Saturday afternoon (or anytime post-event)
 
 ```
-Your Searchers are out there right now.
+Neothink Society: Your Searchers are out there right now.
 
-The Ambassador Program lets you share what changed your life — and earn $250 for every person who completes Level 2.
+The Ambassador Program lets you share what changed your life — and help others find what you found.
 
-No cost. 50/50 split. Just genuine introductions.
+No cost. Just genuine introductions. Full details in your email.
 
-Check your email for the full guide, or sign up now:
-
--> societysecrets.com/ambassador-signup
+societysecrets.com/ambassador-signup
 ```
 
 ---
@@ -28,11 +26,15 @@ Check your email for the full guide, or sign up now:
 **Character Count:** ~290 chars (may split into 2-3 segments)
 
 **Key Points:**
-- $250 per Level 2 enrollment (50% of $500)
+- Commission details in email (not SMS)
 - Zero cost to participate
-- Searcher receives $9.95 booklet first
 - Society handles all vetting and follow-up
 - Weekly Friday training with Marko Hamilton
+
+**Compliance Notes (Dec 11, 2025):**
+- Dollar amounts removed from SMS (moved to email)
+- Arrow syntax removed
+- Sender ID added
 
 **Link Tracking:**
 - Replace link with tracked short link if using GoHighLevel

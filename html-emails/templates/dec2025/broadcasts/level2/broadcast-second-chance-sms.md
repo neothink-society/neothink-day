@@ -11,26 +11,24 @@
 **Registration Link:** https://societysecrets.com/choose-your-date
 
 ```
-Dear Member —
+Neothink Society: Dear Member —
 
 The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
 Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it. A new piece of the "Super Puzzle."
 
-IMPORTANT: There will be no recordings. You must be present to receive the transmission.
+No recordings. You must be present to receive the transmission.
 
-📅 Dec 6-7, 2025
-📅 Jan 24-25, 2026
+Dec 6-7, 2025 or Jan 24-25, 2026
 
-Choose your date:
-https://societysecrets.com/choose-your-date
+Choose your date: societysecrets.com/choose-your-date
 
 We will see you among the stars.
 
 — The Hamilton Family
 ```
 
-**Character count:** ~520 characters (fits in 4 SMS segments)
+**Character count:** ~480 characters (fits in 3-4 SMS segments)
 
 ---
 
@@ -39,19 +37,17 @@ We will see you among the stars.
 **Registration Link:** https://neothinkday.com/choose
 
 ```
-Dear Member —
+Neothink Society: Dear Member —
 
 The Hamilton Family & The Neothink Society are opening the doors for the definitive Day of Enlightenment.
 
 Mark Hamilton has had his latest major breakthrough — and you are among the first to receive it. A new piece of the "Super Puzzle."
 
-IMPORTANT: There will be no recordings. You must be present to receive the transmission.
+No recordings. You must be present to receive the transmission.
 
-📅 Dec 6-7, 2025
-📅 Jan 24-25, 2026
+Dec 6-7, 2025 or Jan 24-25, 2026
 
-Choose your date:
-https://neothinkday.com/choose
+Choose your date: neothinkday.com/choose
 
 We will see you among the stars.
 

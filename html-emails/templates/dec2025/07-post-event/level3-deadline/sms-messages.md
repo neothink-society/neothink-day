@@ -24,8 +24,6 @@ Honor system offer expires tomorrow at midnight Eastern.
 Details and pricing in your email. Questions? Talk to a mentor.
 
 societysecrets.com/schedule-level-three-consultation
-
-Reply STOP to opt out
 ```
 
 ---
