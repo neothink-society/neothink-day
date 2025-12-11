@@ -91,7 +91,7 @@ Welcome Party starts at 7pm Eastern (4pm Pacific) tonight.
 
 Honor system expires at midnight Eastern.
 
-Either you're ready to transform your reality, or you're not. This is about respect for the moment.
+You already have so much from Level 2. Level 3 is for those who feel called to fly.
 
 -> societysecrets.com/level3
 ```
