@@ -52,27 +52,45 @@ These fire based on actions, not scheduled times.
 
 # PHASE 2: PRE-EVENT COUNTDOWN
 
-## 14 Days Before → 1 Day Before
+## 30 Days Before → 1 Day Before
+
+### Weeks 4-3: Seed Planting (Days 30-15)
 
 | # | Type | Message | Date (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `preparation-14days.html` | Sat Nov 22, 9am | **-14d 2h** | All |
-| 2 | [E] | `preparation-9days.html` | Thu Nov 27, 9am | **-9d 2h** | All |
-| 3 | [E] | `preparation-7days.html` | Sat Nov 29, 9am | **-7d 2h** | All |
-| 4 | [E] | `preparation-5days.html` | Mon Dec 1, 9am | **-5d 2h** | All |
-| 5 | [S] | 5 Days Out | Mon Dec 1, 9am | **-5d 2h** | All |
-| 6 | [E] | `preparation-4days.html` | Tue Dec 2, 9am | **-4d 2h** | All |
-| 7 | [S] | 4 Days Out | Tue Dec 2, 9am | **-4d 2h** | All |
-| 8 | [E] | `preparation-3days.html` | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
-| 9 | [E] | `preparation-3days-vip.html` | Wed Dec 3, 9am | **-3d 2h** | VIP |
-| 10 | [S] | 3 Days (Non-VIP) | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
-| 11 | [S] | 3 Days (VIP) | Wed Dec 3, 9am | **-3d 2h** | VIP |
-| 12 | [E] | `preparation-2days.html` | Thu Dec 4, 9am | **-2d 2h** | All |
-| 13 | [S] | 2 Days (Non-VIP) | Thu Dec 4, 9am | **-2d 2h** | Non-VIP |
-| 14 | [S] | 2 Days (VIP) | Thu Dec 4, 9am | **-2d 2h** | VIP |
-| 15 | [E] | `preparation-1day.html` | Fri Dec 5, 7pm | **-16h** | All |
-| 16 | [S] | 1 Day (Non-VIP) | Fri Dec 5, 7pm | **-16h** | Non-VIP |
-| 17 | [S] | 1 Day (VIP) | Fri Dec 5, 7pm | **-16h** | VIP |
+| 1 | [E] | `preparation-30days.html` | Wed Nov 6, 9am | **-30d 2h** | All |
+| 2 | [E] | `preparation-25days.html` | Mon Nov 11, 9am | **-25d 2h** | All |
+| 3 | [E] | `preparation-20days.html` | Sat Nov 16, 9am | **-20d 2h** | All |
+| 4 | [S] | 20 Days Out | Sat Nov 16, 9am | **-20d 2h** | All |
+
+### Week 2: Foundation Building (Days 14-8)
+
+| # | Type | Message | Date (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 5 | [E] | `preparation-14days.html` | Sat Nov 22, 9am | **-14d 2h** | All |
+| 6 | [E] | `preparation-10days.html` | Tue Nov 26, 9am | **-10d 2h** | All |
+| 7 | [E] | `preparation-9days.html` | Wed Nov 27, 9am | **-9d 2h** | All |
+
+### Week 1: Momentum Building (Days 7-1)
+
+| # | Type | Message | Date (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 8 | [E] | `preparation-7days.html` | Fri Nov 29, 9am | **-7d 2h** | All |
+| 9 | [S] | 7 Days Out | Fri Nov 29, 9am | **-7d 2h** | All |
+| 10 | [E] | `preparation-5days.html` | Mon Dec 1, 9am | **-5d 2h** | All |
+| 11 | [S] | 5 Days Out | Mon Dec 1, 9am | **-5d 2h** | All |
+| 12 | [E] | `preparation-4days.html` | Tue Dec 2, 9am | **-4d 2h** | All |
+| 13 | [S] | 4 Days Out | Tue Dec 2, 9am | **-4d 2h** | All |
+| 14 | [E] | `preparation-3days.html` | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
+| 15 | [E] | `preparation-3days-vip.html` | Wed Dec 3, 9am | **-3d 2h** | VIP |
+| 16 | [S] | 3 Days (Non-VIP) | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
+| 17 | [S] | 3 Days (VIP) | Wed Dec 3, 9am | **-3d 2h** | VIP |
+| 18 | [E] | `preparation-2days.html` | Thu Dec 4, 9am | **-2d 2h** | All |
+| 19 | [S] | 2 Days (Non-VIP) | Thu Dec 4, 9am | **-2d 2h** | Non-VIP |
+| 20 | [S] | 2 Days (VIP) | Thu Dec 4, 9am | **-2d 2h** | VIP |
+| 21 | [E] | `preparation-1day.html` | Fri Dec 5, 7pm | **-16h** | All |
+| 22 | [S] | 1 Day (Non-VIP) | Fri Dec 5, 7pm | **-16h** | Non-VIP |
+| 23 | [S] | 1 Day (VIP) | Fri Dec 5, 7pm | **-16h** | VIP |
 
 ---
 
@@ -362,7 +380,7 @@ Consider combining or spacing these differently.
 | Phase | Emails | SMS | Total |
 |-------|--------|-----|-------|
 | Trigger-Based | 5 | 4 | 9 |
-| Pre-Event (14d → 1d) | 9 | 10 | 19 |
+| Pre-Event (30d → 1d) | 13 | 12 | 25 |
 | Day 1 Countdown | 5 | 5 | 10 |
 | Day 1 Workshop | 8 | 8 | 16 |
 | Day 2 Countdown | 4 | 4 | 8 |
@@ -374,7 +392,7 @@ Consider combining or spacing these differently.
 | Welcome Party | 5 | 3 | 8 |
 | Value Series | 5 | 5 | 10 |
 | Ambassador | 1 | 1 | 2 |
-| **TOTAL** | **68** | **65** | **133** |
+| **TOTAL** | **72** | **67** | **139** |
 
 ---
 
@@ -414,9 +432,13 @@ Consider combining or spacing these differently.
 
 | Offset | Date/Time (ET) | Email | SMS | Audience |
 |--------|----------------|-------|-----|----------|
+| -30d 2h | Nov 6, 9am | preparation-30days | — | All |
+| -25d 2h | Nov 11, 9am | preparation-25days | — | All |
+| -20d 2h | Nov 16, 9am | preparation-20days | 20 Days | All |
 | -14d 2h | Nov 22, 9am | preparation-14days | — | All |
+| -10d 2h | Nov 26, 9am | preparation-10days | — | All |
 | -9d 2h | Nov 27, 9am | preparation-9days | — | All |
-| -7d 2h | Nov 29, 9am | preparation-7days | — | All |
+| -7d 2h | Nov 29, 9am | preparation-7days | 7 Days | All |
 | -5d 2h | Dec 1, 9am | preparation-5days | 5 Days | All |
 | -4d 2h | Dec 2, 9am | preparation-4days | 4 Days | All |
 | -3d 2h | Dec 3, 9am | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
@@ -470,7 +492,13 @@ Consider combining or spacing these differently.
 
 ---
 
-**Version:** 2.0
+**Version:** 3.0
 **Created:** December 10, 2025
-**Last Updated:** December 10, 2025
+**Last Updated:** December 11, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
+
+## CHANGE LOG
+
+- **v3.0** (Dec 11): Extended pre-event sequence from 14 days to 30 days
+- **v2.0** (Dec 10): Added missing messages, comprehensive audit
+- **v1.0** (Dec 10): Initial timeline creation
