@@ -408,7 +408,7 @@ Consider combining or spacing these differently.
 1. **Registration** — Trigger: On signup
 2. **VIP Purchase** — Trigger: On VIP payment
 3. **L3 Purchase** — Trigger: On L3 payment
-4. **Pre-Event Countdown** — Scheduled: T-14d to T-1d
+4. **Pre-Event Countdown** — Scheduled: T-30d to T-1d
 5. **Day 1** — Scheduled + Manual triggers
 6. **Day 2** — Scheduled + Manual triggers
 7. **Post-Workshop Monday** — Scheduled: T+46h to T+58h
