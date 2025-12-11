@@ -58,25 +58,25 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Date (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `preparation-30days.html` | Wed Nov 6, 9am | **-30d 2h** | All |
-| 2 | [E] | `preparation-25days.html` | Mon Nov 11, 9am | **-25d 2h** | All |
-| 3 | [E] | `preparation-20days.html` | Sat Nov 16, 9am | **-20d 2h** | All |
-| 4 | [S] | 20 Days Out | Sat Nov 16, 9am | **-20d 2h** | All |
+| 1 | [E] | `preparation-30days.html` | Thu Nov 6, 9am | **-30d 2h** | All |
+| 2 | [E] | `preparation-25days.html` | Tue Nov 11, 9am | **-25d 2h** | All |
+| 3 | [E] | `preparation-20days.html` | Sun Nov 16, 9am | **-20d 2h** | All |
+| 4 | [S] | 20 Days Out | Sun Nov 16, 9am | **-20d 2h** | All |
 
 ### Week 2: Foundation Building (Days 14-8)
 
 | # | Type | Message | Date (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
 | 5 | [E] | `preparation-14days.html` | Sat Nov 22, 9am | **-14d 2h** | All |
-| 6 | [E] | `preparation-10days.html` | Tue Nov 26, 9am | **-10d 2h** | All |
-| 7 | [E] | `preparation-9days.html` | Wed Nov 27, 9am | **-9d 2h** | All |
+| 6 | [E] | `preparation-10days.html` | Wed Nov 26, 9am | **-10d 2h** | All |
+| 7 | [E] | `preparation-9days.html` | Thu Nov 27, 9am | **-9d 2h** | All |
 
 ### Week 1: Momentum Building (Days 7-1)
 
 | # | Type | Message | Date (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 8 | [E] | `preparation-7days.html` | Fri Nov 29, 9am | **-7d 2h** | All |
-| 9 | [S] | 7 Days Out | Fri Nov 29, 9am | **-7d 2h** | All |
+| 8 | [E] | `preparation-7days.html` | Sat Nov 29, 9am | **-7d 2h** | All |
+| 9 | [S] | 7 Days Out | Sat Nov 29, 9am | **-7d 2h** | All |
 | 10 | [E] | `preparation-5days.html` | Mon Dec 1, 9am | **-5d 2h** | All |
 | 11 | [S] | 5 Days Out | Mon Dec 1, 9am | **-5d 2h** | All |
 | 12 | [E] | `preparation-4days.html` | Tue Dec 2, 9am | **-4d 2h** | All |
@@ -432,13 +432,13 @@ Consider combining or spacing these differently.
 
 | Offset | Date/Time (ET) | Email | SMS | Audience |
 |--------|----------------|-------|-----|----------|
-| -30d 2h | Nov 6, 9am | preparation-30days | — | All |
-| -25d 2h | Nov 11, 9am | preparation-25days | — | All |
-| -20d 2h | Nov 16, 9am | preparation-20days | 20 Days | All |
-| -14d 2h | Nov 22, 9am | preparation-14days | — | All |
-| -10d 2h | Nov 26, 9am | preparation-10days | — | All |
-| -9d 2h | Nov 27, 9am | preparation-9days | — | All |
-| -7d 2h | Nov 29, 9am | preparation-7days | 7 Days | All |
+| -30d 2h | Thu Nov 6, 9am | preparation-30days | — | All |
+| -25d 2h | Tue Nov 11, 9am | preparation-25days | — | All |
+| -20d 2h | Sun Nov 16, 9am | preparation-20days | 20 Days | All |
+| -14d 2h | Sat Nov 22, 9am | preparation-14days | — | All |
+| -10d 2h | Wed Nov 26, 9am | preparation-10days | — | All |
+| -9d 2h | Thu Nov 27, 9am | preparation-9days | — | All |
+| -7d 2h | Sat Nov 29, 9am | preparation-7days | 7 Days | All |
 | -5d 2h | Dec 1, 9am | preparation-5days | 5 Days | All |
 | -4d 2h | Dec 2, 9am | preparation-4days | 4 Days | All |
 | -3d 2h | Dec 3, 9am | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |

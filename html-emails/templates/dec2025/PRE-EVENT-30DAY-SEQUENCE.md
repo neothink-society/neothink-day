@@ -46,13 +46,13 @@ The 30-day sequence must:
 
 | Days Out | Date | Email Focus | SMS |
 |----------|------|-------------|-----|
-| **30** | Wed Nov 6 | The Question That Changes Everything | — |
-| **25** | Mon Nov 11 | What If Everything You Believed Was Wrong? | — |
-| **20** | Sat Nov 16 | The Life You Were Meant to Live | ✓ |
+| **30** | Thu Nov 6 | The Question That Changes Everything | — |
+| **25** | Tue Nov 11 | What If Everything You Believed Was Wrong? | — |
+| **20** | Sun Nov 16 | The Life You Were Meant to Live | ✓ |
 | **14** | Sat Nov 22 | Why This Workshop Works | — |
-| **10** | Tue Nov 26 | What to Expect (Day 1 & 2 Overview) | — |
-| **9** | Wed Nov 27 | Preparation Guide | — |
-| **7** | Fri Nov 29 | 7 Days: The Journey Begins | ✓ |
+| **10** | Wed Nov 26 | What to Expect (Day 1 & 2 Overview) | — |
+| **9** | Thu Nov 27 | Preparation Guide | — |
+| **7** | Sat Nov 29 | 7 Days: The Journey Begins | ✓ |
 | **5** | Mon Dec 1 | 5 Days: Clear Your Calendar | ✓ |
 | **4** | Tue Dec 2 | 4 Days: Your Breakthrough Is Near | ✓ |
 | **3** | Wed Dec 3 | 3 Days: Final Preparations | ✓ (VIP split) |
@@ -67,7 +67,7 @@ The 30-day sequence must:
 Meet them in Mortal Mentality. Acknowledge their current state. Plant seeds of possibility without pushing.
 
 ### Day 30 — "The Question That Changes Everything"
-**Send:** Wednesday, November 6, 2025 @ 9:00 AM Eastern
+**Send:** Thursday, November 6, 2025 @ 9:00 AM Eastern
 **Offset:** -30d 2h
 
 **Theme:** The Friday-Night Essence question
@@ -86,7 +86,7 @@ Meet them in Mortal Mentality. Acknowledge their current state. Plant seeds of p
 ---
 
 ### Day 25 — "What If Everything You Believed Was Wrong?"
-**Send:** Monday, November 11, 2025 @ 9:00 AM Eastern
+**Send:** Tuesday, November 11, 2025 @ 9:00 AM Eastern
 **Offset:** -25d 2h
 
 **Theme:** Questioning the Matrix of Illusions
@@ -105,7 +105,7 @@ Meet them in Mortal Mentality. Acknowledge their current state. Plant seeds of p
 ---
 
 ### Day 20 — "The Life You Were Meant to Live"
-**Send:** Saturday, November 16, 2025 @ 9:00 AM Eastern
+**Send:** Sunday, November 16, 2025 @ 9:00 AM Eastern
 **Offset:** -20d 2h
 
 **Theme:** Vision of the Immortal Mentality (without naming it)
@@ -139,7 +139,7 @@ Transition from emotional/philosophical to practical. Build confidence in the me
 ---
 
 ### Day 10 — "What to Expect: Your Two-Day Journey"
-**Send:** Tuesday, November 26, 2025 @ 9:00 AM Eastern
+**Send:** Wednesday, November 26, 2025 @ 9:00 AM Eastern
 **Offset:** -10d 2h
 **[NEW EMAIL NEEDED]**
 
@@ -170,8 +170,8 @@ Transition from emotional/philosophical to practical. Build confidence in the me
 ### Purpose
 Daily touchpoints. Build excitement. Handle logistics. VIP differentiation begins Day 3.
 
-### Day 7 — "7 Days: Your Transformation Begins Friday"
-**Send:** Friday, November 29, 2025 @ 9:00 AM Eastern
+### Day 7 — "7 Days: Your Transformation Begins Saturday"
+**Send:** Saturday, November 29, 2025 @ 9:00 AM Eastern
 **Offset:** -7d 2h
 **[EXISTING EMAIL: preparation-7days.html — may need refresh]**
 
@@ -280,15 +280,15 @@ Daily touchpoints. Build excitement. Handle logistics. VIP differentiation begin
 
 | # | Type | Message | Date (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `preparation-30days.html` | Wed Nov 6, 9am | **-30d 2h** | All |
-| 2 | [E] | `preparation-25days.html` | Mon Nov 11, 9am | **-25d 2h** | All |
-| 3 | [E] | `preparation-20days.html` | Sat Nov 16, 9am | **-20d 2h** | All |
-| 4 | [S] | 20 Days Out | Sat Nov 16, 9am | **-20d 2h** | All |
+| 1 | [E] | `preparation-30days.html` | Thu Nov 6, 9am | **-30d 2h** | All |
+| 2 | [E] | `preparation-25days.html` | Tue Nov 11, 9am | **-25d 2h** | All |
+| 3 | [E] | `preparation-20days.html` | Sun Nov 16, 9am | **-20d 2h** | All |
+| 4 | [S] | 20 Days Out | Sun Nov 16, 9am | **-20d 2h** | All |
 | 5 | [E] | `preparation-14days.html` | Sat Nov 22, 9am | **-14d 2h** | All |
-| 6 | [E] | `preparation-10days.html` | Tue Nov 26, 9am | **-10d 2h** | All |
-| 7 | [E] | `preparation-9days.html` | Wed Nov 27, 9am | **-9d 2h** | All |
-| 8 | [E] | `preparation-7days.html` | Fri Nov 29, 9am | **-7d 2h** | All |
-| 9 | [S] | 7 Days Out | Fri Nov 29, 9am | **-7d 2h** | All |
+| 6 | [E] | `preparation-10days.html` | Wed Nov 26, 9am | **-10d 2h** | All |
+| 7 | [E] | `preparation-9days.html` | Thu Nov 27, 9am | **-9d 2h** | All |
+| 8 | [E] | `preparation-7days.html` | Sat Nov 29, 9am | **-7d 2h** | All |
+| 9 | [S] | 7 Days Out | Sat Nov 29, 9am | **-7d 2h** | All |
 | 10 | [E] | `preparation-5days.html` | Mon Dec 1, 9am | **-5d 2h** | All |
 | 11 | [S] | 5 Days Out | Mon Dec 1, 9am | **-5d 2h** | All |
 | ... | ... | (continues as before) | ... | ... | ... |
