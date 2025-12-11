@@ -2,343 +2,475 @@
 ## Day of Enlightenment — December 2025
 
 **EVENT START:** Saturday, December 6, 2025 @ 8:00 AM Pacific / 11:00 AM Eastern
-**This is the reference point (T=0) for all timing calculations**
+**This is T=0 for all timing calculations**
 
 ---
 
 ## QUICK REFERENCE: KEY TIMESTAMPS
 
-| Event | Date/Time (PT) | Date/Time (ET) | Offset from Event Start |
-|-------|----------------|----------------|-------------------------|
-| Event Start (Day 1) | Sat Dec 6, 8:00 AM | Sat Dec 6, 11:00 AM | **T = 0** |
-| VIP Deadline | Sat Dec 6, 9:00 AM | Sat Dec 6, 12:00 PM | T + 1 hour |
-| Day 1 Ends | Sat Dec 6, 5:00 PM | Sat Dec 6, 8:00 PM | T + 9 hours |
-| Day 2 Starts | Sun Dec 7, 9:00 AM | Sun Dec 7, 12:00 PM | T + 25 hours |
-| Day 2 Ends | Sun Dec 7, 5:00 PM | Sun Dec 7, 8:00 PM | T + 33 hours |
-| VIP Session | Mon Dec 8, 3:00 PM | Mon Dec 8, 6:00 PM | T + 55 hours |
-| Welcome Party | Wed Dec 10, 4:00 PM | Wed Dec 10, 7:00 PM | T + 104 hours |
-| L3 Deadline | Wed Dec 10, 9:00 PM | Thu Dec 11, 12:00 AM | T + 109 hours |
+| Event | Pacific | Eastern | Offset |
+|-------|---------|---------|--------|
+| **Event Start (Day 1)** | Sat Dec 6, 8:00 AM | Sat Dec 6, 11:00 AM | **T = 0** |
+| VIP Deadline | Sat Dec 6, 9:00 AM | Sat Dec 6, 12:00 PM | T + 1 hr |
+| Day 1 Ends | Sat Dec 6, 5:00 PM | Sat Dec 6, 8:00 PM | T + 9 hrs |
+| **Day 2 Starts** | Sun Dec 7, 9:00 AM | Sun Dec 7, 12:00 PM | **T + 25 hrs** |
+| Day 2 Ends / L3 Opens | Sun Dec 7, 5:00 PM | Sun Dec 7, 8:00 PM | T + 33 hrs |
+| **VIP Session** | Mon Dec 8, 3:00 PM | Mon Dec 8, 6:00 PM | **T + 55 hrs** |
+| **Welcome Party** | Wed Dec 10, 4:00 PM | Wed Dec 10, 7:00 PM | **T + 104 hrs** |
+| **L3 Deadline** | Wed Dec 10, 9:00 PM | Thu Dec 11, 12:00 AM | **T + 109 hrs** |
 
 ---
 
-## COMPLETE MESSAGE TIMELINE
+## LEGEND
 
-### LEGEND
 - **[E]** = Email
 - **[S]** = SMS
-- **Offset** = Hours before (-) or after (+) event start
-- **Condition** = Audience segmentation logic
+- **Offset** = Hours before (-) or after (+) T=0
+- Offset format: `-Xd` = X days before, `+Xh` = X hours after
 
 ---
 
-## PHASE 1: PRE-EVENT (Before T=0)
+# PHASE 1: TRIGGER-BASED (Anytime)
 
-### Trigger-Based (On Registration/Purchase)
-| Type | Message | Offset | Condition |
-|------|---------|--------|-----------|
-| [E] | registration-confirmation.html | On registration | All |
-| [S] | Registration Confirmation | On registration | All |
-| [E] | vip-confirmation.html | On VIP purchase | VIP only |
-| [S] | VIP Confirmation | On VIP purchase | VIP only |
-| [E] | welcome-confirmation.html | 10 min after reg | All |
-| [E] | vip-zoom-background.html | After VIP confirm | VIP only |
-| [S] | VIP Zoom Background | After VIP confirm | VIP only |
+These fire based on actions, not scheduled times.
 
-### Scheduled Pre-Event Sequence
+| # | Type | Message | Trigger | Condition |
+|---|------|---------|---------|-----------|
+| 1 | [E] | `registration-confirmation.html` | On registration | All |
+| 2 | [S] | Registration Confirmation | On registration | All |
+| 3 | [E] | `welcome-confirmation.html` | 10 min after registration | All |
+| 4 | [E] | `vip-confirmation.html` | On VIP purchase | VIP |
+| 5 | [S] | VIP Confirmation | On VIP purchase | VIP |
+| 6 | [E] | `vip-zoom-background.html` | After VIP confirm | VIP |
+| 7 | [S] | VIP Zoom Background | After VIP confirm | VIP |
+| 8 | [E] | `level3-confirmation.html` | On L3 purchase | L3 |
+| 9 | [S] | L3 Confirmation | On L3 purchase | L3 |
 
-| Type | Message | Send Date/Time (ET) | Offset | Condition |
-|------|---------|---------------------|--------|-----------|
-| [E] | preparation-14days.html | Sat Nov 22, 9:00 AM | **-336 hrs** (-14 days) | All |
-| [E] | preparation-9days.html | Thu Nov 27, 9:00 AM | **-216 hrs** (-9 days) | All |
-| [E] | preparation-7days.html | Sat Nov 29, 9:00 AM | **-168 hrs** (-7 days) | All |
-| [E] | preparation-5days.html | Mon Dec 1, 9:00 AM | **-120 hrs** (-5 days) | All |
-| [S] | 5 Days Out | Mon Dec 1, 9:00 AM | **-120 hrs** (-5 days) | All |
-| [E] | preparation-4days.html | Tue Dec 2, 9:00 AM | **-96 hrs** (-4 days) | All |
-| [S] | 4 Days Out | Tue Dec 2, 9:00 AM | **-96 hrs** (-4 days) | All |
-| [E] | preparation-3days.html | Wed Dec 3, 9:00 AM | **-72 hrs** (-3 days) | Non-VIP |
-| [E] | preparation-3days-vip.html | Wed Dec 3, 9:00 AM | **-72 hrs** (-3 days) | VIP only |
-| [S] | 3 Days Out (Non-VIP) | Wed Dec 3, 9:00 AM | **-72 hrs** (-3 days) | Non-VIP |
-| [S] | 3 Days Out (VIP) | Wed Dec 3, 9:00 AM | **-72 hrs** (-3 days) | VIP only |
-| [E] | preparation-2days.html | Thu Dec 4, 9:00 AM | **-48 hrs** (-2 days) | All |
-| [S] | 2 Days Out (Non-VIP) | Thu Dec 4, 9:00 AM | **-48 hrs** (-2 days) | Non-VIP |
-| [S] | 2 Days Out (VIP) | Thu Dec 4, 9:00 AM | **-48 hrs** (-2 days) | VIP only |
-| [E] | preparation-1day.html | Fri Dec 5, 7:00 PM | **-16 hrs** | All |
-| [S] | 1 Day Out (Non-VIP) | Fri Dec 5, 7:00 PM | **-16 hrs** | Non-VIP |
-| [S] | 1 Day Out (VIP) | Fri Dec 5, 7:00 PM | **-16 hrs** | VIP only |
+**Note:** L3 purchase triggers enrollment into Welcome Party sequence and removal from L3 Deadline sequence.
 
 ---
 
-## PHASE 2: DAY 1 COUNTDOWN (T-3 to T=0)
+# PHASE 2: PRE-EVENT COUNTDOWN
 
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | day1-countdown-2hr.html | Sat Dec 6, 9:00 AM | **-2 hrs** | All |
-| [S] | 2 Hours Until Event | Sat Dec 6, 9:00 AM | **-2 hrs** | All |
-| [E] | day-of.html | Sat Dec 6, 10:00 AM | **-1 hr** | All |
-| [E] | day1-countdown-1hr.html | Sat Dec 6, 10:00 AM | **-1 hr** | All |
-| [S] | Zoom Link Delivery | Sat Dec 6, 10:00 AM | **-1 hr** | All |
-| [E] | day1-countdown-30min.html | Sat Dec 6, 10:30 AM | **-30 min** | All |
-| [S] | Doors Are Open | Sat Dec 6, 10:30 AM | **-30 min** | All |
-| [E] | day1-countdown-live.html | Sat Dec 6, 11:00 AM | **T = 0** | All |
-| [S] | WE'RE LIVE | Sat Dec 6, 11:00 AM | **T = 0** | All |
+## 14 Days Before → 1 Day Before
 
----
-
-## PHASE 3: DAY 1 WORKSHOP (Live Triggers)
-
-These are **manual triggers** sent when specific moments happen during the live event.
-
-| Type | Message | Trigger | Approx Time (ET) | Offset | Condition |
-|------|---------|---------|------------------|--------|-----------|
-| [E] | 01-day1-opening.html | WH takes stage | ~11:00 AM | **T + 0** | All |
-| [S] | WH Takes Stage | WH takes stage | ~11:00 AM | **T + 0** | All |
-| [E] | 01b-day1-wh-in-session.html | Mid-morning | ~11:30 AM | **T + 0.5 hrs** | All |
-| [S] | WH In Session | Mid-morning | ~11:30 AM | **T + 0.5 hrs** | All |
-| [E] | 02-day1-lunch-break.html | Lunch starts | ~1:00 PM | **T + 2 hrs** | All |
-| [S] | Day 1 Lunch Break | Lunch starts | ~1:00 PM | **T + 2 hrs** | All |
-| [E] | 03-day1-back-from-lunch.html | After lunch | ~2:00 PM | **T + 3 hrs** | All |
-| [S] | Back from Lunch | After lunch | ~2:00 PM | **T + 3 hrs** | All |
-| [E] | 04-day1-wealth-segment.html | Wealth segment | ~3:00 PM | **T + 4 hrs** | All |
-| [S] | Wealth Segment Starting | Wealth segment | ~3:00 PM | **T + 4 hrs** | All |
-| [E] | 05-day1-end.html | Day 1 ends | ~8:00 PM | **T + 9 hrs** | All |
-| [S] | Day 1 Complete | Day 1 ends | ~8:00 PM | **T + 9 hrs** | All |
+| # | Type | Message | Date (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `preparation-14days.html` | Sat Nov 22, 9am | **-14d 2h** | All |
+| 2 | [E] | `preparation-9days.html` | Thu Nov 27, 9am | **-9d 2h** | All |
+| 3 | [E] | `preparation-7days.html` | Sat Nov 29, 9am | **-7d 2h** | All |
+| 4 | [E] | `preparation-5days.html` | Mon Dec 1, 9am | **-5d 2h** | All |
+| 5 | [S] | 5 Days Out | Mon Dec 1, 9am | **-5d 2h** | All |
+| 6 | [E] | `preparation-4days.html` | Tue Dec 2, 9am | **-4d 2h** | All |
+| 7 | [S] | 4 Days Out | Tue Dec 2, 9am | **-4d 2h** | All |
+| 8 | [E] | `preparation-3days.html` | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
+| 9 | [E] | `preparation-3days-vip.html` | Wed Dec 3, 9am | **-3d 2h** | VIP |
+| 10 | [S] | 3 Days (Non-VIP) | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
+| 11 | [S] | 3 Days (VIP) | Wed Dec 3, 9am | **-3d 2h** | VIP |
+| 12 | [E] | `preparation-2days.html` | Thu Dec 4, 9am | **-2d 2h** | All |
+| 13 | [S] | 2 Days (Non-VIP) | Thu Dec 4, 9am | **-2d 2h** | Non-VIP |
+| 14 | [S] | 2 Days (VIP) | Thu Dec 4, 9am | **-2d 2h** | VIP |
+| 15 | [E] | `preparation-1day.html` | Fri Dec 5, 7pm | **-16h** | All |
+| 16 | [S] | 1 Day (Non-VIP) | Fri Dec 5, 7pm | **-16h** | Non-VIP |
+| 17 | [S] | 1 Day (VIP) | Fri Dec 5, 7pm | **-16h** | VIP |
 
 ---
 
-## PHASE 4: DAY 2 COUNTDOWN
+# PHASE 3: DAY 1 COUNTDOWN (Sat Dec 6 Morning)
 
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | day2-countdown-2hr.html | Sun Dec 7, 10:00 AM | **T + 23 hrs** | All |
-| [S] | Day 2 - 2 Hours | Sun Dec 7, 10:00 AM | **T + 23 hrs** | All |
-| [E] | day2-countdown-45min.html | Sun Dec 7, 11:15 AM | **T + 24.25 hrs** | All |
-| [S] | Day 2 - 45 Minutes | Sun Dec 7, 11:15 AM | **T + 24.25 hrs** | All |
-| [E] | day2-countdown-15min.html | Sun Dec 7, 11:45 AM | **T + 24.75 hrs** | All |
-| [S] | Doors Open | Sun Dec 7, 11:45 AM | **T + 24.75 hrs** | All |
-| [E] | day2-countdown-live.html | Sun Dec 7, 12:00 PM | **T + 25 hrs** | All |
-| [S] | Day 2 Is LIVE | Sun Dec 7, 12:00 PM | **T + 25 hrs** | All |
-
----
-
-## PHASE 5: DAY 2 WORKSHOP (Live Triggers)
-
-| Type | Message | Trigger | Approx Time (ET) | Offset | Condition |
-|------|---------|---------|------------------|--------|-----------|
-| [E] | 06-day2-opening.html | Day 2 starts | ~12:00 PM | **T + 25 hrs** | All |
-| [S] | Day 2 Opening | Day 2 starts | ~12:00 PM | **T + 25 hrs** | All |
-| [E] | 07-day2-mh-segment.html | MH takes stage | ~1:00 PM | **T + 26 hrs** | All |
-| [S] | Mark Hamilton on Stage | MH takes stage | ~1:00 PM | **T + 26 hrs** | All |
-| [E] | 08-day2-lunch-break.html | Lunch starts | ~2:00 PM | **T + 27 hrs** | All |
-| [S] | Day 2 Lunch Break | Lunch starts | ~2:00 PM | **T + 27 hrs** | All |
-| [E] | 09-day2-back-from-lunch.html | After lunch | ~3:00 PM | **T + 28 hrs** | All |
-| [S] | Final Session | After lunch | ~3:00 PM | **T + 28 hrs** | All |
-| [E] | 10-day2-integration.html | Integration | ~4:00 PM | **T + 29 hrs** | All |
-| [S] | Integration Segment | Integration | ~4:00 PM | **T + 29 hrs** | All |
-| [E] | 11-day2-end.html | Workshop ends | ~8:00 PM | **T + 33 hrs** | All |
-| [S] | Workshop Complete | Workshop ends | ~8:00 PM | **T + 33 hrs** | All |
-| [E] | 12-level3-segment.html | L3 announced | ~6:00 PM | **T + 31 hrs** | All |
-| [S] | L3 Enrollment Open | L3 announced | ~6:00 PM | **T + 31 hrs** | All |
-| [E] | day2-complete-level3.html | Evening | ~8:00 PM | **T + 33 hrs** | Non-L3 |
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `day1-countdown-2hr.html` | 9:00 AM | **-2h** | All |
+| 2 | [S] | 2 Hours Until Event | 9:00 AM | **-2h** | All |
+| 3 | [E] | `day-of.html` | 10:00 AM | **-1h** | All |
+| 4 | [E] | `day1-countdown-1hr.html` | 10:00 AM | **-1h** | All |
+| 5 | [S] | Zoom Link Delivery | 10:00 AM | **-1h** | All |
+| 6 | [E] | `day1-countdown-30min.html` | 10:30 AM | **-30m** | All |
+| 7 | [S] | Doors Are Open | 10:30 AM | **-30m** | All |
+| 8 | [E] | `day1-countdown-live.html` | 11:00 AM | **T = 0** | All |
+| 9 | [S] | WE'RE LIVE | 11:00 AM | **T = 0** | All |
 
 ---
 
-## PHASE 6: MONDAY MORNING AFTER (T + 46 hrs)
+# PHASE 4: DAY 1 WORKSHOP (Live Triggers)
 
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | 12-morning-after.html | Mon Dec 8, 9:00 AM | **T + 46 hrs** | All (segmented) |
-| [S] | Morning After (L2) | Mon Dec 8, 9:00 AM | **T + 46 hrs** | L2 non-VIP, non-L3 |
-| [S] | Morning After (VIP) | Mon Dec 8, 9:00 AM | **T + 46 hrs** | VIP only |
-| [S] | Morning After (L3) | Mon Dec 8, 9:00 AM | **T + 46 hrs** | L3 only |
-| [E] | level3-followup-morning.html | Mon Dec 8, 9:00 AM | **T + 46 hrs** | Non-L3 |
-| [E] | level3-followup-midday.html | Mon Dec 8, 2:00 PM | **T + 51 hrs** | Non-L3 |
-| [E] | level3-followup-afternoon.html | Mon Dec 8, 7:00 PM | **T + 56 hrs** | Non-L3 |
+**These are MANUAL triggers** sent when specific moments happen live.
 
----
-
-## PHASE 7: VIP SESSION (Monday T + 55 hrs)
-
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | vip-session-reminder.html | Mon Dec 8, 9:00 AM | **T + 46 hrs** | VIP + L3 |
-| [S] | VIP Session Morning | Mon Dec 8, 9:00 AM | **T + 46 hrs** | VIP + L3 |
-| [E] | vip-session-1hour.html | Mon Dec 8, 5:00 PM | **T + 54 hrs** | VIP + L3 |
-| [S] | VIP Session 30 Min | Mon Dec 8, 5:30 PM | **T + 54.5 hrs** | VIP + L3 |
-| [E] | vip-session-live.html | Mon Dec 8, 6:00 PM | **T + 55 hrs** | VIP + L3 |
-| [S] | VIP Session LIVE | Mon Dec 8, 6:00 PM | **T + 55 hrs** | VIP + L3 |
-| [E] | vip-session-recording.html | Tue Dec 9, 10:00 AM | **T + 71 hrs** | VIP + L3 |
+| # | Type | Message | Trigger | ~Time (ET) | Offset | Condition |
+|---|------|---------|---------|------------|--------|-----------|
+| 1 | [E] | `01-day1-opening.html` | WH takes stage | 11:00 AM | +0h | All |
+| 2 | [S] | WH Takes Stage | WH takes stage | 11:00 AM | +0h | All |
+| 3 | [E] | `01b-day1-wh-in-session.html` | Mid-morning | 11:30 AM | +0.5h | All |
+| 4 | [S] | WH In Session | Mid-morning | 11:30 AM | +0.5h | All |
+| 5 | [E] | `01c-day1-wh-live-now.html` | Anytime D1 | Variable | — | All |
+| 6 | [S] | WH Live Now | Anytime D1 | Variable | — | All |
+| 7 | [E] | `02-day1-lunch-break.html` | Lunch starts | 1:00 PM | +2h | All |
+| 8 | [S] | Day 1 Lunch Break | Lunch starts | 1:00 PM | +2h | All |
+| 9 | [E] | `03-day1-back-from-lunch.html` | After lunch | 2:00 PM | +3h | All |
+| 10 | [S] | Back from Lunch | After lunch | 2:00 PM | +3h | All |
+| 11 | [E] | `04-day1-wealth-segment.html` | Wealth segment | 3:00 PM | +4h | All |
+| 12 | [S] | Wealth Segment | Wealth segment | 3:00 PM | +4h | All |
+| 13 | [E] | `05-day1-end.html` | Day 1 ends | 8:00 PM | +9h | All |
+| 14 | [S] | Day 1 Complete | Day 1 ends | 8:00 PM | +9h | All |
 
 ---
 
-## PHASE 8: LEVEL 3 DEADLINE SEQUENCE (Tue-Wed)
+# PHASE 5: DAY 2 COUNTDOWN (Sun Dec 7 Morning)
 
-### Tuesday, December 9
-
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | 01-tuesday-morning.html | Tue Dec 9, 9:00 AM | **T + 70 hrs** | Non-L3 |
-| [S] | L3 - 24 Hours | Tue Dec 9, 9:00 AM | **T + 70 hrs** | Non-L3 |
-| [E] | 02-tuesday-afternoon.html | Tue Dec 9, 2:00 PM | **T + 75 hrs** | Non-L3 |
-| [S] | L3 - What 3 Days Gives | Tue Dec 9, 2:00 PM | **T + 75 hrs** | Non-L3 |
-| [E] | 03-tuesday-evening.html | Tue Dec 9, 8:00 PM | **T + 81 hrs** | Non-L3 |
-| [S] | L3 - Last Night | Tue Dec 9, 8:00 PM | **T + 81 hrs** | Non-L3 |
-
-### Wednesday, December 10
-
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | 04-wednesday-morning.html | Wed Dec 10, 9:00 AM | **T + 94 hrs** | Non-L3 |
-| [S] | L3 - Today Is The Day | Wed Dec 10, 9:00 AM | **T + 94 hrs** | Non-L3 |
-| [E] | 05-wednesday-afternoon.html | Wed Dec 10, 3:00 PM | **T + 100 hrs** | Non-L3 |
-| [S] | L3 - Hours Left | Wed Dec 10, 3:00 PM | **T + 100 hrs** | Non-L3 |
-| [E] | 06-wednesday-final.html | Wed Dec 10, 11:00 PM | **T + 108 hrs** | Non-L3 |
-| [S] | L3 - Final Note | Wed Dec 10, 11:00 PM | **T + 108 hrs** | Non-L3 |
-| **DEADLINE** | **L3 Honor System Expires** | Thu Dec 11, 12:00 AM | **T + 109 hrs** | — |
-
-### Thursday, December 11 (Post-Deadline)
-
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | post-deadline-closed.html | Thu Dec 11, 10:00 AM | **T + 119 hrs** | Non-L3 |
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `day2-countdown-2hr.html` | 10:00 AM | **+23h** | All |
+| 2 | [S] | Day 2 - 2 Hours | 10:00 AM | **+23h** | All |
+| 3 | [E] | `day2-countdown-45min.html` | 11:15 AM | **+24.25h** | All |
+| 4 | [S] | Day 2 - 45 Minutes | 11:15 AM | **+24.25h** | All |
+| 5 | [E] | `day2-countdown-15min.html` | 11:45 AM | **+24.75h** | All |
+| 6 | [S] | Doors Open | 11:45 AM | **+24.75h** | All |
+| 7 | [E] | `day2-countdown-live.html` | 12:00 PM | **+25h** | All |
+| 8 | [S] | Day 2 Is LIVE | 12:00 PM | **+25h** | All |
 
 ---
 
-## PHASE 9: LEVEL 3 WELCOME PARTY (Wed T + 104 hrs)
+# PHASE 6: DAY 2 WORKSHOP (Live Triggers)
 
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | welcome-party-reminder.html | Tue Dec 9, evening | **T + 82 hrs** | L3 only |
-| [E] | welcome-party-today.html | Wed Dec 10, 10:00 AM | **T + 95 hrs** | L3 only |
-| [S] | Welcome Party Morning | Wed Dec 10, 10:00 AM | **T + 95 hrs** | L3 only |
-| [E] | welcome-party-correction.html | Wed Dec 10, 6:00 PM | **T + 103 hrs** | L3 only |
-| [E] | welcome-party-30min.html | Wed Dec 10, 6:30 PM | **T + 103.5 hrs** | L3 only |
-| [S] | Welcome Party 30 Min | Wed Dec 10, 6:30 PM | **T + 103.5 hrs** | L3 only |
-| [E] | welcome-party-live.html | Wed Dec 10, 7:00 PM | **T + 104 hrs** | L3 only |
-| [S] | Welcome Party LIVE | Wed Dec 10, 7:00 PM | **T + 104 hrs** | L3 only |
-
----
-
-## PHASE 10: POST-EVENT VALUE SERIES (Thu-Mon)
-
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | 01-golden-life-sheet.html | Thu Dec 11, 9:00 AM | **T + 118 hrs** | All |
-| [S] | Golden Life Sheet | Thu Dec 11, 9:00 AM | **T + 118 hrs** | All |
-| [E] | 02-wealth-engine-calculator.html | Fri Dec 12, 9:00 AM | **T + 142 hrs** | All |
-| [S] | Wealth Engine Calculator | Fri Dec 12, 9:00 AM | **T + 142 hrs** | All |
-| [E] | 03-fne-workbook.html | Sat Dec 13, 10:00 AM | **T + 167 hrs** | All |
-| [S] | FNE Workbook | Sat Dec 13, 10:00 AM | **T + 167 hrs** | All |
-| [E] | 04-how-it-all-fits-together.html | Mon Dec 15, 9:00 AM | **T + 214 hrs** | All |
+| # | Type | Message | Trigger | ~Time (ET) | Offset | Condition |
+|---|------|---------|---------|------------|--------|-----------|
+| 1 | [E] | `06-day2-opening.html` | D2 starts | 12:00 PM | +25h | All |
+| 2 | [S] | Day 2 Opening | D2 starts | 12:00 PM | +25h | All |
+| 3 | [E] | `07-day2-mh-segment.html` | MH on stage | 1:00 PM | +26h | All |
+| 4 | [S] | Mark Hamilton on Stage | MH on stage | 1:00 PM | +26h | All |
+| 5 | [E] | `08-day2-lunch-break.html` | Lunch starts | 2:00 PM | +27h | All |
+| 6 | [S] | Day 2 Lunch Break | Lunch starts | 2:00 PM | +27h | All |
+| 7 | [E] | `09-day2-back-from-lunch.html` | After lunch | 3:00 PM | +28h | All |
+| 8 | [S] | Final Session | After lunch | 3:00 PM | +28h | All |
+| 9 | [E] | `10-day2-integration.html` | Integration | 4:00 PM | +29h | All |
+| 10 | [S] | Integration Segment | Integration | 4:00 PM | +29h | All |
+| 11 | [E] | `12-level3-segment.html` | L3 announced | 6:00 PM | +31h | All |
+| 12 | [S] | L3 Enrollment Open | L3 announced | 6:00 PM | +31h | All |
+| 13 | [E] | `11-day2-end.html` | Workshop ends | 8:00 PM | +33h | All |
+| 14 | [S] | Workshop Complete | Workshop ends | 8:00 PM | +33h | All |
+| 15 | [E] | `day2-complete-level3.html` | Evening | 8:00 PM | +33h | Non-L3 |
 
 ---
 
-## PHASE 11: AMBASSADOR PROGRAM
+# PHASE 7: MONDAY MORNING AFTER (Mon Dec 8)
 
-| Type | Message | Send Time (ET) | Offset | Condition |
-|------|---------|----------------|--------|-----------|
-| [E] | ambassador-program.html | Sat Dec 13, afternoon | **T + 172 hrs** | All L2 |
-| [S] | Ambassador Program | Sat Dec 13, afternoon | **T + 172 hrs** | All L2 |
+## Morning After + L3 Follow-up Sequence
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `12-morning-after.html` | 9:00 AM | **+46h** | All (segmented) |
+| 2 | [S] | Morning After (L2) | 9:00 AM | **+46h** | L2 non-VIP, non-L3 |
+| 3 | [S] | Morning After (VIP) | 9:00 AM | **+46h** | VIP only |
+| 4 | [S] | Morning After (L3) | 9:00 AM | **+46h** | L3 only |
+| 5 | [E] | `level3-followup-morning.html` | 9:00 AM | **+46h** | Non-L3 |
+| 6 | [S] | L3 Follow-up Morning | 9:00 AM | **+46h** | Non-L3 |
+| 7 | [E] | `level3-followup-midday.html` | 2:00 PM | **+51h** | Non-L3 |
+| 8 | [S] | L3 Follow-up Midday | 2:00 PM | **+51h** | Non-L3 |
+| 9 | [E] | `level3-followup-afternoon.html` | 7:00 PM | **+56h** | Non-L3 |
+| 10 | [S] | L3 Follow-up Afternoon | 7:00 PM | **+56h** | Non-L3 |
+| 11 | [E] | `level3-ascend.html` | After VIP session | 9:00 PM | **+58h** | Non-L3 |
 
 ---
 
-## GHL CONDITIONAL LOGIC SUMMARY
+# PHASE 8: VIP SESSION (Mon Dec 8)
 
-### Audience Segments (Tags/Custom Fields)
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `vip-session-reminder.html` | 9:00 AM | **+46h** | VIP + L3 |
+| 2 | [S] | VIP Session Morning | 9:00 AM | **+46h** | VIP + L3 |
+| 3 | [E] | `vip-session-1hour.html` | 5:00 PM | **+54h** | VIP + L3 |
+| 4 | [S] | VIP Session 30 Min | 5:30 PM | **+54.5h** | VIP + L3 |
+| 5 | [E] | `vip-session-live.html` | 6:00 PM | **+55h** | VIP + L3 |
+| 6 | [S] | VIP Session LIVE | 6:00 PM | **+55h** | VIP + L3 |
 
-| Segment | Definition | Used For |
-|---------|------------|----------|
-| **All** | Everyone registered | Most pre-event, countdown, value series |
-| **VIP** | VIP ticket holder | VIP-specific prep, VIP session access |
-| **Non-VIP** | Has NOT purchased VIP | VIP upgrade prompts |
-| **L3** | Enrolled in Level 3 | L3 confirmation, Welcome Party |
-| **Non-L3** | Has NOT enrolled in L3 | L3 deadline sequence |
-| **VIP + L3** | Either VIP OR L3 | VIP session access |
-| **L2 non-VIP non-L3** | Basic attendee | Standard morning after |
+---
 
-### GHL Workflow Branch Logic
+# PHASE 9: VIP RECORDING (Tue Dec 9)
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `vip-session-recording.html` | 10:00 AM | **+71h** | VIP + L3 |
+| 2 | [S] | VIP Recording Available | 10:00 AM | **+71h** | VIP + L3 |
+
+---
+
+# PHASE 10: L3 DEADLINE SEQUENCE (Tue-Wed Dec 9-10)
+
+**Audience:** Non-L3 only (people who haven't enrolled yet)
+
+## Tuesday, December 9
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `01-tuesday-morning.html` | 9:00 AM | **+70h** | Non-L3 |
+| 2 | [S] | L3 - 24 Hours | 9:00 AM | **+70h** | Non-L3 |
+| 3 | [E] | `02-tuesday-afternoon.html` | 2:00 PM | **+75h** | Non-L3 |
+| 4 | [S] | L3 - What 3 Days Gives | 2:00 PM | **+75h** | Non-L3 |
+| 5 | [E] | `03-tuesday-evening.html` | 8:00 PM | **+81h** | Non-L3 |
+| 6 | [S] | L3 - Last Night | 8:00 PM | **+81h** | Non-L3 |
+
+## Wednesday, December 10
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 7 | [E] | `04-wednesday-morning.html` | 9:00 AM | **+94h** | Non-L3 |
+| 8 | [S] | L3 - Today Is The Day | 9:00 AM | **+94h** | Non-L3 |
+| 9 | [E] | `05-wednesday-afternoon.html` | 3:00 PM | **+100h** | Non-L3 |
+| 10 | [S] | L3 - Hours Left | 3:00 PM | **+100h** | Non-L3 |
+| 11 | [E] | `06-wednesday-final.html` | 11:00 PM | **+108h** | Non-L3 |
+| 12 | [S] | L3 - Final Note | 11:00 PM | **+108h** | Non-L3 |
+
+### ⚠️ DEADLINE: Thursday Dec 11, 12:00 AM ET (+109h)
+
+## Thursday, December 11 (Post-Deadline)
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 13 | [E] | `post-deadline-closed.html` | 10:00 AM | **+119h** | Non-L3 |
+
+---
+
+# PHASE 11: WELCOME PARTY (Wed Dec 10)
+
+**Audience:** L3 members only
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `welcome-party-reminder.html` | Tue evening | **+82h** | L3 only |
+| 2 | [E] | `welcome-party-today.html` | 10:00 AM | **+95h** | L3 only |
+| 3 | [S] | Welcome Party Morning | 10:00 AM | **+95h** | L3 only |
+| 4 | [E] | `welcome-party-correction.html` | 6:00 PM | **+103h** | L3 only ⚠️ |
+| 5 | [E] | `welcome-party-30min.html` | 6:30 PM | **+103.5h** | L3 only |
+| 6 | [S] | Welcome Party 30 Min | 6:30 PM | **+103.5h** | L3 only |
+| 7 | [E] | `welcome-party-live.html` | 7:00 PM | **+104h** | L3 only |
+| 8 | [S] | Welcome Party LIVE | 7:00 PM | **+104h** | L3 only |
+
+⚠️ **Note:** `welcome-party-correction.html` is situational (created for a specific time correction). May not be needed for future events.
+
+---
+
+# PHASE 12: POST-EVENT VALUE SERIES (Thu-Mon Dec 11-15)
+
+**Audience:** All attendees
+
+| # | Type | Message | Date/Time (ET) | Offset | Condition |
+|---|------|---------|----------------|--------|-----------|
+| 1 | [E] | `workshop-recap-celebration.html` | Thu Dec 11, 10:00 AM | **+119h** | All |
+| 2 | [S] | Workshop Recap | Thu Dec 11, 10:00 AM | **+119h** | All |
+| 3 | [E] | `01-golden-life-sheet.html` | Thu Dec 11, 9:00 AM | **+118h** | All |
+| 4 | [S] | Golden Life Sheet | Thu Dec 11, 9:00 AM | **+118h** | All |
+| 5 | [E] | `02-wealth-engine-calculator.html` | Fri Dec 12, 9:00 AM | **+142h** | All |
+| 6 | [S] | Wealth Engine Calculator | Fri Dec 12, 9:00 AM | **+142h** | All |
+| 7 | [E] | `03-fne-workbook.html` | Sat Dec 13, 10:00 AM | **+167h** | All |
+| 8 | [S] | FNE Workbook | Sat Dec 13, 10:00 AM | **+167h** | All |
+| 9 | [E] | `04-how-it-all-fits-together.html` | Mon Dec 15, 9:00 AM | **+214h** | All |
+| 10 | [S] | Framework Synthesis | Mon Dec 15, 9:00 AM | **+214h** | All |
+
+**⚠️ Thursday Note:** Two emails go out close together:
+- 9:00 AM: Golden Life Sheet (value series)
+- 10:00 AM: Workshop Recap (celebration)
+
+Consider combining or spacing these differently.
+
+---
+
+# PHASE 13: AMBASSADOR PROGRAM (Sat Dec 13)
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `ambassador-program.html` | 2:00 PM | **+171h** | All L2 |
+| 2 | [S] | Ambassador Program | 2:00 PM | **+171h** | All L2 |
+
+---
+
+# GHL CONDITIONAL LOGIC
+
+## Audience Segments (Tags)
+
+| Tag | Definition | Receives |
+|-----|------------|----------|
+| `registered` | Completed registration | Pre-event, countdown, workshop |
+| `vip` | VIP ticket holder | VIP prep, VIP session, VIP recording |
+| `level-3` | Enrolled in Level 3 | L3 confirm, Welcome Party, VIP session |
+
+## Branch Logic
 
 ```
-IF contact.tag CONTAINS "vip"
-  → Send VIP version
-ELSE
-  → Send Non-VIP version
-
-IF contact.tag CONTAINS "level-3"
-  → Skip L3 deadline sequence
-  → Send Welcome Party sequence
-ELSE
-  → Send L3 deadline sequence
-  → Skip Welcome Party sequence
-
-IF contact.tag CONTAINS "vip" OR contact.tag CONTAINS "level-3"
-  → Send VIP Session reminders
+┌─────────────────────────────────────────────────────────┐
+│ ON REGISTRATION                                          │
+│ ├─ Add tag: registered                                   │
+│ ├─ Send: registration-confirmation [E+S]                 │
+│ └─ Start: Pre-Event Sequence                             │
+├─────────────────────────────────────────────────────────┤
+│ ON VIP PURCHASE                                          │
+│ ├─ Add tag: vip                                          │
+│ ├─ Send: vip-confirmation [E+S]                          │
+│ └─ Send: vip-zoom-background [E+S]                       │
+├─────────────────────────────────────────────────────────┤
+│ ON L3 PURCHASE                                           │
+│ ├─ Add tag: level-3                                      │
+│ ├─ Send: level3-confirmation [E+S]                       │
+│ ├─ REMOVE from: L3 Deadline Sequence                     │
+│ ├─ ADD to: Welcome Party Sequence                        │
+│ └─ ADD to: VIP Session Sequence (L3 gets VIP access)     │
+├─────────────────────────────────────────────────────────┤
+│ AT EACH MESSAGE STEP                                     │
+│                                                          │
+│ Pre-Event 3-day, 2-day, 1-day:                          │
+│   IF tag = vip → Send VIP version                       │
+│   ELSE → Send Non-VIP version                           │
+│                                                          │
+│ Monday Follow-up:                                        │
+│   IF tag = level-3 → Skip L3 follow-up                  │
+│   ELSE → Send L3 follow-up sequence                     │
+│                                                          │
+│ VIP Session:                                             │
+│   IF tag = vip OR tag = level-3 → Send                  │
+│   ELSE → Skip                                           │
+│                                                          │
+│ Welcome Party:                                           │
+│   IF tag = level-3 → Send                               │
+│   ELSE → Skip                                           │
+│                                                          │
+│ L3 Deadline:                                             │
+│   IF tag = level-3 → Skip                               │
+│   ELSE → Send                                           │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## GHL CUSTOM VALUES REQUIRED
+# GHL CUSTOM VALUES
 
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `{{trigger_link.bw3pFLlMkAQiQOlYB674}}` | Main workshop Zoom link | Direct URL |
-| `{{custom_values.doe_zoom_id}}` | Main workshop Meeting ID | 890 3406 5077 |
-| `{{custom_values.doe_zoom_passcode}}` | Main workshop Passcode | [passcode] |
-| `{{custom_values.doe_day_1_return_time}}` | Day 1 lunch return | "2:00 PM Eastern..." |
-| `{{custom_values.doe_day_2_return_time}}` | Day 2 lunch return | "2:00 PM Eastern..." |
-| `{{VIP_SESSION_ZOOM_LINK}}` | VIP session Zoom link | Direct URL |
-| `{{VIP_MEETING_ID}}` | VIP session Meeting ID | [ID] |
-| `{{VIP_PASSCODE}}` | VIP session Passcode | [passcode] |
-
----
-
-## TOTAL MESSAGE COUNT
-
-| Category | Emails | SMS |
-|----------|--------|-----|
-| Pre-Event (Trigger) | 4 | 3 |
-| Pre-Event (Scheduled) | 9 | 10 |
-| Day 1 Countdown | 5 | 5 |
-| Day 1 Workshop | 7 | 7 |
-| Day 2 Countdown | 4 | 4 |
-| Day 2 Workshop | 8 | 8 |
-| Monday Morning | 4 | 3 |
-| VIP Session | 4 | 3 |
-| L3 Deadline | 7 | 6 |
-| Welcome Party | 5 | 3 |
-| Value Series | 4 | 3 |
-| Ambassador | 1 | 1 |
-| **TOTAL** | **~62** | **~56** |
+| Variable | Description | Where Used |
+|----------|-------------|------------|
+| `{{trigger_link.bw3pFLlMkAQiQOlYB674}}` | Main workshop Zoom link | All workshop messages |
+| `{{custom_values.doe_zoom_id}}` | Workshop Meeting ID | Workshop countdown |
+| `{{custom_values.doe_zoom_passcode}}` | Workshop Passcode | Workshop countdown |
+| `{{custom_values.doe_day_1_return_time}}` | Day 1 lunch return | Day 1 lunch break |
+| `{{custom_values.doe_day_2_return_time}}` | Day 2 lunch return | Day 2 lunch break |
+| `{{custom_values.vip_session_zoom}}` | VIP Session Zoom link | VIP session messages |
+| `{{custom_values.vip_session_id}}` | VIP Session Meeting ID | VIP session messages |
+| `{{custom_values.vip_session_passcode}}` | VIP Session Passcode | VIP session messages |
+| `{{custom_values.welcome_party_zoom}}` | Welcome Party Zoom link | Welcome Party messages |
+| `{{custom_values.welcome_party_id}}` | Welcome Party Meeting ID | Welcome Party messages |
 
 ---
 
-## WORKFLOW STRUCTURE RECOMMENDATION
+# TOTAL MESSAGE COUNT
 
-### Option A: Single Automation with Date Math
-- Use event start date as anchor
-- Calculate all sends based on hours before/after
-- Pros: Single workflow to manage
-- Cons: Complex, harder to debug
-
-### Option B: Multiple Workflows by Phase
-1. **Registration Workflow** (trigger-based)
-2. **Pre-Event Countdown** (date-based, T-14 days to T-1 day)
-3. **Day 1 Countdown** (date-based, T-3 hours to T=0)
-4. **Day 1 Live Triggers** (manual/webhook triggers)
-5. **Day 2 Countdown** (date-based)
-6. **Day 2 Live Triggers** (manual/webhook triggers)
-7. **Post-Event Monday** (date-based)
-8. **VIP Session** (date-based, VIP + L3 only)
-9. **L3 Deadline** (date-based, Non-L3 only)
-10. **Welcome Party** (date-based, L3 only)
-11. **Value Series** (date-based, All)
-
-### Option C: Hybrid
-- Single automation for scheduled messages (using date math)
-- Separate workflows for live triggers (manual/webhook)
-- Best balance of maintainability and flexibility
+| Phase | Emails | SMS | Total |
+|-------|--------|-----|-------|
+| Trigger-Based | 5 | 4 | 9 |
+| Pre-Event (14d → 1d) | 9 | 10 | 19 |
+| Day 1 Countdown | 5 | 5 | 10 |
+| Day 1 Workshop | 8 | 8 | 16 |
+| Day 2 Countdown | 4 | 4 | 8 |
+| Day 2 Workshop | 9 | 8 | 17 |
+| Monday Morning | 5 | 6 | 11 |
+| VIP Session | 4 | 4 | 8 |
+| VIP Recording | 1 | 1 | 2 |
+| L3 Deadline | 7 | 6 | 13 |
+| Welcome Party | 5 | 3 | 8 |
+| Value Series | 5 | 5 | 10 |
+| Ambassador | 1 | 1 | 2 |
+| **TOTAL** | **68** | **65** | **133** |
 
 ---
 
-**Version:** 1.0
+# WORKFLOW RECOMMENDATIONS
+
+## Option A: Single Master Automation
+- Use event start date as anchor variable
+- Calculate all sends as offset from anchor
+- **Pros:** Single workflow, easy to duplicate for future events
+- **Cons:** Complex, hard to debug
+
+## Option B: Phase-Based Workflows (Recommended)
+1. **Registration** — Trigger: On signup
+2. **VIP Purchase** — Trigger: On VIP payment
+3. **L3 Purchase** — Trigger: On L3 payment
+4. **Pre-Event Countdown** — Scheduled: T-14d to T-1d
+5. **Day 1** — Scheduled + Manual triggers
+6. **Day 2** — Scheduled + Manual triggers
+7. **Post-Workshop Monday** — Scheduled: T+46h to T+58h
+8. **VIP Session** — Scheduled: T+46h to T+71h (VIP+L3 only)
+9. **L3 Deadline** — Scheduled: T+70h to T+119h (Non-L3 only)
+10. **Welcome Party** — Scheduled: T+82h to T+104h (L3 only)
+11. **Value Series** — Scheduled: T+118h to T+214h
+
+## Critical Notes
+
+1. **L3 Purchase must remove from deadline sequence** — This is the most critical automation logic
+2. **Live triggers require manual webhook** — Day 1 and Day 2 workshop messages need someone to trigger them
+3. **Thursday overlap** — Consider spacing Golden Life Sheet (9am) and Workshop Recap (10am) differently
+4. **Correction email optional** — `welcome-party-correction.html` was for a specific situation
+
+---
+
+# APPENDIX: CHRONOLOGICAL VIEW
+
+## Full Timeline (All Messages in Order)
+
+| Offset | Date/Time (ET) | Email | SMS | Audience |
+|--------|----------------|-------|-----|----------|
+| -14d 2h | Nov 22, 9am | preparation-14days | — | All |
+| -9d 2h | Nov 27, 9am | preparation-9days | — | All |
+| -7d 2h | Nov 29, 9am | preparation-7days | — | All |
+| -5d 2h | Dec 1, 9am | preparation-5days | 5 Days | All |
+| -4d 2h | Dec 2, 9am | preparation-4days | 4 Days | All |
+| -3d 2h | Dec 3, 9am | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
+| -2d 2h | Dec 4, 9am | preparation-2days | 2 Days | VIP/Non-VIP |
+| -16h | Dec 5, 7pm | preparation-1day | 1 Day | VIP/Non-VIP |
+| -2h | Dec 6, 9am | day1-countdown-2hr | 2 Hours | All |
+| -1h | Dec 6, 10am | day-of + day1-countdown-1hr | Zoom Link | All |
+| -30m | Dec 6, 10:30am | day1-countdown-30min | Doors Open | All |
+| **T=0** | **Dec 6, 11am** | **day1-countdown-live** | **LIVE** | **All** |
+| +0h | Dec 6, 11am | 01-day1-opening | WH Stage | All |
+| +2h | Dec 6, 1pm | 02-day1-lunch | Lunch | All |
+| +3h | Dec 6, 2pm | 03-day1-back | Back | All |
+| +4h | Dec 6, 3pm | 04-day1-wealth | Wealth | All |
+| +9h | Dec 6, 8pm | 05-day1-end | D1 Complete | All |
+| +23h | Dec 7, 10am | day2-countdown-2hr | 2 Hours | All |
+| +24.25h | Dec 7, 11:15am | day2-countdown-45min | 45 Min | All |
+| +24.75h | Dec 7, 11:45am | day2-countdown-15min | Doors | All |
+| +25h | Dec 7, 12pm | day2-countdown-live | D2 LIVE | All |
+| +26h | Dec 7, 1pm | 07-day2-mh | MH Stage | All |
+| +27h | Dec 7, 2pm | 08-day2-lunch | Lunch | All |
+| +28h | Dec 7, 3pm | 09-day2-back | Final | All |
+| +29h | Dec 7, 4pm | 10-day2-integration | Integration | All |
+| +31h | Dec 7, 6pm | 12-level3-segment | L3 Open | All |
+| +33h | Dec 7, 8pm | 11-day2-end | Complete | All |
+| +46h | Dec 8, 9am | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
+| +51h | Dec 8, 2pm | l3-followup-midday | Midday | Non-L3 |
+| +54h | Dec 8, 5pm | vip-session-1hour | 1 Hour | VIP+L3 |
+| +54.5h | Dec 8, 5:30pm | — | VIP 30m | VIP+L3 |
+| +55h | Dec 8, 6pm | vip-session-live | VIP LIVE | VIP+L3 |
+| +56h | Dec 8, 7pm | l3-followup-afternoon | Afternoon | Non-L3 |
+| +58h | Dec 8, 9pm | level3-ascend | — | Non-L3 |
+| +70h | Dec 9, 9am | 01-tuesday-morning | L3 24hrs | Non-L3 |
+| +71h | Dec 9, 10am | vip-session-recording | VIP Rec | VIP+L3 |
+| +75h | Dec 9, 2pm | 02-tuesday-afternoon | L3 3days | Non-L3 |
+| +81h | Dec 9, 8pm | 03-tuesday-evening | L3 Tonight | Non-L3 |
+| +82h | Dec 9, eve | welcome-party-reminder | — | L3 |
+| +94h | Dec 10, 9am | 04-wednesday-morning | L3 Today | Non-L3 |
+| +95h | Dec 10, 10am | welcome-party-today | WP Today | L3 |
+| +100h | Dec 10, 3pm | 05-wednesday-afternoon | L3 Hours | Non-L3 |
+| +103h | Dec 10, 6pm | welcome-party-correction | — | L3 ⚠️ |
+| +103.5h | Dec 10, 6:30pm | welcome-party-30min | WP 30m | L3 |
+| +104h | Dec 10, 7pm | welcome-party-live | WP LIVE | L3 |
+| +108h | Dec 10, 11pm | 06-wednesday-final | L3 Final | Non-L3 |
+| **+109h** | **Dec 11, 12am** | **— DEADLINE —** | **—** | **—** |
+| +118h | Dec 11, 9am | 01-golden-life-sheet | GLS | All |
+| +119h | Dec 11, 10am | workshop-recap + post-deadline | Recap | All / Non-L3 |
+| +142h | Dec 12, 9am | 02-wealth-engine | Wealth | All |
+| +167h | Dec 13, 10am | 03-fne-workbook | FNE | All |
+| +171h | Dec 13, 2pm | ambassador-program | Ambassador | All L2 |
+| +214h | Dec 15, 9am | 04-how-it-all-fits | Synthesis | All |
+
+---
+
+**Version:** 2.0
 **Created:** December 10, 2025
-**Reference:** Event Start = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
+**Last Updated:** December 10, 2025
+**Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET

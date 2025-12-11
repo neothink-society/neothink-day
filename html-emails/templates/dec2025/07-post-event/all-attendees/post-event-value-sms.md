@@ -1,5 +1,5 @@
 # Post-Event Value SMS Sequence
-## December 11-13, 2025
+## December 11-15, 2025
 
 **AUDIENCE:** ALL attendees (Level 2, VIP, Level 3)
 
@@ -7,6 +7,7 @@
 - Golden Life Sheet: neothinkevent.com/your-golden-life
 - Wealth Engine Calculator: neothinkevent.com/wealth-engine-calculator
 - FNE Workbook: [Direct PDF link in email]
+- Workshop Hub: neothinkevent.com/home
 
 ---
 
@@ -55,12 +56,30 @@ Check your email for the download link.
 
 ---
 
+### SMS 4: Monday Morning — How It All Fits Together
+**Send Time:** Monday 9am Eastern (6am Pacific)
+
+```
+One final piece: How it all fits together.
+
+Your Golden Life Sheet, Wealth Engine, and Friday-Night Essence aren't separate tools — they're one integrated system.
+
+Check your email for the complete framework.
+
+Your transformation is just beginning.
+
+-> neothinkevent.com/home
+```
+
+---
+
 ## Notes for Implementation
 
 **Character Counts:**
 - SMS 1: ~185 chars (may split into 2 segments)
 - SMS 2: ~215 chars (may split into 2 segments)
 - SMS 3: ~195 chars (may split into 2 segments)
+- SMS 4: ~230 chars (may split into 2 segments)
 
 **Link Tracking:**
 - Replace links with tracked short links if using GoHighLevel SMS tracking
