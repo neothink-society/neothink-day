@@ -397,12 +397,13 @@ These fire based on actions, not scheduled times.
 | Day 1 Workshop | 8 | 8 | 16 |
 | Day 2 Countdown | 4 | 4 | 8 |
 | Day 2 Workshop | 9 | 8 | 17 |
+| Sunday Night Anchor | 1 | 1 | 2 |
 | Monday Morning | 5 | 6 | 11 |
 | VIP Session | 4 | 4 | 8 |
 | VIP Recording | 1 | 1 | 2 |
 | L3 Deadline | 7 | 6 | 13 |
 | Welcome Party | 5 | 3 | 8 |
-| Value Series | 5 | 5 | 10 |
+| Value Series (Compressed) | 4 | 4 | 8 |
 | Ambassador | 1 | 1 | 2 |
 | **TOTAL** | **72** | **67** | **139** |
 
@@ -427,7 +428,7 @@ These fire based on actions, not scheduled times.
 8. **VIP Session** — Scheduled: T+46h to T+71h (VIP+L3 only)
 9. **L3 Deadline** — Scheduled: T+70h to T+119h (Non-L3 only)
 10. **Welcome Party** — Scheduled: T+82h to T+104h (L3 only)
-11. **Value Series** — Scheduled: T+118h to T+214h
+11. **Value Series** — Scheduled: T+118h to T+148h (ends Fri Dec 12)
 
 ## Critical Notes
 
@@ -451,66 +452,68 @@ These fire based on actions, not scheduled times.
 | -10d 2h | Wed Nov 26, 9am | preparation-10days | — | All |
 | -9d 2h | Thu Nov 27, 9am | preparation-9days | — | All |
 | -7d 2h | Sat Nov 29, 9am | preparation-7days | 7 Days | All |
-| -5d 2h | Dec 1, 9am | preparation-5days | 5 Days | All |
-| -4d 2h | Dec 2, 9am | preparation-4days | 4 Days | All |
-| -3d 2h | Dec 3, 9am | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
-| -2d 2h | Dec 4, 9am | preparation-2days | 2 Days | VIP/Non-VIP |
-| -16h | Dec 5, 7pm | preparation-1day | 1 Day | VIP/Non-VIP |
-| -2h | Dec 6, 9am | day1-countdown-2hr | 2 Hours | All |
-| -1h | Dec 6, 10am | day-of + day1-countdown-1hr | Zoom Link | All |
-| -30m | Dec 6, 10:30am | day1-countdown-30min | Doors Open | All |
-| **T=0** | **Dec 6, 11am** | **day1-countdown-live** | **LIVE** | **All** |
-| +0h | Dec 6, 11am | 01-day1-opening | WH Stage | All |
-| +2h | Dec 6, 1pm | 02-day1-lunch | Lunch | All |
-| +3h | Dec 6, 2pm | 03-day1-back | Back | All |
-| +4h | Dec 6, 3pm | 04-day1-wealth | Wealth | All |
-| +9h | Dec 6, 8pm | 05-day1-end | D1 Complete | All |
-| +23h | Dec 7, 10am | day2-countdown-2hr | 2 Hours | All |
-| +24.25h | Dec 7, 11:15am | day2-countdown-45min | 45 Min | All |
-| +24.75h | Dec 7, 11:45am | day2-countdown-15min | Doors | All |
-| +25h | Dec 7, 12pm | day2-countdown-live | D2 LIVE | All |
-| +26h | Dec 7, 1pm | 07-day2-mh | MH Stage | All |
-| +27h | Dec 7, 2pm | 08-day2-lunch | Lunch | All |
-| +28h | Dec 7, 3pm | 09-day2-back | Final | All |
-| +29h | Dec 7, 4pm | 10-day2-integration | Integration | All |
-| +31h | Dec 7, 6pm | 12-level3-segment | L3 Open | All |
-| +33h | Dec 7, 8pm | 11-day2-end | Complete | All |
-| +46h | Dec 8, 9am | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
-| +51h | Dec 8, 2pm | l3-followup-midday | Midday | Non-L3 |
-| +54h | Dec 8, 5pm | vip-session-1hour | 1 Hour | VIP+L3 |
-| +54.5h | Dec 8, 5:30pm | — | VIP 30m | VIP+L3 |
-| +55h | Dec 8, 6pm | vip-session-live | VIP LIVE | VIP+L3 |
-| +56h | Dec 8, 7pm | l3-followup-afternoon | Afternoon | Non-L3 |
-| +58h | Dec 8, 9pm | level3-ascend | — | Non-L3 |
-| +70h | Dec 9, 9am | 01-tuesday-morning | L3 24hrs | Non-L3 |
-| +71h | Dec 9, 10am | vip-session-recording | VIP Rec | VIP+L3 |
-| +75h | Dec 9, 2pm | 02-tuesday-afternoon | L3 3days | Non-L3 |
-| +81h | Dec 9, 8pm | 03-tuesday-evening | L3 Tonight | Non-L3 |
-| +82h | Dec 9, eve | welcome-party-reminder | — | L3 |
-| +94h | Dec 10, 9am | 04-wednesday-morning | L3 Today | Non-L3 |
-| +95h | Dec 10, 10am | welcome-party-today | WP Today | L3 |
-| +100h | Dec 10, 3pm | 05-wednesday-afternoon | L3 Hours | Non-L3 |
-| +103h | Dec 10, 6pm | welcome-party-correction | — | L3 ⚠️ |
-| +103.5h | Dec 10, 6:30pm | welcome-party-30min | WP 30m | L3 |
-| +104h | Dec 10, 7pm | welcome-party-live | WP LIVE | L3 |
-| +108h | Dec 10, 11pm | 06-wednesday-final | L3 Final | Non-L3 |
-| **+109h** | **Dec 11, 12am** | **— DEADLINE —** | **—** | **—** |
-| +118h | Dec 11, 9am | 01-golden-life-sheet | GLS | All |
-| +119h | Dec 11, 10am | workshop-recap + post-deadline | Recap | All / Non-L3 |
-| +142h | Dec 12, 9am | 02-wealth-engine | Wealth | All |
-| +167h | Dec 13, 10am | 03-fne-workbook | FNE | All |
-| +171h | Dec 13, 2pm | ambassador-program | Ambassador | All L2 |
-| +214h | Dec 15, 9am | 04-how-it-all-fits | Synthesis | All |
+| -5d 2h | Mon Dec 1, 9am | preparation-5days | 5 Days | All |
+| -4d 2h | Tue Dec 2, 9am | preparation-4days | 4 Days | All |
+| -3d 2h | Wed Dec 3, 9am | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
+| -2d 2h | Thu Dec 4, 9am | preparation-2days | 2 Days | VIP/Non-VIP |
+| -16h | Fri Dec 5, 7pm | preparation-1day | 1 Day | VIP/Non-VIP |
+| -2h | Sat Dec 6, 9am | day1-countdown-2hr | 2 Hours | All |
+| -1h | Sat Dec 6, 10am | day-of + day1-countdown-1hr | Zoom Link | All |
+| -30m | Sat Dec 6, 10:30am | day1-countdown-30min | Doors Open | All |
+| **T=0** | **Sat Dec 6, 11am** | **day1-countdown-live** | **LIVE** | **All** |
+| +0h | Sat Dec 6, 11am | 01-day1-opening | WH Stage | All |
+| +2h | Sat Dec 6, 1pm | 02-day1-lunch | Lunch | All |
+| +3h | Sat Dec 6, 2pm | 03-day1-back | Back | All |
+| +4h | Sat Dec 6, 3pm | 04-day1-wealth | Wealth | All |
+| +9h | Sat Dec 6, 8pm | 05-day1-end | D1 Complete | All |
+| +23h | Sun Dec 7, 10am | day2-countdown-2hr | 2 Hours | All |
+| +24.25h | Sun Dec 7, 11:15am | day2-countdown-45min | 45 Min | All |
+| +24.75h | Sun Dec 7, 11:45am | day2-countdown-15min | Doors | All |
+| +25h | Sun Dec 7, 12pm | day2-countdown-live | D2 LIVE | All |
+| +26h | Sun Dec 7, 1pm | 07-day2-mh | MH Stage | All |
+| +27h | Sun Dec 7, 2pm | 08-day2-lunch | Lunch | All |
+| +28h | Sun Dec 7, 3pm | 09-day2-back | Final | All |
+| +29h | Sun Dec 7, 4pm | 10-day2-integration | Integration | All |
+| +31h | Sun Dec 7, 6pm | 12-level3-segment | L3 Open | All |
+| +33h | Sun Dec 7, 8pm | 11-day2-end | Complete | All |
+| **+35h** | **Sun Dec 7, 10pm** | **sunday-night-anchor** | **Anchor** | **All** |
+| +46h | Mon Dec 8, 9am | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
+| +51h | Mon Dec 8, 2pm | l3-followup-midday | Midday | Non-L3 |
+| +54h | Mon Dec 8, 5pm | vip-session-1hour | 1 Hour | VIP+L3 |
+| +54.5h | Mon Dec 8, 5:30pm | — | VIP 30m | VIP+L3 |
+| +55h | Mon Dec 8, 6pm | vip-session-live | VIP LIVE | VIP+L3 |
+| +56h | Mon Dec 8, 7pm | l3-followup-afternoon | Afternoon | Non-L3 |
+| +58h | Mon Dec 8, 9pm | level3-ascend | — | Non-L3 |
+| +70h | Tue Dec 9, 9am | 01-tuesday-morning | L3 24hrs | Non-L3 |
+| +71h | Tue Dec 9, 10am | vip-session-recording | VIP Rec | VIP+L3 |
+| +75h | Tue Dec 9, 2pm | 02-tuesday-afternoon | L3 3days | Non-L3 |
+| +81h | Tue Dec 9, 8pm | 03-tuesday-evening | L3 Tonight | Non-L3 |
+| +82h | Tue Dec 9, eve | welcome-party-reminder | — | L3 |
+| +94h | Wed Dec 10, 9am | 04-wednesday-morning | L3 Today | Non-L3 |
+| +95h | Wed Dec 10, 10am | welcome-party-today | WP Today | L3 |
+| +100h | Wed Dec 10, 3pm | 05-wednesday-afternoon | L3 Hours | Non-L3 |
+| +103h | Wed Dec 10, 6pm | welcome-party-correction | — | L3 ⚠️ |
+| +103.5h | Wed Dec 10, 6:30pm | welcome-party-30min | WP 30m | L3 |
+| +104h | Wed Dec 10, 7pm | welcome-party-live | WP LIVE | L3 |
+| +108h | Wed Dec 10, 11pm | 06-wednesday-final | L3 Final | Non-L3 |
+| **+109h** | **Thu Dec 11, 12am** | **— L3 DEADLINE —** | **—** | **—** |
+| +118h | Thu Dec 11, 9am | 01-golden-life-sheet | GLS | All |
+| +119h | Thu Dec 11, 10am | post-deadline-closed | — | Non-L3 |
+| +124h | Thu Dec 11, 3pm | 03-fne-workbook | FNE | All |
+| +142h | Fri Dec 12, 9am | 02-wealth-engine-calculator | Wealth | All |
+| +148h | Fri Dec 12, 3pm | 04-how-it-all-fits-together | Synthesis | All |
+| +171h | Sat Dec 13, 2pm | ambassador-program | Ambassador | All L2 |
 
 ---
 
-**Version:** 3.0
+**Version:** 3.1
 **Created:** December 10, 2025
 **Last Updated:** December 11, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v3.1** (Dec 11): Added Sunday Night Anchor (+35h), compressed value series to end Fri Dec 12, updated chronological appendix
 - **v3.0** (Dec 11): Extended pre-event sequence from 14 days to 30 days
 - **v2.0** (Dec 10): Added missing messages, comprehensive audit
 - **v1.0** (Dec 10): Initial timeline creation
