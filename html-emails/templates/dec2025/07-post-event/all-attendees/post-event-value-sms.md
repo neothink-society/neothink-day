@@ -1,7 +1,9 @@
 # Post-Event Value SMS Sequence
-## December 11-15, 2025
+## December 11-12, 2025 (Compressed Timeline)
 
 **AUDIENCE:** ALL attendees (Level 2, VIP, Level 3)
+
+**TIMELINE:** Compressed to end Friday Dec 12 (before weekend)
 
 **LINKS:**
 - Golden Life Sheet: neothinkevent.com/your-golden-life
@@ -12,7 +14,8 @@
 ---
 
 ### SMS 1: Thursday Morning — Golden Life Sheet
-**Send Time:** Thursday 9am Eastern (6am Pacific)
+**Send Time:** Thursday Dec 11, 9:00 AM Eastern (6:00 AM Pacific)
+**Offset:** +118h from T=0
 
 ```
 Your Golden Life Sheet is ready.
@@ -26,8 +29,25 @@ Fill it out today. Revisit it each morning.
 
 ---
 
-### SMS 2: Friday Morning — Wealth Engine Calculator
-**Send Time:** Friday 9am Eastern (6am Pacific)
+### SMS 2: Thursday Afternoon — FNE Workbook
+**Send Time:** Thursday Dec 11, 3:00 PM Eastern (12:00 PM Pacific)
+**Offset:** +124h from T=0
+
+```
+Your Friday-Night Essence Workbook is ready.
+
+The one activity you'd do even if you weren't getting paid — that's the seed of your life's work.
+
+Set aside 30-60 minutes this week.
+
+Check your email for the download link.
+```
+
+---
+
+### SMS 3: Friday Morning — Wealth Engine Calculator
+**Send Time:** Friday Dec 12, 9:00 AM Eastern (6:00 AM Pacific)
+**Offset:** +142h from T=0
 
 ```
 Calculate your path to financial freedom.
@@ -41,32 +61,18 @@ The Wealth Engine Calculator shows you exactly how much you need — and how qui
 
 ---
 
-### SMS 3: Saturday Morning — FNE Workbook
-**Send Time:** Saturday 10am Eastern (7am Pacific)
+### SMS 4: Friday Afternoon — How It All Fits Together (Closure)
+**Send Time:** Friday Dec 12, 3:00 PM Eastern (12:00 PM Pacific)
+**Offset:** +148h from T=0
 
 ```
-Final resource: Your Friday-Night Essence Workbook.
-
-The one activity you'd do even if you weren't getting paid — that's the seed of your life's work.
-
-Set aside 30-60 minutes this weekend.
-
-Check your email for the download link.
-```
-
----
-
-### SMS 4: Monday Morning — How It All Fits Together
-**Send Time:** Monday 9am Eastern (6am Pacific)
-
-```
-One final piece: How it all fits together.
+Final piece: How it all fits together.
 
 Your Golden Life Sheet, Wealth Engine, and Friday-Night Essence aren't separate tools — they're one integrated system.
 
 Check your email for the complete framework.
 
-Your transformation is just beginning.
+Your golden life has begun.
 
 -> neothinkevent.com/home
 ```
@@ -77,9 +83,9 @@ Your transformation is just beginning.
 
 **Character Counts:**
 - SMS 1: ~185 chars (may split into 2 segments)
-- SMS 2: ~215 chars (may split into 2 segments)
-- SMS 3: ~195 chars (may split into 2 segments)
-- SMS 4: ~230 chars (may split into 2 segments)
+- SMS 2: ~180 chars (may split into 2 segments)
+- SMS 3: ~215 chars (may split into 2 segments)
+- SMS 4: ~215 chars (may split into 2 segments)
 
 **Link Tracking:**
 - Replace links with tracked short links if using GoHighLevel SMS tracking
@@ -92,3 +98,9 @@ Your transformation is just beginning.
 - Honoring and celebratory, not pushy
 - Focused on providing value they already earned
 - No urgency or pressure language
+
+**Compressed Timeline Rationale:**
+- Delivers all value resources before the weekend
+- Allows attendees to have tools in hand for weekend reflection
+- Closes the value loop on Friday, avoiding Monday overlap with other sequences
+- Aligns with Level 3 Welcome Party (Wed) and deadline (Wed midnight) timing

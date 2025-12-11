@@ -170,6 +170,19 @@ These fire based on actions, not scheduled times.
 
 ---
 
+# PHASE 6B: SUNDAY NIGHT ANCHOR (Sun Dec 7)
+
+**Purpose:** Bridge the fragile post-event moment. Attendees are processing, vulnerable to doubt.
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `sunday-night-anchor.html` | 10:00 PM | **+35h** | All |
+| 2 | [S] | Sunday Night Anchor | 10:00 PM | **+35h** | All |
+
+**Note:** This is a pure reinforcement message, not promotional. Addresses the "Silent Sunday Night" gap identified in journey analysis.
+
+---
+
 # PHASE 7: MONDAY MORNING AFTER (Mon Dec 8)
 
 ## Morning After + L3 Follow-up Sequence
@@ -267,28 +280,27 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 12: POST-EVENT VALUE SERIES (Thu-Mon Dec 11-15)
+# PHASE 12: POST-EVENT VALUE SERIES (Thu-Fri Dec 11-12)
 
 **Audience:** All attendees
+**Compressed Timeline:** Ends Friday Dec 12 as requested
 
 | # | Type | Message | Date/Time (ET) | Offset | Condition |
 |---|------|---------|----------------|--------|-----------|
-| 1 | [E] | `workshop-recap-celebration.html` | Thu Dec 11, 10:00 AM | **+119h** | All |
-| 2 | [S] | Workshop Recap | Thu Dec 11, 10:00 AM | **+119h** | All |
-| 3 | [E] | `01-golden-life-sheet.html` | Thu Dec 11, 9:00 AM | **+118h** | All |
-| 4 | [S] | Golden Life Sheet | Thu Dec 11, 9:00 AM | **+118h** | All |
+| 1 | [E] | `01-golden-life-sheet.html` | Thu Dec 11, 9:00 AM | **+118h** | All |
+| 2 | [S] | Golden Life Sheet | Thu Dec 11, 9:00 AM | **+118h** | All |
+| 3 | [E] | `03-fne-workbook.html` | Thu Dec 11, 3:00 PM | **+124h** | All |
+| 4 | [S] | FNE Workbook | Thu Dec 11, 3:00 PM | **+124h** | All |
 | 5 | [E] | `02-wealth-engine-calculator.html` | Fri Dec 12, 9:00 AM | **+142h** | All |
 | 6 | [S] | Wealth Engine Calculator | Fri Dec 12, 9:00 AM | **+142h** | All |
-| 7 | [E] | `03-fne-workbook.html` | Sat Dec 13, 10:00 AM | **+167h** | All |
-| 8 | [S] | FNE Workbook | Sat Dec 13, 10:00 AM | **+167h** | All |
-| 9 | [E] | `04-how-it-all-fits-together.html` | Mon Dec 15, 9:00 AM | **+214h** | All |
-| 10 | [S] | Framework Synthesis | Mon Dec 15, 9:00 AM | **+214h** | All |
+| 7 | [E] | `04-how-it-all-fits-together.html` | Fri Dec 12, 3:00 PM | **+148h** | All |
+| 8 | [S] | Framework Synthesis (Closure) | Fri Dec 12, 3:00 PM | **+148h** | All |
 
-**⚠️ Thursday Note:** Two emails go out close together:
-- 9:00 AM: Golden Life Sheet (value series)
-- 10:00 AM: Workshop Recap (celebration)
-
-Consider combining or spacing these differently.
+**Notes:**
+- Workshop Recap merged into Golden Life Sheet email (combined celebration + anchor)
+- FNE Workbook moved to Thursday afternoon
+- Synthesis moved to Friday afternoon for closure
+- Sequence now ends Friday Dec 12 @ 3pm ET
 
 ---
 
