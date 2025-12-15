@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch your Level 3 Stargazer Welcome Party recording. Celebrate your leap and prepare for your 3-Day Stargazer Workshop transformation.">
+    <title>Level 3 Welcome Party Recording | Stargazer Flight | December 2025</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing - 8px base grid */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography - Responsive */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Shadows - Gold glow */
+            --shadow-gold-sm: 0 0 20px rgba(255, 215, 0, 0.2);
+            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE STYLES
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 100;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* ===========================
+           ANIMATIONS
+        =========================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+
+        @keyframes subtle-pulse {
+            0%, 100% {
+                box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 2px 12px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.3);
+            }
+        }
+
+        @keyframes starTwinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero-section {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .stargazer-badge {
+            display: inline-block;
+            margin-bottom: var(--space-md);
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(90deg, var(--gold-dark) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            background-size: 200% 100%;
+            border-radius: 30px;
+            animation: fadeInUp 0.6s ease 0.2s both, shimmer 3s linear infinite;
+        }
+
+        .stargazer-badge span {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--black);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            animation: fadeInUp 0.6s ease 0.3s both;
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: var(--gold);
+            padding-bottom: 0.1em;
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+            animation: fadeInUp 0.6s ease 0.4s both;
+        }
+
+        /* ===========================
+           VIDEO SECTION
+        =========================== */
+        .video-section {
+            padding: 0 var(--space-md) var(--space-3xl);
+            background: var(--black);
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInUp 0.6s ease 0.5s both;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 2px solid var(--gold);
+            box-shadow: var(--shadow-gold-md);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-caption {
+            text-align: center;
+            margin-top: var(--space-md);
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+        }
+
+        /* ===========================
+           HIGHLIGHTS SECTION
+        =========================== */
+        .highlights-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--gray-900);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .section-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .section-header p {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .highlight-card {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, var(--black) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(255, 215, 0, 0.2);
+        }
+
+        .highlight-icon {
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+
+        .highlight-card h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-sm);
+        }
+
+        .highlight-card p {
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           3-DAY STRUCTURE SECTION
+        =========================== */
+        .structure-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .structure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .day-card {
+            padding: var(--space-xl);
+            background: var(--gray-900);
+            border-radius: 12px;
+            border: 1px solid var(--gray-700);
+            transition: all 0.3s ease;
+        }
+
+        .day-card:hover {
+            border-color: var(--gold);
+        }
+
+        .day-number {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .day-card h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .day-card p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           QUOTE SECTION
+        =========================== */
+        .quote-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--gray-900);
+            text-align: center;
+        }
+
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: var(--space-md);
+            animation: starTwinkle 3s ease-in-out infinite;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-style: italic;
+            color: var(--white);
+            line-height: 1.5;
+            margin-bottom: var(--space-md);
+        }
+
+        .quote-attribution {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* ===========================
+           CHECKLIST SECTION
+        =========================== */
+        .checklist-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--black);
+        }
+
+        .checklist-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .checklist-item {
+            padding: var(--space-lg);
+            background: linear-gradient(135deg, var(--black) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            margin-bottom: var(--space-md);
+        }
+
+        .checklist-item h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .checklist-item p {
+            font-size: var(--text-base);
+            color: var(--gray-200);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           CTA SECTION
+        =========================== */
+        .cta-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--gray-900);
+            text-align: center;
+        }
+
+        .cta-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+        }
+
+        .cta-box h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .cta-box p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            margin-bottom: var(--space-lg);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: 1rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: var(--gold);
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: var(--min-touch-target);
+        }
+
+        .cta-button:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-button svg {
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* ===========================
+           DECLARATION SECTION
+        =========================== */
+        .declaration-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--black);
+            text-align: center;
+        }
+
+        .declaration-box {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 3px solid var(--gold);
+            border-radius: 16px;
+            box-shadow: var(--shadow-gold-lg);
+        }
+
+        .declaration-prompt {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+            margin-bottom: var(--space-md);
+        }
+
+        .declaration-text {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1.4;
+            margin-bottom: var(--space-lg);
+        }
+
+        .affirmation {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            font-style: italic;
+        }
+
+        /* ===========================
+           FOOTER
+        =========================== */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md) var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .footer-brand p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+        }
+
+        .footer-support {
+            text-align: right;
+        }
+
+        .support-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            margin-bottom: var(--space-xs);
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .support-link:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
+        }
+
+        .footer-bottom p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+        }
+
+        /* ===========================
+           RESPONSIVE
+        =========================== */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .hero-title {
+                font-size: var(--text-3xl);
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .structure-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-text {
+                font-size: var(--text-xl);
+            }
+
+            .footer-content {
+                text-align: center;
+                gap: var(--space-xl);
+            }
+
+            .footer-brand,
+            .footer-support {
+                text-align: center;
+            }
+
+            .support-link {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: var(--text-2xl);
+            }
+
+            .hero-subtitle {
+                font-size: var(--text-sm);
+            }
+
+            .cta-box {
+                padding: var(--space-lg);
+            }
+
+            .declaration-text {
+                font-size: var(--text-2xl);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <div class="page-wrapper">
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="stargazer-badge">
+                        <span>Level 3 Stargazer Flight</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Your
+                        <span class="gradient-text">Welcome Party</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Congratulations on making the leap. You joined the explorers, the pioneers of the society, the men and women who dare to reach for their unreachable star. Watch the recording of your Level 3 Welcome Party below.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="container">
+                    <div class="video-container">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://player.vimeo.com/video/1145466839?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                title="Level 3 Stargazer Welcome Party"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <p class="video-caption">December 2025 &bull; Level 3 Stargazer Welcome Party</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Highlights Section -->
+            <section class="highlights-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Key Takeaways</h2>
+                        <p>The core messages from your Welcome Party</p>
+                    </div>
+
+                    <div class="highlights-grid">
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">&#127775;</span>
+                            <h3>You Made The Leap</h3>
+                            <p>You didn't buy Level 3. You claimed it. You claimed the next chapter of your evolution. You claimed your seat among those who refuse to live small.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">&#128640;</span>
+                            <h3>You're Now Flying</h3>
+                            <p>You've officially onboarded the Stargazer Flight. Level 3 is your pathway to power. You're no longer reaching for your dreams&mdash;you are commanding them.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">&#128161;</span>
+                            <h3>Fear is Leadership</h3>
+                            <p>Feeling fearful or anxious after committing is totally normal. That's courage. That's leadership. That's what separates the 1% who create the future from the 99% who watch.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">&#129504;</span>
+                            <h3>The 3-Day Immersion</h3>
+                            <p>Your Stargazer Workshop is where ideas become reality. You'll learn the psychological mechanics that give you an almost unfair advantage in life.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">&#128171;</span>
+                            <h3>Architect of Reality</h3>
+                            <p>You're learning to design your life structure&mdash;a world that moves with you, not against you. Opportunities will begin to orbit your essence.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">&#10024;</span>
+                            <h3>The 1% Club</h3>
+                            <p>You have the spark that separates those who create the future from the 99% who just watch it happen. That excitement you feel? That's your future self breathing again.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3-Day Structure Section -->
+            <section class="structure-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>The 3-Day Stargazer Structure</h2>
+                        <p>What you'll experience in your Level 3 intensive</p>
+                    </div>
+
+                    <div class="structure-grid">
+                        <div class="day-card">
+                            <span class="day-number">Day 1</span>
+                            <h3>Removing Internal Limitations</h3>
+                            <p>The day of true rebirth. Dissolve every old limiting command, script, and program installed since childhood. Learn to create a "switch" to tap into your most powerful self for instant authority, confidence, and mistake-free focus.</p>
+                        </div>
+
+                        <div class="day-card">
+                            <span class="day-number">Day 2</span>
+                            <h3>Removing Financial Limitations</h3>
+                            <p>Discover the wealth codes that built fortunes. Shift from working for money to playing with wealth. Build your Wealth Engine and learn how to make money chase you. Business owners learn how to easily double their business.</p>
+                        </div>
+
+                        <div class="day-card">
+                            <span class="day-number">Day 3</span>
+                            <h3>Removing World Limitations</h3>
+                            <p>Learn to bend reality and become the architect of your life. Design your environment and network so opportunities orbit your essence. The world moves with you, not against you.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote Section -->
+            <section class="quote-section">
+                <div class="container">
+                    <div class="quote-container">
+                        <div class="quote-icon" aria-hidden="true">&#11088;</div>
+                        <blockquote class="quote-text">
+                            "Level 3 is not a purchase. It is a claim. A claim to the pathway of power, freedom, and wealth. Welcome to the stargazer level of the Neothink Society."
+                        </blockquote>
+                        <p class="quote-attribution">&mdash; Wallace Hamilton</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pre-Flight Checklist Section -->
+            <section class="checklist-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Your Pre-Flight Checklist</h2>
+                        <p>Complete these before the 3-Day Stargazer Workshop and you'll already be living Level 3</p>
+                    </div>
+
+                    <div class="checklist-container">
+                        <div class="checklist-item">
+                            <h3><span aria-hidden="true">&#128150;</span> Honor Your Friday Night Essence</h3>
+                            <p>Continue the FNE schedule set in the Dream Harvester Framework. Moving from stagnation to motion requires the most force&mdash;maintain your momentum through consistent practice.</p>
+                        </div>
+
+                        <div class="checklist-item">
+                            <h3><span aria-hidden="true">&#128170;</span> Build Your Value Creation Mind Muscle</h3>
+                            <p>Find one way to create new value each day or week for yourself, others, or society. Start small like lifting weights&mdash;build the value creation antennas needed to spot opportunities everywhere.</p>
+                        </div>
+
+                        <div class="checklist-item">
+                            <h3><span aria-hidden="true">&#128214;</span> Immersion: Study Your Manuscripts</h3>
+                            <p>Read your Golden Life Sheet daily to re-sync with your intended vector. Reread the Super Puzzle manuscript&mdash;the first novel written from the Neothink mentality&mdash;to absorb glimpses of that consciousness.</p>
+                        </div>
+
+                        <div class="checklist-item">
+                            <h3><span aria-hidden="true">&#128172;</span> Stay Plugged In &amp; Complete the Form</h3>
+                            <p>Watch for special updates designed to prepare you mentally, emotionally, and financially. Complete the detailed form asking for your specific numbers&mdash;this customizes Level 3 content to your situation.</p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: var(--space-xl); padding: var(--space-lg); background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%); border-radius: 12px; border: 1px solid var(--gold); max-width: 700px; margin-left: auto; margin-right: auto;">
+                        <p style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin-bottom: var(--space-sm);">Remember:</p>
+                        <p style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--white); font-weight: 600;">"I am the creator of my reality."</p>
+                        <p style="font-size: var(--text-sm); color: var(--gray-400); margin-top: var(--space-sm);">Say it. Declare it. Command it.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Declaration Section -->
+            <section class="declaration-section">
+                <div class="container">
+                    <div class="declaration-box">
+                        <p class="declaration-prompt">The question from your Welcome Party:</p>
+                        <p class="declaration-text">"Now that I am Level 3, I choose to create..."</p>
+                        <p style="font-size: var(--text-base); color: var(--gray-300); margin-bottom: var(--space-lg);">What did you declare? Hold onto that vision. It's already in motion.</p>
+                        <p class="affirmation">"I am the Creator of my reality."</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-box">
+                        <h2>Continue Your Journey</h2>
+                        <p>Access your workshop materials, Golden Life Sheet, and prepare for your 3-Day Stargazer Workshop.</p>
+                        <a href="/home" class="cta-button" aria-label="Go to workshop hub">
+                            Workshop Hub
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Neothink Society</h3>
+                        <p>Prosper Happily Forever</p>
+                    </div>
+
+                    <div class="footer-support">
+                        <p class="support-label">Need Help?</p>
+                        <a href="mailto:support@neothink.com" class="support-link" aria-label="Email support at support@neothink.com">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            support@neothink.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Vimeo Player API -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

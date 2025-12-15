@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>VIP Session Recording - Enlightenment and the Neothink Mentality | December 2025</title>
+    <meta name="description" content="Exclusive VIP session recording: Enlightenment and the Neothink Mentality. Three hours of mastermind insights, philosophical breakthroughs, and implementation guidance with Wallace Hamilton.">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #FFC700;
+            --black: #000000;
+            --gray-950: #0a0a0a;
+            --gray-900: #0f0f0f;
+            --gray-800: #1a1a1a;
+            --gray-700: #2a2a2a;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
+            --white: #ffffff;
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        .container-narrow {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 5vw, 1.5rem);
+        }
+
+        section {
+            padding: clamp(2.5rem, 8vw, 4rem) 0;
+        }
+
+        /* Header */
+        .vip-header {
+            padding: clamp(1rem, 2vw, 1.5rem) 0;
+            border-bottom: 2px solid var(--gold);
+            background: linear-gradient(180deg, var(--gray-900), var(--black));
+        }
+
+        .classification {
+            text-align: center;
+            font-family: var(--font-mono);
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: clamp(0.15em, 0.5vw, 0.25em);
+            line-height: 1.5;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: clamp(3rem, 8vw, 5rem) 0 clamp(2rem, 5vw, 3rem);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .vip-badge {
+            display: inline-block;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.75rem, 4vw, 2.5rem);
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            border-radius: 100px;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.4);
+        }
+
+        .vip-badge-text {
+            color: var(--black);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 400;
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.2;
+            background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1.125rem, 3vw, 1.75rem);
+            color: var(--gray-300);
+            font-style: italic;
+            margin-bottom: clamp(2rem, 5vw, 3rem);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Recording Card */
+        .recording-card {
+            background: linear-gradient(135deg, var(--gray-900), var(--gray-950));
+            border: 2px solid var(--gold);
+            border-radius: clamp(16px, 3vw, 20px);
+            padding: clamp(2rem, 4vw, 3rem);
+            margin-bottom: clamp(2rem, 4vw, 3rem);
+            box-shadow: 0 12px 48px rgba(255, 215, 0, 0.15);
+        }
+
+        .recording-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: clamp(1rem, 3vw, 2rem);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            flex-wrap: wrap;
+        }
+
+        .recording-info {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .recording-number {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+        }
+
+        .recording-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            color: var(--white);
+        }
+
+        .recording-meta {
+            display: flex;
+            gap: clamp(1rem, 3vw, 2rem);
+            flex-wrap: wrap;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--gray-400);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-icon {
+            width: 18px;
+            height: 18px;
+            opacity: 0.8;
+        }
+
+        .recording-description {
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+        }
+
+        .recording-highlights {
+            background: rgba(255, 215, 0, 0.05);
+            border-left: 4px solid var(--gold);
+            padding: clamp(1rem, 2.5vw, 1.5rem);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            border-radius: 8px;
+        }
+
+        .highlights-title {
+            font-weight: 700;
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+            color: var(--gold);
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .highlights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            color: var(--gray-200);
+            line-height: 1.6;
+        }
+
+        .highlights-list li:before {
+            content: "\2192";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .timestamps {
+            background: var(--gray-950);
+            border-radius: 12px;
+            padding: clamp(1.25rem, 3vw, 1.75rem);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .timestamps-title {
+            font-weight: 700;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--white);
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .timestamp-item {
+            display: flex;
+            gap: clamp(1rem, 2.5vw, 1.5rem);
+            padding: clamp(0.5rem, 1.5vw, 0.75rem) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .timestamp-item:last-child {
+            border-bottom: none;
+        }
+
+        .timestamp {
+            font-weight: 700;
+            color: var(--gold);
+            font-family: var(--font-mono);
+            font-size: clamp(0.875rem, 2vw, 0.9375rem);
+            min-width: 70px;
+        }
+
+        .timestamp-description {
+            color: var(--gray-300);
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 0.9375rem);
+        }
+
+        /* Video Embed */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: var(--black);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            border: 3px solid var(--gold);
+            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: clamp(0.75rem, 2vw, 1rem);
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: clamp(0.875rem, 2vw, 1.125rem) clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            font-family: var(--font-sans);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--black);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--gold-light);
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Key Insights Section */
+        .insights-section {
+            background: var(--gray-950);
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: clamp(2rem, 4vw, 3rem);
+        }
+
+        .insight-card {
+            background: var(--black);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: clamp(1.5rem, 3vw, 2rem);
+            transition: all 0.3s ease;
+        }
+
+        .insight-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+        }
+
+        .insight-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .insight-title {
+            font-weight: 700;
+            color: var(--gold);
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 0.75rem;
+        }
+
+        .insight-text {
+            color: var(--gray-300);
+            line-height: 1.7;
+            font-size: clamp(0.9375rem, 2.25vw, 1rem);
+        }
+
+        /* Level 3 Offer Section */
+        .level3-offer {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
+            border: 3px solid var(--gold);
+            border-radius: clamp(16px, 3vw, 24px);
+            padding: clamp(2rem, 5vw, 3rem);
+            margin: clamp(2rem, 5vw, 3rem) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .level3-offer::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .offer-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 2.5vw, 1.5rem);
+            border-radius: 100px;
+            font-weight: 900;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+        }
+
+        .offer-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+            color: var(--gold);
+        }
+
+        .offer-subtitle {
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            color: var(--gray-300);
+            line-height: 1.6;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            font-style: italic;
+        }
+
+        .offer-details {
+            background: var(--gray-950);
+            border-radius: 12px;
+            padding: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .offer-details h3 {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            color: var(--gold);
+            margin-bottom: clamp(1rem, 2vw, 1.5rem);
+            font-weight: 700;
+        }
+
+        .offer-benefits {
+            list-style: none;
+            padding: 0;
+        }
+
+        .offer-benefits li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 1rem;
+            color: var(--gray-200);
+            line-height: 1.6;
+            font-size: clamp(0.9375rem, 2.25vw, 1.0625rem);
+        }
+
+        .offer-benefits li:before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 900;
+            font-size: 1.25em;
+        }
+
+        .deadline-banner {
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+            color: var(--black);
+            padding: clamp(1rem, 2.5vw, 1.5rem);
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+        }
+
+        .deadline-date {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            font-weight: 900;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, var(--gray-950), var(--black));
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .quote-block {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-style: italic;
+            line-height: 1.5;
+            color: var(--gold);
+            margin-bottom: clamp(1rem, 3vw, 1.5rem);
+        }
+
+        .quote-author {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--gray-400);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black);
+            padding: clamp(2rem, 5vw, 3rem) 0;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+        }
+
+        .footer-contact {
+            color: var(--gray-400);
+            margin-bottom: clamp(0.75rem, 2vw, 1rem);
+            line-height: 1.8;
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-legal {
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: var(--gray-500);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .recording-header {
+                flex-direction: column;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="vip-header">
+        <div class="container">
+            <p class="classification">VIP Members Only &bull; Day of Enlightenment &bull; December 2025</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="vip-badge">
+                    <span class="vip-badge-text">VIP Exclusive Session</span>
+                </div>
+                <h1 class="hero-title">Enlightenment and the Neothink Mentality</h1>
+                <p class="hero-subtitle">
+                    Three hours of mastermind insights, philosophical breakthroughs, and the behind-the-scenes mechanics that unlock your transformation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Recording Section -->
+        <section>
+            <div class="container-narrow">
+                <div class="recording-card">
+                    <div class="recording-header">
+                        <div class="recording-info">
+                            <span class="recording-number">VIP Session Recording</span>
+                            <h2 class="recording-title">The Mastermind Session</h2>
+                            <div class="recording-meta">
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Approximately 3 hours
+                                </span>
+                                <span class="meta-item">
+                                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    December 8, 2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255, 215, 0, 0.08); border-left: 4px solid var(--gold); padding: clamp(1rem, 2.5vw, 1.5rem); border-radius: 8px; margin-bottom: clamp(1.5rem, 3vw, 2rem);">
+                        <p style="color: var(--gray-200); line-height: 1.7; font-size: clamp(0.9375rem, 2.25vw, 1.0625rem); margin: 0;">
+                            <strong style="color: var(--gold);">Welcome back, VIP.</strong> This extended mastermind session exceeded its two-hour projection because the breakthroughs kept coming. Use the timestamps below to navigate to specific teachings, or experience the full three hours of transformation.
+                        </p>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/1144749105?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" title="VIP Session - Enlightenment and the Neothink Mentality"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+
+                    <p class="recording-description">
+                        This VIP session was an extended, interactive mastermind-style forum following the main Day of Enlightenment workshop. Wallace Hamilton led three hours of Q&A, deep philosophical exploration, behind-the-scenes insights into the event's psychological design, and personal breakthrough celebrations. This is where VIP commitment transforms into VIP results.
+                    </p>
+
+                    <div class="recording-highlights">
+                        <h3 class="highlights-title">What You'll Experience in This Recording</h3>
+                        <ul class="highlights-list">
+                            <li>The "Stakes" Principle: Why VIP members extract the most value (Russell Brunson story)</li>
+                            <li>Behind-the-scenes reveal: How the DOE opening was crafted from Miss Annabelle's Super Puzzle monologue</li>
+                            <li>The Learning Hack: Why the "rah-rah stuff" literally locks information into your mind and body</li>
+                            <li>The Three Mentalities explained: Bicameral, Conscious, and Neothink (Immortal)</li>
+                            <li>Why you are never "too far gone"&mdash;the only disqualifier is unwillingness</li>
+                            <li>"Embrace the Suck": How winners iterate through incompetence to mastery</li>
+                            <li>The confidence formula: Certainty through preparation and iterations</li>
+                            <li>The Neothink view on AI: Amplifier of consciousness, not rival</li>
+                            <li>Focus on the 20th Try: Why speed and iteration beat perfection</li>
+                            <li>Friday Night Essence confirmations and member breakthrough celebrations</li>
+                            <li>Why political change follows individual transformation (the Immortalis/Neovia approach)</li>
+                            <li>Live Q&A addressing doubt, loss, age, and finding your path forward</li>
+                        </ul>
+                    </div>
+
+                    <div class="timestamps">
+                        <h4 class="timestamps-title">Key Sections</h4>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Opening</span>
+                            <span class="timestamp-description">VIP welcome, session format, and the value of commitment</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Early</span>
+                            <span class="timestamp-description">The Russell Brunson "Stakes" story&mdash;why paying more creates transformation</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Mid</span>
+                            <span class="timestamp-description">Behind-the-scenes: Super Puzzle connection and the Learning Hack explained</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Mid</span>
+                            <span class="timestamp-description">The Three Mentalities and why Neothink = Immortal Mentality</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Mid</span>
+                            <span class="timestamp-description">Overcoming doubt: "Too Far Gone" addressed, "Embrace the Suck" framework</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Late</span>
+                            <span class="timestamp-description">AI as consciousness amplifier&mdash;the Neothink perspective on technology</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Late</span>
+                            <span class="timestamp-description">Focus on the 20th Try: Speed as the most precious resource</span>
+                        </div>
+                        <div class="timestamp-item">
+                            <span class="timestamp">Closing</span>
+                            <span class="timestamp-description">FNE confirmations, member breakthroughs, and Level 3 invitation</span>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#level3-offer" class="btn btn-primary">
+                            <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                            View Level 3 VIP Offer
+                        </a>
+                        <a href="/home" class="btn btn-secondary">
+                            <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
+                            </svg>
+                            Back to Workshop Hub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Insights Section -->
+        <section class="insights-section">
+            <div class="container-narrow">
+                <div style="text-align: center; margin-bottom: clamp(2.5rem, 5vw, 3.5rem);">
+                    <span style="display: block; font-family: var(--font-mono); font-size: clamp(0.75rem, 2vw, 0.875rem); font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: clamp(0.75rem, 2vw, 1rem);">Session Highlights</span>
+                    <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; line-height: 1.2; margin-bottom: clamp(0.75rem, 2vw, 1rem);">The Core Frameworks</h2>
+                    <p style="font-size: clamp(1rem, 2.5vw, 1.125rem); color: var(--gray-400); max-width: 700px; margin: 0 auto; line-height: 1.6;">These aren't motivational concepts&mdash;they're operational mechanics for building your golden life.</p>
+                </div>
+
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">&#127919;</div>
+                        <p class="insight-title">The Stakes Principle</p>
+                        <p class="insight-text">VIP members extract the most value because commitment creates engagement. When you have real stakes, you watch the tape repeatedly to get your money's worth.</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">&#129504;</div>
+                        <p class="insight-title">The Learning Hack</p>
+                        <p class="insight-text">Physical engagement (cheering, high-fives) stimulates multiple brain regions simultaneously. Coupling learning with physiological intensity literally locks information into your body.</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">&#128161;</div>
+                        <p class="insight-title">Embrace the Suck</p>
+                        <p class="insight-text">Success requires pushing through initial incompetence. Winners "go through the suck" while losers stop when they encounter it. Improvement comes from iterating until you don't suck anymore.</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">&#128640;</div>
+                        <p class="insight-title">The Confidence Formula</p>
+                        <p class="insight-text">Confidence is certainty of outcome. It increases through preparation (practice) or iterations (experience). Both eliminate the fear of the unknown.</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">&#129302;</div>
+                        <p class="insight-title">AI as Amplifier</p>
+                        <p class="insight-text">AI is not a rival&mdash;it's an amplifier of human consciousness. For value creators, it provides Rapid Integration for conceptual breakthroughs. A super tool, not a replacement.</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">&#128337;</div>
+                        <p class="insight-title">Focus on the 20th Try</p>
+                        <p class="insight-text">Successful entrepreneurs don't focus on the first attempt (which usually fails). They focus on iterations, knowing speed is the most precious resource&mdash;time cannot be regained.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Level 3 Offer -->
+        <section id="level3-offer">
+            <div class="container-narrow">
+                <div class="level3-offer">
+                    <span class="offer-badge">VIP Exclusive Offer</span>
+                    <h2 class="offer-title">Your Path to Level 3 Stargazer</h2>
+                    <p class="offer-subtitle">
+                        Many of your fellow VIPs have already committed. This is your opportunity to join them before the offer expires.
+                    </p>
+
+                    <div class="deadline-banner">
+                        Honor System Offer Expires
+                        <span class="deadline-date">Wednesday, December 10th at Midnight Eastern</span>
+                    </div>
+
+                    <div class="offer-details">
+                        <h3>What Level 3 Unlocks:</h3>
+                        <ul class="offer-benefits">
+                            <li><strong>Day 1 - Remove Self Limitations:</strong> Breakthrough all internal blockers and become the creator you're meant to be</li>
+                            <li><strong>Day 2 - Master Money:</strong> Prime Mentor Mark Hamilton's personal wealth mechanics and your personalized financial plan</li>
+                            <li><strong>Day 3 - Architect Reality:</strong> How to build the world around your vision and remove external obstacles</li>
+                            <li><strong>50 Years of Neothink Secrets:</strong> Direct access to techniques refined over five decades of study and implementation</li>
+                            <li><strong>Direct Mentorship:</strong> Personal guidance from Platinum Mentors throughout the 3-day intensive experience</li>
+                            <li><strong>Level 3 Welcome Party:</strong> Exclusive community event with fellow Stargazers</li>
+                        </ul>
+                    </div>
+
+                    <div class="offer-details">
+                        <h3>The VIP Advantage - Special $300 Discount:</h3>
+                        <p style="color: var(--gray-300); line-height: 1.7; margin-bottom: 1.5rem;">
+                            As a VIP member who demonstrated commitment to your transformation, you receive an exclusive $300 discount on Level 3. This is our recognition that you invested in yourself at the highest level&mdash;and we want to ensure nothing stands between you and your Impossible Dream.
+                        </p>
+                        <p style="color: var(--gold); font-weight: 700; font-size: clamp(1.125rem, 2.75vw, 1.25rem); line-height: 1.6;">
+                            <strong>VIP Discount Investment Options:</strong><br>
+                            &bull; Pay in full: $1,700<br>
+                            &bull; 2 installments: $855 each<br>
+                            &bull; 3 installments: $570 each
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; margin-top: clamp(2rem, 4vw, 2.5rem);">
+                        <a href="https://neothinkevent.com/vip-level3" class="btn btn-primary" style="font-size: clamp(1rem, 2.5vw, 1.125rem); padding: clamp(1rem, 2.5vw, 1.25rem) clamp(2.5rem, 5vw, 3.5rem);">
+                            <svg class="btn-icon" style="width: 24px; height: 24px;" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                            Ascend to Level 3
+                        </a>
+                        <p style="margin-top: 1.5rem; font-size: clamp(0.875rem, 2vw, 1rem); color: var(--gray-400);">
+                            Not sure if Level 3 is right for you?
+                        </p>
+                        <a href="https://neothinkevent.com/schedule-level-three-consultation" style="color: var(--gold); text-decoration: underline; font-weight: 600;">
+                            Schedule a free consultation with a mentor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">"Answers to big questions do not simply appear while waiting. They are found by taking action, moving forward, trying things, failing, and learning from the path."</p>
+                    <p class="quote-author">&mdash; Wallace Hamilton, Platinum Mentor</p>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Prosper Happily Forever</p>
+                <p class="footer-contact">
+                    Questions? Need support?<br>
+                    <a href="mailto:support@neothink.com">support@neothink.com</a>
+                </p>
+                <p class="footer-legal">Neothink Society &bull; VIP Members &bull; December 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
