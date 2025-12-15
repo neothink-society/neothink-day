@@ -54,43 +54,45 @@ These fire based on actions, not scheduled times.
 
 ## 30 Days Before → 1 Day Before
 
+**Note:** All pre-event emails send at **9:00 AM Pacific / 12:00 PM Eastern** unless otherwise noted.
+
 ### Weeks 4-3: Seed Planting (Days 30-15)
 
-| # | Type | Message | Date (ET) | Offset | Condition |
-|---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `preparation-30days.html` | Thu Nov 6, 9am | **-30d 2h** | All |
-| 2 | [E] | `preparation-25days.html` | Tue Nov 11, 9am | **-25d 2h** | All |
-| 3 | [E] | `preparation-20days.html` | Sun Nov 16, 9am | **-20d 2h** | All |
-| 4 | [S] | 20 Days Out | Sun Nov 16, 9am | **-20d 2h** | All |
+| # | Type | Message | Date | Time (PT/ET) | Offset | Condition |
+|---|------|---------|------|--------------|--------|-----------|
+| 1 | [E] | `preparation-30days.html` | Thu Nov 6 | 9am PT / 12pm ET | **-29d 23h** | All |
+| 2 | [E] | `preparation-25days.html` | Tue Nov 11 | 9am PT / 12pm ET | **-24d 23h** | All |
+| 3 | [E] | `preparation-20days.html` | Sun Nov 16 | 9am PT / 12pm ET | **-19d 23h** | All |
+| 4 | [S] | 20 Days Out | Sun Nov 16 | 9am PT / 12pm ET | **-19d 23h** | All |
 
 ### Week 2: Foundation Building (Days 14-8)
 
-| # | Type | Message | Date (ET) | Offset | Condition |
-|---|------|---------|-----------|--------|-----------|
-| 5 | [E] | `preparation-14days.html` | Sat Nov 22, 9am | **-14d 2h** | All |
-| 6 | [E] | `preparation-10days.html` | Wed Nov 26, 9am | **-10d 2h** | All |
-| 7 | [E] | `preparation-9days.html` | Thu Nov 27, 9am | **-9d 2h** | All |
+| # | Type | Message | Date | Time (PT/ET) | Offset | Condition |
+|---|------|---------|------|--------------|--------|-----------|
+| 5 | [E] | `preparation-14days.html` | Sat Nov 22 | 9am PT / 12pm ET | **-13d 23h** | All |
+| 6 | [E] | `preparation-10days.html` | Wed Nov 26 | 9am PT / 12pm ET | **-9d 23h** | All |
+| 7 | [E] | `preparation-9days.html` | Thu Nov 27 | 9am PT / 12pm ET | **-8d 23h** | All |
 
 ### Week 1: Momentum Building (Days 7-1)
 
-| # | Type | Message | Date (ET) | Offset | Condition |
-|---|------|---------|-----------|--------|-----------|
-| 8 | [E] | `preparation-7days.html` | Sat Nov 29, 9am | **-7d 2h** | All |
-| 9 | [S] | 7 Days Out | Sat Nov 29, 9am | **-7d 2h** | All |
-| 10 | [E] | `preparation-5days.html` | Mon Dec 1, 9am | **-5d 2h** | All |
-| 11 | [S] | 5 Days Out | Mon Dec 1, 9am | **-5d 2h** | All |
-| 12 | [E] | `preparation-4days.html` | Tue Dec 2, 9am | **-4d 2h** | All |
-| 13 | [S] | 4 Days Out | Tue Dec 2, 9am | **-4d 2h** | All |
-| 14 | [E] | `preparation-3days.html` | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
-| 15 | [E] | `preparation-3days-vip.html` | Wed Dec 3, 9am | **-3d 2h** | VIP |
-| 16 | [S] | 3 Days (Non-VIP) | Wed Dec 3, 9am | **-3d 2h** | Non-VIP |
-| 17 | [S] | 3 Days (VIP) | Wed Dec 3, 9am | **-3d 2h** | VIP |
-| 18 | [E] | `preparation-2days.html` | Thu Dec 4, 9am | **-2d 2h** | All |
-| 19 | [S] | 2 Days (Non-VIP) | Thu Dec 4, 9am | **-2d 2h** | Non-VIP |
-| 20 | [S] | 2 Days (VIP) | Thu Dec 4, 9am | **-2d 2h** | VIP |
-| 21 | [E] | `preparation-1day.html` | Fri Dec 5, 7pm | **-16h** | All |
-| 22 | [S] | 1 Day (Non-VIP) | Fri Dec 5, 7pm | **-16h** | Non-VIP |
-| 23 | [S] | 1 Day (VIP) | Fri Dec 5, 7pm | **-16h** | VIP |
+| # | Type | Message | Date | Time (PT/ET) | Offset | Condition |
+|---|------|---------|------|--------------|--------|-----------|
+| 8 | [E] | `preparation-7days.html` | Sat Nov 29 | 9am PT / 12pm ET | **-6d 23h** | All |
+| 9 | [S] | 7 Days Out | Sat Nov 29 | 9am PT / 12pm ET | **-6d 23h** | All |
+| 10 | [E] | `preparation-5days.html` | Mon Dec 1 | 9am PT / 12pm ET | **-4d 23h** | All |
+| 11 | [S] | 5 Days Out | Mon Dec 1 | 9am PT / 12pm ET | **-4d 23h** | All |
+| 12 | [E] | `preparation-4days.html` | Tue Dec 2 | 9am PT / 12pm ET | **-3d 23h** | All |
+| 13 | [S] | 4 Days Out | Tue Dec 2 | 9am PT / 12pm ET | **-3d 23h** | All |
+| 14 | [E] | `preparation-3days.html` | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | Non-VIP |
+| 15 | [E] | `preparation-3days-vip.html` | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | VIP |
+| 16 | [S] | 3 Days (Non-VIP) | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | Non-VIP |
+| 17 | [S] | 3 Days (VIP) | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | VIP |
+| 18 | [E] | `preparation-2days.html` | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | All |
+| 19 | [S] | 2 Days (Non-VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | Non-VIP |
+| 20 | [S] | 2 Days (VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | VIP |
+| 21 | [E] | `preparation-1day.html` | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | All |
+| 22 | [S] | 1 Day (Non-VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | Non-VIP |
+| 23 | [S] | 1 Day (VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | VIP |
 
 ---
 
@@ -443,76 +445,79 @@ These fire based on actions, not scheduled times.
 
 ## Full Timeline (All Messages in Order)
 
-| Offset | Date/Time (ET) | Email | SMS | Audience |
+**Note:** Pre-event emails send at 9:00 AM Pacific / 12:00 PM Eastern
+
+| Offset | Date/Time (PT) | Email | SMS | Audience |
 |--------|----------------|-------|-----|----------|
-| -30d 2h | Thu Nov 6, 9am | preparation-30days | — | All |
-| -25d 2h | Tue Nov 11, 9am | preparation-25days | — | All |
-| -20d 2h | Sun Nov 16, 9am | preparation-20days | 20 Days | All |
-| -14d 2h | Sat Nov 22, 9am | preparation-14days | — | All |
-| -10d 2h | Wed Nov 26, 9am | preparation-10days | — | All |
-| -9d 2h | Thu Nov 27, 9am | preparation-9days | — | All |
-| -7d 2h | Sat Nov 29, 9am | preparation-7days | 7 Days | All |
-| -5d 2h | Mon Dec 1, 9am | preparation-5days | 5 Days | All |
-| -4d 2h | Tue Dec 2, 9am | preparation-4days | 4 Days | All |
-| -3d 2h | Wed Dec 3, 9am | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
-| -2d 2h | Thu Dec 4, 9am | preparation-2days | 2 Days | VIP/Non-VIP |
-| -16h | Fri Dec 5, 7pm | preparation-1day | 1 Day | VIP/Non-VIP |
-| -2h | Sat Dec 6, 9am | day1-countdown-2hr | 2 Hours | All |
-| -1h | Sat Dec 6, 10am | day-of + day1-countdown-1hr | Zoom Link | All |
-| -30m | Sat Dec 6, 10:30am | day1-countdown-30min | Doors Open | All |
-| **T=0** | **Sat Dec 6, 11am** | **day1-countdown-live** | **LIVE** | **All** |
-| +0h | Sat Dec 6, 11am | 01-day1-opening | WH Stage | All |
-| +2h | Sat Dec 6, 1pm | 02-day1-lunch | Lunch | All |
-| +3h | Sat Dec 6, 2pm | 03-day1-back | Back | All |
-| +4h | Sat Dec 6, 3pm | 04-day1-wealth | Wealth | All |
-| +9h | Sat Dec 6, 8pm | 05-day1-end | D1 Complete | All |
-| +23h | Sun Dec 7, 10am | day2-countdown-2hr | 2 Hours | All |
-| +24.25h | Sun Dec 7, 11:15am | day2-countdown-45min | 45 Min | All |
-| +24.75h | Sun Dec 7, 11:45am | day2-countdown-15min | Doors | All |
-| +25h | Sun Dec 7, 12pm | day2-countdown-live | D2 LIVE | All |
-| +26h | Sun Dec 7, 1pm | 07-day2-mh | MH Stage | All |
-| +27h | Sun Dec 7, 2pm | 08-day2-lunch | Lunch | All |
-| +28h | Sun Dec 7, 3pm | 09-day2-back | Final | All |
-| +29h | Sun Dec 7, 4pm | 10-day2-integration | Integration | All |
-| +31h | Sun Dec 7, 6pm | 12-level3-segment | L3 Open | All |
-| +33h | Sun Dec 7, 8pm | 11-day2-end | Complete | All |
-| **+35h** | **Sun Dec 7, 10pm** | **sunday-night-anchor** | **Anchor** | **All** |
-| +46h | Mon Dec 8, 9am | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
-| +51h | Mon Dec 8, 2pm | l3-followup-midday | Midday | Non-L3 |
-| +54h | Mon Dec 8, 5pm | vip-session-1hour | 1 Hour | VIP+L3 |
-| +54.5h | Mon Dec 8, 5:30pm | — | VIP 30m | VIP+L3 |
-| +55h | Mon Dec 8, 6pm | vip-session-live | VIP LIVE | VIP+L3 |
-| +56h | Mon Dec 8, 7pm | l3-followup-afternoon | Afternoon | Non-L3 |
-| +58h | Mon Dec 8, 9pm | level3-ascend | — | Non-L3 |
-| +70h | Tue Dec 9, 9am | 01-tuesday-morning | L3 24hrs | Non-L3 |
-| +71h | Tue Dec 9, 10am | vip-session-recording | VIP Rec | VIP+L3 |
-| +75h | Tue Dec 9, 2pm | 02-tuesday-afternoon | L3 3days | Non-L3 |
-| +81h | Tue Dec 9, 8pm | 03-tuesday-evening | L3 Tonight | Non-L3 |
-| +82h | Tue Dec 9, eve | welcome-party-reminder | — | L3 |
-| +94h | Wed Dec 10, 9am | 04-wednesday-morning | L3 Today | Non-L3 |
-| +95h | Wed Dec 10, 10am | welcome-party-today | WP Today | L3 |
-| +100h | Wed Dec 10, 3pm | 05-wednesday-afternoon | L3 Hours | Non-L3 |
-| +103h | Wed Dec 10, 6pm | welcome-party-correction | — | L3 ⚠️ |
-| +103.5h | Wed Dec 10, 6:30pm | welcome-party-30min | WP 30m | L3 |
-| +104h | Wed Dec 10, 7pm | welcome-party-live | WP LIVE | L3 |
-| +108h | Wed Dec 10, 11pm | 06-wednesday-final | L3 Final | Non-L3 |
-| **+109h** | **Thu Dec 11, 12am** | **— L3 DEADLINE —** | **—** | **—** |
-| +118h | Thu Dec 11, 9am | 01-golden-life-sheet | GLS | All |
-| +119h | Thu Dec 11, 10am | post-deadline-closed | — | Non-L3 |
-| +124h | Thu Dec 11, 3pm | 03-fne-workbook | FNE | All |
-| +142h | Fri Dec 12, 9am | 02-wealth-engine-calculator | Wealth | All |
-| +148h | Fri Dec 12, 3pm | 04-how-it-all-fits-together | Synthesis | All |
-| +171h | Sat Dec 13, 2pm | ambassador-program | Ambassador | All L2 |
+| -29d 23h | Thu Nov 6, 9am PT | preparation-30days | — | All |
+| -24d 23h | Tue Nov 11, 9am PT | preparation-25days | — | All |
+| -19d 23h | Sun Nov 16, 9am PT | preparation-20days | 20 Days | All |
+| -13d 23h | Sat Nov 22, 9am PT | preparation-14days | — | All |
+| -9d 23h | Wed Nov 26, 9am PT | preparation-10days | — | All |
+| -8d 23h | Thu Nov 27, 9am PT | preparation-9days | — | All |
+| -6d 23h | Sat Nov 29, 9am PT | preparation-7days | 7 Days | All |
+| -4d 23h | Mon Dec 1, 9am PT | preparation-5days | 5 Days | All |
+| -3d 23h | Tue Dec 2, 9am PT | preparation-4days | 4 Days | All |
+| -2d 23h | Wed Dec 3, 9am PT | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
+| -1d 23h | Thu Dec 4, 9am PT | preparation-2days | 2 Days | VIP/Non-VIP |
+| -16h | Fri Dec 5, 4pm PT | preparation-1day | 1 Day | VIP/Non-VIP |
+| -2h | Sat Dec 6, 6am PT | day1-countdown-2hr | 2 Hours | All |
+| -1h | Sat Dec 6, 7am PT | day-of + day1-countdown-1hr | Zoom Link | All |
+| -30m | Sat Dec 6, 7:30am PT | day1-countdown-30min | Doors Open | All |
+| **T=0** | **Sat Dec 6, 8am PT** | **day1-countdown-live** | **LIVE** | **All** |
+| +0h | Sat Dec 6, 8am PT | 01-day1-opening | WH Stage | All |
+| +2h | Sat Dec 6, 10am PT | 02-day1-lunch | Lunch | All |
+| +3h | Sat Dec 6, 11am PT | 03-day1-back | Back | All |
+| +4h | Sat Dec 6, 12pm PT | 04-day1-wealth | Wealth | All |
+| +9h | Sat Dec 6, 5pm PT | 05-day1-end | D1 Complete | All |
+| +23h | Sun Dec 7, 7am PT | day2-countdown-2hr | 2 Hours | All |
+| +24.25h | Sun Dec 7, 8:15am PT | day2-countdown-45min | 45 Min | All |
+| +24.75h | Sun Dec 7, 8:45am PT | day2-countdown-15min | Doors | All |
+| +25h | Sun Dec 7, 9am PT | day2-countdown-live | D2 LIVE | All |
+| +26h | Sun Dec 7, 10am PT | 07-day2-mh | MH Stage | All |
+| +27h | Sun Dec 7, 11am PT | 08-day2-lunch | Lunch | All |
+| +28h | Sun Dec 7, 12pm PT | 09-day2-back | Final | All |
+| +29h | Sun Dec 7, 1pm PT | 10-day2-integration | Integration | All |
+| +31h | Sun Dec 7, 3pm PT | 12-level3-segment | L3 Open | All |
+| +33h | Sun Dec 7, 5pm PT | 11-day2-end | Complete | All |
+| **+35h** | **Sun Dec 7, 7pm PT** | **sunday-night-anchor** | **Anchor** | **All** |
+| +46h | Mon Dec 8, 6am PT | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
+| +51h | Mon Dec 8, 11am PT | l3-followup-midday | Midday | Non-L3 |
+| +54h | Mon Dec 8, 2pm PT | vip-session-1hour | 1 Hour | VIP+L3 |
+| +54.5h | Mon Dec 8, 2:30pm PT | — | VIP 30m | VIP+L3 |
+| +55h | Mon Dec 8, 3pm PT | vip-session-live | VIP LIVE | VIP+L3 |
+| +56h | Mon Dec 8, 4pm PT | l3-followup-afternoon | Afternoon | Non-L3 |
+| +58h | Mon Dec 8, 6pm PT | level3-ascend | — | Non-L3 |
+| +70h | Tue Dec 9, 6am PT | 01-tuesday-morning | L3 24hrs | Non-L3 |
+| +71h | Tue Dec 9, 7am PT | vip-session-recording | VIP Rec | VIP+L3 |
+| +75h | Tue Dec 9, 11am PT | 02-tuesday-afternoon | L3 3days | Non-L3 |
+| +81h | Tue Dec 9, 5pm PT | 03-tuesday-evening | L3 Tonight | Non-L3 |
+| +82h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
+| +94h | Wed Dec 10, 6am PT | 04-wednesday-morning | L3 Today | Non-L3 |
+| +95h | Wed Dec 10, 7am PT | welcome-party-today | WP Today | L3 |
+| +100h | Wed Dec 10, 12pm PT | 05-wednesday-afternoon | L3 Hours | Non-L3 |
+| +103h | Wed Dec 10, 3pm PT | welcome-party-correction | — | L3 ⚠️ |
+| +103.5h | Wed Dec 10, 3:30pm PT | welcome-party-30min | WP 30m | L3 |
+| +104h | Wed Dec 10, 4pm PT | welcome-party-live | WP LIVE | L3 |
+| +108h | Wed Dec 10, 8pm PT | 06-wednesday-final | L3 Final | Non-L3 |
+| **+109h** | **Wed Dec 10, 9pm PT** | **— L3 DEADLINE —** | **—** | **—** |
+| +118h | Thu Dec 11, 6am PT | 01-golden-life-sheet | GLS | All |
+| +119h | Thu Dec 11, 7am PT | post-deadline-closed | — | Non-L3 |
+| +124h | Thu Dec 11, 12pm PT | 03-fne-workbook | FNE | All |
+| +142h | Fri Dec 12, 6am PT | 02-wealth-engine-calculator | Wealth | All |
+| +148h | Fri Dec 12, 12pm PT | 04-how-it-all-fits-together | Synthesis | All |
+| +171h | Sat Dec 13, 11am PT | ambassador-program | Ambassador | All L2 |
 
 ---
 
-**Version:** 3.1
+**Version:** 3.2
 **Created:** December 10, 2025
-**Last Updated:** December 11, 2025
+**Last Updated:** December 15, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v3.2** (Dec 15): Changed all pre-event email times to 9am Pacific (was 9am Eastern), recalculated all offsets
 - **v3.1** (Dec 11): Added Sunday Night Anchor (+35h), compressed value series to end Fri Dec 12, updated chronological appendix
 - **v3.0** (Dec 11): Extended pre-event sequence from 14 days to 30 days
 - **v2.0** (Dec 10): Added missing messages, comprehensive audit
