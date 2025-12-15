@@ -1,5 +1,5 @@
-# Level 3 Purchase Confirmation SMS
-## Sent Immediately Upon Purchase
+# Level 3 Purchase Confirmation — SMS
+## Trigger-Based (Immediate)
 
 **TRIGGER:** Immediately after Level 3 purchase is completed
 **AUDIENCE:** New Level 3 members only
@@ -9,33 +9,46 @@
 ## SMS: Purchase Confirmation
 
 ```
-Welcome to Level 3!
+Neothink Society: Welcome to Level 3!
 
 You're officially in the inner circle.
 
 NEXT STEPS:
 1. Check your email for full details
-2. Welcome Party: Wed Dec 10, 7pm ET / 4pm PT
-3. VIP Session: Mon Dec 8, 3pm PT / 6pm ET (you have access!)
+2. VIP Session: Mon Dec 8, 6pm ET (you have access!)
+3. Welcome Party: Wed Dec 10, 7pm ET
 
 Your transformation begins now.
 
 Questions? support@neothink.com
-
-— Neothink Society
 ```
+
+**Character Count:** ~270 chars (2 segments)
 
 ---
 
-## Notes
+## Implementation Notes
 
-**Character Count:** ~310 characters (3 SMS segments)
+**GHL Workflow:** L3 Purchase (Trigger-based)
+**Trigger:** Payment success webhook for Level 3
+
+**Automation Actions:**
+1. Add tag: `level-3`
+2. Send this SMS immediately
+3. Send `level3-confirmation.html` email
+4. REMOVE from L3 Deadline/Follow-up sequences
+5. ADD to Welcome Party sequence
+6. ADD to VIP Session sequence (L3 gets VIP access)
+
+**Timing:** Send within 1 minute of successful purchase
 
 **Purpose:**
 - Immediate confirmation they're in
 - Quick summary of next steps
 - Excitement and reassurance
 
-**Timing:** Send within 1 minute of successful purchase
+---
 
-**Automation:** Trigger on payment success webhook
+**Version:** 2.0
+**Updated:** December 15, 2025
+**Changed:** Added Neothink Society prefix, reordered next steps (VIP before WP since VIP is Monday)

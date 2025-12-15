@@ -1,40 +1,45 @@
-# VIP Session Recording SMS
+# VIP Session Recording — SMS
 ## Tuesday, December 9, 2025
 
-**SEND TIME:** Tuesday 10:00 AM ET / 7:00 AM PT
 **AUDIENCE:** VIP + Level 3 members ONLY
+**SEND TIME:** Tuesday Dec 9, 10:00 AM ET / 7:00 AM PT
+**OFFSET:** +2d 23h from T=0
 
 ---
 
 ## SMS: Recording Available
 
 ```
-Your VIP Session recording is ready.
+Neothink Society: Your VIP Session recording is ready.
 
-Monday's exclusive session is now available to watch on-demand.
+Monday's exclusive session is now available on-demand.
 
 WATCH: neothinkevent.com/vip-session-recording
 
 This recording is for VIP + Level 3 members only.
-
-— Neothink Society
 ```
+
+**Character Count:** ~185 chars (2 segments)
 
 ---
 
-## Notes
+## Implementation Notes
 
-**Character Count:** ~200 characters (2 SMS segments)
+**GHL Workflow:** VIP Recording (VIP + L3 only)
+**Trigger:** Scheduled at +2d 23h from T=0
 
-**Timing:** Send same time as VIP recording email (10am ET Tuesday)
-
-**Purpose:**
-- Direct link to recording for mobile users
-- Reinforce exclusivity
+**Pairs With:**
+- Email: `vip-session-recording.html` (same time)
 
 **Do NOT send to:**
 - General Level 2 members
 - Non-VIP attendees
 
-**Links:**
+**Link:**
 - Recording: neothinkevent.com/vip-session-recording
+
+---
+
+**Version:** 2.0
+**Updated:** December 15, 2025
+**Changed:** Added Neothink Society prefix, standardized offset format
