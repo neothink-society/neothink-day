@@ -235,7 +235,7 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 10: VALUE-FIRST WEEK (Mon-Thu Dec 8-11)
+# PHASE 10: VALUE-FIRST WEEK (Mon-Fri Dec 8-12)
 
 **Audience:** ALL attendees
 **Philosophy:** Value-first approach. L3 mentioned naturally, not pushed.
@@ -247,7 +247,7 @@ These fire based on actions, not scheduled times.
 | 1 | [E] | `01-golden-life-sheet.html` | 9:00 AM | **+1d 22h** | All |
 | 2 | [S] | Golden Life Sheet | 9:00 AM | **+1d 22h** | All |
 
-**Content:** Daily anchor, "Who I Am", "Current Focuses", six categories. VIP/L3 get note about VIP session tonight.
+**Content:** Daily anchor with six categories: Who I Am, FNE, Dreams, Current Focuses, Celebrations, Health & Longevity. The synthesis tool that keeps attendees aligned with the Immortal Mentality.
 
 ## Tuesday, December 9
 
@@ -256,18 +256,18 @@ These fire based on actions, not scheduled times.
 | 3 | [E] | `02-wealth-engine-calculator.html` | 9:00 AM | **+2d 22h** | All |
 | 4 | [S] | Wealth Engine Calculator | 9:00 AM | **+2d 22h** | All |
 
-**Content:** Inflection Point formula (Annual Expenses ÷ 0.12), Millionaire Mindset ("How can I afford this?"), three levels of freedom.
+**Content:** Inflection Point formula (Annual Expenses / 0.12), Millionaire Mindset ("How can I afford this?"), three levels of financial freedom (Security, Vitality, Freedom).
 
 ## Wednesday, December 10
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 5 | [E] | `03-fne-ambassador.html` | 9:00 AM | **+3d 22h** | All |
-| 6 | [S] | FNE + Ambassador | 9:00 AM | **+3d 22h** | All |
+| 5 | [E] | `03-fne-workbook.html` | 9:00 AM | **+3d 22h** | All |
+| 6 | [S] | FNE Workbook | 9:00 AM | **+3d 22h** | All |
 | 7 | [E] | `l3-gentle-reminder.html` | 9:00 PM | **+4d 10h** | Non-L3 |
 | 8 | [S] | L3 Gentle Reminder | 9:00 PM | **+4d 10h** | Non-L3 |
 
-**Content (Morning):** FNE as core value-creation, Ambassador Program (50% commission opportunity), soft mention that L3 special pricing ends tonight.
+**Content (Morning):** Friday-Night Essence as core value-creation activity. The key to discovering authentic self and achieving Downstream Focus.
 **Content (Evening):** Single gentle reminder — "Tonight's your last chance for special pricing. No pressure, just wanted you to know."
 
 ### ⚠️ DEADLINE: Thursday Dec 11, 12:00 AM ET (+4d 13h)
@@ -276,10 +276,19 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 9 | [E] | `04-infinite-vector.html` | 9:00 AM | **+4d 22h** | All |
-| 10 | [S] | Infinite Vector | 9:00 AM | **+4d 22h** | All |
+| 9 | [E] | `04-ambassador.html` | 9:00 AM | **+4d 22h** | All |
+| 10 | [S] | Ambassador Program | 9:00 AM | **+4d 22h** | All |
 
-**Content:** Synthesis — "I create value. Value creates wealth. Wealth creates freedom. Freedom creates genius." How all the tools form an integrated system. Level 2 Neothinker status, path to Neovia. For those ready to go deeper, L3 as natural next step.
+**Content:** Ambassador Program introduction. 50% commission ($250 per enrollment). For many, their FNE is Neothink itself — sharing the transformation. Win-win-win scenario.
+
+## Friday, December 12
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 11 | [E] | `05-infinite-vector.html` | 9:00 AM | **+5d 22h** | All |
+| 12 | [S] | Infinite Vector | 9:00 AM | **+5d 22h** | All |
+
+**Content:** Synthesis — how all four tools form a single integrated system. The Infinite Vector concept: perpetual momentum toward the Immortal Mentality. Soft mention of L3 for those ready to go deeper.
 
 ---
 
@@ -387,13 +396,13 @@ These fire based on actions, not scheduled times.
 | Day 2 Countdown | 4 | 4 | 8 |
 | Day 2 Workshop | 9 | 9 | 18 |
 | Sunday Night Anchor | 1 | 1 | 2 |
-| Value-First Week (Mon-Thu) | 5 | 5 | 10 |
+| Value-First Week (Mon-Fri) | 6 | 6 | 12 |
 | VIP Session | 4 | 4 | 8 |
 | VIP Recording | 1 | 1 | 2 |
 | Welcome Party | 5 | 3 | 8 |
-| **TOTAL** | **60** | **56** | **116** |
+| **TOTAL** | **61** | **57** | **118** |
 
-**Note:** Value-First Week replaces the aggressive L3 deadline sequence with value-focused content for ALL attendees (4-day Mon-Thu sequence), plus one gentle L3 reminder Wednesday evening.
+**Note:** Value-First Week replaces the aggressive L3 deadline sequence with value-focused content for ALL attendees (5-day Mon-Fri sequence), plus one gentle L3 reminder Wednesday evening.
 
 ---
 
@@ -413,7 +422,7 @@ These fire based on actions, not scheduled times.
 5. **Day 1** — Scheduled + Manual triggers
 6. **Day 2** — Scheduled + Manual triggers
 7. **Sunday Night Anchor** — Scheduled: T+1d 11h
-8. **Value-First Week** — Scheduled: T+1d 22h to T+4d 22h (Mon-Thu, ALL attendees)
+8. **Value-First Week** — Scheduled: T+1d 22h to T+5d 22h (Mon-Fri, ALL attendees)
 9. **VIP Session** — Scheduled: T+1d 22h to T+2d 23h (VIP+L3 only)
 10. **Welcome Party** — Scheduled: T+3d 10h to T+4d 8h (L3 only)
 11. **L3 Gentle Reminder** — Scheduled: T+4d 10h (Non-L3 only, single message)
@@ -474,26 +483,28 @@ These fire based on actions, not scheduled times.
 | +2d 22h | Tue Dec 9, 6am PT | 02-wealth-engine-calculator | Wealth | All |
 | +2d 23h | Tue Dec 9, 7am PT | vip-session-recording | VIP Rec | VIP+L3 |
 | +3d 10h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
-| +3d 22h | Wed Dec 10, 6am PT | 03-fne-ambassador | FNE+Amb | All |
+| +3d 22h | Wed Dec 10, 6am PT | 03-fne-workbook | FNE | All |
 | +3d 23h | Wed Dec 10, 7am PT | welcome-party-today | WP Today | L3 |
 | +4d 7h | Wed Dec 10, 3pm PT | welcome-party-correction | — | L3 ⚠️ |
 | +4d 7h 30m | Wed Dec 10, 3:30pm PT | welcome-party-30min | WP 30m | L3 |
 | +4d 8h | Wed Dec 10, 4pm PT | welcome-party-live | WP LIVE | L3 |
 | +4d 10h | Wed Dec 10, 6pm PT | l3-gentle-reminder | Gentle L3 | Non-L3 |
 | **+4d 13h** | **Wed Dec 10, 9pm PT** | **— L3 DEADLINE —** | **—** | **—** |
-| +4d 22h | Thu Dec 11, 6am PT | 04-infinite-vector | Synthesis | All |
+| +4d 22h | Thu Dec 11, 6am PT | 04-ambassador | Ambassador | All |
+| +5d 22h | Fri Dec 12, 6am PT | 05-infinite-vector | Synthesis | All |
 
 ---
 
-**Version:** 5.1
+**Version:** 5.2
 **Created:** December 10, 2025
 **Last Updated:** December 15, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
-- **v5.1** (Dec 15): **4-DAY COMPRESSION** — Reduced Value-First Week from 5 days (Mon-Fri) to 4 days (Mon-Thu). Removed Dream Harvester (conceptual tool without real resource). Thursday now sends Infinite Vector synthesis email directly. Total messages reduced from 118 to 116.
-- **v5.0** (Dec 15): **VALUE-FIRST RESTRUCTURE** — Replaced aggressive L3 deadline sequence (13 messages) with Value-First Week. All attendees now receive daily value content. L3 mentioned naturally, one gentle reminder Wednesday evening. Ambassador integrated into Wednesday FNE email.
+- **v5.2** (Dec 15): **5-DAY STRUCTURE RESTORED** — Split combined FNE+Ambassador email into two separate emails. Now 5-day sequence: Mon=Golden Life Sheet, Tue=Wealth Engine, Wed=FNE Workbook, Thu=Ambassador, Fri=Infinite Vector (synthesis). Total messages: 118.
+- **v5.1** (Dec 15): 4-day compression (reverted in v5.2). Removed Dream Harvester concept.
+- **v5.0** (Dec 15): **VALUE-FIRST RESTRUCTURE** — Replaced aggressive L3 deadline sequence with Value-First Week. All attendees receive daily value content. L3 mentioned naturally, one gentle reminder Wednesday evening.
 - **v4.1** (Dec 15): Changed all post-event offsets from hours format (+35h) to days+hours format (+1d 11h) for better readability
 - **v4.0** (Dec 15): Added SMS for every email (30, 25, 20, 14, 10, 9, 7, 5, 4, 3, 2, 1 days out); Fixed Wallace Hamilton name; Removed specific Day 1/Day 2 times from content
 - **v3.2** (Dec 15): Changed all pre-event email times to 9am Pacific (was 9am Eastern), recalculated all offsets
