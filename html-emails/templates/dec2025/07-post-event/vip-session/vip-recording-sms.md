@@ -11,13 +11,11 @@
 ```
 Your VIP Session recording is ready.
 
-Yesterday's exclusive session is now available to watch on-demand.
+Monday's exclusive session is now available to watch on-demand.
 
-WATCH: neothinkevent.com/vip-recording
+WATCH: neothinkevent.com/vip-session-recording
 
 This recording is for VIP + Level 3 members only.
-
-Reminder: Level 3 enrollment closes tomorrow at midnight ET.
 
 — Neothink Society
 ```
@@ -26,18 +24,17 @@ Reminder: Level 3 enrollment closes tomorrow at midnight ET.
 
 ## Notes
 
-**Character Count:** ~260 characters (2 SMS segments)
+**Character Count:** ~200 characters (2 SMS segments)
 
 **Timing:** Send same time as VIP recording email (10am ET Tuesday)
 
 **Purpose:**
 - Direct link to recording for mobile users
 - Reinforce exclusivity
-- Soft L3 deadline reminder
 
 **Do NOT send to:**
 - General Level 2 members
 - Non-VIP attendees
 
 **Links:**
-- Recording: neothinkevent.com/vip-recording
+- Recording: neothinkevent.com/vip-session-recording
