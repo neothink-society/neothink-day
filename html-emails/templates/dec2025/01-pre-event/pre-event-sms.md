@@ -3,9 +3,9 @@
 **Event:** Day of Enlightenment Workshop
 **Dates:** December 6-7, 2025
 
-**Day 1:** Saturday, Dec 6 — 11:00 AM Eastern / 8:00 AM Pacific (all day)
-**Day 2:** Sunday, Dec 7 — 12:00 PM Eastern / 9:00 AM Pacific (all day)
-**VIP Deadline:** Saturday, Dec 6 at 12:00 PM Eastern / 9:00 AM Pacific
+**Day 1:** Saturday, Dec 6 — 8:00 AM Pacific / 11:00 AM Eastern (all day)
+**Day 2:** Sunday, Dec 7 — 9:00 AM Pacific / 12:00 PM Eastern (all day)
+**VIP Deadline:** Saturday, Dec 6 at 9:00 AM Pacific / 12:00 PM Eastern
 
 **Zoom Details:**
 - Link: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -14,32 +14,26 @@
 
 ---
 
-## AUDIENCE SEGMENTATION & PSYCHOLOGY
+## MESSAGING PHILOSOPHY
 
-### Attendee Personas (Beyond VIP/Non-VIP)
-| Persona | Mindset | What They Need |
-|---------|---------|----------------|
-| **The Eager Beaver** | Already prepared, excited, might be early to everything | Validation, channel their energy |
-| **The Nervous Newbie** | First workshop, tech anxiety, worried about fitting in | Reassurance, clear instructions |
-| **The Busy Professional** | Juggling commitments, might be distracted | Permission to fully commit, FOMO prevention |
-| **The Skeptic** | Signed up but not fully bought in | Value reminders without being pushy |
-| **The Procrastinator** | Hasn't done pre-work, will scramble last minute | Grace, not shame; practical help |
-| **The Overwhelmed** | Excited but anxious about the intensity | Breathing room, one step at a time |
+### Building Anticipation Without Spoiling
+- **Be explicit** about pre-work, preparation, and psychological commitment
+- **Be discrete** about specific timing and content during Day 1/Day 2
+- **Create intrigue** — pre-sell the experience without revealing the mystery
+- **Build credibility** through clear expectations and professionalism
+- **Foster anticipation** — transformation is coming, prepare for it
 
-### Emotional Arc by Day
-- **5 Days:** Distant excitement, "I have time"
-- **4 Days:** Starting to feel real, calendar anxiety
-- **3 Days:** Decision point (VIP), prep urgency building
-- **2 Days:** Tech anxiety, "am I ready?" doubts
-- **1 Day:** Nervous excitement, sleep anxiety
-- **Day 1 Morning:** Anticipation, some still asleep (Pacific!)
-- **Day 1 Live:** IN THE ROOM vs rushing to join
-- **Day 1 End:** Exhausted, processing, vulnerable
-- **Day 2 Morning:** Tired but transformed, know what to expect
-- **Day 2 End:** Emotional completion, "what now?"
+### What TO Reveal:
+- Pre-work requirements (Secret Manuscript, Workbook)
+- Logistics (start times, tech requirements)
+- General themes (transformation, patterns, value creation)
+- Preparation guidance (physical, mental, environmental)
 
-### Meta-Cognitive Principle
-**Acknowledge their likely state.** If they're probably already doing the thing, say so. If they might be struggling, normalize it. Make them feel seen.
+### What NOT to Reveal:
+- Specific session times during the workshop
+- Detailed content of exercises or revelations
+- The exact structure of each day's flow
+- Specific "aha moments" or insights they'll receive
 
 ---
 
@@ -49,8 +43,8 @@
 
 ### 1. Registration Confirmation
 **Trigger:** Immediately upon registration
-**Emotional state:** Excited, hopeful, maybe impulsive decision
-**What they need:** Validation of their decision, clear next steps
+**Emotional state:** Excited, hopeful, committed
+**What they need:** Validation, clear next steps
 
 ```
 Neothink Society: You're in.
@@ -68,15 +62,15 @@ Questions? support@neothink.com
 
 ### 2. VIP Confirmation
 **Trigger:** Immediately upon VIP purchase
-**Emotional state:** Committed, wants validation for investment
-**What they need:** Reassurance they made the right choice
+**Emotional state:** Deeply committed, wants validation for investment
+**What they need:** Reassurance, exclusivity confirmation
 
 ```
 Neothink Society: VIP Elite confirmed.
 
 Your seat in the inner circle is reserved.
 
-Your intimate VIP group session with Wallace Hamilton awaits on Day 2.
+Your intimate VIP session awaits — personalized guidance that general members won't receive.
 
 Check your email for exclusive VIP details.
 
@@ -85,222 +79,378 @@ Welcome to the inner circle.
 
 ---
 
-### 3. 5 Days Out (Monday, Dec 1)
-**Trigger:** 5 days before event
-**Emotional state:** "I have time" — excitement mixed with procrastination potential
-**What they need:** Gentle momentum without overwhelm
+### 3. 30 Days Out (Thursday, Nov 6)
+**Trigger:** 30 days before event
+**Emotional state:** Distant but curious, still in daily routine
+**What they need:** Invitation to begin shifting mindset
+**Corresponding Email:** preparation-30days.html
 
 ```
-📅 5 days until Day of Enlightenment
+Neothink Society: 30 days until your Day of Enlightenment.
 
-If you haven't started your pre-work yet, that's okay. Start today.
+This is not a seminar. This is a doorway to the life you were always meant to live.
 
-If you've already begun — good. You're ahead of most.
+Over two days, you will receive tools and insights designed to shift your operating system permanently.
 
-Your checklist:
-☐ Read pages 1-50 of The Secret Manuscript
-☐ Download & print your workbook
-☐ Complete the questionnaire
+Begin preparing your mind: permanent transformation is possible.
 
-Everything's at: https://neothinkevent.com/home
-
-The preparation isn't busywork. It amplifies your breakthrough.
+Mark your calendar. Dec 6-7. Your life is waiting.
 ```
 
 ---
 
-### 4. 4 Days Out (Tuesday, Dec 2)
-**Trigger:** 4 days before event
-**Emotional state:** Starting to feel real, calendar anxiety, work/life conflicts
-**What they need:** Permission to prioritize themselves
+### 4. 25 Days Out (Tuesday, Nov 11)
+**Trigger:** 25 days before event
+**Emotional state:** Still distant, may have forgotten
+**What they need:** Pre-work assignment, momentum start
+**Corresponding Email:** preparation-25days.html
 
 ```
-🗓️ 4 DAYS OUT — Time to protect your weekend
+Neothink Society: Your pre-work assignment.
 
-Day of Enlightenment is THIS Saturday + Sunday.
+25 days until transformation. Time to prepare.
 
-If you haven't blocked your calendar yet: do it now. Tell people you're unavailable.
+Required reading: First 50 pages of The Secret Manuscript.
 
-This isn't selfish. This is necessary.
+This isn't optional homework — it lays the emotional and philosophical groundwork for everything.
 
-Two full days. No meetings. No "quick calls." No distractions.
+Start this week. You'll be glad you did.
+
+Workshop Hub: neothinkevent.com/home
+```
+
+---
+
+### 5. 20 Days Out (Sunday, Nov 16)
+**Trigger:** 20 days before event
+**Emotional state:** Starting to feel real, may need tools
+**What they need:** Workbook download, physical preparation
+**Corresponding Email:** preparation-20days.html
+
+```
+Neothink Society: Prepare your tools.
+
+20 days out. Time to get your materials ready.
+
+Download your DOE Workbook from the Workshop Hub now.
+
+Important: Have physical writing materials ready — pen and paper. The act of writing aids neurological integration.
+
+This work is active. Your participation creates the breakthrough.
+
+Download: neothinkevent.com/home
+```
+
+---
+
+### 6. 14 Days Out (Saturday, Nov 22)
+**Trigger:** 14 days before event
+**Emotional state:** Two weeks — starting to feel close
+**What they need:** Why this works, confidence in methodology
+**Corresponding Email:** preparation-14days.html
+
+```
+Neothink Society: 2 weeks until your transformation.
+
+By now you should have:
+☐ Started The Secret Manuscript (first 50 pages)
+☐ Downloaded your DOE Workbook
+
+If you haven't — start today. Preparation amplifies results.
+
+This workshop addresses root causes, not symptoms. The methodology has worked for thousands.
+
+Your breakthrough is building.
+```
+
+---
+
+### 7. 10 Days Out (Wednesday, Nov 26)
+**Trigger:** 10 days before event
+**Emotional state:** Getting real, wants to know what to expect
+**What they need:** Mindset activation, dream identification
+**Corresponding Email:** preparation-10days.html
+
+```
+Neothink Society: 10 days. Time to identify your dream.
+
+Over the past weeks, you've read material showing impossible dreams can become reality.
+
+Start identifying what YOU want:
+
+If you operated from certainty instead of fear, what impossible dream would you create?
+
+Hold that thought. Carry it into December 6th.
+
+The workshop will show you how to make it real.
+```
+
+---
+
+### 8. 9 Days Out (Thursday, Nov 27)
+**Trigger:** 9 days before event
+**Emotional state:** Holiday week, may need logistics reminder
+**What they need:** Clear timing, schedule confirmation
+**Corresponding Email:** preparation-9days.html
+
+```
+Neothink Society: Logistics confirmed. Block your calendar.
+
+Day of Enlightenment is a FULL immersive experience.
+
+Day 1 (Saturday, Dec 6): Begins 8:00 AM Pacific
+Day 2 (Sunday, Dec 7): Begins 9:00 AM Pacific
+
+Plan for ALL DAY both days. East Coast members: you'll go late into the evening.
+
+Clear your weekend completely. Half-attention gets half-results.
+
+This is your transformation. Protect it.
+```
+
+---
+
+### 9. 7 Days Out (Saturday, Nov 29)
+**Trigger:** 7 days before event
+**Emotional state:** One week — anticipation building
+**What they need:** ALL IN commitment, environment prep
+**Corresponding Email:** preparation-7days.html
+
+```
+Neothink Society: 7 DAYS. The countdown begins.
+
+One week from now, you'll be in transformation.
+
+This weekend demands your full commitment: ALL IN.
+
+Prepare your environment now:
+• Find a comfortable, quiet space
+• Plan for zero distractions
+• Silence notifications, close extra tabs
+
+Your transformation is directly proportional to your commitment.
+
+Are you ready to go ALL IN?
+```
+
+---
+
+### 10. 5 Days Out (Monday, Dec 1)
+**Trigger:** 5 days before event
+**Emotional state:** Getting real, physical prep needed
+**What they need:** Hydration/nutrition prep, practical checklist
+**Corresponding Email:** preparation-5days.html
+
+```
+Neothink Society: 5 DAYS. Physical preparation time.
+
+Your body supports your mind. Prepare both.
+
+Hydration = peak cognitive function. Have water within arm's reach.
+
+We have short breaks — pre-prepare snacks and lunch. You won't want to leave for food runs.
+
+Physical checklist:
+☐ Water supply ready
+☐ Snacks/meals planned
+☐ Comfortable seating arranged
+☐ Notebook + pen ready
 
 Your breakthrough requires your full presence.
-
-The people who show up fully are the ones who transform.
 ```
 
 ---
 
-### 5a. 3 Days Out — Non-VIP (Wednesday, Dec 3)
-**Trigger:** 72 hours before event
-**Emotional state:** Getting real, maybe on the fence about VIP
-**What they need:** Clear value proposition without pressure
+### 11. 4 Days Out (Tuesday, Dec 2)
+**Trigger:** 4 days before event
+**Emotional state:** Anticipation, maybe some anxiety
+**What they need:** Permission to embrace discomfort
+**Corresponding Email:** preparation-4days.html
 
 ```
-⚡ 72 HOURS
+Neothink Society: 4 DAYS. Prepare for the challenge.
 
-Day of Enlightenment is almost here.
+Fair warning: Some moments will feel uncomfortable. Maybe even awkward.
 
-Quick gut check: Are you ready to get the most out of this weekend?
+This is intentional.
 
-VIP Elite includes an intimate group session with Wallace Hamilton on Day 2 — personalized guidance on YOUR specific breakthrough.
+The greatest breakthroughs happen when your comfort zone is interrupted. We're forcing you out of the patterns that have been restricting your life.
 
-Upgrade closes Saturday at 12pm Eastern / 9am Pacific. No exceptions after that.
+Prepare to participate fully. Lean into the discomfort.
 
-If you're curious: https://neothinkevent.com/home
+You are in a safe environment of fellow seekers.
 
-If you're already set with General — that's great too. The main workshop is powerful on its own.
-
-Either way, see you Saturday.
+Transformation lives on the other side of comfort.
 ```
 
 ---
 
-### 5b. 3 Days Out — VIP Member (Wednesday, Dec 3)
+### 12a. 3 Days Out — Non-VIP (Wednesday, Dec 3)
 **Trigger:** 72 hours before event
-**Emotional state:** Confident in decision, wants to maximize investment
-**What they need:** Validation + VIP-specific prep focus
+**Emotional state:** Prep urgency, VIP decision point
+**What they need:** FNE preview, VIP option reminder
+**Corresponding Email:** preparation-3days.html
 
 ```
-⭐ VIP ELITE: 72 hours out
+Neothink Society: 72 HOURS.
 
-Your intimate session with Wallace Hamilton is locked in for Day 2.
+Day 1 focuses on uncovering your Friday Night Essence — the deepest motivational root that grants effortless focus and natural value creation.
+
+Pre-contemplate: What productive activity would you naturally do, even with unlimited time and money?
+
+This question holds more power than you realize.
+
+VIP Elite upgrade closes Saturday at 9am Pacific. If you want personalized guidance, decide now.
+
+Either way — see you Saturday.
+```
+
+---
+
+### 12b. 3 Days Out — VIP (Wednesday, Dec 3)
+**Trigger:** 72 hours before event
+**Emotional state:** Confident, wants to maximize investment
+**What they need:** VIP-specific prep, validation
+**Corresponding Email:** preparation-3days-vip.html
+
+```
+Neothink Society: VIP — 72 HOURS.
+
+Your investment in the inner circle is about to pay off.
+
+Day 1 focuses on uncovering your Friday Night Essence. But as VIP Elite, you'll go deeper with personalized guidance.
 
 Between now and Saturday:
-☐ Finish your pre-work (if you haven't)
-☐ Print your workbook
-☐ Write down your biggest questions for Wallace
+☐ Complete your pre-work
+☐ Write down your biggest questions
+☐ Prepare to participate fully
 
-Come ready to go deep. This is your chance for personalized breakthrough guidance that general members won't have access to.
-
-Workshop Hub: https://neothinkevent.com/home
+You've committed to transformation at the highest level.
 
 See you in the inner circle.
 ```
 
 ---
 
-### 6a. 2 Days Out — Non-VIP (Thursday, Dec 4)
+### 13a. 2 Days Out — Non-VIP (Thursday, Dec 4)
 **Trigger:** 48 hours before event
-**Emotional state:** Tech anxiety, "am I ready?" doubts, last-minute prep panic
-**What they need:** Practical reassurance, grace for procrastinators
+**Emotional state:** Excitement building, wealth curiosity
+**What they need:** Wealth segment preview, practical prep
+**Corresponding Email:** preparation-2days.html
 
 ```
-⚙️ 48 HOURS — Tech check time
+Neothink Society: 48 HOURS.
 
-If you've already tested Zoom and set up your space — great, you're ready.
+Day 1 concludes with the Wealth Shift — learning to replace "Can I afford this?" with "How can I afford this?"
 
-If not, here's your checklist:
+This simple question shift transforms consumers into creators.
+
+Tech checklist:
 ☐ Update Zoom to latest version
 ☐ Test camera & mic
-☐ Find your quiet space
-☐ Charge your devices
+☐ Charge devices
 
-Haven't finished your pre-work? You still have time. Do what you can. Something is better than nothing.
+Zoom link arrives Saturday morning.
 
-Your Zoom link arrives Saturday morning.
-
-Almost there.
+Your transformation begins in 2 days.
 ```
 
 ---
 
-### 6b. 2 Days Out — VIP (Thursday, Dec 4)
+### 13b. 2 Days Out — VIP (Thursday, Dec 4)
 **Trigger:** 48 hours before event
-**Emotional state:** Same tech anxiety, plus wanting to be extra prepared for VIP access
-**What they need:** VIP-specific prep, reassurance about their investment
+**Emotional state:** Ready, wants final prep
+**What they need:** VIP-specific tech prep, anticipation
+**Corresponding Email:** preparation-2days.html (VIP variant)
 
 ```
-⭐ VIP: 48 HOURS — Final prep
+Neothink Society: VIP — 48 HOURS.
 
-Tech checklist:
-☐ Update Zoom (you'll want flawless connection for your VIP session)
+Tech checklist (extra important for your VIP session):
+☐ Update Zoom — flawless connection required
 ☐ Test camera & mic
 ☐ Secure your space for the full weekend
 
 VIP prep:
-☐ Review your questions for Wallace
-☐ Think about where you want personalized guidance
+☐ Review your questions
+☐ Identify where you need personalized guidance
 
-As VIP Elite, you'll have priority access and dedicated interaction time.
+As VIP Elite, you'll have dedicated interaction time.
 
-Your Zoom link arrives Saturday morning.
+Zoom link arrives Saturday morning.
 
 You're ready for this.
 ```
 
 ---
 
-### 7a. 1 Day Out — Non-VIP (Friday, Dec 5 — Evening)
+### 14a. 1 Day Out — Non-VIP (Friday, Dec 5 — Evening)
 **Trigger:** Evening before event
-**Emotional state:** Nervous excitement, sleep anxiety, last-minute doubts
-**What they need:** Calm confidence, practical prep, permission to rest
+**Emotional state:** Nervous excitement, final preparation
+**What they need:** Calm confidence, permission to rest
+**Corresponding Email:** preparation-1day.html
 
 ```
-🌙 Tomorrow is the day.
+Neothink Society: TOMORROW.
 
-If you're feeling nervous — that's normal. It means you're taking this seriously.
-
-If you're feeling excited — good. Trust that feeling.
+Day 1 begins at 8:00 AM Pacific.
 
 Tonight:
-• Set 2-3 alarms (seriously)
+• Set 2-3 alarms
 • Lay out water, pen, paper
 • Get your workbook ready
 
-Your Zoom link arrives tomorrow morning at 10am Eastern.
+Whatever you did or didn't do to prepare — you're ready enough.
 
-Whatever you did or didn't do to prepare — you're ready enough. Show up tomorrow and be present. That's what matters.
+Show up tomorrow. Be present. That's what matters.
 
-Rest well. Tomorrow, everything changes.
+Rest well. Tomorrow, your life is about to meet you.
 ```
 
 ---
 
-### 7b. 1 Day Out — VIP (Friday, Dec 5 — Evening)
+### 14b. 1 Day Out — VIP (Friday, Dec 5 — Evening)
 **Trigger:** Evening before event
-**Emotional state:** Same nerves + anticipation for VIP experience
-**What they need:** Elevated confidence, reminder of what they're getting
+**Emotional state:** Invested, anticipating full experience
+**What they need:** Elevated confidence, reminder of investment value
+**Corresponding Email:** preparation-1day.html (VIP variant)
 
 ```
-⭐ VIP: Tomorrow is your day.
+Neothink Society: VIP — TOMORROW.
+
+Day 1 begins at 8:00 AM Pacific.
 
 You've invested in the full experience. Here's what awaits:
-• Priority access from the moment doors open
-• Intimate session with Wallace Hamilton (Day 2)
-• Exclusive VIP-only session after main workshop
+• Priority access from doors open
+• Personalized guidance in your VIP session
+• Insights that general members won't receive
 
 Tonight:
 • Set 2-3 alarms
-• Review your questions for Wallace
+• Review your questions
 • Get your workbook ready
 
-Your Zoom link arrives tomorrow morning at 10am Eastern.
-
 Rest well. You're about to experience something most people never will.
-
-See you in the inner circle.
 ```
 
 ---
 
 ## DAY 1 COUNTDOWN (Saturday, December 6)
 
-*Note: After this point, VIP offer has expired. All attendees get same countdown messages. VIP members get additional VIP-specific session reminders.*
+*Note: After this point, VIP upgrade window has closed. All attendees receive same countdown messages.*
 
 ---
 
-### 8. Day 1 — 2 Hours Before (9:00 AM Eastern / 6:00 AM Pacific)
-**Emotional state:** Pacific folks might be asleep! Eastern folks getting ready. Anticipation building.
-**What they need:** Gentle wake-up, not aggressive alarm
+### 15. Day 1 — 2 Hours Before (6:00 AM Pacific / 9:00 AM Eastern)
+**Emotional state:** Pacific folks waking up, Eastern ready
+**What they need:** Gentle wake-up, final prep check
 
 ```
-⏰ 2 hours until Day of Enlightenment
+Neothink Society: 2 HOURS until Day of Enlightenment.
 
-If you're reading this at 6am Pacific — thank you for being up. ☕
+If you're reading this at 6am Pacific — thank you for being up.
 
-If you're on the East Coast, you've got time for breakfast and one last prep check:
+Final prep:
 ☑️ Workbook ready
 ☑️ Water nearby
 ☑️ Quiet space secured
@@ -314,15 +464,15 @@ See you soon.
 
 ---
 
-### 9. Day 1 — Zoom Link (10:00 AM Eastern / 7:00 AM Pacific)
-**Emotional state:** Relief (finally have the link!), eager to get in
-**What they need:** Clear access info, no friction
+### 16. Day 1 — Zoom Link (7:00 AM Pacific / 10:00 AM Eastern)
+**Emotional state:** Relief, eager to access
+**What they need:** Clear link, no friction
 
 ```
-🔴 YOUR ZOOM LINK
+Neothink Society: YOUR ZOOM LINK
 
-Doors open: NOW (10:30am Eastern)
-Start time: 11am Eastern / 8am Pacific SHARP
+Doors open: 7:30am Pacific / 10:30am Eastern
+We begin: 8:00am Pacific / 11:00am Eastern SHARP
 
 JOIN HERE:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -332,19 +482,19 @@ Pass: {{custom_values.doe_zoom_passcode}}
 
 Join early. Get settled. Breathe.
 
-The opening moment sets the tone for everything that follows.
+The opening moment sets the tone for everything.
 
 See you inside.
 ```
 
 ---
 
-### 10. Day 1 — Doors Open (10:30 AM Eastern)
-**Emotional state:** Eager beavers already in! Others still getting ready.
+### 17. Day 1 — Doors Open (7:30 AM Pacific / 10:30 AM Eastern)
+**Emotional state:** Eager beavers in, others still joining
 **What they need:** Acknowledge both states
 
 ```
-🚪 DOORS ARE OPEN
+Neothink Society: DOORS ARE OPEN.
 
 If you're already in the room — welcome. You're in the right place.
 
@@ -355,19 +505,19 @@ If you're not in yet — join now:
 
 Get settled. Say hello in the chat. Take a breath.
 
-The energy in the room right now is already building.
+The energy in the room is already building.
 ```
 
 ---
 
-### 11. Day 1 — WE'RE LIVE (11:00 AM Eastern)
-**Emotional state:** MOST PEOPLE ARE ALREADY IN THE ROOM. Some are rushing.
-**What they need:** Acknowledge both — don't make people in the room feel this message isn't for them
+### 18. Day 1 — WE'RE LIVE (8:00 AM Pacific / 11:00 AM Eastern)
+**Emotional state:** Most in room, some rushing
+**What they need:** Validation + urgency for stragglers
 
 ```
-🔴 WE'RE LIVE
+Neothink Society: WE'RE LIVE.
 
-If you're in the room — we see you. Stay present. This is it.
+If you're in the room — stay present. This is it.
 
 If you're not in yet — join NOW:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -379,12 +529,12 @@ Every moment from here forward matters.
 
 ---
 
-### 12. Day 1 — End of Day (Evening)
-**Emotional state:** Exhausted, emotionally full, vulnerable, processing
-**What they need:** Validation, permission to rest, anticipation for Day 2
+### 19. Day 1 — End of Day (Evening)
+**Emotional state:** Exhausted, emotionally full, processing
+**What they need:** Validation, permission to rest, Day 2 anticipation
 
 ```
-✓ Day 1 complete.
+Neothink Society: Day 1 complete.
 
 You showed up. You stayed present. You did the work.
 
@@ -395,7 +545,7 @@ Tonight:
 • Let your subconscious process while you sleep
 • Rest well
 
-Tomorrow (Day 2): 12pm Eastern / 9am Pacific
+Tomorrow (Day 2): 9:00 AM Pacific / 12:00 PM Eastern
 Same Zoom link.
 
 You're not the same person you were this morning.
@@ -409,19 +559,19 @@ See you tomorrow.
 
 ---
 
-### 13. Day 2 — 2 Hours Before (10:00 AM Eastern)
-**Emotional state:** Tired but different. Know what to expect now. Some eager, some need caffeine.
-**What they need:** Gentle energy, acknowledgment they know the drill
+### 20. Day 2 — 2 Hours Before (7:00 AM Pacific / 10:00 AM Eastern)
+**Emotional state:** Tired but transformed, know what to expect
+**What they need:** Gentle energy, acknowledgment of Day 1
 
 ```
-⏰ Day 2 begins in 2 HOURS
+Neothink Society: Day 2 begins in 2 HOURS.
 
-You know what to do now. You've been here before (yesterday).
+You know what to do now. You've been here before.
 
-12pm Eastern / 9am Pacific — we go deeper.
+9:00 AM Pacific / 12:00 PM Eastern — we go deeper.
 
 Have ready:
-• Workbook + your notes from Day 1
+• Workbook + Day 1 notes
 • Water, pen, paper
 • Whatever energy you've got (it's enough)
 
@@ -434,41 +584,38 @@ See you soon.
 
 ---
 
-### 14. Day 2 — 45 Minutes Before (11:15 AM Eastern)
-**Emotional state:** Getting back into workshop mode. Maybe still processing Day 1.
+### 21. Day 2 — 45 Minutes Before (8:15 AM Pacific / 11:15 AM Eastern)
+**Emotional state:** Getting back into workshop mode
 **What they need:** Gentle activation, practical reminder
 
 ```
-🚨 45 MINUTES until Day 2
+Neothink Society: 45 MINUTES until Day 2.
 
-Doors open in 15 min (11:30am Eastern)
+Doors open in 15 min.
 
 If you need a few more minutes with your coffee — take it.
 
 Then join us:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-ID: {{custom_values.doe_zoom_id}}
-Pass: {{custom_values.doe_zoom_passcode}}
-
 Whatever Day 1 stirred up in you — today we work with it.
 ```
 
 ---
 
-### 15. Day 2 — Doors Open (11:45 AM Eastern)
-**Emotional state:** Familiar now. Community feeling. Some already in room.
+### 22. Day 2 — Doors Open (8:45 AM Pacific / 11:45 AM Eastern)
+**Emotional state:** Familiar, community feeling
 **What they need:** Acknowledge the returning community
 
 ```
-🚪 DOORS OPEN — 15 minutes to Day 2
+Neothink Society: DOORS OPEN — 15 minutes to Day 2.
 
-If you're already in the room — welcome back. The energy is already building.
+If you're already in — welcome back. The energy is building.
 
 If you're joining now:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-12pm Eastern / 9am Pacific SHARP
+9:00 AM Pacific / 12:00 PM Eastern SHARP.
 
 Yesterday we laid the foundation.
 Today, we put it all together.
@@ -478,12 +625,12 @@ Get settled. We begin soon.
 
 ---
 
-### 16. Day 2 — WE'RE LIVE (12:00 PM Eastern)
-**Emotional state:** Most in room. Ready to complete the journey.
-**What they need:** Honor where they are, gentle urgency for stragglers
+### 23. Day 2 — WE'RE LIVE (9:00 AM Pacific / 12:00 PM Eastern)
+**Emotional state:** Ready to complete the journey
+**What they need:** Honor where they are, urgency for stragglers
 
 ```
-🔴 DAY 2 IS LIVE
+Neothink Society: DAY 2 IS LIVE.
 
 If you're in the room — thank you for showing up again. This is where it comes together.
 
@@ -497,16 +644,16 @@ Today, everything you started yesterday reaches completion.
 
 ---
 
-### 17. Day 2 — Workshop Complete (Evening)
-**Emotional state:** Emotional. Transformed. Maybe sad it's over. Wondering "what now?"
-**What they need:** Honor the journey, clear next steps, sense of continuation
+### 24. Day 2 — Workshop Complete (Evening)
+**Emotional state:** Transformed, maybe sad it's over, wondering "what now?"
+**What they need:** Honor the journey, clear next steps
 
 ```
-✓ You did it.
+Neothink Society: You did it.
 
 Two days. Full presence. Real transformation.
 
-You're not the same person you were on Friday. You know things now that you didn't know then. You've felt things you hadn't felt before.
+You're not the same person you were Friday. You know things now that you didn't know then.
 
 This isn't the end — it's the beginning.
 
@@ -524,134 +671,113 @@ Your golden life has begun.
 
 ## VIP-ONLY SESSION REMINDERS
 
-*These go ONLY to VIP members, in addition to the regular countdown messages.*
+*These go ONLY to VIP members, in addition to regular countdown messages.*
 
 ---
 
-### VIP — Day 1 Session Reminder
-**Trigger:** 30 minutes before VIP session
-**Emotional state:** Anticipating their special access, maybe nervous about speaking up
-**What they need:** Practical info + permission to participate fully
+### VIP — Session Reminder
+**Trigger:** Before VIP exclusive session
+**Emotional state:** Anticipating special access
+**What they need:** Practical info, permission to participate fully
 
 ```
-⭐ VIP: Your intimate session is coming up.
+Neothink Society: VIP — Your session is coming up.
 
-Stay in the main Zoom room — you'll be moved to breakout when it's time.
+Stay in the main Zoom room — you'll be directed when it's time.
 
 This is your moment:
 • Have your questions ready
-• Don't hold back — this access is why you upgraded
-• Wallace is here for YOUR breakthrough
+• Don't hold back — this is why you upgraded
+• Personalized guidance awaits
 
 You earned this. Use it fully.
 ```
 
 ---
 
-### VIP — Day 2 Session Reminder
-**Trigger:** Before VIP-only session on Day 2
-**Emotional state:** Tired but invested. Want to maximize final VIP benefit.
-**What they need:** Energy boost, reminder of exclusivity
+### VIP — Exclusive Session Starting
+**Trigger:** When VIP-only session begins
+**Emotional state:** Tired but invested, want to maximize
+**What they need:** Energy boost, exclusivity reminder
 
 ```
-⭐ VIP EXCLUSIVE SESSION STARTING
+Neothink Society: VIP EXCLUSIVE SESSION STARTING.
 
-General members have been dismissed. This next session is for you.
+General members have been dismissed. This is for you.
 
 You're in the inner circle now.
 
-Stay present. Ask your questions. This is personalized guidance that only VIP members receive.
+Stay present. Ask your questions. This is personalized guidance only VIP members receive.
 
 Make the most of this moment.
 ```
 
 ---
 
-### VIP — Zoom Background
-**Trigger:** After VIP confirmation or 1-2 days before event
-**Emotional state:** Excited about VIP perks, wants to maximize their investment
-**What they need:** Clear download + setup instructions, feel special
-**Corresponding Email:** vip-zoom-background.html
-
-```
-⭐ VIP EXCLUSIVE: Your Custom Zoom Background
-
-Stand out in the workshop with your VIP background.
-
-📥 Download: https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921b0a35408c646432ae105.png
-
-Setup takes 60 seconds:
-1. Download the image
-2. Open Zoom → Settings → Background & Effects
-3. Click + to add your VIP background
-
-Need help? https://neothinkevent.com/zoom
-
-Your VIP status will be instantly recognizable.
-```
-
----
-
 ## COMPLETE SEND SCHEDULE
 
-| # | Message | Audience | Day | Time (Eastern) |
-|---|---------|----------|-----|-----------|
-| 1 | Registration | All | On signup | Immediate |
-| 2 | VIP Confirmation | VIP | On purchase | Immediate |
-| 3 | 5 Days | All | Mon, Dec 1 | Morning |
-| 4 | 4 Days | All | Tue, Dec 2 | Morning |
-| 5a | 3 Days | Non-VIP | Wed, Dec 3 | Morning |
-| 5b | 3 Days | VIP | Wed, Dec 3 | Morning |
-| 6a | 2 Days | Non-VIP | Thu, Dec 4 | Morning |
-| 6b | 2 Days | VIP | Thu, Dec 4 | Morning |
-| 7a | 1 Day | Non-VIP | Fri, Dec 5 | Evening |
-| 7b | 1 Day | VIP | Fri, Dec 5 | Evening |
-| 8 | 2 Hours | All | Sat, Dec 6 | 9:00 AM |
-| 9 | Zoom Link | All | Sat, Dec 6 | 10:00 AM |
-| 10 | Doors Open | All | Sat, Dec 6 | 10:30 AM |
-| 11 | LIVE | All | Sat, Dec 6 | 11:00 AM |
-| 12 | Day 1 End | All | Sat, Dec 6 | Evening |
-| 13 | 2 Hours | All | Sun, Dec 7 | 10:00 AM |
-| 14 | 45 Minutes | All | Sun, Dec 7 | 11:15 AM |
-| 15 | Doors Open | All | Sun, Dec 7 | 11:45 AM |
-| 16 | LIVE | All | Sun, Dec 7 | 12:00 PM |
-| 17 | Complete | All | Sun, Dec 7 | Evening |
-| VIP-1 | Session Reminder | VIP only | Sat, Dec 6 | Before VIP session |
-| VIP-2 | Exclusive Session | VIP only | Sun, Dec 7 | Before VIP session |
-| VIP-3 | Zoom Background | VIP only | Thu-Fri | After confirmation or 1-2 days before |
+| # | Message | Audience | Day | Time (Pacific) | Offset |
+|---|---------|----------|-----|----------------|--------|
+| 1 | Registration | All | On signup | Immediate | — |
+| 2 | VIP Confirmation | VIP | On purchase | Immediate | — |
+| 3 | 30 Days Out | All | Thu Nov 6 | 9:00 AM | -29d 23h |
+| 4 | 25 Days Out | All | Tue Nov 11 | 9:00 AM | -24d 23h |
+| 5 | 20 Days Out | All | Sun Nov 16 | 9:00 AM | -19d 23h |
+| 6 | 14 Days Out | All | Sat Nov 22 | 9:00 AM | -13d 23h |
+| 7 | 10 Days Out | All | Wed Nov 26 | 9:00 AM | -9d 23h |
+| 8 | 9 Days Out | All | Thu Nov 27 | 9:00 AM | -8d 23h |
+| 9 | 7 Days Out | All | Sat Nov 29 | 9:00 AM | -6d 23h |
+| 10 | 5 Days Out | All | Mon Dec 1 | 9:00 AM | -4d 23h |
+| 11 | 4 Days Out | All | Tue Dec 2 | 9:00 AM | -3d 23h |
+| 12a | 3 Days Out | Non-VIP | Wed Dec 3 | 9:00 AM | -2d 23h |
+| 12b | 3 Days Out | VIP | Wed Dec 3 | 9:00 AM | -2d 23h |
+| 13a | 2 Days Out | Non-VIP | Thu Dec 4 | 9:00 AM | -1d 23h |
+| 13b | 2 Days Out | VIP | Thu Dec 4 | 9:00 AM | -1d 23h |
+| 14a | 1 Day Out | Non-VIP | Fri Dec 5 | 4:00 PM | -16h |
+| 14b | 1 Day Out | VIP | Fri Dec 5 | 4:00 PM | -16h |
+| 15 | 2 Hours | All | Sat Dec 6 | 6:00 AM | -2h |
+| 16 | Zoom Link | All | Sat Dec 6 | 7:00 AM | -1h |
+| 17 | Doors Open | All | Sat Dec 6 | 7:30 AM | -30m |
+| 18 | LIVE | All | Sat Dec 6 | 8:00 AM | T=0 |
+| 19 | Day 1 End | All | Sat Dec 6 | Evening | +9h |
+| 20 | 2 Hours | All | Sun Dec 7 | 7:00 AM | +23h |
+| 21 | 45 Minutes | All | Sun Dec 7 | 8:15 AM | +24.25h |
+| 22 | Doors Open | All | Sun Dec 7 | 8:45 AM | +24.75h |
+| 23 | LIVE | All | Sun Dec 7 | 9:00 AM | +25h |
+| 24 | Complete | All | Sun Dec 7 | Evening | +33h |
+| VIP-1 | Session Reminder | VIP | — | Before VIP | — |
+| VIP-2 | Exclusive Session | VIP | — | VIP start | — |
 
 ---
 
-## MESSAGING PHILOSOPHY
+## MESSAGING PHILOSOPHY SUMMARY
 
-### Everyone Feels Special
-- General members aren't "lesser" — the main workshop IS the transformation
-- VIP members get acknowledgment of their investment
-- Both paths are valid; different, not better/worse
+### Everyone Feels Prepared
+- Clear pre-work requirements at every stage
+- Physical and mental preparation guidance
+- No one arrives wondering "what should I have done?"
 
-### Meta-Cognitive Awareness
-- If they're probably already in the room: acknowledge it
-- If they're probably struggling: normalize it
-- If they're probably anxious: name it
-- Don't pretend everyone is in the same state
+### Build Anticipation Without Spoiling
+- General themes, not specific revelations
+- "Something powerful awaits" > "Here's exactly what happens"
+- Create curiosity, not a checklist of what they'll experience
 
-### Tone Principles
-- **Not salesy** — even VIP mentions feel like information, not pressure
-- **Not panicked** — urgent but calm
-- **Not generic** — feels like it was written for THEM
-- **Permission-giving** — "that's okay" > "you should have"
-
-### Grace for Procrastinators
-- Never shame for not being prepared
-- "Something is better than nothing"
-- "You're ready enough"
+### Grace for All Stages
+- If they're ahead — validate them
+- If they're behind — no shame, practical help
 - Focus on showing up, not perfection
 
+### Tone Principles
+- **Professional but warm** — not salesy, not cold
+- **Urgent but calm** — important without panic
+- **Specific but mysterious** — clear instructions, hidden revelations
+
 ---
 
-**Version:** 3.1
-**Updated:** December 11, 2025 (SMS Compliance Update)
-- Added sender identification "Neothink Society:" to first messages
-- Added opt-out language "Reply STOP to opt out"
-- Replaced "GUARANTEED" with compliant alternatives
-- See SMS-COMPLIANCE-AUDIT.md for full guidelines
+**Version:** 4.0
+**Updated:** December 15, 2025
+- Added full 30-day SMS sequence (30, 25, 20, 14, 10, 9, 7 days out)
+- Updated messaging to build anticipation without spoiling
+- Removed specific session times from Day 1/Day 2 (only start times)
+- Aligned with new content guidelines per user direction
+- Fixed Wallace Hamilton (was incorrectly "William" in some places)

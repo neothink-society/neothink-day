@@ -32,7 +32,7 @@
 
 | Dimension | Transformation | Key Moments |
 |-----------|---------------|-------------|
-| **Mind** | Limitation → Possibility | William Hamilton opens Day 1 |
+| **Mind** | Limitation → Possibility | Wallace Hamilton opens Day 1 |
 | **Heart** | Inadequacy → Worthiness | FNE Discovery (Day 1 afternoon) |
 | **Hands** | Passive → Ready to Create | Wealth Segment (Day 1 afternoon) |
 | **Shoes** | Others' Path → Own Path | Integration (Day 2 afternoon) |

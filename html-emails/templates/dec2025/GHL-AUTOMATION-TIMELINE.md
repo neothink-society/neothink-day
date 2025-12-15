@@ -61,38 +61,43 @@ These fire based on actions, not scheduled times.
 | # | Type | Message | Date | Time (PT/ET) | Offset | Condition |
 |---|------|---------|------|--------------|--------|-----------|
 | 1 | [E] | `preparation-30days.html` | Thu Nov 6 | 9am PT / 12pm ET | **-29d 23h** | All |
-| 2 | [E] | `preparation-25days.html` | Tue Nov 11 | 9am PT / 12pm ET | **-24d 23h** | All |
-| 3 | [E] | `preparation-20days.html` | Sun Nov 16 | 9am PT / 12pm ET | **-19d 23h** | All |
-| 4 | [S] | 20 Days Out | Sun Nov 16 | 9am PT / 12pm ET | **-19d 23h** | All |
+| 2 | [S] | 30 Days Out | Thu Nov 6 | 9am PT / 12pm ET | **-29d 23h** | All |
+| 3 | [E] | `preparation-25days.html` | Tue Nov 11 | 9am PT / 12pm ET | **-24d 23h** | All |
+| 4 | [S] | 25 Days Out | Tue Nov 11 | 9am PT / 12pm ET | **-24d 23h** | All |
+| 5 | [E] | `preparation-20days.html` | Sun Nov 16 | 9am PT / 12pm ET | **-19d 23h** | All |
+| 6 | [S] | 20 Days Out | Sun Nov 16 | 9am PT / 12pm ET | **-19d 23h** | All |
 
 ### Week 2: Foundation Building (Days 14-8)
 
 | # | Type | Message | Date | Time (PT/ET) | Offset | Condition |
 |---|------|---------|------|--------------|--------|-----------|
-| 5 | [E] | `preparation-14days.html` | Sat Nov 22 | 9am PT / 12pm ET | **-13d 23h** | All |
-| 6 | [E] | `preparation-10days.html` | Wed Nov 26 | 9am PT / 12pm ET | **-9d 23h** | All |
-| 7 | [E] | `preparation-9days.html` | Thu Nov 27 | 9am PT / 12pm ET | **-8d 23h** | All |
+| 7 | [E] | `preparation-14days.html` | Sat Nov 22 | 9am PT / 12pm ET | **-13d 23h** | All |
+| 8 | [S] | 14 Days Out | Sat Nov 22 | 9am PT / 12pm ET | **-13d 23h** | All |
+| 9 | [E] | `preparation-10days.html` | Wed Nov 26 | 9am PT / 12pm ET | **-9d 23h** | All |
+| 10 | [S] | 10 Days Out | Wed Nov 26 | 9am PT / 12pm ET | **-9d 23h** | All |
+| 11 | [E] | `preparation-9days.html` | Thu Nov 27 | 9am PT / 12pm ET | **-8d 23h** | All |
+| 12 | [S] | 9 Days Out | Thu Nov 27 | 9am PT / 12pm ET | **-8d 23h** | All |
 
 ### Week 1: Momentum Building (Days 7-1)
 
 | # | Type | Message | Date | Time (PT/ET) | Offset | Condition |
 |---|------|---------|------|--------------|--------|-----------|
-| 8 | [E] | `preparation-7days.html` | Sat Nov 29 | 9am PT / 12pm ET | **-6d 23h** | All |
-| 9 | [S] | 7 Days Out | Sat Nov 29 | 9am PT / 12pm ET | **-6d 23h** | All |
-| 10 | [E] | `preparation-5days.html` | Mon Dec 1 | 9am PT / 12pm ET | **-4d 23h** | All |
-| 11 | [S] | 5 Days Out | Mon Dec 1 | 9am PT / 12pm ET | **-4d 23h** | All |
-| 12 | [E] | `preparation-4days.html` | Tue Dec 2 | 9am PT / 12pm ET | **-3d 23h** | All |
-| 13 | [S] | 4 Days Out | Tue Dec 2 | 9am PT / 12pm ET | **-3d 23h** | All |
-| 14 | [E] | `preparation-3days.html` | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | Non-VIP |
-| 15 | [E] | `preparation-3days-vip.html` | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | VIP |
-| 16 | [S] | 3 Days (Non-VIP) | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | Non-VIP |
-| 17 | [S] | 3 Days (VIP) | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | VIP |
-| 18 | [E] | `preparation-2days.html` | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | All |
-| 19 | [S] | 2 Days (Non-VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | Non-VIP |
-| 20 | [S] | 2 Days (VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | VIP |
-| 21 | [E] | `preparation-1day.html` | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | All |
-| 22 | [S] | 1 Day (Non-VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | Non-VIP |
-| 23 | [S] | 1 Day (VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | VIP |
+| 13 | [E] | `preparation-7days.html` | Sat Nov 29 | 9am PT / 12pm ET | **-6d 23h** | All |
+| 14 | [S] | 7 Days Out | Sat Nov 29 | 9am PT / 12pm ET | **-6d 23h** | All |
+| 15 | [E] | `preparation-5days.html` | Mon Dec 1 | 9am PT / 12pm ET | **-4d 23h** | All |
+| 16 | [S] | 5 Days Out | Mon Dec 1 | 9am PT / 12pm ET | **-4d 23h** | All |
+| 17 | [E] | `preparation-4days.html` | Tue Dec 2 | 9am PT / 12pm ET | **-3d 23h** | All |
+| 18 | [S] | 4 Days Out | Tue Dec 2 | 9am PT / 12pm ET | **-3d 23h** | All |
+| 19 | [E] | `preparation-3days.html` | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | Non-VIP |
+| 20 | [E] | `preparation-3days-vip.html` | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | VIP |
+| 21 | [S] | 3 Days (Non-VIP) | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | Non-VIP |
+| 22 | [S] | 3 Days (VIP) | Wed Dec 3 | 9am PT / 12pm ET | **-2d 23h** | VIP |
+| 23 | [E] | `preparation-2days.html` | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | All |
+| 24 | [S] | 2 Days (Non-VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | Non-VIP |
+| 25 | [S] | 2 Days (VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | VIP |
+| 26 | [E] | `preparation-1day.html` | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | All |
+| 27 | [S] | 1 Day (Non-VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | Non-VIP |
+| 28 | [S] | 1 Day (VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | VIP |
 
 ---
 
@@ -510,13 +515,14 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 3.2
+**Version:** 4.0
 **Created:** December 10, 2025
 **Last Updated:** December 15, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v4.0** (Dec 15): Added SMS for every email (30, 25, 20, 14, 10, 9, 7, 5, 4, 3, 2, 1 days out); Fixed Wallace Hamilton name; Removed specific Day 1/Day 2 times from content
 - **v3.2** (Dec 15): Changed all pre-event email times to 9am Pacific (was 9am Eastern), recalculated all offsets
 - **v3.1** (Dec 11): Added Sunday Night Anchor (+35h), compressed value series to end Fri Dec 12, updated chronological appendix
 - **v3.0** (Dec 11): Extended pre-event sequence from 14 days to 30 days

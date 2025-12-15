@@ -147,7 +147,7 @@ Transition from emotional/philosophical to practical. Build confidence in the me
 **Opening Hook:** "Here's exactly what will happen when you join us in 10 days."
 
 **Content Direction:**
-- Day 1 overview: William Hamilton, FNE discovery, Wealth segment
+- Day 1 overview: Wallace Hamilton, FNE discovery, Wealth segment
 - Day 2 overview: Mark Hamilton, Integration, Golden Life Sheet
 - What to have ready (notebook, quiet space, open mind)
 - Set expectations for the emotional journey
