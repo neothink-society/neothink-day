@@ -174,6 +174,9 @@ These fire based on actions, not scheduled times.
 | 13 | [E] | `11-day2-end.html` | Workshop ends | 8:00 PM | +1d 9h | All |
 | 14 | [S] | Workshop Complete | Workshop ends | 8:00 PM | +1d 9h | All |
 | 15 | [E] | `day2-complete-level3.html` | Evening | 8:00 PM | +1d 9h | Non-L3 |
+| 16 | [S] | L3 Enrollment Now Open | Evening | 8:00 PM | +1d 9h | Non-L3 |
+
+**SMS #16 (Non-L3):** "You did it! The workshop is complete, but your transformation has just begun. L3 enrollment is now open for those ready to go deeper. Check your email for details."
 
 ---
 
@@ -391,13 +394,13 @@ These fire based on actions, not scheduled times.
 | Day 1 Countdown | 5 | 5 | 10 |
 | Day 1 Workshop | 8 | 8 | 16 |
 | Day 2 Countdown | 4 | 4 | 8 |
-| Day 2 Workshop | 9 | 8 | 17 |
+| Day 2 Workshop | 9 | 9 | 18 |
 | Sunday Night Anchor | 1 | 1 | 2 |
 | Value-First Week (Mon-Fri) | 6 | 6 | 12 |
 | VIP Session | 4 | 4 | 8 |
 | VIP Recording | 1 | 1 | 2 |
 | Welcome Party | 5 | 3 | 8 |
-| **TOTAL** | **61** | **56** | **117** |
+| **TOTAL** | **61** | **57** | **118** |
 
 **Note:** Value-First Week replaces the aggressive L3 deadline sequence (was 13 messages) with value-focused content for ALL attendees, plus one gentle L3 reminder Wednesday evening.
 
@@ -499,7 +502,7 @@ These fire based on actions, not scheduled times.
 
 ## CHANGE LOG
 
-- **v5.0** (Dec 15): **VALUE-FIRST RESTRUCTURE** — Replaced aggressive L3 deadline sequence (13 messages) with Value-First Week (Mon-Fri). All attendees now receive daily value content. L3 mentioned naturally, one gentle reminder Wednesday evening. Ambassador integrated into Wednesday FNE email. Total messages reduced from 139 to 117.
+- **v5.0** (Dec 15): **VALUE-FIRST RESTRUCTURE** — Replaced aggressive L3 deadline sequence (13 messages) with Value-First Week (Mon-Fri). All attendees now receive daily value content. L3 mentioned naturally, one gentle reminder Wednesday evening. Ambassador integrated into Wednesday FNE email. Total messages reduced from 139 to 118.
 - **v4.1** (Dec 15): Changed all post-event offsets from hours format (+35h) to days+hours format (+1d 11h) for better readability
 - **v4.0** (Dec 15): Added SMS for every email (30, 25, 20, 14, 10, 9, 7, 5, 4, 3, 2, 1 days out); Fixed Wallace Hamilton name; Removed specific Day 1/Day 2 times from content
 - **v3.2** (Dec 15): Changed all pre-event email times to 9am Pacific (was 9am Eastern), recalculated all offsets
