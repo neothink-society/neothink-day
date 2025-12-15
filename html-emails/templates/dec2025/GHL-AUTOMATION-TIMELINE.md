@@ -123,10 +123,10 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Trigger | ~Time (ET) | Offset | Condition |
 |---|------|---------|---------|------------|--------|-----------|
-| 1 | [E] | `01-day1-opening.html` | WH takes stage | 11:00 AM | +0h | All |
-| 2 | [S] | WH Takes Stage | WH takes stage | 11:00 AM | +0h | All |
-| 3 | [E] | `01b-day1-wh-in-session.html` | Mid-morning | 11:30 AM | +0.5h | All |
-| 4 | [S] | WH In Session | Mid-morning | 11:30 AM | +0.5h | All |
+| 1 | [E] | `01-day1-opening.html` | WH takes stage | 11:00 AM | T=0 | All |
+| 2 | [S] | WH Takes Stage | WH takes stage | 11:00 AM | T=0 | All |
+| 3 | [E] | `01b-day1-wh-in-session.html` | Mid-morning | 11:30 AM | +30m | All |
+| 4 | [S] | WH In Session | Mid-morning | 11:30 AM | +30m | All |
 | 5 | [E] | `01c-day1-wh-live-now.html` | Anytime D1 | Variable | — | All |
 | 6 | [S] | WH Live Now | Anytime D1 | Variable | — | All |
 | 7 | [E] | `02-day1-lunch-break.html` | Lunch starts | 1:00 PM | +2h | All |
@@ -146,12 +146,12 @@ These fire based on actions, not scheduled times.
 |---|------|---------|-----------|--------|-----------|
 | 1 | [E] | `day2-countdown-2hr.html` | 10:00 AM | **+23h** | All |
 | 2 | [S] | Day 2 - 2 Hours | 10:00 AM | **+23h** | All |
-| 3 | [E] | `day2-countdown-45min.html` | 11:15 AM | **+24.25h** | All |
-| 4 | [S] | Day 2 - 45 Minutes | 11:15 AM | **+24.25h** | All |
-| 5 | [E] | `day2-countdown-15min.html` | 11:45 AM | **+24.75h** | All |
-| 6 | [S] | Doors Open | 11:45 AM | **+24.75h** | All |
-| 7 | [E] | `day2-countdown-live.html` | 12:00 PM | **+25h** | All |
-| 8 | [S] | Day 2 Is LIVE | 12:00 PM | **+25h** | All |
+| 3 | [E] | `day2-countdown-45min.html` | 11:15 AM | **+1d 15m** | All |
+| 4 | [S] | Day 2 - 45 Minutes | 11:15 AM | **+1d 15m** | All |
+| 5 | [E] | `day2-countdown-15min.html` | 11:45 AM | **+1d 45m** | All |
+| 6 | [S] | Doors Open | 11:45 AM | **+1d 45m** | All |
+| 7 | [E] | `day2-countdown-live.html` | 12:00 PM | **+1d 1h** | All |
+| 8 | [S] | Day 2 Is LIVE | 12:00 PM | **+1d 1h** | All |
 
 ---
 
@@ -159,21 +159,21 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Trigger | ~Time (ET) | Offset | Condition |
 |---|------|---------|---------|------------|--------|-----------|
-| 1 | [E] | `06-day2-opening.html` | D2 starts | 12:00 PM | +25h | All |
-| 2 | [S] | Day 2 Opening | D2 starts | 12:00 PM | +25h | All |
-| 3 | [E] | `07-day2-mh-segment.html` | MH on stage | 1:00 PM | +26h | All |
-| 4 | [S] | Mark Hamilton on Stage | MH on stage | 1:00 PM | +26h | All |
-| 5 | [E] | `08-day2-lunch-break.html` | Lunch starts | 2:00 PM | +27h | All |
-| 6 | [S] | Day 2 Lunch Break | Lunch starts | 2:00 PM | +27h | All |
-| 7 | [E] | `09-day2-back-from-lunch.html` | After lunch | 3:00 PM | +28h | All |
-| 8 | [S] | Final Session | After lunch | 3:00 PM | +28h | All |
-| 9 | [E] | `10-day2-integration.html` | Integration | 4:00 PM | +29h | All |
-| 10 | [S] | Integration Segment | Integration | 4:00 PM | +29h | All |
-| 11 | [E] | `12-level3-segment.html` | L3 announced | 6:00 PM | +31h | All |
-| 12 | [S] | L3 Enrollment Open | L3 announced | 6:00 PM | +31h | All |
-| 13 | [E] | `11-day2-end.html` | Workshop ends | 8:00 PM | +33h | All |
-| 14 | [S] | Workshop Complete | Workshop ends | 8:00 PM | +33h | All |
-| 15 | [E] | `day2-complete-level3.html` | Evening | 8:00 PM | +33h | Non-L3 |
+| 1 | [E] | `06-day2-opening.html` | D2 starts | 12:00 PM | +1d 1h | All |
+| 2 | [S] | Day 2 Opening | D2 starts | 12:00 PM | +1d 1h | All |
+| 3 | [E] | `07-day2-mh-segment.html` | MH on stage | 1:00 PM | +1d 2h | All |
+| 4 | [S] | Mark Hamilton on Stage | MH on stage | 1:00 PM | +1d 2h | All |
+| 5 | [E] | `08-day2-lunch-break.html` | Lunch starts | 2:00 PM | +1d 3h | All |
+| 6 | [S] | Day 2 Lunch Break | Lunch starts | 2:00 PM | +1d 3h | All |
+| 7 | [E] | `09-day2-back-from-lunch.html` | After lunch | 3:00 PM | +1d 4h | All |
+| 8 | [S] | Final Session | After lunch | 3:00 PM | +1d 4h | All |
+| 9 | [E] | `10-day2-integration.html` | Integration | 4:00 PM | +1d 5h | All |
+| 10 | [S] | Integration Segment | Integration | 4:00 PM | +1d 5h | All |
+| 11 | [E] | `12-level3-segment.html` | L3 announced | 6:00 PM | +1d 7h | All |
+| 12 | [S] | L3 Enrollment Open | L3 announced | 6:00 PM | +1d 7h | All |
+| 13 | [E] | `11-day2-end.html` | Workshop ends | 8:00 PM | +1d 9h | All |
+| 14 | [S] | Workshop Complete | Workshop ends | 8:00 PM | +1d 9h | All |
+| 15 | [E] | `day2-complete-level3.html` | Evening | 8:00 PM | +1d 9h | Non-L3 |
 
 ---
 
@@ -470,21 +470,21 @@ These fire based on actions, not scheduled times.
 | -1h | Sat Dec 6, 7am PT | day-of + day1-countdown-1hr | Zoom Link | All |
 | -30m | Sat Dec 6, 7:30am PT | day1-countdown-30min | Doors Open | All |
 | **T=0** | **Sat Dec 6, 8am PT** | **day1-countdown-live** | **LIVE** | **All** |
-| +0h | Sat Dec 6, 8am PT | 01-day1-opening | WH Stage | All |
+| T=0 | Sat Dec 6, 8am PT | 01-day1-opening | WH Stage | All |
 | +2h | Sat Dec 6, 10am PT | 02-day1-lunch | Lunch | All |
 | +3h | Sat Dec 6, 11am PT | 03-day1-back | Back | All |
 | +4h | Sat Dec 6, 12pm PT | 04-day1-wealth | Wealth | All |
 | +9h | Sat Dec 6, 5pm PT | 05-day1-end | D1 Complete | All |
 | +23h | Sun Dec 7, 7am PT | day2-countdown-2hr | 2 Hours | All |
-| +24.25h | Sun Dec 7, 8:15am PT | day2-countdown-45min | 45 Min | All |
-| +24.75h | Sun Dec 7, 8:45am PT | day2-countdown-15min | Doors | All |
-| +25h | Sun Dec 7, 9am PT | day2-countdown-live | D2 LIVE | All |
-| +26h | Sun Dec 7, 10am PT | 07-day2-mh | MH Stage | All |
-| +27h | Sun Dec 7, 11am PT | 08-day2-lunch | Lunch | All |
-| +28h | Sun Dec 7, 12pm PT | 09-day2-back | Final | All |
-| +29h | Sun Dec 7, 1pm PT | 10-day2-integration | Integration | All |
-| +31h | Sun Dec 7, 3pm PT | 12-level3-segment | L3 Open | All |
-| +33h | Sun Dec 7, 5pm PT | 11-day2-end | Complete | All |
+| +1d 15m | Sun Dec 7, 8:15am PT | day2-countdown-45min | 45 Min | All |
+| +1d 45m | Sun Dec 7, 8:45am PT | day2-countdown-15min | Doors | All |
+| +1d 1h | Sun Dec 7, 9am PT | day2-countdown-live | D2 LIVE | All |
+| +1d 2h | Sun Dec 7, 10am PT | 07-day2-mh | MH Stage | All |
+| +1d 3h | Sun Dec 7, 11am PT | 08-day2-lunch | Lunch | All |
+| +1d 4h | Sun Dec 7, 12pm PT | 09-day2-back | Final | All |
+| +1d 5h | Sun Dec 7, 1pm PT | 10-day2-integration | Integration | All |
+| +1d 7h | Sun Dec 7, 3pm PT | 12-level3-segment | L3 Open | All |
+| +1d 9h | Sun Dec 7, 5pm PT | 11-day2-end | Complete | All |
 | **+1d 11h** | **Sun Dec 7, 7pm PT** | **sunday-night-anchor** | **Anchor** | **All** |
 | +1d 22h | Mon Dec 8, 6am PT | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
 | +2d 3h | Mon Dec 8, 11am PT | l3-followup-midday | Midday | Non-L3 |
