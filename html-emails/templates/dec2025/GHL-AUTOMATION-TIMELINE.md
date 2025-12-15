@@ -25,8 +25,8 @@
 
 - **[E]** = Email
 - **[S]** = SMS
-- **Offset** = Hours before (-) or after (+) T=0
-- Offset format: `-Xd` = X days before, `+Xh` = X hours after
+- **Offset** = Time before (-) or after (+) T=0
+- Offset format: `-Xd Yh` = X days Y hours before, `+Xd Yh` = X days Y hours after
 
 ---
 
@@ -183,8 +183,8 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `sunday-night-anchor.html` | 10:00 PM | **+35h** | All |
-| 2 | [S] | Sunday Night Anchor | 10:00 PM | **+35h** | All |
+| 1 | [E] | `sunday-night-anchor.html` | 10:00 PM | **+1d 11h** | All |
+| 2 | [S] | Sunday Night Anchor | 10:00 PM | **+1d 11h** | All |
 
 **Note:** This is a pure reinforcement message, not promotional. Addresses the "Silent Sunday Night" gap identified in journey analysis.
 
@@ -196,17 +196,17 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `12-morning-after.html` | 9:00 AM | **+46h** | All (segmented) |
-| 2 | [S] | Morning After (L2) | 9:00 AM | **+46h** | L2 non-VIP, non-L3 |
-| 3 | [S] | Morning After (VIP) | 9:00 AM | **+46h** | VIP only |
-| 4 | [S] | Morning After (L3) | 9:00 AM | **+46h** | L3 only |
-| 5 | [E] | `level3-followup-morning.html` | 9:00 AM | **+46h** | Non-L3 |
-| 6 | [S] | L3 Follow-up Morning | 9:00 AM | **+46h** | Non-L3 |
-| 7 | [E] | `level3-followup-midday.html` | 2:00 PM | **+51h** | Non-L3 |
-| 8 | [S] | L3 Follow-up Midday | 2:00 PM | **+51h** | Non-L3 |
-| 9 | [E] | `level3-followup-afternoon.html` | 7:00 PM | **+56h** | Non-L3 |
-| 10 | [S] | L3 Follow-up Afternoon | 7:00 PM | **+56h** | Non-L3 |
-| 11 | [E] | `level3-ascend.html` | After VIP session | 9:00 PM | **+58h** | Non-L3 |
+| 1 | [E] | `12-morning-after.html` | 9:00 AM | **+1d 22h** | All (segmented) |
+| 2 | [S] | Morning After (L2) | 9:00 AM | **+1d 22h** | L2 non-VIP, non-L3 |
+| 3 | [S] | Morning After (VIP) | 9:00 AM | **+1d 22h** | VIP only |
+| 4 | [S] | Morning After (L3) | 9:00 AM | **+1d 22h** | L3 only |
+| 5 | [E] | `level3-followup-morning.html` | 9:00 AM | **+1d 22h** | Non-L3 |
+| 6 | [S] | L3 Follow-up Morning | 9:00 AM | **+1d 22h** | Non-L3 |
+| 7 | [E] | `level3-followup-midday.html` | 2:00 PM | **+2d 3h** | Non-L3 |
+| 8 | [S] | L3 Follow-up Midday | 2:00 PM | **+2d 3h** | Non-L3 |
+| 9 | [E] | `level3-followup-afternoon.html` | 7:00 PM | **+2d 8h** | Non-L3 |
+| 10 | [S] | L3 Follow-up Afternoon | 7:00 PM | **+2d 8h** | Non-L3 |
+| 11 | [E] | `level3-ascend.html` | After VIP session | 9:00 PM | **+2d 10h** | Non-L3 |
 
 ---
 
@@ -214,12 +214,12 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `vip-session-reminder.html` | 9:00 AM | **+46h** | VIP + L3 |
-| 2 | [S] | VIP Session Morning | 9:00 AM | **+46h** | VIP + L3 |
-| 3 | [E] | `vip-session-1hour.html` | 5:00 PM | **+54h** | VIP + L3 |
-| 4 | [S] | VIP Session 30 Min | 5:30 PM | **+54.5h** | VIP + L3 |
-| 5 | [E] | `vip-session-live.html` | 6:00 PM | **+55h** | VIP + L3 |
-| 6 | [S] | VIP Session LIVE | 6:00 PM | **+55h** | VIP + L3 |
+| 1 | [E] | `vip-session-reminder.html` | 9:00 AM | **+1d 22h** | VIP + L3 |
+| 2 | [S] | VIP Session Morning | 9:00 AM | **+1d 22h** | VIP + L3 |
+| 3 | [E] | `vip-session-1hour.html` | 5:00 PM | **+2d 6h** | VIP + L3 |
+| 4 | [S] | VIP Session 30 Min | 5:30 PM | **+2d 6h 30m** | VIP + L3 |
+| 5 | [E] | `vip-session-live.html` | 6:00 PM | **+2d 7h** | VIP + L3 |
+| 6 | [S] | VIP Session LIVE | 6:00 PM | **+2d 7h** | VIP + L3 |
 
 ---
 
@@ -227,8 +227,8 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `vip-session-recording.html` | 10:00 AM | **+71h** | VIP + L3 |
-| 2 | [S] | VIP Recording Available | 10:00 AM | **+71h** | VIP + L3 |
+| 1 | [E] | `vip-session-recording.html` | 10:00 AM | **+2d 23h** | VIP + L3 |
+| 2 | [S] | VIP Recording Available | 10:00 AM | **+2d 23h** | VIP + L3 |
 
 ---
 
@@ -240,31 +240,31 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `01-tuesday-morning.html` | 9:00 AM | **+70h** | Non-L3 |
-| 2 | [S] | L3 - 24 Hours | 9:00 AM | **+70h** | Non-L3 |
-| 3 | [E] | `02-tuesday-afternoon.html` | 2:00 PM | **+75h** | Non-L3 |
-| 4 | [S] | L3 - What 3 Days Gives | 2:00 PM | **+75h** | Non-L3 |
-| 5 | [E] | `03-tuesday-evening.html` | 8:00 PM | **+81h** | Non-L3 |
-| 6 | [S] | L3 - Last Night | 8:00 PM | **+81h** | Non-L3 |
+| 1 | [E] | `01-tuesday-morning.html` | 9:00 AM | **+2d 22h** | Non-L3 |
+| 2 | [S] | L3 - 24 Hours | 9:00 AM | **+2d 22h** | Non-L3 |
+| 3 | [E] | `02-tuesday-afternoon.html` | 2:00 PM | **+3d 3h** | Non-L3 |
+| 4 | [S] | L3 - What 3 Days Gives | 2:00 PM | **+3d 3h** | Non-L3 |
+| 5 | [E] | `03-tuesday-evening.html` | 8:00 PM | **+3d 9h** | Non-L3 |
+| 6 | [S] | L3 - Last Night | 8:00 PM | **+3d 9h** | Non-L3 |
 
 ## Wednesday, December 10
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 7 | [E] | `04-wednesday-morning.html` | 9:00 AM | **+94h** | Non-L3 |
-| 8 | [S] | L3 - Today Is The Day | 9:00 AM | **+94h** | Non-L3 |
-| 9 | [E] | `05-wednesday-afternoon.html` | 3:00 PM | **+100h** | Non-L3 |
-| 10 | [S] | L3 - Hours Left | 3:00 PM | **+100h** | Non-L3 |
-| 11 | [E] | `06-wednesday-final.html` | 11:00 PM | **+108h** | Non-L3 |
-| 12 | [S] | L3 - Final Note | 11:00 PM | **+108h** | Non-L3 |
+| 7 | [E] | `04-wednesday-morning.html` | 9:00 AM | **+3d 22h** | Non-L3 |
+| 8 | [S] | L3 - Today Is The Day | 9:00 AM | **+3d 22h** | Non-L3 |
+| 9 | [E] | `05-wednesday-afternoon.html` | 3:00 PM | **+4d 4h** | Non-L3 |
+| 10 | [S] | L3 - Hours Left | 3:00 PM | **+4d 4h** | Non-L3 |
+| 11 | [E] | `06-wednesday-final.html` | 11:00 PM | **+4d 12h** | Non-L3 |
+| 12 | [S] | L3 - Final Note | 11:00 PM | **+4d 12h** | Non-L3 |
 
-### ⚠️ DEADLINE: Thursday Dec 11, 12:00 AM ET (+109h)
+### ⚠️ DEADLINE: Thursday Dec 11, 12:00 AM ET (+4d 13h)
 
 ## Thursday, December 11 (Post-Deadline)
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 13 | [E] | `post-deadline-closed.html` | 10:00 AM | **+119h** | Non-L3 |
+| 13 | [E] | `post-deadline-closed.html` | 10:00 AM | **+4d 23h** | Non-L3 |
 
 ---
 
@@ -274,14 +274,14 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `welcome-party-reminder.html` | Tue evening | **+82h** | L3 only |
-| 2 | [E] | `welcome-party-today.html` | 10:00 AM | **+95h** | L3 only |
-| 3 | [S] | Welcome Party Morning | 10:00 AM | **+95h** | L3 only |
-| 4 | [E] | `welcome-party-correction.html` | 6:00 PM | **+103h** | L3 only ⚠️ |
-| 5 | [E] | `welcome-party-30min.html` | 6:30 PM | **+103.5h** | L3 only |
-| 6 | [S] | Welcome Party 30 Min | 6:30 PM | **+103.5h** | L3 only |
-| 7 | [E] | `welcome-party-live.html` | 7:00 PM | **+104h** | L3 only |
-| 8 | [S] | Welcome Party LIVE | 7:00 PM | **+104h** | L3 only |
+| 1 | [E] | `welcome-party-reminder.html` | Tue evening | **+3d 10h** | L3 only |
+| 2 | [E] | `welcome-party-today.html` | 10:00 AM | **+3d 23h** | L3 only |
+| 3 | [S] | Welcome Party Morning | 10:00 AM | **+3d 23h** | L3 only |
+| 4 | [E] | `welcome-party-correction.html` | 6:00 PM | **+4d 7h** | L3 only ⚠️ |
+| 5 | [E] | `welcome-party-30min.html` | 6:30 PM | **+4d 7h 30m** | L3 only |
+| 6 | [S] | Welcome Party 30 Min | 6:30 PM | **+4d 7h 30m** | L3 only |
+| 7 | [E] | `welcome-party-live.html` | 7:00 PM | **+4d 8h** | L3 only |
+| 8 | [S] | Welcome Party LIVE | 7:00 PM | **+4d 8h** | L3 only |
 
 ⚠️ **Note:** `welcome-party-correction.html` is situational (created for a specific time correction). May not be needed for future events.
 
@@ -294,14 +294,14 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Date/Time (ET) | Offset | Condition |
 |---|------|---------|----------------|--------|-----------|
-| 1 | [E] | `01-golden-life-sheet.html` | Thu Dec 11, 9:00 AM | **+118h** | All |
-| 2 | [S] | Golden Life Sheet | Thu Dec 11, 9:00 AM | **+118h** | All |
-| 3 | [E] | `03-fne-workbook.html` | Thu Dec 11, 3:00 PM | **+124h** | All |
-| 4 | [S] | FNE Workbook | Thu Dec 11, 3:00 PM | **+124h** | All |
-| 5 | [E] | `02-wealth-engine-calculator.html` | Fri Dec 12, 9:00 AM | **+142h** | All |
-| 6 | [S] | Wealth Engine Calculator | Fri Dec 12, 9:00 AM | **+142h** | All |
-| 7 | [E] | `04-how-it-all-fits-together.html` | Fri Dec 12, 3:00 PM | **+148h** | All |
-| 8 | [S] | Framework Synthesis (Closure) | Fri Dec 12, 3:00 PM | **+148h** | All |
+| 1 | [E] | `01-golden-life-sheet.html` | Thu Dec 11, 9:00 AM | **+4d 22h** | All |
+| 2 | [S] | Golden Life Sheet | Thu Dec 11, 9:00 AM | **+4d 22h** | All |
+| 3 | [E] | `03-fne-workbook.html` | Thu Dec 11, 3:00 PM | **+5d 4h** | All |
+| 4 | [S] | FNE Workbook | Thu Dec 11, 3:00 PM | **+5d 4h** | All |
+| 5 | [E] | `02-wealth-engine-calculator.html` | Fri Dec 12, 9:00 AM | **+5d 22h** | All |
+| 6 | [S] | Wealth Engine Calculator | Fri Dec 12, 9:00 AM | **+5d 22h** | All |
+| 7 | [E] | `04-how-it-all-fits-together.html` | Fri Dec 12, 3:00 PM | **+6d 4h** | All |
+| 8 | [S] | Framework Synthesis (Closure) | Fri Dec 12, 3:00 PM | **+6d 4h** | All |
 
 **Notes:**
 - Workshop Recap merged into Golden Life Sheet email (combined celebration + anchor)
@@ -315,8 +315,8 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `ambassador-program.html` | 2:00 PM | **+171h** | All L2 |
-| 2 | [S] | Ambassador Program | 2:00 PM | **+171h** | All L2 |
+| 1 | [E] | `ambassador-program.html` | 2:00 PM | **+7d 3h** | All L2 |
+| 2 | [S] | Ambassador Program | 2:00 PM | **+7d 3h** | All L2 |
 
 ---
 
@@ -431,11 +431,11 @@ These fire based on actions, not scheduled times.
 4. **Pre-Event Countdown** — Scheduled: T-30d to T-1d
 5. **Day 1** — Scheduled + Manual triggers
 6. **Day 2** — Scheduled + Manual triggers
-7. **Post-Workshop Monday** — Scheduled: T+46h to T+58h
-8. **VIP Session** — Scheduled: T+46h to T+71h (VIP+L3 only)
-9. **L3 Deadline** — Scheduled: T+70h to T+119h (Non-L3 only)
-10. **Welcome Party** — Scheduled: T+82h to T+104h (L3 only)
-11. **Value Series** — Scheduled: T+118h to T+148h (ends Fri Dec 12)
+7. **Post-Workshop Monday** — Scheduled: T+1d 22h to T+2d 10h
+8. **VIP Session** — Scheduled: T+1d 22h to T+2d 23h (VIP+L3 only)
+9. **L3 Deadline** — Scheduled: T+2d 22h to T+4d 23h (Non-L3 only)
+10. **Welcome Party** — Scheduled: T+3d 10h to T+4d 8h (L3 only)
+11. **Value Series** — Scheduled: T+4d 22h to T+6d 4h (ends Fri Dec 12)
 
 ## Critical Notes
 
@@ -485,43 +485,44 @@ These fire based on actions, not scheduled times.
 | +29h | Sun Dec 7, 1pm PT | 10-day2-integration | Integration | All |
 | +31h | Sun Dec 7, 3pm PT | 12-level3-segment | L3 Open | All |
 | +33h | Sun Dec 7, 5pm PT | 11-day2-end | Complete | All |
-| **+35h** | **Sun Dec 7, 7pm PT** | **sunday-night-anchor** | **Anchor** | **All** |
-| +46h | Mon Dec 8, 6am PT | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
-| +51h | Mon Dec 8, 11am PT | l3-followup-midday | Midday | Non-L3 |
-| +54h | Mon Dec 8, 2pm PT | vip-session-1hour | 1 Hour | VIP+L3 |
-| +54.5h | Mon Dec 8, 2:30pm PT | — | VIP 30m | VIP+L3 |
-| +55h | Mon Dec 8, 3pm PT | vip-session-live | VIP LIVE | VIP+L3 |
-| +56h | Mon Dec 8, 4pm PT | l3-followup-afternoon | Afternoon | Non-L3 |
-| +58h | Mon Dec 8, 6pm PT | level3-ascend | — | Non-L3 |
-| +70h | Tue Dec 9, 6am PT | 01-tuesday-morning | L3 24hrs | Non-L3 |
-| +71h | Tue Dec 9, 7am PT | vip-session-recording | VIP Rec | VIP+L3 |
-| +75h | Tue Dec 9, 11am PT | 02-tuesday-afternoon | L3 3days | Non-L3 |
-| +81h | Tue Dec 9, 5pm PT | 03-tuesday-evening | L3 Tonight | Non-L3 |
-| +82h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
-| +94h | Wed Dec 10, 6am PT | 04-wednesday-morning | L3 Today | Non-L3 |
-| +95h | Wed Dec 10, 7am PT | welcome-party-today | WP Today | L3 |
-| +100h | Wed Dec 10, 12pm PT | 05-wednesday-afternoon | L3 Hours | Non-L3 |
-| +103h | Wed Dec 10, 3pm PT | welcome-party-correction | — | L3 ⚠️ |
-| +103.5h | Wed Dec 10, 3:30pm PT | welcome-party-30min | WP 30m | L3 |
-| +104h | Wed Dec 10, 4pm PT | welcome-party-live | WP LIVE | L3 |
-| +108h | Wed Dec 10, 8pm PT | 06-wednesday-final | L3 Final | Non-L3 |
-| **+109h** | **Wed Dec 10, 9pm PT** | **— L3 DEADLINE —** | **—** | **—** |
-| +118h | Thu Dec 11, 6am PT | 01-golden-life-sheet | GLS | All |
-| +119h | Thu Dec 11, 7am PT | post-deadline-closed | — | Non-L3 |
-| +124h | Thu Dec 11, 12pm PT | 03-fne-workbook | FNE | All |
-| +142h | Fri Dec 12, 6am PT | 02-wealth-engine-calculator | Wealth | All |
-| +148h | Fri Dec 12, 12pm PT | 04-how-it-all-fits-together | Synthesis | All |
-| +171h | Sat Dec 13, 11am PT | ambassador-program | Ambassador | All L2 |
+| **+1d 11h** | **Sun Dec 7, 7pm PT** | **sunday-night-anchor** | **Anchor** | **All** |
+| +1d 22h | Mon Dec 8, 6am PT | morning-after + l3-followup-am + vip-reminder | Morning | Segmented |
+| +2d 3h | Mon Dec 8, 11am PT | l3-followup-midday | Midday | Non-L3 |
+| +2d 6h | Mon Dec 8, 2pm PT | vip-session-1hour | 1 Hour | VIP+L3 |
+| +2d 6h 30m | Mon Dec 8, 2:30pm PT | — | VIP 30m | VIP+L3 |
+| +2d 7h | Mon Dec 8, 3pm PT | vip-session-live | VIP LIVE | VIP+L3 |
+| +2d 8h | Mon Dec 8, 4pm PT | l3-followup-afternoon | Afternoon | Non-L3 |
+| +2d 10h | Mon Dec 8, 6pm PT | level3-ascend | — | Non-L3 |
+| +2d 22h | Tue Dec 9, 6am PT | 01-tuesday-morning | L3 24hrs | Non-L3 |
+| +2d 23h | Tue Dec 9, 7am PT | vip-session-recording | VIP Rec | VIP+L3 |
+| +3d 3h | Tue Dec 9, 11am PT | 02-tuesday-afternoon | L3 3days | Non-L3 |
+| +3d 9h | Tue Dec 9, 5pm PT | 03-tuesday-evening | L3 Tonight | Non-L3 |
+| +3d 10h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
+| +3d 22h | Wed Dec 10, 6am PT | 04-wednesday-morning | L3 Today | Non-L3 |
+| +3d 23h | Wed Dec 10, 7am PT | welcome-party-today | WP Today | L3 |
+| +4d 4h | Wed Dec 10, 12pm PT | 05-wednesday-afternoon | L3 Hours | Non-L3 |
+| +4d 7h | Wed Dec 10, 3pm PT | welcome-party-correction | — | L3 ⚠️ |
+| +4d 7h 30m | Wed Dec 10, 3:30pm PT | welcome-party-30min | WP 30m | L3 |
+| +4d 8h | Wed Dec 10, 4pm PT | welcome-party-live | WP LIVE | L3 |
+| +4d 12h | Wed Dec 10, 8pm PT | 06-wednesday-final | L3 Final | Non-L3 |
+| **+4d 13h** | **Wed Dec 10, 9pm PT** | **— L3 DEADLINE —** | **—** | **—** |
+| +4d 22h | Thu Dec 11, 6am PT | 01-golden-life-sheet | GLS | All |
+| +4d 23h | Thu Dec 11, 7am PT | post-deadline-closed | — | Non-L3 |
+| +5d 4h | Thu Dec 11, 12pm PT | 03-fne-workbook | FNE | All |
+| +5d 22h | Fri Dec 12, 6am PT | 02-wealth-engine-calculator | Wealth | All |
+| +6d 4h | Fri Dec 12, 12pm PT | 04-how-it-all-fits-together | Synthesis | All |
+| +7d 3h | Sat Dec 13, 11am PT | ambassador-program | Ambassador | All L2 |
 
 ---
 
-**Version:** 4.0
+**Version:** 4.1
 **Created:** December 10, 2025
 **Last Updated:** December 15, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v4.1** (Dec 15): Changed all post-event offsets from hours format (+35h) to days+hours format (+1d 11h) for better readability
 - **v4.0** (Dec 15): Added SMS for every email (30, 25, 20, 14, 10, 9, 7, 5, 4, 3, 2, 1 days out); Fixed Wallace Hamilton name; Removed specific Day 1/Day 2 times from content
 - **v3.2** (Dec 15): Changed all pre-event email times to 9am Pacific (was 9am Eastern), recalculated all offsets
 - **v3.1** (Dec 11): Added Sunday Night Anchor (+35h), compressed value series to end Fri Dec 12, updated chronological appendix
