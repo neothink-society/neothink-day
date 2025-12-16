@@ -162,7 +162,7 @@ dec2025/
 | **Sat, Dec 6** | 5:00 PM PT / 8:00 PM ET | Day 1 Ends |
 | **Sun, Dec 7** | 9:00 AM PT / 12:00 PM ET | Workshop Day 2 Begins |
 | **Sun, Dec 7** | 5:00 PM PT / 8:00 PM ET | Day 2 Ends, L3 Opens |
-| **Mon, Dec 8** | 3:00 PM PT / 6:00 PM ET | VIP Session |
+| **Mon, Dec 8** | 4:00 PM PT / 7:00 PM ET | VIP Session |
 | **Wed, Dec 10** | 4:00 PM PT / 7:00 PM ET | L3 Welcome Party |
 | **Wed, Dec 10** | 9:00 PM PT / Midnight ET | **L3 Honor System Expires** |
 

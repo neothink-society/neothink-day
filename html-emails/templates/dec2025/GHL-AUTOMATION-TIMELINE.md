@@ -488,7 +488,6 @@ These fire based on actions, not scheduled times.
 | +3d 10h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
 | +3d 22h | Wed Dec 10, 6am PT | 03-fne-workbook | FNE | All |
 | +3d 23h | Wed Dec 10, 7am PT | welcome-party-today | WP Today | L3 |
-| +4d 7h | Wed Dec 10, 3pm PT | welcome-party-correction | — | L3 ⚠️ |
 | +4d 7h 30m | Wed Dec 10, 3:30pm PT | welcome-party-30min | WP 30m | L3 |
 | +4d 8h | Wed Dec 10, 4pm PT | welcome-party-live | WP LIVE | L3 |
 | +4d 10h | Wed Dec 10, 6pm PT | l3-gentle-reminder | Gentle L3 | Non-L3 |

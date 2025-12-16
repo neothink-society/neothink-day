@@ -668,7 +668,7 @@ These files serve different points in the timeline and should NOT be confused:
 | Date | Event | Deadline |
 |------|-------|----------|
 | Sun Dec 7 | Workshop Day 2 ends | 5:00 PM PT |
-| Mon Dec 8 | VIP Session | 3:00 PM PT |
+| Mon Dec 8 | VIP Session | 4:00 PM PT / 7:00 PM ET |
 | Mon Dec 8 | L3 Follow-up sequence | All day |
 | Tue Dec 9 | L3 Deadline sequence begins | 9:00 AM ET |
 | Wed Dec 10 | L3 Welcome Party | 4:00 PM PT / 7:00 PM ET |
