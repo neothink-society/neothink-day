@@ -67,13 +67,12 @@ dec2025/
 ├── 06-workshop-sms/                ← Workshop SMS (Day 1 + Day 2)
 │   └── workshop-live-sms.md
 │
-├── 07-post-event/                  ← Dec 8-11
-│   ├── monday-morning/             ← Dec 8 AM
-│   │   ├── 12-morning-after.html
-│   │   ├── level3-ascend.html
+├── 07-post-event/                  ← Dec 8-12
+│   ├── monday-morning/             ← Dec 8 (Non-L3 follow-up)
 │   │   ├── level3-followup-morning.html
 │   │   ├── level3-followup-midday.html
 │   │   ├── level3-followup-afternoon.html
+│   │   ├── level3-ascend.html
 │   │   └── level3-followup-sms.md
 │   │
 │   ├── vip-session/                ← Dec 8 PM
@@ -298,29 +297,31 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 **Directory:** `07-post-event/`
 **Dates:** December 8-15, 2025
 
-## Monday Morning (Dec 8)
+## Monday L3 Follow-up (Dec 8) — Non-L3 Only
 **Subdirectory:** `monday-morning/`
 
 | Time (ET) | File | Subject | Audience |
 |-----------|------|---------|----------|
-| 9:00 AM | `12-morning-after.html` | You did it | All (segmented) |
-| 9:00 AM | `level3-followup-morning.html` | The door is still open | Non-L3 |
+| 9:00 AM | `level3-followup-morning.html` | The Transformation Continues | Non-L3 |
 | 2:00 PM | `level3-followup-midday.html` | A question for you | Non-L3 |
 | 7:00 PM | `level3-followup-afternoon.html` | Before you sleep tonight | Non-L3 |
-| - | `level3-ascend.html` | You felt it. Now finish | Non-L3 |
+| 9:00 PM | `level3-ascend.html` | You felt it. Now finish | Non-L3 |
 
-**SMS:** `level3-followup-sms.md`
+**SMS:** `level3-followup-sms.md` (4 messages)
+
+**Note:** Non-L3s ALSO receive Value-First Week emails (Golden Life Sheet at 9am to ALL attendees).
 
 ---
 
-## VIP Session (Dec 8 PM)
+## VIP Session (Dec 8) — VIP + L3 Only
 **Subdirectory:** `vip-session/`
+**Event Time:** 4:00 PM PT / 7:00 PM ET
 
 | Time (ET) | File | Subject | Audience |
 |-----------|------|---------|----------|
-| 6:00 AM PT | `vip-session-reminder.html` | Your VIP Session Is Today | VIP + L3 |
-| 5:00 PM | `vip-session-1hour.html` | 🔴 VIP Session in 1 Hour | VIP + L3 |
-| 6:00 PM | `vip-session-live.html` | 🔴 VIP Session Is LIVE | VIP + L3 |
+| 10:00 AM | `vip-session-reminder.html` | Your VIP Session Is Today | VIP + L3 |
+| 6:00 PM | `vip-session-1hour.html` | ⏰ VIP Session in 1 Hour | VIP + L3 |
+| 7:00 PM | `vip-session-live.html` | 🔴 VIP Session Is LIVE | VIP + L3 |
 | Tue 10 AM | `vip-session-recording.html` | Your VIP Recording | VIP + L3 |
 
 **SMS:** `vip-session-sms.md` + `vip-recording-sms.md`

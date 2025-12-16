@@ -193,23 +193,23 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 7: MONDAY MORNING AFTER (Mon Dec 8)
+# PHASE 7: L3 FOLLOW-UP SEQUENCE (Mon Dec 8) — Non-L3 Only
 
-## Morning After + L3 Follow-up Sequence
+**AUDIENCE:** Non-L3 attendees ONLY (those who have NOT enrolled in Level 3)
+**PURPOSE:** Encourage L3 enrollment before Wednesday deadline
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `12-morning-after.html` | 9:00 AM | **+1d 22h** | All (segmented) |
-| 2 | [S] | Morning After (L2) | 9:00 AM | **+1d 22h** | L2 non-VIP, non-L3 |
-| 3 | [S] | Morning After (VIP) | 9:00 AM | **+1d 22h** | VIP only |
-| 4 | [S] | Morning After (L3) | 9:00 AM | **+1d 22h** | L3 only |
-| 5 | [E] | `level3-followup-morning.html` | 9:00 AM | **+1d 22h** | Non-L3 |
-| 6 | [S] | L3 Follow-up Morning | 9:00 AM | **+1d 22h** | Non-L3 |
-| 7 | [E] | `level3-followup-midday.html` | 2:00 PM | **+2d 3h** | Non-L3 |
-| 8 | [S] | L3 Follow-up Midday | 2:00 PM | **+2d 3h** | Non-L3 |
-| 9 | [E] | `level3-followup-afternoon.html` | 7:00 PM | **+2d 8h** | Non-L3 |
-| 10 | [S] | L3 Follow-up Afternoon | 7:00 PM | **+2d 8h** | Non-L3 |
-| 11 | [E] | `level3-ascend.html` | After VIP session | 9:00 PM | **+2d 10h** | Non-L3 |
+| 1 | [E] | `level3-followup-morning.html` | 9:00 AM | **+1d 22h** | Non-L3 |
+| 2 | [S] | L3 Follow-up Morning | 9:00 AM | **+1d 22h** | Non-L3 |
+| 3 | [E] | `level3-followup-midday.html` | 2:00 PM | **+2d 3h** | Non-L3 |
+| 4 | [S] | L3 Follow-up Midday | 2:00 PM | **+2d 3h** | Non-L3 |
+| 5 | [E] | `level3-followup-afternoon.html` | 7:00 PM | **+2d 8h** | Non-L3 |
+| 6 | [S] | L3 Follow-up Afternoon | 7:00 PM | **+2d 8h** | Non-L3 |
+| 7 | [E] | `level3-ascend.html` | 9:00 PM | **+2d 10h** | Non-L3 |
+| 8 | [S] | L3 Ascend (post-VIP FOMO) | 9:00 PM | **+2d 10h** | Non-L3 |
+
+**Note:** Non-L3s ALSO receive Value-First Week emails (Phase 10) — Golden Life Sheet at 9am goes to ALL attendees.
 
 ---
 
@@ -295,22 +295,23 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 11: WELCOME PARTY (Wed Dec 10)
+# PHASE 11: WELCOME PARTY (Tue-Wed Dec 9-10)
 
-**Audience:** L3 members only
+**AUDIENCE:** L3 members ONLY
+**EVENT:** Wednesday, December 10, 2025 @ 4:00 PM PT / 7:00 PM ET
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `welcome-party-reminder.html` | Tue evening | **+3d 10h** | L3 only |
-| 2 | [E] | `welcome-party-today.html` | 10:00 AM | **+3d 23h** | L3 only |
-| 3 | [S] | Welcome Party Morning | 10:00 AM | **+3d 23h** | L3 only |
-| 4 | [E] | `welcome-party-correction.html` | 6:00 PM | **+4d 7h** | L3 only ⚠️ |
-| 5 | [E] | `welcome-party-30min.html` | 6:30 PM | **+4d 7h 30m** | L3 only |
-| 6 | [S] | Welcome Party 30 Min | 6:30 PM | **+4d 7h 30m** | L3 only |
-| 7 | [E] | `welcome-party-live.html` | 7:00 PM | **+4d 8h** | L3 only |
-| 8 | [S] | Welcome Party LIVE | 7:00 PM | **+4d 8h** | L3 only |
-
-⚠️ **Note:** `welcome-party-correction.html` is situational (created for a specific time correction). May not be needed for future events.
+| 1 | [E] | `welcome-party-reminder.html` | Tue 7:00 PM | **+3d 8h** | L3 only |
+| 2 | [S] | Welcome Party Tomorrow | Tue 7:00 PM | **+3d 8h** | L3 only |
+| 3 | [E] | `welcome-party-today.html` | Wed 10:00 AM | **+3d 23h** | L3 only |
+| 4 | [S] | Welcome Party Today | Wed 10:00 AM | **+3d 23h** | L3 only |
+| 5 | [E] | `welcome-party-30min.html` | Wed 6:30 PM | **+4d 7h 30m** | L3 only |
+| 6 | [S] | Welcome Party 30 Min | Wed 6:30 PM | **+4d 7h 30m** | L3 only |
+| 7 | [E] | `welcome-party-live.html` | Wed 7:00 PM | **+4d 8h** | L3 only |
+| 8 | [S] | Welcome Party LIVE | Wed 7:00 PM | **+4d 8h** | L3 only |
+| 9 | [E] | `welcome-party-recording.html` | Thu 10:00 AM | **+4d 23h** | L3 only |
+| 10 | [S] | Welcome Party Recording | Thu 10:00 AM | **+4d 23h** | L3 only |
 
 ---
 
@@ -497,13 +498,14 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 5.3
+**Version:** 5.4
 **Created:** December 10, 2025
-**Last Updated:** December 15, 2025
+**Last Updated:** December 16, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v5.4** (Dec 16): **POST-EVENT CLEANUP** — Archived legacy `12-morning-after.html` (replaced by Value-First Week). Removed `welcome-party-correction.html` (not needed). Updated Phase 7 to L3 Follow-up only. Updated Phase 11 Welcome Party with complete sequence including Tuesday reminder and Thursday recording. Clarified audience segmentation.
 - **v5.3** (Dec 15): **VIP SESSION TIMES CORRECTED** — Fixed VIP Session from 3pm PT/6pm ET to 4pm PT/7pm ET. Updated all offsets accordingly. Added 1-hour reminder SMS. Total: 7 messages in VIP Session phase.
 - **v5.2** (Dec 15): **5-DAY STRUCTURE RESTORED** — Split combined FNE+Ambassador email into two separate emails. Now 5-day sequence: Mon=Golden Life Sheet, Tue=Wealth Engine, Wed=FNE Workbook, Thu=Ambassador, Fri=Infinite Vector (synthesis). Total messages: 118.
 - **v5.1** (Dec 15): 4-day compression (reverted in v5.2). Removed Dream Harvester concept.

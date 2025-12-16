@@ -588,22 +588,25 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 All post-event files in: `/templates/dec2025/`
 
 ### Day-of-Live Directory (`day-of-live/`)
-- `01-day1-opening.html` through `12-level3-segment.html` - Workshop live emails
-- `11-day2-end.html` - End of Day 2 closing
-- `12-morning-after.html` - Monday morning after workshop (L2 members)
+- `01-day1-opening.html` through `11-day2-end.html` - Workshop live emails
 - `12-level3-segment.html` - L3 enrollment announcement (during workshop)
 - `day2-complete-level3.html` - End of Day 2 + L3 offer (Sunday evening)
-- `level3-ascend.html` - L3 promotion email (Monday follow-up)
-- `vip-session-reminder.html` - VIP session today reminder
+- `workshop-live-sms.md` - Workshop live SMS sequence
+
+### Post-Event: VIP Session (`07-post-event/vip-session/`)
+- `vip-session-reminder.html` - VIP session morning reminder
 - `vip-session-1hour.html` - VIP session 1-hour countdown
 - `vip-session-live.html` - VIP session LIVE notification
-- `vip-session-recording.html` - VIP recording available
-- `vip-session-sms.md` - VIP session SMS messages (3 messages)
+- `vip-session-recording.html` - VIP recording available (next day)
+- `vip-session-sms.md` - VIP session SMS sequence (4 messages)
 - `vip-recording-sms.md` - VIP recording SMS
-- `level3-followup-morning.html` - Monday morning follow-up
-- `level3-followup-midday.html` - Monday midday follow-up
-- `level3-followup-afternoon.html` - Monday afternoon follow-up
-- `level3-followup-sms.md` - L3 follow-up SMS messages
+
+### Post-Event: L3 Follow-up (`07-post-event/monday-morning/`) — Non-L3 Only
+- `level3-followup-morning.html` - Monday 9am follow-up
+- `level3-followup-midday.html` - Monday 2pm follow-up
+- `level3-followup-afternoon.html` - Monday 7pm follow-up
+- `level3-ascend.html` - Monday 9pm (post-VIP FOMO)
+- `level3-followup-sms.md` - L3 follow-up SMS sequence (4 messages)
 
 ### Deadline Sequence Directory (`level3-deadline-sequence/`)
 - `01-tuesday-morning.html` - 24-hour warning
@@ -641,10 +644,12 @@ These files serve different points in the timeline and should NOT be confused:
 |------|-----------|---------|
 | `12-level3-segment.html` | Day 2 during L3 segment | Initial L3 announcement during workshop |
 | `day2-complete-level3.html` | Sun Dec 7, 5pm PT | End of Day 2, first formal L3 offer |
-| `12-morning-after.html` | Mon Dec 8, 9am ET | Morning after workshop, celebrates journey, mentions VIP session |
-| `level3-ascend.html` | Mon Dec 8 (follow-up) | Emotional L3 promotion email |
-| `level3-followup-*.html` | Mon Dec 8 (3 emails) | Monday follow-up sequence |
-| `01-06-*.html` | Tue-Wed Dec 9-10 | Deadline sequence (6 emails) |
+| `01-golden-life-sheet.html` | Mon Dec 8, 9am ET | Value-First Week Day 1 (ALL attendees) |
+| `level3-followup-morning.html` | Mon Dec 8, 9am ET | L3 follow-up (Non-L3 only) |
+| `level3-followup-midday.html` | Mon Dec 8, 2pm ET | L3 follow-up (Non-L3 only) |
+| `level3-followup-afternoon.html` | Mon Dec 8, 7pm ET | L3 follow-up (Non-L3 only) |
+| `level3-ascend.html` | Mon Dec 8, 9pm ET | Post-VIP FOMO (Non-L3 only) |
+| `l3-gentle-reminder.html` | Wed Dec 10, 9pm ET | Single gentle reminder before deadline |
 
 ### SMS vs Email Files
 
