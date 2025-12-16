@@ -2,7 +2,11 @@
 ## December 7-12, 2025
 
 **AUDIENCE:** ALL attendees (Level 2, VIP, Level 3)
-**SCHEDULE:** Sunday night + Mon-Fri @ 9:00 AM ET
+**SCHEDULE:** Mon-Fri @ 9:00 AM ET (Sunday night is segmented by L3 status)
+
+**NOTE:** Sunday night SMS is segmented:
+- **Non-L3:** Sunday Night Anchor (SMS 0 below)
+- **L3:** Receives dedicated L3 Sunday Night message (see `level3-welcome-sms.md`)
 
 **LINKS:**
 - Golden Life Sheet: neothinkevent.com/your-golden-life
@@ -22,9 +26,10 @@
 
 ---
 
-## SMS 0: Sunday Night Anchor
-**Send Time:** Sunday Dec 7, 10:00 PM ET / 7:00 PM PT
-**Offset:** +1d 11h from T=0
+## SMS 0: Sunday Night Anchor — Non-L3 Only
+**Send Time:** Sunday Dec 7, 9:00 PM ET / 6:00 PM PT
+**Offset:** +1d 10h from T=0
+**AUDIENCE:** Non-L3 attendees only (L3 members receive `level3-welcome-sms.md` instead)
 
 ```
 Neothink Society: Tonight, let it land.

@@ -180,16 +180,39 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 6B: SUNDAY NIGHT ANCHOR (Sun Dec 7)
+# PHASE 6B: SUNDAY NIGHT (Sun Dec 7) — Segmented by L3 Status
 
-**Purpose:** Bridge the fragile post-event moment. Attendees are processing, vulnerable to doubt.
+**Purpose:** Bridge the fragile post-event moment. Different messages for L3 vs Non-L3.
+
+## Non-L3 Attendees
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 1 | [E] | `sunday-night-anchor.html` | 9:00 PM | **+1d 10h** | Non-L3 |
+| 2 | [S] | Sunday Night Anchor | 9:00 PM | **+1d 10h** | Non-L3 |
+
+**Content:** Pure reinforcement. "Let it land." Value-First Week preview. Addresses post-event vulnerability.
+
+## L3 Members
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 3 | [E] | `level3-sunday-night.html` | 9:00 PM | **+1d 10h** | L3 only |
+| 4 | [S] | L3 Sunday Night | 9:00 PM | **+1d 10h** | L3 only |
+
+**Content:** Celebrate their decision. VIP Session preview (tomorrow). Welcome Party preview (Wednesday).
+
+---
+
+# PHASE 6C: L3 MONDAY MORNING (Mon Dec 8) — L3 Only
+
+**AUDIENCE:** Level 3 members ONLY
+**PURPOSE:** VIP Session day excitement, prepare for tonight
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `sunday-night-anchor.html` | 10:00 PM | **+1d 11h** | All |
-| 2 | [S] | Sunday Night Anchor | 10:00 PM | **+1d 11h** | All |
+| 1 | [E] | `level3-monday-morning.html` | 9:00 AM | **+1d 22h** | L3 only |
+| 2 | [S] | L3 Monday Morning | 9:00 AM | **+1d 22h** | L3 only |
 
-**Note:** This is a pure reinforcement message, not promotional. Addresses the "Silent Sunday Night" gap identified in journey analysis.
+**Content:** "Good morning, Level 3 member." VIP Session TONIGHT at 7pm ET. What to have ready. Welcome Party Wednesday.
 
 ---
 
@@ -498,13 +521,14 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 5.4
+**Version:** 5.5
 **Created:** December 10, 2025
 **Last Updated:** December 16, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v5.5** (Dec 16): **L3 DEDICATED POST-EVENT** — Added `level3-sunday-night.html` and `level3-monday-morning.html` for L3 members. Phase 6B now segmented: Non-L3 gets sunday-night-anchor, L3 gets dedicated L3 message. Added Phase 6C for L3 Monday morning. L3 members now have complete differentiated experience.
 - **v5.4** (Dec 16): **POST-EVENT CLEANUP** — Archived legacy `12-morning-after.html` (replaced by Value-First Week). Removed `welcome-party-correction.html` (not needed). Updated Phase 7 to L3 Follow-up only. Updated Phase 11 Welcome Party with complete sequence including Tuesday reminder and Thursday recording. Clarified audience segmentation.
 - **v5.3** (Dec 15): **VIP SESSION TIMES CORRECTED** — Fixed VIP Session from 3pm PT/6pm ET to 4pm PT/7pm ET. Updated all offsets accordingly. Added 1-hour reminder SMS. Total: 7 messages in VIP Session phase.
 - **v5.2** (Dec 15): **5-DAY STRUCTURE RESTORED** — Split combined FNE+Ambassador email into two separate emails. Now 5-day sequence: Mon=Golden Life Sheet, Tue=Wealth Engine, Wed=FNE Workbook, Thu=Ambassador, Fri=Infinite Vector (synthesis). Total messages: 118.
