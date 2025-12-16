@@ -15,7 +15,7 @@ You're officially in the inner circle.
 
 NEXT STEPS:
 1. Check your email for full details
-2. VIP Session: Mon Dec 8, 6pm ET (you have access!)
+2. VIP Session: Mon Dec 8, 7pm ET (you have access!)
 3. Welcome Party: Wed Dec 10, 7pm ET
 
 Your transformation begins now.

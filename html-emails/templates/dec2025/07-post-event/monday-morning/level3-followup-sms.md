@@ -113,8 +113,8 @@ societysecrets.com/level3
 
 **Key Dates:**
 - Follow-up day: Monday Dec 8
-- VIP Session: Monday Dec 8, 6pm ET
-- Welcome Party: Wednesday Dec 10, 7pm ET
+- VIP Session: Monday Dec 8, 7pm ET (4pm PT)
+- Welcome Party: Wednesday Dec 10, 7pm ET (4pm PT)
 - Deadline: Wednesday Dec 10, midnight ET (Thu Dec 11, 12am)
 
 **Tone:**
