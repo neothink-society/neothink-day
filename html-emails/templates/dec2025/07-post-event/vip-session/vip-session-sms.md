@@ -2,7 +2,7 @@
 ## Monday, December 8, 2025
 
 **AUDIENCE:** VIP + Level 3 members ONLY
-**VIP SESSION TIME:** 3:00 PM PT / 6:00 PM ET
+**VIP SESSION TIME:** 4:00 PM PT / 5:00 PM MT / 6:00 PM CT / 7:00 PM ET
 
 ---
 
@@ -14,13 +14,13 @@
 ---
 
 ## SMS 1: Morning Reminder
-**Send Time:** Monday Dec 8, 9:00 AM ET / 6:00 AM PT
-**Offset:** +1d 22h from T=0
+**Send Time:** Monday Dec 8, 10:00 AM ET / 7:00 AM PT
+**Offset:** +1d 23h from T=0
 
 ```
 Neothink Society: Your VIP Session is TODAY.
 
-3pm PT / 6pm ET — exclusive for VIP + Level 3 members.
+4pm PT / 7pm ET — exclusive for VIP + Level 3 members.
 
 Advanced strategies. Intimate setting. Direct access.
 
@@ -34,13 +34,13 @@ See you this afternoon.
 ---
 
 ## SMS 2: 1-Hour Reminder
-**Send Time:** Monday Dec 8, 5:00 PM ET / 2:00 PM PT
-**Offset:** +2d 6h from T=0
+**Send Time:** Monday Dec 8, 6:00 PM ET / 3:00 PM PT
+**Offset:** +2d 7h from T=0
 
 ```
 Neothink Society: VIP SESSION IN 1 HOUR.
 
-Your exclusive session starts at 6pm ET (3pm PT).
+Your exclusive session starts at 7pm ET (4pm PT).
 
 Have ready:
 - Water
@@ -55,13 +55,13 @@ Zoom link coming in 30 minutes.
 ---
 
 ## SMS 3: 30-Minute Alert
-**Send Time:** Monday Dec 8, 5:30 PM ET / 2:30 PM PT
-**Offset:** +2d 6h 30m from T=0
+**Send Time:** Monday Dec 8, 6:30 PM ET / 3:30 PM PT
+**Offset:** +2d 7h 30m from T=0
 
 ```
 Neothink Society: VIP SESSION IN 30 MINUTES.
 
-Your exclusive session starts at 6pm ET (3pm PT).
+Your exclusive session starts at 7pm ET (4pm PT).
 
 JOIN: {{custom_values.vip_session_zoom}}
 
@@ -76,8 +76,8 @@ See you inside.
 ---
 
 ## SMS 4: We're LIVE
-**Send Time:** Monday Dec 8, 6:00 PM ET / 3:00 PM PT
-**Offset:** +2d 7h from T=0
+**Send Time:** Monday Dec 8, 7:00 PM ET / 4:00 PM PT
+**Offset:** +2d 8h from T=0
 
 ```
 Neothink Society: We're LIVE!
@@ -101,10 +101,10 @@ We're waiting for you inside.
 **Sequence:**
 | # | Time (ET) | Offset | Content |
 |---|-----------|--------|---------|
-| 1 | 9:00 AM | +1d 22h | Morning Reminder |
-| 2 | 5:00 PM | +2d 6h | 1-Hour Reminder |
-| 3 | 5:30 PM | +2d 6h 30m | 30-Minute Alert |
-| 4 | 6:00 PM | +2d 7h | LIVE |
+| 1 | 10:00 AM | +1d 23h | Morning Reminder |
+| 2 | 6:00 PM | +2d 7h | 1-Hour Reminder |
+| 3 | 6:30 PM | +2d 7h 30m | 30-Minute Alert |
+| 4 | 7:00 PM | +2d 8h | LIVE |
 
 **Total:** 4 SMS messages
 
@@ -123,6 +123,10 @@ We're waiting for you inside.
 
 ---
 
-**Version:** 2.0
+**Version:** 2.1
 **Updated:** December 15, 2025
-**Changed:** Added Neothink Society prefix, standardized offsets, added 1-hour reminder
+**Changed:**
+- Fixed times to 4pm PT / 7pm ET (was incorrectly 3pm PT / 6pm ET)
+- Added all 4 time zones in header (PT/MT/CT/ET)
+- Adjusted all send times and offsets accordingly
+- Added Neothink Society prefix to all messages

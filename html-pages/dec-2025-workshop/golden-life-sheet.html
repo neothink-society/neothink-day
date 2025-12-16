@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Your single-page synthesis of the Day of Enlightenment teachings. Six essential categories designed to keep you aligned with the Immortal Mentality.">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Golden Life Sheet - Your Daily Alignment Tool">
+    <meta property="og:description" content="Your single-page synthesis designed to keep you aligned with the Immortal Mentality and protect you from drifting back into the Matrix of Illusions.">
+    <meta property="og:site_name" content="The Neothink Society">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <title>The Golden Life Sheet - Your Daily Alignment Tool | The Society</title>
+
+    <!-- Preconnect to font provider -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Custom Properties with fallbacks */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing - 8px base grid */
+            --space-xs: 0.5rem;     /* 8px */
+            --space-sm: 1rem;       /* 16px */
+            --space-md: 1.5rem;     /* 24px */
+            --space-lg: 2rem;       /* 32px */
+            --space-xl: 3rem;       /* 48px */
+            --space-2xl: 4rem;      /* 64px */
+            --space-3xl: 6rem;      /* 96px */
+
+            /* Typography - Responsive with optical adjustments */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Typography - Optical tracking */
+            --tracking-tighter: -0.04em;
+            --tracking-tight: -0.02em;
+            --tracking-normal: 0em;
+            --tracking-wide: 0.05em;
+            --tracking-wider: 0.1em;
+            --tracking-widest: 0.15em;
+
+            /* Typography - Golden ratio line heights */
+            --leading-none: 1;
+            --leading-tight: 1.2;
+            --leading-snug: 1.375;
+            --leading-normal: 1.618;  /* Golden ratio */
+            --leading-relaxed: 1.8;
+            --leading-loose: 2;
+
+            /* Animation - Custom easing curves */
+            --ease-linear: linear;
+            --ease-in: cubic-bezier(0.4, 0, 1, 1);
+            --ease-out: cubic-bezier(0, 0, 0.2, 1);
+            --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+            --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            /* Animation - Timing */
+            --duration-instant: 100ms;
+            --duration-fast: 200ms;
+            --duration-base: 300ms;
+            --duration-slow: 500ms;
+            --duration-slower: 700ms;
+
+            /* Animation - Delays for stagger */
+            --delay-0: 0ms;
+            --delay-1: 50ms;
+            --delay-2: 100ms;
+            --delay-3: 150ms;
+            --delay-4: 200ms;
+
+            /* Shadows - Layered system */
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+            --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+            /* Shadows - Gold glow variants */
+            --shadow-gold-sm: 0 0 20px rgba(255, 215, 0, 0.2);
+            --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+            --shadow-gold-lg: 0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(255, 215, 0, 0.15);
+
+            /* Blur effects */
+            --blur-sm: 4px;
+            --blur-md: 8px;
+            --blur-lg: 12px;
+            --blur-xl: 16px;
+
+            /* Accessibility */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Prevent font size inflation */
+        html {
+            -moz-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        /* Remove default margins */
+        body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+            margin: 0;
+        }
+
+        /* Remove list styles */
+        ul[role='list'], ol[role='list'] {
+            list-style: none;
+        }
+
+        /* Core body defaults */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+            hanging-punctuation: first last;
+        }
+
+        /* Improved text rendering */
+        body {
+            font-family: var(--font-sans);
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            min-height: 100vh;
+            min-height: 100dvh; /* Dynamic viewport height for mobile */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1;
+            font-kerning: normal;
+            overflow-x: hidden;
+        }
+
+        /* Better font scaling */
+        @supports (font-size: clamp(1rem, 1vw, 2rem)) {
+            body {
+                font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            }
+        }
+
+        /* Ensure text doesn't overflow */
+        h1, h2, h3, h4, h5, h6, p {
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        /* Improve media defaults */
+        img, picture, video, canvas, svg {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Inherit fonts for inputs and buttons */
+        input, button, textarea, select {
+            font: inherit;
+        }
+
+        /* Remove animations for people who prefer not to see them */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Focus visible for keyboard navigation */
+        :focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+        /* Remove default outline for mouse users */
+        :focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        /* Container system with safe areas */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+        }
+
+        .container-wide {
+            width: 100%;
+            max-width: 1300px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-lg), env(safe-area-inset-right, 1.5rem));
+            padding-inline: max(var(--space-lg), env(safe-area-inset-left, 1.5rem));
+        }
+
+        .container-narrow {
+            width: 100%;
+            max-width: 900px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+        }
+
+        .container-tight {
+            width: 100%;
+            max-width: 750px;
+            margin-inline: auto;
+            padding-inline: max(var(--space-md), env(safe-area-inset-right, 1rem));
+            padding-inline: max(var(--space-md), env(safe-area-inset-left, 1rem));
+        }
+
+        section {
+            padding-block: var(--space-2xl);
+            container-type: inline-size; /* Enable container queries */
+        }
+
+        /* Improved section spacing */
+        section + section {
+            padding-block-start: var(--space-2xl);
+        }
+
+        /* Header with safe area support */
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .header-date {
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Hero Section with improved typography */
+        .hero-section {
+            text-align: center;
+            padding-block: var(--space-3xl);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            position: relative;
+            isolation: isolate;
+        }
+
+        .hero-icon {
+            font-size: clamp(3rem, 5vw + 1rem, 5rem);
+            margin-bottom: var(--space-lg);
+            line-height: 1;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-icon {
+                animation: none;
+            }
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 4vw + 1rem, 5rem);
+            font-weight: 400;
+            margin-bottom: var(--space-lg);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-wrap: balance; /* Better text wrapping */
+        }
+
+        /* Fallback for browsers that don't support background-clip */
+        @supports not (-webkit-background-clip: text) {
+            .hero-title {
+                color: var(--gold);
+                background: none;
+            }
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1.125rem, 2vw + 0.5rem, 2rem);
+            color: var(--gray-400);
+            font-style: italic;
+            margin-bottom: var(--space-xl);
+            max-width: 45ch; /* Optimal reading width */
+            margin-inline: auto;
+            text-wrap: balance;
+        }
+
+        /* Modern button system with accessibility */
+        .cta-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            justify-content: center;
+            align-items: center;
+            margin-top: var(--space-xl);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            min-height: 48px; /* WCAG touch target size */
+            padding-block: var(--space-md);
+            padding-inline: var(--space-xl);
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-sans);
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        /* Touch device optimization */
+        @media (hover: none) and (pointer: coarse) {
+            .cta-button {
+                min-height: 56px; /* Larger touch target for mobile */
+            }
+        }
+
+        /* Ripple effect on click */
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity var(--transition-fast), transform var(--transition-base);
+        }
+
+        .cta-button:active::after {
+            opacity: 1;
+            transform: scale(1);
+            transition: 0s;
+        }
+
+        .cta-button-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-button-primary:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+            border-color: var(--gold-light);
+        }
+
+        .cta-button-secondary:active {
+            transform: translateY(0);
+            background: rgba(255, 215, 0, 0.15);
+        }
+
+        /* Disable hover effects on touch devices */
+        @media (hover: none) {
+            .cta-button-primary:hover,
+            .cta-button-secondary:hover {
+                transform: none;
+            }
+        }
+
+        .button-icon {
+            font-size: 1.25em;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        /* Background variants */
+        .bg-dark-gray {
+            background: var(--gray-950);
+        }
+
+        .bg-gradient {
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-950) 50%, var(--black) 100%);
+        }
+
+        /* Section Headers with improved typography */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.875rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: var(--space-md);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 3vw + 0.5rem, 3.5rem);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-lg);
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-wrap: balance;
+        }
+
+        @supports not (-webkit-background-clip: text) {
+            .section-title {
+                color: var(--white);
+                background: none;
+            }
+        }
+
+        .section-subtitle {
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
+            color: var(--gray-400);
+            max-width: 60ch;
+            margin-inline: auto;
+            text-wrap: balance;
+        }
+
+        /* Content Grid with container queries */
+        .content-grid {
+            display: grid;
+            gap: var(--space-lg);
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+        }
+
+        /* 3-column grid for 6 category cards on large screens */
+        .content-grid-3col {
+            display: grid;
+            gap: var(--space-lg);
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid-3col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .content-grid-3col {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-xl);
+            }
+        }
+
+        /* 2x2 grid for implementation cards on large screens */
+        .content-grid-2x2 {
+            display: grid;
+            gap: var(--space-lg);
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid-2x2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Single column on very small screens */
+        @media (max-width: 640px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Modern content cards */
+        .content-card {
+            background: linear-gradient(135deg, var(--gray-900), var(--gray-950));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-inline-start: 4px solid var(--gray-700);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            transition: all var(--transition-base);
+            container-type: inline-size;
+        }
+
+        .content-card:hover {
+            border-inline-start-color: var(--gold);
+            transform: translateX(4px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (hover: none) {
+            .content-card:hover {
+                transform: none;
+            }
+        }
+
+        .content-card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .content-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(3rem, 10cqi, 4rem); /* Container query units */
+            height: clamp(3rem, 10cqi, 4rem);
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            font-size: clamp(1.25rem, 5cqi, 1.75rem);
+            font-weight: 900;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .content-card-title {
+            font-size: clamp(1.25rem, 4cqi, 1.75rem);
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--white);
+            text-wrap: balance;
+        }
+
+        .content-card-text {
+            color: var(--gray-300);
+            line-height: 1.8;
+        }
+
+        .content-card-text strong {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Template Preview */
+        .template-preview {
+            background: var(--gray-900);
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            margin-block: var(--space-xl);
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        @media (min-width: 600px) {
+            .template-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .template-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-lg);
+            }
+        }
+
+        .template-section {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: var(--radius-sm);
+            padding: var(--space-md);
+            transition: background var(--transition-base);
+        }
+
+        .template-section:hover {
+            background: rgba(255, 215, 0, 0.08);
+        }
+
+        .template-section-title {
+            font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .template-section-description {
+            font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+            color: var(--gray-400);
+            line-height: 1.6;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+            border-block: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .quote-block {
+            max-width: 65ch;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.5rem);
+            font-style: italic;
+            line-height: 1.5;
+            color: var(--gray-200);
+            margin-bottom: var(--space-lg);
+            text-wrap: balance;
+        }
+
+        .quote-text::before {
+            content: '"';
+            color: var(--gold);
+        }
+
+        .quote-text::after {
+            content: '"';
+            color: var(--gold);
+        }
+
+        .quote-author {
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Warning Box with modern design */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin-block: var(--space-xl);
+        }
+
+        .warning-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-md);
+        }
+
+        .warning-icon {
+            font-size: 1.5em;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md) var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .footer-brand p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.5;
+        }
+
+        .footer-support {
+            text-align: right;
+        }
+
+        .support-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            margin-bottom: var(--space-sm);
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: 6px;
+            min-height: var(--min-touch-target);
+        }
+
+        .support-link:hover {
+            color: var(--gold-light);
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .support-link:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
+        }
+
+        .footer-bottom p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* List Styling */
+        .styled-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-inline-start: 2rem;
+            margin-bottom: var(--space-sm);
+            color: var(--gray-300);
+        }
+
+        .styled-list li::before {
+            content: "→";
+            position: absolute;
+            inset-inline-start: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Emphasis Box */
+        .emphasis-box {
+            background: linear-gradient(135deg, var(--gray-800), var(--gray-900));
+            border-inline-start: 4px solid var(--gold);
+            border-radius: var(--radius-sm);
+            padding: var(--space-lg);
+            margin-block: var(--space-lg);
+        }
+
+        .emphasis-box p {
+            margin: 0;
+            font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+            line-height: 1.8;
+            color: var(--gray-300);
+        }
+
+        .emphasis-box strong {
+            color: var(--gold);
+        }
+
+        /* Responsive breakpoints */
+        @media (max-width: 1024px) {
+            :root {
+                --space-3xl: clamp(2.5rem, 6vw, 4rem);
+            }
+        }
+
+        @media (max-width: 900px) {
+            /* Footer stacks on tablets */
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: var(--space-lg);
+            }
+
+            .footer-support {
+                text-align: center;
+            }
+
+            .support-link {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* Reduce section padding */
+            section {
+                padding-block: var(--space-xl);
+            }
+
+            .hero-section {
+                padding-block: var(--space-2xl);
+            }
+
+            .template-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons-container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .cta-button {
+                width: 100%;
+                padding-block: var(--space-md);
+                font-size: 1rem;
+            }
+
+            /* Template preview adjustments */
+            .template-preview {
+                padding: var(--space-lg);
+            }
+
+            /* Container padding adjustments */
+            .container,
+            .container-narrow,
+            .container-tight {
+                padding-inline: var(--space-sm);
+            }
+
+            /* Content card adjustments */
+            .content-card {
+                padding: var(--space-md);
+            }
+
+            /* Quote section */
+            .quote-text {
+                font-size: clamp(1.25rem, 4vw, 1.75rem);
+            }
+
+            /* Warning box */
+            .warning-box {
+                padding: var(--space-md);
+            }
+
+            /* Emphasis box */
+            .emphasis-box {
+                padding: var(--space-md);
+            }
+        }
+
+        @media (max-width: 600px) {
+            /* Header stacks on mobile */
+            .header-content {
+                flex-direction: column;
+                gap: var(--space-xs);
+                text-align: center;
+            }
+
+            .header-date {
+                font-size: var(--text-xs);
+            }
+
+            /* Hero adjustments */
+            .hero-title {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+
+            .hero-subtitle {
+                font-size: clamp(1rem, 3.5vw, 1.25rem);
+            }
+
+            /* Section title adjustments */
+            .section-title {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+            }
+
+            /* Template section adjustments */
+            .template-section {
+                padding: var(--space-sm);
+            }
+
+            .template-section-title {
+                font-size: 0.8rem;
+            }
+
+            .template-section-description {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            /* Even smaller section padding */
+            section {
+                padding-block: var(--space-lg);
+            }
+
+            /* Hero further reduced */
+            .hero-section {
+                padding-block: var(--space-xl);
+            }
+
+            .hero-icon {
+                font-size: 2.5rem;
+                margin-bottom: var(--space-md);
+            }
+
+            /* Content number sizing */
+            .content-number {
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1rem;
+            }
+
+            /* Card title sizing */
+            .content-card-title {
+                font-size: 1.125rem;
+            }
+
+            /* Card text sizing */
+            .content-card-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+
+            /* Styled list adjustments */
+            .styled-list li {
+                padding-inline-start: 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            /* Footer adjustments */
+            .site-footer {
+                padding: var(--space-xl) var(--space-sm) var(--space-md);
+            }
+
+            .footer-brand h3 {
+                font-size: var(--text-lg);
+            }
+
+            /* Button touch targets */
+            .cta-button {
+                min-height: 52px;
+                padding: var(--space-md) var(--space-lg);
+            }
+        }
+
+        @media (max-width: 375px) {
+            /* Extra small screens (iPhone SE, etc.) */
+            .container,
+            .container-narrow,
+            .container-tight {
+                padding-inline: 12px;
+            }
+
+            .hero-title {
+                font-size: 1.75rem;
+            }
+
+            .section-title {
+                font-size: 1.35rem;
+            }
+
+            .section-label {
+                font-size: 0.7rem;
+                letter-spacing: 0.15em;
+            }
+
+            .content-card {
+                padding: var(--space-sm);
+            }
+
+            .template-preview {
+                padding: var(--space-sm);
+            }
+
+            .warning-box,
+            .emphasis-box {
+                padding: var(--space-sm);
+            }
+
+            .quote-text {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            /* Tiny screens */
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+
+            .content-card-title {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 0.9rem;
+                padding: var(--space-sm) var(--space-md);
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .workshop-header,
+            .cta-button,
+            .footer {
+                display: none;
+            }
+
+            .content-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .content-card {
+                border: 2px solid currentColor;
+            }
+
+            .cta-button {
+                border: 2px solid currentColor;
+            }
+        }
+
+        /* Dark mode support (already dark, but good practice) */
+        @media (prefers-color-scheme: light) {
+            /* This site is intentionally dark, but we respect preferences */
+            body {
+                background: var(--black);
+                color: var(--white);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for screen readers and keyboard users -->
+    <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 1rem; background: var(--gold); color: var(--black); text-decoration: none; font-weight: 700;">Skip to main content</a>
+
+    <style>
+        .skip-link:focus {
+            left: 50%;
+            top: 1rem;
+            transform: translateX(-50%);
+        }
+    </style>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <span class="site-logo">Neothink Society</span>
+                <div class="header-date" aria-label="Workshop date">Dec 6-7, 2025</div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="container-tight">
+                <div class="hero-icon" aria-hidden="true">✨</div>
+                <h1 id="hero-title" class="hero-title">The Golden Life Sheet</h1>
+                <p class="hero-subtitle">Your single-page synthesis of everything you learned, designed to keep you aligned with the Immortal Mentality and protect you from drifting back into the Matrix of Illusions.</p>
+
+                <div class="cta-buttons-container" role="group" aria-label="Download options">
+                    <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/68f81385ebeabfe9ba9ce6f3.pdf" class="cta-button cta-button-primary" download target="_blank" rel="noopener noreferrer" aria-label="Download PDF Template - Fillable document">
+                        <span class="button-icon" aria-hidden="true">📄</span>
+                        <span>Download PDF Template</span>
+                    </a>
+                    <a href="https://www.canva.com/design/DAG2d_C1bZ0/0QrZMs4xu9ywtcObPi4iIQ/view?utm_content=DAG2d_C1bZ0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer" aria-label="Open Canva Template - Opens in new tab">
+                        <span class="button-icon" aria-hidden="true">🎨</span>
+                        <span>Open Canva Template</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="what-is-this">
+            <div class="container-narrow">
+                <header class="section-header">
+                    <span class="section-label">What Is This?</span>
+                    <h2 id="what-is-this" class="section-title">Your Daily Realignment Tool</h2>
+                    <p class="section-subtitle">A single sheet of paper that synthesizes the Day of Enlightenment teachings into six essential categories—designed to be posted on your mirror and reviewed daily.</p>
+                </header>
+
+                <div class="emphasis-box" role="complementary" aria-label="Critical truth about the Golden Life Sheet">
+                    <p><strong>Critical Truth:</strong> In the anti-civilization (the Matrix of Illusions), your peers will try to draw you back into their world of non-reality. This sheet reconnects you to who you really are every single day, reharmonizing you with your nature and the universe.</p>
+                </div>
+
+                <article class="content-card">
+                    <h3 class="content-card-title">Why You Need This</h3>
+                    <div class="content-card-text">
+                        <p>Yesterday, you experienced a breakthrough. You discovered your Friday Night Essence. You felt the exhilaration of the Immortal Mentality. You calculated your path to financial freedom.</p>
+                        <p>But here's what happens next: The gravitational pull of the false world is strong. Without a daily anchor, you'll drift. The Golden Life Sheet is that anchor.</p>
+                        <p><strong>This is not optional. This is your commitment to yourself.</strong></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container-wide">
+                <div class="section-header">
+                    <span class="section-label">The Six Categories</span>
+                    <h2 class="section-title">What Goes on Your Sheet</h2>
+                </div>
+
+                <div class="template-preview">
+                    <h3 style="font-family: var(--font-serif); font-size: clamp(1.5rem, 4vw, 2rem); color: var(--gold); text-align: center; margin-bottom: clamp(1.5rem, 4vw, 2rem);">Template Layout</h3>
+
+                    <div class="template-grid">
+                        <div class="template-section">
+                            <div class="template-section-title">1. Who I Am</div>
+                            <div class="template-section-description">1-3 emotional sentences describing you in the Immortal Mentality—your ultimate, pure version</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">2. Friday Night Essence</div>
+                            <div class="template-section-description">Your value-creation activity that connects you to growth and prevents stagnation</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">3. My Dreams</div>
+                            <div class="template-section-description">Tangible projects or problems (big or small) that align with your FNE</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">4. Current Focuses</div>
+                            <div class="template-section-description">Action items, skills, habits, or behavioral changes needed right now—often the things you're avoiding</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">5. Celebrations</div>
+                            <div class="template-section-description">Value Reflection activities—time with loved ones, travel, hobbies that bring joy</div>
+                        </div>
+
+                        <div class="template-section">
+                            <div class="template-section-title">6. Health & Longevity</div>
+                            <div class="template-section-description">Specific actions for both current physical health and long-term vitality habits</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-grid-3col">
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">1</span>
+                            <h3 class="content-card-title">Who I Am</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Define your identity in the Immortal Mentality
+                            <br><br>
+                            Write 1-3 emotional sentences describing yourself as the person you were always meant to be. Use present tense, as if you're already living it.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "I am a creator of transformational education. I build systems that free minds and unleash human potential. I live in exhilaration."<br>
+                            • "I am a builder of businesses that serve humanity. I create value relentlessly and live in freedom."<br>
+                            • "I am an artist expressing truth through my work. I inspire others to see beauty and live authentically."
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">2</span>
+                            <h3 class="content-card-title">Friday Night Essence (FNE)</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Name your core value-creation activity
+                            <br><br>
+                            This is what you discovered during the visualization exercise. The productive activity you'd naturally do with unlimited time and money.
+                            <br><br>
+                            <strong>If you found a specific topic:</strong> Write it (e.g., "Writing," "Teaching," "Building systems," "Health coaching")<br>
+                            <strong>If still unclear:</strong> Write "Value Creation"—this is the ultimate essence and completely valid.
+                            <br><br>
+                            <em>Remember: This may evolve as your life expands. You can have multiple FNEs (e.g., "Teaching + Family" for a mother with a business).</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">3</span>
+                            <h3 class="content-card-title">My Dreams</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Tangible outcomes aligned with your FNE
+                            <br><br>
+                            List the specific projects or problems you're working on—big or small. These are your seeds planted in the soil of your essence.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "Launch my coaching program by December"<br>
+                            • "Build schools for underserved children"<br>
+                            • "Create a family porch for quality time"<br>
+                            • "Write and publish my first book"<br>
+                            • "Make baseball free for every child in the U.S."
+                            <br><br>
+                            <em>You can have multiple dreams. Focus on the ones you're actively pursuing now.</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">4</span>
+                            <h3 class="content-card-title">Current Focuses</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> The specific actions, habits, and changes needed RIGHT NOW
+                            <br><br>
+                            These are often the things you're avoiding. Skills to develop, behaviors to change, habits to install.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "Go to bed by 10pm consistently"<br>
+                            • "Create 3 pieces of content weekly"<br>
+                            • "Be more playful with my children"<br>
+                            • "Study marketing 1 hour daily"<br>
+                            • "Complete my Golden Life Sheet today"<br>
+                            • "Block FNE time in my calendar"<br>
+                            • "Stop seeking external validation"
+                            <br><br>
+                            <strong>This section changes most frequently as you master each focus.</strong>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">5</span>
+                            <h3 class="content-card-title">Celebrations (Value Reflection)</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Schedule joy and connection—the reason for living
+                            <br><br>
+                            Remember the two movements of life: Value Creation (generating happiness) and Value Reflection (experiencing happiness). Don't neglect loved ones while working hard.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            • "Weekly date night with my partner"<br>
+                            • "Monthly family adventure"<br>
+                            • "Quarterly solo retreat"<br>
+                            • "Daily playtime with children"<br>
+                            • "Annual trip to Italy"<br>
+                            • "Weekend hikes in nature"
+                            <br><br>
+                            <em>These activities recharge you and remind you why you're creating value in the first place.</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-card-header">
+                            <span class="content-number">6</span>
+                            <h3 class="content-card-title">Health & Longevity</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Purpose:</strong> Ensure you remain vital for the future choice of extended life
+                            <br><br>
+                            Split this into two parts: <strong>Health (now)</strong> and <strong>Longevity (long-term habits)</strong>.
+                            <br><br>
+                            <strong>Examples:</strong><br>
+                            <strong>Health:</strong><br>
+                            • "Walk 30 minutes daily"<br>
+                            • "Strength train 3x per week"<br>
+                            • "8 hours sleep minimum"<br>
+                            • "Mediterranean diet"
+                            <br><br>
+                            <strong>Longevity:</strong><br>
+                            • "Take Longevity supplement"<br>
+                            • "Annual full health screening"<br>
+                            • "Maintain healthy weight"<br>
+                            • "Practice stress management daily"
+                            <br><br>
+                            <em>The word "longevity" forces long-term thinking into your awareness.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">How to Use It</span>
+                    <h2 class="section-title">Your Implementation Process</h2>
+                </div>
+
+                <div class="content-grid-2x2">
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">1</span>
+                            <h3 class="content-card-title">Create It</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Step 1:</strong> Work on scratch paper first for each section<br>
+                            <strong>Step 2:</strong> Synthesize down to the essence—compress and clarify<br>
+                            <strong>Step 3:</strong> Transfer to your final sheet (PDF template or Canva)<br>
+                            <strong>Step 4:</strong> Print it on quality paper
+                            <br><br>
+                            <em>Don't overthink it. Your first version doesn't need to be perfect. It will evolve.</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">2</span>
+                            <h3 class="content-card-title">Display It</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>Post it on your bathroom mirror</strong> where you'll see it multiple times daily.
+                            <br><br>
+                            If you're worried about roommates or partners seeing it: <strong>Own it.</strong> Come from your base of power. It's unusual to want to improve your life, so yes, they may say something. But they're going to respect you for it.
+                            <br><br>
+                            <em>"People may call you crazy. But you're going after your dreams." — Wallace Hamilton</em>
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">3</span>
+                            <h3 class="content-card-title">Read It Daily</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>First 30 days:</strong> Read it every morning when you wake up and every night before bed. Fully read each section.
+                            <br><br>
+                            <strong>After integration:</strong> Glance at it throughout the day. Even seeing it in the corner of your eye keeps you aligned.
+                            <br><br>
+                            <strong>Long-term:</strong> When you've mastered it and feel it inside your body, you're ready to evolve it.
+                        </p>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <div class="content-card-header">
+                            <span class="content-number">4</span>
+                            <h3 class="content-card-title">Evolve It</h3>
+                        </div>
+                        <p class="content-card-text">
+                            <strong>This sheet WILL change.</strong> As your life evolves and expands, your Golden Life Sheet must evolve with it. Stagnation is death; evolution is life.
+                            <br><br>
+                            When you've achieved dreams, they get replaced with new ones. When you've mastered current focuses, new skills become the priority.
+                            <br><br>
+                            <strong>Important:</strong> Keep your old versions! Take photos. Track your growth journey. Looking back will be beautiful.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-narrow">
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <span class="warning-icon">⚠️</span>
+                        <span>The Matrix Will Pull You Back</span>
+                    </div>
+                    <p class="content-card-text">
+                        Without this daily anchor, you WILL drift back into the anti-civilization. Your peers will try to draw you into their world of illusions. The gravitational pull is strong.
+                        <br><br>
+                        <strong>This sheet is your return.</strong> Your return to reality. Your return to your essence. Your return to the person you were always meant to be.
+                        <br><br>
+                        The Matrix tries to make you forget. This sheet makes you remember.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h3 class="content-card-title">Additional Integration Points</h3>
+                    <p class="content-card-text">
+                        Beyond the Golden Life Sheet, here are other ways to stay connected to the Immortal Mentality:
+                    </p>
+                    <ul class="styled-list" role="list" style="margin-top: 1.5rem;">
+                        <li>Return to the <strong>Prime Literature</strong> and secret manuscripts regularly</li>
+                        <li>Attend the <strong>weekly community calls and meetings</strong></li>
+                        <li>Join a local <strong>Clubhouse</strong> (Los Angeles, Oklahoma, Dallas, New Jersey, and growing)</li>
+                        <li>Connect with other <strong>Level 2 and Level 3 members</strong> for support</li>
+                        <li>Review your <strong>Wealth Engine calculations</strong> monthly to track progress</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">This sheet will evolve as your life expands. It can't remain the same—that would be stagnation. And stagnation is the antithesis to creation.</p>
+                    <p class="quote-author">— Wallace Hamilton, Platinum Mentor</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="bg-dark-gray">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Get Started Now</span>
+                    <h2 class="section-title">Download Your Template</h2>
+                    <p class="section-subtitle">Choose your preferred method: Fill out the PDF template or customize it in Canva. Either way, complete it today.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <h3 class="content-card-title">📄 PDF Template (Fillable)</h3>
+                        <p class="content-card-text" style="margin-bottom: 1.5rem;">
+                            Download the pre-formatted PDF with all six sections. Fill it out on your computer or print it and write by hand. Simple, clean, effective.
+                        </p>
+                        <a href="https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/68f81385ebeabfe9ba9ce6f3.pdf" class="cta-button cta-button-primary" download target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                            Download PDF Template
+                        </a>
+                    </div>
+
+                    <div class="content-card" style="border-left-color: var(--gold);">
+                        <h3 class="content-card-title">🎨 Canva Template (Customizable)</h3>
+                        <p class="content-card-text" style="margin-bottom: 1.5rem;">
+                            Open the Canva template to fully customize colors, fonts, and layout. Make it beautiful and uniquely yours. Then download and print.
+                        </p>
+                        <a href="https://www.canva.com/design/DAG2d_C1bZ0/0QrZMs4xu9ywtcObPi4iIQ/view?utm_content=DAG2d_C1bZ0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview" class="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                            Open Canva Template
+                        </a>
+                    </div>
+                </div>
+
+                <div class="emphasis-box" style="margin-top: 2rem;">
+                    <p><strong>Your Commitment:</strong> Don't just download this and let it sit. Complete it TODAY. Print it TODAY. Post it TODAY. Read it tonight before bed and tomorrow morning when you wake. This is where your transformation becomes permanent.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-tight">
+                <div class="section-header">
+                    <span class="section-label">Questions?</span>
+                    <h2 class="section-title">We're Here to Support You</h2>
+                </div>
+
+                <div class="content-card">
+                    <p class="content-card-text">
+                        If you need help completing your Golden Life Sheet, have questions about any of the six categories, or want guidance on your implementation:
+                        <br><br>
+                        <strong>Email:</strong> <a href="mailto:support@neothink.com" style="color: var(--gold); text-decoration: none;">support@neothink.com</a><br>
+                        <strong>VIP Members:</strong> Access the private VIP portal for personalized assistance
+                        <br><br>
+                        Remember: This is your journey, but you're not alone. We're your Neothink family.
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://neothinkevent.com/home" class="cta-button cta-button-secondary">
+                        ← Back to Day of Enlightenment Hub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Neothink Society</h3>
+                    <p>Prosper Happily Forever</p>
+                </div>
+
+                <div class="footer-support">
+                    <p class="support-label">Need Help?</p>
+                    <a href="mailto:support@neothink.com" class="support-link" aria-label="Email support at support@neothink.com">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@neothink.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neothink Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -15,7 +15,7 @@
 | Day 1 Ends | Sat Dec 6, 5:00 PM | Sat Dec 6, 8:00 PM | T + 9 hrs |
 | **Day 2 Starts** | Sun Dec 7, 9:00 AM | Sun Dec 7, 12:00 PM | **T + 25 hrs** |
 | Day 2 Ends / L3 Opens | Sun Dec 7, 5:00 PM | Sun Dec 7, 8:00 PM | T + 33 hrs |
-| **VIP Session** | Mon Dec 8, 3:00 PM | Mon Dec 8, 6:00 PM | **T + 55 hrs** |
+| **VIP Session** | Mon Dec 8, 4:00 PM | Mon Dec 8, 7:00 PM | **T + 56 hrs** |
 | **Welcome Party** | Wed Dec 10, 4:00 PM | Wed Dec 10, 7:00 PM | **T + 104 hrs** |
 | **L3 Deadline** | Wed Dec 10, 9:00 PM | Thu Dec 11, 12:00 AM | **T + 109 hrs** |
 
@@ -215,14 +215,17 @@ These fire based on actions, not scheduled times.
 
 # PHASE 8: VIP SESSION (Mon Dec 8)
 
+**VIP SESSION TIME:** 4:00 PM PT / 7:00 PM ET
+
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `vip-session-reminder.html` | 9:00 AM | **+1d 22h** | VIP + L3 |
-| 2 | [S] | VIP Session Morning | 9:00 AM | **+1d 22h** | VIP + L3 |
-| 3 | [E] | `vip-session-1hour.html` | 5:00 PM | **+2d 6h** | VIP + L3 |
-| 4 | [S] | VIP Session 30 Min | 5:30 PM | **+2d 6h 30m** | VIP + L3 |
-| 5 | [E] | `vip-session-live.html` | 6:00 PM | **+2d 7h** | VIP + L3 |
-| 6 | [S] | VIP Session LIVE | 6:00 PM | **+2d 7h** | VIP + L3 |
+| 1 | [E] | `vip-session-reminder.html` | 10:00 AM | **+1d 23h** | VIP + L3 |
+| 2 | [S] | VIP Session Morning | 10:00 AM | **+1d 23h** | VIP + L3 |
+| 3 | [E] | `vip-session-1hour.html` | 6:00 PM | **+2d 7h** | VIP + L3 |
+| 4 | [S] | VIP Session 1-Hour | 6:00 PM | **+2d 7h** | VIP + L3 |
+| 5 | [S] | VIP Session 30 Min | 6:30 PM | **+2d 7h 30m** | VIP + L3 |
+| 6 | [E] | `vip-session-live.html` | 7:00 PM | **+2d 8h** | VIP + L3 |
+| 7 | [S] | VIP Session LIVE | 7:00 PM | **+2d 8h** | VIP + L3 |
 
 ---
 
@@ -477,9 +480,9 @@ These fire based on actions, not scheduled times.
 | +1d 9h | Sun Dec 7, 5pm PT | 11-day2-end | Complete | All |
 | **+1d 11h** | **Sun Dec 7, 7pm PT** | **sunday-night-anchor** | **Anchor** | **All** |
 | +1d 22h | Mon Dec 8, 6am PT | 01-golden-life-sheet | GLS | All |
-| +2d 6h | Mon Dec 8, 2pm PT | vip-session-1hour | 1 Hour | VIP+L3 |
-| +2d 6h 30m | Mon Dec 8, 2:30pm PT | — | VIP 30m | VIP+L3 |
-| +2d 7h | Mon Dec 8, 3pm PT | vip-session-live | VIP LIVE | VIP+L3 |
+| +2d 7h | Mon Dec 8, 3pm PT | vip-session-1hour | 1 Hour | VIP+L3 |
+| +2d 7h 30m | Mon Dec 8, 3:30pm PT | — | VIP 30m | VIP+L3 |
+| +2d 8h | Mon Dec 8, 4pm PT | vip-session-live | VIP LIVE | VIP+L3 |
 | +2d 22h | Tue Dec 9, 6am PT | 02-wealth-engine-calculator | Wealth | All |
 | +2d 23h | Tue Dec 9, 7am PT | vip-session-recording | VIP Rec | VIP+L3 |
 | +3d 10h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
@@ -495,13 +498,14 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 5.2
+**Version:** 5.3
 **Created:** December 10, 2025
 **Last Updated:** December 15, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v5.3** (Dec 15): **VIP SESSION TIMES CORRECTED** — Fixed VIP Session from 3pm PT/6pm ET to 4pm PT/7pm ET. Updated all offsets accordingly. Added 1-hour reminder SMS. Total: 7 messages in VIP Session phase.
 - **v5.2** (Dec 15): **5-DAY STRUCTURE RESTORED** — Split combined FNE+Ambassador email into two separate emails. Now 5-day sequence: Mon=Golden Life Sheet, Tue=Wealth Engine, Wed=FNE Workbook, Thu=Ambassador, Fri=Infinite Vector (synthesis). Total messages: 118.
 - **v5.1** (Dec 15): 4-day compression (reverted in v5.2). Removed Dream Harvester concept.
 - **v5.0** (Dec 15): **VALUE-FIRST RESTRUCTURE** — Replaced aggressive L3 deadline sequence with Value-First Week. All attendees receive daily value content. L3 mentioned naturally, one gentle reminder Wednesday evening.
