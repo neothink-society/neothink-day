@@ -203,15 +203,15 @@ This is where everything comes together. Your transformation reaches its peak.
 
 ---
 
-## SMS #7: Wallace Hamilton Takes the Stage
-**Trigger:** When WH takes the stage
+## SMS #7: Mark Hamilton Takes the Stage
+**Trigger:** When MH takes the stage
 **Offset:** ~T+26h
 **Corresponding Email:** 07-day2-mh-segment.html
 
 ```
-Neothink Society: WALLACE HAMILTON IS ON STAGE
+Neothink Society: MARK HAMILTON IS ON STAGE
 
-This is a rare moment. Wallace Hamilton is speaking NOW.
+This is a rare moment. Mark Hamilton is speaking NOW.
 
 If you stepped away — rejoin IMMEDIATELY:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
