@@ -1,73 +1,154 @@
-# Level 3 Post-VIP — SMS
-## Monday Evening, December 8, 2025
+# Level 3 Post-Event SMS Sequence — Non-L3 Attendees
+## December 8-10, 2025
 
 **AUDIENCE:** Non-L3 attendees ONLY
-**PURPOSE:** Single post-VIP Session message to create gentle FOMO
-**PHILOSOPHY:** One touch, not a bombardment. Let the experience speak.
+**PURPOSE:** Strategic SMS touchpoints to support L3 conversion without being pushy
+**PHILOSOPHY:** Quality over quantity. Each SMS has a specific purpose.
 
 **LINK:** societysecrets.com/level3
 
 ---
 
-## SMS: Post-VIP Session (L3 Ascend)
+## SMS Schedule Overview
+
+| Day | Time | Message | Purpose |
+|-----|------|---------|---------|
+| Mon | 9:00 PM ET | Post-VIP Session | FOMO after live event |
+| Tue | 7:00 PM ET | 24 Hours Left | Urgency milestone |
+| Wed | 6:00 PM ET | 6 Hours Left | Welcome Party starting |
+| Wed | 9:00 PM ET | Final Message | Last call |
+
+**Total: 4 SMS over 3 days** (not counting Value-First Week SMS which goes to ALL attendees)
+
+---
+
+## SMS 1: Post-VIP Session
 **Send Time:** Monday Dec 8, 9:00 PM ET / 6:00 PM PT
 **Offset:** +2d 10h from T=0
 
 ```
-Neothink Society: One more thing before you sleep.
+Neothink Society: The VIP Session just ended.
 
-The VIP Session just ended. The breakthroughs were real. The energy was electric.
+The breakthroughs were real. The energy was electric.
 
 Level 3 members experienced it all.
 
-If you're still on the fence, this is your sign.
+If you're still considering, this is your sign.
 
 societysecrets.com/level3
 ```
 
-**Character Count:** ~235 chars (2 segments)
-**Note:** Sent after VIP Session ends. Creates FOMO without being pushy.
+**Character Count:** ~210 chars (2 segments)
+**Note:** Sent after VIP Session ends. Creates FOMO from real event.
+
+---
+
+## SMS 2: 24 Hours Remaining
+**Send Time:** Tuesday Dec 9, 7:00 PM ET / 4:00 PM PT
+**Offset:** +3d 8h from T=0
+
+```
+Neothink Society: 24 hours until the door closes.
+
+Tomorrow at midnight, the workshop pricing for Level 3 ends.
+
+Wednesday night is the Welcome Party. You could still be there.
+
+societysecrets.com/level3
+```
+
+**Character Count:** ~225 chars (2 segments)
+**Note:** Pairs with "Door Closes Tomorrow" email. Urgency without panic.
+
+---
+
+## SMS 3: Welcome Party Starting
+**Send Time:** Wednesday Dec 10, 6:00 PM ET / 3:00 PM PT
+**Offset:** +4d 7h from T=0
+
+```
+Neothink Society: 6 hours left.
+
+The Welcome Party starts in one hour. Level 3 members are gathering to meet each other and receive their Stargazer Event invitations.
+
+If you want to join them: societysecrets.com/level3
+
+Deadline: Midnight ET
+```
+
+**Character Count:** ~265 chars (2 segments)
+**Note:** Timed for 1 hour before Welcome Party. Maximum FOMO moment.
+
+---
+
+## SMS 4: Final Message
+**Send Time:** Wednesday Dec 10, 9:00 PM ET / 6:00 PM PT
+**Offset:** +4d 10h from T=0
+
+```
+Neothink Society: 3 hours left.
+
+The Welcome Party just ended. New members are already connected.
+
+At midnight, the workshop pricing closes.
+
+This is our final message.
+
+societysecrets.com/level3
+```
+
+**Character Count:** ~220 chars (2 segments)
+**Note:** Final touch. Acknowledges deadline, doesn't guilt-trip.
 
 ---
 
 ## Implementation Notes
 
-**GHL Workflow:** L3 Post-VIP (Non-L3 only)
-**Trigger:** Scheduled at +2d 10h from T=0, condition: NOT tag:level-3
+### GHL Workflow Configuration
+**Workflow Name:** L3 Post-Event (Non-L3 only)
+**Trigger:** Tag `doe-attendee` AND NOT tag `level-3`
 
 **Conditional Logic:**
-- ONLY send if contact does NOT have tag: `level-3`
-- IF contact purchases L3 before send time → Do NOT send
+- Check tag `level-3` before EACH send
+- IF contact purchases L3 before send time → Remove from workflow
+- Stop all remaining messages immediately upon L3 purchase
 
-**Key Dates:**
+### Key Dates
 - VIP Session: Monday Dec 8, 7pm ET (4pm PT)
-- This SMS: Monday Dec 8, 9pm ET (after VIP ends)
+- SMS 1: Monday Dec 8, 9pm ET (after VIP)
+- SMS 2: Tuesday Dec 9, 7pm ET (24h warning)
 - Welcome Party: Wednesday Dec 10, 7pm ET (4pm PT)
+- SMS 3: Wednesday Dec 10, 6pm ET (1hr before party)
+- SMS 4: Wednesday Dec 10, 9pm ET (after party)
 - Deadline: Wednesday Dec 10, midnight ET
 
-**Tone:**
-- Gentle FOMO, not pushy
-- Acknowledges they missed something real
-- Single touch — respects their space
-
-**Pairs With:**
-- Email: `level3-ascend.html` (same time)
+### Tone Guidelines
+- Direct but respectful
+- Real urgency (actual deadlines, actual events)
+- No manufactured panic
+- Each message has a specific reason to exist
 
 ---
 
-## Why One SMS (Not Four)
+## Why 4 SMS (Not More, Not Less)
 
-**Previous approach (v4):** 4 SMS messages on Monday (9am, 2pm, 7pm, 9pm)
-**Current approach (v5):** Single SMS at 9pm after VIP Session
+**Previous approach (v4):** 4 SMS on Monday alone + 3 more Tue-Wed = 7 total
+**Current approach (v5.7):** 4 SMS spread over 3 days, tied to real events
 
 **Rationale:**
-- Non-L3 already receives Golden Life Sheet at 9am (Value-First Week)
-- Bombarding with 4 L3 pitches on same day undermines value-first philosophy
-- Post-VIP timing is most effective — real FOMO vs manufactured urgency
-- Wednesday gentle reminder provides the soft close
+- Monday 9pm: VIP just ended — real FOMO from real event
+- Tuesday 7pm: 24-hour milestone — natural urgency point
+- Wednesday 6pm: Welcome Party imminent — highest FOMO moment
+- Wednesday 9pm: After party, before deadline — final call
+
+**We deliberately skip:**
+- Monday morning (they're getting Value-First email)
+- Tuesday morning (no natural milestone)
+- Wednesday morning (email covers it)
+- Wednesday afternoon (email covers it, don't double-tap)
 
 ---
 
-**Version:** 3.0
+**Version:** 4.0
 **Updated:** December 17, 2025
-**Changed:** Simplified from 4 SMS to 1 (post-VIP only). Morning/midday/afternoon messages archived.
+**Changed:** Expanded from 1 SMS (post-VIP only) to 4 strategic touchpoints aligned with real events and milestones.

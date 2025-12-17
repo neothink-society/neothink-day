@@ -216,26 +216,60 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 7: L3 POST-VIP (Mon Dec 8, 9pm) — Non-L3 Only
+# PHASE 7: L3 PROMOTION SEQUENCE (Mon-Wed Dec 8-10) — Non-L3 Only
 
 **AUDIENCE:** Non-L3 attendees ONLY (those who have NOT enrolled in Level 3)
-**PURPOSE:** Single post-VIP FOMO touch — most effective timing
-**PHILOSOPHY:** Value-first, not bombardment. Let the experience speak.
+**PURPOSE:** 6-touch sequence optimized for L3 conversion without being pushy
+**PHILOSOPHY:** Each message has a specific purpose tied to real events/milestones.
+
+## Monday, December 8
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `level3-ascend.html` | 9:00 PM | **+2d 10h** | Non-L3 |
-| 2 | [S] | L3 Ascend (post-VIP FOMO) | 9:00 PM | **+2d 10h** | Non-L3 |
+| 1 | [E] | `02-monday-afternoon.html` | 2:00 PM | **+2d 3h** | Non-L3 |
+| 2 | [E] | `level3-ascend.html` | 9:00 PM | **+2d 10h** | Non-L3 |
+| 3 | [S] | Post-VIP FOMO | 9:00 PM | **+2d 10h** | Non-L3 |
 
-**Content:** "The VIP Session just ended. The breakthroughs were real. If you're still on the fence, this is your sign."
+**Content (2pm):** "What you felt was real." Soft introduction to L3, mentions VIP Session tonight and Welcome Party Wednesday.
+**Content (9pm):** "The VIP Session just ended." Post-VIP FOMO. Most effective timing.
 
-**Why One Touch (Not Four):**
-- Non-L3 already receives Golden Life Sheet at 9am (Value-First Week)
-- Post-VIP timing creates real FOMO vs manufactured urgency
-- Wednesday gentle reminder (Phase 10) provides soft close
-- Previous v4 approach (4 emails Monday) was too aggressive
+## Tuesday, December 9
 
-**Note:** Non-L3s ALSO receive Value-First Week emails (Phase 10) — Mon-Fri daily value content.
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 4 | [E] | `03-tuesday-evening.html` | 7:00 PM | **+3d 8h** | Non-L3 |
+| 5 | [S] | 24 Hours Remaining | 7:00 PM | **+3d 8h** | Non-L3 |
+
+**Content:** "The door closes tomorrow." 24-hour warning. Welcome Party tomorrow night.
+
+## Wednesday, December 10 (Deadline Day)
+
+| # | Type | Message | Time (ET) | Offset | Condition |
+|---|------|---------|-----------|--------|-----------|
+| 6 | [E] | `04-wednesday-afternoon.html` | 2:00 PM | **+4d 3h** | Non-L3 |
+| 7 | [E] | `05-wednesday-6pm.html` | 6:00 PM | **+4d 7h** | Non-L3 |
+| 8 | [S] | Welcome Party Starting | 6:00 PM | **+4d 7h** | Non-L3 |
+| 9 | [E] | `l3-gentle-reminder.html` | 9:00 PM | **+4d 10h** | Non-L3 |
+| 10 | [S] | Final Message | 9:00 PM | **+4d 10h** | Non-L3 |
+
+**Content (2pm):** "Final hours." 10 hours until deadline. Welcome Party is TONIGHT at 7pm.
+**Content (6pm):** "Tonight at midnight." 6 hours left. Welcome Party starts in 1 hour.
+**Content (9pm):** "3 hours left." Final message. Welcome Party just ended. Direct but respectful.
+
+### ⚠️ L3 DEADLINE: Thursday Dec 11, 12:00 AM ET (+4d 13h)
+
+## Summary: 6 Emails + 4 SMS = 10 Total L3 Touches
+
+| Day | Time | Email | SMS | Purpose |
+|-----|------|-------|-----|---------|
+| Mon | 2pm | 02-monday-afternoon | — | Soft intro |
+| Mon | 9pm | level3-ascend | Post-VIP FOMO | Real FOMO |
+| Tue | 7pm | 03-tuesday-evening | 24 Hours | Urgency milestone |
+| Wed | 2pm | 04-wednesday-afternoon | — | Final hours |
+| Wed | 6pm | 05-wednesday-6pm | Welcome Party | Party imminent |
+| Wed | 9pm | l3-gentle-reminder | Final | Last call |
+
+**Note:** Non-L3s ALSO receive Value-First Week emails (Phase 10) — Mon-Fri daily value content for ALL attendees.
 
 ---
 
@@ -291,33 +325,30 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 5 | [E] | `03-fne-workbook.html` | 9:00 AM | **+3d 22h** | All |
-| 6 | [S] | FNE Workbook | 9:00 AM | **+3d 22h** | All |
-| 7 | [E] | `l3-gentle-reminder.html` | 9:00 PM | **+4d 10h** | Non-L3 |
-| 8 | [S] | L3 Gentle Reminder | 9:00 PM | **+4d 10h** | Non-L3 |
+| 5 | [E] | `03-fne-ambassador.html` | 9:00 AM | **+3d 22h** | All |
+| 6 | [S] | FNE Ambassador | 9:00 AM | **+3d 22h** | All |
 
-**Content (Morning):** Friday-Night Essence as core value-creation activity. The key to discovering authentic self and achieving Downstream Focus.
-**Content (Evening):** Single gentle reminder — "Tonight's your last chance for special pricing. No pressure, just wanted you to know."
+**Content:** Friday-Night Essence as core value-creation activity + Ambassador Program introduction. The key to discovering authentic self and achieving Downstream Focus.
 
-### ⚠️ DEADLINE: Thursday Dec 11, 12:00 AM ET (+4d 13h)
+**Note:** L3 promotion messages for Non-L3 attendees are in Phase 7 (Mon-Wed).
 
 ## Thursday, December 11
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 9 | [E] | `04-ambassador.html` | 9:00 AM | **+4d 22h** | All |
-| 10 | [S] | Ambassador Program | 9:00 AM | **+4d 22h** | All |
+| 7 | [E] | `04-how-it-fits.html` | 9:00 AM | **+4d 22h** | All |
+| 8 | [S] | How It Fits | 9:00 AM | **+4d 22h** | All |
 
-**Content:** Ambassador Program introduction. 50% commission ($250 per enrollment). For many, their FNE is Neothink itself — sharing the transformation. Win-win-win scenario.
+**Content:** How all the tools work together. The integrated system connecting Golden Life Sheet, Wealth Engine, FNE, and Ambassador.
 
 ## Friday, December 12
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 11 | [E] | `05-infinite-vector.html` | 9:00 AM | **+5d 22h** | All |
-| 12 | [S] | Infinite Vector | 9:00 AM | **+5d 22h** | All |
+| 9 | [E] | `05-infinite-vector.html` | 9:00 AM | **+5d 22h** | All |
+| 10 | [S] | Infinite Vector | 9:00 AM | **+5d 22h** | All |
 
-**Content:** Synthesis — how all four tools form a single integrated system. The Infinite Vector concept: perpetual momentum toward the Immortal Mentality. Soft mention of L3 for those ready to go deeper.
+**Content:** Synthesis — how all tools form a single integrated system. The Infinite Vector concept: perpetual momentum toward the Immortal Mentality. Soft mention of L3 for those ready to go deeper.
 
 ---
 
@@ -425,14 +456,15 @@ These fire based on actions, not scheduled times.
 | Day 1 Workshop | 8 | 8 | 16 |
 | Day 2 Countdown | 4 | 4 | 8 |
 | Day 2 Workshop | 9 | 9 | 18 |
-| Sunday Night Anchor | 1 | 1 | 2 |
-| Value-First Week (Mon-Fri) | 6 | 6 | 12 |
+| Sunday Night Anchor | 2 | 2 | 4 |
+| L3 Promotion (Non-L3) | 6 | 4 | 10 |
+| Value-First Week (All) | 5 | 5 | 10 |
 | VIP Session | 4 | 4 | 8 |
 | VIP Recording | 1 | 1 | 2 |
-| Welcome Party | 5 | 3 | 8 |
-| **TOTAL** | **61** | **57** | **118** |
+| Welcome Party | 5 | 5 | 10 |
+| **TOTAL** | **67** | **63** | **130** |
 
-**Note:** Value-First Week replaces the aggressive L3 deadline sequence with value-focused content for ALL attendees (5-day Mon-Fri sequence), plus one gentle L3 reminder Wednesday evening.
+**Note:** L3 Promotion sequence is optimized for conversion without being pushy (6 emails + 4 SMS over 3 days). Value-First Week provides daily value content for ALL attendees (Mon-Fri).
 
 ---
 
@@ -525,13 +557,14 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 5.6
+**Version:** 5.7
 **Created:** December 10, 2025
 **Last Updated:** December 17, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v5.7** (Dec 17): **L3 PROMOTION OPTIMIZED** — Expanded Phase 7 to full 6-email + 4-SMS sequence for L3 conversion. Schedule: Mon 2pm (soft intro), Mon 9pm (post-VIP FOMO), Tue 7pm (24hr warning), Wed 2pm (final hours), Wed 6pm (6hr/Welcome Party), Wed 9pm (final message). Each touch tied to real event/milestone. Updated Value-First Week (Phase 10) to 5 emails for ALL attendees. Total messages: 130.
 - **v5.6** (Dec 17): **NON-L3 SIMPLIFIED** — Reduced Phase 7 from 8 messages (4 emails + 4 SMS) to 2 messages (1 email + 1 SMS). Kept only post-VIP FOMO at 9pm Monday. Archived morning/midday/afternoon follow-ups to v4-legacy. Moved files from `monday-morning/` to `non-l3/`. Value-first philosophy: one touch, not bombardment.
 - **v5.5** (Dec 16): **L3 DEDICATED POST-EVENT** — Added `level3-sunday-night.html` and `level3-monday-morning.html` for L3 members. Phase 6B now segmented: Non-L3 gets sunday-night-anchor, L3 gets dedicated L3 message. Added Phase 6C for L3 Monday morning. L3 members now have complete differentiated experience.
 - **v5.4** (Dec 16): **POST-EVENT CLEANUP** — Archived legacy `12-morning-after.html` (replaced by Value-First Week). Removed `welcome-party-correction.html` (not needed). Updated Phase 7 to L3 Follow-up only. Updated Phase 11 Welcome Party with complete sequence including Tuesday reminder and Thursday recording. Clarified audience segmentation.
