@@ -203,15 +203,15 @@ This is where everything comes together. Your transformation reaches its peak.
 
 ---
 
-## SMS #7: Mark Hamilton Takes the Stage
-**Trigger:** When MH takes the stage
+## SMS #7: Wallace Hamilton Takes the Stage
+**Trigger:** When WH takes the stage
 **Offset:** ~T+26h
 **Corresponding Email:** 07-day2-mh-segment.html
 
 ```
-Neothink Society: MARK HAMILTON IS ON STAGE
+Neothink Society: WALLACE HAMILTON IS ON STAGE
 
-This is a rare moment. Mark Hamilton is speaking NOW.
+This is a rare moment. Wallace Hamilton is speaking NOW.
 
 If you stepped away — rejoin IMMEDIATELY:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -349,7 +349,7 @@ societysecrets.com/level3
 | 4 | Sat | Wealth segment | ~T+4h | Wealth Segment |
 | 5 | Sat | Day 1 ends | T+9h | Day 1 Complete |
 | 6 | Sun | Day 2 starts | T+25h | Day 2 Opening |
-| 7 | Sun | MH on stage | ~T+26h | Mark Hamilton |
+| 7 | Sun | WH on stage | ~T+26h | Wallace Hamilton |
 | 8 | Sun | Lunch starts | ~T+27h | Day 2 Lunch Break |
 | 9 | Sun | Back from lunch | ~T+28h | Final Session |
 | 10 | Sun | Integration | ~T+29h | Integration Segment |
