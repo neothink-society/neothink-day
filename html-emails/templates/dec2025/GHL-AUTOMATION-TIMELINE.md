@@ -216,23 +216,26 @@ These fire based on actions, not scheduled times.
 
 ---
 
-# PHASE 7: L3 FOLLOW-UP SEQUENCE (Mon Dec 8) — Non-L3 Only
+# PHASE 7: L3 POST-VIP (Mon Dec 8, 9pm) — Non-L3 Only
 
 **AUDIENCE:** Non-L3 attendees ONLY (those who have NOT enrolled in Level 3)
-**PURPOSE:** Encourage L3 enrollment before Wednesday deadline
+**PURPOSE:** Single post-VIP FOMO touch — most effective timing
+**PHILOSOPHY:** Value-first, not bombardment. Let the experience speak.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `level3-followup-morning.html` | 9:00 AM | **+1d 22h** | Non-L3 |
-| 2 | [S] | L3 Follow-up Morning | 9:00 AM | **+1d 22h** | Non-L3 |
-| 3 | [E] | `level3-followup-midday.html` | 2:00 PM | **+2d 3h** | Non-L3 |
-| 4 | [S] | L3 Follow-up Midday | 2:00 PM | **+2d 3h** | Non-L3 |
-| 5 | [E] | `level3-followup-afternoon.html` | 7:00 PM | **+2d 8h** | Non-L3 |
-| 6 | [S] | L3 Follow-up Afternoon | 7:00 PM | **+2d 8h** | Non-L3 |
-| 7 | [E] | `level3-ascend.html` | 9:00 PM | **+2d 10h** | Non-L3 |
-| 8 | [S] | L3 Ascend (post-VIP FOMO) | 9:00 PM | **+2d 10h** | Non-L3 |
+| 1 | [E] | `level3-ascend.html` | 9:00 PM | **+2d 10h** | Non-L3 |
+| 2 | [S] | L3 Ascend (post-VIP FOMO) | 9:00 PM | **+2d 10h** | Non-L3 |
 
-**Note:** Non-L3s ALSO receive Value-First Week emails (Phase 10) — Golden Life Sheet at 9am goes to ALL attendees.
+**Content:** "The VIP Session just ended. The breakthroughs were real. If you're still on the fence, this is your sign."
+
+**Why One Touch (Not Four):**
+- Non-L3 already receives Golden Life Sheet at 9am (Value-First Week)
+- Post-VIP timing creates real FOMO vs manufactured urgency
+- Wednesday gentle reminder (Phase 10) provides soft close
+- Previous v4 approach (4 emails Monday) was too aggressive
+
+**Note:** Non-L3s ALSO receive Value-First Week emails (Phase 10) — Mon-Fri daily value content.
 
 ---
 
@@ -507,6 +510,7 @@ These fire based on actions, not scheduled times.
 | +2d 7h | Mon Dec 8, 3pm PT | vip-session-1hour | 1 Hour | VIP+L3 |
 | +2d 7h 30m | Mon Dec 8, 3:30pm PT | — | VIP 30m | VIP+L3 |
 | +2d 8h | Mon Dec 8, 4pm PT | vip-session-live | VIP LIVE | VIP+L3 |
+| +2d 10h | Mon Dec 8, 6pm PT | level3-ascend | Post-VIP | Non-L3 |
 | +2d 22h | Tue Dec 9, 6am PT | 02-wealth-engine-calculator | Wealth | All |
 | +2d 23h | Tue Dec 9, 7am PT | vip-session-recording | VIP Rec | VIP+L3 |
 | +3d 10h | Tue Dec 9, 6pm PT | welcome-party-reminder | — | L3 |
@@ -521,13 +525,14 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 5.5
+**Version:** 5.6
 **Created:** December 10, 2025
-**Last Updated:** December 16, 2025
+**Last Updated:** December 17, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v5.6** (Dec 17): **NON-L3 SIMPLIFIED** — Reduced Phase 7 from 8 messages (4 emails + 4 SMS) to 2 messages (1 email + 1 SMS). Kept only post-VIP FOMO at 9pm Monday. Archived morning/midday/afternoon follow-ups to v4-legacy. Moved files from `monday-morning/` to `non-l3/`. Value-first philosophy: one touch, not bombardment.
 - **v5.5** (Dec 16): **L3 DEDICATED POST-EVENT** — Added `level3-sunday-night.html` and `level3-monday-morning.html` for L3 members. Phase 6B now segmented: Non-L3 gets sunday-night-anchor, L3 gets dedicated L3 message. Added Phase 6C for L3 Monday morning. L3 members now have complete differentiated experience.
 - **v5.4** (Dec 16): **POST-EVENT CLEANUP** — Archived legacy `12-morning-after.html` (replaced by Value-First Week). Removed `welcome-party-correction.html` (not needed). Updated Phase 7 to L3 Follow-up only. Updated Phase 11 Welcome Party with complete sequence including Tuesday reminder and Thursday recording. Clarified audience segmentation.
 - **v5.3** (Dec 15): **VIP SESSION TIMES CORRECTED** — Fixed VIP Session from 3pm PT/6pm ET to 4pm PT/7pm ET. Updated all offsets accordingly. Added 1-hour reminder SMS. Total: 7 messages in VIP Session phase.
