@@ -325,10 +325,10 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 5 | [E] | `03-fne-ambassador.html` | 9:00 AM | **+3d 22h** | All |
-| 6 | [S] | FNE Ambassador | 9:00 AM | **+3d 22h** | All |
+| 5 | [E] | `03-fne-workbook.html` | 9:00 AM | **+3d 22h** | All |
+| 6 | [S] | FNE Workbook | 9:00 AM | **+3d 22h** | All |
 
-**Content:** Friday-Night Essence as core value-creation activity + Ambassador Program introduction. The key to discovering authentic self and achieving Downstream Focus.
+**Content:** Friday-Night Essence workbook. The key to discovering authentic self and achieving Downstream Focus.
 
 **Note:** L3 promotion messages for Non-L3 attendees are in Phase 7 (Mon-Wed).
 
@@ -336,10 +336,10 @@ These fire based on actions, not scheduled times.
 
 | # | Type | Message | Time (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 7 | [E] | `04-how-it-fits.html` | 9:00 AM | **+4d 22h** | All |
-| 8 | [S] | How It Fits | 9:00 AM | **+4d 22h** | All |
+| 7 | [E] | `04-ambassador.html` | 9:00 AM | **+4d 22h** | All |
+| 8 | [S] | Ambassador Program | 9:00 AM | **+4d 22h** | All |
 
-**Content:** How all the tools work together. The integrated system connecting Golden Life Sheet, Wealth Engine, FNE, and Ambassador.
+**Content:** Ambassador Program introduction. How to share Neothink with others and earn commission.
 
 ## Friday, December 12
 
