@@ -51,7 +51,7 @@ Neothink Society: You're in.
 
 Day of Enlightenment — Dec 6-7, 2025
 
-You just made a decision that most people never make: to invest in your own transformation.
+You just made a powerful decision: to invest in your own transformation.
 
 Check your email for pre-work instructions and workshop hub access.
 
@@ -430,7 +430,7 @@ Tonight:
 • Review your questions
 • Get your workbook ready
 
-Rest well. You're about to experience something most people never will.
+Rest well. You're about to experience something extraordinary.
 ```
 
 ---
