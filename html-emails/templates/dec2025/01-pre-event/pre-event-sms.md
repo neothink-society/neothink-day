@@ -70,7 +70,7 @@ Neothink Society: VIP Elite confirmed.
 
 Your seat in the inner circle is reserved.
 
-Your intimate VIP session awaits — personalized guidance that general members won't receive.
+Your intimate VIP session awaits — personalized guidance designed for your accelerated path.
 
 Check your email for exclusive VIP details.
 
@@ -274,7 +274,7 @@ Fair warning: Some moments will feel uncomfortable. Maybe even awkward.
 
 This is intentional.
 
-The greatest breakthroughs happen when your comfort zone is interrupted. We're forcing you out of the patterns that have been restricting your life.
+The greatest breakthroughs happen when your comfort zone is interrupted. Together, we'll move beyond the patterns that have been restricting your life.
 
 Prepare to participate fully. Lean into the discomfort.
 
@@ -423,7 +423,7 @@ Day 1 begins at 8:00 AM Pacific.
 You've invested in the full experience. Here's what awaits:
 • Priority access from doors open
 • Personalized guidance in your VIP session
-• Insights that general members won't receive
+• Advanced insights in your VIP session
 
 Tonight:
 • Set 2-3 alarms
@@ -703,7 +703,7 @@ You earned this. Use it fully.
 ```
 Neothink Society: VIP EXCLUSIVE SESSION STARTING.
 
-General members have been dismissed. This is for you.
+The main session has concluded. This is your exclusive VIP time.
 
 You're in the inner circle now.
 

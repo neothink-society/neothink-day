@@ -13,7 +13,7 @@
 ```
 Neothink Society: Tonight, you're different.
 
-While others are wondering about Level 3, you're already in. You trusted yourself. You made the leap.
+You trusted yourself. You made the leap. And now Level 3 is yours.
 
 Tomorrow: Your VIP Session at 7pm ET.
 Wednesday: Your Welcome Party.
