@@ -455,7 +455,7 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 
 | Time (ET) | Email | File | Audience |
 |-----------|-------|------|----------|
-| 5:00 PM | Day 2 Complete + L3 Offer | `day-of-live/day2-complete-level3.html` | All attendees |
+| 5:00 PM | Day 2 Complete + L3 Offer | `05-day2-workshop/day2-complete-level3.html` | All attendees |
 
 **Purpose**: Close the workshop, introduce Level 3 with full details and honor system pricing
 
@@ -465,46 +465,47 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 
 | Time (ET) | Email | SMS | File | Audience |
 |-----------|-------|-----|------|----------|
-| 9:00 AM | VIP Session Reminder | ✓ | `day-of-live/vip-session-reminder.html` | VIP + L3 |
-| 5:30 PM | VIP Session 30-Min | ✓ | - | VIP + L3 |
-| 6:00 PM | VIP Session 1-Hour | ✓ | `day-of-live/vip-session-1hour.html` | VIP + L3 |
-| 6:00 PM | VIP Session LIVE | ✓ | `day-of-live/vip-session-live.html` | VIP + L3 |
+| 9:00 AM | VIP Session Reminder | ✓ | `07-post-event/vip-session/vip-session-reminder.html` | VIP + L3 |
+| 6:00 PM | VIP Session 1-Hour | ✓ | `07-post-event/vip-session/vip-session-1hour.html` | VIP + L3 |
+| 7:00 PM | VIP Session LIVE | ✓ | `07-post-event/vip-session/vip-session-live.html` | VIP + L3 |
 
-**SMS File**: `day-of-live/vip-session-sms.md`
-
----
-
-### Phase 3: Level 3 Follow-up Sequence (Monday, December 8, 2025)
-
-| Time (ET) | Email | SMS | File | Audience |
-|-----------|-------|-----|------|----------|
-| 9:00 AM | Morning Follow-up | ✓ | `day-of-live/level3-followup-morning.html` | Non-L3 |
-| 2:00 PM | Midday Follow-up | ✓ | `day-of-live/level3-followup-midday.html` | Non-L3 |
-| 7:00 PM | Afternoon Follow-up | ✓ | `day-of-live/level3-followup-afternoon.html` | Non-L3 |
-
-**SMS File**: `day-of-live/level3-followup-sms.md`
+**SMS File**: `07-post-event/vip-session/vip-session-sms.md`
 
 ---
 
-### Phase 4: Level 3 Deadline Sequence (Tue-Wed, December 9-10, 2025)
+### Phase 3: Value-First Week (Sun-Fri, December 7-12, 2025)
 
-#### Tuesday, December 9, 2025
+**Audience**: ALL Attendees (including L3 and VIP members)
 
-| Time (ET) | Email | SMS | File | Audience |
-|-----------|-------|-----|------|----------|
-| 9:00 AM | 24-Hour Warning | ✓ | `level3-deadline-sequence/01-tuesday-morning.html` | Non-L3 |
-| 2:00 PM | 3-Day Breakdown | ✓ | `level3-deadline-sequence/02-tuesday-afternoon.html` | Non-L3 |
-| 8:00 PM | Last Night Reflection | ✓ | `level3-deadline-sequence/03-tuesday-evening.html` | Non-L3 |
+| Date | Time (ET) | Email | SMS | File |
+|------|-----------|-------|-----|------|
+| Sun Dec 7 | 8:00 PM PT | Sunday Night Anchor | ✓ | `07-post-event/all-attendees/sunday-night-anchor.html` |
+| Mon Dec 8 | 9:00 AM | Day 1: Golden Life Sheet | ✓ | `07-post-event/all-attendees/01-golden-life-sheet.html` |
+| Tue Dec 9 | 9:00 AM | Day 2: Wealth Engine Calculator | ✓ | `07-post-event/all-attendees/02-wealth-engine-calculator.html` |
+| Wed Dec 10 | 9:00 AM | Day 3: FNE Workbook | ✓ | `07-post-event/all-attendees/03-fne-workbook.html` |
+| Thu Dec 11 | 9:00 AM | Day 4: Ambassador Program | ✓ | `07-post-event/all-attendees/04-ambassador.html` |
+| Fri Dec 12 | 9:00 AM | Day 5: Infinite Vector | ✓ | `07-post-event/all-attendees/05-infinite-vector.html` |
 
-#### Wednesday, December 10, 2025
+**SMS File**: `07-post-event/all-attendees/post-event-value-sms.md`
 
-| Time (ET) | Email | SMS | File | Audience |
-|-----------|-------|-----|------|----------|
-| 9:00 AM | Final Day Morning | ✓ | `level3-deadline-sequence/04-wednesday-morning.html` | Non-L3 |
-| 3:00 PM | Hours Left | ✓ | `level3-deadline-sequence/05-wednesday-afternoon.html` | Non-L3 |
-| 11:00 PM | Final Note | ✓ | `level3-deadline-sequence/06-wednesday-final.html` | Non-L3 |
+---
 
-**SMS File**: `level3-deadline-sequence/sms-messages.md`
+### Phase 4: Non-L3 Follow-up Sequence (Mon-Wed, December 8-10, 2025)
+
+**Audience**: Non-L3 Members ONLY (gentle invitation approach)
+
+| Date | Time (ET) | Email | SMS | File |
+|------|-----------|-------|-----|------|
+| Mon Dec 8 | 2:00 PM | Monday Afternoon Invitation | ✓ | `07-post-event/non-l3/02-monday-afternoon.html` |
+| Mon Dec 8 | 9:00 PM | Post-VIP Ascension | - | `07-post-event/non-l3/level3-ascend.html` |
+| Tue Dec 9 | 7:00 PM | Tuesday Evening Reflection | ✓ | `07-post-event/non-l3/03-tuesday-evening.html` |
+| Wed Dec 10 | 2:00 PM | Wednesday Afternoon | - | `07-post-event/non-l3/04-wednesday-afternoon.html` |
+| Wed Dec 10 | 6:00 PM | Countdown | - | `07-post-event/non-l3/05-wednesday-6pm.html` |
+| Wed Dec 10 | 9:00 PM | Gentle Reminder | ✓ | `07-post-event/non-l3/l3-gentle-reminder.html` |
+
+**SMS Files**:
+- `07-post-event/non-l3/level3-followup-sms.md`
+- `07-post-event/non-l3/l3-gentle-reminder-sms.md`
 
 ---
 
@@ -512,9 +513,9 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 
 | Time (ET) | Email | SMS | File | Audience |
 |-----------|-------|-----|------|----------|
-| 10:00 AM | VIP Recording Available | ✓ | `day-of-live/vip-session-recording.html` | VIP + L3 |
+| 10:00 AM | VIP Recording Available | ✓ | `07-post-event/vip-session/vip-session-recording.html` | VIP + L3 |
 
-**SMS File**: `day-of-live/vip-recording-sms.md`
+**SMS File**: `07-post-event/vip-session/vip-recording-sms.md`
 
 ---
 
@@ -523,12 +524,12 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 
 | Time (ET) | Email | SMS | File |
 |-----------|-------|-----|------|
-| Tuesday Evening | Tomorrow Reminder | - | `level3-members/welcome-party-reminder.html` |
-| 10:00 AM | Today Reminder | ✓ | `level3-members/welcome-party-today.html` |
-| 6:00 PM | 1-Hour Reminder | ✓ | `level3-members/welcome-party-1hour.html` |
-| 7:00 PM | We're LIVE | ✓ | `level3-members/welcome-party-live.html` |
+| Tuesday Evening | Tomorrow Reminder | - | `07-post-event/level3-members/welcome-party-reminder.html` |
+| 10:00 AM | Today Reminder | ✓ | `07-post-event/level3-members/welcome-party-today.html` |
+| 6:30 PM | 30-Minute Reminder | ✓ | `07-post-event/level3-members/welcome-party-30min.html` |
+| 7:00 PM | We're LIVE | ✓ | `07-post-event/level3-members/welcome-party-live.html` |
 
-**SMS File**: `level3-members/welcome-party-sms.md`
+**SMS File**: `07-post-event/level3-members/welcome-party-sms.md`
 
 **Welcome Party Details**:
 - Time: 7:00 PM ET / 4:00 PM PT
@@ -538,25 +539,28 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 
 ---
 
-### Phase 7: Workshop Recap (Thursday, December 11, 2025)
+### Phase 7: L3 Member Onboarding (Sunday-Monday, December 7-8, 2025)
 
-| Time (ET) | Email | SMS | File | Audience |
-|-----------|-------|-----|------|----------|
-| 10:00 AM | Workshop Celebration | ✓ | `workshop-recap-celebration.html` | All attendees |
+**Audience**: Level 3 members ONLY
 
-**SMS File**: `workshop-recap-sms.md`
+| Time (ET) | Email | SMS | File |
+|-----------|-------|-----|------|
+| Sun Dec 7 evening | L3 Sunday Night | ✓ | `07-post-event/level3-members/level3-sunday-night.html` |
+| Mon Dec 8 morning | L3 Monday Morning | ✓ | `07-post-event/level3-members/level3-monday-morning.html` |
 
-**Purpose**: Celebrate the weekend, provide resource links, soft L3 mention for stragglers
+**SMS File**: `07-post-event/level3-members/level3-welcome-sms.md`
+
+**Purpose**: Immediate guidance for new L3 members, help them maximize their investment
 
 ---
 
-### Phase 8: Post-Deadline (Thursday, December 11, 2025)
+### Phase 8: Welcome Party Recording (Thursday, December 11, 2025)
 
 | Time (ET) | Email | File | Audience |
 |-----------|-------|------|----------|
-| 10:00 AM | Doors Closed | `level3-deadline-sequence/post-deadline-closed.html` | Non-L3 members |
+| 10:00 AM | Recording Available | `07-post-event/level3-members/welcome-party-recording.html` | L3 members |
 
-**Purpose**: Graceful close for those who didn't enroll, remind of resources still available, maintain relationship
+**Purpose**: Share Welcome Party recording for those who couldn't attend live
 
 ---
 
@@ -587,10 +591,21 @@ With 23 days between registration (Nov 13) and event (Dec 6), the extended seque
 
 All post-event files in: `/templates/dec2025/`
 
-### Day-of-Live Directory (`day-of-live/`)
-- `01-day1-opening.html` through `11-day2-end.html` - Workshop live emails
+### Workshop Day 1 Directory (`03-day1-workshop/`)
+- `01-day1-opening.html` - Day 1 opening
+- `01b-day1-wh-in-session.html` - Wealth Habits in session
+- `01c-day1-wh-live-now.html` - Wealth Habits live now
+- `02-day1-lunch-break.html` - Lunch break
+- `03-day1-back-from-lunch.html` - Back from lunch
+- `04-day1-wealth-segment.html` - Wealth segment
+- `05-day1-end.html` - Day 1 end
+
+### Workshop Day 2 Directory (`05-day2-workshop/`)
+- `06-day2-opening.html` through `11-day2-end.html` - Day 2 live emails
 - `12-level3-segment.html` - L3 enrollment announcement (during workshop)
 - `day2-complete-level3.html` - End of Day 2 + L3 offer (Sunday evening)
+
+### Workshop SMS (`06-workshop-sms/`)
 - `workshop-live-sms.md` - Workshop live SMS sequence
 
 ### Post-Event: VIP Session (`07-post-event/vip-session/`)
@@ -601,36 +616,37 @@ All post-event files in: `/templates/dec2025/`
 - `vip-session-sms.md` - VIP session SMS sequence (4 messages)
 - `vip-recording-sms.md` - VIP recording SMS
 
-### Post-Event: L3 Follow-up (`07-post-event/monday-morning/`) — Non-L3 Only
-- `level3-followup-morning.html` - Monday 9am follow-up
-- `level3-followup-midday.html` - Monday 2pm follow-up
-- `level3-followup-afternoon.html` - Monday 7pm follow-up
-- `level3-ascend.html` - Monday 9pm (post-VIP FOMO)
-- `level3-followup-sms.md` - L3 follow-up SMS sequence (4 messages)
+### Post-Event: Value-First Week (`07-post-event/all-attendees/`) — All Attendees
+- `sunday-night-anchor.html` - Sunday night anchor email (Dec 7, 8pm PT)
+- `01-golden-life-sheet.html` - Value-First Day 1: Golden Life Sheet (Mon Dec 8, 9am ET)
+- `02-wealth-engine-calculator.html` - Value-First Day 2: Wealth Engine Calculator (Tue Dec 9, 9am ET)
+- `03-fne-workbook.html` - Value-First Day 3: FNE Workbook (Wed Dec 10, 9am ET)
+- `04-ambassador.html` - Value-First Day 4: Ambassador Program (Thu Dec 11, 9am ET)
+- `05-infinite-vector.html` - Value-First Day 5: Infinite Vector Guide (Fri Dec 12, 9am ET)
+- `post-event-value-sms.md` - Value-First Week SMS sequence
 
-### Deadline Sequence Directory (`level3-deadline-sequence/`)
-- `01-tuesday-morning.html` - 24-hour warning
-- `02-tuesday-afternoon.html` - 3-day breakdown
-- `03-tuesday-evening.html` - Last night reflection
-- `04-wednesday-morning.html` - Final day morning
-- `05-wednesday-afternoon.html` - Hours left
-- `06-wednesday-final.html` - Final note before midnight
-- `post-deadline-closed.html` - Doors closed (Thursday after deadline)
-- `sms-messages.md` - Deadline sequence SMS messages
+### Post-Event: Non-L3 Follow-up (`07-post-event/non-l3/`) — Non-L3 Only
+- `02-monday-afternoon.html` - Monday afternoon follow-up (Dec 8)
+- `03-tuesday-evening.html` - Tuesday evening reflection (Dec 9)
+- `04-wednesday-afternoon.html` - Wednesday afternoon (Dec 10)
+- `05-wednesday-6pm.html` - Wednesday 6pm countdown (Dec 10)
+- `l3-gentle-reminder.html` - Single gentle reminder (Dec 10, 9pm ET)
+- `l3-gentle-reminder-sms.md` - L3 gentle reminder SMS
+- `level3-ascend.html` - Post-VIP ascension email (Dec 8, 9pm ET)
+- `level3-followup-sms.md` - L3 follow-up SMS sequence
 
-### Level 3 Members Directory (`level3-members/`)
+### Level 3 Members Directory (`07-post-event/level3-members/`)
 - `level3-confirmation.html` - Purchase confirmation (immediate trigger)
 - `level3-confirmation-sms.md` - Purchase confirmation SMS (immediate trigger)
+- `level3-sunday-night.html` - L3 Sunday night welcome (Dec 7)
+- `level3-monday-morning.html` - L3 Monday morning guidance (Dec 8)
+- `level3-welcome-sms.md` - L3 welcome SMS sequence
 - `welcome-party-reminder.html` - Tomorrow reminder
 - `welcome-party-today.html` - Today reminder
-- `welcome-party-1hour.html` - 1-hour countdown
+- `welcome-party-30min.html` - 30-minute countdown
 - `welcome-party-live.html` - LIVE notification
+- `welcome-party-recording.html` - Recording available (next day)
 - `welcome-party-sms.md` - Welcome party SMS messages
-
-### Root Directory
-- `workshop-recap-celebration.html` - Workshop recap + celebration
-- `workshop-recap-sms.md` - Workshop recap SMS
-- `ambassador-program.html` - Ambassador referral program
 
 ---
 
@@ -645,10 +661,11 @@ These files serve different points in the timeline and should NOT be confused:
 | `12-level3-segment.html` | Day 2 during L3 segment | Initial L3 announcement during workshop |
 | `day2-complete-level3.html` | Sun Dec 7, 5pm PT | End of Day 2, first formal L3 offer |
 | `01-golden-life-sheet.html` | Mon Dec 8, 9am ET | Value-First Week Day 1 (ALL attendees) |
-| `level3-followup-morning.html` | Mon Dec 8, 9am ET | L3 follow-up (Non-L3 only) |
-| `level3-followup-midday.html` | Mon Dec 8, 2pm ET | L3 follow-up (Non-L3 only) |
-| `level3-followup-afternoon.html` | Mon Dec 8, 7pm ET | L3 follow-up (Non-L3 only) |
-| `level3-ascend.html` | Mon Dec 8, 9pm ET | Post-VIP FOMO (Non-L3 only) |
+| `02-monday-afternoon.html` | Mon Dec 8, 2pm ET | L3 invitation (Non-L3 only) |
+| `level3-ascend.html` | Mon Dec 8, 9pm ET | Post-VIP ascension (Non-L3 only) |
+| `03-tuesday-evening.html` | Tue Dec 9, 7pm ET | L3 reflection (Non-L3 only) |
+| `04-wednesday-afternoon.html` | Wed Dec 10, 2pm ET | L3 deadline day (Non-L3 only) |
+| `05-wednesday-6pm.html` | Wed Dec 10, 6pm ET | L3 countdown (Non-L3 only) |
 | `l3-gentle-reminder.html` | Wed Dec 10, 9pm ET | Single gentle reminder before deadline |
 
 ### SMS vs Email Files
@@ -662,9 +679,13 @@ These files serve different points in the timeline and should NOT be confused:
 
 | Directory | Audience | Purpose |
 |-----------|----------|---------|
-| `day-of-live/` | All attendees + VIP | Workshop day emails |
-| `level3-deadline-sequence/` | Non-L3 members only | Promotional deadline emails |
-| `level3-members/` | L3 members only | Welcome party, confirmation |
+| `03-day1-workshop/` | All attendees | Day 1 workshop emails |
+| `05-day2-workshop/` | All attendees | Day 2 workshop emails |
+| `06-workshop-sms/` | All attendees | Workshop SMS messages |
+| `07-post-event/all-attendees/` | All attendees | Value-First Week emails |
+| `07-post-event/non-l3/` | Non-L3 members only | L3 promotional follow-up |
+| `07-post-event/level3-members/` | L3 members only | Welcome party, confirmation |
+| `07-post-event/vip-session/` | VIP members only | VIP session emails |
 
 ---
 
@@ -673,25 +694,29 @@ These files serve different points in the timeline and should NOT be confused:
 | Date | Event | Deadline |
 |------|-------|----------|
 | Sun Dec 7 | Workshop Day 2 ends | 5:00 PM PT |
+| Sun Dec 7 | Value-First Week begins (sunday-night-anchor) | 8:00 PM PT |
+| Mon Dec 8 | Value-First Day 1 + Non-L3 Follow-up | 9:00 AM ET |
 | Mon Dec 8 | VIP Session | 4:00 PM PT / 7:00 PM ET |
-| Mon Dec 8 | L3 Follow-up sequence | All day |
-| Tue Dec 9 | L3 Deadline sequence begins | 9:00 AM ET |
+| Tue Dec 9 | Value-First Day 2 + Non-L3 Follow-up | 9:00 AM ET |
+| Wed Dec 10 | Value-First Day 3 + L3 Gentle Reminder | 9:00 AM ET |
 | Wed Dec 10 | L3 Welcome Party | 4:00 PM PT / 7:00 PM ET |
 | Wed Dec 10 | **L3 Honor System EXPIRES** | **Midnight ET** |
-| Thu Dec 11 | Workshop Recap | 10:00 AM ET |
+| Thu Dec 11 | Value-First Day 4 (Ambassador) | 9:00 AM ET |
+| Fri Dec 12 | Value-First Day 5 (Infinite Vector) | 9:00 AM ET |
 
 ---
 
 ## Post-Event Segmentation
 
 ### Audience Segments
-1. **All Attendees**: Workshop recap, Day 2 complete email
-2. **Non-L3 Members**: L3 follow-up sequence, deadline sequence
-3. **VIP + L3 Members**: VIP session emails, VIP recording
-4. **L3 Members Only**: Welcome party emails
+1. **All Attendees**: Value-First Week emails (5 days of value content)
+2. **Non-L3 Members**: L3 follow-up sequence (gentle invitations, single reminder)
+3. **VIP Members**: VIP session emails, VIP recording
+4. **L3 Members Only**: Welcome party emails, L3-specific guidance
 
 ### Automation Logic
-- **After L3 purchase**: Remove from deadline sequence, add to welcome party sequence
+- **After L3 purchase**: Remove from non-L3 follow-up, add to welcome party sequence
+- **Value-First Week**: ALL attendees receive regardless of L3/VIP status
 - **VIP purchasers**: Receive VIP session emails in addition to general emails
 - **Non-purchasers**: Continue receiving deadline sequence until midnight Wed
 
