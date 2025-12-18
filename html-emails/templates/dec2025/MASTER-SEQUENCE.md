@@ -67,88 +67,68 @@ dec2025/
 ├── 06-workshop-sms/                ← Workshop SMS (Day 1 + Day 2)
 │   └── workshop-live-sms.md
 │
-├── 07-post-event/                  ← Dec 8-12
-│   ├── monday-morning/             ← Dec 8 (Non-L3 follow-up)
-│   │   ├── level3-followup-morning.html
-│   │   ├── level3-followup-midday.html
-│   │   ├── level3-followup-afternoon.html
-│   │   ├── level3-ascend.html
-│   │   └── level3-followup-sms.md
-│   │
-│   ├── vip-session/                ← Dec 8 PM
-│   │   ├── vip-session-reminder.html
-│   │   ├── vip-session-1hour.html
-│   │   ├── vip-session-live.html
-│   │   ├── vip-session-recording.html
-│   │   ├── vip-session-sms.md
-│   │   └── vip-recording-sms.md
-│   │
-│   ├── level3-deadline/            ← Dec 9-10
-│   │   ├── 01-tuesday-morning.html
-│   │   ├── 02-tuesday-afternoon.html
-│   │   ├── 03-tuesday-evening.html
-│   │   ├── 04-wednesday-morning.html
-│   │   ├── 05-wednesday-afternoon.html
-│   │   ├── 06-wednesday-final.html
-│   │   ├── post-deadline-closed.html
-│   │   └── sms-messages.md
+├── 07-post-event/                  ← Dec 7-12
+│   ├── all-attendees/              ← Value series for ALL attendees
+│   │   ├── sunday-night-anchor.html
+│   │   ├── 01-golden-life-sheet.html
+│   │   ├── 02-wealth-engine-calculator.html
+│   │   ├── 03-fne-workbook.html
+│   │   ├── 04-ambassador.html
+│   │   ├── 05-infinite-vector.html
+│   │   └── post-event-value-sms.md
 │   │
 │   ├── level3-members/             ← L3 confirmation + Welcome Party
 │   │   ├── level3-confirmation.html
 │   │   ├── level3-confirmation-sms.md
+│   │   ├── level3-sunday-night.html
+│   │   ├── level3-monday-morning.html
+│   │   ├── level3-welcome-sms.md
 │   │   ├── welcome-party-reminder.html
 │   │   ├── welcome-party-today.html
-│   │   ├── welcome-party-correction.html
 │   │   ├── welcome-party-30min.html
 │   │   ├── welcome-party-live.html
+│   │   ├── welcome-party-recording.html
 │   │   └── welcome-party-sms.md
 │   │
-│   ├── workshop-recap/             ← Dec 11
-│   │   ├── workshop-recap-celebration.html
-│   │   └── workshop-recap-sms.md
+│   ├── non-l3/                     ← L3 promotion for non-members
+│   │   ├── level3-ascend.html
+│   │   ├── 02-monday-afternoon.html
+│   │   ├── 03-tuesday-evening.html
+│   │   ├── 04-wednesday-afternoon.html
+│   │   ├── 05-wednesday-6pm.html
+│   │   ├── l3-gentle-reminder.html
+│   │   ├── l3-gentle-reminder-sms.md
+│   │   └── level3-followup-sms.md
 │   │
-│   ├── all-attendees/              ← Dec 11-15 (Value Series)
-│   │   ├── 01-golden-life-sheet.html
-│   │   ├── 02-wealth-engine-calculator.html
-│   │   ├── 03-fne-workbook.html
-│   │   ├── 04-how-it-all-fits-together.html
-│   │   └── post-event-value-sms.md
-│   │
-│   └── ambassador/
-│       ├── ambassador-program.html
-│       └── ambassador-program-sms.md
+│   └── vip-session/                ← VIP session (Dec 8 PM)
+│       ├── vip-session-reminder.html
+│       ├── vip-session-1hour.html
+│       ├── vip-session-live.html
+│       ├── vip-session-recording.html
+│       ├── vip-session-sms.md
+│       └── vip-recording-sms.md
 │
-└── broadcasts/                     ← Marketing broadcasts (separate)
-    ├── README.md
-    ├── level2/
-    │   ├── broadcast-2days-direct-mail.html
-    │   ├── broadcast-2days-online-buyers.html
-    │   ├── broadcast-2days-sms.md
-    │   ├── broadcast-second-chance-direct-mail.html
-    │   ├── broadcast-second-chance-online-buyers.html
-    │   └── broadcast-second-chance-sms.md
-    └── vip/
-        ├── broadcast-vip-2days.html
-        ├── broadcast-vip-2days-sms.md
-        ├── broadcast-vip-carryover.html
-        └── broadcast-vip-carryover-sms.md
+└── _archive/v4-legacy/             ← Archived/deprecated content
+    └── broadcasts/                 ← Marketing broadcasts (manual sends)
 ```
 
 ---
 
 ## Quick Reference
 
-| Phase | Directory | Dates | Emails | SMS |
-|-------|-----------|-------|--------|-----|
-| Pre-Event | `01-pre-event/` | Nov 22 - Dec 5 | 14 | 1 file |
-| Day 1 Countdown | `02-day1-countdown/` | Dec 6 AM | 5 | - |
-| Day 1 Workshop | `03-day1-workshop/` | Dec 6 Live | 7 | - |
-| Day 2 Countdown | `04-day2-countdown/` | Dec 7 AM | 4 | - |
-| Day 2 Workshop | `05-day2-workshop/` | Dec 7 Live | 8 | - |
-| Workshop SMS | `06-workshop-sms/` | Dec 6-7 | - | 1 file |
-| Post-Event | `07-post-event/` | Dec 8-15 | 27 | 8 files |
-| Broadcasts | `broadcasts/` | Various | 6 | 4 files |
-| **TOTAL** | | | **71** | **14 files** |
+| Phase | Directory | Dates | Files |
+|-------|-----------|-------|-------|
+| Pre-Event | `01-pre-event/` | Nov 6 - Dec 5 | 18 |
+| Day 1 Countdown | `02-day1-countdown/` | Dec 6 AM | 5 |
+| Day 1 Workshop | `03-day1-workshop/` | Dec 6 Live | 7 |
+| Day 2 Countdown | `04-day2-countdown/` | Dec 7 AM | 4 |
+| Day 2 Workshop | `05-day2-workshop/` | Dec 7 Live | 8 |
+| Workshop SMS | `06-workshop-sms/` | Dec 6-7 | 1 |
+| Post-Event: All Attendees | `07-post-event/all-attendees/` | Dec 7-12 | 7 |
+| Post-Event: L3 Members | `07-post-event/level3-members/` | Dec 7-11 | 12 |
+| Post-Event: Non-L3 | `07-post-event/non-l3/` | Dec 8-10 | 8 |
+| Post-Event: VIP Session | `07-post-event/vip-session/` | Dec 8 | 6 |
+| **TOTAL ACTIVE** | | | **76** |
 
 ---
 
@@ -194,16 +174,20 @@ dec2025/
 | 1 | `registration-confirmation.html` | ✓ You're Registered | On registration | All |
 | 2 | `vip-confirmation.html` | ⭐ VIP Access Confirmed | On VIP purchase | VIP |
 | 3 | `welcome-confirmation.html` | You're Part of Something Rare | 10 min after reg | All |
-| 4 | `preparation-14days.html` | Why This Workshop Works | 14 days before | All |
-| 5 | `preparation-9days.html` | 9 Days: Pre-Work Starts Now | 9 days before | All |
-| 6 | `preparation-7days.html` | How's Your Pre-Work Going? | 7 days before | All |
-| 7 | `preparation-5days.html` | 5 Days: Your Transformation Awaits | 5 days before | All |
-| 8 | `preparation-4days.html` | 4 Days: Block BOTH Days | 4 days before | All |
-| 9 | `preparation-3days.html` | ⚡ 72 Hours: Last Chance VIP | 3 days before | Non-VIP |
-| 10 | `preparation-3days-vip.html` | ⭐ VIP: 72 Hours Out | 3 days before | VIP |
-| 11 | `preparation-2days.html` | 48 Hours: Final Checklist | 2 days before | All |
-| 12 | `preparation-1day.html` | Tomorrow: Your Zoom Link | Evening before | All |
-| 13 | `vip-zoom-background.html` | ⭐ Your VIP Zoom Background | After VIP confirm | VIP |
+| 4 | `preparation-30days.html` | The Question That Changes Everything | 30 days before | All |
+| 5 | `preparation-25days.html` | What If Everything You Believed Was Wrong? | 25 days before | All |
+| 6 | `preparation-20days.html` | The Life You Were Meant to Live | 20 days before | All |
+| 7 | `preparation-14days.html` | Why This Workshop Works | 14 days before | All |
+| 8 | `preparation-10days.html` | The Journey Inward Begins | 10 days before | All |
+| 9 | `preparation-9days.html` | 9 Days: Pre-Work Starts Now | 9 days before | All |
+| 10 | `preparation-7days.html` | How's Your Pre-Work Going? | 7 days before | All |
+| 11 | `preparation-5days.html` | 5 Days: Your Transformation Awaits | 5 days before | All |
+| 12 | `preparation-4days.html` | 4 Days: Block Your Calendar Now | 4 days before | All |
+| 13 | `preparation-3days.html` | ⚡ 72 Hours: Last Chance VIP | 3 days before | Non-VIP |
+| 14 | `preparation-3days-vip.html` | ⭐ VIP: 72 Hours Out | 3 days before | VIP |
+| 15 | `preparation-2days.html` | 48 Hours: Final Checklist | 2 days before | All |
+| 16 | `preparation-1day.html` | Tomorrow: Your Zoom Link | Evening before | All |
+| 17 | `vip-zoom-background.html` | ⭐ Your VIP Zoom Background | After VIP confirm | VIP |
 
 ## SMS
 
@@ -295,66 +279,25 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 # PHASE 7: POST-EVENT
 
 **Directory:** `07-post-event/`
-**Dates:** December 8-15, 2025
-
-## Monday L3 Follow-up (Dec 8) — Non-L3 Only
-**Subdirectory:** `monday-morning/`
-
-| Time (ET) | File | Subject | Audience |
-|-----------|------|---------|----------|
-| 9:00 AM | `level3-followup-morning.html` | The Transformation Continues | Non-L3 |
-| 2:00 PM | `level3-followup-midday.html` | A question for you | Non-L3 |
-| 7:00 PM | `level3-followup-afternoon.html` | Before you sleep tonight | Non-L3 |
-| 9:00 PM | `level3-ascend.html` | You felt it. Now finish | Non-L3 |
-
-**SMS:** `level3-followup-sms.md` (4 messages)
-
-**Note:** Non-L3s ALSO receive Value-First Week emails (Golden Life Sheet at 9am to ALL attendees).
+**Dates:** December 7-12, 2025
 
 ---
 
-## VIP Session (Dec 8) — VIP + L3 Only
-**Subdirectory:** `vip-session/`
-**Event Time:** 4:00 PM PT / 7:00 PM ET
+## All Attendees Value Series (Dec 7-12)
+**Subdirectory:** `all-attendees/`
 
-| Time (ET) | File | Subject | Audience |
-|-----------|------|---------|----------|
-| 10:00 AM | `vip-session-reminder.html` | Your VIP Session Is Today | VIP + L3 |
-| 6:00 PM | `vip-session-1hour.html` | ⏰ VIP Session in 1 Hour | VIP + L3 |
-| 7:00 PM | `vip-session-live.html` | 🔴 VIP Session Is LIVE | VIP + L3 |
-| Tue 10 AM | `vip-session-recording.html` | Your VIP Recording | VIP + L3 |
+Delivers workshop tools and value to ALL attendees regardless of L3 status.
 
-**SMS:** `vip-session-sms.md` + `vip-recording-sms.md`
+| Day | File | Subject |
+|-----|------|---------|
+| Sun PM | `sunday-night-anchor.html` | Anchor Tonight's Transformation |
+| Mon | `01-golden-life-sheet.html` | Your Golden Life Sheet |
+| Tue | `02-wealth-engine-calculator.html` | Your Wealth Engine Calculator |
+| Wed | `03-fne-workbook.html` | Your Friday-Night Essence Workbook |
+| Thu | `04-ambassador.html` | Become a Neothink Ambassador |
+| Fri | `05-infinite-vector.html` | The Infinite Vector |
 
----
-
-## Level 3 Deadline (Dec 9-10)
-**Subdirectory:** `level3-deadline/`
-
-### Tuesday, December 9
-
-| Time (ET) | File | Subject |
-|-----------|------|---------|
-| 9:00 AM | `01-tuesday-morning.html` | 24 Hours: The door closes tomorrow |
-| 2:00 PM | `02-tuesday-afternoon.html` | What 3 days will give you |
-| 8:00 PM | `03-tuesday-evening.html` | This is your last night |
-
-### Wednesday, December 10
-
-| Time (ET) | File | Subject |
-|-----------|------|---------|
-| 9:00 AM | `04-wednesday-morning.html` | Today is the day |
-| 3:00 PM | `05-wednesday-afternoon.html` | Hours left |
-| 11:00 PM | `06-wednesday-final.html` | Final note |
-| **Midnight** | **L3 DEADLINE EXPIRES** | |
-
-### Thursday, December 11 (Post-Deadline)
-
-| Time (ET) | File | Subject | Audience |
-|-----------|------|---------|----------|
-| 10:00 AM | `post-deadline-closed.html` | The doors have closed | Non-L3 |
-
-**SMS:** `sms-messages.md`
+**SMS:** `post-event-value-sms.md`
 
 ---
 
@@ -368,102 +311,62 @@ Contains all Day 1 and Day 2 live SMS triggers including:
 | Email | `level3-confirmation.html` |
 | SMS | `level3-confirmation-sms.md` |
 
+### L3 Follow-up Sequence
+
+| Day | File | Subject |
+|-----|------|---------|
+| Sun PM | `level3-sunday-night.html` | Welcome to Level 3 |
+| Mon AM | `level3-monday-morning.html` | Your L3 Journey Begins |
+
+**SMS:** `level3-welcome-sms.md`
+
 ### Welcome Party (Wed Dec 10)
+**Event Time:** 4:00 PM PT / 7:00 PM ET
 
 | Time (ET) | File | Subject |
 |-----------|------|---------|
 | Tue PM | `welcome-party-reminder.html` | Tomorrow: Your Welcome Party |
-| 10:00 AM | `welcome-party-today.html` | Tonight We Celebrate |
-| 6:00 PM | `welcome-party-correction.html` | Correction: Welcome Party starts at 7pm Eastern |
+| Wed AM | `welcome-party-today.html` | Tonight We Celebrate |
 | 6:30 PM | `welcome-party-30min.html` | 🔴 Welcome Party in 30 Minutes |
 | 7:00 PM | `welcome-party-live.html` | 🔴 Welcome Party Is LIVE |
+| Thu AM | `welcome-party-recording.html` | Your Welcome Party Recording |
 
 **SMS:** `welcome-party-sms.md`
 
 ---
 
-## Workshop Recap (Dec 11)
-**Subdirectory:** `workshop-recap/`
+## Non-L3 (L3 Promotion Sequence)
+**Subdirectory:** `non-l3/`
 
-| Time (ET) | File | Subject | Audience |
-|-----------|------|---------|----------|
-| 10:00 AM | `workshop-recap-celebration.html` | What a beautiful weekend | All |
+Gentle L3 promotion for attendees who haven't yet joined Level 3.
 
-**SMS:** `workshop-recap-sms.md`
+| Day | File | Subject |
+|-----|------|---------|
+| Sun PM | `level3-ascend.html` | You felt it. Now finish what you started |
+| Mon PM | `02-monday-afternoon.html` | A question for you |
+| Tue PM | `03-tuesday-evening.html` | This is your last night |
+| Wed PM | `04-wednesday-afternoon.html` | Hours left |
+| Wed 6pm | `05-wednesday-6pm.html` | Final hours |
+| Post | `l3-gentle-reminder.html` | The door is always open |
 
----
+**SMS:** `level3-followup-sms.md` + `l3-gentle-reminder-sms.md`
 
-## Post-Event Value Series (Dec 11-15)
-**Subdirectory:** `all-attendees/`
-
-Four-part drip sequence delivering the core workshop tools and framework synthesis to ALL attendees.
-
-### Thursday, December 11
-
-| Time (ET) | File | Subject |
-|-----------|------|---------|
-| 9:00 AM | `01-golden-life-sheet.html` | Your Golden Life Sheet is waiting |
-
-### Friday, December 12
-
-| Time (ET) | File | Subject |
-|-----------|------|---------|
-| 9:00 AM | `02-wealth-engine-calculator.html` | Calculate your path to financial freedom |
-
-### Saturday, December 13
-
-| Time (ET) | File | Subject |
-|-----------|------|---------|
-| 10:00 AM | `03-fne-workbook.html` | Discover your Friday-Night Essence |
-
-### Monday, December 15
-
-| Time (ET) | File | Subject |
-|-----------|------|---------|
-| 9:00 AM | `04-how-it-all-fits-together.html` | How It All Fits Together |
-
-**SMS:** `post-event-value-sms.md`
-
-**Tools Delivered:**
-- **Golden Life Sheet** — Daily alignment tool (6 categories)
-- **Wealth Engine Calculator** — Financial freedom calculator (3 levels)
-- **Friday-Night Essence Workbook** — Core value-creation discovery
-- **Framework Synthesis** — How all tools work together as an integrated system
+**Note:** Non-L3s ALSO receive the All Attendees Value Series.
 
 ---
 
-## Ambassador Program
-**Subdirectory:** `ambassador/`
+## VIP Session (Dec 8) — VIP + L3 Only
+**Subdirectory:** `vip-session/`
+**Event Time:** 4:00 PM PT / 7:00 PM ET
 
-| Time | File | Subject | Audience |
-|------|------|---------|----------|
-| Sat Dec 13 PM | `ambassador-program.html` | The people you're actually looking for | All L2 |
+| Time (ET) | File | Subject |
+|-----------|------|---------|
+| AM | `vip-session-reminder.html` | Your VIP Session Is Today |
+| 6:00 PM | `vip-session-1hour.html` | ⏰ VIP Session in 1 Hour |
+| 7:00 PM | `vip-session-live.html` | 🔴 VIP Session Is LIVE |
+| Tue AM | `vip-session-recording.html` | Your VIP Recording |
 
-**SMS:** `ambassador-program-sms.md`
-
-**Program Details:**
-- **Commission:** $250 per Level 2 enrollment (50/50 split)
-- **Cost:** Zero — Society covers all infrastructure
-- **Process:** Ambassador shares link → Searcher requests $9.95 booklet → Society vets → Commission earned
-- **Training:** Weekly Friday sessions with Marko Hamilton (1pm Pacific / 4pm Eastern)
-
----
-
-# BROADCASTS (Separate Track)
-
-**Directory:** `broadcasts/`
-
-Marketing broadcasts sent to non-registered members to drive registrations.
-
-## Level 2 Broadcasts
-- `broadcast-2days-direct-mail.html`
-- `broadcast-2days-online-buyers.html`
-- `broadcast-second-chance-direct-mail.html`
-- `broadcast-second-chance-online-buyers.html`
-
-## VIP Broadcasts
-- `broadcast-vip-2days.html`
-- `broadcast-vip-carryover.html`
+**SMS:** `vip-session-sms.md` + `vip-recording-sms.md`
 
 ---
 

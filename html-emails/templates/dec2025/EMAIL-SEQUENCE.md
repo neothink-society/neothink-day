@@ -147,12 +147,12 @@
 **File**: `preparation-4days.html`
 **Automation Timing**: Send when event is 4 days away
 **Subject**: `4 Days: Block BOTH Full Days Now`
-**Preview**: `Saturday Dec 6 + Sunday Dec 7. Two complete days. No meetings, no distractions, no partial attendance. Clear your calendar or sacrifice your results.`
+**Preview**: `Protect these two days completely. Saturday Dec 6 + Sunday Dec 7. Both days essential for your complete transformation. Full presence required.`
 
 **Purpose**: Ensure calendar is completely clear for both days
 **Key Elements**:
 - Prominent display of both dates with times
-- Why BOTH days are non-negotiable
+- Why BOTH days matter for complete transformation
 - What to block out (5 items):
   - Family events
   - Work meetings
