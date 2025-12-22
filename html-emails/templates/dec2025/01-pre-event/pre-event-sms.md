@@ -176,7 +176,7 @@ Neothink Society: 10 days. Time to identify your dream.
 
 Over the past weeks, you've read material showing impossible dreams can become reality.
 
-Start identifying what YOU want:
+Focus on clarifying what YOU want:
 
 If you operated from certainty instead of fear, what impossible dream would you create?
 
