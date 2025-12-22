@@ -95,88 +95,121 @@ These fire based on actions, not scheduled times.
 | 23 | [E] | `preparation-2days.html` | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | All |
 | 24 | [S] | 2 Days (Non-VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | Non-VIP |
 | 25 | [S] | 2 Days (VIP) | Thu Dec 4 | 9am PT / 12pm ET | **-1d 23h** | VIP |
-| 26 | [E] | `preparation-1day.html` | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | All |
-| 27 | [S] | 1 Day (Non-VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | Non-VIP |
-| 28 | [S] | 1 Day (VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | VIP |
+| 26 | [E] | `preparation-1day-morning.html` | Fri Dec 5 | 9am PT / 12pm ET | **-23h** | All |
+| 27 | [S] | 1 Day Morning (Non-VIP) | Fri Dec 5 | 9am PT / 12pm ET | **-23h** | Non-VIP |
+| 28 | [S] | 1 Day Morning (VIP) | Fri Dec 5 | 9am PT / 12pm ET | **-23h** | VIP |
+| 29 | [E] | `preparation-1day-evening.html` | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | All |
+| 30 | [S] | 1 Day Evening (Non-VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | Non-VIP |
+| 31 | [S] | 1 Day Evening (VIP) | Fri Dec 5 | 4pm PT / 7pm ET | **-16h** | VIP |
 
 ---
 
 # PHASE 3: DAY 1 COUNTDOWN (Sat Dec 6 Morning)
 
-| # | Type | Message | Time (ET) | Offset | Condition |
-|---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `day1-countdown-2hr.html` | 9:00 AM | **-2h** | All |
-| 2 | [S] | 2 Hours Until Event | 9:00 AM | **-2h** | All |
-| 3 | [E] | `day-of.html` | 10:00 AM | **-1h** | All |
-| 4 | [E] | `day1-countdown-1hr.html` | 10:00 AM | **-1h** | All |
-| 5 | [S] | Zoom Link Delivery | 10:00 AM | **-1h** | All |
-| 6 | [E] | `day1-countdown-30min.html` | 10:30 AM | **-30m** | All |
-| 7 | [S] | Doors Are Open | 10:30 AM | **-30m** | All |
-| 8 | [E] | `day1-countdown-live.html` | 11:00 AM | **T = 0** | All |
-| 9 | [S] | WE'RE LIVE | 11:00 AM | **T = 0** | All |
+**SCHEDULED MESSAGES** — These fire automatically based on offsets.
+
+| # | Type | Message | Time (PT/ET) | Offset | Condition |
+|---|------|---------|--------------|--------|-----------|
+| 1 | [E] | `day1-countdown-2hr.html` | 6:00am / 9:00am | **-2h** | All |
+| 2 | [S] | 2 Hours Until Event | 6:00am / 9:00am | **-2h** | All |
+| 3 | [E] | `day-of.html` | 7:00am / 10:00am | **-1h** | All |
+| 4 | [E] | `day1-countdown-1hr.html` | 7:00am / 10:00am | **-1h** | All |
+| 5 | [S] | Zoom Link Delivery | 7:00am / 10:00am | **-1h** | All |
+| 6 | [E] | `day1-countdown-30min.html` | 7:30am / 10:30am | **-30m** | All |
+| 7 | [S] | Doors Are Open | 7:30am / 10:30am | **-30m** | All |
+| 8 | [E] | `day1-countdown-15min.html` | 7:45am / 10:45am | **-15m** | All |
+| 9 | [S] | Room Filling Up | 7:45am / 10:45am | **-15m** | All |
+| 10 | [E] | `day1-countdown-live.html` | 8:00am / 11:00am | **T = 0** | All |
+| 11 | [S] | WE'RE LIVE | 8:00am / 11:00am | **T = 0** | All |
+| 12 | [E] | `day1-late-joiner-15min.html` | 8:15am / 11:15am | **+15m** | All |
+| 13 | [S] | 15 Min In — Join Now | 8:15am / 11:15am | **+15m** | All |
+| 14 | [E] | `day1-late-joiner-30min.html` | 8:30am / 11:30am | **+30m** | All |
+| 15 | [S] | FINAL CALL — 30 Min In | 8:30am / 11:30am | **+30m** | All |
 
 ---
 
-# PHASE 4: DAY 1 WORKSHOP (Live Triggers)
+# PHASE 4: DAY 1 WORKSHOP (Manual Triggers)
 
-**These are MANUAL triggers** sent when specific moments happen live.
+**⚠️ MANUAL TRIGGERS ONLY** — These messages are sent by an admin/operator when specific moments happen during the live workshop. Times shown are approximate; actual trigger depends on workshop flow.
 
-| # | Type | Message | Trigger | ~Time (ET) | Offset | Condition |
-|---|------|---------|---------|------------|--------|-----------|
-| 1 | [E] | `01-day1-opening.html` | WH takes stage | 11:00 AM | T=0 | All |
-| 2 | [S] | WH Takes Stage | WH takes stage | 11:00 AM | T=0 | All |
-| 3 | [E] | `01b-day1-wh-in-session.html` | Mid-morning | 11:30 AM | +30m | All |
-| 4 | [S] | WH In Session | Mid-morning | 11:30 AM | +30m | All |
-| 5 | [E] | `01c-day1-wh-live-now.html` | Anytime D1 | Variable | — | All |
-| 6 | [S] | WH Live Now | Anytime D1 | Variable | — | All |
-| 7 | [E] | `02-day1-lunch-break.html` | Lunch starts | 1:00 PM | +2h | All |
-| 8 | [S] | Day 1 Lunch Break | Lunch starts | 1:00 PM | +2h | All |
-| 9 | [E] | `03-day1-back-from-lunch.html` | After lunch | 2:00 PM | +3h | All |
-| 10 | [S] | Back from Lunch | After lunch | 2:00 PM | +3h | All |
-| 11 | [E] | `04-day1-wealth-segment.html` | Wealth segment | 3:00 PM | +4h | All |
-| 12 | [S] | Wealth Segment | Wealth segment | 3:00 PM | +4h | All |
-| 13 | [E] | `05-day1-end.html` | Day 1 ends | 8:00 PM | +9h | All |
-| 14 | [S] | Day 1 Complete | Day 1 ends | 8:00 PM | +9h | All |
+**DO NOT SCHEDULE THESE.** They require human judgment during the live event.
+
+| # | Type | Message | Trigger Event | ~Time (PT/ET) | Condition |
+|---|------|---------|---------------|---------------|-----------|
+| 1 | [E] | `01-day1-opening.html` | WH takes stage | ~8:00am / 11:00am | All |
+| 2 | [S] | WH Takes Stage | WH takes stage | ~8:00am / 11:00am | All |
+| 3 | [E] | `01b-day1-wh-in-session.html` | Mid-morning energy | ~8:30am / 11:30am | All |
+| 4 | [S] | WH In Session | Mid-morning energy | ~8:30am / 11:30am | All |
+| 5 | [E] | `01c-day1-wh-live-now.html` | Anytime Day 1 (variable) | Variable | All |
+| 6 | [S] | WH Live Now | Anytime Day 1 (variable) | Variable | All |
+| 7 | [E] | `02-day1-lunch-break.html` | Lunch break announced | ~10:00am / 1:00pm | All |
+| 8 | [S] | Day 1 Lunch Break | Lunch break announced | ~10:00am / 1:00pm | All |
+| 9 | [E] | `03-day1-back-from-lunch.html` | Return from lunch | ~11:00am / 2:00pm | All |
+| 10 | [S] | Back from Lunch | Return from lunch | ~11:00am / 2:00pm | All |
+| 11 | [E] | `04-day1-wealth-segment.html` | Wealth segment begins | ~12:00pm / 3:00pm | All |
+| 12 | [S] | Wealth Segment | Wealth segment begins | ~12:00pm / 3:00pm | All |
+| 13 | [E] | `05-day1-end.html` | Day 1 closing remarks | ~5:00pm / 8:00pm | All |
+| 14 | [S] | Day 1 Complete | Day 1 closing remarks | ~5:00pm / 8:00pm | All |
+
+**Admin Note:** Have these messages pre-loaded in GHL. When the moment happens, manually trigger the appropriate message. Do NOT rely on fixed time scheduling for workshop content.
 
 ---
 
 # PHASE 5: DAY 2 COUNTDOWN (Sun Dec 7 Morning)
 
-| # | Type | Message | Time (ET) | Offset | Condition |
-|---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `day2-countdown-2hr.html` | 10:00 AM | **+23h** | All |
-| 2 | [S] | Day 2 - 2 Hours | 10:00 AM | **+23h** | All |
-| 3 | [E] | `day2-countdown-45min.html` | 11:15 AM | **+1d 15m** | All |
-| 4 | [S] | Day 2 - 45 Minutes | 11:15 AM | **+1d 15m** | All |
-| 5 | [E] | `day2-countdown-15min.html` | 11:45 AM | **+1d 45m** | All |
-| 6 | [S] | Doors Open | 11:45 AM | **+1d 45m** | All |
-| 7 | [E] | `day2-countdown-live.html` | 12:00 PM | **+1d 1h** | All |
-| 8 | [S] | Day 2 Is LIVE | 12:00 PM | **+1d 1h** | All |
+**SCHEDULED MESSAGES** — These fire automatically based on offsets.
+
+**Note:** Day 2 starts at 9:00 AM PT / 12:00 PM ET (T+25h from Day 1 start)
+
+| # | Type | Message | Time (PT/ET) | Offset | Condition |
+|---|------|---------|--------------|--------|-----------|
+| 1 | [E] | `day2-countdown-2hr.html` | 7:00am / 10:00am | **+23h** | All |
+| 2 | [S] | Day 2 - 2 Hours | 7:00am / 10:00am | **+23h** | All |
+| 3 | [E] | `day2-countdown-1hr.html` | 8:00am / 11:00am | **+24h** | All |
+| 4 | [S] | Day 2 - 1 Hour (Zoom Link) | 8:00am / 11:00am | **+24h** | All |
+| 5 | [E] | `day2-countdown-45min.html` | 8:15am / 11:15am | **+1d 15m** | All |
+| 6 | [S] | Day 2 - 45 Minutes | 8:15am / 11:15am | **+1d 15m** | All |
+| 7 | [E] | `day2-countdown-30min.html` | 8:30am / 11:30am | **+1d 30m** | All |
+| 8 | [S] | DOORS OPEN — Join Early | 8:30am / 11:30am | **+1d 30m** | All |
+| 9 | [E] | `day2-countdown-15min.html` | 8:45am / 11:45am | **+1d 45m** | All |
+| 10 | [S] | 15 Minutes Until Day 2 | 8:45am / 11:45am | **+1d 45m** | All |
+| 11 | [E] | `day2-countdown-live.html` | 9:00am / 12:00pm | **+25h** | All |
+| 12 | [S] | Day 2 Is LIVE | 9:00am / 12:00pm | **+25h** | All |
+| 13 | [E] | `day2-late-joiner-15min.html` | 9:15am / 12:15pm | **+25h 15m** | All |
+| 14 | [S] | 15 Min Into Day 2 — Join Now | 9:15am / 12:15pm | **+25h 15m** | All |
+| 15 | [E] | `day2-late-joiner-30min.html` | 9:30am / 12:30pm | **+25h 30m** | All |
+| 16 | [S] | FINAL CALL — Day 2 30 Min In | 9:30am / 12:30pm | **+25h 30m** | All |
 
 ---
 
-# PHASE 6: DAY 2 WORKSHOP (Live Triggers)
+# PHASE 6: DAY 2 WORKSHOP (Manual Triggers)
 
-| # | Type | Message | Trigger | ~Time (ET) | Offset | Condition |
-|---|------|---------|---------|------------|--------|-----------|
-| 1 | [E] | `06-day2-opening.html` | D2 starts | 12:00 PM | +1d 1h | All |
-| 2 | [S] | Day 2 Opening | D2 starts | 12:00 PM | +1d 1h | All |
-| 3 | [E] | `07-day2-mh-segment.html` | MH on stage | 1:00 PM | +1d 2h | All |
-| 4 | [S] | Mark Hamilton on Stage | MH on stage | 1:00 PM | +1d 2h | All |
-| 5 | [E] | `08-day2-lunch-break.html` | Lunch starts | 2:00 PM | +1d 3h | All |
-| 6 | [S] | Day 2 Lunch Break | Lunch starts | 2:00 PM | +1d 3h | All |
-| 7 | [E] | `09-day2-back-from-lunch.html` | After lunch | 3:00 PM | +1d 4h | All |
-| 8 | [S] | Final Session | After lunch | 3:00 PM | +1d 4h | All |
-| 9 | [E] | `10-day2-integration.html` | Integration | 4:00 PM | +1d 5h | All |
-| 10 | [S] | Integration Segment | Integration | 4:00 PM | +1d 5h | All |
-| 11 | [E] | `12-level3-segment.html` | L3 announced | 6:00 PM | +1d 7h | All |
-| 12 | [S] | L3 Enrollment Open | L3 announced | 6:00 PM | +1d 7h | All |
-| 13 | [E] | `11-day2-end.html` | Workshop ends | 8:00 PM | +1d 9h | All |
-| 14 | [S] | Workshop Complete | Workshop ends | 8:00 PM | +1d 9h | All |
-| 15 | [E] | `day2-complete-level3.html` | Evening | 8:00 PM | +1d 9h | Non-L3 |
-| 16 | [S] | L3 Enrollment Now Open | Evening | 8:00 PM | +1d 9h | Non-L3 |
+**⚠️ MANUAL TRIGGERS ONLY** — These messages are sent by an admin/operator when specific moments happen during the live workshop. Times shown are approximate; actual trigger depends on workshop flow.
+
+**DO NOT SCHEDULE THESE.** They require human judgment during the live event.
+
+| # | Type | Message | Trigger Event | ~Time (PT/ET) | Condition |
+|---|------|---------|---------------|---------------|-----------|
+| 1 | [E] | `06-day2-opening.html` | Day 2 welcome begins | ~9:00am / 12:00pm | All |
+| 2 | [S] | Day 2 Opening | Day 2 welcome begins | ~9:00am / 12:00pm | All |
+| 3 | [E] | `07-day2-mh-segment.html` | Mark Hamilton takes stage | ~10:00am / 1:00pm | All |
+| 4 | [S] | Mark Hamilton on Stage | Mark Hamilton takes stage | ~10:00am / 1:00pm | All |
+| 5 | [E] | `08-day2-lunch-break.html` | Lunch break announced | ~11:00am / 2:00pm | All |
+| 6 | [S] | Day 2 Lunch Break | Lunch break announced | ~11:00am / 2:00pm | All |
+| 7 | [E] | `09-day2-back-from-lunch.html` | Return from lunch | ~12:00pm / 3:00pm | All |
+| 8 | [S] | Final Session | Return from lunch | ~12:00pm / 3:00pm | All |
+| 9 | [E] | `10-day2-integration.html` | Integration segment begins | ~1:00pm / 4:00pm | All |
+| 10 | [S] | Integration Segment | Integration segment begins | ~1:00pm / 4:00pm | All |
+| 11 | [E] | `12-level3-segment.html` | L3 offer announced | ~3:00pm / 6:00pm | All |
+| 12 | [S] | L3 Enrollment Open | L3 offer announced | ~3:00pm / 6:00pm | All |
+| 13 | [E] | `11-day2-end.html` | Workshop closing remarks | ~5:00pm / 8:00pm | All |
+| 14 | [S] | Workshop Complete | Workshop closing remarks | ~5:00pm / 8:00pm | All |
+| 15 | [E] | `day2-complete-level3.html` | After workshop ends | ~5:00pm / 8:00pm | Non-L3 |
+| 16 | [S] | L3 Enrollment Now Open | After workshop ends | ~5:00pm / 8:00pm | Non-L3 |
 
 **SMS #16 (Non-L3):** "You did it! The workshop is complete, but your transformation has just begun. L3 enrollment is now open for those ready to go deeper. Check your email for details."
+
+**Admin Note:** Have these messages pre-loaded in GHL. When the moment happens, manually trigger the appropriate message. Day 2 runs longer than Day 1, so be prepared for schedule variations.
 
 ---
 
@@ -451,20 +484,21 @@ These fire based on actions, not scheduled times.
 | Phase | Emails | SMS | Total |
 |-------|--------|-----|-------|
 | Trigger-Based | 5 | 4 | 9 |
-| Pre-Event (30d → 1d) | 13 | 12 | 25 |
-| Day 1 Countdown | 5 | 5 | 10 |
-| Day 1 Workshop | 8 | 8 | 16 |
-| Day 2 Countdown | 4 | 4 | 8 |
-| Day 2 Workshop | 9 | 9 | 18 |
+| Pre-Event (30d → 1d) | 14 | 17 | 31 |
+| Day 1 Countdown | 8 | 7 | 15 |
+| Day 1 Workshop (Manual) | 7 | 7 | 14 |
+| Day 2 Countdown | 8 | 8 | 16 |
+| Day 2 Workshop (Manual) | 8 | 8 | 16 |
 | Sunday Night Anchor | 2 | 2 | 4 |
+| L3 Monday Morning | 1 | 1 | 2 |
 | L3 Promotion (Non-L3) | 6 | 4 | 10 |
-| Value-First Week (All) | 5 | 5 | 10 |
-| VIP Session | 4 | 4 | 8 |
+| VIP Session | 3 | 4 | 7 |
 | VIP Recording | 1 | 1 | 2 |
+| Value-First Week (All) | 5 | 5 | 10 |
 | Welcome Party | 5 | 5 | 10 |
-| **TOTAL** | **67** | **63** | **130** |
+| **TOTAL** | **73** | **73** | **146** |
 
-**Note:** L3 Promotion sequence is optimized for conversion without being pushy (6 emails + 4 SMS over 3 days). Value-First Week provides daily value content for ALL attendees (Mon-Fri).
+**Note:** Workshop phases (Day 1 and Day 2) are manual triggers only — not scheduled. L3 Promotion sequence is optimized for conversion without being pushy (6 emails + 4 SMS over 3 days). Value-First Week provides daily value content for ALL attendees (Mon-Fri).
 
 ---
 
@@ -517,21 +551,30 @@ These fire based on actions, not scheduled times.
 | -3d 23h | Tue Dec 2, 9am PT | preparation-4days | 4 Days | All |
 | -2d 23h | Wed Dec 3, 9am PT | preparation-3days[-vip] | 3 Days | VIP/Non-VIP |
 | -1d 23h | Thu Dec 4, 9am PT | preparation-2days | 2 Days | VIP/Non-VIP |
-| -16h | Fri Dec 5, 4pm PT | preparation-1day | 1 Day | VIP/Non-VIP |
+| -23h | Fri Dec 5, 9am PT | preparation-1day-morning | 1 Day AM | VIP/Non-VIP |
+| -16h | Fri Dec 5, 4pm PT | preparation-1day-evening | 1 Day PM | VIP/Non-VIP |
 | -2h | Sat Dec 6, 6am PT | day1-countdown-2hr | 2 Hours | All |
 | -1h | Sat Dec 6, 7am PT | day-of + day1-countdown-1hr | Zoom Link | All |
 | -30m | Sat Dec 6, 7:30am PT | day1-countdown-30min | Doors Open | All |
+| -15m | Sat Dec 6, 7:45am PT | day1-countdown-15min | Room Filling | All |
 | **T=0** | **Sat Dec 6, 8am PT** | **day1-countdown-live** | **LIVE** | **All** |
-| T=0 | Sat Dec 6, 8am PT | 01-day1-opening | WH Stage | All |
+| +15m | Sat Dec 6, 8:15am PT | day1-late-joiner-15min | 15 Min In | All |
+| +30m | Sat Dec 6, 8:30am PT | day1-late-joiner-30min | FINAL CALL | All |
+| ~T=0 | Sat Dec 6, ~8am PT | 01-day1-opening (manual) | WH Stage | All |
 | +2h | Sat Dec 6, 10am PT | 02-day1-lunch | Lunch | All |
 | +3h | Sat Dec 6, 11am PT | 03-day1-back | Back | All |
 | +4h | Sat Dec 6, 12pm PT | 04-day1-wealth | Wealth | All |
 | +9h | Sat Dec 6, 5pm PT | 05-day1-end | D1 Complete | All |
 | +23h | Sun Dec 7, 7am PT | day2-countdown-2hr | 2 Hours | All |
+| +24h | Sun Dec 7, 8am PT | day2-countdown-1hr | 1 Hr + Zoom | All |
 | +1d 15m | Sun Dec 7, 8:15am PT | day2-countdown-45min | 45 Min | All |
-| +1d 45m | Sun Dec 7, 8:45am PT | day2-countdown-15min | Doors | All |
-| +1d 1h | Sun Dec 7, 9am PT | day2-countdown-live | D2 LIVE | All |
-| +1d 2h | Sun Dec 7, 10am PT | 07-day2-mh | MH Stage | All |
+| +1d 30m | Sun Dec 7, 8:30am PT | day2-countdown-30min | DOORS OPEN | All |
+| +1d 45m | Sun Dec 7, 8:45am PT | day2-countdown-15min | 15 Minutes | All |
+| **+25h** | **Sun Dec 7, 9am PT** | **day2-countdown-live** | **D2 LIVE** | **All** |
+| +25h 15m | Sun Dec 7, 9:15am PT | day2-late-joiner-15min | 15 Min In | All |
+| +25h 30m | Sun Dec 7, 9:30am PT | day2-late-joiner-30min | FINAL CALL | All |
+| ~+25h | Sun Dec 7, ~9am PT | 06-day2-opening (manual) | D2 Opening | All |
+| ~+26h | Sun Dec 7, ~10am PT | 07-day2-mh (manual) | MH Stage | All |
 | +1d 3h | Sun Dec 7, 11am PT | 08-day2-lunch | Lunch | All |
 | +1d 4h | Sun Dec 7, 12pm PT | 09-day2-back | Final | All |
 | +1d 5h | Sun Dec 7, 1pm PT | 10-day2-integration | Integration | All |
@@ -557,13 +600,15 @@ These fire based on actions, not scheduled times.
 
 ---
 
-**Version:** 5.7
+**Version:** 5.9
 **Created:** December 10, 2025
-**Last Updated:** December 17, 2025
+**Last Updated:** December 22, 2025
 **Reference:** T=0 = Sat Dec 6, 2025 @ 8:00 AM PT / 11:00 AM ET
 
 ## CHANGE LOG
 
+- **v5.9** (Dec 22): **COUNTDOWN SEQUENCE EXPANDED + WORKSHOP PHASES RESTRUCTURED** — Added 13 new countdown messages. Day 1 Countdown: added -15m (room filling), +15m (late joiner), +30m (final call). Day 2 Countdown: added 1hr (zoom link delivery), 30min (doors open), +15m (late joiner), +30m (final call). Restructured Phase 4 (Day 1 Workshop) and Phase 6 (Day 2 Workshop) as MANUAL TRIGGERS with approximate times instead of fixed offsets — these require human judgment during live event. Updated message count table with accurate counts including L3 Monday Morning. Total messages: 146.
+- **v5.8** (Dec 22): **DEC 5 MORNING MESSAGE ADDED** — Split 1-day-before messaging into morning + evening. Created `preparation-1day-morning.html` (9am PT, offset -23h) and renamed existing to `preparation-1day-evening.html` (4pm PT, offset -16h). Dec 5 now matches all other countdown days with 9am touch. Added 3 messages (1 email + 2 SMS). Total messages: 133.
 - **v5.7** (Dec 17): **L3 PROMOTION OPTIMIZED** — Expanded Phase 7 to full 6-email + 4-SMS sequence for L3 conversion. Schedule: Mon 2pm (soft intro), Mon 9pm (post-VIP FOMO), Tue 7pm (24hr warning), Wed 2pm (final hours), Wed 6pm (6hr/Welcome Party), Wed 9pm (final message). Each touch tied to real event/milestone. Updated Value-First Week (Phase 10) to 5 emails for ALL attendees. Total messages: 130.
 - **v5.6** (Dec 17): **NON-L3 SIMPLIFIED** — Reduced Phase 7 from 8 messages (4 emails + 4 SMS) to 2 messages (1 email + 1 SMS). Kept only post-VIP FOMO at 9pm Monday. Archived morning/midday/afternoon follow-ups to v4-legacy. Moved files from `monday-morning/` to `non-l3/`. Value-first philosophy: one touch, not bombardment.
 - **v5.5** (Dec 16): **L3 DEDICATED POST-EVENT** — Added `level3-sunday-night.html` and `level3-monday-morning.html` for L3 members. Phase 6B now segmented: Non-L3 gets sunday-night-anchor, L3 gets dedicated L3 message. Added Phase 6C for L3 Monday morning. L3 members now have complete differentiated experience.
