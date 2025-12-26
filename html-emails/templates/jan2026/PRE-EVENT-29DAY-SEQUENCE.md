@@ -1,4 +1,4 @@
-# 30-Day Pre-Event Sequence Design
+# 29-Day Pre-Event Sequence Design
 ## Day of Enlightenment — January 24-25, 2026
 
 **Event Start:** Saturday, January 24, 2026 @ 8:00 AM Pacific / 11:00 AM Eastern
@@ -46,7 +46,7 @@ The 30-day sequence must:
 
 | Days Out | Date | Email Focus | SMS |
 |----------|------|-------------|-----|
-| **30** | Thu Dec 25 | The Question That Changes Everything | — |
+| **29** | Fri Dec 26 | The Question That Changes Everything | — |
 | **25** | Tue Dec 30 | What If Everything You Believed Was Wrong? | — |
 | **20** | Sun Jan 4 | The Life You Were Meant to Live | ✓ |
 | **14** | Sat Jan 10 | Why This Workshop Works | — |
@@ -59,18 +59,18 @@ The 30-day sequence must:
 | **2** | Thu Jan 22 | 2 Days: Almost Time | ✓ (VIP split) |
 | **1** | Fri Jan 23 | Tomorrow Changes Everything | ✓ (VIP split) |
 
-**Note:** Day 30 falls on Christmas Day (Dec 25). Consider adjusting timing or content accordingly.
+**Note:** Sequence starts Dec 26 (day after Christmas) to avoid holiday conflict.
 
 ---
 
-## PHASE 1: SEED PLANTING (Days 30-21)
+## PHASE 1: SEED PLANTING (Days 29-21)
 
 ### Purpose
 Meet them in Mortal Mentality. Acknowledge their current state. Plant seeds of possibility without pushing.
 
-### Day 30 — "The Question That Changes Everything"
-**Send:** Thursday, December 25, 2025 @ 9:00 AM Eastern
-**Offset:** -30d 2h
+### Day 29 — "The Question That Changes Everything"
+**Send:** Friday, December 26, 2025 @ 9:00 AM Eastern
+**Offset:** -29d 2h
 
 **Theme:** The Friday-Night Essence question
 **Opening Hook:** "If money didn't matter and nobody would judge you... what would you do every Friday night?"
@@ -250,7 +250,7 @@ Daily touchpoints. Build excitement. Handle logistics. VIP differentiation begin
 
 | # | Type | Message | Date (ET) | Offset | Condition |
 |---|------|---------|-----------|--------|-----------|
-| 1 | [E] | `preparation-30days.html` | Thu Dec 25, 9am | **-30d 2h** | All |
+| 1 | [E] | `preparation-29days.html` | Fri Dec 26, 9am | **-29d 2h** | All |
 | 2 | [E] | `preparation-25days.html` | Tue Dec 30, 9am | **-25d 2h** | All |
 | 3 | [E] | `preparation-20days.html` | Sun Jan 4, 9am | **-20d 2h** | All |
 | 4 | [S] | 20 Days Out | Sun Jan 4, 9am | **-20d 2h** | All |
@@ -299,10 +299,9 @@ Day 0: TRANSFORMATION
 
 ## HOLIDAY CONSIDERATIONS
 
-**Day 30 (Dec 25):** Christmas Day
-- Consider sending at 12pm instead of 9am to respect family time
-- Or delay to Dec 26 (29 days out) if preferred
-- The "Question That Changes Everything" theme works well as a reflective holiday message
+**Day 29 (Dec 26):** Day after Christmas
+- Sequence starts the day after Christmas to avoid holiday conflict
+- Good timing as people are winding down from holidays
 
 **Day 25 (Dec 30):** Between Christmas and New Year
 - Good timing for "What If Everything You Believed Was Wrong?"
