@@ -1,4 +1,4 @@
-# December 2025 Day of Enlightenment - Full SMS Sequence
+# January 2026 Day of Enlightenment - Full SMS Sequence
 
 **Event:** Day of Enlightenment Workshop
 **Dates:** January 24-25, 2026
@@ -79,14 +79,14 @@ Welcome to the inner circle.
 
 ---
 
-### 3. 30 Days Out (Thursday, Nov 6)
-**Trigger:** 30 days before event
+### 3. 29 Days Out (Friday, Dec 26)
+**Trigger:** 29 days before event
 **Emotional state:** Distant but curious, still in daily routine
 **What they need:** Invitation to begin shifting mindset
-**Corresponding Email:** preparation-30days.html
+**Corresponding Email:** preparation-29days.html
 
 ```
-Neothink Society: 30 days until your Day of Enlightenment.
+Neothink Society: 29 days until your Day of Enlightenment.
 
 This is not a seminar. This is a doorway to the life you were always meant to live.
 
@@ -99,7 +99,7 @@ Mark your calendar. Jan 24-25. Your life is waiting.
 
 ---
 
-### 4. 25 Days Out (Tuesday, Nov 11)
+### 4. 25 Days Out (Tuesday, Dec 30)
 **Trigger:** 25 days before event
 **Emotional state:** Still distant, may have forgotten
 **What they need:** Pre-work assignment, momentum start
@@ -121,7 +121,7 @@ Workshop Hub: neothinkday.com/home
 
 ---
 
-### 5. 20 Days Out (Sunday, Nov 16)
+### 5. 20 Days Out (Sunday, Jan 4)
 **Trigger:** 20 days before event
 **Emotional state:** Starting to feel real, may need tools
 **What they need:** Workbook download, physical preparation
@@ -143,7 +143,7 @@ Download: neothinkday.com/home
 
 ---
 
-### 6. 14 Days Out (Saturday, Nov 22)
+### 6. 14 Days Out (Saturday, Jan 10)
 **Trigger:** 14 days before event
 **Emotional state:** Two weeks — starting to feel close
 **What they need:** Why this works, confidence in methodology
@@ -165,7 +165,7 @@ Your breakthrough is building.
 
 ---
 
-### 7. 10 Days Out (Wednesday, Nov 26)
+### 7. 10 Days Out (Wednesday, Jan 14)
 **Trigger:** 10 days before event
 **Emotional state:** Getting real, wants to know what to expect
 **What they need:** Mindset activation, dream identification
@@ -187,7 +187,7 @@ The workshop will show you how to make it real.
 
 ---
 
-### 8. 9 Days Out (Thursday, Nov 27)
+### 8. 9 Days Out (Thursday, Jan 15)
 **Trigger:** 9 days before event
 **Emotional state:** Holiday week, may need logistics reminder
 **What they need:** Clear timing, schedule confirmation
@@ -210,7 +210,7 @@ This is your transformation. Protect it.
 
 ---
 
-### 9. 7 Days Out (Saturday, Nov 29)
+### 9. 7 Days Out (Saturday, Jan 17)
 **Trigger:** 7 days before event
 **Emotional state:** One week — anticipation building
 **What they need:** ALL IN commitment, environment prep
@@ -235,7 +235,7 @@ Are you ready to go ALL IN?
 
 ---
 
-### 10. 5 Days Out (Monday, Dec 1)
+### 10. 5 Days Out (Monday, Jan 19)
 **Trigger:** 5 days before event
 **Emotional state:** Getting real, physical prep needed
 **What they need:** Hydration/nutrition prep, practical checklist
@@ -261,7 +261,7 @@ Your breakthrough requires your full presence.
 
 ---
 
-### 11. 4 Days Out (Tuesday, Dec 2)
+### 11. 4 Days Out (Tuesday, Jan 20)
 **Trigger:** 4 days before event
 **Emotional state:** Anticipation, maybe some anxiety
 **What they need:** Permission to embrace discomfort
@@ -285,7 +285,7 @@ Transformation lives on the other side of comfort.
 
 ---
 
-### 12a. 3 Days Out — Non-VIP (Wednesday, Dec 3)
+### 12a. 3 Days Out — Non-VIP (Wednesday, Jan 21)
 **Trigger:** 72 hours before event
 **Emotional state:** Prep urgency, VIP decision point
 **What they need:** FNE preview, VIP option reminder
@@ -307,7 +307,7 @@ Either way — see you Saturday.
 
 ---
 
-### 12b. 3 Days Out — VIP (Wednesday, Dec 3)
+### 12b. 3 Days Out — VIP (Wednesday, Jan 21)
 **Trigger:** 72 hours before event
 **Emotional state:** Confident, wants to maximize investment
 **What they need:** VIP-specific prep, validation
@@ -332,7 +332,7 @@ See you in the inner circle.
 
 ---
 
-### 13a. 2 Days Out — Non-VIP (Thursday, Dec 4)
+### 13a. 2 Days Out — Non-VIP (Thursday, Jan 22)
 **Trigger:** 48 hours before event
 **Emotional state:** Excitement building, wealth curiosity
 **What they need:** Wealth segment preview, practical prep
@@ -357,7 +357,7 @@ Your transformation begins in 2 days.
 
 ---
 
-### 13b. 2 Days Out — VIP (Thursday, Dec 4)
+### 13b. 2 Days Out — VIP (Thursday, Jan 22)
 **Trigger:** 48 hours before event
 **Emotional state:** Ready, wants final prep
 **What they need:** VIP-specific tech prep, anticipation
@@ -384,7 +384,7 @@ You're ready for this.
 
 ---
 
-### 14a. 1 Day Out — Non-VIP (Friday, Dec 5 — Evening)
+### 14a. 1 Day Out — Non-VIP (Friday, Jan 23 — Evening)
 **Trigger:** Evening before event
 **Emotional state:** Nervous excitement, final preparation
 **What they need:** Calm confidence, permission to rest
@@ -409,7 +409,7 @@ Rest well. Tomorrow, your life is about to meet you.
 
 ---
 
-### 14b. 1 Day Out — VIP (Friday, Dec 5 — Evening)
+### 14b. 1 Day Out — VIP (Friday, Jan 23 — Evening)
 **Trigger:** Evening before event
 **Emotional state:** Invested, anticipating full experience
 **What they need:** Elevated confidence, reminder of investment value
@@ -720,7 +720,7 @@ Make the most of this moment.
 |---|---------|----------|-----|----------------|--------|
 | 1 | Registration | All | On signup | Immediate | — |
 | 2 | VIP Confirmation | VIP | On purchase | Immediate | — |
-| 3 | 30 Days Out | All | Thu Dec 25 | 9:00 AM | -29d 23h |
+| 3 | 29 Days Out | All | Fri Dec 26 | 9:00 AM | -28d 23h |
 | 4 | 25 Days Out | All | Tue Dec 30 | 9:00 AM | -24d 23h |
 | 5 | 20 Days Out | All | Sun Jan 4 | 9:00 AM | -19d 23h |
 | 6 | 14 Days Out | All | Sat Jan 10 | 9:00 AM | -13d 23h |
@@ -774,9 +774,11 @@ Make the most of this moment.
 
 ---
 
-**Version:** 4.0
-**Updated:** December 15, 2025
-- Added full 30-day SMS sequence (30, 25, 20, 14, 10, 9, 7 days out)
+**Version:** 4.1
+**Updated:** December 26, 2025
+- Updated for January 24-25, 2026 event
+- Changed to 29-day sequence (starts Dec 26, day after Christmas)
+- Added full 29-day SMS sequence (29, 25, 20, 14, 10, 9, 7 days out)
 - Updated messaging to build anticipation without spoiling
 - Removed specific session times from Day 1/Day 2 (only start times)
 - Aligned with new content guidelines per user direction
