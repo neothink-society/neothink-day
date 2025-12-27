@@ -1,0 +1,20 @@
+# Git
+.git/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives (read only if specifically needed)
+**/_archive/
+
+# Large binary assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.zip
+
+# Node modules (if any)
+node_modules/
