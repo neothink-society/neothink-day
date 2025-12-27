@@ -125,7 +125,7 @@ If you're in the room — we're continuing.
 If you stepped away — rejoin now:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-The afternoon goes even deeper. Don't miss a moment.
+The afternoon goes even deeper. Stay present.
 ```
 
 **Character Count:** ~230 chars (2 segments)
@@ -147,7 +147,7 @@ The exact mechanism that transforms time into freedom.
 If you stepped away — rejoin NOW:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-Don't miss this.
+This is key.
 ```
 
 **Character Count:** ~250 chars (2 segments)
@@ -216,7 +216,7 @@ This is a rare moment. Mark Hamilton is speaking NOW.
 If you stepped away — rejoin IMMEDIATELY:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-Don't miss a word.
+Every word matters.
 ```
 
 **Character Count:** ~210 chars (2 segments)
@@ -279,7 +279,7 @@ Everything you've learned over two days LOCKS INTO PLACE right now.
 If you're not in:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-Don't miss this.
+Be there for this.
 ```
 
 **Character Count:** ~250 chars (2 segments)

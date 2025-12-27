@@ -14,7 +14,7 @@
 **Offset:** +4d 10h from T=0
 
 ```
-Neothink Society: Tonight's your last chance for honor system pricing.
+Neothink Society: Honor system pricing ends tonight at midnight ET.
 
 Level 3 enrollment closes at midnight ET.
 
