@@ -99,9 +99,51 @@ _archive/                       # Deprecated versions
 - Email at 9am ET when event at 11am ET = 2 hour offset
 
 ### GHL (GoHighLevel) Integration
-- Emails use GHL custom values: `{{custom_values.xyz}}`
-- Trigger links: `{{trigger_link.abc123}}`
-- Contact fields: `{{contact.first_name}}`
+
+All HTML emails and pages are designed to be copy-pasted into GHL's Email Builder or Funnel Builder.
+
+#### GHL Variable Reference
+
+**Contact Fields:**
+```
+{{contact.first_name}}
+{{contact.last_name}}
+{{contact.full_name}}
+{{contact.email}}
+{{contact.phone}}
+```
+
+**Custom Values (Location-level):**
+```
+{{custom_values.doe_zoom_id}}
+{{custom_values.doe_zoom_passcode}}
+{{custom_values.doe_zoom_link}}
+```
+
+**Trigger Links (Workflow-specific):**
+```
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}   # Zoom join link
+```
+
+**Location Fields:**
+```
+{{location.name}}
+{{location.email}}
+```
+
+#### GHL Workflow Setup
+
+Emails are triggered by workflow automation with time-based offsets:
+- **Offset format:** `-Nd Nh` (N days, N hours before event)
+- **Base time:** Event start (8:00 AM Pacific / 11:00 AM Eastern)
+- **Example:** `-29d 2h` sends 29 days, 2 hours before event = 9am ET
+
+#### SMS in GHL
+
+SMS messages from `pre-event-sms.md` are entered as workflow actions:
+- Character limit: 160 (standard) or 70 (with special chars)
+- Use `{{contact.first_name}}` sparingly to save characters
+- GHL variables count toward character limit
 
 ## Email HTML Standards
 
