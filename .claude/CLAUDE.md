@@ -1,5 +1,22 @@
 # Neothink Day of Enlightenment - Project Instructions
 
+## Quick Reference
+
+**Commands:**
+- `/validate [path]` - Check HTML for GHL compatibility
+- `/ghl-prep [file]` - Prepare HTML for copy-paste into GHL
+- `/sms-check [path]` - Check SMS for carrier compliance
+
+**Rules (auto-loaded):**
+- `rules/ghl-operations.md` - GHL variables, API patterns
+- `rules/email-templates.md` - HTML structure, design standards
+- `rules/sms-messages.md` - Character limits, trigger words
+- `rules/date-sequences.md` - Offset calculations, event calendar
+
+**Hooks (automatic):**
+- `SessionStart` - Preloads event dates and project context
+- `PostToolUse` - Validates HTML templates after every edit
+
 ## Project Overview
 
 This repository contains all marketing assets for the **Day of Enlightenment** workshop series by Neothink Society. Each event has dedicated HTML emails, SMS sequences, and landing pages.
@@ -96,7 +113,7 @@ _archive/                       # Deprecated versions
 - Offsets are relative to event start time
 - Event typically starts 8:00 AM Pacific / 11:00 AM Eastern
 - Example: `-29d 2h` = 29 days and 2 hours before event start
-- Email at 9am ET when event at 11am ET = 2 hour offset
+- Email at 9am Eastern when event at 11am Eastern = 2 hour offset
 
 ### GHL (GoHighLevel) Integration
 
@@ -136,7 +153,7 @@ All HTML emails and pages are designed to be copy-pasted into GHL's Email Builde
 Emails are triggered by workflow automation with time-based offsets:
 - **Offset format:** `-Nd Nh` (N days, N hours before event)
 - **Base time:** Event start (8:00 AM Pacific / 11:00 AM Eastern)
-- **Example:** `-29d 2h` sends 29 days, 2 hours before event = 9am ET
+- **Example:** `-29d 2h` sends 29 days, 2 hours before event = 9am Eastern
 
 #### SMS in GHL
 

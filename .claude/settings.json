@@ -10,7 +10,8 @@
       "Bash(head:*)",
       "Bash(tail:*)",
       "Bash(sed:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(date:*)"
     ],
     "deny": [
       "Bash(rm -rf /)*",
@@ -18,16 +19,30 @@
     ]
   },
   "env": {
-    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "true"
+    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "true",
+    "DOE_DEC_2025_DATE": "2025-12-06",
+    "DOE_JAN_2026_DATE": "2026-01-24",
+    "DOE_EVENT_START_PT": "08:00",
+    "DOE_EVENT_START_ET": "11:00"
   },
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/avolve/dev/active/neothink-day/.claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit",
         "hooks": [
           {
             "type": "command",
-            "command": "if [[ \"$CLAUDE_TOOL_INPUT_FILE_PATH\" == *.html ]]; then grep -o '{{[^}]*}}' \"$CLAUDE_TOOL_INPUT_FILE_PATH\" 2>/dev/null | sort -u | head -20; fi"
+            "command": "/Users/avolve/dev/active/neothink-day/.claude/hooks/validate-template.sh"
           }
         ]
       }
