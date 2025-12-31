@@ -320,7 +320,7 @@ For those ready to go deeper — the Stargazer 3-Day Event.
 
 Honor system enrollment. Details in your email.
 
-Private mentorship with Wallace Hamilton. Limited spots.
+Intimate group mentorship with Wallace Hamilton.
 
 VIP members: Your upgrade is credited.
 
