@@ -31,19 +31,18 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 
 ## Phase Reference
 
-| # | Phase | Description | Count |
-|---|-------|-------------|-------|
-| 01 | `Reg` | Registration | 2 |
-| 02 | `VIP-Buy` | VIP Purchase Confirmation | 2 |
-| 03 | `Pre` | Pre-Event Countdown | 14 |
-| 04 | `D1-Pre` | Day 1 Reminders (before start) | 8 |
-| 05 | `D1-Live` | Day 1 Broadcasts (during) | 7 |
-| 06 | `D2-Pre` | Day 2 Reminders (before start) | 8 |
-| 07 | `D2-Live` | Day 2 Broadcasts (during) | 7 |
-| 08 | `Post` | Post-Event Value Series | 6 |
-| 09 | `VIP-Sess` | VIP Session (Monday) | 4 |
-| 10 | `L3` | Level 3 Purchase | 8 |
-| 11 | `L3-Close` | L3 Offer Closing Sequence | 6 |
+| # | Phase | Folder | Description | Count |
+|---|-------|--------|-------------|-------|
+| 01 | `Reg` | 01-registration | Registration | 2 |
+| 02 | `VIP` | 02-vip-purchase | VIP Purchase + Session | 6 |
+| 03 | `Pre` | 03-pre-event-sequence | Pre-Event Countdown | 14 |
+| 04 | `D1-Pre` | 04-day-of-reminders | Day 1 Reminders (before start) | 8 |
+| 05 | `D1-Live` | 05-mid-event-broadcasts | Day 1 Broadcasts (during) | 7 |
+| 06 | `D2-Pre` | 04-day-of-reminders | Day 2 Reminders (before start) | 8 |
+| 07 | `D2-Live` | 05-mid-event-broadcasts | Day 2 Broadcasts (during) | 7 |
+| 08 | `Post` | 06-post-event-all | Post-Event Value Series | 6 |
+| 09 | `L3` | 07-l3-purchase | Level 3 Purchase + Welcome Party | 8 |
+| 10 | `L3-Close` | 08-l3-offer-close | L3 Offer Closing Sequence | 6 |
 
 ---
 
@@ -58,12 +57,16 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 
 ---
 
-### 02 - VIP Purchase (2)
+### 02 - VIP Purchase + Session (6)
 
-| File | GHL Name |
-|------|----------|
-| `vip-confirmation.html` | `DOE 02 VIP-Buy Confirmation [VIP]` |
-| `vip-zoom-background.html` | `DOE 02 VIP-Buy Zoom Background [VIP]` |
+| File | GHL Name | Notes |
+|------|----------|-------|
+| `vip-confirmation.html` | `DOE 02 VIP Confirmation [VIP]` | On purchase |
+| `vip-zoom-background.html` | `DOE 02 VIP Zoom Background [VIP]` | On purchase |
+| `vip-session-90min.html` | `DOE 02 VIP Session 90m [VIP]` | Monday -90m |
+| `vip-session-1hour.html` | `DOE 02 VIP Session 1h [VIP]` | Monday -1h |
+| `vip-session-live.html` | `DOE 02 VIP Session Live [VIP]` | Monday T=0 |
+| `vip-session-recording.html` | `DOE 02 VIP Session Recording [VIP]` | Tuesday |
 
 ---
 
@@ -159,42 +162,31 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 
 ---
 
-### 09 - VIP Session Monday (4)
+### 09 - Level 3 Purchase + Welcome Party (8)
 
 | File | GHL Name | Timing |
 |------|----------|--------|
-| `vip-session-90min.html` | `DOE 09 VIP-Sess 90m [VIP]` | -90m |
-| `vip-session-1hour.html` | `DOE 09 VIP-Sess 1h [VIP]` | -1h |
-| `vip-session-live.html` | `DOE 09 VIP-Sess Live Now [VIP]` | T=0 |
-| `vip-session-recording.html` | `DOE 09 VIP-Sess Recording [VIP]` | +1d |
+| `l3-confirmation.html` | `DOE 09 L3 Confirmation [L3]` | On purchase |
+| `l3-sunday-night.html` | `DOE 09 L3 Sun Night [L3]` | Sun 9pm ET |
+| `l3-monday-morning.html` | `DOE 09 L3 Mon Morning [L3]` | Mon 9am ET |
+| `welcome-party-reminder.html` | `DOE 09 L3 Party Reminder [L3]` | Tue |
+| `welcome-party-today.html` | `DOE 09 L3 Party Today [L3]` | Wed AM |
+| `welcome-party-30min.html` | `DOE 09 L3 Party 30m [L3]` | Wed 6:30pm ET |
+| `welcome-party-live.html` | `DOE 09 L3 Party Live [L3]` | Wed 7pm ET |
+| `welcome-party-recording.html` | `DOE 09 L3 Party Recording [L3]` | Thu 10am ET |
 
 ---
 
-### 10 - Level 3 Purchase (8)
-
-| File | GHL Name |
-|------|----------|
-| `l3-confirmation.html` | `DOE 10 L3 Confirmation [L3]` |
-| `l3-sunday-night.html` | `DOE 10 L3 Sun Night [L3]` |
-| `l3-monday-morning.html` | `DOE 10 L3 Mon Morning [L3]` |
-| `welcome-party-today.html` | `DOE 10 L3 Party Today [L3]` |
-| `welcome-party-reminder.html` | `DOE 10 L3 Party Reminder [L3]` |
-| `welcome-party-30min.html` | `DOE 10 L3 Party 30m [L3]` |
-| `welcome-party-live.html` | `DOE 10 L3 Party Live [L3]` |
-| `welcome-party-recording.html` | `DOE 10 L3 Party Recording [L3]` |
-
----
-
-### 11 - L3 Offer Closing (6)
+### 10 - L3 Offer Closing (6)
 
 | File | GHL Name | Timing |
 |------|----------|--------|
-| `monday-afternoon.html` | `DOE 11 L3-Close Mon PM [NON-L3]` | Mon afternoon |
-| `qa-call-offer.html` | `DOE 11 L3-Close QA Call [NON-L3]` | Tue |
-| `tuesday-evening.html` | `DOE 11 L3-Close Tue PM [NON-L3]` | Tue evening |
-| `wednesday-afternoon.html` | `DOE 11 L3-Close Wed PM [NON-L3]` | Wed afternoon |
-| `wednesday-6pm.html` | `DOE 11 L3-Close Wed 6h Left [NON-L3]` | Wed 6pm |
-| `wednesday-gentle-reminder.html` | `DOE 11 L3-Close Wed Final [NON-L3]` | Wed final |
+| `monday-afternoon.html` | `DOE 10 L3-Close Mon PM [NON-L3]` | Mon afternoon |
+| `qa-call-offer.html` | `DOE 10 L3-Close QA Call [NON-L3]` | Tue |
+| `tuesday-evening.html` | `DOE 10 L3-Close Tue PM [NON-L3]` | Tue evening |
+| `wednesday-afternoon.html` | `DOE 10 L3-Close Wed PM [NON-L3]` | Wed afternoon |
+| `wednesday-6pm.html` | `DOE 10 L3-Close Wed 6h Left [NON-L3]` | Wed 6pm |
+| `wednesday-gentle-reminder.html` | `DOE 10 L3-Close Wed Final [NON-L3]` | Wed final |
 
 ---
 
@@ -209,7 +201,7 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 **By Day:**
 - Day 1: Phases 04, 05
 - Day 2: Phases 06, 07
-- Post-Event: Phases 08, 09, 10, 11
+- Post-Event: Phases 08, 09, 10
 
 ---
 
@@ -219,6 +211,7 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 |--------|---------|
 | `DOE` | Day of Enlightenment |
 | `Reg` | Registration |
+| `VIP` | VIP ticket holder |
 | `Pre` | Pre-event countdown |
 | `D1` | Day 1 (Saturday) |
 | `D2` | Day 2 (Sunday) |
@@ -226,8 +219,6 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 | `MH` | Mark Hamilton |
 | `FNE` | Friday Night Essence |
 | `L3` | Level 3 |
-| `VIP-Buy` | VIP ticket purchase |
-| `VIP-Sess` | VIP Session (Monday event) |
 | `d` | days |
 | `h` | hours |
 | `m` | minutes |
@@ -237,19 +228,18 @@ DOE [##] [Phase] [Description] [AUDIENCE]
 
 ## GHL Workflow Mapping
 
-| Workflow Name | Template Prefix |
-|---------------|-----------------|
-| DOE Registration | `DOE 01 Reg` |
-| DOE VIP Purchase | `DOE 02 VIP-Buy` |
-| DOE Pre-Event Sequence | `DOE 03 Pre` |
-| DOE Day 1 Reminders | `DOE 04 D1-Pre` |
-| DOE Day 1 Live | `DOE 05 D1-Live` |
-| DOE Day 2 Reminders | `DOE 06 D2-Pre` |
-| DOE Day 2 Live | `DOE 07 D2-Live` |
-| DOE Post-Event | `DOE 08 Post` |
-| DOE VIP Session | `DOE 09 VIP-Sess` |
-| DOE L3 Purchase | `DOE 10 L3` |
-| DOE L3 Offer Close | `DOE 11 L3-Close` |
+| GHL Workflow | Trigger | Template Prefix | Folder |
+|--------------|---------|-----------------|--------|
+| DOE Registration | Registration | `DOE 01 Reg` | 01-registration |
+| DOE VIP Purchase | VIP ticket bought | `DOE 02 VIP` | 02-vip-purchase |
+| DOE Pre-Event Sequence | Time-based | `DOE 03 Pre` | 03-pre-event-sequence |
+| DOE Day 1 Reminders | Time-based | `DOE 04 D1-Pre` | 04-day-of-reminders |
+| DOE Day 1 Live | Time-based | `DOE 05 D1-Live` | 05-mid-event-broadcasts |
+| DOE Day 2 Reminders | Time-based | `DOE 06 D2-Pre` | 04-day-of-reminders |
+| DOE Day 2 Live | Time-based | `DOE 07 D2-Live` | 05-mid-event-broadcasts |
+| DOE Post-Event | Time-based | `DOE 08 Post` | 06-post-event-all |
+| DOE L3 Purchase | L3 bought | `DOE 09 L3` | 07-l3-purchase |
+| DOE L3 Offer Close | Time-based | `DOE 10 L3-Close` | 08-l3-offer-close |
 
 ---
 
