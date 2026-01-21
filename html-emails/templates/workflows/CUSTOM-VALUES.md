@@ -109,7 +109,7 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | `doe_l3_deadline` | Wednesday, January 28 at midnight ET | L3 offer deadline |
 | `doe_l3_deadline_short` | midnight Wednesday | Short deadline |
 | `doe_l3_deadline_time` | midnight ET | L3 deadline time only |
-| `doe_l3_enrollment_url` | societysecrets.com/level3 | L3 enrollment link |
+| `doe_l3_enrollment_url` | https://societysecrets.com/level3 | L3 enrollment link |
 | `doe_qa_call_link` | https://societysecrets.com/schedule | L3 Q&A booking calendar |
 
 ---
@@ -120,13 +120,13 @@ These rarely change between events:
 
 | GHL Field Key | Current Value | Used For |
 |---------------|---------------|----------|
-| `doe_workbook_url` | societysecrets.com/workbook | FNE Workbook PDF |
-| `doe_golden_life_url` | neothinkday.com/your-golden-life | Golden Life Sheet |
-| `doe_wealth_engine_url` | neothinkday.com/wealth-engine-calculator | Wealth Engine Calculator |
-| `doe_workshop_hub_url` | neothinkday.com/home | Workshop Hub page |
-| `doe_vip_upgrade_url` | neothinkday.com/vip-upgrade | VIP upgrade page |
-| `doe_vip_recording_url` | neothinkday.com/vip-session-recording | VIP session recording |
-| `doe_welcome_party_recording_url` | neothinkday.com/level-three-welcome-party | Welcome party recording |
+| `doe_workbook_url` | https://societysecrets.com/workbook | FNE Workbook PDF |
+| `doe_golden_life_url` | https://neothinkday.com/your-golden-life | Golden Life Sheet |
+| `doe_wealth_engine_url` | https://neothinkday.com/wealth-engine-calculator | Wealth Engine Calculator |
+| `doe_workshop_hub_url` | https://neothinkday.com/home | Workshop Hub page |
+| `doe_vip_upgrade_url` | https://neothinkday.com/vip-upgrade | VIP upgrade page |
+| `doe_vip_recording_url` | https://neothinkday.com/vip-session-recording | VIP session recording |
+| `doe_welcome_party_recording_url` | https://neothinkday.com/level-three-welcome-party | Welcome party recording |
 
 ---
 
