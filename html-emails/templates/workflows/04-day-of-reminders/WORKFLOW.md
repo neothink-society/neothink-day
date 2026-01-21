@@ -115,6 +115,36 @@ Neothink Society: 🔴 DAY 2 IS LIVE! Integration begins now. Join: {{custom_val
 
 ---
 
+## GHL Template Names
+
+### Day 1 Reminders (Phase 04)
+
+| File | GHL Template Name |
+|------|-------------------|
+| `day1-4hours.html` | `DOE 04 Day 1 Reminder 4h` |
+| `day1-2hours.html` | `DOE 04 Day 1 Reminder 2h` |
+| `day1-1hour.html` | `DOE 04 Day 1 Reminder 1h` |
+| `day1-30min.html` | `DOE 04 Day 1 Reminder 30m` |
+| `day1-15min.html` | `DOE 04 Day 1 Reminder 15m` |
+| `day1-live.html` | `DOE 04 Day 1 Live Now` |
+| `day1-late-15min.html` | `DOE 04 Day 1 Late 15m` |
+| `day1-late-30min.html` | `DOE 04 Day 1 Late 30m` |
+
+### Day 2 Reminders (Phase 06)
+
+| File | GHL Template Name |
+|------|-------------------|
+| `day2-2hours.html` | `DOE 06 Day 2 Reminder 2h` |
+| `day2-1hour.html` | `DOE 06 Day 2 Reminder 1h` |
+| `day2-45min.html` | `DOE 06 Day 2 Reminder 45m` |
+| `day2-30min.html` | `DOE 06 Day 2 Reminder 30m` |
+| `day2-15min.html` | `DOE 06 Day 2 Reminder 15m` |
+| `day2-live.html` | `DOE 06 Day 2 Live Now` |
+| `day2-late-15min.html` | `DOE 06 Day 2 Late 15m` |
+| `day2-late-30min.html` | `DOE 06 Day 2 Late 30m` |
+
+---
+
 ## Testing Checklist
 
 - [ ] Day 1 emails trigger at correct times

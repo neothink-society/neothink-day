@@ -123,16 +123,16 @@ NOT for:
 
 ## Template Files
 
-| File | Purpose |
-|------|---------|
-| l3-confirmation.html | Immediate purchase confirmation with what happens next |
-| l3-sunday-night.html | Sunday night reflection, prep for VIP session |
-| l3-monday-morning.html | VIP Session reminder for L3 members |
-| welcome-party-reminder.html | Tuesday reminder for Wednesday party |
-| welcome-party-today.html | Day-of Welcome Party reminder |
-| welcome-party-30min.html | 30-minute countdown |
-| welcome-party-live.html | LIVE notification |
-| welcome-party-recording.html | Recording available next day |
+| File | Purpose | GHL Name |
+|------|---------|----------|
+| l3-confirmation.html | Immediate purchase confirmation with what happens next | `DOE 09 L3 Confirmation` |
+| l3-sunday-night.html | Sunday night reflection, prep for VIP session | `DOE 09 L3 Sunday Night` |
+| l3-monday-morning.html | VIP Session reminder for L3 members | `DOE 09 L3 Monday Morning` |
+| welcome-party-reminder.html | Tuesday reminder for Wednesday party | `DOE 09 L3 Welcome Party Reminder` |
+| welcome-party-today.html | Day-of Welcome Party reminder | `DOE 09 L3 Welcome Party Today` |
+| welcome-party-30min.html | 30-minute countdown | `DOE 09 L3 Welcome Party 30m` |
+| welcome-party-live.html | LIVE notification | `DOE 09 L3 Welcome Party Live` |
+| welcome-party-recording.html | Recording available next day | `DOE 09 L3 Welcome Party Recording` |
 
 ## Testing Checklist
 

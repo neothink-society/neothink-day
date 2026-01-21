@@ -124,14 +124,14 @@ NOT for:
 
 ## Template Files
 
-| File | Purpose |
-|------|---------|
-| monday-afternoon.html | L3 offer introduction, value proposition |
-| qa-call-offer.html | Q&A call scheduling option |
-| tuesday-evening.html | 24-hour countdown, pricing reminder |
-| wednesday-afternoon.html | Final hours (10h), Welcome Party tonight |
-| wednesday-6pm.html | 6 hours countdown |
-| wednesday-gentle-reminder.html | Final message (3h), respectful close |
+| File | Purpose | GHL Name |
+|------|---------|----------|
+| monday-afternoon.html | L3 offer introduction, value proposition | `DOE 10 L3 Close Monday Afternoon` |
+| qa-call-offer.html | Q&A call scheduling option | `DOE 10 L3 Close QA Call` |
+| tuesday-evening.html | 24-hour countdown, pricing reminder | `DOE 10 L3 Close Tuesday Evening` |
+| wednesday-afternoon.html | Final hours (10h), Welcome Party tonight | `DOE 10 L3 Close Wednesday Afternoon` |
+| wednesday-6pm.html | 6 hours countdown | `DOE 10 L3 Close Wednesday 6h Left` |
+| wednesday-gentle-reminder.html | Final message (3h), respectful close | `DOE 10 L3 Close Wednesday Final` |
 
 ## Testing Checklist
 

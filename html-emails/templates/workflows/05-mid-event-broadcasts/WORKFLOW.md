@@ -128,6 +128,34 @@ Neothink Society: Level 3 enrollment is NOW OPEN! The next level of your transfo
 
 ---
 
+## GHL Template Names
+
+### Day 1 Broadcasts (Phase 05)
+
+| File | GHL Template Name |
+|------|-------------------|
+| `day1-opening.html` | `DOE 05 Day 1 Opening` |
+| `day1-wh-live-now.html` | `DOE 05 Day 1 WH Starting` |
+| `day1-wh-in-session.html` | `DOE 05 Day 1 WH In Session` |
+| `day1-wealth-segment.html` | `DOE 05 Day 1 Wealth Segment` |
+| `day1-lunch-break.html` | `DOE 05 Day 1 Lunch Break` |
+| `day1-back-from-lunch.html` | `DOE 05 Day 1 Back From Lunch` |
+| `day1-end.html` | `DOE 05 Day 1 End` |
+
+### Day 2 Broadcasts (Phase 07)
+
+| File | GHL Template Name |
+|------|-------------------|
+| `day2-opening.html` | `DOE 07 Day 2 Opening` |
+| `day2-mh-segment.html` | `DOE 07 Day 2 MH Segment` |
+| `day2-lunch-break.html` | `DOE 07 Day 2 Lunch Break` |
+| `day2-back-from-lunch.html` | `DOE 07 Day 2 Back From Lunch` |
+| `day2-integration.html` | `DOE 07 Day 2 Integration` |
+| `day2-l3-offer.html` | `DOE 07 Day 2 L3 Offer` |
+| `day2-end.html` | `DOE 07 Day 2 End` |
+
+---
+
 ## Testing Checklist
 
 - [ ] Workflow has 14 stages configured

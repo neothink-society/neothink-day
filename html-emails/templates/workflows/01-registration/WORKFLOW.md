@@ -59,9 +59,20 @@ Triggered immediately when someone registers for the Day of Enlightenment worksh
 
 ---
 
+## GHL Template Names
+
+| File | GHL Template Name |
+|------|-------------------|
+| `registration-confirmation.html` | `DOE 01 Registration Confirmation` |
+| `welcome-followup.html` | `DOE 01 Welcome Follow-Up` |
+
+---
+
 ## Email Templates
 
 ### registration-confirmation.html
+**GHL Name:** `DOE 01 Registration Confirmation`
+
 **Subject Line Options:**
 - You're registered for the Day of Enlightenment!
 - Welcome to the Day of Enlightenment — {{custom_values.doe_event_dates}}
@@ -71,6 +82,8 @@ Triggered immediately when someone registers for the Day of Enlightenment worksh
 **Preheader:** You're officially registered! Here's everything you need to know about your Day of Enlightenment workshop. Plus, a special VIP upgrade opportunity.
 
 ### welcome-followup.html
+**GHL Name:** `DOE 01 Welcome Follow-Up`
+
 **Subject Line Options:**
 - You're part of something rare
 - This isn't what you think it is

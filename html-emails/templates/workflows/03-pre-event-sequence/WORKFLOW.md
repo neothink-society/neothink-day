@@ -123,6 +123,27 @@ Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_v
 
 ---
 
+## GHL Template Names
+
+| File | GHL Template Name |
+|------|-------------------|
+| `countdown-30days.html` | `DOE 03 Pre-Event 30 Days` |
+| `countdown-25days.html` | `DOE 03 Pre-Event 25 Days` |
+| `countdown-20days.html` | `DOE 03 Pre-Event 20 Days` |
+| `countdown-14days.html` | `DOE 03 Pre-Event 14 Days` |
+| `countdown-10days.html` | `DOE 03 Pre-Event 10 Days` |
+| `countdown-9days.html` | `DOE 03 Pre-Event 9 Days` |
+| `countdown-7days.html` | `DOE 03 Pre-Event 7 Days` |
+| `countdown-5days.html` | `DOE 03 Pre-Event 5 Days` |
+| `countdown-4days.html` | `DOE 03 Pre-Event 4 Days` |
+| `countdown-3days.html` | `DOE 03 Pre-Event 3 Days` |
+| `countdown-3days-vip.html` | `DOE 03 Pre-Event 3 Days VIP` |
+| `countdown-2days.html` | `DOE 03 Pre-Event 2 Days` |
+| `countdown-1day-morning.html` | `DOE 03 Pre-Event 1 Day Morning` |
+| `countdown-1day-evening.html` | `DOE 03 Pre-Event 1 Day Evening` |
+
+---
+
 ## Testing Checklist
 
 - [ ] Contacts enter sequence from Registration workflow

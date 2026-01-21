@@ -109,12 +109,12 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 
 | File | Purpose | GHL Name |
 |------|---------|----------|
-| vip-confirmation.html | Purchase confirmation | DOE 02 VIP Confirmation [VIP] |
-| vip-zoom-background.html | Zoom background download | DOE 02 VIP Zoom Background [VIP] |
-| vip-session-90min.html | 90-minute reminder | DOE 02 VIP Session 90m [VIP] |
-| vip-session-1hour.html | 1-hour reminder | DOE 02 VIP Session 1h [VIP] |
-| vip-session-live.html | LIVE notification | DOE 02 VIP Session Live [VIP] |
-| vip-session-recording.html | Recording available | DOE 02 VIP Session Recording [VIP] |
+| vip-confirmation.html | Purchase confirmation | `DOE 02 VIP Purchase Confirmation` |
+| vip-zoom-background.html | Zoom background download | `DOE 02 VIP Zoom Background` |
+| vip-session-90min.html | 90-minute reminder | `DOE 02 VIP Session 90m` |
+| vip-session-1hour.html | 1-hour reminder | `DOE 02 VIP Session 1h` |
+| vip-session-live.html | LIVE notification | `DOE 02 VIP Session Live` |
+| vip-session-recording.html | Recording available | `DOE 02 VIP Session Recording` |
 
 ---
 

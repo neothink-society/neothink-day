@@ -113,6 +113,19 @@ Neothink Society: Your Wealth Engine Calculator is ready. Calculate your path to
 
 ---
 
+## GHL Template Names
+
+| File | GHL Template Name |
+|------|-------------------|
+| `sunday-night-anchor.html` | `DOE 08 Post-Event Sunday Night` |
+| `monday-golden-life.html` | `DOE 08 Post-Event Monday Golden Life` |
+| `tuesday-wealth-engine.html` | `DOE 08 Post-Event Tuesday Wealth Engine` |
+| `wednesday-fne-workbook.html` | `DOE 08 Post-Event Wednesday FNE Workbook` |
+| `thursday-ambassador.html` | `DOE 08 Post-Event Thursday Ambassador` |
+| `friday-infinite-vector.html` | `DOE 08 Post-Event Friday Infinite Vector` |
+
+---
+
 ## Testing Checklist
 
 - [ ] Tag `doe-attended` triggers workflow
