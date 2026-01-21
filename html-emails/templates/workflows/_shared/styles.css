@@ -1,0 +1,189 @@
+/*
+SHARED STYLES: Neothink Day Email Templates
+Copy these styles into the <style> section of your email template.
+
+NOTE: Email CSS has limited support. These styles are designed for
+maximum compatibility across email clients including Gmail, Outlook, and Apple Mail.
+*/
+
+/* ==========================================================================
+   ROOT & DARK MODE HANDLING
+   ========================================================================== */
+
+:root {
+    color-scheme: light only !important;
+    supported-color-schemes: light only !important;
+}
+
+/* Outlook.com dark mode override */
+[data-ogsc] body,
+[data-ogsc] .dark-bg {
+    background-color: #000000 !important;
+}
+
+/* Gmail dark mode override */
+u + .body {
+    background-color: #000000 !important;
+}
+
+/* System dark mode preference */
+@media (prefers-color-scheme: dark) {
+    .dark-bg {
+        background-color: #000000 !important;
+    }
+}
+
+/* ==========================================================================
+   WEB FONTS
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;600;700;800;900&family=Courier+Prime:wght@400;700&display=swap');
+
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .content-padding {
+        padding: 25px 16px !important;
+    }
+
+    .headline-large {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+
+    .mobile-padding {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .mobile-text {
+        font-size: 17px !important;
+        line-height: 28px !important;
+    }
+
+    .mobile-text-small {
+        font-size: 16px !important;
+        line-height: 26px !important;
+    }
+
+    .button {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .button-td {
+        padding: 0 !important;
+    }
+
+    .button a {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        padding: 18px 20px !important;
+        font-size: 16px !important;
+        box-sizing: border-box !important;
+    }
+
+    .mobile-box-padding {
+        padding: 20px 16px !important;
+    }
+
+    .mobile-title {
+        font-size: 38px !important;
+        line-height: 46px !important;
+    }
+}
+
+/* ==========================================================================
+   COLOR REFERENCE
+   ========================================================================== */
+
+/*
+Primary Colors:
+- Background: #000000 (black)
+- Accent: #FFD700 (gold)
+- Text: #FFFFFF (white)
+- Secondary text: #d0d0d0 (light gray)
+- Muted text: #888888 (gray)
+- Border: #333333 (dark gray)
+
+Status Colors:
+- Live/Urgent: #cc0000 (red)
+- Warning: #FF6B6B (coral)
+- Success: #00aa00 (green)
+- VIP: #8B5CF6 (purple)
+*/
+
+/* ==========================================================================
+   TYPOGRAPHY REFERENCE
+   ========================================================================== */
+
+/*
+Headings:
+font-family: 'Baskervville', Georgia, serif;
+
+Body Text:
+font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+Monospace/Badges:
+font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+*/
+
+/* ==========================================================================
+   BUTTON STYLES (for inline use)
+   ========================================================================== */
+
+/*
+Gold Button (primary):
+background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+color: #000000;
+padding: 22px 50px;
+border-radius: 6px;
+font-weight: 700;
+
+Outline Button (secondary):
+background: transparent;
+border: 2px solid #FFD700;
+color: #FFD700;
+padding: 20px 48px;
+border-radius: 6px;
+font-weight: 700;
+*/
