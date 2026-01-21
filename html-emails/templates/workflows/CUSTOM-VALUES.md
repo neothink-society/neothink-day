@@ -57,8 +57,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | GHL Field Key | Current Value | Used For |
 |---------------|---------------|----------|
 | `doe_zoom_link` | `{{trigger_link.bw3pFLlMkAQiQOlYB674}}` | Main workshop Zoom |
-| `doe_zoom_id` | 890 3406 5077 | Meeting ID (for display) |
-| `doe_zoom_passcode` | 160734 | Passcode (for display) |
+| `doe_zoom_id` | 852 4025 0021 | Meeting ID (for display) |
+| `doe_zoom_passcode` | 848453 | Passcode (for display) |
 
 **Why Trigger Links?**
 - Track who clicked to join
@@ -84,8 +84,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | `doe_vip_session_date_full` | Monday, January 26, 2026 | VIP Session full date |
 | `doe_vip_session_time` | 4:00 PM Pacific / 7:00 PM Eastern | VIP Session time |
 | `doe_vip_session_zoom` | `{{trigger_link.oewaGnllvYO0WZ4NfUc6}}` | VIP Zoom (trigger link) |
-| `doe_vip_session_id` | [UPDATE-VIP-MEETING-ID] | VIP Meeting ID (for display) |
-| `doe_vip_session_passcode` | [UPDATE-VIP-PASSCODE] | VIP Passcode (for display) |
+| `doe_vip_session_id` | 832 7546 6649 | VIP Meeting ID (for display) |
+| `doe_vip_session_passcode` | 566407 | VIP Passcode (for display) |
 
 ---
 
@@ -97,8 +97,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | `doe_welcome_party_date_full` | Wednesday, January 28, 2026 | Welcome Party full date |
 | `doe_welcome_party_time` | 4:00 PM Pacific / 7:00 PM Eastern | Welcome Party time |
 | `doe_welcome_party_zoom` | `{{trigger_link.1iWXAhKPkv1YrL7kXM7h}}` | Welcome Party Zoom (trigger link) |
-| `doe_welcome_party_id` | [UPDATE-WELCOME-PARTY-ID] | Welcome Party Meeting ID (for display) |
-| `doe_welcome_party_passcode` | [UPDATE-WELCOME-PARTY-PASSCODE] | Welcome Party Passcode (for display) |
+| `doe_welcome_party_id` | 893 8151 6489 | Welcome Party Meeting ID (for display) |
+| `doe_welcome_party_passcode` | 890039 | Welcome Party Passcode (for display) |
 
 ---
 
