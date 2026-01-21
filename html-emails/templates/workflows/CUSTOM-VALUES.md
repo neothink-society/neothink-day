@@ -20,6 +20,14 @@ All custom values use the `doe_` prefix (Day of Enlightenment) and are stored in
 
 ---
 
+## General Event Custom Values
+
+| GHL Field Key | Current Value | Used For |
+|---------------|---------------|----------|
+| `doe_event_name` | Day of Enlightenment | Event name for emails/pages |
+
+---
+
 ## Event Date Custom Values
 
 | GHL Field Key | Current Value (Jan 2026) | Used For |
@@ -227,6 +235,7 @@ curl -X POST "https://services.leadconnectorhq.com/locations/OWPT3ihPWINakwA0bGR
 
 | Field Key | GHL ID |
 |-----------|--------|
+| `doe_event_name` | YcinEbLTODTgdeRRiN9K |
 | `doe_day_1_date` | wtCQl7yu5kMAVGdOaYh4 |
 | `doe_day_1_date_short` | TiGh4JxCcPLjSSemxzP4 |
 | `doe_day_2_date` | qpCLDY6MuvQD6mq3QbaS |
