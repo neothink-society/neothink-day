@@ -84,7 +84,7 @@ workflows/
 
 **After (custom values):**
 ```html
-<p>Join us {{custom_values.doe_day1_date}} at {{custom_values.doe_day1_start_time}}</p>
+<p>Join us {{custom_values.doe_day_1_date}} at {{custom_values.doe_day_1_start_time}}</p>
 ```
 
 ### Offset Timing

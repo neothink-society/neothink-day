@@ -88,9 +88,9 @@ If the contact purchases Level 3 at any point:
 ## Custom Values Required
 
 ```
-{{custom_values.doe_day1_date}}                → Saturday, January 24, 2026
-{{custom_values.doe_day1_date_short}}          → January 24
-{{custom_values.doe_day2_date_short}}          → January 25
+{{custom_values.doe_day_1_date}}                → Saturday, January 24, 2026
+{{custom_values.doe_day_1_date_short}}          → January 24
+{{custom_values.doe_day_2_date_short}}          → January 25
 {{custom_values.doe_welcome_party_date}}       → Wednesday, January 28
 {{custom_values.doe_l3_deadline}}              → Wednesday, January 28 at midnight ET
 {{custom_values.doe_l3_deadline_short}}        → midnight Wednesday

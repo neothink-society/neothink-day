@@ -108,7 +108,7 @@ Neothink Society: 🔴 Wallace Hamilton is LIVE NOW teaching about your Friday N
 
 ### Day 1 - Lunch Break
 ```
-Neothink Society: Lunch break! Return at {{custom_values.doe_day1_return_time}} for the Wealth Engine segment. Get some food, stay energized!
+Neothink Society: Lunch break! Return at {{custom_values.doe_day_1_return_time}} for the Wealth Engine segment. Get some food, stay energized!
 ```
 
 ### Day 1 - Back from Lunch

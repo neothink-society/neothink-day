@@ -82,7 +82,7 @@ To avoid sending late-joiner emails to people who are already in:
 
 ### Day 1 - 1 Hour Before
 ```
-Neothink Society: 1 HOUR until Day of Enlightenment begins! {{custom_values.doe_day1_start_time}}. Have Zoom ready. This is what you've been waiting for!
+Neothink Society: 1 HOUR until Day of Enlightenment begins! {{custom_values.doe_day_1_start_time}}. Have Zoom ready. This is what you've been waiting for!
 ```
 
 ### Day 1 - Live
@@ -92,7 +92,7 @@ Neothink Society: 🔴 WE ARE LIVE! Day of Enlightenment has begun. Join immedia
 
 ### Day 2 - 1 Hour Before
 ```
-Neothink Society: Day 2 starts in 1 hour! {{custom_values.doe_day2_start_time}}. Yesterday was just the beginning. Today we integrate.
+Neothink Society: Day 2 starts in 1 hour! {{custom_values.doe_day_2_start_time}}. Yesterday was just the beginning. Today we integrate.
 ```
 
 ### Day 2 - Live

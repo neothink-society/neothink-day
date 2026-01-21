@@ -7,9 +7,9 @@
 ---
 
 ## Zoom Details
-- **Link:** {{custom_values.vip_session_zoom}}
-- **Meeting ID:** {{custom_values.vip_session_id}}
-- **Passcode:** {{custom_values.vip_session_passcode}}
+- **Link:** {{custom_values.doe_vip_session_zoom}}
+- **Meeting ID:** {{custom_values.doe_vip_session_id}}
+- **Passcode:** {{custom_values.doe_vip_session_passcode}}
 
 ---
 
@@ -63,10 +63,10 @@ Neothink Society: VIP SESSION IN 30 MINUTES.
 
 Your exclusive session starts at 7pm ET (4pm PT).
 
-JOIN: {{custom_values.vip_session_zoom}}
+JOIN: {{custom_values.doe_vip_session_zoom}}
 
-Meeting ID: {{custom_values.vip_session_id}}
-Passcode: {{custom_values.vip_session_passcode}}
+Meeting ID: {{custom_values.doe_vip_session_id}}
+Passcode: {{custom_values.doe_vip_session_passcode}}
 
 See you inside.
 ```
@@ -84,7 +84,7 @@ Neothink Society: We're LIVE!
 
 The VIP Session is starting NOW.
 
-JOIN: {{custom_values.vip_session_zoom}}
+JOIN: {{custom_values.doe_vip_session_zoom}}
 
 We're waiting for you inside.
 ```
@@ -109,9 +109,9 @@ We're waiting for you inside.
 **Total:** 4 SMS messages
 
 **GHL Custom Values:**
-- `{{custom_values.vip_session_zoom}}` - Full Zoom URL
-- `{{custom_values.vip_session_id}}` - Meeting ID number
-- `{{custom_values.vip_session_passcode}}` - Passcode
+- `{{custom_values.doe_vip_session_zoom}}` - Full Zoom URL
+- `{{custom_values.doe_vip_session_id}}` - Meeting ID number
+- `{{custom_values.doe_vip_session_passcode}}` - Passcode
 
 **Audience:**
 - VIP ticket holders

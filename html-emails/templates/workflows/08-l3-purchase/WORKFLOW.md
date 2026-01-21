@@ -93,13 +93,13 @@ When a contact purchases Level 3:
 ## Custom Values Required
 
 ```
-{{custom_values.doe_day2_date}}                    → Sunday, January 25, 2026
+{{custom_values.doe_day_2_date}}                    → Sunday, January 25, 2026
 {{custom_values.doe_vip_session_date}}             → Monday, January 26
 {{custom_values.doe_vip_session_time}}             → 4:00 PM Pacific / 7:00 PM Eastern
 {{custom_values.doe_welcome_party_date}}           → Wednesday, January 28
 {{custom_values.doe_welcome_party_time}}           → 4:00 PM Pacific / 7:00 PM Eastern
 {{custom_values.doe_welcome_party_zoom}}           → https://neothink.zoom.us/j/xxx
-{{custom_values.doe_welcome_party_zoom_id}}        → 825 3274 2248
+{{custom_values.doe_welcome_party_id}}        → 825 3274 2248
 {{custom_values.doe_welcome_party_passcode}}       → abc123
 {{custom_values.doe_welcome_party_recording_url}}  → https://neothinkday.com/level-three-welcome-party
 ```

@@ -471,11 +471,11 @@ These fire based on actions, not scheduled times.
 | `{{custom_values.doe_zoom_passcode}}` | Workshop Passcode | Workshop countdown |
 | `{{custom_values.doe_day_1_return_time}}` | Day 1 lunch return | Day 1 lunch break |
 | `{{custom_values.doe_day_2_return_time}}` | Day 2 lunch return | Day 2 lunch break |
-| `{{custom_values.vip_session_zoom}}` | VIP Session Zoom link | VIP session messages |
-| `{{custom_values.vip_session_id}}` | VIP Session Meeting ID | VIP session messages |
-| `{{custom_values.vip_session_passcode}}` | VIP Session Passcode | VIP session messages |
-| `{{custom_values.welcome_party_zoom}}` | Welcome Party Zoom link | Welcome Party messages |
-| `{{custom_values.welcome_party_id}}` | Welcome Party Meeting ID | Welcome Party messages |
+| `{{custom_values.doe_vip_session_zoom}}` | VIP Session Zoom link | VIP session messages |
+| `{{custom_values.doe_vip_session_id}}` | VIP Session Meeting ID | VIP session messages |
+| `{{custom_values.doe_vip_session_passcode}}` | VIP Session Passcode | VIP session messages |
+| `{{custom_values.doe_welcome_party_zoom}}` | Welcome Party Zoom link | Welcome Party messages |
+| `{{custom_values.doe_welcome_party_id}}` | Welcome Party Meeting ID | Welcome Party messages |
 
 ---
 

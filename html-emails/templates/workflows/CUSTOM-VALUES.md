@@ -3,7 +3,7 @@
 
 All custom values use the `doe_` prefix (Day of Enlightenment) and are stored in the **DOE folder** (ID: `VZFHr1WwoSsZENUITe9f`).
 
-**Important:** GHL auto-generates field keys with underscores between words (e.g., `doe_day_1_date` not `doe_day1_date`).
+**Important:** GHL auto-generates field keys with underscores between words (e.g., `doe_day_1_date` not `doe_day_1_date`).
 
 ---
 
@@ -84,6 +84,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | `doe_vip_session_date_full` | Monday, January 26, 2026 | VIP Session full date |
 | `doe_vip_session_time` | 4:00 PM Pacific / 7:00 PM Eastern | VIP Session time |
 | `doe_vip_session_zoom` | `{{trigger_link.oewaGnllvYO0WZ4NfUc6}}` | VIP Zoom (trigger link) |
+| `doe_vip_session_id` | [UPDATE-VIP-MEETING-ID] | VIP Meeting ID (for display) |
+| `doe_vip_session_passcode` | [UPDATE-VIP-PASSCODE] | VIP Passcode (for display) |
 
 ---
 
@@ -95,6 +97,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | `doe_welcome_party_date_full` | Wednesday, January 28, 2026 | Welcome Party full date |
 | `doe_welcome_party_time` | 4:00 PM Pacific / 7:00 PM Eastern | Welcome Party time |
 | `doe_welcome_party_zoom` | `{{trigger_link.1iWXAhKPkv1YrL7kXM7h}}` | Welcome Party Zoom (trigger link) |
+| `doe_welcome_party_id` | [UPDATE-WELCOME-PARTY-ID] | Welcome Party Meeting ID (for display) |
+| `doe_welcome_party_passcode` | [UPDATE-WELCOME-PARTY-PASSCODE] | Welcome Party Passcode (for display) |
 
 ---
 
@@ -104,6 +108,7 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 |---------------|--------------------------|----------|
 | `doe_l3_deadline` | Wednesday, January 28 at midnight ET | L3 offer deadline |
 | `doe_l3_deadline_short` | midnight Wednesday | Short deadline |
+| `doe_l3_deadline_time` | midnight ET | L3 deadline time only |
 | `doe_l3_enrollment_url` | societysecrets.com/level3 | L3 enrollment link |
 | `doe_qa_call_link` | https://societysecrets.com/schedule | L3 Q&A booking calendar |
 
@@ -229,8 +234,10 @@ curl -X POST "https://services.leadconnectorhq.com/locations/OWPT3ihPWINakwA0bGR
 | `doe_event_dates` | c6XyiIWBDzj0mxqybHUr |
 | `doe_day_1_start_time` | GKLwoLJ6U1RWSihofIpF |
 | `doe_day_1_start_time_full` | ZgSx6nnIS7W9CBsYE1ia |
+| `doe_day_1_return_time` | 0mujSW7G09SQOGlnPtJw |
 | `doe_day_2_start_time` | lbg9C9wfz5kw5f8RcS90 |
 | `doe_day_2_start_time_full` | 3ETktVD28yXj1dNpSWeN |
+| `doe_day_2_return_time` | LD2HJtMULDZr8ZsxWJuv |
 | `doe_zoom_link` | dfhHPfxFyBmt5hsqBRZU |
 | `doe_zoom_id` | iPPqoUddt5sPQpZV6uiK |
 | `doe_zoom_passcode` | ZW48V8MJZzy3ohOgxfzM |
@@ -238,12 +245,17 @@ curl -X POST "https://services.leadconnectorhq.com/locations/OWPT3ihPWINakwA0bGR
 | `doe_vip_session_date_full` | 61ljoppdfXM3QaBo8IyY |
 | `doe_vip_session_time` | fiKi90DrIU0R3LbRtK6Q |
 | `doe_vip_session_zoom` | pyssOvx2vLg0DODf8Ip2 |
+| `doe_vip_session_id` | IY0pNfCAv6dPjTlCJRvZ |
+| `doe_vip_session_passcode` | 0AHdEqXUVG6L1e9dhiJz |
 | `doe_welcome_party_date` | uvzMq2QqgtNmCLPAHCr7 |
 | `doe_welcome_party_date_full` | YIEJf5fvaO7ftGQj9rXe |
 | `doe_welcome_party_time` | 4sTA8OoG09vLSHIFF8eH |
 | `doe_welcome_party_zoom` | lSMO7ix3gwMoOjMEewRY |
+| `doe_welcome_party_id` | JoDiSwHkFhfz4ZQZpu4C |
+| `doe_welcome_party_passcode` | i7tXU9A8EnO2Wdlc2dPN |
 | `doe_l3_deadline` | n73K0cBzcVMSiuIYkMbV |
 | `doe_l3_deadline_short` | nimbWJbGip2e0MpVUc0p |
+| `doe_l3_deadline_time` | mMlsgoKQwuaqZGbfhOFy |
 | `doe_l3_enrollment_url` | cqW8ASg1kGbjIB1Cs0Cv |
 | `doe_qa_call_link` | pkaISBH5J6rFYiTUa5h1 |
 | `doe_workbook_url` | NlFRIYBwrxsLIee2lXyT |

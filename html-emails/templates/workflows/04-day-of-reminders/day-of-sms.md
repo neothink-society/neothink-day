@@ -3,7 +3,7 @@
 ## Day 1 - 1 Hour Before
 
 ```
-Neothink Society: 1 hour until Day of Enlightenment begins! {{custom_values.doe_day1_start_time}}. Have Zoom ready. This is what you've been waiting for!
+Neothink Society: 1 hour until Day of Enlightenment begins! {{custom_values.doe_day_1_start_time}}. Have Zoom ready. This is what you've been waiting for!
 ```
 
 **Offset:** -1h from T=0
@@ -36,7 +36,7 @@ Neothink Society: We've started! The opening is happening now. Join: {{custom_va
 ## Day 2 - 1 Hour Before
 
 ```
-Neothink Society: Day 2 starts in 1 hour! {{custom_values.doe_day2_start_time}}. Yesterday was just the beginning. Today we integrate.
+Neothink Society: Day 2 starts in 1 hour! {{custom_values.doe_day_2_start_time}}. Yesterday was just the beginning. Today we integrate.
 ```
 
 **Offset:** +24h (or -1h from Day 2 start)

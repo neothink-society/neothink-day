@@ -3,7 +3,7 @@
 ## 7 Days Before
 
 ```
-Neothink Society: One week until Day of Enlightenment! Have you read pages 1-50 of The Secret Manuscript? Your breakthrough depends on it. See you {{custom_values.doe_day1_date_short}}!
+Neothink Society: One week until Day of Enlightenment! Have you read pages 1-50 of The Secret Manuscript? Your breakthrough depends on it. See you {{custom_values.doe_day_1_date_short}}!
 ```
 
 **Offset:** -7d 2h
@@ -25,7 +25,7 @@ Neothink Society: 3 days until your transformation begins. Block {{custom_values
 ## 1 Day Before (Morning)
 
 ```
-Neothink Society: Tomorrow is the Day of Enlightenment! {{custom_values.doe_day1_start_time}}. Set your alarm. Prepare your space. This is what you've been waiting for.
+Neothink Society: Tomorrow is the Day of Enlightenment! {{custom_values.doe_day_1_start_time}}. Set your alarm. Prepare your space. This is what you've been waiting for.
 ```
 
 **Offset:** -23h
@@ -36,7 +36,7 @@ Neothink Society: Tomorrow is the Day of Enlightenment! {{custom_values.doe_day1
 ## 1 Day Before (Evening)
 
 ```
-Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_values.doe_day1_start_time}}. Get some rest—tomorrow changes everything.
+Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_values.doe_day_1_start_time}}. Get some rest—tomorrow changes everything.
 ```
 
 **Offset:** -16h

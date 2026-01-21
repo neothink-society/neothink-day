@@ -65,7 +65,7 @@ Triggered immediately when someone registers for the Day of Enlightenment worksh
 **Subject Line Options:**
 - You're registered for the Day of Enlightenment!
 - Welcome to the Day of Enlightenment — {{custom_values.doe_event_dates}}
-- Your transformation begins {{custom_values.doe_day1_date_short}}
+- Your transformation begins {{custom_values.doe_day_1_date_short}}
 - Confirmed: Day of Enlightenment Workshop
 
 **Preheader:** You're officially registered! Here's everything you need to know about your Day of Enlightenment workshop. Plus, a special VIP upgrade opportunity.

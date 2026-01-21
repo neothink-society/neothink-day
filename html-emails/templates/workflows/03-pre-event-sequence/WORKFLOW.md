@@ -57,7 +57,7 @@ For each email step:
 
 **Alternative: Use Event-Based Offset**
 If using a custom date field for event date:
-1. Set wait: Until `{{custom_values.doe_day1_date}}` minus X days at 9:00 AM
+1. Set wait: Until `{{custom_values.doe_day_1_date}}` minus X days at 9:00 AM
 
 ### Step 3: VIP Branch at 3 Days
 1. Add action: **If/Else Branch**
@@ -76,9 +76,9 @@ Add workflow settings:
 
 All templates use custom values for dates. Key replacements:
 - `{{custom_values.doe_event_dates}}` - January 24-25, 2026
-- `{{custom_values.doe_day1_date}}` - Saturday, January 24, 2026
-- `{{custom_values.doe_day2_date}}` - Sunday, January 25, 2026
-- `{{custom_values.doe_day1_start_time_full}}` - All time zones
+- `{{custom_values.doe_day_1_date}}` - Saturday, January 24, 2026
+- `{{custom_values.doe_day_2_date}}` - Sunday, January 25, 2026
+- `{{custom_values.doe_day_1_start_time_full}}` - All time zones
 
 ---
 
@@ -86,17 +86,17 @@ All templates use custom values for dates. Key replacements:
 
 ### 7 Days Before
 ```
-Neothink Society: One week until Day of Enlightenment! Have you read pages 1-50 of The Secret Manuscript? Your breakthrough depends on it. See you {{custom_values.doe_day1_date_short}}!
+Neothink Society: One week until Day of Enlightenment! Have you read pages 1-50 of The Secret Manuscript? Your breakthrough depends on it. See you {{custom_values.doe_day_1_date_short}}!
 ```
 
 ### 1 Day Before (Morning)
 ```
-Neothink Society: TOMORROW is the Day of Enlightenment! {{custom_values.doe_day1_start_time}}. Set your alarm. Prepare your space. This is what you've been waiting for.
+Neothink Society: TOMORROW is the Day of Enlightenment! {{custom_values.doe_day_1_start_time}}. Set your alarm. Prepare your space. This is what you've been waiting for.
 ```
 
 ### 1 Day Before (Evening)
 ```
-Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_values.doe_day1_start_time}}. Get some rest—tomorrow changes everything.
+Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_values.doe_day_1_start_time}}. Get some rest—tomorrow changes everything.
 ```
 
 ---
