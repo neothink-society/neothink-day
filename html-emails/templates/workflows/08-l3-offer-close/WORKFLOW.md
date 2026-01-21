@@ -1,4 +1,4 @@
-# Workflow 09: L3 Offer Close Sequence
+# Workflow 08: L3 Offer Close Sequence
 
 ## Overview
 
@@ -21,7 +21,7 @@ This workflow sends the Level 3 enrollment closing sequence to attendees who hav
 
 If the contact purchases Level 3 at any point:
 1. They should immediately exit this workflow
-2. They should enter workflow 08-l3-purchase instead
+2. They should enter workflow 07-l3-purchase instead
 3. They should NOT receive any more L3 sales emails
 
 ## Timing Reference
@@ -108,7 +108,7 @@ This workflow is ONLY for attendees who have NOT purchased Level 3:
 - VIP members who haven't upgraded to L3
 
 NOT for:
-- Level 3 members (they receive 08-l3-purchase sequence)
+- Level 3 members (they receive 07-l3-purchase sequence)
 - Non-attendees (no `doe-attended` tag)
 
 ## Messaging Strategy

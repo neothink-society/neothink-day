@@ -38,16 +38,16 @@ Follow the `WORKFLOW.md` in each folder to:
 workflows/
 ├── README.md                    # This file
 ├── CUSTOM-VALUES.md             # All custom values to configure
+├── GHL-TEMPLATE-NAMES.md        # GHL template naming guide
 │
 ├── 01-registration/             # Trigger: On registration
-├── 02-vip-purchase/             # Trigger: On VIP purchase
+├── 02-vip-purchase/             # Trigger: On VIP purchase (includes VIP Session)
 ├── 03-pre-event-sequence/       # Trigger: After registration
 ├── 04-day-of-reminders/         # Trigger: Offset from event start
 ├── 05-mid-event-broadcasts/     # Trigger: MANUAL (999-day wait)
 ├── 06-post-event-all/           # Trigger: After workshop ends
-├── 07-vip-session/              # Trigger: VIP/L3 + post-event
-├── 08-l3-purchase/              # Trigger: On L3 purchase
-├── 09-l3-offer-close/           # Trigger: Non-L3 attendees
+├── 07-l3-purchase/              # Trigger: On L3 purchase (includes Welcome Party)
+├── 08-l3-offer-close/           # Trigger: Non-L3 attendees
 │
 └── _shared/                     # Shared components
     ├── header.html
@@ -62,14 +62,13 @@ workflows/
 | # | Workflow | Trigger | Key Features |
 |---|----------|---------|--------------|
 | 01 | Registration | Form submission | Confirmation + VIP upsell |
-| 02 | VIP Purchase | VIP product purchase | Confirmation + Zoom background |
+| 02 | VIP Purchase | VIP product purchase | Confirmation + Zoom BG + VIP Session reminders |
 | 03 | Pre-Event | After registration | 30-day countdown sequence |
 | 04 | Day-Of | Offset from T=0 | 4hr to +30min reminders |
 | 05 | Mid-Event | Manual 999-day wait | Real-time broadcast control |
 | 06 | Post-Event | `doe-attended` tag | Value sequence (5 days) |
-| 07 | VIP Session | VIP + post-event | Monday session reminders |
-| 08 | L3 Purchase | L3 product purchase | Confirmation + Welcome Party |
-| 09 | L3 Close | Non-L3 + post-event | Deadline sequence |
+| 07 | L3 Purchase | L3 product purchase | Confirmation + Welcome Party reminders |
+| 08 | L3 Close | Non-L3 + post-event | Deadline sequence |
 
 ---
 

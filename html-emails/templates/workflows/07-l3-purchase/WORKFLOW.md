@@ -1,4 +1,4 @@
-# Workflow 08: L3 Purchase Sequence
+# Workflow 07: L3 Purchase Sequence
 
 ## Overview
 
@@ -18,7 +18,7 @@ This workflow sends confirmation, onboarding content, and Welcome Party reminder
 
 When a contact purchases Level 3:
 1. Add them to this workflow (08-l3-purchase)
-2. **Remove them from workflow 09-l3-offer-close** (if enrolled)
+2. **Remove them from workflow 08-l3-offer-close** (if enrolled)
 3. This prevents them from receiving sales emails for a product they already bought
 
 ## Timing Reference
@@ -111,7 +111,7 @@ This workflow is ONLY for Level 3 members:
 - ✅ People who purchased Level 3 after the workshop
 
 NOT for:
-- ❌ Standard registrants (they receive 09-l3-offer-close instead)
+- ❌ Standard registrants (they receive 08-l3-offer-close instead)
 - ❌ VIP-only members (they only get VIP session, not Welcome Party)
 
 ## Level 3 Benefits Included
@@ -137,7 +137,7 @@ NOT for:
 ## Testing Checklist
 
 - [ ] Confirm L3 tag is added on purchase
-- [ ] Verify removal from 09-l3-offer-close workflow
+- [ ] Verify removal from 08-l3-offer-close workflow
 - [ ] Test Welcome Party Zoom link
 - [ ] Confirm all custom values render correctly
 - [ ] Test on mobile devices
