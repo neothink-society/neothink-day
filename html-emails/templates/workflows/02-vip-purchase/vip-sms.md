@@ -3,7 +3,7 @@
 ## VIP Confirmation SMS (Immediate)
 
 ```
-Neothink Society: VIP ACCESS CONFIRMED! You're in the Elite Circle for {{custom_values.doe_event_dates}}. Check your email for your exclusive VIP Zoom background & session details.
+Neothink Society: VIP access confirmed! You're in the Elite Circle for {{custom_values.doe_event_dates}}. Check your email for your exclusive VIP Zoom background & session details.
 ```
 
 **Character Count:** ~155/160

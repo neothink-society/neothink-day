@@ -3,7 +3,7 @@
 ## Day 1 - Opening
 
 ```
-Neothink Society: 🔴 Day of Enlightenment has officially begun! The opening ceremony is happening NOW. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Day of Enlightenment has officially begun! The opening ceremony is happening now. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Stage:** 1
@@ -14,7 +14,7 @@ Neothink Society: 🔴 Day of Enlightenment has officially begun! The opening ce
 ## Day 1 - WH Takes Stage
 
 ```
-Neothink Society: 🔴 Wallace Hamilton is NOW on stage! The Friday Night Essence discovery begins. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Wallace Hamilton is now on stage! The Friday Night Essence discovery begins. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Stage:** 2
@@ -25,11 +25,11 @@ Neothink Society: 🔴 Wallace Hamilton is NOW on stage! The Friday Night Essenc
 ## Day 1 - WH Live Now (Late Joiner Hook)
 
 ```
-Neothink Society: 🔴 Wallace Hamilton is LIVE NOW teaching about your Friday Night Essence! Don't miss this. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Wallace Hamilton is live now teaching about your Friday Night Essence! Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Stage:** 3
-**Character Count:** ~135/160
+**Character Count:** ~120/160
 
 ---
 
@@ -47,11 +47,11 @@ Neothink Society: Lunch break! Return at {{custom_values.doe_day1_return_time}} 
 ## Day 1 - Back from Lunch
 
 ```
-Neothink Society: 🔴 We're BACK! Wealth Engine segment starting NOW. This is where your financial breakthrough happens. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: We're back! Wealth Engine segment starting now. This is where your financial breakthrough happens. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Stage:** 5
-**Character Count:** ~145/160
+**Character Count:** ~140/160
 
 ---
 
@@ -69,11 +69,11 @@ Neothink Society: Day 1 complete! Incredible breakthroughs today. Get rest—tom
 ## Day 2 - Opening
 
 ```
-Neothink Society: 🔴 DAY 2 IS LIVE! Integration day begins now. Everything comes together today. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Day 2 is live! Integration day begins now. Everything comes together today. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Stage:** 8
-**Character Count:** ~120/160
+**Character Count:** ~115/160
 
 ---
 
@@ -91,7 +91,7 @@ Neothink Society: Day 2 lunch break! Return at {{custom_values.doe_day2_return_t
 ## Day 2 - Back from Lunch
 
 ```
-Neothink Society: 🔴 Final session starting NOW! Integration and your path forward. This is it. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Final session starting now! Integration and your path forward. This is it. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Stage:** 11
@@ -102,7 +102,7 @@ Neothink Society: 🔴 Final session starting NOW! Integration and your path for
 ## Day 2 - L3 Offer
 
 ```
-Neothink Society: Level 3 enrollment is NOW OPEN! The next level of your transformation. Details: {{custom_values.doe_l3_enrollment_url}}
+Neothink Society: Level 3 enrollment is now open! The next level of your transformation. Details: {{custom_values.doe_l3_enrollment_url}}
 ```
 
 **Stage:** 14
@@ -113,6 +113,6 @@ Neothink Society: Level 3 enrollment is NOW OPEN! The next level of your transfo
 ## Notes
 
 - All SMS manually triggered via stage advancement
-- Use 🔴 emoji for LIVE status
+- Removed emoji to stay within 160 char standard SMS limit
 - Lunch break SMS optional (not urgent)
 - L3 offer SMS goes to all attendees

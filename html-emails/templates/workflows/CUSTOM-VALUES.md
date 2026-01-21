@@ -97,7 +97,7 @@ These rarely change between events:
 
 | Custom Value Key | Example Value | Used For |
 |------------------|---------------|----------|
-| `doe_workbook_url` | https://storage.googleapis.com/xxx.pdf | Workbook PDF |
+| `doe_workbook_url` | https://societysecrets.com/workbook | Workbook PDF |
 | `doe_golden_life_url` | neothinkday.com/your-golden-life | Golden Life Sheet |
 | `doe_wealth_engine_url` | neothinkday.com/wealth-engine-calculator | Wealth Engine |
 | `doe_workshop_hub_url` | neothinkday.com/home | Workshop Hub page |

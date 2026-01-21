@@ -25,7 +25,7 @@ To send at 9am Eastern when event starts at 11am Eastern:
 
 | Step | Offset | Template | Subject Line |
 |------|--------|----------|--------------|
-| 1 | -29d 2h | `countdown-29days.html` | Your transformation begins in 29 days |
+| 1 | -30d 2h | `countdown-30days.html` | Your transformation begins in 30 days |
 | 2 | -25d 2h | `countdown-25days.html` | 25 days until everything changes |
 | 3 | -20d 2h | `countdown-20days.html` | 20 days: Start preparing your mind |
 | 4 | -14d 2h | `countdown-14days.html` | 2 weeks from now, you'll be different |
@@ -105,7 +105,7 @@ Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_v
 
 | Days Before | Send at 9am ET | Offset from T=0 |
 |-------------|----------------|-----------------|
-| 29 | Dec 26 | -29d 2h |
+| 30 | Dec 25 | -30d 2h |
 | 25 | Dec 30 | -25d 2h |
 | 20 | Jan 4 | -20d 2h |
 | 14 | Jan 10 | -14d 2h |

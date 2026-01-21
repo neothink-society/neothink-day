@@ -25,7 +25,7 @@ Neothink Society: 3 days until your transformation begins. Block {{custom_values
 ## 1 Day Before (Morning)
 
 ```
-Neothink Society: TOMORROW is the Day of Enlightenment! {{custom_values.doe_day1_start_time}}. Set your alarm. Prepare your space. This is what you've been waiting for.
+Neothink Society: Tomorrow is the Day of Enlightenment! {{custom_values.doe_day1_start_time}}. Set your alarm. Prepare your space. This is what you've been waiting for.
 ```
 
 **Offset:** -23h

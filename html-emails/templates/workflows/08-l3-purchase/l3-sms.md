@@ -3,11 +3,11 @@
 ## Purchase Confirmation
 
 ```
-Neothink Society: Welcome to Level 3! You're in the inner circle now. Check your email for what happens next, including your VIP Session and Welcome Party details.
+Neothink Society: Welcome to Level 3! You're in the inner circle. Check your email for VIP Session & Welcome Party details.
 ```
 
 **Send Time:** Immediately upon purchase
-**Character Count:** ~165/160 (may need shortening)
+**Character Count:** ~125/160
 
 ---
 
@@ -47,7 +47,7 @@ Neothink Society: Your Level 3 Welcome Party starts in 30 minutes! Join: {{custo
 ## Welcome Party LIVE
 
 ```
-Neothink Society: Welcome Party is LIVE NOW! Join us to celebrate: {{custom_values.doe_welcome_party_zoom}}
+Neothink Society: Welcome Party is live now! Join us to celebrate: {{custom_values.doe_welcome_party_zoom}}
 ```
 
 **Offset:** +104h from T=0 (Wed 7pm ET)

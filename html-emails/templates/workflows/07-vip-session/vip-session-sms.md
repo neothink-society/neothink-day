@@ -3,29 +3,29 @@
 ## 1-Hour Reminder
 
 ```
-Neothink Society: Your VIP session starts in 1 HOUR at {{custom_values.doe_vip_session_time}}. Wallace Hamilton and senior mentors are waiting. Join: {{custom_values.doe_vip_session_zoom}}
+Neothink Society: Your VIP session starts in 1 hour at {{custom_values.doe_vip_session_time}}. Wallace Hamilton & senior mentors are waiting. Check email for Zoom link.
 ```
 
 **Offset:** +55h from T=0 (Mon 6pm ET)
-**Character Count:** ~175/160 (may need shortening based on custom value lengths)
+**Character Count:** ~155/160
 
 ---
 
 ## Session LIVE
 
 ```
-Neothink Society: VIP Session is LIVE NOW! Wallace Hamilton is on. Join immediately: {{custom_values.doe_vip_session_zoom}}
+Neothink Society: VIP Session is live now! Wallace Hamilton is on. Join: {{custom_values.doe_vip_session_zoom}}
 ```
 
 **Offset:** +56h from T=0 (Mon 7pm ET)
-**Character Count:** ~130/160
+**Character Count:** ~110/160
 
 ---
 
 ## Recording Available (Optional)
 
 ```
-Neothink Society: Your VIP session recording is ready. 3 hours of breakthrough insights. Watch now: {{custom_values.doe_vip_recording_url}}
+Neothink Society: Your VIP session recording is ready. 3 hours of breakthrough insights. Watch: {{custom_values.doe_vip_recording_url}}
 ```
 
 **Offset:** +71h from T=0 (Tue 10am ET)

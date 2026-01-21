@@ -63,7 +63,7 @@ workflows/
 |---|----------|---------|--------------|
 | 01 | Registration | Form submission | Confirmation + VIP upsell |
 | 02 | VIP Purchase | VIP product purchase | Confirmation + Zoom background |
-| 03 | Pre-Event | After registration | 29-day countdown sequence |
+| 03 | Pre-Event | After registration | 30-day countdown sequence |
 | 04 | Day-Of | Offset from T=0 | 4hr to +30min reminders |
 | 05 | Mid-Event | Manual 999-day wait | Real-time broadcast control |
 | 06 | Post-Event | `doe-attended` tag | Value sequence (5 days) |
@@ -93,7 +93,7 @@ All timing is based on **T=0 = Event Day 1 start time**.
 
 | Offset | Meaning |
 |--------|---------|
-| `-29d 2h` | 29 days, 2 hours before event (9am ET when event at 11am ET) |
+| `-30d 2h` | 30 days, 2 hours before event (9am ET when event at 11am ET) |
 | `T=0` | Event start time |
 | `+1d 1h` | 1 day, 1 hour after start (Day 2 start at 12pm) |
 | `+10h` | 10 hours after start (Sunday night) |
