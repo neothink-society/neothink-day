@@ -57,38 +57,56 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 
 **Base Time (T=0):** Workshop Day 1 start (Saturday 11am ET / 8am PT)
 
-| Step | Offset from T=0 | Actual Time | Template |
-|------|-----------------|-------------|----------|
-| 3 | +54h 30m | Mon 5:30pm ET | vip-session-90min.html |
-| 4 | +55h | Mon 6:00pm ET | vip-session-1hour.html |
-| 5 | +56h | Mon 7:00pm ET | vip-session-live.html |
-| 6 | +71h | Tue 10:00am ET | vip-session-recording.html |
+| Step | Offset from T=0 | Actual Time | Template | SMS |
+|------|-----------------|-------------|----------|-----|
+| 3 | +49h | Mon 12:00pm ET | — | Morning Reminder |
+| 4 | +54h 30m | Mon 5:30pm ET | vip-session-90min.html | 90-Minute Reminder |
+| 5 | +55h | Mon 6:00pm ET | vip-session-1hour.html | 1-Hour Reminder |
+| 6 | +56h | Mon 7:00pm ET | vip-session-live.html | Session LIVE |
+| 7 | +56h 15m | Mon 7:15pm ET | — | Late Joiner (optional) |
+| 8 | +71h | Tue 10:00am ET | vip-session-recording.html | Recording (optional) |
 
-### Step 3: 90-Minute Reminder
-- **Wait:** Until Monday 5:30pm ET
+### Step 3: Morning Reminder (SMS Only)
+- **Wait:** Until Monday 12:00pm ET (+49h)
+- **Action:** Send SMS
+- **Message:** See `vip-session-sms.md` → Morning Reminder
+
+### Step 4: 90-Minute Reminder
+- **Wait:** Until Monday 5:30pm ET (+54h 30m)
 - **Action:** Send Email
 - **Template:** `vip-session-90min.html`
 - **Subject:** VIP: Your exclusive session starts in 90 minutes
+- **Action:** Send SMS
+- **Message:** See `vip-session-sms.md` → 90-Minute Reminder
 
-### Step 4: 1-Hour Reminder
-- **Wait:** 30 minutes
+### Step 5: 1-Hour Reminder
+- **Wait:** 30 minutes (+55h)
 - **Action:** Send Email
 - **Template:** `vip-session-1hour.html`
 - **Subject:** 1 HOUR: Your VIP session starts at 4pm PT
-- **Optional:** Send SMS
+- **Action:** Send SMS
+- **Message:** See `vip-session-sms.md` → 1-Hour Reminder
 
-### Step 5: Session LIVE
-- **Wait:** 1 hour
+### Step 6: Session LIVE
+- **Wait:** 1 hour (+56h)
 - **Action:** Send Email
 - **Template:** `vip-session-live.html`
 - **Subject:** LIVE NOW: Your VIP session has started
 - **Action:** Send SMS
+- **Message:** See `vip-session-sms.md` → Session LIVE
 
-### Step 6: Recording Available
-- **Wait:** Until Tuesday 10:00am ET
+### Step 7: Late Joiner (Optional)
+- **Wait:** 15 minutes (+56h 15m)
+- **Action:** Send SMS (if not joined)
+- **Message:** See `vip-session-sms.md` → Late Joiner
+
+### Step 8: Recording Available
+- **Wait:** Until Tuesday 10:00am ET (+71h)
 - **Action:** Send Email
 - **Template:** `vip-session-recording.html`
 - **Subject:** Your VIP Session Recording: 3 Hours of Breakthrough
+- **Optional:** Send SMS
+- **Message:** See `vip-session-sms.md` → Recording Available
 
 ---
 
@@ -122,8 +140,10 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 
 | File | Purpose |
 |------|---------|
-| vip-sms.md | Purchase confirmation SMS |
-| vip-session-sms.md | VIP Session reminder SMS |
+| vip-sms.md | Purchase confirmation SMS (2 messages) |
+| vip-session-sms.md | VIP Session reminders (6 messages) |
+
+> **See `vip-session-sms.md` for complete VIP Session SMS sequence with character counts.**
 
 ---
 
