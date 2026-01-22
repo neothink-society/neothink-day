@@ -223,9 +223,9 @@ Transformation lives on the other side of comfort.
 ```
 Neothink Society: 72 HOURS.
 
-Day 1 focuses on uncovering your Friday Night Essence — the deepest motivational root that grants effortless focus and natural value creation.
+Day 1 focuses on a discovery that will change how you see yourself and your purpose.
 
-Pre-contemplate: What productive activity would you naturally do, even with unlimited time and money?
+Pre-contemplate: What would you create if money and time were no object?
 
 This question holds more power than you realize.
 
@@ -247,7 +247,7 @@ Neothink Society: VIP — 72 HOURS.
 
 Your investment in the inner circle is about to pay off.
 
-Day 1 focuses on uncovering your Friday Night Essence. But as VIP Elite, you'll go deeper with personalized guidance.
+Day 1 focuses on a discovery that changes everything. And as VIP Elite, you'll go deeper with personalized guidance.
 
 Between now and {{custom_values.doe_day_1_date_short}}:
 - Complete your pre-work
@@ -270,9 +270,7 @@ See you in the inner circle.
 ```
 Neothink Society: 48 HOURS.
 
-Day 1 concludes with the Wealth Shift — learning to replace "Can I afford this?" with "How can I afford this?"
-
-This simple question shift transforms consumers into creators.
+Day 1 concludes with the Millionaire Mindset — a simple shift that transforms how you see wealth and opportunity.
 
 Tech checklist:
 - Update Zoom to latest version
@@ -286,7 +284,7 @@ Your transformation begins in 2 days.
 
 **Offset:** -1d 23h
 **Audience:** Non-VIP only
-**Character Count:** ~340 (multi-segment)
+**Character Count:** ~280 (multi-segment)
 
 ---
 
