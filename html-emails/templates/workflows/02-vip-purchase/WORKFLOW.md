@@ -59,15 +59,18 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 
 | Step | Offset from T=0 | Actual Time | Template | SMS |
 |------|-----------------|-------------|----------|-----|
-| 3 | +49h | Mon 12:00pm ET | — | Morning Reminder |
+| 3 | +49h | Mon 12:00pm ET | vip-session-morning.html | Morning Reminder |
 | 4 | +54h 30m | Mon 5:30pm ET | vip-session-90min.html | 90-Minute Reminder |
 | 5 | +55h | Mon 6:00pm ET | vip-session-1hour.html | 1-Hour Reminder |
 | 6 | +56h | Mon 7:00pm ET | vip-session-live.html | Session LIVE |
 | 7 | +56h 15m | Mon 7:15pm ET | — | Late Joiner (optional) |
 | 8 | +71h | Tue 10:00am ET | vip-session-recording.html | Recording (optional) |
 
-### Step 3: Morning Reminder (SMS Only)
-- **Wait:** Until Monday 12:00pm ET (+49h)
+### Step 3: Morning Reminder
+- **Wait:** 2 days, 1 hour (+49h) → Mon 9am PT / 12pm ET
+- **Action:** Send Email
+- **Template:** `vip-session-morning.html`
+- **Subject:** Your VIP Session is Tonight
 - **Action:** Send SMS
 - **Message:** See `vip-session-sms.md` → Morning Reminder
 
@@ -129,6 +132,7 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 |------|---------|----------|
 | vip-confirmation.html | Purchase confirmation | `DOE 02 VIP Purchase Confirmation` |
 | vip-zoom-background.html | Zoom background download | `DOE 02 VIP Zoom Background` |
+| vip-session-morning.html | Morning reminder (day of VIP session) | `DOE 02 VIP Session Morning` |
 | vip-session-90min.html | 90-minute reminder | `DOE 02 VIP Session 90m` |
 | vip-session-1hour.html | 1-hour reminder | `DOE 02 VIP Session 1h` |
 | vip-session-live.html | LIVE notification | `DOE 02 VIP Session Live` |
