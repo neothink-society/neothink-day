@@ -146,10 +146,13 @@ Primary Colors:
 - Border: #333333 (dark gray)
 
 Status Colors:
-- Live/Urgent: #cc0000 (red)
-- Warning: #FF6B6B (coral)
+- Live/Urgent: #FFD700 (gold) - refined urgency, not aggressive
 - Success: #00aa00 (green)
 - VIP: #8B5CF6 (purple)
+
+NOTE: As of Jan 2026, we no longer use red (#FF0000, #FF6B6B, #cc0000)
+for urgency. All urgent/live indicators use gold #FFD700 for a refined,
+on-brand appearance. Urgency is conveyed through copy, not aggressive colors.
 */
 
 /* ==========================================================================
