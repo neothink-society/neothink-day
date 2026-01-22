@@ -79,25 +79,29 @@ To avoid sending late-joiner emails to people who are already in:
 
 ## SMS Messages
 
-### Day 1 - 1 Hour Before
-```
-Neothink Society: 1 HOUR until Day of Enlightenment begins! {{custom_values.doe_day_1_start_time}}. Have Zoom ready. This is what you've been waiting for!
-```
+> **See `day-of-sms.md` for complete SMS messages with character counts and alternatives.**
 
-### Day 1 - Live
-```
-Neothink Society: WE ARE LIVE! Day of Enlightenment has begun. Join immediately: {{custom_values.doe_zoom_link}}
-```
+**Day 1 SMS Schedule:**
+| Message | Offset | Time (PT) |
+|---------|--------|-----------|
+| 2 Hours Before | -2h | 6:00 AM |
+| Zoom Link | -1h | 7:00 AM |
+| Doors Open | -30m | 7:30 AM |
+| Live | T=0 | 8:00 AM |
+| Late 15min | +15m | 8:15 AM |
+| Late 30min | +30m | 8:30 AM |
+| End of Day | +9h | 5:00 PM |
 
-### Day 2 - 1 Hour Before
-```
-Neothink Society: Day 2 starts in 1 hour! {{custom_values.doe_day_2_start_time}}. Yesterday was just the beginning. Today we integrate.
-```
-
-### Day 2 - Live
-```
-Neothink Society: DAY 2 IS LIVE! Integration begins now. Join: {{custom_values.doe_zoom_link}}
-```
+**Day 2 SMS Schedule:**
+| Message | Offset | Time (PT) |
+|---------|--------|-----------|
+| 2 Hours Before | +23h | 7:00 AM |
+| 45 Minutes | +24h 15m | 8:15 AM |
+| Doors Open | +24h 45m | 8:45 AM |
+| Live | +25h | 9:00 AM |
+| Late 15min | +25h 15m | 9:15 AM |
+| Late 30min | +25h 30m | 9:30 AM |
+| Complete | +33h | 5:00 PM |
 
 ---
 
