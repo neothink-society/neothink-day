@@ -1,13 +1,8 @@
 # Mid-Event Workshop SMS Messages
 
-## Day 1 - Opening
-
-```
-Neothink Society: Day of Enlightenment has officially begun! The opening ceremony is happening now. Join: {{custom_values.doe_zoom_link}}
-```
-
-**Stage:** 1
-**Character Count:** ~125/160
+> **Note:** Day 1 and Day 2 "We're live" opening messages are handled automatically by
+> `04-day-of-reminders/day-of-sms.md` using offset triggers (T=0 and +25h).
+> This file contains only the manually-triggered mid-event broadcasts.
 
 ---
 
@@ -66,17 +61,6 @@ Neothink Society: Day 1 complete! Incredible breakthroughs today. Get rest—tom
 
 ---
 
-## Day 2 - Opening
-
-```
-Neothink Society: Day 2 is live! Integration day begins now. Everything comes together today. Join: {{custom_values.doe_zoom_link}}
-```
-
-**Stage:** 8
-**Character Count:** ~115/160
-
----
-
 ## Day 2 - Lunch Break
 
 ```
@@ -112,7 +96,8 @@ Neothink Society: Level 3 enrollment is now open! The next level of your transfo
 
 ## Notes
 
-- All SMS manually triggered via stage advancement
+- All SMS in this file are manually triggered via stage advancement
+- Day 1/Day 2 opening ("we're live") messages are in `04-day-of-reminders/day-of-sms.md`
 - Removed emoji to stay within 160 char standard SMS limit
 - Lunch break SMS optional (not urgent)
 - L3 offer SMS goes to all attendees
