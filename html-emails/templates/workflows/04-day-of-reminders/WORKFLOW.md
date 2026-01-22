@@ -15,7 +15,6 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 
 | Offset | Time (ET) | Template | Subject Line |
 |--------|-----------|----------|--------------|
-| -4h | 7:00 AM | `day1-4hours.html` | ☀️ Good morning — 4 hours until transformation |
 | -2h | 9:00 AM | `day1-2hours.html` | 2 hours to go — are you ready? |
 | -1h | 10:00 AM | `day1-1hour.html` | 1 HOUR — Final preparations |
 | -30m | 10:30 AM | `day1-30min.html` | 30 MINUTES — Get in position |
@@ -60,13 +59,13 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 ### Option B: Combined Workflow with Wait Actions
 
 1. Create workflow: `DOE - Day-Of Reminders`
-2. Trigger: **Event start date at 7:00 AM ET** (-4h from start)
+2. Trigger: **Event start date at 9:00 AM ET** (-2h from start)
 3. Chain with Wait actions:
-   - Send 4-hour email
-   - Wait 2 hours
    - Send 2-hour email
    - Wait 1 hour
    - Send 1-hour email
+   - Wait 30 min
+   - Send 30-min email
    - etc.
 
 ### Late Joiner Logic (Optional)
@@ -106,7 +105,7 @@ Neothink Society: DAY 2 IS LIVE! Integration begins now. Join: {{custom_values.d
 
 | Event | Offset | Time (ET) |
 |-------|--------|-----------|
-| Day 1, 4h before | -4h | 7:00 AM |
+| Day 1, 2h before | -2h | 9:00 AM |
 | Day 1 start | T=0 | 11:00 AM |
 | Day 1, 30m after | +30m | 11:30 AM |
 | Day 2, 2h before | +23h | 10:00 AM next day |
@@ -121,7 +120,6 @@ Neothink Society: DAY 2 IS LIVE! Integration begins now. Join: {{custom_values.d
 
 | File | GHL Template Name |
 |------|-------------------|
-| `day1-4hours.html` | `DOE 04 Day 1 Reminder 4h` |
 | `day1-2hours.html` | `DOE 04 Day 1 Reminder 2h` |
 | `day1-1hour.html` | `DOE 04 Day 1 Reminder 1h` |
 | `day1-30min.html` | `DOE 04 Day 1 Reminder 30m` |
