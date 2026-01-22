@@ -132,7 +132,9 @@ These rarely change between events:
 | `doe_golden_life_url` | https://neothinkday.com/your-golden-life | Golden Life Sheet |
 | `doe_wealth_engine_url` | https://neothinkday.com/wealth-engine-calculator | Wealth Engine Calculator |
 | `doe_workshop_hub_url` | https://neothinkday.com/home | Workshop Hub page |
+| `doe_zoom_guide_url` | https://neothinkday.com/zoom | Zoom setup guide page |
 | `doe_vip_upgrade_url` | https://neothinkday.com/vip-upgrade | VIP upgrade page |
+| `doe_vip_background_url` | https://storage.googleapis.com/msgsndr/OWPT3ihPWINakwA0bGRQ/media/6921b0a35408c646432ae105.png | VIP Zoom background image |
 | `doe_vip_recording_url` | https://neothinkday.com/vip-session-recording | VIP session recording |
 | `doe_welcome_party_recording_url` | https://neothinkday.com/level-three-welcome-party | Welcome party recording |
 
