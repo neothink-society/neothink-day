@@ -106,7 +106,7 @@ All offsets are BEFORE the deadline (negative from T=0).
 {{custom_values.doe_l3_deadline}}              → Wednesday, January 28 at 11:59 PM ET
 {{custom_values.doe_l3_deadline_short}}        → 11:59 PM Wednesday
 {{custom_values.doe_l3_enrollment_url}}        → https://societysecrets.com/level3
-{{custom_values.doe_qa_call_link}}             → https://calendly.com/neothink/l3-qa
+{{custom_values.doe_qa_call_link}}             → https://societysecrets.com/schedule
 {{custom_values.doe_vip_session_date}}         → Monday, January 26
 {{custom_values.doe_vip_session_time}}         → 4:00 PM Pacific / 7:00 PM Eastern
 ```
