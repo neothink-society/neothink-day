@@ -4,6 +4,30 @@
 
 ---
 
+## Monday Afternoon (Introduction)
+
+```
+Neothink Society: Ready to continue your transformation? Level 3 includes the VIP Session and Welcome Party. Details: {{custom_values.doe_l3_enrollment_url}}
+```
+
+**Offset:** -2d 10h (Mon 11am PT / 2pm ET)
+**GHL:** Days: 2, Hours: 10 — Before event
+**Character Count:** ~155/160
+
+---
+
+## Tuesday Afternoon (Q&A Offer)
+
+```
+Neothink Society: Questions about Level 3? Schedule a quick call with our team: {{custom_values.doe_qa_call_link}}
+```
+
+**Offset:** -1d 10h (Tue 11am PT / 2pm ET)
+**GHL:** Days: 1, Hours: 10 — Before event
+**Character Count:** ~120/160
+
+---
+
 ## Tuesday Evening (24 Hours)
 
 ```
@@ -12,6 +36,18 @@ Neothink Society: Level 3 enrollment ends tomorrow at 11:59 PM ET. Questions? Re
 
 **Offset:** -1d 5h (Tue 4pm PT / 7pm ET)
 **GHL:** Days: 1, Hours: 5 — Before event
+**Character Count:** ~145/160
+
+---
+
+## Wednesday Afternoon (10 Hours)
+
+```
+Neothink Society: Level 3 enrollment closes tonight at 11:59 PM ET. The Welcome Party is tomorrow. {{custom_values.doe_l3_enrollment_url}}
+```
+
+**Offset:** -10h (Wed 11am PT / 2pm ET)
+**GHL:** Days: 0, Hours: 10 — Before event
 **Character Count:** ~145/160
 
 ---

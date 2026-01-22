@@ -49,6 +49,7 @@ All offsets are BEFORE the deadline (negative from T=0).
 - **Action:** Send Email
 - **Template:** `monday-afternoon.html`
 - **Subject:** Level 3: What happens next
+- **Action:** Send SMS
 
 ### Step 2: Q&A Call Offer (Tuesday Afternoon)
 - **Wait:** 1 day 10 hours before deadline (Tue 11am PT / 2pm ET)
@@ -57,6 +58,7 @@ All offsets are BEFORE the deadline (negative from T=0).
 - **Action:** Send Email
 - **Template:** `qa-call-offer.html`
 - **Subject:** Questions about Level 3? Let's talk
+- **Action:** Send SMS
 
 ### Step 3: Tuesday Evening (24 Hours Warning)
 - **Wait:** 1 day 5 hours before deadline (Tue 4pm PT / 7pm ET)
@@ -74,6 +76,7 @@ All offsets are BEFORE the deadline (negative from T=0).
 - **Action:** Send Email
 - **Template:** `wednesday-afternoon.html`
 - **Subject:** Tonight at midnight: Level 3 closes
+- **Action:** Send SMS
 
 ### Step 5: Wednesday 6pm (6 Hours)
 - **Wait:** 6 hours before deadline (Wed 3pm PT / 6pm ET)
