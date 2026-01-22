@@ -79,37 +79,16 @@ To send at **9:00 AM Pacific** (optimal send time for engagement):
 | Tuesday 9 AM | 9:00 AM PT | 12:00 PM ET | +73h |
 | Wednesday 4 PM (L3 close) | 4:00 PM PT | 7:00 PM ET | +104h |
 
-## Event Calendar Reference
+## GHL Custom Values
 
-### January 2026 Event
-- **Event:** January 24-25, 2026
-- **T=0:** Saturday, Jan 24, 2026 at 8:00 AM Pacific
-- **Domain:** neothinkday.com
-
-**Key Dates (Jan 2026):**
-| Offset | Date | Time (PT) | Purpose |
-|--------|------|-----------|---------|
-| -29d 23h | Dec 25 | 9 AM PT | 30-day countdown (Christmas!) |
-| -24d 23h | Dec 30 | 9 AM PT | 25-day countdown |
-| -19d 23h | Jan 4 | 9 AM PT | 20-day countdown |
-| -13d 23h | Jan 10 | 9 AM PT | 14-day countdown |
-| -9d 23h | Jan 14 | 9 AM PT | 10-day countdown |
-| -8d 23h | Jan 15 | 9 AM PT | 9-day countdown (pre-work starts) |
-| -6d 23h | Jan 17 | 9 AM PT | 7-day countdown |
-| -4d 23h | Jan 19 | 9 AM PT | 5-day countdown |
-| -3d 23h | Jan 20 | 9 AM PT | 4-day countdown |
-| -2d 23h | Jan 21 | 9 AM PT | 3-day countdown |
-| -1d 23h | Jan 22 | 9 AM PT | 2-day countdown |
-| -23h | Jan 23 | 9 AM PT | 1-day countdown (morning) |
-| -16h | Jan 23 | 4 PM PT | 1-day countdown (evening) |
-| T=0 | Jan 24 | 8 AM PT | Day 1 starts |
-| +25h | Jan 25 | 9 AM PT | Day 2 starts |
-| +56h | Jan 26 | 4 PM PT | L3 Welcome Party |
-| +104h | Jan 28 | 4 PM PT | L3 Offer Close |
+Event dates are configured via GHL custom values, not hardcoded:
+- `{{custom_values.doe_event_dates}}` - Event date range (e.g., "January 24-25, 2026")
+- `{{custom_values.doe_day1_date}}` - Day 1 date
+- `{{custom_values.doe_day2_date}}` - Day 2 date
 
 ## Avoiding Conflicts
 
-- Check for major holidays before scheduling
-- **Dec 25 (Christmas)**: 30-day email lands on Christmas - consider adjusting
-- Avoid New Year's Day (Jan 1)
-- Consider time zones (always specify Pacific AND Eastern)
+When scheduling events, check for:
+- Major holidays (Christmas, New Year's, etc.)
+- 30-day countdown may land on holidays depending on event date
+- Always specify Pacific AND Eastern times in communications
