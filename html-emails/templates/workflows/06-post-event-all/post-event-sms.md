@@ -44,6 +44,28 @@ Neothink Society: Your Friday Night Essence workbook has arrived. Deepen your di
 
 ---
 
+## Thursday - Ambassador
+
+```
+Neothink Society: Ready to share what you've discovered? Learn how to become an Ambassador and help others transform. Details in your email!
+```
+
+**Offset:** +87h
+**Character Count:** ~140/160
+
+---
+
+## Friday - Infinite Vector
+
+```
+Neothink Society: Your transformation is just beginning. Today's email reveals The Infinite Vector — your path forward. Don't miss it!
+```
+
+**Offset:** +111h
+**Character Count:** ~135/160
+
+---
+
 ## Notes
 
 - SMS are optional companions to emails

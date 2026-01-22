@@ -15,12 +15,12 @@ Value-delivery sequence sent to ALL attendees after the workshop ends. Reinforce
 
 | Step | Offset | Day | Template | Subject Line |
 |------|--------|-----|----------|--------------|
-| 1 | +10h | Sun 9pm | `sunday-night-anchor.html` | What you discovered today changes everything |
-| 2 | +22h | Mon 9am | `monday-golden-life.html` | Your Golden Life Sheet is ready |
-| 3 | +46h | Tue 9am | `tuesday-wealth-engine.html` | Calculate your Wealth Engine |
-| 4 | +70h | Wed 9am | `wednesday-fne-workbook.html` | Your FNE Workbook awaits |
-| 5 | +94h | Thu 9am | `thursday-ambassador.html` | Become an Ambassador |
-| 6 | +118h | Fri 9am | `friday-infinite-vector.html` | The Infinite Vector |
+| 1 | +3h | Sun 9pm | `sunday-night-anchor.html` | What you discovered today changes everything |
+| 2 | +15h | Mon 9am | `monday-golden-life.html` | Your Golden Life Sheet is ready |
+| 3 | +39h | Tue 9am | `tuesday-wealth-engine.html` | Calculate your Wealth Engine |
+| 4 | +63h | Wed 9am | `wednesday-fne-workbook.html` | Your FNE Workbook awaits |
+| 5 | +87h | Thu 9am | `thursday-ambassador.html` | Become an Ambassador |
+| 6 | +111h | Fri 9am | `friday-infinite-vector.html` | The Infinite Vector |
 
 *Offsets from event end (approximately 6pm ET Sunday)*
 
@@ -86,17 +86,18 @@ This sequence runs for ALL attendees regardless of L3 purchase.
 
 ---
 
-## SMS Messages (Optional)
+## SMS Messages
 
-### Monday - Golden Life Sheet
-```
-Neothink Society: Your Golden Life Sheet is now available! This is where your transformation becomes actionable. Check your email to download.
-```
+See `post-event-sms.md` for complete SMS sequence. SMS messages accompany each email:
 
-### Tuesday - Wealth Engine
-```
-Neothink Society: Your Wealth Engine Calculator is ready. Calculate your path to financial freedom. Link in your email!
-```
+| Day | SMS Topic | Offset |
+|-----|-----------|--------|
+| Sunday 9pm | Anchor | +3h |
+| Monday 9am | Golden Life Sheet | +15h |
+| Tuesday 9am | Wealth Engine | +39h |
+| Wednesday 9am | FNE Workbook | +63h |
+| Thursday 9am | Ambassador | +87h |
+| Friday 9am | Infinite Vector | +111h |
 
 ---
 
