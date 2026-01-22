@@ -59,10 +59,31 @@ Neothink Society: VIP session in 1 HOUR.
 
 Wallace Hamilton and senior mentors are preparing for you.
 
-Join: {{custom_values.doe_vip_session_zoom}}
+Zoom link coming in 30 minutes.
 ```
 
-**Character Count:** ~155/160
+**Character Count:** ~140/160
+
+---
+
+### 30-Minute Reminder
+**Offset:** -30m from T=0 (Mon 3:30pm PT / 6:30pm ET)
+**GHL:** Schedule for specific date/time
+
+```
+Neothink Society: VIP SESSION IN 30 MINUTES.
+
+Your exclusive session starts at 7pm ET (4pm PT).
+
+JOIN: {{custom_values.doe_vip_session_zoom}}
+
+Meeting ID: {{custom_values.doe_vip_session_id}}
+Passcode: {{custom_values.doe_vip_session_passcode}}
+
+See you inside.
+```
+
+**Character Count:** ~200 chars + Zoom URL (2-3 segments)
 
 ---
 
@@ -124,6 +145,7 @@ Watch: {{custom_values.doe_vip_recording_url}}
 | Morning Reminder | -7h | Schedule date/time | Mon 9am | Mon 12pm |
 | 90-Minute Reminder | -1h 30m | Schedule date/time | Mon 2:30pm | Mon 5:30pm |
 | 1-Hour Reminder | -1h | Schedule date/time | Mon 3pm | Mon 6pm |
+| 30-Minute Reminder | -30m | Schedule date/time | Mon 3:30pm | Mon 6:30pm |
 | Session LIVE | T=0 | Schedule date/time | Mon 4pm | Mon 7pm |
 | Late Joiner | +15m | Wait 15 min | Mon 4:15pm | Mon 7:15pm |
 | Recording Available | +15h | Wait 15 hours | Tue 7am | Tue 10am |
