@@ -53,7 +53,7 @@ This isn't optional homework — it lays the emotional and philosophical groundw
 
 Start this week. You'll be glad you did.
 
-Workshop Hub: neothinkday.com/home
+Workshop Hub: {{custom_values.doe_workshop_hub_url}}
 ```
 
 **Offset:** -24d 23h
@@ -74,7 +74,7 @@ Important: Have physical writing materials ready — pen and paper. The act of w
 
 This work is active. Your participation creates the breakthrough.
 
-Download: neothinkday.com/home
+Download: {{custom_values.doe_workshop_hub_url}}
 ```
 
 **Offset:** -19d 23h
