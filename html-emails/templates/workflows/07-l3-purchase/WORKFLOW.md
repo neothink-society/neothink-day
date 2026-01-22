@@ -26,16 +26,16 @@ When a contact purchases Level 3:
 **Base Time (T=0):** Workshop Day 1 start (Saturday 11am ET / 8am PT)
 **Welcome Party:** Wednesday 7pm ET / 4pm PT
 
-| Step | Offset from T=0 | Actual Time | Content |
-|------|-----------------|-------------|---------|
-| 1 | Immediate | Upon purchase | l3-confirmation.html |
-| 2 | +34h | Sun 9pm ET | l3-sunday-night.html |
-| 3 | +46h | Mon 9am ET | l3-monday-morning.html |
-| 4 | +79h | Tue 7pm ET | welcome-party-reminder.html |
-| 5 | +94h | Wed 9am ET | welcome-party-today.html |
-| 6 | +103.5h | Wed 6:30pm ET | welcome-party-30min.html |
-| 7 | +104h | Wed 7pm ET | welcome-party-live.html |
-| 8 | +119h | Thu 10am ET | welcome-party-recording.html |
+| Step | Offset from T=0 | Actual Time (ET) | Actual Time (PT) | Content |
+|------|-----------------|------------------|------------------|---------|
+| 1 | Immediate | Upon purchase | Upon purchase | l3-confirmation.html |
+| 2 | +34h | Sun 9pm ET | Sun 6pm PT | l3-sunday-night.html |
+| 3 | +46h | Mon 9am ET | Mon 6am PT | l3-monday-morning.html |
+| 4 | +80h | Tue 7pm ET | Tue 4pm PT | welcome-party-reminder.html |
+| 5 | +94h | Wed 9am ET | Wed 6am PT | welcome-party-today.html |
+| 6 | +103.5h | Wed 6:30pm ET | Wed 3:30pm PT | welcome-party-30min.html |
+| 7 | +104h | Wed 7pm ET | Wed 4pm PT | welcome-party-live.html |
+| 8 | +119h | Thu 10am ET | Thu 7am PT | welcome-party-recording.html |
 
 ## Workflow Steps
 
@@ -47,45 +47,46 @@ When a contact purchases Level 3:
 - **Action:** Send SMS
 
 ### Step 2: Sunday Night (Post-Workshop)
-- **Wait:** Until Sunday 9pm ET
+- **Wait:** 1 day, 10 hours (+34h from T=0) → Sun 6pm PT / 9pm ET
 - **Action:** Send Email
 - **Template:** `l3-sunday-night.html`
 - **Subject:** Your first night as a Level 3 member
 
 ### Step 3: Monday Morning
-- **Wait:** Until Monday 9am ET
+- **Wait:** 1 day, 22 hours (+46h from T=0) → Mon 6am PT / 9am ET
 - **Action:** Send Email
 - **Template:** `l3-monday-morning.html`
 - **Subject:** Good morning, Level 3 member — Tonight is your VIP Session
 
 ### Step 4: Welcome Party Reminder (Tuesday)
-- **Wait:** Until Tuesday 7pm ET
+- **Wait:** 3 days, 8 hours (+80h from T=0) → Tue 4pm PT / 7pm ET
 - **Action:** Send Email
 - **Template:** `welcome-party-reminder.html`
 - **Subject:** Tomorrow: Your Level 3 Welcome Party
 
 ### Step 5: Welcome Party Day (Wednesday Morning)
-- **Wait:** Until Wednesday 9am ET
+- **Wait:** 3 days, 22 hours (+94h from T=0) → Wed 6am PT / 9am ET
 - **Action:** Send Email
 - **Template:** `welcome-party-today.html`
 - **Subject:** Today: Your Level 3 Welcome Party
+- **Action:** Send SMS (Morning Reminder)
 
 ### Step 6: Welcome Party 30 Minutes
-- **Wait:** Until Wednesday 6:30pm ET
+- **Wait:** 4 days, 7 hours, 30 minutes (+103.5h from T=0) → Wed 3:30pm PT / 6:30pm ET
 - **Action:** Send Email
 - **Template:** `welcome-party-30min.html`
 - **Subject:** Starting in 30 minutes: Level 3 Welcome Party
 - **Action:** Send SMS
 
 ### Step 7: Welcome Party LIVE
-- **Wait:** Until Wednesday 7pm ET
+- **Wait:** 4 days, 8 hours (+104h from T=0) → Wed 4pm PT / 7pm ET
 - **Action:** Send Email
 - **Template:** `welcome-party-live.html`
 - **Subject:** We're LIVE — Welcome Party Starting Now
 - **Action:** Send SMS
 
 ### Step 8: Welcome Party Recording
-- **Wait:** Until Thursday 10am ET
+- **Wait:** 4 days, 23 hours (+119h from T=0) → Thu 7am PT / 10am ET
 - **Action:** Send Email
 - **Template:** `welcome-party-recording.html`
 - **Subject:** Your Welcome Party Recording: The Leap Begins
@@ -133,6 +134,18 @@ NOT for:
 | welcome-party-30min.html | 30-minute countdown | `DOE 09 L3 Welcome Party 30m` |
 | welcome-party-live.html | LIVE notification | `DOE 09 L3 Welcome Party Live` |
 | welcome-party-recording.html | Recording available next day | `DOE 09 L3 Welcome Party Recording` |
+
+---
+
+## SMS Messages
+
+| File | Purpose |
+|------|---------|
+| l3-sms.md | All L3 SMS messages (9 messages) |
+
+> **See `l3-sms.md` for complete SMS sequence with GHL wait times and character counts.**
+
+---
 
 ## Testing Checklist
 
