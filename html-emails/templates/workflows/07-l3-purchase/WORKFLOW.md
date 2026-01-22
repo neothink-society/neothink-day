@@ -107,8 +107,8 @@ When a contact purchases Level 3:
 ## Audience Notes
 
 This workflow is ONLY for Level 3 members:
-- ✅ People who purchased Level 3 during the workshop
-- ✅ People who purchased Level 3 after the workshop
+- ✓ People who purchased Level 3 during the workshop
+- ✓ People who purchased Level 3 after the workshop
 
 NOT for:
 - ❌ Standard registrants (they receive 08-l3-offer-close instead)

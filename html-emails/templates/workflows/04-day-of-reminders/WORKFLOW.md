@@ -19,10 +19,10 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 | -2h | 9:00 AM | `day1-2hours.html` | 2 hours to go — are you ready? |
 | -1h | 10:00 AM | `day1-1hour.html` | 1 HOUR — Final preparations |
 | -30m | 10:30 AM | `day1-30min.html` | 30 MINUTES — Get in position |
-| -15m | 10:45 AM | `day1-15min.html` | 🔴 15 MINUTES — Open your Zoom |
-| T=0 | 11:00 AM | `day1-live.html` | 🔴 WE ARE LIVE — Join now! |
-| +15m | 11:15 AM | `day1-late-15min.html` | 🔴 We've started — join now! |
-| +30m | 11:30 AM | `day1-late-30min.html` | 🔴 You're missing it — get in here! |
+| -15m | 10:45 AM | `day1-15min.html` | 15 MINUTES — Open your Zoom |
+| T=0 | 11:00 AM | `day1-live.html` | WE ARE LIVE — Join now! |
+| +15m | 11:15 AM | `day1-late-15min.html` | We've started — join now! |
+| +30m | 11:30 AM | `day1-late-30min.html` | You're missing it — get in here! |
 
 ---
 
@@ -36,10 +36,10 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 | -1h | 11:00 AM | `day2-1hour.html` | 1 hour until Day 2 begins |
 | -45m | 11:15 AM | `day2-45min.html` | 45 minutes — prepare for integration |
 | -30m | 11:30 AM | `day2-30min.html` | 30 MINUTES — Get ready |
-| -15m | 11:45 AM | `day2-15min.html` | 🔴 15 MINUTES — Open Zoom |
-| T=D2 | 12:00 PM | `day2-live.html` | 🔴 DAY 2 IS LIVE — Join now! |
-| +15m | 12:15 PM | `day2-late-15min.html` | 🔴 Day 2 has started — join now! |
-| +30m | 12:30 PM | `day2-late-30min.html` | 🔴 Integration is happening — get in! |
+| -15m | 11:45 AM | `day2-15min.html` | 15 MINUTES — Open Zoom |
+| T=D2 | 12:00 PM | `day2-live.html` | DAY 2 IS LIVE — Join now! |
+| +15m | 12:15 PM | `day2-late-15min.html` | Day 2 has started — join now! |
+| +30m | 12:30 PM | `day2-late-30min.html` | Integration is happening — get in! |
 
 ---
 
@@ -87,7 +87,7 @@ Neothink Society: 1 HOUR until Day of Enlightenment begins! {{custom_values.doe_
 
 ### Day 1 - Live
 ```
-Neothink Society: 🔴 WE ARE LIVE! Day of Enlightenment has begun. Join immediately: {{custom_values.doe_zoom_link}}
+Neothink Society: WE ARE LIVE! Day of Enlightenment has begun. Join immediately: {{custom_values.doe_zoom_link}}
 ```
 
 ### Day 2 - 1 Hour Before
@@ -97,7 +97,7 @@ Neothink Society: Day 2 starts in 1 hour! {{custom_values.doe_day_2_start_time}}
 
 ### Day 2 - Live
 ```
-Neothink Society: 🔴 DAY 2 IS LIVE! Integration begins now. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: DAY 2 IS LIVE! Integration begins now. Join: {{custom_values.doe_zoom_link}}
 ```
 
 ---

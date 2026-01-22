@@ -130,7 +130,7 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 ## Audience
 
 This workflow is for:
-- ✅ VIP ticket purchasers
+- ✓ VIP ticket purchasers
 
 Note: Level 3 members also receive VIP benefits and should be included in VIP Session reminders (check for `vip` OR `level-3` tag in Part B).
 

@@ -103,7 +103,7 @@ When ready to trigger the next broadcast:
 
 ### Day 1 - WH Live Now
 ```
-Neothink Society: 🔴 Wallace Hamilton is LIVE NOW teaching about your Friday Night Essence! Don't miss this. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Wallace Hamilton is LIVE NOW teaching about your Friday Night Essence! Don't miss this. Join: {{custom_values.doe_zoom_link}}
 ```
 
 ### Day 1 - Lunch Break
@@ -113,12 +113,12 @@ Neothink Society: Lunch break! Return at {{custom_values.doe_day_1_return_time}}
 
 ### Day 1 - Back from Lunch
 ```
-Neothink Society: 🔴 We're BACK! Wealth Engine segment starting NOW. This is where your financial breakthrough happens. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: We're BACK! Wealth Engine segment starting NOW. This is where your financial breakthrough happens. Join: {{custom_values.doe_zoom_link}}
 ```
 
 ### Day 2 - Opening
 ```
-Neothink Society: 🔴 DAY 2 IS LIVE! Integration day begins now. Everything comes together today. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: DAY 2 IS LIVE! Integration day begins now. Everything comes together today. Join: {{custom_values.doe_zoom_link}}
 ```
 
 ### Day 2 - L3 Offer
