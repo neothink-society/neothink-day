@@ -26,36 +26,41 @@ If the contact purchases Level 3 at any point:
 
 ## Timing Reference
 
-**Base Time (T=0):** Workshop Day 1 start (Saturday 11am ET / 8am PT)
-**L3 Deadline:** Wednesday at midnight ET
+**T=0 (Deadline):** Wednesday January 28, 2026 @ 8:59 PM PT / 11:59 PM ET
+**GHL Event Type:** Select date → `2026-01-28 8:59 PM Pacific`
 
-| Step | Offset from T=0 | Actual Time | Content |
-|------|-----------------|-------------|---------|
-| 1 | +27h | Mon 2pm ET | monday-afternoon.html |
-| 2 | +51h | Tue 2pm ET | qa-call-offer.html |
-| 3 | +56h | Tue 7pm ET | tuesday-evening.html |
-| 4 | +75h | Wed 2pm ET | wednesday-afternoon.html |
-| 5 | +79h | Wed 6pm ET | wednesday-6pm.html |
-| 6 | +82h | Wed 9pm ET | wednesday-gentle-reminder.html |
+All offsets are BEFORE the deadline (negative from T=0).
+
+| Step | Offset | GHL Config | Send Time (PT) | Send Time (ET) | Content |
+|------|--------|------------|----------------|----------------|---------|
+| 1 | -2d 10h | 2d 10h before | Mon 11am | Mon 2pm | monday-afternoon.html |
+| 2 | -1d 10h | 1d 10h before | Tue 11am | Tue 2pm | qa-call-offer.html |
+| 3 | -1d 5h | 1d 5h before | Tue 4pm | Tue 7pm | tuesday-evening.html |
+| 4 | -10h | 0d 10h before | Wed 11am | Wed 2pm | wednesday-afternoon.html |
+| 5 | -6h | 0d 6h before | Wed 3pm | Wed 6pm | wednesday-6pm.html |
+| 6 | -3h | 0d 3h before | Wed 6pm | Wed 9pm | wednesday-gentle-reminder.html |
 
 ## Workflow Steps
 
 ### Step 1: Monday Afternoon (L3 Offer Introduction)
-- **Wait:** Until Monday 2pm ET (+27h from T=0)
+- **Wait:** 2 days 10 hours before deadline (Mon 11am PT / 2pm ET)
+- **GHL:** Days: 2, Hours: 10, Minutes: 0 — Before event
 - **Condition:** Check contact does NOT have `level-3` tag
 - **Action:** Send Email
 - **Template:** `monday-afternoon.html`
 - **Subject:** Level 3: What happens next
 
 ### Step 2: Q&A Call Offer (Tuesday Afternoon)
-- **Wait:** Until Tuesday 2pm ET (+51h from T=0)
+- **Wait:** 1 day 10 hours before deadline (Tue 11am PT / 2pm ET)
+- **GHL:** Days: 1, Hours: 10, Minutes: 0 — Before event
 - **Condition:** Check contact does NOT have `level-3` tag
 - **Action:** Send Email
 - **Template:** `qa-call-offer.html`
 - **Subject:** Questions about Level 3? Let's talk
 
 ### Step 3: Tuesday Evening (24 Hours Warning)
-- **Wait:** Until Tuesday 7pm ET (+56h from T=0)
+- **Wait:** 1 day 5 hours before deadline (Tue 4pm PT / 7pm ET)
+- **GHL:** Days: 1, Hours: 5, Minutes: 0 — Before event
 - **Condition:** Check contact does NOT have `level-3` tag
 - **Action:** Send Email
 - **Template:** `tuesday-evening.html`
@@ -63,14 +68,16 @@ If the contact purchases Level 3 at any point:
 - **Action:** Send SMS
 
 ### Step 4: Wednesday Afternoon (Final Hours - 10h)
-- **Wait:** Until Wednesday 2pm ET (+75h from T=0)
+- **Wait:** 10 hours before deadline (Wed 11am PT / 2pm ET)
+- **GHL:** Days: 0, Hours: 10, Minutes: 0 — Before event
 - **Condition:** Check contact does NOT have `level-3` tag
 - **Action:** Send Email
 - **Template:** `wednesday-afternoon.html`
 - **Subject:** Tonight at midnight: Level 3 closes
 
 ### Step 5: Wednesday 6pm (6 Hours)
-- **Wait:** Until Wednesday 6pm ET (+79h from T=0)
+- **Wait:** 6 hours before deadline (Wed 3pm PT / 6pm ET)
+- **GHL:** Days: 0, Hours: 6, Minutes: 0 — Before event
 - **Condition:** Check contact does NOT have `level-3` tag
 - **Action:** Send Email
 - **Template:** `wednesday-6pm.html`
@@ -78,7 +85,8 @@ If the contact purchases Level 3 at any point:
 - **Action:** Send SMS
 
 ### Step 6: Wednesday 9pm (Final Message)
-- **Wait:** Until Wednesday 9pm ET (+82h from T=0)
+- **Wait:** 3 hours before deadline (Wed 6pm PT / 9pm ET)
+- **GHL:** Days: 0, Hours: 3, Minutes: 0 — Before event
 - **Condition:** Check contact does NOT have `level-3` tag
 - **Action:** Send Email
 - **Template:** `wednesday-gentle-reminder.html`
@@ -92,8 +100,8 @@ If the contact purchases Level 3 at any point:
 {{custom_values.doe_day_1_date_short}}          → January 24
 {{custom_values.doe_day_2_date_short}}          → January 25
 {{custom_values.doe_welcome_party_date}}       → Wednesday, January 28
-{{custom_values.doe_l3_deadline}}              → Wednesday, January 28 at midnight ET
-{{custom_values.doe_l3_deadline_short}}        → midnight Wednesday
+{{custom_values.doe_l3_deadline}}              → Wednesday, January 28 at 11:59 PM ET
+{{custom_values.doe_l3_deadline_short}}        → 11:59 PM Wednesday
 {{custom_values.doe_l3_enrollment_url}}        → https://societysecrets.com/level3
 {{custom_values.doe_qa_call_link}}             → https://calendly.com/neothink/l3-qa
 {{custom_values.doe_vip_session_date}}         → Monday, January 26
@@ -118,7 +126,7 @@ NOT for:
 | Monday Afternoon | Value-focused | What Level 3 offers, no pressure |
 | Q&A Call Offer | Helpful | Offer to answer questions personally |
 | Tuesday Evening | Reminder | 24 hours left, pricing breakdown |
-| Wednesday Afternoon | Urgency | Final hours, Welcome Party tonight |
+| Wednesday Afternoon | Urgency | Final hours (10h left), Welcome Party tonight |
 | Wednesday 6pm | Countdown | 6 hours left, last chance |
 | Wednesday 9pm | Final | 3 hours, respectful close |
 
