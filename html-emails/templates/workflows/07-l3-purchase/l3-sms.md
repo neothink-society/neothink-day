@@ -3,6 +3,8 @@
 > **Note:** These messages are copy-pasted directly into GHL workflow SMS actions.
 > GHL handles STOP/opt-out compliance automatically — do not add STOP language.
 
+**T=0 Reference (Welcome Party):** Wednesday 4pm PT / 7pm ET
+
 ---
 
 ## L3 PURCHASE CONFIRMATION
@@ -10,7 +12,8 @@
 ---
 
 ### Purchase Confirmation
-**Offset:** Immediate (upon purchase)
+**Timing:** Immediate (upon purchase)
+**GHL:** Immediate
 
 ```
 Neothink Society: Welcome to Level 3. You're in the inner circle.
@@ -29,7 +32,8 @@ Your transformation continues.
 ---
 
 ### Sunday Night
-**Offset:** 1 day, 10 hours (+34h from T=0) → Sun 6pm PT / 9pm ET
+**Timing:** Sunday 6pm PT / 9pm ET
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: What a weekend, Level 3 member.
@@ -44,7 +48,8 @@ Rest well. See you there.
 ---
 
 ### Monday Morning (VIP Session Day)
-**Offset:** 1 day, 22 hours (+46h from T=0) → Mon 6am PT / 9am ET
+**Timing:** Monday 9am PT / 12pm ET
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: Good morning, Level 3 member.
@@ -58,12 +63,13 @@ Check your email for the Zoom link.
 
 ---
 
-## WELCOME PARTY SEQUENCE (Wednesday)
+## WELCOME PARTY SEQUENCE (T=0 = Wednesday 4pm PT / 7pm ET)
 
 ---
 
 ### Welcome Party Reminder (Tuesday Evening)
-**Offset:** 3 days, 8 hours (+80h from T=0) → Tue 4pm PT / 7pm ET
+**Offset:** -24h from T=0 (Tue 4pm PT / 7pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: Tomorrow is your Level 3 Welcome Party.
@@ -80,7 +86,8 @@ Check your email for details.
 ---
 
 ### Welcome Party Day (Wednesday Morning)
-**Offset:** 3 days, 22 hours (+94h from T=0) → Wed 6am PT / 9am ET
+**Offset:** -7h from T=0 (Wed 9am PT / 12pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: Today is your Level 3 Welcome Party.
@@ -95,7 +102,8 @@ Zoom link in your email. We can't wait to celebrate with you.
 ---
 
 ### Welcome Party 30 Minutes
-**Offset:** 4 days, 7 hours, 30 minutes (+103.5h from T=0) → Wed 3:30pm PT / 6:30pm ET
+**Offset:** -30m from T=0 (Wed 3:30pm PT / 6:30pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: Welcome Party starts in 30 MINUTES.
@@ -110,7 +118,8 @@ Get ready to celebrate.
 ---
 
 ### Welcome Party LIVE
-**Offset:** 4 days, 8 hours (+104h from T=0) → Wed 4pm PT / 7pm ET
+**Offset:** T=0 (Wed 4pm PT / 7pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: Welcome Party is LIVE.
@@ -125,7 +134,8 @@ Your inner circle awaits.
 ---
 
 ### Welcome Party Late Joiner (Optional)
-**Offset:** 4 days, 8 hours, 15 minutes (+104h 15m from T=0) → Wed 4:15pm PT / 7:15pm ET
+**Offset:** +15m from T=0 (Wed 4:15pm PT / 7:15pm ET)
+**GHL Wait:** 15 minutes
 
 ```
 Neothink Society: Welcome Party has started.
@@ -140,7 +150,8 @@ We're celebrating — get in here.
 ---
 
 ### Welcome Party Recording (Optional)
-**Offset:** 4 days, 23 hours (+119h from T=0) → Thu 7am PT / 10am ET
+**Offset:** +15h from T=0 (Thu 7am PT / 10am ET)
+**GHL Wait:** 15 hours
 
 ```
 Neothink Society: Your Welcome Party recording is ready.
@@ -156,17 +167,24 @@ Watch: {{custom_values.doe_welcome_party_recording_url}}
 
 ## COMPLETE SEND SCHEDULE
 
-| Message | GHL Wait | Offset | Time (PT) | Time (ET) |
-|---------|----------|--------|-----------|-----------|
-| Purchase Confirmation | Immediate | — | — | — |
-| Sunday Night | 1d 10h | +34h | 6pm | 9pm |
-| Monday Morning | 1d 22h | +46h | 6am | 9am |
-| Welcome Party Reminder | 3d 8h | +80h | 4pm | 7pm |
-| Welcome Party Day | 3d 22h | +94h | 6am | 9am |
-| Welcome Party 30min | 4d 7h 30m | +103.5h | 3:30pm | 6:30pm |
-| Welcome Party LIVE | 4d 8h | +104h | 4pm | 7pm |
-| Late Joiner (optional) | 4d 8h 15m | +104.25h | 4:15pm | 7:15pm |
-| Recording (optional) | 4d 23h | +119h | 7am | 10am |
+**Part A: Post-Purchase Onboarding (Scheduled Dates)**
+
+| Message | GHL Config | Time (PT) | Time (ET) |
+|---------|------------|-----------|-----------|
+| Purchase Confirmation | Immediate | — | — |
+| Sunday Night | Schedule date/time | Sun 6pm | Sun 9pm |
+| Monday Morning | Schedule date/time | Mon 9am | Mon 12pm |
+
+**Part B: Welcome Party Reminders (T=0 = Wed 4pm PT / 7pm ET)**
+
+| Message | Offset | GHL Config | Time (PT) | Time (ET) |
+|---------|--------|------------|-----------|-----------|
+| Welcome Party Reminder | -24h | Schedule date/time | Tue 4pm | Tue 7pm |
+| Welcome Party Day | -7h | Schedule date/time | Wed 9am | Wed 12pm |
+| Welcome Party 30min | -30m | Schedule date/time | Wed 3:30pm | Wed 6:30pm |
+| Welcome Party LIVE | T=0 | Schedule date/time | Wed 4pm | Wed 7pm |
+| Late Joiner (optional) | +15m | Wait 15 min | Wed 4:15pm | Wed 7:15pm |
+| Recording (optional) | +15h | Wait 15 hours | Thu 7am | Thu 10am |
 
 ---
 

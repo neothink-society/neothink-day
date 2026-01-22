@@ -3,6 +3,8 @@
 > **Note:** These messages are copy-pasted directly into GHL workflow SMS actions.
 > GHL handles STOP/opt-out compliance automatically — do not add STOP language.
 
+**T=0 Reference:** VIP Session start (Monday 4pm PT / 7pm ET)
+
 ---
 
 ## VIP SESSION COUNTDOWN (Monday)
@@ -10,7 +12,8 @@
 ---
 
 ### Morning Reminder
-**Offset:** +49h from T=0 (Mon 9:00 AM PT / 12:00 PM ET)
+**Offset:** -7h from T=0 (Mon 9am PT / 12pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: Your VIP session is TONIGHT.
@@ -28,7 +31,8 @@ This is your exclusive access. Be there.
 ---
 
 ### 90-Minute Reminder
-**Offset:** +54h 30m from T=0 (Mon 2:30 PM PT / 5:30 PM ET)
+**Offset:** -1h 30m from T=0 (Mon 2:30pm PT / 5:30pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: VIP session in 90 MINUTES.
@@ -45,7 +49,8 @@ Zoom link in your email.
 ---
 
 ### 1-Hour Reminder
-**Offset:** +55h from T=0 (Mon 3:00 PM PT / 6:00 PM ET)
+**Offset:** -1h from T=0 (Mon 3pm PT / 6pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: VIP session in 1 HOUR.
@@ -62,7 +67,8 @@ Join: {{custom_values.doe_vip_session_zoom}}
 ---
 
 ### Session LIVE
-**Offset:** +56h from T=0 (Mon 4:00 PM PT / 7:00 PM ET)
+**Offset:** T=0 (Mon 4pm PT / 7pm ET)
+**GHL:** Schedule for specific date/time
 
 ```
 Neothink Society: VIP Session is LIVE.
@@ -77,7 +83,8 @@ Join: {{custom_values.doe_vip_session_zoom}}
 ---
 
 ### Late Joiner (15min)
-**Offset:** +56h 15m from T=0 (Mon 4:15 PM PT / 7:15 PM ET)
+**Offset:** +15m from T=0 (Mon 4:15pm PT / 7:15pm ET)
+**GHL Wait:** 15 minutes
 
 ```
 Neothink Society: VIP session started.
@@ -93,7 +100,8 @@ You can still catch up.
 ---
 
 ### Recording Available (Optional)
-**Offset:** +71h from T=0 (Tue 7:00 AM PT / 10:00 AM ET)
+**Offset:** +15h from T=0 (Tue 7am PT / 10am ET)
+**GHL Wait:** 15 hours
 
 ```
 Neothink Society: Your VIP session recording is ready.
@@ -109,14 +117,16 @@ Watch: {{custom_values.doe_vip_recording_url}}
 
 ## COMPLETE SEND SCHEDULE
 
-| Message | Offset | Time (PT) | Time (ET) |
-|---------|--------|-----------|-----------|
-| Morning Reminder | +49h | 9:00 AM | 12:00 PM |
-| 90-Minute Reminder | +54h 30m | 2:30 PM | 5:30 PM |
-| 1-Hour Reminder | +55h | 3:00 PM | 6:00 PM |
-| Session LIVE | +56h | 4:00 PM | 7:00 PM |
-| Late Joiner | +56h 15m | 4:15 PM | 7:15 PM |
-| Recording Available | +71h | 7:00 AM | 10:00 AM |
+**T=0 = VIP Session start (Monday 4pm PT / 7pm ET)**
+
+| Message | Offset | GHL Config | Time (PT) | Time (ET) |
+|---------|--------|------------|-----------|-----------|
+| Morning Reminder | -7h | Schedule date/time | Mon 9am | Mon 12pm |
+| 90-Minute Reminder | -1h 30m | Schedule date/time | Mon 2:30pm | Mon 5:30pm |
+| 1-Hour Reminder | -1h | Schedule date/time | Mon 3pm | Mon 6pm |
+| Session LIVE | T=0 | Schedule date/time | Mon 4pm | Mon 7pm |
+| Late Joiner | +15m | Wait 15 min | Mon 4:15pm | Mon 7:15pm |
+| Recording Available | +15h | Wait 15 hours | Tue 7am | Tue 10am |
 
 ---
 
