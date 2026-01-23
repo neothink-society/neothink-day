@@ -13,7 +13,7 @@
 **Offset:** -2h (6:00 AM Pacific / 9:00 AM Eastern)
 
 ```
-Neothink Society: 2 HOURS until Day of Enlightenment.
+Neothink Society: 2 hours until Day of Enlightenment.
 
 Final prep:
 - Workbook ready
@@ -54,11 +54,11 @@ Join early. Get settled.
 **Offset:** -30m (7:30 AM Pacific / 10:30 AM Eastern)
 
 ```
-Neothink Society: DOORS ARE OPEN.
+Neothink Society: Doors are open.
 
 Already in the room? Welcome. You're in the right place.
 
-Not in yet? Join now:
+Not in yet? Join us:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 30 minutes until we begin.
@@ -74,11 +74,11 @@ The energy is building.
 **Offset:** T=0 (8:00 AM Pacific / 11:00 AM Eastern)
 
 ```
-Neothink Society: WE'RE LIVE.
+Neothink Society: We're live.
 
 In the room? Stay present. This is it.
 
-Not in yet? Join NOW:
+Not in yet? Join us:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 The opening has begun.
@@ -99,7 +99,7 @@ Neothink Society: We've started.
 The opening is happening now. Join:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-You can still catch up. Get in here.
+You can still catch up. We're saving your seat.
 ```
 
 **Character Count:** ~120/160
@@ -110,12 +110,12 @@ You can still catch up. Get in here.
 **Offset:** +30m (8:30 AM Pacific / 11:30 AM Eastern)
 
 ```
-Neothink Society: You're missing it.
+Neothink Society: We're underway.
 
-Day of Enlightenment is underway. Join now:
+Day of Enlightenment has started. Join us:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-Better late than never. Get in here.
+Better late than never. We're here for you.
 ```
 
 **Character Count:** ~125/160
@@ -165,7 +165,7 @@ You're not the same person you were this morning.
 **Offset:** +23h (7:00 AM Pacific / 10:00 AM Eastern)
 
 ```
-Neothink Society: Day 2 begins in 2 HOURS.
+Neothink Society: Day 2 begins in 2 hours.
 
 You know what to do now.
 
@@ -184,7 +184,7 @@ Yesterday was the foundation. Today, we build.
 
 **Alternative (single segment):**
 ```
-Neothink Society: Day 2 in 2 HOURS. 9am PT / 12pm ET.
+Neothink Society: Day 2 in 2 hours. 9am PT / 12pm ET.
 
 Have your workbook and Day 1 notes ready. Same Zoom link.
 
@@ -199,7 +199,7 @@ Yesterday was the foundation. Today, we build on it.
 **Offset:** +24h 15m (8:15 AM Pacific / 11:15 AM Eastern)
 
 ```
-Neothink Society: 45 MINUTES until Day 2.
+Neothink Society: 45 minutes until Day 2.
 
 Doors open in 15 min.
 
@@ -217,7 +217,7 @@ Whatever Day 1 stirred up — today we work with it.
 **Offset:** +24h 45m (8:45 AM Pacific / 11:45 AM Eastern)
 
 ```
-Neothink Society: DOORS OPEN — 15 minutes to Day 2.
+Neothink Society: Doors open — 15 minutes to Day 2.
 
 Already in? Welcome back. The energy is building.
 
@@ -235,7 +235,7 @@ Joining now?
 **Offset:** +25h (9:00 AM Pacific / 12:00 PM Eastern)
 
 ```
-Neothink Society: DAY 2 IS LIVE.
+Neothink Society: Day 2 is live.
 
 In the room? Thank you for showing up again.
 

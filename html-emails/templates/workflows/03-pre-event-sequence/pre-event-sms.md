@@ -149,7 +149,7 @@ This is your transformation. Protect it.
 ## 7 Days Before
 
 ```
-Neothink Society: 7 DAYS. The countdown begins.
+Neothink Society: Day 7. The countdown begins.
 
 One week from now, you'll be in transformation.
 
@@ -173,7 +173,7 @@ Are you ready to go ALL IN?
 ## 5 Days Before
 
 ```
-Neothink Society: 5 DAYS. Physical preparation time.
+Neothink Society: Day 5. Physical preparation time.
 
 Your body supports your mind. Prepare both.
 
@@ -198,7 +198,7 @@ Your breakthrough requires your full presence.
 ## 4 Days Before
 
 ```
-Neothink Society: 4 DAYS. Prepare for the challenge.
+Neothink Society: Day 4. Prepare for the challenge.
 
 Fair warning: Some moments will feel uncomfortable. Maybe even awkward.
 
@@ -221,7 +221,7 @@ Transformation lives on the other side of comfort.
 ## 3 Days Before (Non-VIP)
 
 ```
-Neothink Society: 72 HOURS.
+Neothink Society: 72 hours out.
 
 Day 1 focuses on a discovery that will change how you see yourself and your purpose.
 
@@ -243,7 +243,7 @@ Either way — see you {{custom_values.doe_day_1_date_short}}.
 ## 3 Days Before (VIP)
 
 ```
-Neothink Society: VIP — 72 HOURS.
+Neothink Society: VIP — 72 hours out.
 
 Your investment in the inner circle is about to pay off.
 
@@ -268,7 +268,7 @@ See you in the inner circle.
 ## 2 Days Before (Non-VIP)
 
 ```
-Neothink Society: 48 HOURS.
+Neothink Society: 48 hours out.
 
 Day 1 concludes with a powerful wealth breakthrough — a simple shift that transforms how you see money and possibility forever.
 
@@ -291,7 +291,7 @@ Your transformation begins in 2 days.
 ## 2 Days Before (VIP)
 
 ```
-Neothink Society: VIP — 48 HOURS.
+Neothink Society: VIP — 48 hours out.
 
 Tech checklist (extra important for your VIP session):
 - Update Zoom — flawless connection required
@@ -318,7 +318,7 @@ You're ready for this.
 ## 1 Day Before - Morning (Non-VIP)
 
 ```
-Neothink Society: 24 HOURS.
+Neothink Society: 24 hours.
 
 Tomorrow at this time, you'll be live in transformation.
 
@@ -341,7 +341,7 @@ This is the day you've been preparing for. See you at {{custom_values.doe_day_1_
 ## 1 Day Before - Morning (VIP)
 
 ```
-Neothink Society: VIP — 24 HOURS.
+Neothink Society: VIP — 24 hours.
 
 Tomorrow at this time, you'll be live with Wallace Hamilton.
 

@@ -67,7 +67,7 @@ Neothink Society: 6 hours left. Level 3 enrollment closes at 11:59 PM ET. {{cust
 ## Wednesday 9pm (Final - 3 Hours)
 
 ```
-Neothink Society: Final message — Level 3 closes in 3 hours. If it's right for you, join now: {{custom_values.doe_l3_enrollment_url}}
+Neothink Society: Final message — Level 3 closes in 3 hours. If it's right for you, secure your spot: {{custom_values.doe_l3_enrollment_url}}
 ```
 
 **Offset:** -3h (Wed 6pm PT / 9pm ET)
