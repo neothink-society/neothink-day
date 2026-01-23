@@ -270,7 +270,7 @@ See you in the inner circle.
 ```
 Neothink Society: 48 HOURS.
 
-Day 1 concludes with the Millionaire Mindset — a simple shift that transforms how you see wealth and opportunity.
+Day 1 concludes with a powerful wealth breakthrough — a simple shift that transforms how you see money and possibility forever.
 
 Tech checklist:
 - Update Zoom to latest version
