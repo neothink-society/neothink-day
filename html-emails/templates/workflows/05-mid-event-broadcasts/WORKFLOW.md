@@ -26,25 +26,27 @@ This allows real-time control during the live event.
 
 ### Day 1 Stages
 
-| Stage | Template | Trigger Moment |
-|-------|----------|----------------|
-| 1 | `day1-wh-in-session.html` | Wallace Hamilton takes stage |
-| 2 | `day1-wh-live-now.html` | WH is teaching (late joiner hook) |
-| 3 | `day1-lunch-break.html` | Lunch break announced |
-| 4 | `day1-back-from-lunch.html` | Returning from lunch |
-| 5 | `day1-wealth-segment.html` | Wealth/FNE segment begins |
-| 6 | `day1-end.html` | Day 1 complete |
+| Stage | Template | Trigger Moment | L3 Mention OK? |
+|-------|----------|----------------|----------------|
+| 1 | `day1-wh-in-session.html` | Wallace Hamilton takes stage | ❌ No |
+| 2 | `day1-wh-live-now.html` | WH is teaching (late joiner hook) | ❌ No |
+| 3 | `day1-lunch-break.html` | Lunch break announced | ❌ No |
+| 4 | `day1-back-from-lunch.html` | Returning from lunch | ❌ No |
+| 5 | `day1-wealth-segment.html` | Wealth/FNE segment begins | ❌ No |
+| 6 | `day1-end.html` | Day 1 complete | ❌ No |
 
 ### Day 2 Stages
 
-| Stage | Template | Trigger Moment |
-|-------|----------|----------------|
-| 7 | `day2-mh-segment.html` | Mark Hamilton segment |
-| 8 | `day2-lunch-break.html` | Day 2 lunch break |
-| 9 | `day2-back-from-lunch.html` | Returning from lunch |
-| 10 | `day2-integration.html` | Integration segment |
-| 11 | `day2-end.html` | Day 2 complete |
-| 12 | `day2-l3-offer.html` | Level 3 offer announced |
+| Stage | Template | Trigger Moment | L3 Mention OK? |
+|-------|----------|----------------|----------------|
+| 7 | `day2-mh-segment.html` | Mark Hamilton segment | ❌ No |
+| 8 | `day2-lunch-break.html` | Day 2 lunch break | ❌ No |
+| 9 | `day2-back-from-lunch.html` | Returning from lunch | ❌ No |
+| 10 | `day2-integration.html` | Integration segment | ❌ No |
+| 11 | `day2-l3-offer.html` | **L3 REVEAL** | ✅ Yes |
+| 12 | `day2-end.html` | Day 2 complete | ✅ Yes (after reveal) |
+
+> **IMPORTANT:** Level 3 is NOT revealed until Stage 11. All Day 1 and Day 2 Stages 7-10 must NOT mention L3, VIP Session, Welcome Party, or Stargazer.
 
 ---
 
@@ -82,20 +84,20 @@ When ready to trigger the next broadcast:
 > Opening "We're live" messages are sent automatically by 04-day-of-reminders.
 > Start manual broadcasts when WH takes the stage.
 
-| Moment | Action |
-|--------|--------|
-| WH takes stage | Move all to Stage 1 |
-| WH teaching (11:30+) | Move all to Stage 2 |
-| Lunch break | Move all to Stage 3 |
-| Return from lunch | Move all to Stage 4 |
-| Wealth segment | Move all to Stage 5 |
-| Day 1 ends | Move all to Stage 6 |
-| MH segment (Day 2) | Move all to Stage 7 |
-| Day 2 lunch | Move all to Stage 8 |
-| Return from lunch | Move all to Stage 9 |
-| Integration | Move all to Stage 10 |
-| Day 2 ends | Move all to Stage 11 |
-| L3 offer | Move all to Stage 12 |
+| Moment | Action | L3 OK? |
+|--------|--------|--------|
+| WH takes stage | Move all to Stage 1 | ❌ |
+| WH teaching (11:30+) | Move all to Stage 2 | ❌ |
+| Lunch break | Move all to Stage 3 | ❌ |
+| Return from lunch | Move all to Stage 4 | ❌ |
+| Wealth segment | Move all to Stage 5 | ❌ |
+| Day 1 ends | Move all to Stage 6 | ❌ |
+| MH segment (Day 2) | Move all to Stage 7 | ❌ |
+| Day 2 lunch | Move all to Stage 8 | ❌ |
+| Return from lunch | Move all to Stage 9 | ❌ |
+| Integration | Move all to Stage 10 | ❌ |
+| **L3 REVEAL** | Move all to Stage 11 | ✅ |
+| Day 2 ends | Move all to Stage 12 | ✅ |
 
 ---
 
@@ -130,25 +132,25 @@ Neothink Society: Level 3 enrollment is NOW OPEN! The next level of your transfo
 
 ### Day 1 Broadcasts (Phase 05)
 
-| File | GHL Template Name |
-|------|-------------------|
-| `day1-wh-in-session.html` | `DOE 05 Day 1 WH In Session` |
-| `day1-wh-live-now.html` | `DOE 05 Day 1 WH Starting` |
-| `day1-lunch-break.html` | `DOE 05 Day 1 Lunch Break` |
-| `day1-back-from-lunch.html` | `DOE 05 Day 1 Back From Lunch` |
-| `day1-wealth-segment.html` | `DOE 05 Day 1 Wealth Segment` |
-| `day1-end.html` | `DOE 05 Day 1 End` |
+| Stage | File | GHL Template Name |
+|-------|------|-------------------|
+| 1 | `day1-wh-in-session.html` | `DOE 05 Day 1 WH In Session` |
+| 2 | `day1-wh-live-now.html` | `DOE 05 Day 1 WH Starting` |
+| 3 | `day1-lunch-break.html` | `DOE 05 Day 1 Lunch Break` |
+| 4 | `day1-back-from-lunch.html` | `DOE 05 Day 1 Back From Lunch` |
+| 5 | `day1-wealth-segment.html` | `DOE 05 Day 1 Wealth Segment` |
+| 6 | `day1-end.html` | `DOE 05 Day 1 End` |
 
 ### Day 2 Broadcasts (Phase 07)
 
-| File | GHL Template Name |
-|------|-------------------|
-| `day2-mh-segment.html` | `DOE 07 Day 2 MH Segment` |
-| `day2-lunch-break.html` | `DOE 07 Day 2 Lunch Break` |
-| `day2-back-from-lunch.html` | `DOE 07 Day 2 Back From Lunch` |
-| `day2-integration.html` | `DOE 07 Day 2 Integration` |
-| `day2-end.html` | `DOE 07 Day 2 End` |
-| `day2-l3-offer.html` | `DOE 07 Day 2 L3 Offer` |
+| Stage | File | GHL Template Name |
+|-------|------|-------------------|
+| 7 | `day2-mh-segment.html` | `DOE 07 Day 2 MH Segment` |
+| 8 | `day2-lunch-break.html` | `DOE 07 Day 2 Lunch Break` |
+| 9 | `day2-back-from-lunch.html` | `DOE 07 Day 2 Back From Lunch` |
+| 10 | `day2-integration.html` | `DOE 07 Day 2 Integration` |
+| 11 | `day2-l3-offer.html` | `DOE 07 Day 2 L3 Offer` |
+| 12 | `day2-end.html` | `DOE 07 Day 2 End` |
 
 ---
 
@@ -161,3 +163,6 @@ Neothink Society: Level 3 enrollment is NOW OPEN! The next level of your transfo
 - [ ] Bulk action "Move to Stage X" works for all contacts
 - [ ] Custom values display correctly
 - [ ] 04-day-of-reminders handles opening messages (T=0 and +25h)
+- [ ] **L3 RULE:** Stages 1-10 have NO mention of Level 3, VIP Session, Welcome Party, or Stargazer
+- [ ] **L3 RULE:** Stage 11 (L3 offer) is sent BEFORE Stage 12 (Day 2 end)
+- [ ] **L3 RULE:** L3 content only appears in Stages 11 and 12
