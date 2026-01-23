@@ -315,6 +315,54 @@ You're ready for this.
 
 ---
 
+## 1 Day Before - Morning (Non-VIP)
+
+```
+Neothink Society: 24 HOURS.
+
+Tomorrow at this time, you'll be live in transformation.
+
+Final checklist:
+- Zoom updated and tested
+- Workbook printed or ready
+- Space cleared, phone silenced
+
+Your Zoom link arrives tomorrow morning.
+
+This is the day you've been preparing for. See you at {{custom_values.doe_day_1_start_time}}.
+```
+
+**Offset:** -23h
+**Audience:** Non-VIP only
+**Character Count:** ~280 (multi-segment)
+
+---
+
+## 1 Day Before - Morning (VIP)
+
+```
+Neothink Society: VIP — 24 HOURS.
+
+Tomorrow at this time, you'll be live with Wallace Hamilton.
+
+Final VIP checklist:
+- Zoom updated and tested
+- Questions written down for your VIP session
+- Space cleared for full immersion
+
+Your Zoom link arrives tomorrow morning.
+
+As VIP Elite, you'll have moments others won't. Be ready to use them.
+
+See you at {{custom_values.doe_day_1_start_time}}.
+```
+
+**Offset:** -23h
+**Audience:** VIP only
+**Character Count:** ~340 (multi-segment)
+
+---
+
 ## 1 Day Before - Evening (Non-VIP)
 
 ```
@@ -383,8 +431,10 @@ Rest well. You're about to experience something extraordinary.
 | 10b | 3 Days Out | VIP | -2d 23h | 9:00 AM |
 | 11a | 2 Days Out | Non-VIP | -1d 23h | 9:00 AM |
 | 11b | 2 Days Out | VIP | -1d 23h | 9:00 AM |
-| 12a | 1 Day Out | Non-VIP | -16h | 4:00 PM |
-| 12b | 1 Day Out | VIP | -16h | 4:00 PM |
+| 12a | 1 Day Out (Morning) | Non-VIP | -23h | 9:00 AM |
+| 12b | 1 Day Out (Morning) | VIP | -23h | 9:00 AM |
+| 13a | 1 Day Out (Evening) | Non-VIP | -16h | 4:00 PM |
+| 13b | 1 Day Out (Evening) | VIP | -16h | 4:00 PM |
 
 ---
 
