@@ -5,10 +5,13 @@
   CUSTOM VALUES USED:
   - {{custom_values.doe_event_dates}} - Event date range (e.g., "January 24-25, 2026")
   - {{custom_values.doe_day_1_date_short}} - Day 1 short date (e.g., "January 24")
-  - {{custom_values.doe_zoom_link}} - Main workshop Zoom link (trigger link)
+  - {{custom_values.doe_zoom_link_direct}} - Direct Zoom URL for web pages (not trigger link)
   - {{custom_values.doe_zoom_id}} - Meeting ID for display (e.g., "852 4025 0021")
   - {{custom_values.doe_zoom_passcode}} - Passcode for display (e.g., "848453")
   - {{custom_values.doe_workshop_hub_url}} - Workshop hub page URL
+
+  NOTE: For emails/SMS, use {{custom_values.doe_zoom_link}} which contains the
+  trigger link for click tracking. For web pages, use doe_zoom_link_direct.
 
   NOTE: Phone dial-in one-tap numbers contain embedded meeting IDs.
   When Zoom meeting changes, update the one-tap numbers manually or create
@@ -1034,7 +1037,7 @@
                     </div>
                     <div class="meeting-box-content">
                         <!-- Big Join Button -->
-                        <a href="{{custom_values.doe_zoom_link}}" target="_blank" class="join-button-large">
+                        <a href="{{custom_values.doe_zoom_link_direct}}" target="_blank" class="join-button-large">
                             🚀 Click Here to Join the Workshop on Zoom
                         </a>
 
@@ -1066,8 +1069,8 @@
                             -->
                             <div class="one-tap-mobile">
                                 <p class="one-tap-title">📱 One-Tap Mobile (Easiest for Phone)</p>
-                                <p class="one-tap-number">+1 312 626 6799,,85240250021#,,,,*848453# (Chicago)</p>
-                                <p class="one-tap-number">+1 346 248 7799,,85240250021#,,,,*848453# (Houston)</p>
+                                <p class="one-tap-number">+1 360 209 5623,,85240250021#,,,,*848453# (US)</p>
+                                <p class="one-tap-number">+1 386 347 5053,,85240250021#,,,,*848453# (US)</p>
                             </div>
 
                             <p style="color: var(--gray-300); margin-bottom: var(--space-md);"><strong>Or dial any number below</strong>, then enter Meeting ID: <strong>{{custom_values.doe_zoom_id}}</strong> and Passcode: <strong>{{custom_values.doe_zoom_passcode}}</strong></p>
