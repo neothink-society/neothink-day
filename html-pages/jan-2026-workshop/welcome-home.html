@@ -210,6 +210,16 @@
             }
         }
 
+        @keyframes live-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.9); }
+        }
+
+        @keyframes live-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.4); }
+            50% { box-shadow: 0 0 0 8px rgba(255, 59, 48, 0); }
+        }
+
         /* ===========================
            LAYOUT
         =========================== */
@@ -1567,9 +1577,9 @@
             <div class="container">
                 <div class="header-content">
                     <a href="/home" class="site-logo" aria-label="Back to Workshop Hub">Neothink Society</a>
-                    <div class="header-status" aria-label="Registration status">
-                        <span class="status-dot" aria-hidden="true"></span>
-                        Registered
+                    <div class="header-status" aria-label="Live status" style="background: rgba(255, 59, 48, 0.15); border-color: rgba(255, 59, 48, 0.4); color: #ff3b30;">
+                        <span class="status-dot" aria-hidden="true" style="background: #ff3b30;"></span>
+                        LIVE NOW
                     </div>
                 </div>
             </div>
@@ -1580,66 +1590,53 @@
             <!-- Hero Section -->
             <section class="hero-section">
                 <div class="container">
+                    <!-- LIVE Indicator -->
+                    <div style="display: inline-flex; align-items: center; gap: var(--space-sm); padding: 0.75rem 1.5rem; background: rgba(255, 59, 48, 0.15); border: 2px solid rgba(255, 59, 48, 0.5); border-radius: 30px; margin-bottom: var(--space-lg); animation: live-pulse 2s ease-in-out infinite;">
+                        <span style="width: 12px; height: 12px; background: #ff3b30; border-radius: 50%; animation: live-dot 1s ease-in-out infinite;"></span>
+                        <span style="font-family: var(--font-mono); font-size: var(--text-sm); font-weight: 700; color: #ff3b30; text-transform: uppercase; letter-spacing: 0.15em;">We Are LIVE</span>
+                    </div>
+
                     <h1 class="hero-title">
-                        Welcome to Your
-                        <span class="gradient-text">Workshop Hub</span>
+                        Day of
+                        <span class="gradient-text">Enlightenment</span>
                     </h1>
 
                     <p class="hero-subtitle">
-                        Everything you need for your transformation is here.
-                        Access your workshop materials and exclusive resources.
+                        The workshop is happening NOW. Join us on Zoom.
                     </p>
 
-                    <p class="hero-date" aria-label="Workshop dates">Saturday, January 24 • Sunday, January 25, 2026</p>
+                    <p class="hero-date" aria-label="Workshop dates">Day 1 — Saturday, January 24, 2026</p>
 
-                    <!-- Big VIP Upgrade Button -->
+                    <!-- Primary Zoom CTA - Most Prominent -->
                     <div style="margin-top: var(--space-xl);">
-                        <p style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">⭐ There's Still Time</p>
-                        <a href="https://neothinkday.com/vip-upgrade" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: 1.25rem 2.5rem; font-family: var(--font-sans); font-size: var(--text-xl); font-weight: 700; color: var(--black); background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); border: none; border-radius: 12px; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4), 0 0 60px rgba(255, 215, 0, 0.15); animation: subtle-pulse 2s ease-in-out infinite;">
-                            🚀 Upgrade to VIP — Only $187
+                        <a href="https://neothink.zoom.us/j/85240250021?pwd=UW4amthIlXsy08b9suXqw0FhYY674K.1" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: 1.25rem 3rem; font-family: var(--font-sans); font-size: var(--text-xl); font-weight: 700; color: var(--white); background: linear-gradient(135deg, #2D8CFF 0%, #1a6fcc 100%); border: none; border-radius: 12px; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 8px 30px rgba(45, 140, 255, 0.5), 0 0 60px rgba(45, 140, 255, 0.2); animation: subtle-pulse 2s ease-in-out infinite;">
+                            📹 Join Workshop Now
                             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                         </a>
+                        <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gray-400); margin-top: var(--space-sm);"><a href="https://neothinkday.com/zoom" target="_blank" rel="noopener" style="color: var(--gray-400); text-decoration: underline;">Need help joining?</a></p>
                     </div>
 
-                    <!-- Zoom Room CTA -->
+                    <!-- VIP Upgrade - Secondary -->
                     <div style="margin-top: var(--space-lg);">
-                        <p style="font-family: var(--font-mono); font-size: var(--text-sm); color: #2D8CFF; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">🔴 Room Opens 10:30 AM Eastern / 7:30 AM Pacific</p>
-                        <a href="https://neothink.zoom.us/j/85240250021?pwd=UW4amthIlXsy08b9suXqw0FhYY674K.1" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: 1rem 2rem; font-family: var(--font-sans); font-size: var(--text-lg); font-weight: 700; color: var(--white); background: linear-gradient(135deg, #2D8CFF 0%, #1a6fcc 100%); border: none; border-radius: 12px; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 8px 30px rgba(45, 140, 255, 0.4);">
-                            📹 Join Workshop on Zoom
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
+                        <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-xs);">⭐ There's Still Time to Upgrade</p>
+                        <a href="https://neothinkday.com/vip-upgrade" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs); padding: 0.75rem 1.5rem; font-family: var(--font-sans); font-size: var(--text-base); font-weight: 700; color: var(--gold); background: transparent; border: 2px solid var(--gold); border-radius: 8px; text-decoration: none; cursor: pointer; transition: all 0.3s ease;">
+                            Upgrade to VIP — $187
                         </a>
                     </div>
                 </div>
             </section>
 
-            <!-- Countdown Section -->
-            <section class="countdown-section">
+            <!-- LIVE Status Section (replaces countdown) -->
+            <section class="countdown-section" style="background: linear-gradient(180deg, rgba(45, 140, 255, 0.1) 0%, var(--gray-900) 100%);">
                 <div class="countdown-container">
-                    <div class="countdown-label">Workshop Begins In:</div>
-                    <div class="countdown-timer" id="countdown" aria-live="polite">
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="days" aria-label="Days remaining">00</span>
-                            <span class="countdown-unit-label">Days</span>
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: var(--space-md);">
+                        <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                            <span style="width: 16px; height: 16px; background: #ff3b30; border-radius: 50%; animation: live-dot 1s ease-in-out infinite;"></span>
+                            <span style="font-family: var(--font-serif); font-size: var(--text-4xl); font-weight: 700; color: var(--white);">Workshop is LIVE</span>
                         </div>
-                        <div class="countdown-separator" aria-hidden="true">:</div>
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="hours" aria-label="Hours remaining">00</span>
-                            <span class="countdown-unit-label">Hours</span>
-                        </div>
-                        <div class="countdown-separator" aria-hidden="true">:</div>
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="minutes" aria-label="Minutes remaining">00</span>
-                            <span class="countdown-unit-label">Minutes</span>
-                        </div>
-                        <div class="countdown-separator" aria-hidden="true">:</div>
-                        <div class="countdown-unit">
-                            <span class="countdown-number" id="seconds" aria-label="Seconds remaining">00</span>
-                            <span class="countdown-unit-label">Seconds</span>
-                        </div>
+                        <p style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.1em;">Day 1 in Progress</p>
                     </div>
                 </div>
             </section>
