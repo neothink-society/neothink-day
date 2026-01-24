@@ -1904,16 +1904,20 @@
         }
 
         // VIP upgrade countdown timer - Ends Jan 24, 2026 at 9:00 AM PT (12:00 PM ET)
+        // IMPORTANT: When expired, just hide the countdown - DO NOT show "Closed" or change any text
         function initVIPCountdown() {
             const vipDeadline = new Date('2026-01-24T12:00:00-05:00').getTime(); // 9am PT / 12pm ET
             const vipCountdownEl = document.getElementById('vip-countdown');
+            const vipCountdownWrapper = vipCountdownEl ? vipCountdownEl.closest('.vip-countdown') : null;
 
             function updateVIPCountdown() {
                 const now = new Date().getTime();
                 const distance = vipDeadline - now;
 
                 if (distance < 0) {
-                    if (vipCountdownEl) vipCountdownEl.textContent = 'Upgrade Closed';
+                    // Just hide the countdown box - DO NOT change text or show "Closed"
+                    // VIP button and card remain visible and functional
+                    if (vipCountdownWrapper) vipCountdownWrapper.style.display = 'none';
                     clearInterval(vipInterval);
                     return;
                 }
