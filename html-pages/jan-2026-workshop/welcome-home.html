@@ -428,6 +428,17 @@
             margin: 0 auto;
         }
 
+        /* Force exactly 2 columns */
+        .access-grid-2col {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 768px) {
+            .access-grid-2col {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Modern Card Design */
         .access-card {
             position: relative;
@@ -1678,62 +1689,63 @@
                         <p>Your workshop materials and resources</p>
                     </div>
 
-                    <div class="access-grid">
-                        <!-- 1. Zoom Link Card - UNLOCKED -->
-                        <div class="access-card featured" style="border-color: var(--blue); background: linear-gradient(135deg, rgba(45, 140, 255, 0.15), rgba(45, 140, 255, 0.05));">
-                            <span class="card-status available" style="background: var(--blue);">🔴 LIVE NOW</span>
-                            <div class="card-icon" style="border-color: var(--blue); color: var(--blue);">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                </svg>
-                            </div>
-                            <h3>Join Workshop on Zoom</h3>
-                            <p>Click the button below to join the Day of Enlightenment workshop. Day 1 starts at 11:00 AM Eastern (8:00 AM Pacific). Same link works for both days.</p>
-                            <a href="https://neothink.zoom.us/j/85240250021?pwd=UW4amthIlXsy08b9suXqw0FhYY674K.1" target="_blank" rel="noopener" class="card-link" style="background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); color: var(--white); box-shadow: 0 4px 20px rgba(45, 140, 255, 0.4);" aria-label="Join Workshop on Zoom">
-                                🚀 Join Workshop Now
-                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
-                            </a>
+                    <!-- Zoom Card - Full Width Hero -->
+                    <div class="access-card featured" style="border-color: var(--blue); background: linear-gradient(135deg, rgba(45, 140, 255, 0.15), rgba(45, 140, 255, 0.05)); max-width: 800px; margin: 0 auto var(--space-2xl);">
+                        <span class="card-status available" style="background: var(--blue); color: var(--white);">🔴 LIVE NOW</span>
+                        <div class="card-icon" style="border-color: var(--blue); background: linear-gradient(135deg, rgba(45, 140, 255, 0.15), rgba(45, 140, 255, 0.05));">
+                            <svg fill="none" stroke="var(--blue)" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Join Workshop on Zoom</h3>
+                        <p>Click the button below to join the Day of Enlightenment workshop. Day 1 starts at 11:00 AM Eastern (8:00 AM Pacific). Same link works for both days.</p>
+                        <a href="https://neothink.zoom.us/j/85240250021?pwd=UW4amthIlXsy08b9suXqw0FhYY674K.1" target="_blank" rel="noopener" class="card-link" style="background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); color: var(--white); box-shadow: 0 4px 20px rgba(45, 140, 255, 0.4);" aria-label="Join Workshop on Zoom">
+                            🚀 Join Workshop Now
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
 
-                            <!-- Meeting Details -->
-                            <div style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid rgba(45, 140, 255, 0.3);">
-                                <p style="font-size: var(--text-sm); color: var(--gray-300);"><strong>Meeting ID:</strong> 852 4025 0021 &nbsp;|&nbsp; <strong>Passcode:</strong> 848453</p>
-                            </div>
-
-                            <!-- Phone Dial-In Information -->
-                            <div style="margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--gray-700);">
-                                <p style="font-size: var(--text-sm); font-weight: 700; color: var(--gold); margin-bottom: var(--space-sm);">📞 Join by Phone (Audio Only)</p>
-
-                                <p style="font-size: var(--text-xs); color: var(--gray-400); margin-bottom: var(--space-xs);"><strong>One-Tap Mobile:</strong></p>
-                                <p style="font-size: var(--text-sm); color: var(--gray-300); font-family: var(--font-mono); margin-bottom: var(--space-xs);">+1 360 209 5623,,85240250021#,,,,*848453#</p>
-                                <p style="font-size: var(--text-sm); color: var(--gray-300); font-family: var(--font-mono); margin-bottom: var(--space-md);">+1 386 347 5053,,85240250021#,,,,*848453#</p>
-
-                                <p style="font-size: var(--text-xs); color: var(--gray-400); margin-bottom: var(--space-xs);"><strong>Or Dial:</strong></p>
-                                <div style="font-size: var(--text-xs); color: var(--gray-400); line-height: 1.8; columns: 2; column-gap: var(--space-md);">
-                                    <span style="display: block;">+1 360 209 5623 US</span>
-                                    <span style="display: block;">+1 386 347 5053 US</span>
-                                    <span style="display: block;">+1 408 638 0968 US (San Jose)</span>
-                                    <span style="display: block;">+1 507 473 4847 US</span>
-                                    <span style="display: block;">+1 564 217 2000 US</span>
-                                    <span style="display: block;">+1 646 876 9923 US (New York)</span>
-                                    <span style="display: block;">+1 646 931 3860 US</span>
-                                    <span style="display: block;">+1 669 444 9171 US</span>
-                                    <span style="display: block;">+1 669 900 6833 US (San Jose)</span>
-                                    <span style="display: block;">+1 689 278 1000 US</span>
-                                    <span style="display: block;">+1 719 359 4580 US</span>
-                                    <span style="display: block;">+1 253 205 0468 US</span>
-                                    <span style="display: block;">+1 253 215 8782 US (Tacoma)</span>
-                                    <span style="display: block;">+1 301 715 8592 US (Washington DC)</span>
-                                    <span style="display: block;">+1 305 224 1968 US</span>
-                                    <span style="display: block;">+1 309 205 3325 US</span>
-                                    <span style="display: block;">+1 312 626 6799 US (Chicago)</span>
-                                    <span style="display: block;">+1 346 248 7799 US (Houston)</span>
-                                </div>
-                            </div>
+                        <!-- Meeting Details -->
+                        <div style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid rgba(45, 140, 255, 0.3);">
+                            <p style="font-size: var(--text-sm); color: var(--gray-300);"><strong>Meeting ID:</strong> 852 4025 0021 &nbsp;|&nbsp; <strong>Passcode:</strong> 848453</p>
                         </div>
 
-                        <!-- 2. FNE Workbook Card - UNLOCKED -->
+                        <!-- Phone Dial-In Information -->
+                        <div style="margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--gray-700);">
+                            <p style="font-size: var(--text-sm); font-weight: 700; color: var(--gold); margin-bottom: var(--space-sm);">📞 Join by Phone (Audio Only)</p>
+
+                            <p style="font-size: var(--text-xs); color: var(--gray-400); margin-bottom: var(--space-xs);"><strong>One-Tap Mobile:</strong></p>
+                            <p style="font-size: var(--text-sm); color: var(--gray-300); font-family: var(--font-mono); margin-bottom: var(--space-xs);">+1 360 209 5623,,85240250021#,,,,*848453#</p>
+                            <p style="font-size: var(--text-sm); color: var(--gray-300); font-family: var(--font-mono); margin-bottom: var(--space-md);">+1 386 347 5053,,85240250021#,,,,*848453#</p>
+
+                            <p style="font-size: var(--text-xs); color: var(--gray-400); margin-bottom: var(--space-xs);"><strong>Or Dial:</strong></p>
+                            <div style="font-size: var(--text-xs); color: var(--gray-400); line-height: 1.8; columns: 2; column-gap: var(--space-md);">
+                                <span style="display: block;">+1 360 209 5623 US</span>
+                                <span style="display: block;">+1 386 347 5053 US</span>
+                                <span style="display: block;">+1 408 638 0968 US (San Jose)</span>
+                                <span style="display: block;">+1 507 473 4847 US</span>
+                                <span style="display: block;">+1 564 217 2000 US</span>
+                                <span style="display: block;">+1 646 876 9923 US (New York)</span>
+                                <span style="display: block;">+1 646 931 3860 US</span>
+                                <span style="display: block;">+1 669 444 9171 US</span>
+                                <span style="display: block;">+1 669 900 6833 US (San Jose)</span>
+                                <span style="display: block;">+1 689 278 1000 US</span>
+                                <span style="display: block;">+1 719 359 4580 US</span>
+                                <span style="display: block;">+1 253 205 0468 US</span>
+                                <span style="display: block;">+1 253 215 8782 US (Tacoma)</span>
+                                <span style="display: block;">+1 301 715 8592 US (Washington DC)</span>
+                                <span style="display: block;">+1 305 224 1968 US</span>
+                                <span style="display: block;">+1 309 205 3325 US</span>
+                                <span style="display: block;">+1 312 626 6799 US (Chicago)</span>
+                                <span style="display: block;">+1 346 248 7799 US (Houston)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resource Cards Grid - 2x2 Layout (6 cards = 3 rows of 2) -->
+                    <div class="access-grid access-grid-2col">
+                        <!-- 1. FNE Workbook Card - UNLOCKED -->
                         <div class="access-card">
                             <span class="card-status available">✓ Available Now</span>
                             <div class="card-icon">
@@ -1751,7 +1763,7 @@
                             </a>
                         </div>
 
-                        <!-- 3. Wealth Engine Calculator Card - LOCKED (unlocks during workshop) -->
+                        <!-- 2. Wealth Engine Calculator Card - LOCKED (unlocks during workshop) -->
                         <div class="access-card locked">
                             <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
@@ -1769,7 +1781,7 @@
                             </a>
                         </div>
 
-                        <!-- 4. Golden Life Sheet Card - LOCKED (unlocks during workshop) -->
+                        <!-- 3. Golden Life Sheet Card - LOCKED (unlocks during workshop) -->
                         <div class="access-card locked">
                             <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
@@ -1787,7 +1799,7 @@
                             </a>
                         </div>
 
-                        <!-- 5. Ambassador Program Card - LOCKED (unlocks during workshop) -->
+                        <!-- 4. Ambassador Program Card - LOCKED (unlocks during workshop) -->
                         <div class="access-card locked">
                             <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
@@ -1805,7 +1817,7 @@
                             </a>
                         </div>
 
-                        <!-- 6. VIP Upgrade Card - AVAILABLE -->
+                        <!-- 5. VIP Upgrade Card - AVAILABLE -->
                         <div class="access-card featured">
                             <span class="card-status urgent">⚡ Limited Time</span>
                             <div class="card-icon">
@@ -1823,7 +1835,7 @@
                             </a>
                         </div>
 
-                        <!-- 7. Support Card - AVAILABLE -->
+                        <!-- 6. Support Card - AVAILABLE -->
                         <div class="access-card">
                             <span class="card-status available">Always Available</span>
                             <div class="card-icon">
