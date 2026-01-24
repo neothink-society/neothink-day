@@ -440,179 +440,135 @@
         }
 
         /* ===========================
-           ASCENSION VAULT CARD
+           STARGAZER ASCENSION VAULT
         =========================== */
         .ascension-vault {
-            --midnight: #0a1628;
-            --midnight-light: #0d1b2a;
-            --midnight-glow: rgba(10, 22, 40, 0.95);
-
             position: relative;
-            max-width: 900px;
+            max-width: 800px;
             margin: var(--space-3xl) auto 0;
             padding: var(--space-3xl) var(--space-2xl);
-            background: linear-gradient(135deg, var(--midnight) 0%, var(--midnight-light) 50%, var(--midnight) 100%);
-            border: 2px solid rgba(255, 215, 0, 0.2);
-            border-radius: 24px;
+            background: linear-gradient(180deg,
+                rgba(10, 10, 10, 0.98) 0%,
+                rgba(20, 20, 20, 0.95) 50%,
+                rgba(10, 10, 10, 0.98) 100%
+            );
+            border: 1px solid var(--gold);
+            border-radius: 20px;
             text-align: center;
             overflow: hidden;
+            box-shadow:
+                0 0 60px rgba(255, 215, 0, 0.08),
+                inset 0 0 80px rgba(255, 215, 0, 0.03);
         }
 
         .ascension-vault::before {
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 60%),
-                radial-gradient(ellipse at 50% 100%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
-            pointer-events: none;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
         }
 
         .ascension-vault::after {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at center, transparent 30%, rgba(255, 215, 0, 0.02) 50%, transparent 70%);
-            animation: vault-shimmer 8s ease-in-out infinite;
-            pointer-events: none;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
         }
 
-        @keyframes vault-shimmer {
-            0%, 100% { transform: rotate(0deg); opacity: 0.3; }
-            50% { transform: rotate(180deg); opacity: 0.6; }
+        .vault-lock-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: var(--space-xl);
         }
 
         .vault-lock-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto var(--space-lg);
+            width: 64px;
+            height: 64px;
             color: var(--gold);
-            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
-            animation: lock-pulse 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
+            animation: lock-glow 4s ease-in-out infinite;
         }
 
-        @keyframes lock-pulse {
+        @keyframes lock-glow {
             0%, 100% {
-                filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
-                transform: scale(1);
+                filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
             }
             50% {
-                filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.6));
-                transform: scale(1.05);
+                filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.7));
             }
         }
 
         .vault-status {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-xs);
+            display: inline-block;
             font-family: var(--font-mono);
             font-size: var(--text-xs);
-            font-weight: 700;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.2em;
             color: var(--gold);
-            padding: 0.5rem 1.25rem;
-            background: rgba(255, 215, 0, 0.08);
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            border-radius: 20px;
-            margin-bottom: var(--space-lg);
-        }
-
-        .vault-status-dot {
-            width: 6px;
-            height: 6px;
-            background: var(--gold);
-            border-radius: 50%;
-            animation: status-blink 2s ease-in-out infinite;
-        }
-
-        @keyframes status-blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+            padding: 0.5rem 1.5rem;
+            background: rgba(255, 215, 0, 0.06);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 4px;
+            margin-bottom: var(--space-xl);
         }
 
         .vault-headline {
             font-family: var(--font-serif);
-            font-size: var(--text-4xl);
+            font-size: var(--text-3xl);
             font-weight: 700;
-            color: var(--white);
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-xs);
-            position: relative;
-            z-index: 1;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            margin-bottom: var(--space-lg);
+            text-transform: uppercase;
         }
 
-        .vault-subheadline {
-            font-family: var(--font-mono);
-            font-size: var(--text-sm);
-            font-weight: 600;
-            color: rgba(255, 215, 0, 0.7);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: var(--space-2xl);
-            position: relative;
-            z-index: 1;
+        .vault-divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 0 auto var(--space-xl);
         }
 
         .vault-body {
-            max-width: 650px;
+            max-width: 550px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
         }
 
         .vault-body p {
             font-family: var(--font-serif);
-            font-size: var(--text-lg);
+            font-size: var(--text-base);
             font-style: italic;
-            color: var(--gray-200);
+            color: var(--gray-300);
             line-height: 1.9;
-            margin-bottom: var(--space-lg);
-        }
-
-        .vault-body p strong {
-            color: var(--gold);
-            font-style: normal;
-            font-weight: 700;
+            margin-bottom: var(--space-md);
         }
 
         .vault-body p:last-child {
-            font-family: var(--font-sans);
-            font-size: var(--text-base);
-            font-style: normal;
-            font-weight: 600;
-            color: var(--gray-400);
             margin-bottom: 0;
         }
 
-        .vault-tba {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-family: var(--font-mono);
-            font-size: var(--text-sm);
-            font-weight: 700;
-            color: var(--gray-500);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+        .vault-footer {
             margin-top: var(--space-xl);
-            padding: var(--space-sm) var(--space-lg);
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--gray-700);
-            border-radius: 8px;
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 215, 0, 0.15);
         }
 
-        .vault-tba svg {
-            width: 16px;
-            height: 16px;
+        .vault-footer p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
             color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
         }
 
         @media (max-width: 768px) {
@@ -622,31 +578,28 @@
             }
 
             .vault-lock-icon {
-                width: 60px;
-                height: 60px;
+                width: 52px;
+                height: 52px;
             }
 
             .vault-headline {
-                font-size: var(--text-3xl);
+                font-size: var(--text-2xl);
                 letter-spacing: 0.05em;
             }
 
             .vault-body p {
-                font-size: var(--text-base);
+                font-size: var(--text-sm);
             }
         }
 
         @media (max-width: 480px) {
             .ascension-vault {
                 padding: var(--space-xl) var(--space-md);
+                border-radius: 16px;
             }
 
             .vault-headline {
-                font-size: var(--text-2xl);
-            }
-
-            .vault-subheadline {
-                font-size: var(--text-xs);
+                font-size: var(--text-xl);
             }
         }
 
@@ -2062,40 +2015,36 @@
                         </div>
                     </div>
 
-                    <!-- THE ASCENSION - Locked Vault Teaser -->
-                    <div class="ascension-vault" role="region" aria-label="Upcoming exclusive opportunity">
-                        <!-- Lock Icon -->
-                        <svg class="vault-lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                        </svg>
+                    <!-- THE STARGAZER ASCENSION - Locked Vault Teaser -->
+                    <div class="ascension-vault" role="region" aria-label="Exclusive opportunity awaiting">
+                        <!-- Centered Lock Icon -->
+                        <div class="vault-lock-container">
+                            <svg class="vault-lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                        </div>
 
                         <!-- Status Badge -->
-                        <div class="vault-status">
-                            <span class="vault-status-dot" aria-hidden="true"></span>
-                            Status: Locked • Awaiting Clearance
-                        </div>
+                        <div class="vault-status">Classified</div>
 
                         <!-- Headline -->
-                        <h3 class="vault-headline">THE ASCENSION</h3>
-                        <p class="vault-subheadline">A Door Will Open</p>
+                        <h3 class="vault-headline">The Stargazer Ascension</h3>
 
-                        <!-- Body Copy -->
+                        <!-- Divider -->
+                        <div class="vault-divider" aria-hidden="true"></div>
+
+                        <!-- Body Copy - Mysterious, no spoilers -->
                         <div class="vault-body">
-                            <p>You are currently building your Launchpad. But a Launchpad is only the beginning.</p>
+                            <p>Something is being prepared for you.</p>
 
-                            <p>There exists a level beyond this workshop—a domain reserved for those fully committed to an <strong>evolutionary leap</strong> in their lives.</p>
+                            <p>A door exists that few will ever see. When it opens, everything changes.</p>
 
-                            <p>We are preparing to serve you at the <strong>highest level</strong> imaginable, providing access to tools, mentorship, and <strong>incredible value</strong> that simply cannot be found anywhere else on Earth.</p>
-
-                            <p>The door to the impossible will open soon. Stay focused.</p>
+                            <p>Stay present. The moment will reveal itself.</p>
                         </div>
 
-                        <!-- TBA Indicator -->
-                        <div class="vault-tba">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Reveal: To Be Announced
+                        <!-- Footer -->
+                        <div class="vault-footer">
+                            <p>Awaiting the signal</p>
                         </div>
                     </div>
                 </div>
