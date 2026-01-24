@@ -1666,25 +1666,30 @@
                     </div>
 
                     <div class="access-grid">
-                        <!-- Zoom Link Card - LOCKED -->
-                        <div class="access-card locked">
-                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                            </svg>
-                            <span class="card-status locked">Available Soon</span>
-                            <div class="card-icon">
+                        <!-- 1. Zoom Link Card - UNLOCKED -->
+                        <div class="access-card featured" style="border-color: var(--blue); background: linear-gradient(135deg, rgba(45, 140, 255, 0.15), rgba(45, 140, 255, 0.05));">
+                            <span class="card-status available" style="background: var(--blue);">🔴 LIVE NOW</span>
+                            <div class="card-icon" style="border-color: var(--blue); color: var(--blue);">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
                             <h3>Join Workshop on Zoom</h3>
-                            <p>Your Zoom link will be sent the morning of January 24th via email and text, and will be available here. Day 1 starts at 11:00 AM Eastern (8:00 AM Pacific). Day 2 starts at 12:00 PM Eastern (9:00 AM Pacific). Same link works for both days.</p>
-                            <a href="#zoom-link" class="card-link locked" aria-label="Zoom link coming soon">
-                                Link Coming Soon
+                            <p>Click the button below to join the Day of Enlightenment workshop. Day 1 starts at 11:00 AM Eastern (8:00 AM Pacific). Same link works for both days.</p>
+                            <a href="https://neothink.zoom.us/j/85240250021?pwd=UW4amthIlXsy08b9suXqw0FhYY674K.1" target="_blank" rel="noopener" class="card-link" style="background: var(--blue);" aria-label="Join Workshop on Zoom">
+                                🚀 Join Workshop Now
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
                             </a>
 
+                            <!-- Meeting Details -->
+                            <div style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid rgba(45, 140, 255, 0.3);">
+                                <p style="font-size: var(--text-sm); color: var(--gray-300);"><strong>Meeting ID:</strong> 852 4025 0021 &nbsp;|&nbsp; <strong>Passcode:</strong> 848453</p>
+                            </div>
+
                             <!-- Phone Dial-In Information -->
-                            <div style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--gray-700);">
+                            <div style="margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--gray-700);">
                                 <p style="font-size: var(--text-sm); font-weight: 700; color: var(--gold); margin-bottom: var(--space-sm);">📞 Join by Phone (Audio Only)</p>
 
                                 <p style="font-size: var(--text-xs); color: var(--gray-400); margin-bottom: var(--space-xs);"><strong>One-Tap Mobile:</strong></p>
@@ -1712,29 +1717,82 @@
                                     <span style="display: block;">+1 312 626 6799 US (Chicago)</span>
                                     <span style="display: block;">+1 346 248 7799 US (Houston)</span>
                                 </div>
-                                <p style="font-size: var(--text-xs); color: var(--gray-300); margin-top: var(--space-sm);"><strong>Meeting ID:</strong> 852 4025 0021 &nbsp;|&nbsp; <strong>Passcode:</strong> 848453</p>
                             </div>
                         </div>
 
-                        <!-- Golden Life Sheet Card - LOCKED -->
+                        <!-- 2. FNE Workbook Card - UNLOCKED -->
+                        <div class="access-card">
+                            <span class="card-status available">✓ Available Now</span>
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <h3>Friday-Night Essence Workbook</h3>
+                            <p>Discover your deepest motivational root—the essence that comes alive when you're free. This workbook guides you from "division of labor" to <strong>downstream focus</strong> where energy naturally flows. Print before the workshop!</p>
+                            <a href="{{custom_values.doe_workbook_url}}" target="_blank" rel="noopener" class="card-link" aria-label="Download FNE Workbook">
+                                Download Workbook
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- 3. Wealth Engine Calculator Card - LOCKED (unlocks during workshop) -->
                         <div class="access-card locked">
                             <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                             </svg>
-                            <span class="card-status locked">Unlocks Before Workshop</span>
+                            <span class="card-status locked">Unlocks During Workshop</span>
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Wealth Engine Calculator</h3>
+                            <p>Calculate your exact <strong>Inflection Point</strong>—the number you need to be financially free. Shift from "Can I afford this?" to "How can I afford this?" using the 12% Rule and compound interest.</p>
+                            <a href="{{custom_values.doe_wealth_engine_url}}" class="card-link locked" aria-label="Wealth Engine Calculator unlocks during workshop">
+                                Unlocks During Workshop
+                            </a>
+                        </div>
+
+                        <!-- 4. Golden Life Sheet Card - LOCKED (unlocks during workshop) -->
+                        <div class="access-card locked">
+                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span class="card-status locked">Unlocks End of Day 2</span>
                             <div class="card-icon">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                                 </svg>
                             </div>
                             <h3>Golden Life Sheet</h3>
-                            <p>Your primary implementation tool for the workshop. Access will be provided before the workshop begins so you can review and prepare.</p>
-                            <a href="#" class="card-link locked" aria-label="Golden Life Sheet unlocks soon">
-                                Unlocks Soon
+                            <p>Your <strong>Daily Alignment Tool</strong>—the synthesis of the entire workshop. Post this on your mirror to prevent drifting back into the Matrix. Contains: Who I Am, FNE, Dreams, Focuses, Celebrations, Health.</p>
+                            <a href="{{custom_values.doe_golden_life_url}}" class="card-link locked" aria-label="Golden Life Sheet unlocks end of Day 2">
+                                Unlocks End of Day 2
                             </a>
                         </div>
 
-                        <!-- VIP Upgrade Card - AVAILABLE -->
+                        <!-- 5. Ambassador Program Card - LOCKED -->
+                        <div class="access-card locked">
+                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span class="card-status locked">Unlocks After Workshop</span>
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h3>Ambassador Program</h3>
+                            <p>Earn <strong>$250 per referral</strong> (50% commission) by sharing what transformed your life. Perfect "Money Magic" for those whose FNE is mentoring or Neothink. Simply share the Greatest Secrets booklet.</p>
+                            <a href="https://societysecrets.com/ambassador-signup" class="card-link locked" aria-label="Ambassador Program unlocks after workshop">
+                                Unlocks After Workshop
+                            </a>
+                        </div>
+
+                        <!-- 6. VIP Upgrade Card - AVAILABLE -->
                         <div class="access-card featured">
                             <span class="card-status urgent">⚡ Limited Time</span>
                             <div class="card-icon">
@@ -1743,12 +1801,8 @@
                                 </svg>
                             </div>
                             <h3>Upgrade to VIP</h3>
-                            <p>Get GUARANTEED private group mentorship with Wallace Hamilton, Priority Workshop Assistance on Day 1, and exclusive VIP-only session on Day 2 (time TBD). Upgrade opportunity ends at workshop start!</p>
-                            <div class="vip-countdown">
-                                <span class="vip-countdown-label">VIP Upgrade Ends In</span>
-                                <div class="vip-countdown-timer" id="vip-countdown">Calculating...</div>
-                            </div>
-                            <a href="https://neothinkday.com/vip-upgrade" target="_blank" rel="noopener" class="card-link" aria-label="Upgrade to VIP Experience for $187">
+                            <p>Get GUARANTEED private group mentorship with Wallace Hamilton, Priority Workshop Assistance on Day 1, and exclusive VIP-only session on Day 2. Upgrade now before it's too late!</p>
+                            <a href="{{custom_values.doe_vip_upgrade_url}}" target="_blank" rel="noopener" class="card-link" aria-label="Upgrade to VIP Experience for $187">
                                 Upgrade to VIP - $187
                                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -1756,44 +1810,7 @@
                             </a>
                         </div>
 
-                        <!-- Workshop Recordings Card - LOCKED -->
-                        <div class="access-card locked">
-                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                            </svg>
-                            <span class="card-status locked">After Workshop</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <h3>Workshop Recordings</h3>
-                            <p>Recordings are not guaranteed. If available, access will be provided after the workshop concludes. Day 1 is a live-only experience.</p>
-                            <a href="#recordings" class="card-link locked secondary" aria-label="Recordings status: TBD">
-                                TBD - Not Guaranteed
-                            </a>
-                        </div>
-
-                        <!-- Wealth Engine Calculator Card - LOCKED -->
-                        <div class="access-card locked">
-                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                            </svg>
-                            <span class="card-status locked">Unlocks Before Workshop</span>
-                            <div class="card-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                                </svg>
-                            </div>
-                            <h3>Wealth Engine Calculator</h3>
-                            <p>Calculate your exact path to financial freedom. Access will be provided before the workshop so you can discover your personalized timeline.</p>
-                            <a href="#" class="card-link locked" aria-label="Wealth Engine Calculator unlocks soon">
-                                Unlocks Soon
-                            </a>
-                        </div>
-
-                        <!-- Support Card - AVAILABLE -->
+                        <!-- 7. Support Card - AVAILABLE -->
                         <div class="access-card">
                             <span class="card-status available">Always Available</span>
                             <div class="card-icon">
