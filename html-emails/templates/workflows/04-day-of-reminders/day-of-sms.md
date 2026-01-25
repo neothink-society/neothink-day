@@ -229,6 +229,42 @@ Today we build on yesterday's foundation.
 
 ---
 
+### Day 2 — 30 Minutes Until Wallace
+**Offset:** +24h 30m (8:30 AM Pacific / 11:30 AM Eastern)
+
+```
+Neothink Society: 30 minutes until Wallace.
+
+Pre-session happening now. The room is filling up.
+
+Join us:
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+Yesterday was foundation. Today is transformation.
+```
+
+**Character Count:** ~155/160
+
+---
+
+### Day 2 — 15 Minutes Until Wallace
+**Offset:** +24h 45m (8:45 AM Pacific / 11:45 AM Eastern)
+
+```
+Neothink Society: Wallace in 15 minutes.
+
+In the room? Get settled. Have your workbook ready.
+
+Not in yet? Join now:
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+This is it.
+```
+
+**Character Count:** ~140/160
+
+---
+
 ### Day 2 — Wallace Live
 **Offset:** +25h (9:00 AM Pacific / 12:00 PM Eastern)
 
@@ -328,6 +364,8 @@ Welcome to Neothink Society. Your golden life has begun.
 | Day 2 — 1 Hour | +23h | 7:00 AM | 10:00 AM |
 | Day 2 — Pre-Session | +24h | 8:00 AM | 11:00 AM |
 | Day 2 — 45 Minutes | +24h 15m | 8:15 AM | 11:15 AM |
+| Day 2 — 30 Minutes | +24h 30m | 8:30 AM | 11:30 AM |
+| Day 2 — 15 Minutes | +24h 45m | 8:45 AM | 11:45 AM |
 | Day 2 — Live | +25h | 9:00 AM | 12:00 PM |
 | Day 2 — Late 15min | +25h 15m | 9:15 AM | 12:15 PM |
 | Day 2 — Late 30min | +25h 30m | 9:30 AM | 12:30 PM |
