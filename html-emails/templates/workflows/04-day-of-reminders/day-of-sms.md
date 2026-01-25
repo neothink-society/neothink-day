@@ -126,34 +126,25 @@ Better late than never. We're here for you.
 **Offset:** +9h (5:00 PM Pacific / 8:00 PM Eastern)
 
 ```
-Neothink Society: Day 1 complete.
+Neothink Society: Day 1 complete. You are a Dream Harvester now.
 
-You showed up. You stayed present. You did the work.
+Tonight: Rest well. Stay off the news. Let your mind integrate.
 
-Whatever you're feeling right now — that's exactly right.
+Day 2 tomorrow: Pre-session 8am PT / 11am ET. Wallace at 9am PT / 12pm ET.
 
-Tonight: Rest. Let your mind process.
-
-Tomorrow (Day 2): 9:00 AM PT / 12:00 PM ET
-Same Zoom link.
-
-See you tomorrow.
+Same Zoom link. See you tomorrow.
 ```
 
-**Character Count:** ~230/160 — **REQUIRES 2 SEGMENTS**
+**Character Count:** ~220/160 — **REQUIRES 2 SEGMENTS**
 
 **Alternative (single segment):**
 ```
-Neothink Society: Day 1 complete. You did the work.
+Neothink Society: Day 1 complete. You're a Dream Harvester now.
 
-Tonight: Rest. Let your mind process.
-
-Day 2 tomorrow: 9am PT / 12pm ET. Same Zoom link.
-
-You're not the same person you were this morning.
+Rest well tonight. Day 2 pre-session: 8am PT / 11am ET. Same Zoom link.
 ```
 
-**Character Count:** ~158/160
+**Character Count:** ~138/160
 
 ---
 
@@ -165,84 +156,77 @@ You're not the same person you were this morning.
 **Offset:** +23h (7:00 AM Pacific / 10:00 AM Eastern)
 
 ```
-Neothink Society: Day 2 begins in 2 hours.
+Neothink Society: Day 2 in 1 hour.
 
-You know what to do now.
-
-9:00 AM PT / 12:00 PM ET — we go deeper.
+Pre-session: 8am PT / 11am ET
+Wallace takes stage: 9am PT / 12pm ET
 
 Have ready:
 - Workbook + Day 1 notes
 - Water, pen, paper
 
-Same Zoom link.
-
-Yesterday was the foundation. Today, we build.
+Same Zoom link. Today is about Wealth and Integration.
 ```
 
 **Character Count:** ~195/160 — **REQUIRES 2 SEGMENTS**
 
 **Alternative (single segment):**
 ```
-Neothink Society: Day 2 in 2 hours. 9am PT / 12pm ET.
+Neothink Society: Day 2 in 1 hour. Pre-session 8am PT / 11am ET.
 
-Have your workbook and Day 1 notes ready. Same Zoom link.
-
-Yesterday was the foundation. Today, we build on it.
+Workbook + Day 1 notes ready. Same Zoom link. Today: Wealth & Integration.
 ```
 
-**Character Count:** ~155/160
+**Character Count:** ~145/160
 
 ---
 
-### Day 2 — 45 Minutes Before
-**Offset:** +24h 15m (8:15 AM Pacific / 11:15 AM Eastern)
+### Day 2 — Pre-Session Starting
+**Offset:** +24h (8:00 AM Pacific / 11:00 AM Eastern)
 
 ```
-Neothink Society: 45 minutes until Day 2.
-
-Doors open in 15 min.
+Neothink Society: Day 2 pre-session starting now.
 
 Join us:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-Whatever Day 1 stirred up — today we work with it.
-```
-
-**Character Count:** ~140/160
-
----
-
-### Day 2 — Doors Open
-**Offset:** +24h 45m (8:45 AM Pacific / 11:45 AM Eastern)
-
-```
-Neothink Society: Doors open — 15 minutes to Day 2.
-
-Already in? Welcome back. The energy is building.
-
-Joining now?
-{{trigger_link.bw3pFLlMkAQiQOlYB674}}
-
-9:00 AM PT / 12:00 PM ET SHARP.
+Wallace takes the stage in 1 hour. Today: Wealth Creation & Level 2 initiation.
 ```
 
 **Character Count:** ~155/160
 
 ---
 
-### Day 2 — Live
+### Day 2 — 45 Minutes Until Wallace
+**Offset:** +24h 15m (8:15 AM Pacific / 11:15 AM Eastern)
+
+```
+Neothink Society: 45 minutes until Wallace takes the stage.
+
+In the pre-session? Great. Stay with us.
+
+Joining now?
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+Today we build on yesterday's foundation.
+```
+
+**Character Count:** ~155/160
+
+---
+
+### Day 2 — Wallace Live
 **Offset:** +25h (9:00 AM Pacific / 12:00 PM Eastern)
 
 ```
-Neothink Society: Day 2 is live.
+Neothink Society: Wallace is live. Day 2 is underway.
 
 In the room? Thank you for showing up again.
 
 Not in yet?
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-We've begun. Today, everything comes together.
+Today, everything comes together.
 ```
 
 **Character Count:** ~145/160
