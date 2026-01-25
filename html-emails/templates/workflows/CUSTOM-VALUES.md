@@ -51,8 +51,8 @@ All custom values use the `doe_` prefix (Day of Enlightenment) and are stored in
 |---------------|--------------------------|----------|
 | `doe_day_1_start_time` | 11:00 AM Eastern / 8:00 AM Pacific | Day 1 start |
 | `doe_day_1_start_time_full` | 11:00 AM Eastern • 10:00 AM Central • 9:00 AM Mountain • 8:00 AM Pacific | Day 1 all time zones |
-| `doe_day_2_start_time` | 12:00 PM Eastern / 9:00 AM Pacific | Day 2 start |
-| `doe_day_2_start_time_full` | 12:00 PM Eastern • 11:00 AM Central • 10:00 AM Mountain • 9:00 AM Pacific | Day 2 all time zones |
+| `doe_day_2_start_time` | 11:00 AM Eastern / 8:00 AM Pacific | Day 2 pre-session start |
+| `doe_day_2_start_time_full` | 11:00 AM Eastern • 10:00 AM Central • 9:00 AM Mountain • 8:00 AM Pacific | Day 2 pre-session all time zones |
 | `doe_day_1_return_time` | 6:15 PM Eastern / 5:15 PM Central / 4:15 PM Mountain / 3:15 PM Pacific | Day 1 lunch return |
 | `doe_day_2_return_time` | 7:00 PM Eastern / 6:00 PM Central / 5:00 PM Mountain / 4:00 PM Pacific | Day 2 lunch return |
 
@@ -168,7 +168,7 @@ doe_event_dates = [MONTH] [DAY]-[DAY], [YEAR]
 ### Step 2: Update Times (if different from standard)
 ```
 doe_day_1_start_time = 11:00 AM Eastern / 8:00 AM Pacific
-doe_day_2_start_time = 12:00 PM Eastern / 9:00 AM Pacific
+doe_day_2_start_time = 11:00 AM Eastern / 8:00 AM Pacific (pre-session start; Wallace at 12pm ET / 9am PT)
 ```
 
 ### Step 3: Update Post-Event Dates
