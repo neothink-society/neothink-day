@@ -179,6 +179,22 @@ Workbook + Day 1 notes ready. Same Zoom link. Today: Wealth & Integration.
 
 ---
 
+### Day 2 — 1 Hour Before
+**Offset:** +23h (7:00 AM Pacific / 10:00 AM Eastern)
+
+```
+Neothink Society: Day 2 pre-session in 1 hour.
+
+8am PT / 11am ET — Pre-session opens
+9am PT / 12pm ET — Wallace takes the stage
+
+Gather your Day 1 notes. Same Zoom link. See you soon.
+```
+
+**Character Count:** ~150/160
+
+---
+
 ### Day 2 — Pre-Session Starting
 **Offset:** +24h (8:00 AM Pacific / 11:00 AM Eastern)
 
@@ -309,6 +325,7 @@ Welcome to Neothink Society. Your golden life has begun.
 | Day 1 — Late 30min | +30m | 8:30 AM | 11:30 AM |
 | Day 1 — End of Day | +9h | 5:00 PM | 8:00 PM |
 | Day 2 — 2 Hours | +22h | 6:00 AM | 9:00 AM |
+| Day 2 — 1 Hour | +23h | 7:00 AM | 10:00 AM |
 | Day 2 — Pre-Session | +24h | 8:00 AM | 11:00 AM |
 | Day 2 — 45 Minutes | +24h 15m | 8:15 AM | 11:15 AM |
 | Day 2 — Live | +25h | 9:00 AM | 12:00 PM |
