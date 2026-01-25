@@ -128,20 +128,18 @@ Better late than never. We're here for you.
 ```
 Neothink Society: Day 1 complete. You are a Dream Harvester now.
 
-Tonight: Rest well. Stay off the news. Let your mind integrate.
+Day 2 starts this morning: Pre-session 8am PT / 11am ET. Wallace at 9am PT / 12pm ET.
 
-Day 2 tomorrow: Pre-session 8am PT / 11am ET. Wallace at 9am PT / 12pm ET.
-
-Same Zoom link. See you tomorrow.
+Same Zoom link. See you soon.
 ```
 
-**Character Count:** ~220/160 — **REQUIRES 2 SEGMENTS**
+**Character Count:** ~175/160 — **REQUIRES 2 SEGMENTS**
 
 **Alternative (single segment):**
 ```
 Neothink Society: Day 1 complete. You're a Dream Harvester now.
 
-Rest well tonight. Day 2 pre-session: 8am PT / 11am ET. Same Zoom link.
+Day 2 this morning: Pre-session 8am PT / 11am ET. Same Zoom link. See you soon.
 ```
 
 **Character Count:** ~138/160
