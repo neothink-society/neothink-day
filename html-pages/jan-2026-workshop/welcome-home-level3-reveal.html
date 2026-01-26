@@ -2240,12 +2240,17 @@
             const minutesEl = document.getElementById('minutes');
             const secondsEl = document.getElementById('seconds');
 
+            // Skip if elements don't exist on this page
+            if (!countdownEl || !daysEl || !hoursEl || !minutesEl || !secondsEl) {
+                return;
+            }
+
             function updateCountdown() {
                 const now = new Date().getTime();
                 const distance = workshopDate - now;
 
                 if (distance < 0) {
-                    countdownEl.innerHTML = '<div class="countdown-expired">Workshop Has Begun!</div>';
+                    if (countdownEl) countdownEl.innerHTML = '<div class="countdown-expired">Workshop Has Begun!</div>';
                     clearInterval(interval);
                     return;
                 }
@@ -2255,10 +2260,10 @@
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                daysEl.textContent = String(days).padStart(2, '0');
-                hoursEl.textContent = String(hours).padStart(2, '0');
-                minutesEl.textContent = String(minutes).padStart(2, '0');
-                secondsEl.textContent = String(seconds).padStart(2, '0');
+                if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+                if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+                if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+                if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
             }
 
             updateCountdown();
@@ -2272,6 +2277,16 @@
             const vipCountdownEl = document.getElementById('vip-countdown');
             const vipCountdownWrapper = vipCountdownEl ? vipCountdownEl.closest('.vip-countdown') : null;
 
+            // Check if already expired
+            const now = new Date().getTime();
+            if (vipDeadline - now < 0) {
+                // Already expired - just hide the countdown box
+                if (vipCountdownWrapper) vipCountdownWrapper.style.display = 'none';
+                return;
+            }
+
+            let vipInterval;
+
             function updateVIPCountdown() {
                 const now = new Date().getTime();
                 const distance = vipDeadline - now;
@@ -2280,7 +2295,7 @@
                     // Just hide the countdown box - DO NOT change text or show "Closed"
                     // VIP button and card remain visible and functional
                     if (vipCountdownWrapper) vipCountdownWrapper.style.display = 'none';
-                    clearInterval(vipInterval);
+                    if (vipInterval) clearInterval(vipInterval);
                     return;
                 }
 
@@ -2301,7 +2316,7 @@
             }
 
             updateVIPCountdown();
-            const vipInterval = setInterval(updateVIPCountdown, 60000); // Update every minute
+            vipInterval = setInterval(updateVIPCountdown, 60000); // Update every minute
         }
 
         // Level 3 Stargazer countdown timer - Ends Jan 28, 2026 at 11:59 PM ET
