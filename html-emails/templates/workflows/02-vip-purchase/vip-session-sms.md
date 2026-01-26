@@ -11,19 +11,19 @@
 
 ---
 
-### Morning Reminder
-**Offset:** -7h from T=0 (Mon 9am PT / 12pm ET)
-**GHL:** Schedule for specific date/time
+### Afternoon Reminder
+**Offset:** -3h to -2h from T=0 (Mon 1-2pm PT / 4-5pm ET)
+**GHL:** Schedule for specific date/time or send ASAP
 
 ```
-Neothink Society: Your VIP session is TONIGHT.
+Neothink Society: Your VIP session is in a few hours.
 
-4:00 PM Pacific / 7:00 PM Eastern
+TONIGHT: 4pm PT / 7pm ET
 With Wallace Hamilton and senior mentors
 
-Check your email for the Zoom link.
+Zoom link coming soon. Check your email.
 
-This is your exclusive access. Be there.
+This is your exclusive access.
 ```
 
 **Character Count:** ~155/160
@@ -142,7 +142,7 @@ Watch: {{custom_values.doe_vip_recording_url}}
 
 | Message | Offset | GHL Config | Time (PT) | Time (ET) |
 |---------|--------|------------|-----------|-----------|
-| Morning Reminder | -7h | Schedule date/time | Mon 9am | Mon 12pm |
+| Afternoon Reminder | -3h to -2h | Schedule date/time | Mon 1-2pm | Mon 4-5pm |
 | 90-Minute Reminder | -1h 30m | Schedule date/time | Mon 2:30pm | Mon 5:30pm |
 | 1-Hour Reminder | -1h | Schedule date/time | Mon 3pm | Mon 6pm |
 | 30-Minute Reminder | -30m | Schedule date/time | Mon 3:30pm | Mon 6:30pm |
