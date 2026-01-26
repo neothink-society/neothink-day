@@ -11,7 +11,7 @@
 ```
 Neothink Society: Level 3 sold out — but I'm honoring my word.
 
-Final Q&A tomorrow (Tue) 4pm PT / 7pm ET. Your L3 questions + 90-day roadmap.
+Final Q&A TODAY 4pm PT / 7pm ET. Your L3 questions + 90-day roadmap.
 
 Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
 
@@ -20,20 +20,20 @@ Wednesday midnight = final deadline.
 ```
 
 **Send Time:** Monday afternoon (ASAP)
-**Character Count:** ~230/160 — **REQUIRES 2 SEGMENTS**
+**Character Count:** ~225/160 — **REQUIRES 2 SEGMENTS**
 
 **Alternative (single segment + follow-up):**
 
 **SMS 1:**
 ```
-Neothink Society: Level 3 sold out but I'm honoring my word. Final Q&A tomorrow 4pm PT / 7pm ET for your L3 questions.
+Neothink Society: Level 3 sold out but I'm honoring my word. Final Q&A TODAY 4pm PT / 7pm ET for your L3 questions.
 – Wallace
 ```
-**Character Count:** ~130/160
+**Character Count:** ~125/160
 
 **SMS 2 (send 5 min later):**
 ```
-Neothink Society: Tomorrow's Q&A Zoom link:
+Neothink Society: Today's Q&A Zoom link:
 https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
 
 Enroll now: societysecrets.com/level3
