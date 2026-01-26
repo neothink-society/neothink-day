@@ -13,6 +13,30 @@ Resources: {{custom_values.doe_workshop_hub_url}}
 
 ---
 
+## Monday Morning - Recap & Events
+
+```
+Neothink Society: Good morning, Level 2 Neothinker! What an incredible weekend.
+
+TODAY: L3 Q&A session (time TBA) + VIP session at 4pm PT / 7pm ET
+
+WED: L3 Welcome Party at 4pm PT / 7pm ET
+
+Check your email for full recap.
+```
+
+**Offset:** +46h (from T=0 at 8am PT Saturday = Monday 6am PT / 9am ET)
+**Character Count:** ~175/160 — **REQUIRES 2 SEGMENTS**
+
+**Alternative (single segment):**
+```
+Neothink Society: Good morning, Level 2 Neothinker! Check your email for the full weekend recap and today's events (L3 Q&A + VIP session).
+```
+
+**Character Count:** ~140/160
+
+---
+
 ## Monday - Golden Life Sheet
 
 ```
@@ -21,7 +45,7 @@ Neothink Society: Your Golden Life Sheet is ready! This is where transformation 
 Download: {{custom_values.doe_golden_life_url}}
 ```
 
-**Offset:** +15h
+**Offset:** +50h (Monday 10am PT / 1pm ET - after morning recap)
 **Character Count:** Variable (depends on URL length)
 
 ---
