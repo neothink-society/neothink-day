@@ -48,34 +48,28 @@ Enroll now: societysecrets.com/level3
 **Send Time:** Monday 3pm PT / 6pm ET
 
 ```
-Neothink Society: L3 Q&A in 1 HOUR.
+Neothink Society: Level 3 Q&A + Implementation Session starts in 1 HOUR.
 
-4pm PT / 7pm ET — We answer your Level 3 questions.
+4pm PT / 7pm ET
 
-Zoom link coming in 30 minutes. Have your questions ready.
+Get clarity on Level 3 + we'll help you create your 90-day implementation plan.
+
+Zoom: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+
+Last chance before Wednesday's enrollment deadline.
+
+See you in 1 hour.
+– Wallace
 ```
 
-**Character Count:** ~145/160
+**Character Count:** ~290/160 — **REQUIRES 2 SEGMENTS**
 
----
-
-## Monday - L3 Q&A 30 Minutes (with Zoom link)
-
-**AUDIENCE:** All attendees EXCEPT VIPs and L3 members
-**Send Time:** Monday 3:30pm PT / 6:30pm ET
-
+**Alternative (single segment):**
 ```
-Neothink Society: L3 Q&A in 30 MINUTES.
-
-JOIN: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
-
-ID: 827 2922 7938
-Pass: 636475
-
-See you inside.
+Neothink Society: L3 Q&A in 1 HOUR. 4pm PT / 7pm ET. Get L3 clarity + 90-day plan. Last chance before Wednesday deadline. – Wallace
 ```
 
-**Character Count:** ~175/160 — **REQUIRES 2 SEGMENTS**
+**Character Count:** ~135/160
 
 ---
 
@@ -85,23 +79,49 @@ See you inside.
 **Send Time:** Monday 4pm PT / 7pm ET
 
 ```
-Neothink Society: L3 Q&A is LIVE.
+Neothink Society: LIVE NOW — Level 3 Q&A + Implementation Session.
 
-our Success Guides is on now answering Level 3 questions.
+Join immediately: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
 
-Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Get L3 clarity + your 90-day plan.
+
+Last chance before Wednesday's deadline.
+– The Neothink Team
 ```
 
-**Character Count:** ~165/160 — **REQUIRES 2 SEGMENTS**
+**Character Count:** ~225/160 — **REQUIRES 2 SEGMENTS**
 
 **Alternative (single segment):**
 ```
-Neothink Society: L3 Q&A is LIVE. We're live now.
-
-Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Neothink Society: LIVE NOW — L3 Q&A. Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
 ```
 
 **Character Count:** ~125/160
+
+---
+
+## Monday - L3 Q&A 1 HOUR REMAINING
+
+**AUDIENCE:** All attendees EXCEPT VIPs and L3 members
+**Send Time:** Monday 5pm PT / 8pm ET
+
+```
+Neothink Society: 1 HOUR LEFT in final Level 3 Q&A.
+
+We're still live: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+
+Last chance for clarity before Wednesday midnight deadline.
+– The Neothink Team
+```
+
+**Character Count:** ~200/160 — **REQUIRES 2 SEGMENTS**
+
+**Alternative (single segment):**
+```
+Neothink Society: 1 HOUR LEFT in L3 Q&A. Still live: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+```
+
+**Character Count:** ~130/160
 
 ---
 
