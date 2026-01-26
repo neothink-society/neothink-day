@@ -632,11 +632,22 @@
                 font-size: var(--text-lg) !important;
             }
 
-            .ascension-vault a[style*="padding: 1.25rem"] {
+            .ascension-vault a[style*="padding: 1.25rem"],
+            .stargazer-cta-button {
                 padding: 1rem 1.5rem !important;
                 font-size: var(--text-base) !important;
                 width: 100%;
+                max-width: 100%;
                 box-sizing: border-box;
+            }
+
+            #level3-countdown {
+                margin: var(--space-md) auto !important;
+                padding: var(--space-sm) !important;
+            }
+
+            #level3-timer {
+                font-size: var(--text-xl) !important;
             }
         }
 
@@ -2029,36 +2040,57 @@
                         <h3 class="vault-headline">The Stargazer</h3>
                         <p style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-top: calc(var(--space-sm) * -1);">Level 3 Implementation Intensive</p>
 
+                        <!-- Countdown Timer -->
+                        <div id="level3-countdown" style="margin: var(--space-lg) auto; padding: var(--space-md); background: rgba(255, 59, 48, 0.1); border: 1px solid rgba(255, 59, 48, 0.3); border-radius: 12px; max-width: 400px;">
+                            <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-xs);">⏰ Enrollment Closes In</p>
+                            <div id="level3-timer" style="font-family: var(--font-serif); font-size: var(--text-2xl); font-weight: 700; color: var(--white);"></div>
+                            <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gray-400); margin-top: var(--space-xs);">Wednesday, January 28 at 11:59 PM ET</p>
+                        </div>
+
                         <!-- Divider -->
                         <div class="vault-divider" aria-hidden="true"></div>
 
                         <!-- Body Copy - The Offer -->
-                        <div class="vault-body" style="text-align: left; max-width: 600px; margin: 0 auto;">
-                            <p style="font-size: var(--text-lg); color: var(--white); margin-bottom: var(--space-lg);">
-                                You've awakened to who you really are. Now it's time to <strong style="color: var(--gold);">implement</strong>—to dissolve every limitation standing between you and the life you're meant to live.
+                        <div class="vault-body" style="text-align: left; max-width: 700px; margin: 0 auto;">
+                            <p style="font-size: var(--text-lg); color: var(--white); margin-bottom: var(--space-lg); text-align: center;">
+                                Access <strong style="color: var(--gold);">half a century</strong> of Neothink Society's guarded secrets and Mark Hamilton's personal mentorship—significantly more access than regular members receive.
                             </p>
 
+                            <!-- 3 Days Section -->
                             <div style="margin-bottom: var(--space-xl);">
-                                <h4 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin-bottom: var(--space-md);">3 Days. 3 Breakthroughs.</h4>
+                                <h4 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin-bottom: var(--space-md);">Complete Transformation: 3 Days, All Life Areas</h4>
                                 <div style="display: flex; flex-direction: column; gap: var(--space-md);">
                                     <div style="padding: var(--space-md); background: rgba(255, 215, 0, 0.05); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0;">
-                                        <strong style="color: var(--gold);">Day 1: Internal Limitations</strong>
-                                        <p style="color: var(--gray-300); margin-top: var(--space-xs); margin-bottom: 0;">Clear the blocks within yourself that keep you playing small.</p>
+                                        <strong style="color: var(--gold);">Day 1: Remove Internal Limitations</strong>
+                                        <p style="color: var(--gray-300); margin-top: var(--space-xs); margin-bottom: 0;">Clear the blocks within yourself that keep you playing small. Dissolve the patterns holding you back.</p>
                                     </div>
                                     <div style="padding: var(--space-md); background: rgba(255, 215, 0, 0.05); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0;">
-                                        <strong style="color: var(--gold);">Day 2: Money Limitations</strong>
-                                        <p style="color: var(--gray-300); margin-top: var(--space-xs); margin-bottom: 0;">Transform your relationship with abundance and financial flow.</p>
+                                        <strong style="color: var(--gold);">Day 2: Build Wealth with Proven Strategies</strong>
+                                        <p style="color: var(--gray-300); margin-top: var(--space-xs); margin-bottom: 0;">Learn the exact methods that generated over <strong>$400 million</strong> for the Prime Mentor—stocks, crypto, real estate, and tax reduction.</p>
                                     </div>
                                     <div style="padding: var(--space-md); background: rgba(255, 215, 0, 0.05); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0;">
-                                        <strong style="color: var(--gold);">Day 3: World Limitations</strong>
-                                        <p style="color: var(--gray-300); margin-top: var(--space-xs); margin-bottom: 0;">Architect your reality from the outside-in. Build your world.</p>
+                                        <strong style="color: var(--gold);">Day 3: Master Relationships & Reality Creation</strong>
+                                        <p style="color: var(--gray-300); margin-top: var(--space-xs); margin-bottom: 0;">Architect your reality from the outside-in. Build your world with intention and precision.</p>
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- Why Level 3 -->
                             <div style="margin-bottom: var(--space-xl);">
-                                <h4 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin-bottom: var(--space-md);">Included Bonuses</h4>
+                                <h4 style="font-family: var(--font-serif); font-size: var(--text-xl); color: var(--gold); margin-bottom: var(--space-md);">What Makes Level 3 Different</h4>
                                 <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-sm);">
+                                    <li style="display: flex; align-items: flex-start; gap: var(--space-sm); color: var(--gray-200);">
+                                        <span style="color: var(--gold);">✦</span>
+                                        <span><strong>Personalized Support</strong> — One-on-one mentorship, workshops, and dedicated success guides to implement your million dollar vision</span>
+                                    </li>
+                                    <li style="display: flex; align-items: flex-start; gap: var(--space-sm); color: var(--gray-200);">
+                                        <span style="color: var(--gold);">✦</span>
+                                        <span><strong>Priority Positioning</strong> — Be at the forefront of building the "new world" with supermind, Neovia zone, and Prime Law initiatives</span>
+                                    </li>
+                                    <li style="display: flex; align-items: flex-start; gap: var(--space-sm); color: var(--gray-200);">
+                                        <span style="color: var(--gold);">✦</span>
+                                        <span><strong>Guaranteed Results</strong> — Wallace personally guarantees you'll leave with your million dollar vision actively happening</span>
+                                    </li>
                                     <li style="display: flex; align-items: flex-start; gap: var(--space-sm); color: var(--gray-200);">
                                         <span style="color: var(--gold);">✦</span>
                                         <span><strong>Welcome Party</strong> — Monday 4pm PT / 7pm ET with fellow Stargazers</span>
@@ -2082,11 +2114,11 @@
 
                                 <div style="padding: var(--space-md); background: rgba(0, 0, 0, 0.3); border-radius: 8px; margin-bottom: var(--space-lg);">
                                     <p style="font-family: var(--font-sans); font-size: var(--text-sm); color: var(--gray-200); margin-bottom: 0;">
-                                        <strong style="color: var(--gold);">Honor System:</strong> The remaining $3,003 is only due after you've made your first $50,000 using what you learn. We believe in you that much.
+                                        <strong style="color: var(--gold);">Risk-Free Investment:</strong> Pay $1,997 upfront. The remaining $3,003 is only due after you've made your first $50,000 using what you learn. Honor system—we believe in you that much.
                                     </p>
                                 </div>
 
-                                <a href="https://societysecrets.com/level3" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: 1.25rem 3rem; font-family: var(--font-sans); font-size: var(--text-xl); font-weight: 700; color: var(--black); background: linear-gradient(135deg, var(--gold) 0%, #FFB800 100%); border: none; border-radius: 12px; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);">
+                                <a href="https://societysecrets.com/level3" target="_blank" rel="noopener" class="stargazer-cta-button" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: 1.25rem 2.5rem; font-family: var(--font-sans); font-size: var(--text-xl); font-weight: 700; color: var(--black); background: linear-gradient(135deg, var(--gold) 0%, #FFB800 100%); border: none; border-radius: 12px; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);">
                                     Claim Your Spot in The Stargazer
                                     <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -2098,9 +2130,12 @@
                                 </p>
                             </div>
 
-                            <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gray-500); text-align: center;">
-                                Enrollment closes Wednesday at 4pm PT / 7pm ET
-                            </p>
+                            <!-- Bottom Line -->
+                            <div style="text-align: center; padding: var(--space-lg); background: rgba(255, 215, 0, 0.03); border-radius: 12px;">
+                                <p style="font-family: var(--font-serif); font-size: var(--text-base); color: var(--gray-200); font-style: italic; margin-bottom: 0;">
+                                    <strong style="color: var(--gold);">Bottom Line:</strong> For $1,997 upfront, you get transformational knowledge, proven wealth systems, and personal mentorship that positions you for significant financial success—with the majority of payment due only after you profit.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2209,10 +2244,53 @@
             const vipInterval = setInterval(updateVIPCountdown, 60000); // Update every minute
         }
 
-        // Initialize both countdowns on page load
+        // Level 3 Stargazer countdown timer - Ends Jan 28, 2026 at 11:59 PM ET
+        function initLevel3Countdown() {
+            const level3Deadline = new Date('2026-01-29T04:59:00Z').getTime(); // 11:59 PM ET = 04:59 UTC next day
+            const level3TimerEl = document.getElementById('level3-timer');
+            const level3CountdownEl = document.getElementById('level3-countdown');
+
+            function updateLevel3Countdown() {
+                const now = new Date().getTime();
+                const distance = level3Deadline - now;
+
+                if (distance < 0) {
+                    // Enrollment closed
+                    if (level3CountdownEl) {
+                        level3CountdownEl.innerHTML = '<p style="font-family: var(--font-mono); font-size: var(--text-sm); color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.1em;">Enrollment Closed</p>';
+                    }
+                    clearInterval(level3Interval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                let timeString = '';
+                if (days > 0) {
+                    timeString = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                } else if (hours > 0) {
+                    timeString = `${hours}h ${minutes}m ${seconds}s`;
+                } else if (minutes > 0) {
+                    timeString = `${minutes}m ${seconds}s`;
+                } else {
+                    timeString = `${seconds}s`;
+                }
+
+                if (level3TimerEl) level3TimerEl.textContent = timeString;
+            }
+
+            updateLevel3Countdown();
+            const level3Interval = setInterval(updateLevel3Countdown, 1000);
+        }
+
+        // Initialize countdowns on page load
         document.addEventListener('DOMContentLoaded', function() {
             initWorkshopCountdown();
             initVIPCountdown();
+            initLevel3Countdown();
         });
     </script>
 </body>
