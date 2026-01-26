@@ -331,6 +331,43 @@
             letter-spacing: 0.05em;
         }
 
+        .hero-cta-wrapper {
+            margin-top: var(--space-xl);
+        }
+
+        .hero-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: 1.25rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold) 0%, #FFB800 100%);
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4), 0 0 60px rgba(255, 215, 0, 0.15);
+        }
+
+        .hero-cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.5), 0 0 80px rgba(255, 215, 0, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            .hero-cta-primary {
+                padding: 1rem 1.5rem;
+                font-size: var(--text-lg);
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+
         /* ===========================
            COUNTDOWN TIMER
         =========================== */
@@ -579,6 +616,42 @@
             color: var(--gray-500);
             text-transform: uppercase;
             letter-spacing: 0.15em;
+        }
+
+        /* Stargazer vault responsive - override inline styles */
+        @media (max-width: 768px) {
+            .ascension-vault .vault-body {
+                padding: 0 var(--space-sm);
+            }
+
+            .ascension-vault .vault-body > div[style*="padding"] {
+                padding: var(--space-md) !important;
+            }
+
+            .ascension-vault .vault-body h4 {
+                font-size: var(--text-lg) !important;
+            }
+
+            .ascension-vault a[style*="padding: 1.25rem"] {
+                padding: 1rem 1.5rem !important;
+                font-size: var(--text-base) !important;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ascension-vault .vault-body > div[style*="flex-direction"] {
+                gap: var(--space-sm) !important;
+            }
+
+            .ascension-vault .vault-body > div[style*="text-align: center"] {
+                padding: var(--space-md) !important;
+            }
+
+            .ascension-vault .vault-body p[style*="font-size: var(--text-4xl)"] {
+                font-size: var(--text-3xl) !important;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1336,6 +1409,65 @@
                 padding: 1rem 1.5rem;
                 min-height: 52px;
             }
+
+            /* Stargazer vault mobile */
+            .ascension-vault {
+                padding: var(--space-xl) var(--space-md);
+                margin: var(--space-xl) auto 0;
+            }
+
+            .vault-headline {
+                font-size: var(--text-2xl) !important;
+            }
+
+            .vault-lock-icon {
+                width: 48px;
+                height: 48px;
+            }
+
+            .section-header h2 {
+                font-size: var(--text-2xl);
+            }
+
+            .section-header p {
+                font-size: var(--text-base);
+            }
+        }
+
+        /* Tablet styles */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .vip-banner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .vip-banner-cta {
+                align-items: center;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 360px) {
+            .hero-section {
+                padding: var(--space-lg) var(--space-xs);
+            }
+
+            .hero-title {
+                font-size: var(--text-xl);
+            }
+
+            .hero-subtitle {
+                font-size: var(--text-base);
+            }
+
+            .access-card {
+                padding: var(--space-md);
+            }
+
+            .card-link {
+                padding: 0.875rem 1rem;
+                font-size: var(--text-sm);
+            }
         }
 
         /* ===========================
@@ -1590,10 +1722,10 @@
             <!-- Hero Section -->
             <section class="hero-section">
                 <div class="container">
-                    <!-- Workshop Complete Badge -->
-                    <div style="display: inline-flex; align-items: center; gap: var(--space-sm); padding: 0.75rem 1.5rem; background: rgba(52, 199, 89, 0.15); border: 2px solid rgba(52, 199, 89, 0.5); border-radius: 30px; margin-bottom: var(--space-lg);">
-                        <span style="font-size: 1.25rem;">✓</span>
-                        <span style="font-family: var(--font-mono); font-size: var(--text-sm); font-weight: 700; color: #34c759; text-transform: uppercase; letter-spacing: 0.15em;">Workshop Complete</span>
+                    <!-- Level 3 Now Open Badge -->
+                    <div style="display: inline-flex; align-items: center; gap: var(--space-sm); padding: 0.75rem 1.5rem; background: rgba(255, 215, 0, 0.15); border: 2px solid rgba(255, 215, 0, 0.5); border-radius: 30px; margin-bottom: var(--space-lg);">
+                        <span style="font-size: 1.25rem;">✨</span>
+                        <span style="font-family: var(--font-mono); font-size: var(--text-sm); font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em;">Level 3 Now Open</span>
                     </div>
 
                     <h1 class="hero-title">
@@ -1608,10 +1740,9 @@
                     <p class="hero-date" aria-label="Workshop dates">January 24-25, 2026 — Complete</p>
 
                     <!-- Primary Level 3 CTA -->
-                    <div style="margin-top: var(--space-xl);">
-                        <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">✨ The Door Is Now Open</p>
-                        <a href="#stargazer-vault" style="display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: 1.25rem 3rem; font-family: var(--font-sans); font-size: var(--text-xl); font-weight: 700; color: var(--black); background: linear-gradient(135deg, var(--gold) 0%, #FFB800 100%); border: none; border-radius: 12px; text-decoration: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4), 0 0 60px rgba(255, 215, 0, 0.15);">
-                            Discover The Stargazer — Level 3
+                    <div class="hero-cta-wrapper">
+                        <a href="#stargazer-vault" class="hero-cta-primary">
+                            Discover The Stargazer
                             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                             </svg>
