@@ -42,6 +42,69 @@ Enroll now: societysecrets.com/level3
 
 ---
 
+## Monday - L3 Q&A 1 Hour Before
+
+**AUDIENCE:** All attendees EXCEPT VIPs and L3 members
+**Send Time:** Monday 3pm PT / 6pm ET
+
+```
+Neothink Society: L3 Q&A in 1 HOUR.
+
+4pm PT / 7pm ET — Wallace answers your Level 3 questions.
+
+Zoom link coming in 30 minutes. Have your questions ready.
+```
+
+**Character Count:** ~145/160
+
+---
+
+## Monday - L3 Q&A 30 Minutes (with Zoom link)
+
+**AUDIENCE:** All attendees EXCEPT VIPs and L3 members
+**Send Time:** Monday 3:30pm PT / 6:30pm ET
+
+```
+Neothink Society: L3 Q&A in 30 MINUTES.
+
+JOIN: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+
+ID: 827 2922 7938
+Pass: 636475
+
+See you inside.
+```
+
+**Character Count:** ~175/160 — **REQUIRES 2 SEGMENTS**
+
+---
+
+## Monday - L3 Q&A LIVE
+
+**AUDIENCE:** All attendees EXCEPT VIPs and L3 members
+**Send Time:** Monday 4pm PT / 7pm ET
+
+```
+Neothink Society: L3 Q&A is LIVE.
+
+Wallace Hamilton is on now answering Level 3 questions.
+
+Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+```
+
+**Character Count:** ~165/160 — **REQUIRES 2 SEGMENTS**
+
+**Alternative (single segment):**
+```
+Neothink Society: L3 Q&A is LIVE. Wallace is on now.
+
+Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+```
+
+**Character Count:** ~125/160
+
+---
+
 ## Monday Afternoon (Introduction)
 
 ```
