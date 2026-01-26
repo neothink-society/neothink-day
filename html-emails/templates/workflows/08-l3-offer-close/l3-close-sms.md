@@ -50,7 +50,7 @@ Enroll now: societysecrets.com/level3
 ```
 Neothink Society: L3 Q&A in 1 HOUR.
 
-4pm PT / 7pm ET — Wallace answers your Level 3 questions.
+4pm PT / 7pm ET — We answer your Level 3 questions.
 
 Zoom link coming in 30 minutes. Have your questions ready.
 ```
@@ -87,7 +87,7 @@ See you inside.
 ```
 Neothink Society: L3 Q&A is LIVE.
 
-Wallace Hamilton is on now answering Level 3 questions.
+our Success Guides is on now answering Level 3 questions.
 
 Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
 ```
@@ -96,7 +96,7 @@ Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.
 
 **Alternative (single segment):**
 ```
-Neothink Society: L3 Q&A is LIVE. Wallace is on now.
+Neothink Society: L3 Q&A is LIVE. We're live now.
 
 Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
 ```
