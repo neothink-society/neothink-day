@@ -120,19 +120,35 @@ You can still catch up.
 
 ---
 
-### Recording Available (Optional)
+### Recording Available
 **Offset:** +15h from T=0 (Tue 7am PT / 10am ET)
 **GHL Wait:** 15 hours
 
 ```
-Neothink Society: Your VIP session recording is ready.
+Neothink Society: Your VIP recording is ready.
 
-3 hours of breakthrough insights with Wallace Hamilton.
+3.5 hours: Brain hacking, business secrets, and the whiteboard session.
 
 Watch: {{custom_values.doe_vip_recording_url}}
 ```
 
 **Character Count:** ~145/160
+
+---
+
+### Recording Reminder (Optional)
+**Offset:** +24h from T=0 (Tue 4pm PT / 7pm ET)
+**GHL Wait:** 24 hours
+
+```
+Neothink Society: Don't forget your VIP recording.
+
+"Sell First Build Second" masterclass + Wallace's whiteboard session inside.
+
+{{custom_values.doe_vip_recording_url}}
+```
+
+**Character Count:** ~155/160
 
 ---
 
@@ -149,6 +165,7 @@ Watch: {{custom_values.doe_vip_recording_url}}
 | Session LIVE | T=0 | Schedule date/time | Mon 4pm | Mon 7pm |
 | Late Joiner | +15m | Wait 15 min | Mon 4:15pm | Mon 7:15pm |
 | Recording Available | +15h | Wait 15 hours | Tue 7am | Tue 10am |
+| Recording Reminder | +24h | Wait 24 hours | Tue 4pm | Tue 7pm |
 
 ---
 
