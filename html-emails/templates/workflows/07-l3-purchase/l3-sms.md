@@ -149,19 +149,19 @@ We're celebrating — get in here.
 
 ---
 
-### Welcome Party Recording (Optional)
+### Welcome Party Recording
 **Offset:** +15h from T=0 (Thu 7am PT / 10am ET)
 **GHL Wait:** 15 hours
 
 ```
-Neothink Society: Your Welcome Party recording is ready.
+Neothink Society: Welcome Party recording is ready.
 
-The Stargazer Event awaits.
+3-Day roadmap + Pre-Flight Checklist inside.
 
 Watch: {{custom_values.doe_welcome_party_recording_url}}
 ```
 
-**Character Count:** ~140/160
+**Character Count:** ~135/160
 
 ---
 
