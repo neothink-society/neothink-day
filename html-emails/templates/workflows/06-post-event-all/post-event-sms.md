@@ -92,13 +92,15 @@ Details: {{custom_values.doe_workshop_hub_url}}
 ## Friday - Infinite Vector
 
 ```
-Neothink Society: Your transformation is just beginning. Today's email reveals The Infinite Vector — your path forward.
+Neothink Society: What a week. From the cage to the Infinite Vector.
 
-Resources: {{custom_values.doe_workshop_hub_url}}
+Everything connects — and the person you're becoming is already here.
+
+Check your email for the complete map.
 ```
 
 **Offset:** +111h
-**Character Count:** Variable (depends on URL length)
+**Character Count:** ~145/160
 
 ---
 
