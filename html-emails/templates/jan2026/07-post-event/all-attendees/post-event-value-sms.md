@@ -11,7 +11,7 @@
 **LINKS:**
 - Golden Life Sheet: neothinkday.com/your-golden-life
 - Wealth Engine Calculator: neothinkday.com/wealth-engine-calculator
-- Ambassador Program: neothinkday.com/ambassador
+- Ambassador Program: societysecrets.com/ambassador-signup
 - Workshop Hub: neothinkday.com/home
 
 ---
@@ -112,7 +112,7 @@ For many, sharing Neothink IS their Friday-Night Essence.
 
 If that resonates, check your email for details on how to participate.
 
-neothinkday.com/ambassador
+societysecrets.com/ambassador-signup
 ```
 
 **Character Count:** ~210 chars (2 segments)
