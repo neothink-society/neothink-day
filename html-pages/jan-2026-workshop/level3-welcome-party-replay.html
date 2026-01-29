@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Exclusive VIP replay: 3.5 hours of brain hacking techniques, business secrets, the whiteboard session, and VIP breakthroughs from the January 2026 Day of Enlightenment.">
-    <title>VIP Session Replay: Day 3 Deep Dive | Day of Enlightenment January 2026</title>
+    <meta name="description" content="Level 3 Stargazer Welcome Party Replay: The launch of the Starship. Get the roadmap for your 3-day transformation, pre-flight homework, and the activation ritual.">
+    <title>Level 3 Welcome Party Replay | The Stargazer Launch | January 27, 2026</title>
 
     <!-- Font Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,10 @@
            CSS CUSTOM PROPERTIES
         =========================== */
         :root {
-            /* Fonts */
             --font-serif: 'Baskervville', Georgia, serif;
             --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             --font-mono: 'Courier Prime', 'Courier New', monospace;
 
-            /* Colors */
             --gold: #FFD700;
             --gold-light: #FFED4E;
             --gold-dark: #B8860B;
@@ -39,7 +37,6 @@
             --gray-100: #e5e5e5;
             --white: #ffffff;
 
-            /* Spacing - 8px base grid */
             --space-xs: 0.5rem;
             --space-sm: 1rem;
             --space-md: 1.5rem;
@@ -48,7 +45,6 @@
             --space-2xl: 4rem;
             --space-3xl: 6rem;
 
-            /* Typography */
             --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
             --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
             --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
@@ -58,17 +54,11 @@
             --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
             --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
 
-            /* Shadows */
             --shadow-gold-md: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
-
-            /* Accessibility */
             --focus-ring: 3px solid var(--gold);
             --focus-offset: 3px;
         }
 
-        /* ===========================
-           RESET & BASE STYLES
-        =========================== */
         * {
             margin: 0;
             padding: 0;
@@ -140,7 +130,7 @@
             text-decoration: none;
         }
 
-        .vip-badge {
+        .stargazer-badge {
             display: inline-flex;
             align-items: center;
             gap: var(--space-xs);
@@ -154,6 +144,11 @@
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 180, 0, 0.1) 100%);
             border: 1px solid var(--gold);
             border-radius: 6px;
+        }
+
+        .stargazer-badge svg {
+            width: 16px;
+            height: 16px;
         }
 
         /* ===========================
@@ -187,7 +182,10 @@
         .hero-subtitle {
             font-size: var(--text-lg);
             color: var(--gray-300);
-            margin-bottom: var(--space-lg);
+            margin-bottom: var(--space-md);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .session-meta {
@@ -195,7 +193,7 @@
             justify-content: center;
             gap: var(--space-lg);
             flex-wrap: wrap;
-            margin-bottom: var(--space-xl);
+            margin-bottom: var(--space-lg);
         }
 
         .meta-item {
@@ -214,7 +212,7 @@
         }
 
         /* ===========================
-           VIDEO CONTAINER
+           VIDEO SECTION
         =========================== */
         .video-section {
             padding: 0 var(--space-md) var(--space-2xl);
@@ -225,7 +223,7 @@
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            padding-top: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 56.25%;
             background: var(--gray-900);
             border-radius: 16px;
             overflow: hidden;
@@ -313,33 +311,91 @@
             color: var(--white);
         }
 
-        /* Bullet List */
-        .bullet-list {
-            list-style: none;
-            padding: 0;
-            margin: var(--space-md) 0 0 0;
+        /* Roadmap Cards */
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
         }
 
-        .bullet-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-sm);
+        .roadmap-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 180, 0, 0.03) 100%);
+            border: 1px solid var(--gold);
+            border-radius: 12px;
+            padding: var(--space-lg);
+        }
+
+        .roadmap-day {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
             margin-bottom: var(--space-sm);
-            color: var(--gray-200);
         }
 
-        .bullet-list li:last-child {
+        .roadmap-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .roadmap-description {
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* Pre-Flight Checklist */
+        .checklist-grid {
+            display: grid;
+            gap: var(--space-md);
+        }
+
+        .checklist-item {
+            display: flex;
+            gap: var(--space-md);
+            background: var(--gray-800);
+            border: 1px solid var(--gray-700);
+            border-radius: 12px;
+            padding: var(--space-lg);
+        }
+
+        .checklist-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            font-family: var(--font-mono);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: var(--gold);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .checklist-content h4 {
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-xs);
+        }
+
+        .checklist-content p {
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            line-height: 1.6;
             margin-bottom: 0;
         }
 
-        .bullet-list li::before {
-            content: '';
-            flex-shrink: 0;
-            width: 6px;
-            height: 6px;
-            background: var(--gold);
-            border-radius: 50%;
-            margin-top: 0.6em;
+        .checklist-content strong {
+            color: var(--gold);
         }
 
         /* Quote Block */
@@ -365,159 +421,74 @@
             color: var(--gold);
         }
 
-        /* Breakthrough Cards */
-        .breakthrough-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-md);
-        }
-
-        .breakthrough-card {
-            background: var(--gray-800);
-            border: 1px solid var(--gray-700);
-            border-radius: 12px;
-            padding: var(--space-lg);
-        }
-
-        .breakthrough-name {
-            font-family: var(--font-sans);
-            font-size: var(--text-base);
-            font-weight: 700;
-            color: var(--gold);
-            margin-bottom: var(--space-xs);
-        }
-
-        .breakthrough-story {
-            font-size: var(--text-sm);
-            color: var(--gray-300);
-            line-height: 1.6;
-        }
-
-        /* ===========================
-           CTA SECTION
-        =========================== */
-        .cta-section {
-            padding: var(--space-2xl) var(--space-md);
-            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 50%, var(--black) 100%);
-        }
-
-        .cta-card {
+        /* Declaration Box */
+        .declaration-box {
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 180, 0, 0.05) 100%);
             border: 2px solid var(--gold);
-            border-radius: 20px;
-            padding: var(--space-2xl);
+            border-radius: 16px;
+            padding: var(--space-xl);
             text-align: center;
-            max-width: 700px;
-            margin: 0 auto var(--space-xl);
-            box-shadow: var(--shadow-gold-md);
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .cta-eyebrow {
+        .declaration-label {
             font-family: var(--font-mono);
             font-size: var(--text-xs);
             font-weight: 700;
             color: var(--gold);
             text-transform: uppercase;
             letter-spacing: 0.15em;
-            margin-bottom: var(--space-sm);
+            margin-bottom: var(--space-md);
         }
 
-        .cta-title {
+        .declaration-text {
             font-family: var(--font-serif);
             font-size: var(--text-2xl);
             font-weight: 700;
             color: var(--white);
-            margin-bottom: var(--space-sm);
+            line-height: 1.4;
         }
 
-        .cta-description {
-            font-size: var(--text-base);
-            color: var(--gray-300);
-            margin-bottom: var(--space-lg);
+        .declaration-text em {
+            color: var(--gold);
+            font-style: normal;
         }
 
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-sm);
-            padding: 1rem 2rem;
-            font-family: var(--font-sans);
-            font-size: var(--text-lg);
-            font-weight: 700;
-            color: var(--black);
-            background: linear-gradient(135deg, var(--gold) 0%, #FFB800 100%);
-            border: none;
-            border-radius: 12px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+        /* ===========================
+           BONUS SECTION
+        =========================== */
+        .bonus-section {
+            padding: var(--space-2xl) var(--space-md);
+            text-align: center;
         }
 
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.5);
-        }
-
-        .cta-button svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        /* Resource Links */
-        .resource-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-md);
-            max-width: 700px;
+        .bonus-card {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.03) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 16px;
+            padding: var(--space-xl);
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        .resource-card {
-            background: var(--gray-800);
-            border: 1px solid var(--gray-700);
-            border-radius: 12px;
-            padding: var(--space-lg);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .resource-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-2px);
-        }
-
-        .resource-icon {
-            font-size: 2rem;
+        .bonus-icon {
+            font-size: 2.5rem;
             margin-bottom: var(--space-sm);
         }
 
-        .resource-title {
-            font-family: var(--font-sans);
-            font-size: var(--text-base);
+        .bonus-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
             font-weight: 700;
-            color: var(--white);
-            margin-bottom: var(--space-xs);
+            color: #22c55e;
+            margin-bottom: var(--space-sm);
         }
 
-        .resource-description {
-            font-size: var(--text-sm);
-            color: var(--gray-400);
-            margin-bottom: var(--space-md);
-        }
-
-        .resource-link {
-            display: inline-block;
-            font-family: var(--font-mono);
-            font-size: var(--text-sm);
-            font-weight: 600;
-            color: var(--gold);
-            text-decoration: none;
-        }
-
-        .resource-link:hover {
-            text-decoration: underline;
+        .bonus-description {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
         }
 
         /* ===========================
@@ -526,6 +497,7 @@
         .closing-section {
             padding: var(--space-2xl) var(--space-md);
             text-align: center;
+            background: var(--gray-900);
         }
 
         .closing-quote {
@@ -545,16 +517,6 @@
         .closing-attribution {
             font-family: var(--font-mono);
             font-size: var(--text-sm);
-            color: var(--gold);
-        }
-
-        .closing-message {
-            margin-top: var(--space-xl);
-            font-size: var(--text-lg);
-            color: var(--gray-300);
-        }
-
-        .closing-message strong {
             color: var(--gold);
         }
 
@@ -640,8 +602,13 @@
                 gap: var(--space-sm);
             }
 
-            .cta-card {
-                padding: var(--space-xl);
+            .checklist-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .checklist-number {
+                margin: 0 auto;
             }
 
             .footer-content {
@@ -663,21 +630,12 @@
                 font-size: var(--text-xl);
             }
 
-            .highlight-card {
-                padding: var(--space-md);
-            }
-
-            .cta-button {
-                width: 100%;
-                padding: 1rem;
-            }
-
-            .breakthrough-grid {
+            .roadmap-grid {
                 grid-template-columns: 1fr;
             }
 
-            .resource-grid {
-                grid-template-columns: 1fr;
+            .declaration-text {
+                font-size: var(--text-xl);
             }
         }
     </style>
@@ -689,11 +647,11 @@
             <div class="container">
                 <div class="header-content">
                     <a href="#" class="site-logo">Neothink Society</a>
-                    <div class="vip-badge">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <div class="stargazer-badge">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
-                        VIP Access
+                        Level 3 Stargazer
                     </div>
                 </div>
             </div>
@@ -703,22 +661,24 @@
             <!-- Hero Section -->
             <section class="hero-section">
                 <div class="container">
-                    <p class="hero-eyebrow">Day of Enlightenment — January 2026</p>
-                    <h1 class="hero-title">VIP Session Replay</h1>
-                    <p class="hero-subtitle">The "Brain Hacking," Business Secrets, & The Whiteboard Session</p>
+                    <p class="hero-eyebrow">The Stargazer — Level 3</p>
+                    <h1 class="hero-title">Welcome Party Replay</h1>
+                    <p class="hero-subtitle">
+                        The launch of the Starship. You've crossed the threshold from Awakening to Implementation. Welcome to the 1% who create the future.
+                    </p>
 
                     <div class="session-meta">
                         <div class="meta-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
-                            Monday, January 26, 2026
+                            Monday, January 27, 2026
                         </div>
                         <div class="meta-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
-                            3.5 Hours of Deep-Dive Content
+                            Wallace Hamilton, Platinum Mentor
                         </div>
                     </div>
                 </div>
@@ -729,231 +689,169 @@
                 <div class="container">
                     <div class="video-container">
                         <iframe
-                            src="https://player.vimeo.com/video/1158664358?badge=0&autopause=0&player_id=0&app_id=58479"
+                            src="https://player.vimeo.com/video/1159472334?badge=0&autopause=0&player_id=0&app_id=58479"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                             allowfullscreen
-                            title="VIP Session Day 3 - January 26, 2026">
+                            title="Level 3 Stargazer Welcome Party - January 27, 2026">
                         </iframe>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 1: Behind the Curtain -->
+            <!-- Section 1: The Launch -->
             <section class="content-section">
                 <div class="container">
                     <div class="section-header">
                         <span class="section-number">01</span>
-                        <h2 class="section-title">Behind the Curtain</h2>
-                        <p class="section-subtitle">The Psychology of the Event</p>
+                        <h2 class="section-title">The Launch of the Starship</h2>
+                        <p class="section-subtitle">You've crossed the threshold</p>
                     </div>
 
                     <div class="highlight-card">
-                        <h3 class="highlight-title">Brain Hacking</h3>
+                        <h3 class="highlight-title">The Distinction</h3>
                         <p class="highlight-content">
-                            All the standing up, celebrating, and pointing wasn't just for hype. It was a <strong>"brain hacking" technique</strong> to move knowledge from short-term memory into your <strong>body</strong> for long-term storage.
+                            While most people shrink back into their "cave of shadows" after an event, you refused to settle. You joined the <strong>1% who create the future</strong>.
                         </p>
                     </div>
 
                     <div class="highlight-card">
-                        <h3 class="highlight-title">The Super Puzzle Connection</h3>
+                        <h3 class="highlight-title">The Definition</h3>
                         <p class="highlight-content">
-                            The opening monologue from Miss Annabelle was designed to subconsciously trigger the emotions of the <em>Super Puzzle</em>, placing you inside the "faction" (factual logic + fictional emotion) of the Neothink world.
+                            Level 3 is not a "product" or a seat at a seminar. It is a <strong>Starship</strong>. It is the shift from "Awakening" (Level 2) to <strong>"Implementation"</strong> (Level 3).
                         </p>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 2: The Masterclass -->
+            <!-- Section 2: The Roadmap -->
             <section class="content-section">
                 <div class="container">
                     <div class="section-header">
                         <span class="section-number">02</span>
-                        <h2 class="section-title">The Masterclass</h2>
-                        <p class="section-subtitle">"Sell First, Build Second"</p>
+                        <h2 class="section-title">The 3-Day Event Roadmap</h2>
+                        <p class="section-subtitle">A "pure evolution" — not just a class</p>
                     </div>
 
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">The 6-Year Trap</h3>
-                        <p class="highlight-content">
-                            Wallace warned against spending years building a "perfect product" before knowing if anyone wants it.
-                        </p>
-                    </div>
+                    <div class="roadmap-grid">
+                        <div class="roadmap-card">
+                            <p class="roadmap-day">Day 1</p>
+                            <h3 class="roadmap-title">Internal Limitations Removed</h3>
+                            <p class="roadmap-description">
+                                The day of "rebirth." Goes deeper than the weekend to dissolve the silent, subconscious programs (the "I can't," "I don't deserve") implanted before you had filters. By the end, you will feel <strong>unstoppable</strong>.
+                            </p>
+                        </div>
 
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">Validate Demand</h3>
-                        <p class="highlight-content">
-                            Use the <strong>"Russell Brunson Method"</strong> — sell the concept first. If people buy, <em>then</em> build it. If they don't, you saved yourself months of work.
-                        </p>
-                    </div>
+                        <div class="roadmap-card">
+                            <p class="roadmap-day">Day 2</p>
+                            <h3 class="roadmap-title">Wealth Limitations Removed</h3>
+                            <p class="roadmap-description">
+                                The "Wealth Codes." You will map out your specific asset allocation based on your risk tolerance and life phase. <em>Note: The Wealth Engine Calculator is being updated with advanced features — releasing end of February.</em>
+                            </p>
+                        </div>
 
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">Sales is Discovery</h3>
-                        <p class="highlight-content">
-                            You don't need to be a slick salesperson. The most successful sales calls involve you listening <strong>80% of the time</strong>. It's about <em>Discovery</em> — understanding their pain so well that they ask <em>you</em> for the solution.
-                        </p>
-                    </div>
-
-                    <div class="quote-block">
-                        <p class="quote-text">"The guru at the top of the mountain has forgotten what it's like to be in your shoes. I am right here with you, and I will work harder for you than anyone else."</p>
-                        <p class="quote-attribution">— Turn Weakness into Strength</p>
+                        <div class="roadmap-card">
+                            <p class="roadmap-day">Day 3</p>
+                            <h3 class="roadmap-title">World Limitations Removed</h3>
+                            <p class="roadmap-description">
+                                Reality Architecture. Learn to "bend reality" and design a life structure that moves <em>with</em> you. <strong>For business owners:</strong> A technique to 2X your business without major overhauls — just "turning a couple of dials."
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 3: Power Approach -->
+            <!-- Section 3: Pre-Flight Checklist -->
             <section class="content-section">
                 <div class="container">
                     <div class="section-header">
                         <span class="section-number">03</span>
-                        <h2 class="section-title">The "Power Approach" Technique</h2>
-                        <p class="section-subtitle">For overthinkers and "paralysis by analysis"</p>
+                        <h2 class="section-title">The Pre-Flight Checklist</h2>
+                        <p class="section-subtitle">Your homework to keep momentum high</p>
                     </div>
 
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">The Technique</h3>
-                        <p class="highlight-content">
-                            Use your physiology (movement, voice, energy) to put pressure on your brain. Ask: <strong>"What is the winning answer?"</strong> repeatedly while in a high-energy state.
-                        </p>
-                    </div>
+                    <div class="checklist-grid">
+                        <div class="checklist-item">
+                            <div class="checklist-number">1</div>
+                            <div class="checklist-content">
+                                <h4>Honor Your Friday Night Essence (Daily)</h4>
+                                <p>
+                                    Spend time every day connecting to your essence — planning, sketching, writing. <strong>Keep a daily Journal.</strong> Wallace uses a "Remarkable" tablet because "you can't manage what you don't measure." It provides the mind space to separate yourself from the chaos of the day.
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">The Result</h3>
-                        <p class="highlight-content">
-                            This forces your brain to snap all the floating puzzle pieces together into a <strong>10-second miracle</strong> (integration), cutting through doubt instantly.
-                        </p>
+                        <div class="checklist-item">
+                            <div class="checklist-number">2</div>
+                            <div class="checklist-content">
+                                <h4>Deepen Value Creation</h4>
+                                <p>
+                                    Find one specific way this week to create new value for someone — a client, spouse, or stranger. Turn on your <strong>"Value Creation Antennas"</strong> — constantly asking, "How could this be improved? How could this be better?"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="checklist-number">3</div>
+                            <div class="checklist-content">
+                                <h4>Immersion (Study the Manuals)</h4>
+                                <p>
+                                    Read the Prime Literature/Manuals for at least <strong>30 minutes a day</strong>. Like learning Spanish — 4 years of classes (mortal mentality) yields little, but 7 days in Mexico City (immersion) forces fluency. The manuals provide that immersion environment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="checklist-number">4</div>
+                            <div class="checklist-content">
+                                <h4>The "Super Fun" Form</h4>
+                                <p>
+                                    You'll receive a detailed intake form. It may take <strong>1-2 hours</strong> and requires real financial/business numbers. This data allows the team to tailor breakout rooms, mentor matching, and specific content to your actual situation.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 4: Whiteboard Session -->
+            <!-- Section 4: The Activation Ritual -->
             <section class="content-section">
                 <div class="container">
                     <div class="section-header">
                         <span class="section-number">04</span>
-                        <h2 class="section-title">The Whiteboard Session</h2>
-                        <p class="section-subtitle">Signal vs. Noise — Extreme Prioritization</p>
+                        <h2 class="section-title">The Activation Ritual</h2>
+                        <p class="section-subtitle">Bridging the present to the future event</p>
                     </div>
 
                     <div class="highlight-card">
-                        <h3 class="highlight-title">Raising the Floor</h3>
+                        <h3 class="highlight-title">The Visualization</h3>
                         <p class="highlight-content">
-                            If your goal is to play college tennis, there are 100 paths (distractions). If your goal is to <strong>Go Pro</strong>, there are only a few paths. Raising your standard eliminates the "Noise."
+                            Stack the feelings of completing Day 1, Day 2, and Day 3 of the future event. Visualize yourself <strong>confident, wealthy, and unleashed</strong>.
                         </p>
                     </div>
 
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">Compressing Time</h3>
-                        <p class="highlight-content">
-                            By changing a 10-year goal to a <strong>2-year goal</strong>, you force yourself to simplify. Complexity cannot scale; only simplicity scales.
+                    <div class="declaration-box">
+                        <p class="declaration-label">Your Declaration Prompt</p>
+                        <p class="declaration-text">
+                            "Now that I am a Stargazer, I choose to create <em>______</em>."
                         </p>
                     </div>
 
-                    <div class="quote-block">
-                        <p class="quote-text">"If you are overwhelmed, your goal might actually be too small. Think bigger to see the clear path."</p>
-                        <p class="quote-attribution">— Wallace Hamilton</p>
+                    <div class="quote-block" style="margin-top: var(--space-xl);">
+                        <p class="quote-text">Sample responses from fellow Stargazers: "Freedom," "Happiness and Love," "An environment for myself to thrive."</p>
+                        <p class="quote-attribution">— Live Declaration Ceremony</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 5: VIP Breakthroughs -->
-            <section class="content-section">
+            <!-- Bonus Section -->
+            <section class="bonus-section">
                 <div class="container">
-                    <div class="section-header">
-                        <span class="section-number">05</span>
-                        <h2 class="section-title">VIP Breakthroughs</h2>
-                        <p class="section-subtitle">The energy in the room was electric</p>
-                    </div>
-
-                    <div class="breakthrough-grid">
-                        <div class="breakthrough-card">
-                            <p class="breakthrough-name">Jimmy Chapel</p>
-                            <p class="breakthrough-story">Overcame a history of being blackballed in Hollywood by installing the "Jimmy Chappell App" — overwriting old trauma with new action.</p>
-                        </div>
-
-                        <div class="breakthrough-card">
-                            <p class="breakthrough-name">Iris Harring</p>
-                            <p class="breakthrough-story">Despite health challenges, she took the leap to open her own public adjusting business, moving from employee to <strong>Owner</strong>.</p>
-                        </div>
-
-                        <div class="breakthrough-card">
-                            <p class="breakthrough-name">Paulette</p>
-                            <p class="breakthrough-story">Realized she hadn't lost passion for her business; she had just stopped <em>creating</em>. To fall back in love with your work, add creation back into stagnation.</p>
-                        </div>
-
-                        <div class="breakthrough-card">
-                            <p class="breakthrough-name">Jeff</p>
-                            <p class="breakthrough-story">Pushed past his analytical "accountant brain" to embrace his essence as a Music Healer.</p>
-                        </div>
-
-                        <div class="breakthrough-card">
-                            <p class="breakthrough-name">Bryant</p>
-                            <p class="breakthrough-story">A 17-year cancer survivor who finally got "hooked" by the Prime Literature.</p>
-                        </div>
-
-                        <div class="breakthrough-card">
-                            <p class="breakthrough-name">George</p>
-                            <p class="breakthrough-story">Shared his journey to becoming a "sovereign individual" and removing the chains of the anti-civilization.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 6: Personal Moment -->
-            <section class="content-section">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-number">06</span>
-                        <h2 class="section-title">A Personal Moment with Wallace</h2>
-                        <p class="section-subtitle">On his greatest memories with Mark Hamilton</p>
-                    </div>
-
-                    <div class="highlight-card">
-                        <h3 class="highlight-title">The "Last Time" Philosophy</h3>
-                        <p class="highlight-content">
-                            Mark Hamilton never missed a game and taught Wallace to realize there is a <strong>"last time"</strong> for everything — the last time you pick up your child, the last time you see a friend.
+                    <div class="bonus-card">
+                        <div class="bonus-icon">🎁</div>
+                        <h3 class="bonus-title">Surprise Bonus: Mid-Flight Check-Ins</h3>
+                        <p class="bonus-description">
+                            The team will host <strong>two additional live sessions</strong> (approximately 2 weeks and 4 weeks after the main Stargazer event) to course-correct and guide you as you implement the system. No one drifts off course.
                         </p>
-                    </div>
-
-                    <div class="quote-block">
-                        <p class="quote-text">"Take a 'mental picture' of the mundane moments. Soak it in. That is the beauty of life."</p>
-                        <p class="quote-attribution">— Wallace Hamilton</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CTA Section -->
-            <section class="cta-section">
-                <div class="container">
-                    <!-- Level 3 Stargazer CTA -->
-                    <div class="cta-card">
-                        <p class="cta-eyebrow">Deadline Extended</p>
-                        <h2 class="cta-title">The Stargazer — Level 3</h2>
-                        <p class="cta-description">
-                            We technically sold out, but Wallace is honoring the deadline! You have until <strong>Wednesday at 11:59 PM ET</strong> to secure your spot before the doors close until 2027.
-                        </p>
-                        <a href="https://societysecrets.com/level3" target="_blank" rel="noopener" class="cta-button">
-                            Secure Your Spot
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- Resource Links -->
-                    <div class="resource-grid">
-                        <div class="resource-card">
-                            <div class="resource-icon">📊</div>
-                            <h3 class="resource-title">Wealth Engine Calculator</h3>
-                            <p class="resource-description">Now live in your workshop materials. Map your path to freedom.</p>
-                            <a href="https://neothinkday.com/wealth-engine-calculator" target="_blank" rel="noopener" class="resource-link">Access Calculator →</a>
-                        </div>
-
-                        <div class="resource-card">
-                            <div class="resource-icon">🎁</div>
-                            <h3 class="resource-title">Free Re-Attendance</h3>
-                            <p class="resource-description">Because of tech issues, Wallace is gifting free access to the next Day of Enlightenment.</p>
-                            <a href="mailto:support@neothink.com" class="resource-link">Contact Support →</a>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -962,13 +860,9 @@
             <section class="closing-section">
                 <div class="container">
                     <p class="closing-quote">
-                        "I am completely, <strong>100% honored</strong> to have been your guide on this journey."
+                        "<strong>I am the creator of my reality.</strong>"
                     </p>
-                    <p class="closing-attribution">— Wallace Hamilton</p>
-
-                    <p class="closing-message">
-                        You are the <strong>elite</strong>. You have the Launch Pad. Now, go launch!
-                    </p>
+                    <p class="closing-attribution">— Final Mantra</p>
                 </div>
             </section>
         </main>
