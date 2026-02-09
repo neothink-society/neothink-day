@@ -690,13 +690,23 @@
             font-size: var(--text-sm);
             color: var(--gold);
             font-weight: 600;
-            margin-bottom: var(--space-sm);
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-sm);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .schedule-card p {
             font-size: var(--text-base);
             color: var(--gray-400);
-            line-height: 1.7;
+            line-height: 1.8;
+        }
+
+        .schedule-card .schedule-lead {
+            color: var(--white);
+            font-weight: 700;
+            font-size: var(--text-lg);
+            margin-bottom: var(--space-xs);
+            display: block;
         }
 
         /* ========================================
@@ -1358,21 +1368,30 @@
                         <span class="schedule-day-label">Day 1 &bull; Friday, March 27</span>
                         <h3>The Confidence Switch</h3>
                         <p class="schedule-card-time">8:00 AM Pacific / 11:00 AM Eastern</p>
-                        <p><strong style="color: var(--white);">Removing Internal Limitations.</strong> A deep dive into the hidden program running beneath the surface&mdash;every false command planted by the anticivilization, every generational shadow, every inherited limitation. Day 1 strips it all away. The &ldquo;Real You&rdquo; emerges clear and confident, with a mental switch that turns on mistake-free focus and clarity on command.</p>
+                        <p>
+                            <span class="schedule-lead">Removing Internal Limitations</span>
+                            A deep dive into the hidden program running beneath the surface&mdash;every false command, every generational shadow, every inherited limitation. Day 1 strips it all away. The &ldquo;Real You&rdquo; emerges with a mental switch that turns on mistake-free focus on command.
+                        </p>
                     </div>
 
                     <div class="schedule-card scroll-reveal" data-delay="1">
                         <span class="schedule-day-label">Day 2 &bull; Saturday, March 28</span>
                         <h3>The Wealth Engine</h3>
                         <p class="schedule-card-time">8:00 AM Pacific / 11:00 AM Eastern</p>
-                        <p><strong style="color: var(--white);">Removing Monetary Limitations.</strong> Mark Hamilton&rsquo;s private turnkey tools behind over $400 million in wealth creation. Family Dynasty secrets. Asset allocation across crypto, ETFs, real estate. Specific strategies for business owners to double revenue by pulling a couple levers. Every attendee leaves with a personal wealth blueprint customized to their situation&mdash;the Million Dollar Vision made mathematically inevitable.</p>
+                        <p>
+                            <span class="schedule-lead">Removing Monetary Limitations</span>
+                            Mark Hamilton&rsquo;s private turnkey tools behind over $400 million in wealth creation. Family Dynasty secrets. Asset allocation across crypto, ETFs, real estate. Strategies for doubling revenue by pulling a couple levers. Every attendee leaves with a personal wealth blueprint&mdash;the Million Dollar Vision made mathematically inevitable.
+                        </p>
                     </div>
 
                     <div class="schedule-card scroll-reveal" data-delay="2">
                         <span class="schedule-day-label">Day 3 &bull; Sunday, March 29</span>
                         <h3>Architect of Reality</h3>
                         <p class="schedule-card-time">8:00 AM Pacific / 11:00 AM Eastern</p>
-                        <p><strong style="color: var(--white);">Removing External Limitations.</strong> Design a life structure where opportunities, people, and circumstances move <em>with</em> you, not against you. Mark Hamilton teaches the never-before-revealed Supermind mechanics&mdash;including Augmented Integration, using AI as a rapid integrating mirror to collapse decades of work into weeks. This is the day the Unreachable Star stops being unreachable.</p>
+                        <p>
+                            <span class="schedule-lead">Removing External Limitations</span>
+                            Design a life structure where opportunities, people, and circumstances move <em>with</em> you, not against you. The never-before-revealed Supermind mechanics&mdash;including Augmented Integration, using AI as a rapid integrating mirror to collapse decades into weeks. The day the Unreachable Star stops being unreachable.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1483,7 +1502,7 @@
                         <div class="pre-work-content">
                             <h3>Complete the Intake Form</h3>
                             <p>This is the most important pre-work. The detailed intake form allows mentors to tailor the immersion to every attendee&rsquo;s specific situation&mdash;whether a business owner, student, retiree, or creator. The more honest and thorough the answers, the more customized the experience.</p>
-                            <p style="margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--gray-400);">The intake form link will arrive by email. Complete it as soon as it arrives.</p>
+                            <p style="margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--gray-400);">The intake form link is arriving soon via email and will also be available in the Quick Access section below. Complete it as soon as it arrives.</p>
                         </div>
                     </div>
 
@@ -1562,19 +1581,34 @@
                         </a>
                     </div>
 
+                    <!-- Intake Form -->
+                    <div class="access-card scroll-reveal">
+                        <span class="card-status">Arriving Soon</span>
+                        <div class="card-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Intake Form</h3>
+                        <p>The most important pre-work. Mentors use these answers to tailor the immersion to every attendee&rsquo;s specific situation. Arriving soon via email&mdash;the link will also appear here.</p>
+                        <span class="card-link locked" aria-label="Intake Form arriving soon">
+                            Arriving Soon
+                        </span>
+                    </div>
+
                     <!-- Neuroacoustic Suite -->
                     <div class="access-card featured scroll-reveal" data-delay="1">
-                        <span class="card-status">Included with Level Three</span>
+                        <span class="card-status">Arriving Soon</span>
                         <div class="card-icon">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
                             </svg>
                         </div>
                         <h3>Neuroacoustic Suite <span style="color: var(--gold); font-family: var(--font-sans); font-size: var(--text-xs); font-weight: 700;">($500 Value)</span></h3>
-                        <p>Four unreleased audio tracks that shift brainwave frequencies on command. <strong style="color: var(--gold);">Theta</strong> for deep work and wealth intuition. <strong style="color: var(--gold);">Power</strong> for high-stakes decisions and mistake-free focus. <strong style="color: var(--gold);">Delta</strong> for deep restorative sleep. <strong style="color: var(--gold);">Recovery</strong> to lower stress hormones instantly. Included with Level Three&mdash;access unlocks during the event.</p>
-                        <a href="#" class="card-link locked" aria-label="Neuroacoustic Suite unlocks during event">
-                            Unlocks During Event
-                        </a>
+                        <p>Four unreleased audio tracks that shift brainwave frequencies on command. <strong style="color: var(--gold);">Theta</strong> for deep work and wealth intuition. <strong style="color: var(--gold);">Power</strong> for high-stakes decisions and mistake-free focus. <strong style="color: var(--gold);">Delta</strong> for deep restorative sleep. <strong style="color: var(--gold);">Recovery</strong> to lower stress hormones instantly. Arriving soon via email&mdash;the link will also appear here.</p>
+                        <span class="card-link locked" aria-label="Neuroacoustic Suite arriving soon">
+                            Arriving Soon
+                        </span>
                     </div>
 
                     <!-- Support -->
