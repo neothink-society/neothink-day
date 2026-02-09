@@ -110,24 +110,12 @@
            SITE HEADER
            ======================================== */
         .site-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
+            position: relative;
             padding: 0.875rem clamp(1.25rem, 4vw, 2rem);
             display: flex;
             align-items: center;
             justify-content: space-between;
             background: transparent;
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .site-header.scrolled {
-            background: rgba(0, 0, 0, 0.92);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 1px 0 rgba(255, 215, 0, 0.08);
         }
 
         .site-header-brand {
@@ -252,7 +240,7 @@
         .hero {
             position: relative;
             background: radial-gradient(ellipse at center top, rgba(255, 215, 0, 0.12) 0%, transparent 50%);
-            padding: calc(var(--space-3xl) + 3rem) 0 var(--space-2xl);
+            padding: var(--space-2xl) 0 var(--space-2xl);
             overflow: hidden;
             text-align: center;
         }
@@ -369,7 +357,7 @@
             .cta-text-short { display: inline; }
 
             .hero {
-                padding-top: 3.5rem;
+                padding-top: var(--space-lg);
                 padding-bottom: var(--space-lg);
             }
             .hero-eyebrow {
@@ -1151,7 +1139,7 @@
 
                 <div class="intro-emphasis scroll-reveal">
                     <p>
-                        Stargazer Level Three is where you <em style="color: var(--gold);">implement</em>. Where 50 years of Neothink and Neotech tools and secrets are compressed into three days of direct mentorship, wealth architecture, and personal transformation with the Hamilton family.
+                        Stargazer Level Three is where you <em style="color: var(--gold);">implement</em>. Where 50 years of Neothink and Neo-Tech tools and secrets are compressed into three days of direct mentorship, wealth architecture, and personal transformation with the Hamilton family.
                     </p>
                 </div>
             </div>
@@ -1345,18 +1333,6 @@
         document.querySelectorAll('.day-card').forEach(function(card, index) {
             card.style.transitionDelay = (index * 0.1) + 's';
         });
-
-        // Header scroll effect
-        var siteHeader = document.getElementById('site-header');
-        if (siteHeader) {
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 40) {
-                    siteHeader.classList.add('scrolled');
-                } else {
-                    siteHeader.classList.remove('scrolled');
-                }
-            }, { passive: true });
-        }
 
         // Sticky mobile CTA — show after scrolling past hero
         var stickyCta = document.getElementById('sticky-cta');
