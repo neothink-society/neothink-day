@@ -1351,9 +1351,9 @@
             const interval = setInterval(updateCountdown, 1000);
         }
 
-        // Initialize countdown to March 20, 2026 at 11:00 AM ET
+        // Initialize countdown to March 20, 2026 at 8:00 AM PT (PDT, UTC-7)
         document.addEventListener('DOMContentLoaded', function() {
-            const eventDate = new Date('2026-03-20T11:00:00-05:00').getTime();
+            const eventDate = new Date('2026-03-20T08:00:00-07:00').getTime();
             initCountdown(eventDate);
         });
     </script>
