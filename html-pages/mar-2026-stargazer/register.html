@@ -127,6 +127,8 @@
         /* ===========================
            RESET & BASE STYLES
         =========================== */
+        html { scroll-behavior: smooth; }
+
         * {
             margin: 0;
             padding: 0;
@@ -313,6 +315,44 @@
             color: var(--gold);
             text-transform: uppercase;
             letter-spacing: 0.05em;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            margin-top: var(--space-xl);
+            padding: 1.125rem 3rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: var(--min-touch-target);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3), 0 0 40px rgba(255, 215, 0, 0.15);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4), 0 0 60px rgba(255, 215, 0, 0.2);
+        }
+
+        .hero-cta:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 480px) {
+            .hero-cta {
+                padding: 1rem 2rem;
+                font-size: var(--text-base);
+                width: 100%;
+                text-align: center;
+            }
         }
 
         /* ===========================
@@ -1117,6 +1157,8 @@
                     </p>
 
                     <p class="hero-date" aria-label="Event dates">Friday, March 20 &bull; Saturday, March 21 &bull; Sunday, March 22, 2026</p>
+
+                    <a href="#confirm-form" class="hero-cta">Confirm Your Attendance</a>
                 </div>
             </section>
 
@@ -1182,7 +1224,7 @@
             </section>
 
             <!-- Form Section -->
-            <section class="form-section">
+            <section class="form-section" id="confirm-form">
                 <div class="form-container">
                     <div class="form-header">
                         <div class="eyebrow-badge">
