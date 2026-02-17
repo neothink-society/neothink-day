@@ -1,25 +1,23 @@
 # DOE Registration Invite SMS
 
-## SMS: Registration Invite
-**Send Time:** Manual trigger / campaign launch
-**Offset:** N/A (one-time announcement)
+## SMS: Inbox Nudge (paired with launch email)
+**Send Time:** Shortly after email send
+**Offset:** N/A (one-time, paired with email)
 **Audience:** Level 2 Buyers (Masterclass graduates)
 
 ```
-Neothink Society: Your Day of Enlightenment workshop dates are confirmed — March 14-15, 2026. Register now to confirm your spot and access your pre-workshop materials:
-
-https://neothinkday.com/register
+Neothink Society: {{contact.first_name}}, check your email — your workshop dates have been announced. Look for the subject "Your Workshop Dates Are HERE."
 ```
 
-**Character Count:** 194/160 (2 segments at 153 chars each — acceptable for one-time announcement)
+**Character Count:** ~145/160 (single segment with avg first name)
 
 ## Compliance Checklist
 
 - [x] No trigger words (urgency, scarcity, financial)
-- [x] No ALL CAPS (except brand name)
+- [x] No ALL CAPS (except brand name and subject line reference)
 - [x] No URL shorteners
 - [x] Business name included ("Neothink Society:")
-- [x] Full URL only
+- [x] No links needed (drives to inbox)
 - [x] Character count verified
 - [x] Matches registered campaign use case
 - [ ] Opt-out language — include periodically in campaign (not every message)
