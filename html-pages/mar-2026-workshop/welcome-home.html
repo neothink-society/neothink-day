@@ -275,13 +275,19 @@
         .list-content p { margin: 0; color: #ddd; font-size: 1rem; }
         .list-link {
             color: var(--gold);
-            font-size: 1.1rem;
-            text-decoration: underline;
+            font-size: 1rem;
+            text-decoration: none;
             display: inline-block;
             margin-top: 10px;
             font-weight: 700;
-            padding: 10px 0;
+            padding: 10px 20px;
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            background: rgba(255, 215, 0, 0.1);
+            transition: background 0.2s ease, transform 0.1s ease;
         }
+        .list-link:hover { background: rgba(255, 215, 0, 0.2); transform: translateY(-1px); }
+        .list-link:active { transform: translateY(0); }
 
         /* --- FOOTER --- */
         .site-footer {
@@ -534,7 +540,7 @@
             </button>
             <div class="accordion-content">
                 <ul class="detail-list">
-                    <li>Your manuscript (<em>The Super Puzzle</em>)</li>
+                    <li>Your Secret Manuscript</li>
                     <li>Pen and notebook</li>
                     <li>Water bottle (stay hydrated!)</li>
                     <li>Prepared meals (short breaks)</li>
@@ -579,7 +585,7 @@
             <div class="list-num">2</div>
             <div class="list-content">
                 <h4>Read Pages 1-50</h4>
-                <p>Review <em>The Super Puzzle</em> manuscript before the workshop begins.</p>
+                <p>Review your Secret Manuscript before the workshop begins.</p>
             </div>
         </div>
 
