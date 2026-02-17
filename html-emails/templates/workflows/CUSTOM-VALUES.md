@@ -122,6 +122,20 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 
 ---
 
+## VIP Price Custom Values
+
+| GHL Field Key | GHL ID | Current Value | Used For |
+|---------------|--------|---------------|----------|
+| `doe_vip_price` | foXfBWr63a0VSBHR5dlk | $297 | VIP upgrade display price (e.g., "Only $297") |
+| `doe_vip_price_number` | cAqtLyhtXZx0HNE8DQyh | 297 | Raw number for credit calculations (e.g., L3 credit: $1,997 - $297 = $1,700) |
+
+**Usage in templates:**
+```html
+<p>Just {{custom_values.doe_vip_price}}</p>
+```
+
+---
+
 ## Resource URLs
 
 These rarely change between events:
@@ -276,7 +290,9 @@ curl -X POST "https://services.leadconnectorhq.com/locations/OWPT3ihPWINakwA0bGR
 | `doe_vip_upgrade_url` | rA00ghdpbNPhqcEg23g9 |
 | `doe_vip_recording_url` | JSMLOzlmQGLdzyUnczs7 |
 | `doe_welcome_party_recording_url` | T0wgIblVUSIby5CiEEJw |
+| `doe_vip_price` | foXfBWr63a0VSBHR5dlk |
+| `doe_vip_price_number` | cAqtLyhtXZx0HNE8DQyh |
 
 ---
 
-*Last updated: January 21, 2026*
+*Last updated: February 17, 2026*
