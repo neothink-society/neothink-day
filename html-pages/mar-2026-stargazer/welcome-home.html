@@ -476,7 +476,23 @@
             color: var(--gold);
         }
 
+        .zoom-notice {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: rgba(45, 140, 255, 0.1);
+            border: 1px solid rgba(45, 140, 255, 0.3);
+            border-radius: var(--radius-md);
+            font-size: var(--text-base);
+            color: var(--gray-300);
+        }
+
         @media (max-width: 480px) {
+            .zoom-notice {
+                display: block;
+                padding: 0.875rem 1.25rem;
+                text-align: left;
+            }
+
             .hero {
                 padding-top: var(--space-lg);
                 padding-bottom: var(--space-lg);
@@ -1477,7 +1493,7 @@
 
                     <!-- Zoom link arriving morning of event -->
                     <div style="margin-top: var(--space-xl);">
-                        <div style="display: inline-block; padding: 1rem 2rem; background: rgba(45, 140, 255, 0.1); border: 1px solid rgba(45, 140, 255, 0.3); border-radius: var(--radius-md); font-size: var(--text-base); color: var(--gray-300);">
+                        <div class="zoom-notice">
                             <strong style="color: var(--blue);">Zoom link arriving the morning of March 27</strong><br>
                             <span style="font-size: var(--text-sm);">Check your email Friday morning for access details.</span>
                         </div>
