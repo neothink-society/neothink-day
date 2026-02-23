@@ -41,7 +41,7 @@ March 27-29. Three days that compress decades of pattern recognition into a sing
 
 The world is moving fast. You're moving faster.
 
-Everything you need is at neothinkstargazer.com/home
+Everything you need is at {{custom_values.sg_workshop_hub_url}}
 ```
 
 **Character count:** ~230 (2 segments)
