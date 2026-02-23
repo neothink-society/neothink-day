@@ -385,6 +385,9 @@
             letter-spacing: 0.02em;
         }
 
+        .hero-date-part { display: inline; }
+        .hero-date-sep { display: inline; }
+
         /* Schedule Info Box */
         .schedule-info {
             margin: var(--space-md) auto 0;
@@ -513,6 +516,8 @@
                 padding: 1rem 1.5rem;
                 font-size: var(--text-base);
             }
+            .hero-date-sep { display: none; }
+            .hero-date-part { display: block; line-height: 1.8; }
         }
 
         /* ========================================
@@ -1489,18 +1494,18 @@
                         The Day of Enlightenment built the Launchpad. This is the Starship. Three days of implementation with the Hamilton family&mdash;removing the limitations within, installing the wealth engine, and architecting a reality where the Unreachable Star becomes inevitable. Everything needed for the flight is on this page.
                     </p>
 
-                    <p class="hero-date">March 27 &ndash; 29, 2026 &nbsp;&bull;&nbsp; Virtual via Zoom</p>
+                    <p class="hero-date"><span class="hero-date-part">March 27 &ndash; 29, 2026</span><span class="hero-date-sep"> &nbsp;&bull;&nbsp; </span><span class="hero-date-part">Virtual via Zoom</span></p>
 
                     <div class="schedule-info">
-                        <p><strong>Day 1 (Friday):</strong> 8:00 AM Pacific / 11:00 AM Eastern</p>
-                        <p><strong>Day 2 (Saturday):</strong> 8:00 AM Pacific / 11:00 AM Eastern</p>
-                        <p><strong>Day 3 (Sunday):</strong> 8:00 AM Pacific / 11:00 AM Eastern</p>
+                        <p><strong>Day 1 (Friday):</strong> <span style="white-space: nowrap;">8:00 AM Pacific / 11:00 AM Eastern</span></p>
+                        <p><strong>Day 2 (Saturday):</strong> <span style="white-space: nowrap;">8:00 AM Pacific / 11:00 AM Eastern</span></p>
+                        <p><strong>Day 3 (Sunday):</strong> <span style="white-space: nowrap;">8:00 AM Pacific / 11:00 AM Eastern</span></p>
                     </div>
 
                     <!-- Zoom link arriving morning of event -->
                     <div style="margin-top: var(--space-xl);">
                         <div class="zoom-notice">
-                            <strong style="color: var(--blue);">Zoom link arriving the morning of March 27</strong><br>
+                            <strong style="color: var(--blue);">Zoom link arriving the morning of March&nbsp;27</strong><br>
                             <span style="font-size: var(--text-sm);">Check your email Friday morning for access details.</span>
                         </div>
                         <p class="help-link"><a href="mailto:support@neothink.com">Questions? Contact support</a></p>
