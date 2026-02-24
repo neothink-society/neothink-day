@@ -158,7 +158,7 @@ What you experience March 27-29 gives you a perspective on money, patterns, and 
 
 The people around you will not have it.
 
-Come ready to implement, not just absorb. neothinkstargazer.com/home
+Come ready to implement, not just absorb. {{custom_values.sg_workshop_hub_url}}
 ```
 
 **Character count:** ~250 (2 segments)
@@ -219,7 +219,7 @@ Tech checklist:
 
 One Zoom link works all three days. It arrives Friday morning.
 
-Watch for the email. neothinkstargazer.com/home
+Watch for the email. {{custom_values.sg_workshop_hub_url}}
 ```
 
 **Character count:** ~240 (2 segments)
