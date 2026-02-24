@@ -3,7 +3,7 @@
 
 **Audience:** All Level 3 Stargazer enrollees (no VIP split)
 **T=0:** March 27, 2026 @ 8:00 AM Pacific / 11:00 AM Eastern
-**Total SMS:** 10 messages
+**Total SMS:** 12 messages
 
 ---
 
@@ -107,7 +107,45 @@ This is not a seminar. Show up accordingly.
 
 ---
 
-## SMS 5 — 7 Days Out
+## SMS 5 — 10 Days Out
+
+**Send:** Tuesday, March 17, 2026 @ 9:00 AM Pacific
+**Offset:** -9d 23h
+**Audience:** All
+
+```
+Neothink Society: 10 days until Day 1.
+
+Day 1 removes what's been running you beneath the surface. Every false command. Every inherited limitation. The mental architecture that's been making decisions without your permission.
+
+It clears on March 27. Be ready for it.
+```
+
+**Character count:** ~230 (2 segments)
+
+---
+
+## SMS 6 — 9 Days Out
+
+**Send:** Wednesday, March 18, 2026 @ 9:00 AM Pacific
+**Offset:** -8d 23h
+**Audience:** All
+
+```
+Neothink Society: 9 days. Final logistics check.
+
+8:00 AM Pacific / 11:00 AM Eastern — all three days.
+
+Quiet space, camera on, fully cleared schedule Friday through Sunday.
+
+Room opens 30 minutes before start each day.
+```
+
+**Character count:** ~210 (2 segments)
+
+---
+
+## SMS 7 — 7 Days Out
 
 **Send:** Friday, March 20, 2026 @ 9:00 AM Pacific
 **Offset:** -6d 23h
@@ -127,7 +165,7 @@ Come ready to implement, not just absorb. neothinkstargazer.com/home
 
 ---
 
-## SMS 6 — 4 Days Out
+## SMS 8 — 4 Days Out
 
 **Send:** Monday, March 23, 2026 @ 9:00 AM Pacific
 **Offset:** -3d 23h
@@ -145,7 +183,7 @@ Have your financial picture in mind. You'll be working with real numbers.
 
 ---
 
-## SMS 7 — 3 Days Out (Intake Form Final Check)
+## SMS 9 — 3 Days Out (Intake Form Final Check)
 
 **Send:** Tuesday, March 24, 2026 @ 9:00 AM Pacific
 **Offset:** -2d 23h
@@ -165,7 +203,7 @@ Golden Life Sheet ready? Bring it Friday.
 
 ---
 
-## SMS 8 — 2 Days Out
+## SMS 10 — 2 Days Out
 
 **Send:** Wednesday, March 25, 2026 @ 9:00 AM Pacific
 **Offset:** -1d 23h
@@ -188,7 +226,7 @@ Watch for the email. neothinkstargazer.com/home
 
 ---
 
-## SMS 9 — 1 Day Out, Morning
+## SMS 11 — 1 Day Out, Morning
 
 **Send:** Thursday, March 26, 2026 @ 9:00 AM Pacific
 **Offset:** -23h
@@ -208,7 +246,7 @@ The Hamilton family will be in the room with you. Be ready to work.
 
 ---
 
-## SMS 10 — 1 Day Out, Evening
+## SMS 12 — 1 Day Out, Evening
 
 **Send:** Thursday, March 26, 2026 @ 4:00 PM Pacific
 **Offset:** -16h
@@ -237,13 +275,15 @@ See you inside.
 | 1 | 30 Days Out | -29d 23h | Wed Feb 25 | 9:00 AM |
 | 2 | 25 Days Out — Intake Form | -24d 23h | Mon Mar 2 | 9:00 AM |
 | 3 | 20 Days Out — Golden Life Sheet | -19d 23h | Sat Mar 7 | 9:00 AM |
-| 4 | 14 Days Out — Logistics | -13d 23h | Fri Mar 13 | 9:00 AM |
-| 5 | 7 Days Out | -6d 23h | Fri Mar 20 | 9:00 AM |
-| 6 | 4 Days Out — Wealth Engine | -3d 23h | Mon Mar 23 | 9:00 AM |
-| 7 | 3 Days Out — Intake Final | -2d 23h | Tue Mar 24 | 9:00 AM |
-| 8 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
-| 9 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
-| 10 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
+| 4 | 14 Days Out — Immersion vs. Seminar | -13d 23h | Fri Mar 13 | 9:00 AM |
+| 5 | 10 Days Out — Day 1 Preview | -9d 23h | Tue Mar 17 | 9:00 AM |
+| 6 | 9 Days Out — Logistics | -8d 23h | Wed Mar 18 | 9:00 AM |
+| 7 | 7 Days Out — Implement | -6d 23h | Fri Mar 20 | 9:00 AM |
+| 8 | 4 Days Out — Wealth Engine | -3d 23h | Mon Mar 23 | 9:00 AM |
+| 9 | 3 Days Out — Intake Final | -2d 23h | Tue Mar 24 | 9:00 AM |
+| 10 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
+| 11 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
+| 12 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
 
 ---
 
