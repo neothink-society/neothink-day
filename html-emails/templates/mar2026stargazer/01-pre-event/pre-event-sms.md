@@ -3,7 +3,7 @@
 
 **Audience:** All Level 3 Stargazer enrollees (no VIP split)
 **T=0:** March 27, 2026 @ 8:00 AM Pacific / 11:00 AM Eastern
-**Total SMS:** 12 messages
+**Total SMS:** 13 messages
 
 ---
 
@@ -165,7 +165,25 @@ Come ready to implement, not just absorb. {{custom_values.sg_workshop_hub_url}}
 
 ---
 
-## SMS 8 — 4 Days Out
+## SMS 8 — 5 Days Out
+
+**Send:** Sunday, March 22, 2026 @ 9:00 AM Pacific
+**Offset:** -4d 23h
+**Audience:** All
+
+```
+Neothink Society: 5 days.
+
+Your environment on March 27-29 is part of the immersion. Private space, meals prepped, phone silenced, camera on.
+
+Every interruption resets the depth. Protect the space this week.
+```
+
+**Character count:** ~215 (2 segments)
+
+---
+
+## SMS 9 — 4 Days Out
 
 **Send:** Monday, March 23, 2026 @ 9:00 AM Pacific
 **Offset:** -3d 23h
@@ -183,7 +201,7 @@ Have your financial picture in mind. You'll be working with real numbers.
 
 ---
 
-## SMS 9 — 3 Days Out (Intake Form Final Check)
+## SMS 10 — 3 Days Out (Intake Form Final Check)
 
 **Send:** Tuesday, March 24, 2026 @ 9:00 AM Pacific
 **Offset:** -2d 23h
@@ -203,7 +221,7 @@ Golden Life Sheet ready? Bring it Friday.
 
 ---
 
-## SMS 10 — 2 Days Out
+## SMS 11 — 2 Days Out
 
 **Send:** Wednesday, March 25, 2026 @ 9:00 AM Pacific
 **Offset:** -1d 23h
@@ -226,7 +244,7 @@ Watch for the email. {{custom_values.sg_workshop_hub_url}}
 
 ---
 
-## SMS 11 — 1 Day Out, Morning
+## SMS 12 — 1 Day Out, Morning
 
 **Send:** Thursday, March 26, 2026 @ 9:00 AM Pacific
 **Offset:** -23h
@@ -246,7 +264,7 @@ The Hamilton family will be in the room with you. Be ready to work.
 
 ---
 
-## SMS 12 — 1 Day Out, Evening
+## SMS 13 — 1 Day Out, Evening
 
 **Send:** Thursday, March 26, 2026 @ 4:00 PM Pacific
 **Offset:** -16h
@@ -279,11 +297,12 @@ See you inside.
 | 5 | 10 Days Out — Day 1 Preview | -9d 23h | Tue Mar 17 | 9:00 AM |
 | 6 | 9 Days Out — Logistics | -8d 23h | Wed Mar 18 | 9:00 AM |
 | 7 | 7 Days Out — Implement | -6d 23h | Fri Mar 20 | 9:00 AM |
-| 8 | 4 Days Out — Wealth Engine | -3d 23h | Mon Mar 23 | 9:00 AM |
-| 9 | 3 Days Out — Intake Final | -2d 23h | Tue Mar 24 | 9:00 AM |
-| 10 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
-| 11 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
-| 12 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
+| 8 | 5 Days Out — Environment | -4d 23h | Sun Mar 22 | 9:00 AM |
+| 9 | 4 Days Out — Wealth Engine | -3d 23h | Mon Mar 23 | 9:00 AM |
+| 10 | 3 Days Out — Intake Final | -2d 23h | Tue Mar 24 | 9:00 AM |
+| 11 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
+| 12 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
+| 13 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
 
 ---
 
