@@ -94,16 +94,16 @@ The Starship architecture gets built around it. Bring it March 27.
 **Audience:** All
 
 ```
-Neothink Society: Two weeks out. Real talk.
+Neothink Society: Two weeks out.
 
-Bring your Golden Life Sheet from Day of Enlightenment. Not a new one — your actual one. The Starship architecture gets built around it.
+The Hamilton family is not presenting to you. They know who you are. They've read your intake form.
 
-Three days blocked: Friday, Saturday, Sunday. All day each day.
+Three days. All day each day. Camera on. Everyone in the room.
 
-This is not a weekend seminar. It's an immersion. Protect it.
+This is not a seminar. Show up accordingly.
 ```
 
-**Character count:** ~290 (2 segments)
+**Character count:** ~250 (2 segments)
 
 ---
 
