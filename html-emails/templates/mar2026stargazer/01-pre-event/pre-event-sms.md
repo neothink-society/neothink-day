@@ -3,7 +3,7 @@
 
 **Audience:** All Level 3 Stargazer enrollees (no VIP split)
 **T=0:** March 27, 2026 @ 8:00 AM Pacific / 11:00 AM Eastern
-**Total SMS:** 9 messages
+**Total SMS:** 10 messages
 
 ---
 
@@ -69,7 +69,25 @@ Complete it: {{custom_values.sg_intake_form_url}}
 
 ---
 
-## SMS 3 — 14 Days Out
+## SMS 3 — 20 Days Out
+
+**Send:** Saturday, March 7, 2026 @ 9:00 AM Pacific
+**Offset:** -19d 23h
+**Audience:** All
+
+```
+Neothink Society: 20 days.
+
+Find your Golden Life Sheet from Day of Enlightenment. Not a new one — your actual one.
+
+The Starship architecture gets built around it. Bring it March 27.
+```
+
+**Character count:** ~185 (2 segments)
+
+---
+
+## SMS 4 — 14 Days Out
 
 **Send:** Friday, March 13, 2026 @ 9:00 AM Pacific
 **Offset:** -13d 23h
@@ -89,7 +107,7 @@ This is not a weekend seminar. It's an immersion. Protect it.
 
 ---
 
-## SMS 4 — 7 Days Out
+## SMS 5 — 7 Days Out
 
 **Send:** Friday, March 20, 2026 @ 9:00 AM Pacific
 **Offset:** -6d 23h
@@ -109,7 +127,7 @@ Come ready to implement, not just absorb. neothinkstargazer.com/home
 
 ---
 
-## SMS 5 — 4 Days Out
+## SMS 6 — 4 Days Out
 
 **Send:** Monday, March 23, 2026 @ 9:00 AM Pacific
 **Offset:** -3d 23h
@@ -127,7 +145,7 @@ Have your financial picture in mind. You'll be working with real numbers.
 
 ---
 
-## SMS 6 — 3 Days Out (Intake Form Final Check)
+## SMS 7 — 3 Days Out (Intake Form Final Check)
 
 **Send:** Tuesday, March 24, 2026 @ 9:00 AM Pacific
 **Offset:** -2d 23h
@@ -147,7 +165,7 @@ Golden Life Sheet ready? Bring it Friday.
 
 ---
 
-## SMS 7 — 2 Days Out
+## SMS 8 — 2 Days Out
 
 **Send:** Wednesday, March 25, 2026 @ 9:00 AM Pacific
 **Offset:** -1d 23h
@@ -170,7 +188,7 @@ Watch for the email. neothinkstargazer.com/home
 
 ---
 
-## SMS 8 — 1 Day Out, Morning
+## SMS 9 — 1 Day Out, Morning
 
 **Send:** Thursday, March 26, 2026 @ 9:00 AM Pacific
 **Offset:** -23h
@@ -190,7 +208,7 @@ The Hamilton family will be in the room with you. Be ready to work.
 
 ---
 
-## SMS 9 — 1 Day Out, Evening
+## SMS 10 — 1 Day Out, Evening
 
 **Send:** Thursday, March 26, 2026 @ 4:00 PM Pacific
 **Offset:** -16h
@@ -218,13 +236,14 @@ See you inside.
 |---|---------|--------|---------------|----------------|
 | 1 | 30 Days Out | -29d 23h | Wed Feb 25 | 9:00 AM |
 | 2 | 25 Days Out — Intake Form | -24d 23h | Mon Mar 2 | 9:00 AM |
-| 3 | 14 Days Out — Logistics | -13d 23h | Fri Mar 13 | 9:00 AM |
-| 4 | 7 Days Out | -6d 23h | Fri Mar 20 | 9:00 AM |
-| 5 | 4 Days Out — Wealth Engine | -3d 23h | Mon Mar 23 | 9:00 AM |
-| 6 | 3 Days Out — Intake Final | -2d 23h | Tue Mar 24 | 9:00 AM |
-| 7 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
-| 8 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
-| 9 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
+| 3 | 20 Days Out — Golden Life Sheet | -19d 23h | Sat Mar 7 | 9:00 AM |
+| 4 | 14 Days Out — Logistics | -13d 23h | Fri Mar 13 | 9:00 AM |
+| 5 | 7 Days Out | -6d 23h | Fri Mar 20 | 9:00 AM |
+| 6 | 4 Days Out — Wealth Engine | -3d 23h | Mon Mar 23 | 9:00 AM |
+| 7 | 3 Days Out — Intake Final | -2d 23h | Tue Mar 24 | 9:00 AM |
+| 8 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
+| 9 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
+| 10 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
 
 ---
 
