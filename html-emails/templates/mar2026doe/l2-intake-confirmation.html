@@ -1,0 +1,358 @@
+<!--
+  EMAIL: L2 Member Intake Form — Confirmation (Immediate)
+  SUBJECT: {{contact.first_name}}, your member intake form is ready
+  ALT SUBJECTS:
+    - Welcome to Level 2 — one step before your transformation begins
+    - Your mentors are preparing. One form, ~12 minutes.
+  PREHEADER: Your answers help your mentors prepare for you personally. Saves as you go — no need to finish in one sitting.
+  SEND TIME: Immediately on L2 purchase
+  AUDIENCE: New Level 2 members
+  OFFSET: +0 (immediate, triggered by L2 product purchase or "level-2" tag)
+  CTA LINK: Replace TRIGGER_LINK_ID with your GHL Trigger Link ID for the L2 intake survey
+             e.g. {{trigger_link.abc123def456}}
+  NOTE: Use a GHL Trigger Link (not a raw survey URL) — this pre-identifies the contact
+        so all partial saves write to the correct contact record.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light only">
+    <title>Your Member Intake Form Is Ready</title>
+    <style type="text/css">
+        :root {
+            color-scheme: light only !important;
+            supported-color-schemes: light only !important;
+        }
+        [data-ogsc] body, [data-ogsc] .dark-bg { background-color: #000000 !important; }
+        u + .body { background-color: #000000 !important; }
+        @media (prefers-color-scheme: dark) { .dark-bg { background-color: #000000 !important; } }
+
+        body {
+            margin: 0; padding: 0; width: 100% !important;
+            -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+            background-color: #000000 !important;
+        }
+        img {
+            border: 0; outline: none; text-decoration: none;
+            -ms-interpolation-mode: bicubic; max-width: 100%; height: auto; display: block;
+        }
+        table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        a { color: #FFD700; text-decoration: underline; }
+        a:hover { color: #FFA500; text-decoration: none; }
+
+        @media only screen and (max-width: 600px) {
+            .mobile-width { width: 100% !important; max-width: 100% !important; }
+            .mobile-padding { padding: 30px 20px !important; }
+            .mobile-title { font-size: 38px !important; line-height: 46px !important; }
+            .mobile-subhead { font-size: 20px !important; line-height: 28px !important; }
+            .mobile-text { font-size: 16px !important; line-height: 26px !important; }
+            .mobile-text-small { font-size: 14px !important; line-height: 22px !important; }
+            .mobile-button { padding: 18px 32px !important; font-size: 16px !important; }
+            .mobile-badge { font-size: 11px !important; letter-spacing: 3px !important; }
+        }
+    </style>
+</head>
+<body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
+
+    <!-- Preheader -->
+    <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
+        Your answers help your mentors prepare for you personally. Saves as you go — no need to finish in one sitting.&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <!-- Outer wrapper -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" style="background-color: #000000;">
+        <tr>
+            <td align="center" valign="top" style="padding: 20px 10px;">
+
+                <!-- Email container -->
+                <table class="mobile-width" width="600" cellpadding="0" cellspacing="0" border="0"
+                       style="max-width: 600px; background-color: #0a0a0a; border: 1px solid #1a1a1a;">
+
+                    <!-- ── TOP GOLD BAR ── -->
+                    <tr>
+                        <td style="height: 3px; background: linear-gradient(90deg, #8B6914, #FFD700, #8B6914); font-size: 0; line-height: 0;">&nbsp;</td>
+                    </tr>
+
+                    <!-- ── HEADER ── -->
+                    <tr>
+                        <td class="mobile-padding" align="center" style="padding: 40px 50px 30px;">
+
+                            <!-- Badge -->
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="border: 1px solid #FFD700; background-color: rgba(255,215,0,0.08); padding: 6px 16px;">
+                                        <span class="mobile-badge" style="font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 12px; font-weight: 700; letter-spacing: 4px; color: #FFD700; text-transform: uppercase;">&#10003; LEVEL 2 CONFIRMED</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Logo placeholder -->
+                            <div style="margin: 28px 0 20px;">
+                                <!-- Replace with: <img src="https://neothinkday.com/img/society-crest.png" width="90" height="90" alt="Neothink Society" style="margin: 0 auto;"> -->
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                                    <tr>
+                                        <td align="center" style="width: 80px; height: 80px; border: 1px solid #333; background: #111;">
+                                            <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 10px; color: #555; text-transform: uppercase; letter-spacing: 1px;">CREST</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!-- Headline -->
+                            <h1 class="mobile-title" style="font-family: Baskervville, Georgia, 'Times New Roman', serif; font-size: 48px; font-weight: 400; line-height: 56px; color: #FFD700; margin: 0 0 16px; letter-spacing: -0.5px;">
+                                Welcome to the Society.
+                            </h1>
+
+                            <!-- Subheadline -->
+                            <p class="mobile-subhead" style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 300; line-height: 32px; color: #FFFFFF; margin: 0; letter-spacing: 0.3px;">
+                                Your mentors are preparing for you.
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- ── THIN GOLD DIVIDER ── -->
+                    <tr>
+                        <td style="padding: 0 50px;">
+                            <div style="height: 1px; background: linear-gradient(90deg, transparent, #FFD700, transparent); font-size: 0; line-height: 0;">&nbsp;</div>
+                        </td>
+                    </tr>
+
+                    <!-- ── BODY ── -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 36px 50px;">
+
+                            <!-- Opening paragraph -->
+                            <p class="mobile-text" style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 17px; line-height: 28px; color: #CCCCCC; margin: 0 0 28px;">
+                                Before your Day of Enlightenment, Wallace and the mentorship team review every intake form personally. Your answers determine how they show up for you.
+                            </p>
+
+                            <!-- What's in the form box -->
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                                   style="border: 1px solid #FFD700; background-color: rgba(255,215,0,0.04); margin-bottom: 28px;">
+                                <tr>
+                                    <td style="padding: 24px 28px;">
+                                        <p style="font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; letter-spacing: 4px; color: #FFD700; text-transform: uppercase; margin: 0 0 16px;">WHAT'S IN THE FORM</p>
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 5px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 20px; vertical-align: top; padding-top: 1px;">
+                                                                <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">1.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 22px; color: #FFFFFF;">Your contact info</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 5px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 20px; vertical-align: top; padding-top: 1px;">
+                                                                <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">2.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 22px; color: #FFFFFF;">What brought you here — your reason, your tipping point</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 5px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 20px; vertical-align: top; padding-top: 1px;">
+                                                                <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">3.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 22px; color: #FFFFFF;">Your goals and where you want to be in one year</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 5px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 20px; vertical-align: top; padding-top: 1px;">
+                                                                <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">4.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 22px; color: #FFFFFF;">Your background — work, life, finances (optional fields)</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 5px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 20px; vertical-align: top; padding-top: 1px;">
+                                                                <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">5.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 22px; color: #FFFFFF;">What you bring — your skills, your story</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 5px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 20px; vertical-align: top; padding-top: 1px;">
+                                                                <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">6.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 22px; color: #FFFFFF;">Looking ahead — referrals, a note for your mentors (optional)</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Time label -->
+                            <p style="font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 12px; font-weight: 700; letter-spacing: 3px; color: #FFD700; text-transform: uppercase; text-align: center; margin: 0 0 28px;">
+                                TAKES ABOUT 12 MINUTES &middot; SAVES AS YOU GO
+                            </p>
+
+                            <!-- CTA button -->
+                            <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 14px;">
+                                <tr>
+                                    <td align="center" style="background: linear-gradient(135deg, #B8860B, #FFD700); border-radius: 0;">
+                                        <a class="mobile-button" href="{{trigger_link.TRIGGER_LINK_ID}}"
+                                           style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 700; color: #000000; text-decoration: none; display: inline-block; padding: 20px 44px; letter-spacing: 0.5px; text-transform: uppercase;">
+                                            Complete My Member Profile &rarr;
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Note below button -->
+                            <p class="mobile-text-small" style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #888888; text-align: center; margin: 0 0 36px;">
+                                You can stop anywhere and come back — every step saves automatically.
+                            </p>
+
+                            <!-- Divider -->
+                            <div style="height: 1px; background: #1e1e1e; margin: 0 0 36px; font-size: 0; line-height: 0;">&nbsp;</div>
+
+                            <!-- What happens next -->
+                            <p style="font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; letter-spacing: 4px; color: #FFD700; text-transform: uppercase; margin: 0 0 20px;">
+                                WHAT HAPPENS NEXT
+                            </p>
+
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding: 10px 0; border-bottom: 1px solid #1a1a1a;">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                                                    <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">&#9656;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 24px; color: #CCCCCC;">Your <strong style="color: #FFFFFF;">Secret Manuscript</strong> ships to your address on file.</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 0; border-bottom: 1px solid #1a1a1a;">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                                                    <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">&#9656;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 24px; color: #CCCCCC;">Your <strong style="color: #FFFFFF;">intake form is reviewed</strong> by Wallace and the mentors.</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 0;">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                                                    <span style="font-family: 'Courier Prime', Courier, monospace; font-size: 13px; color: #FFD700;">&#9656;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15px; line-height: 24px; color: #CCCCCC;">Your <strong style="color: #FFFFFF;">Day of Enlightenment date is confirmed</strong> and you receive full details.</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- ── CLOSING QUOTE ── -->
+                    <tr>
+                        <td style="padding: 10px 50px 40px;">
+                            <div style="height: 1px; background: linear-gradient(90deg, transparent, #FFD700, transparent); margin-bottom: 28px; font-size: 0; line-height: 0;">&nbsp;</div>
+                            <p style="font-family: Baskervville, Georgia, 'Times New Roman', serif; font-size: 20px; font-style: italic; line-height: 30px; color: #FFD700; text-align: center; margin: 0;">
+                                &#8220;Your extraordinary life begins now.&#8221;
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- ── FOOTER ── -->
+                    <tr>
+                        <td style="background-color: #050505; border-top: 1px solid #1a1a1a; padding: 28px 50px;">
+                            <p style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #555555; text-align: center; margin: 0 0 8px; letter-spacing: 2px; text-transform: uppercase;">
+                                Dedicated to Your Destiny
+                            </p>
+                            <p style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; color: #666666; text-align: center; margin: 0 0 12px;">
+                                Neothink Society &mdash; Day of Enlightenment
+                            </p>
+                            <p style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #444444; text-align: center; margin: 0 0 10px;">
+                                Questions? <a href="mailto:support@neothinkday.com" style="color: #666666;">support@neothinkday.com</a>
+                            </p>
+                            <p style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 18px; color: #333333; text-align: center; margin: 0;">
+                                <a href="{{unsubscribe}}" style="color: #444444; text-decoration: underline;">Unsubscribe</a>
+                                &nbsp;&bull;&nbsp;
+                                <a href="https://neothinkday.com/privacy" style="color: #444444; text-decoration: underline;">Privacy Policy</a>
+                            </p>
+                            <p style="font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 18px; color: #333333; text-align: center; margin: 10px 0 0;">
+                                &copy; 2026 Neothink Society. All rights reserved.<br>
+                                [Physical address — required by CAN-SPAM]
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- ── BOTTOM GOLD BAR ── -->
+                    <tr>
+                        <td style="height: 3px; background: linear-gradient(90deg, #8B6914, #FFD700, #8B6914); font-size: 0; line-height: 0;">&nbsp;</td>
+                    </tr>
+
+                </table>
+                <!-- /Email container -->
+
+            </td>
+        </tr>
+    </table>
+    <!-- /Outer wrapper -->
+
+</body>
+</html>

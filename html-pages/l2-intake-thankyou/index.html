@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Complete — Neothink Society</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Your member intake form has been submitted. Your mentors will review your answers before your Day of Enlightenment.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold: #FFD700;
+            --gold-dim: #B8860B;
+            --black: #000000;
+            --near-black: #0a0a0a;
+            --border: #1e1e1e;
+            --text: #CCCCCC;
+            --text-muted: #888888;
+        }
+
+        html, body {
+            background-color: var(--black);
+            color: var(--text);
+            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+        }
+
+        /* Gold top bar */
+        .top-bar {
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-dim), var(--gold), var(--gold-dim));
+        }
+
+        .page-wrap {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            border: 1px solid var(--gold);
+            background: rgba(255, 215, 0, 0.07);
+            padding: 6px 16px;
+            font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        /* Logo slot */
+        .logo-slot {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #333;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+        }
+        .logo-slot span {
+            font-family: 'Courier Prime', Courier, monospace;
+            font-size: 9px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Headline */
+        h1 {
+            font-family: Baskervville, Georgia, 'Times New Roman', serif;
+            font-size: 54px;
+            font-weight: 400;
+            line-height: 62px;
+            color: var(--gold);
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+        }
+
+        /* Body text */
+        .body-text {
+            font-size: 17px;
+            line-height: 28px;
+            color: var(--text);
+            margin-bottom: 40px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 40px 0;
+        }
+
+        /* What's coming next */
+        .next-label {
+            font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .next-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px;
+        }
+        .next-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--text);
+        }
+        .next-list li:last-child { border-bottom: none; }
+        .next-list .arrow {
+            font-family: 'Courier Prime', Courier, monospace;
+            color: var(--gold);
+            flex-shrink: 0;
+            padding-top: 1px;
+        }
+
+        /* CTA button */
+        .cta-wrap {
+            text-align: center;
+            margin-top: 8px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+            color: #000000;
+            font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 16px 40px;
+            transition: opacity 0.2s;
+        }
+        .cta-btn:hover { opacity: 0.85; }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            .page-wrap { padding: 40px 20px 60px; }
+            h1 { font-size: 40px; line-height: 50px; }
+            .body-text { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar"></div>
+
+    <div class="page-wrap">
+
+        <div style="text-align: center;">
+
+            <!-- Badge -->
+            <div class="badge">INTAKE COMPLETE</div>
+
+            <!-- Logo -->
+            <div class="logo-slot">
+                <!-- Replace with: <img src="https://neothinkday.com/img/society-crest.png" width="80" height="80" alt="Neothink Society"> -->
+                <span>CREST</span>
+            </div>
+
+            <!-- Headline -->
+            <h1>You're all set.</h1>
+
+            <!-- Body -->
+            <p class="body-text">
+                Your profile has been submitted. Your mentors will review your answers before your Day of Enlightenment. You'll hear from us soon about your next steps.
+            </p>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- What's coming next -->
+        <p class="next-label">What's Coming Next</p>
+        <ul class="next-list">
+            <li>
+                <span class="arrow">&#9656;</span>
+                <span>Your <strong style="color: #fff;">Secret Manuscript</strong> ships to your address on file — read it before your Day of Enlightenment.</span>
+            </li>
+            <li>
+                <span class="arrow">&#9656;</span>
+                <span>Wallace and the mentors will <strong style="color: #fff;">review your intake form</strong> personally to prepare for you.</span>
+            </li>
+            <li>
+                <span class="arrow">&#9656;</span>
+                <span>Your <strong style="color: #fff;">Day of Enlightenment date and details</strong> will be confirmed via email.</span>
+            </li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="cta-wrap">
+            <a href="https://neothinkday.com/home" class="cta-btn">Return to Your Hub &rarr;</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
