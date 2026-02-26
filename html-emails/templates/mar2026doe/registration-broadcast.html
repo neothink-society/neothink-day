@@ -1,13 +1,15 @@
 <!--
-  EMAIL: Day of Enlightenment — Registration Broadcast (March 2026)
-  SUBJECT: {{contact.first_name}}, March 14-15 is 17 days away — register now
+  EMAIL: Day of Enlightenment — Registration Broadcast (March 2026) — Updated Feb 26
+  SUBJECT: {{contact.first_name}}, March 14-15 is 16 days away — complete your intake form
   ALT SUBJECTS:
-    - Your Day of Enlightenment is March 14-15. One step to confirm your seat.
-    - March 14th is coming. Your registration isn't done yet.
-  PREHEADER: Your Day of Enlightenment is 17 days away. Registration is the only step between you and the full pre-workshop sequence.
-  SEND TIME: Manual trigger — send to Level 2 members who have NOT yet registered for March 14-15
-  AUDIENCE: Level 2 buyers (unregistered for March 2026 cohort)
+    - Your seat at March 14-15 is waiting. One form confirms your commitment.
+    - March 14th is 16 days away. Your intake form is how you make it real.
+  PREHEADER: Completing your intake form is how you consciously commit to March 14-15 — and unlock your event hub, pre-work, and preparation sequence.
+  SEND TIME: Manual broadcast — Feb 26, 2026 — Level 2 members who have NOT completed intake form
+  AUDIENCE: Level 2 buyers (intake form not yet submitted)
   OFFSET: N/A (one-time broadcast)
+  CTA LINK: Replace TRIGGER_LINK_ID with the GHL Trigger Link ID for the L2 intake survey
+             e.g. {{trigger_link.abc123def456}}
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -57,7 +59,7 @@
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        Your Day of Enlightenment is 17 days away. Registration is the only step between you and the full pre-workshop sequence.
+        Completing your intake form is how you consciously commit to March 14-15 — and unlock your event hub, pre-work, and preparation sequence.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -74,7 +76,7 @@
                                 <tr>
                                     <td align="center">
                                         <p style="margin: 0; padding: 8px 16px; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 3px; line-height: 18px; background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.3); border-radius: 4px; display: inline-block;">
-                                            LEVEL 2 &bull; DAY OF ENLIGHTENMENT &bull; 17 DAYS OUT
+                                            LEVEL 2 &bull; DAY OF ENLIGHTENMENT &bull; 16 DAYS OUT
                                         </p>
                                     </td>
                                 </tr>
@@ -104,7 +106,7 @@
                     <tr>
                         <td style="padding: 0 40px 36px 40px;" class="mobile-padding">
                             <h2 style="margin: 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 24px; font-weight: 400; color: #cccccc; text-align: center; line-height: 34px;" class="mobile-h2">
-                                Registration is the only step between you and everything that follows.
+                                Your intake form is how you consciously commit to this date.
                             </h2>
                         </td>
                     </tr>
@@ -113,7 +115,7 @@
                     <tr>
                         <td style="padding: 0 40px 24px 40px;" class="mobile-padding">
                             <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; color: #e5e5e5; line-height: 28px; font-weight: 400;" class="mobile-text">
-                                You completed the Orientation Masterclass. The next step&mdash;your Day of Enlightenment&mdash;is happening March 14&ndash;15, 2026. It&rsquo;s included in your Level 2 membership. It costs you nothing. But you need to register to secure your place and receive your pre-workshop preparation materials.
+                                You completed the Orientation Masterclass. Your Day of Enlightenment&mdash;March 14&ndash;15, 2026&mdash;is 16 days away and included in your Level 2 membership. Your place is held. But to make it real, there&rsquo;s one thing to do: complete your member intake form.
                             </p>
                         </td>
                     </tr>
@@ -121,7 +123,7 @@
                     <tr>
                         <td style="padding: 0 40px 30px 40px;" class="mobile-padding">
                             <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; color: #e5e5e5; line-height: 28px; font-weight: 400;" class="mobile-text">
-                                The Masterclass gave you the framework. The Day of Enlightenment gives you the lived experience&mdash;two full days of removing what&rsquo;s been limiting you and stepping into who you actually are.
+                                Completing the form is how you consciously say yes to this date. It takes about 12 minutes and saves as you go. Your answers are reviewed personally by Wallace and the mentors before March 14th&mdash;and they unlock your event hub, preparation sequence, and pre-work.
                             </p>
                         </td>
                     </tr>
@@ -215,9 +217,9 @@
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td align="center">
-                                        <a href="https://neothinkday.com/register"
+                                        <a href="{{trigger_link.TRIGGER_LINK_ID}}"
                                            style="display: inline-block; background: linear-gradient(135deg, #FFD700, #D4AF37); color: #000000; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 800; text-decoration: none; padding: 22px 56px; border-radius: 6px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
-                                            Register for March 14-15 &rarr;
+                                            Complete My Intake Form &rarr;
                                         </a>
                                     </td>
                                 </tr>
@@ -225,11 +227,20 @@
                         </td>
                     </tr>
 
-                    <!-- Free note -->
+                    <!-- Notes below button -->
+                    <tr>
+                        <td style="padding: 0 40px 12px 40px;" class="mobile-padding">
+                            <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; color: #888888; line-height: 20px; text-align: center;">
+                                About 12 minutes &mdash; saves as you go &mdash; included with your Level 2 membership.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Secondary CTA: Event Hub -->
                     <tr>
                         <td style="padding: 0 40px 36px 40px;" class="mobile-padding">
-                            <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; color: #888888; line-height: 20px; text-align: center;">
-                                Included with your Level 2 membership &mdash; no additional cost.
+                            <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; color: #888888; line-height: 22px; text-align: center;">
+                                Already submitted your form? &rarr; <a href="https://neothinkday.com/home" style="color: #FFD700; text-decoration: underline;">Access your event hub and pre-work</a>
                             </p>
                         </td>
                     </tr>
@@ -243,17 +254,17 @@
                         </td>
                     </tr>
 
-                    <!-- What registration sends -->
+                    <!-- What completing the form unlocks -->
                     <tr>
                         <td style="padding: 0 40px 24px 40px;" class="mobile-padding">
                             <p style="margin: 0 0 16px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text-small">
-                                After registering, you&rsquo;ll receive:
+                                Completing your intake form unlocks:
                             </p>
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
                                         <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #e5e5e5; line-height: 22px;" class="mobile-text-small">
-                                            <span style="color: #FFD700; font-weight: 700; margin-right: 10px;">&#10003;</span> Your confirmation and calendar invite
+                                            <span style="color: #FFD700; font-weight: 700; margin-right: 10px;">&#10003;</span> Your event home page &mdash; <a href="https://neothinkday.com/home" style="color: #FFD700; text-decoration: underline;">neothinkday.com/home</a>
                                         </p>
                                     </td>
                                 </tr>
@@ -268,6 +279,13 @@
                                     <td style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
                                         <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #e5e5e5; line-height: 22px;" class="mobile-text-small">
                                             <span style="color: #FFD700; font-weight: 700; margin-right: 10px;">&#10003;</span> The Secret Manuscript (first 50 pages &mdash; pre-reading)
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                                        <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #e5e5e5; line-height: 22px;" class="mobile-text-small">
+                                            <span style="color: #FFD700; font-weight: 700; margin-right: 10px;">&#10003;</span> Personal mentor review of your answers before March 14
                                         </p>
                                     </td>
                                 </tr>
@@ -292,7 +310,7 @@
                                             Can&rsquo;t make March 14-15?
                                         </p>
                                         <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; color: #888888; line-height: 22px;">
-                                            Still register, then reach out to <a href="mailto:support@neothink.com" style="color: #FFD700; text-decoration: underline;">support@neothink.com</a> with your availability and we&rsquo;ll move you to the next available cohort.
+                                            Still complete your intake form, then reach out to <a href="mailto:support@neothink.com" style="color: #FFD700; text-decoration: underline;">support@neothink.com</a> with your availability and we&rsquo;ll move you to the next available cohort.
                                         </p>
                                     </td>
                                 </tr>
