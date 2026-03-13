@@ -1,17 +1,18 @@
 <!--
-EMAIL: 1 Day Out — Evening (Friday) — Branch 2: Signed in, not VIP
-SUBJECT: Tomorrow is the day — sign into your dashboard
+EMAIL: 1 Day Out — Morning (Friday) — VIP BRANCH
+SUBJECT: Your VIP experience begins tomorrow, {{contact.first_name}}
 ALT SUBJECTS:
-  - Tomorrow: Make sure you're ready — sign in now
-  - Sign into your dashboard before tomorrow's workshop
-PREHEADER: Sign into your dashboard at neothinkday.com/home to make sure everything is ready. Doors open 10:30 AM Eastern / 7:30 AM Pacific.
-SEND TIME: Friday, March 13, 2026 @ 4:00 PM PT / 7:00 PM ET
-AUDIENCE: Contacts with tag "doe march 2026 - signin" who do NOT have tag "level 2 workshop vip"
-OFFSET: -16h (from Day 1 T=0 at 8:00 AM PT)
+  - Tomorrow is yours, {{contact.first_name}} — VIP access is ready
+  - 24 hours out — your VIP dashboard is waiting
+PREHEADER: Your VIP dashboard at neothinkday.com/home is ready. Sign in today to verify access, download your workbook, and prepare for tomorrow's experience.
+SEND TIME: Friday, March 13, 2026 @ 9:00 AM PT / 12:00 PM ET
+AUDIENCE: Pre-event sequence contacts WITH tag "level 2 workshop vip"
+OFFSET: -23h (from Day 1 T=0 at 8:00 AM PT Saturday)
 
-GHL WORKFLOW BRANCH:
-  Condition: Contact has tag "doe march 2026 - signin" AND does NOT have tag "level 2 workshop vip"
-    → Send this email (signed in, not VIP — CTA links to neothinkday.com/home, includes VIP upsell)
+GHL WORKFLOW IF/ELSE:
+  Condition: Contact has tag "level 2 workshop vip"
+    YES → send this email (VIP dashboard link — neothinkday.com/home)
+    NO  → send preparation-01day-morning.html (registered branch)
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -24,30 +25,22 @@ GHL WORKFLOW BRANCH:
     <meta name="format-detection" content="email=no" />
     <meta name="color-scheme" content="light only">
     <meta name="supported-color-schemes" content="light only">
-    <title>Tomorrow Is the Day — Sign Into Your Dashboard</title>
+    <title>Your VIP Experience Begins Tomorrow</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <style type="text/css">
-        :root {
-            color-scheme: light only !important;
-            supported-color-schemes: light only !important;
-        }
+        :root { color-scheme: light only !important; supported-color-schemes: light only !important; }
         [data-ogsc] body, [data-ogsc] .dark-bg { background-color: #000000 !important; }
         u + .body { background-color: #000000 !important; }
         @media (prefers-color-scheme: dark) { .dark-bg { background-color: #000000 !important; } }
-        body {
-            margin: 0; padding: 0; width: 100% !important;
-            -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
-            background-color: #000000 !important;
-        }
+        body { margin: 0; padding: 0; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #000000 !important; }
         img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; height: auto; display: block; }
         table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
         a { color: #FFD700; text-decoration: underline; }
         a:hover { color: #FFA500; text-decoration: none; }
-
         @media only screen and (max-width: 600px) {
             .mobile-width { width: 100% !important; max-width: 100% !important; }
             .mobile-padding { padding: 30px 20px !important; }
@@ -64,7 +57,7 @@ GHL WORKFLOW BRANCH:
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        Sign into your dashboard at neothinkday.com/home. Everything you need is waiting there. Doors open 10:30 AM Eastern / 7:30 AM Pacific tomorrow.
+        Your VIP dashboard at neothinkday.com/home is ready. Sign in today to verify access, download your workbook, and prepare for tomorrow's experience.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -72,7 +65,6 @@ GHL WORKFLOW BRANCH:
             <td align="center" style="padding: 0;">
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px; background-color: #000000;" class="mobile-width dark-bg">
 
-                    <!-- Top spacing -->
                     <tr><td style="padding: 40px 0 0 0;">&nbsp;</td></tr>
 
                     <!-- Classification Header -->
@@ -82,7 +74,7 @@ GHL WORKFLOW BRANCH:
                                 <tr>
                                     <td align="center">
                                         <p style="margin: 0; padding: 0; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; color: #888888; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
-                                            FINAL PREP &bull; 24 HOURS OUT
+                                            24 HOURS OUT &bull; FRIDAY MORNING &bull; VIP
                                         </p>
                                     </td>
                                 </tr>
@@ -103,7 +95,7 @@ GHL WORKFLOW BRANCH:
                     <tr>
                         <td style="padding: 0 40px 20px 40px;" class="mobile-padding">
                             <h1 style="margin: 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 48px; font-weight: 400; color: #ffffff; text-align: center; line-height: 56px;" class="mobile-title">
-                                Tomorrow Is the Day
+                                Your VIP Workshop<br>Is Tomorrow
                             </h1>
                         </td>
                     </tr>
@@ -111,9 +103,8 @@ GHL WORKFLOW BRANCH:
                     <!-- Subheadline -->
                     <tr>
                         <td style="padding: 0 40px 40px 40px;" class="mobile-padding">
-                            <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; color: #e5e5e5; line-height: 30px; text-align: center; font-weight: 400;" class="mobile-text">
-                                {{custom_values.doe_day1_date}} is here.<br>
-                                Sign into your dashboard tonight so you're fully prepared.
+                            <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; color: #e5e5e5; line-height: 30px; text-align: center; font-weight: 400;" class="mobile-text">
+                                You secured the full VIP experience — now take 2 minutes<br>to sign in and make sure everything is set for tomorrow.
                             </p>
                         </td>
                     </tr>
@@ -124,22 +115,22 @@ GHL WORKFLOW BRANCH:
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05)); border: 3px solid #FFD700; border-radius: 10px; padding: 40px 35px; text-align: center;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 10px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
-                                            Your Workshop Hub
+                                        <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
+                                            Your VIP Workshop Hub
                                         </p>
-                                        <p style="margin: 0 0 25px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #d0d0d0; line-height: 24px; font-weight: 400;" class="mobile-text-small">
-                                            Your workbook, Zoom access, and everything you need for the weekend is waiting inside your dashboard. Sign in tonight to make sure you're all set.
+                                        <p style="margin: 0 0 25px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #d0d0d0; line-height: 24px; font-weight: 400;" class="mobile-text-small">
+                                            Sign in now to confirm your VIP access, download and print your workbook, and make sure everything is ready. Your Zoom link will appear here tomorrow morning.
                                         </p>
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                             <tr>
                                                 <td align="center">
-                                                    <a href="https://neothinkday.com/home" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 800; text-decoration: none; padding: 20px 50px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
-                                                        Sign Into Your Dashboard &rarr;
+                                                    <a href="https://neothinkday.com/home" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 800; text-decoration: none; padding: 20px 50px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
+                                                        Open Your VIP Dashboard &rarr;
                                                     </a>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <p style="margin: 20px 0 0 0; padding: 0; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 12px; color: #888888; line-height: 18px;">
+                                        <p style="margin: 20px 0 0 0; font-family: 'Courier Prime', monospace; font-size: 12px; color: #888888; line-height: 18px;">
                                             neothinkday.com/home
                                         </p>
                                     </td>
@@ -148,26 +139,6 @@ GHL WORKFLOW BRANCH:
                         </td>
                     </tr>
 
-                    <!-- Tomorrow's timing -->
-                    <tr>
-                        <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
-                            <h2 style="margin: 0 0 25px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 28px; font-weight: 400; color: #ffffff; text-align: center; line-height: 36px;" class="mobile-title">
-                                Tomorrow — {{custom_values.doe_day1_date_short}}
-                            </h2>
-                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                <tr>
-                                    <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 22px 28px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #e5e5e5; line-height: 28px; font-weight: 400;" class="mobile-text-small">
-                                            <span style="color: #FFD700; font-weight: 700;">Doors open:</span> {{custom_values.doe_day1_start_time_full}}<br>
-                                            <span style="color: #FFD700; font-weight: 700;">Workshop begins:</span> 11:00 AM Eastern &bull; 10:00 AM Central &bull; 9:00 AM Mountain &bull; 8:00 AM Pacific<br>
-                                            <span style="color: #FFD700; font-weight: 700;">Your Zoom link:</span> Inside your dashboard — available tomorrow morning
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
                     <!-- Divider -->
                     <tr>
                         <td style="padding: 0 40px 35px 40px;">
@@ -177,56 +148,52 @@ GHL WORKFLOW BRANCH:
                         </td>
                     </tr>
 
-                    <!-- Tonight checklist -->
+                    <!-- Do today -->
                     <tr>
                         <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
-                            <h2 style="margin: 0 0 25px 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 28px; font-weight: 400; color: #ffffff; text-align: center; line-height: 36px;" class="mobile-title">
-                                Tonight's Checklist
+                            <h2 style="margin: 0 0 25px 0; font-family: 'Baskervville', Georgia, serif; font-size: 28px; font-weight: 400; color: #ffffff; text-align: center; line-height: 36px;" class="mobile-title">
+                                Do Today
                             </h2>
 
-                            <!-- Item 1 -->
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 16px 0;">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
                                         <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Sign Into Your Dashboard</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Log into neothinkday.com/home and confirm everything loads — workbook, Zoom access, all materials. Your Zoom link will appear Saturday morning.
+                                            Go to neothinkday.com/home and confirm everything loads. Your Zoom link appears here tomorrow morning.
                                         </p>
                                     </td>
                                 </tr>
                             </table>
 
-                            <!-- Item 2 -->
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 16px 0;">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Set 3 Alarms</p>
+                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Download & Print Your Workbook</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Wake up early enough to be settled. Doors open at 10:30 AM Eastern / 7:30 AM Pacific. Set multiple alarms — don't miss the opening.
+                                            Available inside your dashboard. Print it if you can — the act of writing by hand during the workshop deepens what you take away.
                                         </p>
                                     </td>
                                 </tr>
                             </table>
 
-                            <!-- Item 3 -->
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 16px 0;">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Prepare Your Space</p>
+                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Clear Your Weekend</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Quiet, private space. Water nearby. Notebook and pen. Phone on Do Not Disturb. Pre-plan meals — you won't want to stop for food.
+                                            Both days are full days. Tell your family. Set an out-of-office if needed. Your full presence is what makes this work.
                                         </p>
                                     </td>
                                 </tr>
                             </table>
 
-                            <!-- Item 4 -->
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Rest Well</p>
+                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Test Your Tech</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            You need full mental presence tomorrow. Whatever you did or didn't do to prepare — you're ready enough. Get good sleep tonight.
+                                            Update Zoom. Test your camera and microphone. Have a backup device charged and ready. Technical issues during the opening are the one thing worth preventing tonight.
                                         </p>
                                     </td>
                                 </tr>
@@ -234,75 +201,27 @@ GHL WORKFLOW BRANCH:
                         </td>
                     </tr>
 
-                    <!-- Divider -->
-                    <tr>
-                        <td style="padding: 0 40px 35px 40px;">
-                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                <tr><td style="border-top: 1px solid rgba(255, 215, 0, 0.2);">&nbsp;</td></tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                    <!-- VIP upsell (last chance) -->
-                    <tr>
-                        <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
-                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                <tr>
-                                    <td style="background: rgba(255, 215, 0, 0.05); border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 8px; padding: 28px 28px; text-align: center;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 8px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 1.5px; line-height: 18px;">
-                                            Final Hours
-                                        </p>
-                                        <p style="margin: 0 0 8px 0; font-family: 'Baskervville', Georgia, serif; font-size: 22px; font-weight: 400; color: #ffffff; line-height: 30px;">
-                                            Upgrade to VIP Elite
-                                        </p>
-                                        <p style="margin: 0 0 20px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            VIP closes Saturday morning. Includes an intimate group session with Wallace Hamilton and exclusive Day 2 access.
-                                        </p>
-                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                            <tr>
-                                                <td align="center">
-                                                    <a href="https://neothinkday.com/vip-upgrade" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 800; text-decoration: none; padding: 14px 35px; border-radius: 6px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
-                                                        Upgrade to VIP &rarr;
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                    <!-- Quick reference -->
+                    <!-- Tomorrow timing -->
                     <tr>
                         <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td style="background-color: #0a0a0a; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px; padding: 28px 25px;" bgcolor="#0a0a0a" class="mobile-spacing-reduce">
                                         <p style="margin: 0 0 18px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 1px; text-align: center;">
-                                            Weekend at a Glance
+                                            Tomorrow — {{custom_values.doe_day1_date_short}}
                                         </p>
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #e5e5e5; line-height: 22px;">
-                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Day 1 ({{custom_values.doe_day1_date_short}}):</strong> Doors 10:30 AM ET / 7:30 AM PT &bull; Begins 11 AM ET / 8 AM PT
+                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Doors open:</strong> {{custom_values.doe_day1_start_time_full}}
                                         </p>
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #e5e5e5; line-height: 22px;">
-                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Day 2 ({{custom_values.doe_day2_date}}):</strong> Begins {{custom_values.doe_day2_start_time}} &bull; Same Zoom link
+                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Workshop begins:</strong> 11:00 AM Eastern &bull; 8:00 AM Pacific SHARP
                                         </p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #e5e5e5; line-height: 22px;">
-                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Your Dashboard:</strong> <a href="https://neothinkday.com/home" style="color: #FFD700;">neothinkday.com/home</a>
+                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Your Zoom link:</strong> Arrives in your dashboard tomorrow morning
                                         </p>
                                     </td>
                                 </tr>
                             </table>
-                        </td>
-                    </tr>
-
-                    <!-- Closing line -->
-                    <tr>
-                        <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
-                            <p style="margin: 0; font-family: 'Baskervville', Georgia, serif; font-size: 20px; color: #FFD700; line-height: 30px; text-align: center; font-style: italic;">
-                                "Tomorrow, your life is about to meet you."
-                            </p>
                         </td>
                     </tr>
 

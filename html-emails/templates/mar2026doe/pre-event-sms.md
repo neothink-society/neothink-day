@@ -1,11 +1,12 @@
-# March 2026 DOE — SMS Sequence (Key Messages)
+# March 2026 DOE — SMS Sequence (3-Branch)
 
 **Event:** Day of Enlightenment Workshop
 **Dates:** March 14-15, 2026
 
-**Day 1:** Saturday, March 14 — Doors open 7:00 AM Pacific / 10:00 AM Eastern
-**Day 1:** Wallace takes stage 8:00 AM Pacific / 11:00 AM Eastern
-**Day 2:** Sunday, March 15 — 8:00 AM Pacific / 11:00 AM Eastern
+**Day 1:** Saturday, March 14 — Doors open early, Workshop starts 8:00 AM Pacific / 11:00 AM Eastern
+**Day 2:** Sunday, March 15 — Workshop starts 8:00 AM Pacific / 11:00 AM Eastern
+
+**Start Time (all zones):** 8am Pacific / 9am Mountain / 10am Central / 11am Eastern
 
 **Zoom:**
 - Trigger link: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -14,16 +15,25 @@
 
 ---
 
-## GHL IF/ELSE WORKFLOW LOGIC
+## GHL 3-BRANCH WORKFLOW LOGIC
 
-For all messages BEFORE the event starts (Friday evening, Saturday morning up to start time):
+**For all messages BEFORE doors open (Friday + Saturday morning):**
 
-**In GHL workflow, add If/Else before EVERY SMS send step:**
-- Condition: Contact has tag `doe march 2026 registered`
-- **YES (registered)** → Send Version A — link goes to neothinkday.com/home
-- **NO (not registered)** → Send Version B — link goes to neothinkday.com/register
+In GHL workflow, add If/Else branches before EVERY SMS send step:
 
-**After event starts (Zoom link messages and beyond):** No if/else — everyone gets the Zoom trigger link.
+**Branch 1 — VIP**
+- Condition: Contact has tag `level 2 workshop vip`
+- VIP-exclusive messaging. They're set. Link → neothinkday.com/home
+
+**Branch 2 — Signed in (not VIP)**
+- Condition: Contact has tag `doe march 2026 - signin` AND does NOT have tag `level 2 workshop vip`
+- Encourage VIP upgrade. Links → neothinkday.com/home + neothinkday.com/vip-upgrade
+
+**Branch 3 — Not signed in**
+- Condition: Does NOT have tag `level 2 workshop vip` AND does NOT have tag `doe march 2026 - signin`
+- "Sign in to access your event dashboard." Link → neothinkday.com (form → thank you page VIP upsell)
+
+**After doors open (Zoom link messages and beyond):** No branching — everyone gets the same Zoom link.
 
 ---
 
@@ -33,29 +43,43 @@ For all messages BEFORE the event starts (Friday evening, Saturday morning up to
 **Offset:** -23h
 **Audience:** All pre-event sequence
 
-### Version A — Has tag `doe march 2026 registered`
+### Branch 1 — VIP (`level 2 workshop vip`)
 ```
-Neothink Society: Your Day of Enlightenment is tomorrow.
+Neothink Society: {{contact.first_name}}, your VIP Day of Enlightenment experience begins tomorrow.
 
-Sign into your dashboard today — confirm your access and download your workbook.
-
+Your dashboard is ready with everything you need:
 neothinkday.com/home
 
-Doors open 10am Eastern / 7am Pacific.
+Workshop starts 11am Eastern / 8am Pacific.
 ```
-**Character count:** ~157/160
+**Character count:** ~160/160
 
 ---
 
-### Version B — Does NOT have tag
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
 ```
 Neothink Society: Your Day of Enlightenment is tomorrow.
 
-Complete your registration now to access your dashboard and workbook.
+Your dashboard is ready:
+neothinkday.com/home
 
-neothinkday.com/register
+Want the full VIP experience? Upgrade now:
+neothinkday.com/vip-upgrade
 ```
-**Character count:** ~138/160
+**Character count:** ~158/160
+
+---
+
+### Branch 3 — Not signed in (no tags)
+```
+Neothink Society: Your Day of Enlightenment is tomorrow.
+
+Sign in now to access your event dashboard and workbook:
+neothinkday.com
+
+Workshop starts 11am Eastern / 8am Pacific.
+```
+**Character count:** ~155/160
 
 ---
 
@@ -65,73 +89,99 @@ neothinkday.com/register
 **Offset:** -16h
 **Audience:** All pre-event sequence
 
-### Version A — Has tag `doe march 2026 registered` (already registered)
+### Branch 1 — VIP (`level 2 workshop vip`)
 ```
-Neothink Society: Tomorrow is the day.
+Neothink Society: Tomorrow is the day, {{contact.first_name}}.
 
-Sign into your dashboard — everything you need for the weekend is waiting there.
-
+Your VIP dashboard has everything you need for the weekend:
 neothinkday.com/home
 
-Set your alarms. Doors open 10am Eastern / 7am Pacific.
+Set your alarm. 11am Eastern / 8am Pacific.
 ```
-**Character count:** ~151/160
+**Character count:** ~158/160
 
 ---
 
-### Version B — Does NOT have tag (not registered)
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
 ```
 Neothink Society: Tomorrow is the day.
 
-Complete your registration now to access your dashboard and be fully prepared.
+Your dashboard is waiting:
+neothinkday.com/home
 
-neothinkday.com/register
-
-Doors open 10am Eastern / 7am Pacific.
+Upgrade to VIP before tomorrow and get the full experience:
+neothinkday.com/vip-upgrade
 ```
-**Character count:** ~152/160
+**Character count:** ~157/160
 
 ---
 
-## SATURDAY MORNING — 2 HOURS BEFORE DOORS
+### Branch 3 — Not signed in (no tags)
+```
+Neothink Society: Tomorrow is the day.
+
+Sign in to access your event dashboard — everything you need is waiting:
+neothinkday.com
+
+Set your alarm. 11am Eastern / 8am Pacific.
+```
+**Character count:** ~155/160
+
+---
+
+## SATURDAY MORNING — PRE-EVENT
 
 **Send Time:** Saturday, March 14, 2026 @ 5:00 AM PT / 8:00 AM ET
-**Offset:** -2h
+**Offset:** -3h
 **Audience:** All pre-event sequence
 
-### Version A — Has tag `doe march 2026 registered`
+### Branch 1 — VIP (`level 2 workshop vip`)
+```
+Neothink Society: Today is the day, {{contact.first_name}}.
+
+Your VIP Zoom link and materials are on your dashboard:
+neothinkday.com/home
+
+We start at 11am Eastern / 8am Pacific.
+```
+**Character count:** ~155/160
+
+---
+
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
 ```
 Neothink Society: Today is the day.
 
-Sign into your dashboard now — your Zoom link is waiting there.
-
+Your Zoom link is on your dashboard:
 neothinkday.com/home
 
-Doors open 10am Eastern / 7am Pacific.
+Still time to upgrade to VIP:
+neothinkday.com/vip-upgrade
+
+We start at 11am Eastern / 8am Pacific.
+```
+**Character count:** ~160/160
+
+---
+
+### Branch 3 — Not signed in (no tags)
+```
+Neothink Society: Today is the day.
+
+Sign in now to get your Zoom link and access your dashboard:
+neothinkday.com
+
+We start at 11am Eastern / 8am Pacific.
 ```
 **Character count:** ~140/160
 
 ---
 
-### Version B — Does NOT have tag
-```
-Neothink Society: Today is the day.
-
-Sign in at neothinkday.com/register to complete registration and access your Zoom link.
-
-Doors open 10am Eastern / 7am Pacific.
-```
-**Character count:** ~147/160
-
----
-
 ## SATURDAY ZOOM LINK — AT DOORS OPEN
 
-**Send Time:** Saturday, March 14, 2026 @ 7:00 AM PT / 10:00 AM ET (doors open)
-**Offset:** T=0 - 1h (or at 7am PT exactly)
-**Audience:** All
-
-*No if/else needed from this point forward — everyone gets the Zoom link.*
+**Send Time:** Saturday, March 14, 2026 @ 7:30 AM PT / 10:30 AM ET (doors open)
+**Offset:** -30m
+**Audience:** All (no branching)
 
 ```
 Neothink Society: DOORS ARE OPEN.
@@ -142,7 +192,7 @@ Join your Day of Enlightenment workshop now:
 ID: {{custom_values.doe_zoom_id}}
 Pass: {{custom_values.doe_zoom_passcode}}
 
-Workshop begins 11am Eastern / 8am Pacific SHARP.
+Workshop begins 11am Eastern / 8am Pacific.
 ```
 **Character count:** ~190 — will split into 2 SMS segments (acceptable for day-of)
 
@@ -152,7 +202,7 @@ Workshop begins 11am Eastern / 8am Pacific SHARP.
 
 **Send Time:** Saturday, March 14, 2026 @ 8:00 AM PT / 11:00 AM ET
 **Offset:** T=0
-**Audience:** All
+**Audience:** All (no branching)
 
 ```
 Neothink Society: WE'RE LIVE.
@@ -172,7 +222,7 @@ The opening has begun.
 
 **Send Time:** Saturday, March 14, 2026 — Evening (~5:00 PM PT / 8:00 PM ET)
 **Offset:** +9h
-**Audience:** All
+**Audience:** All (no branching)
 
 ```
 Neothink Society: Day 1 complete.
@@ -190,45 +240,59 @@ Day 2 (Sunday): 11am Eastern / 8am Pacific. Same Zoom link.
 ## SUNDAY MORNING — 2 HOURS BEFORE DAY 2
 
 **Send Time:** Sunday, March 15, 2026 @ 6:00 AM PT / 9:00 AM ET
-**Offset:** +23h (from Saturday T=0 at 8:00 AM PT)
+**Offset:** +22h (from Saturday T=0 at 8:00 AM PT)
 **Audience:** All pre-event sequence
 
-### Version A — Has tag `doe march 2026 registered`
+### Branch 1 — VIP (`level 2 workshop vip`)
+```
+Neothink Society: Day 2 in 2 hours, {{contact.first_name}}.
+
+Your VIP dashboard has your Zoom link:
+neothinkday.com/home
+
+11am Eastern / 8am Pacific. Same Zoom link.
+```
+**Character count:** ~140/160
+
+---
+
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
 ```
 Neothink Society: Day 2 begins in 2 hours.
 
 You showed up yesterday. Show up again today.
 
-Sign into your dashboard for your Zoom link:
+Your Zoom link:
 neothinkday.com/home
 
-11am Eastern / 8am Pacific. Same Zoom link.
+Upgrade to VIP before Day 2:
+neothinkday.com/vip-upgrade
 ```
-**Character count:** ~146/160
+**Character count:** ~158/160
 
 ---
 
-### Version B — Does NOT have tag
+### Branch 3 — Not signed in (no tags)
 ```
 Neothink Society: Day 2 begins in 2 hours.
 
-Register now to get your Zoom link for today's workshop:
-neothinkday.com/register
+Sign in now to get your Zoom link for today:
+neothinkday.com
 
 11am Eastern / 8am Pacific.
 ```
-**Character count:** ~138/160
+**Character count:** ~122/160
 
 ---
 
-## SUNDAY ZOOM LINK — AT DOORS OPEN
+## SUNDAY ZOOM LINK — AT START
 
 **Send Time:** Sunday, March 15, 2026 @ 8:00 AM PT / 11:00 AM ET
 **Offset:** +24h
-**Audience:** All
+**Audience:** All (no branching)
 
 ```
-Neothink Society: Day 2 doors are open.
+Neothink Society: Day 2 is starting.
 
 Join here:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -236,7 +300,7 @@ Join here:
 ID: {{custom_values.doe_zoom_id}}
 Pass: {{custom_values.doe_zoom_passcode}}
 
-We begin at 11am Eastern / 8am Pacific SHARP.
+We begin at 11am Eastern / 8am Pacific.
 ```
 **Character count:** ~175 (2 segments — acceptable)
 
@@ -245,23 +309,23 @@ We begin at 11am Eastern / 8am Pacific SHARP.
 ## COMPLETE SMS SCHEDULE
 
 **T=0 = Saturday, March 14, 2026 @ 8:00 AM PT / 11:00 AM ET (workshop start)**
-**Doors open = 7:00 AM PT / 10:00 AM ET (-1h)**
+**Doors open = 7:30 AM PT / 10:30 AM ET (-30m)**
 
-| # | Message | Audience | Day | Time (Pacific) | Offset |
-|---|---------|----------|-----|----------------|--------|
-| A1 | Fri Morning — Registered | Has registered tag | Fri Mar 13 | 9:00 AM | -23h |
-| A2 | Fri Morning — Unregistered | No registered tag | Fri Mar 13 | 9:00 AM | -23h |
-| B1 | Fri Evening — Registered | Has registered tag | Fri Mar 13 | 4:00 PM | -16h |
-| B2 | Fri Evening — Unregistered | No registered tag | Fri Mar 13 | 4:00 PM | -16h |
-| C1 | Sat Morning — Registered | Has registered tag | Sat Mar 14 | 5:00 AM | -2h |
-| C2 | Sat Morning — Unregistered | No registered tag | Sat Mar 14 | 5:00 AM | -2h |
-| C | Zoom Link (at doors open) | All | Sat Mar 14 | 7:00 AM | -1h |
-| D | We're Live | All | Sat Mar 14 | 8:00 AM | T=0 |
-| E | Day 1 End | All | Sat Mar 14 | ~5:00 PM | +9h |
-| F1 | Day 2 Morning — Registered | Has registered tag | Sun Mar 15 | 6:00 AM | +23h |
-| F2 | Day 2 Morning — Unregistered | No registered tag | Sun Mar 15 | 6:00 AM | +23h |
-| G | Day 2 Zoom | All | Sun Mar 15 | 7:00 AM | +24h |
-
-**TIMING NOTE:** Verify these send times don't conflict with existing sends already
-configured in the pre-event sequence workflow before adding them. Check Saturday and
-Sunday early morning slots especially — the workflow may already have sends in those windows.
+| # | Message | Branch | Day | Time (Pacific) | Offset |
+|---|---------|--------|-----|----------------|--------|
+| A1 | Fri Morning — VIP | `level 2 workshop vip` | Fri Mar 13 | 9:00 AM | -23h |
+| A2 | Fri Morning — Signed in | `doe march 2026 - signin` | Fri Mar 13 | 9:00 AM | -23h |
+| A3 | Fri Morning — Not signed in | No tags | Fri Mar 13 | 9:00 AM | -23h |
+| B1 | Fri Evening — VIP | `level 2 workshop vip` | Fri Mar 13 | 4:00 PM | -16h |
+| B2 | Fri Evening — Signed in | `doe march 2026 - signin` | Fri Mar 13 | 4:00 PM | -16h |
+| B3 | Fri Evening — Not signed in | No tags | Fri Mar 13 | 4:00 PM | -16h |
+| C1 | Sat Morning — VIP | `level 2 workshop vip` | Sat Mar 14 | 5:00 AM | -3h |
+| C2 | Sat Morning — Signed in | `doe march 2026 - signin` | Sat Mar 14 | 5:00 AM | -3h |
+| C3 | Sat Morning — Not signed in | No tags | Sat Mar 14 | 5:00 AM | -3h |
+| D | Zoom Link (doors open) | All | Sat Mar 14 | 7:30 AM | -30m |
+| E | We're Live | All | Sat Mar 14 | 8:00 AM | T=0 |
+| F | Day 1 End | All | Sat Mar 14 | ~5:00 PM | +9h |
+| G1 | Sun Morning — VIP | `level 2 workshop vip` | Sun Mar 15 | 6:00 AM | +22h |
+| G2 | Sun Morning — Signed in | `doe march 2026 - signin` | Sun Mar 15 | 6:00 AM | +22h |
+| G3 | Sun Morning — Not signed in | No tags | Sun Mar 15 | 6:00 AM | +22h |
+| H | Day 2 Zoom | All | Sun Mar 15 | 8:00 AM | +24h |

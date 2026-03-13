@@ -1,21 +1,18 @@
 <!--
-EMAIL: 1 Day Out — Evening (Friday) — UNREGISTERED BRANCH
-SUBJECT: Tomorrow is the day — complete your registration now
+EMAIL: 1 Day Out — Evening (Friday) — NOT SIGNED IN (Branch 3)
+SUBJECT: Tomorrow is the day — sign in to access your dashboard
 ALT SUBJECTS:
-  - One step left before tomorrow's workshop
-  - Make sure you're ready for tomorrow — register now
-PREHEADER: Complete your registration at neothinkday.com/register to access your dashboard and be ready for tomorrow. Doors open 10 AM Eastern / 7 AM Pacific.
+  - Sign in tonight so you're ready for tomorrow
+  - Your dashboard is waiting — sign in at neothinkday.com
+PREHEADER: Sign in at neothinkday.com to access your dashboard and everything you need for tomorrow.
 SEND TIME: Friday, March 13, 2026 @ 4:00 PM PT / 7:00 PM ET
-AUDIENCE: Pre-event sequence contacts WITHOUT tag "doe march 2026 registered"
+AUDIENCE: Pre-event sequence contacts WITHOUT tag "level 2 workshop vip" AND WITHOUT tag "doe march 2026 - signin"
 OFFSET: -16h (from Day 1 T=0 at 8:00 AM PT)
 
 GHL WORKFLOW IF/ELSE:
-  This is the NO branch — send when contact does NOT have tag "doe march 2026 registered"
-  Paired with: preparation-01day-evening.html (YES branch — has tag, sends to dashboard)
-
-  On registration form submit:
-  → Contact gets tagged "doe march 2026 registered"
-  → Post-submit page shows VIP upgrade offer
+  This is Branch 3 — Not signed in.
+  Condition: Contact has NEITHER "level 2 workshop vip" NOR "doe march 2026 - signin" tag.
+  These contacts have been receiving emails but never filled out the sign-in form.
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -28,7 +25,7 @@ GHL WORKFLOW IF/ELSE:
     <meta name="format-detection" content="email=no" />
     <meta name="color-scheme" content="light only">
     <meta name="supported-color-schemes" content="light only">
-    <title>Tomorrow Is the Day — Complete Your Registration</title>
+    <title>Tomorrow Is the Day — Sign In to Access Your Dashboard</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +57,7 @@ GHL WORKFLOW IF/ELSE:
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        One step left. Complete your registration at neothinkday.com/register to access your dashboard and everything you need for tomorrow's workshop.
+        Sign in at neothinkday.com to access your dashboard and everything you need for tomorrow.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -108,34 +105,34 @@ GHL WORKFLOW IF/ELSE:
                         <td style="padding: 0 40px 40px 40px;" class="mobile-padding">
                             <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; color: #e5e5e5; line-height: 30px; text-align: center; font-weight: 400;" class="mobile-text">
                                 {{custom_values.doe_day1_date}} is here.<br>
-                                Complete your registration so you're fully prepared.
+                                Sign in to access your dashboard so you're fully prepared.
                             </p>
                         </td>
                     </tr>
 
-                    <!-- REGISTRATION CTA — Primary -->
+                    <!-- SIGN IN CTA — Primary -->
                     <tr>
                         <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05)); border: 3px solid #FFD700; border-radius: 10px; padding: 40px 35px; text-align: center;" class="mobile-spacing-reduce">
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
-                                            One Step Left
+                                            Access Your Dashboard
                                         </p>
                                         <p style="margin: 0 0 25px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #d0d0d0; line-height: 24px; font-weight: 400;" class="mobile-text-small">
-                                            Complete your registration to access your workshop dashboard — where your Zoom link, workbook, and all materials are waiting. Takes less than a minute.
+                                            Sign in to access your workshop dashboard — where your Zoom link, workbook, and all materials are waiting. Takes less than a minute.
                                         </p>
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                             <tr>
                                                 <td align="center">
-                                                    <a href="https://neothinkday.com/register" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 800; text-decoration: none; padding: 20px 50px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
-                                                        Complete Your Registration &rarr;
+                                                    <a href="https://neothinkday.com" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 800; text-decoration: none; padding: 20px 50px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
+                                                        Sign In Now &rarr;
                                                     </a>
                                                 </td>
                                             </tr>
                                         </table>
                                         <p style="margin: 20px 0 0 0; font-family: 'Courier Prime', monospace; font-size: 12px; color: #888888; line-height: 18px;">
-                                            neothinkday.com/register
+                                            neothinkday.com
                                         </p>
                                     </td>
                                 </tr>
@@ -155,7 +152,7 @@ GHL WORKFLOW IF/ELSE:
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #e5e5e5; line-height: 28px; font-weight: 400;" class="mobile-text-small">
                                             <span style="color: #FFD700; font-weight: 700;">Doors open:</span> {{custom_values.doe_day1_start_time_full}}<br>
                                             <span style="color: #FFD700; font-weight: 700;">Workshop begins:</span> 11:00 AM Eastern &bull; 10:00 AM Central &bull; 9:00 AM Mountain &bull; 8:00 AM Pacific<br>
-                                            <span style="color: #FFD700; font-weight: 700;">Your Zoom link:</span> Inside your dashboard after registration
+                                            <span style="color: #FFD700; font-weight: 700;">Your Zoom link:</span> Inside your dashboard after signing in
                                         </p>
                                     </td>
                                 </tr>
@@ -182,9 +179,9 @@ GHL WORKFLOW IF/ELSE:
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 16px 0;">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Complete Your Registration</p>
+                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Sign In to Your Dashboard</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Register at neothinkday.com/register — this gives you access to your workshop dashboard, your Zoom link, and your workbook.
+                                            Go to neothinkday.com and sign in — this gives you access to your workshop dashboard, your Zoom link, and your workbook.
                                         </p>
                                     </td>
                                 </tr>
@@ -195,7 +192,7 @@ GHL WORKFLOW IF/ELSE:
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
                                         <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Set 3 Alarms</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Wake up early enough to be settled. Doors open at 10:00 AM Eastern / 7:00 AM Pacific. Set multiple alarms — don't miss the opening.
+                                            Wake up early enough to be settled. Doors open at 10:30 AM Eastern / 7:30 AM Pacific. Set multiple alarms — don't miss the opening.
                                         </p>
                                     </td>
                                 </tr>
@@ -235,13 +232,13 @@ GHL WORKFLOW IF/ELSE:
                                             Weekend at a Glance
                                         </p>
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #e5e5e5; line-height: 22px;">
-                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Day 1 ({{custom_values.doe_day1_date_short}}):</strong> Doors 10 AM ET / 7 AM PT &bull; Begins 11 AM ET / 8 AM PT
+                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Day 1 ({{custom_values.doe_day1_date_short}}):</strong> Doors 10:30 AM ET / 7:30 AM PT &bull; Begins 11 AM ET / 8 AM PT
                                         </p>
                                         <p style="margin: 0 0 10px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #e5e5e5; line-height: 22px;">
                                             <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Day 2 ({{custom_values.doe_day2_date}}):</strong> Begins {{custom_values.doe_day2_start_time}} &bull; Same Zoom link
                                         </p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #e5e5e5; line-height: 22px;">
-                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Register Now:</strong> <a href="https://neothinkday.com/register" style="color: #FFD700;">neothinkday.com/register</a>
+                                            <span style="color: #FFD700; font-weight: 700;">&check;</span> <strong>Sign In:</strong> <a href="https://neothinkday.com" style="color: #FFD700;">neothinkday.com</a>
                                         </p>
                                     </td>
                                 </tr>

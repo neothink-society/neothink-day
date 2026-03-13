@@ -1,18 +1,18 @@
 <!--
-EMAIL: 1 Day Out — Morning (Friday) — REGISTERED BRANCH
-SUBJECT: Tomorrow is the Day of Enlightenment — sign into your dashboard
+EMAIL: 1 Day Out — Morning (Friday) — SIGNED IN, NOT VIP BRANCH
+SUBJECT: Tomorrow is the Day of Enlightenment — your dashboard is ready
 ALT SUBJECTS:
-  - 24 hours away — are you ready? Sign in now
-  - Your workshop is tomorrow — check your dashboard today
-PREHEADER: Sign into your workshop dashboard at neothinkday.com/home. Verify everything is ready before tomorrow. Doors open 10 AM Eastern / 7 AM Pacific.
+  - 24 hours away — your dashboard is set, one more thing to consider
+  - Your workshop is tomorrow — dashboard confirmed, VIP still available
+PREHEADER: Your dashboard is ready for tomorrow. Everything you need is inside — plus one way to take your experience further.
 SEND TIME: Friday, March 13, 2026 @ 9:00 AM PT / 12:00 PM ET
-AUDIENCE: Pre-event sequence contacts WITH tag "doe march 2026 registered"
+AUDIENCE: Contacts WITH tag "doe march 2026 - signin" AND WITHOUT tag "level 2 workshop vip"
 OFFSET: -23h (from Day 1 T=0 at 8:00 AM PT Saturday)
 
 GHL WORKFLOW IF/ELSE:
-  Condition: Contact has tag "doe march 2026 registered"
-    YES → send this email (dashboard link — neothinkday.com/home)
-    NO  → send preparation-01day-morning-unregistered.html (registration link)
+  Condition: Contact has tag "doe march 2026 - signin" AND does NOT have tag "level 2 workshop vip"
+    YES → send this email (dashboard link + VIP upsell)
+    NO  → route to other branches
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,7 +25,7 @@ GHL WORKFLOW IF/ELSE:
     <meta name="format-detection" content="email=no" />
     <meta name="color-scheme" content="light only">
     <meta name="supported-color-schemes" content="light only">
-    <title>Tomorrow Is the Day of Enlightenment — Sign Into Your Dashboard</title>
+    <title>Tomorrow Is the Day of Enlightenment — Your Dashboard Is Ready</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@ GHL WORKFLOW IF/ELSE:
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        Your Day of Enlightenment is tomorrow. Sign into your dashboard today — verify your access, download your workbook, and make sure you're all set.
+        Your dashboard is ready for tomorrow. Everything you need is inside — plus one way to take your experience further.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -95,7 +95,7 @@ GHL WORKFLOW IF/ELSE:
                     <tr>
                         <td style="padding: 0 40px 20px 40px;" class="mobile-padding">
                             <h1 style="margin: 0; padding: 0; font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif; font-size: 48px; font-weight: 400; color: #ffffff; text-align: center; line-height: 56px;" class="mobile-title">
-                                Your Workshop<br>Is Tomorrow
+                                Your Dashboard<br>Is Ready
                             </h1>
                         </td>
                     </tr>
@@ -104,7 +104,7 @@ GHL WORKFLOW IF/ELSE:
                     <tr>
                         <td style="padding: 0 40px 40px 40px;" class="mobile-padding">
                             <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; color: #e5e5e5; line-height: 30px; text-align: center; font-weight: 400;" class="mobile-text">
-                                Take 2 minutes today to sign into your dashboard<br>so tomorrow morning you're ready to go.
+                                Everything is set for tomorrow.<br>Take one last look to make sure you're ready.
                             </p>
                         </td>
                     </tr>
@@ -119,13 +119,13 @@ GHL WORKFLOW IF/ELSE:
                                             Your Workshop Hub
                                         </p>
                                         <p style="margin: 0 0 25px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #d0d0d0; line-height: 24px; font-weight: 400;" class="mobile-text-small">
-                                            Sign in now to confirm your access, download and print your workbook, and make sure everything is ready. Your Zoom link will appear here tomorrow morning.
+                                            Your access is confirmed. Check your dashboard one more time — download your workbook if you haven't yet, and your Zoom link will appear here tomorrow morning.
                                         </p>
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                             <tr>
                                                 <td align="center">
                                                     <a href="https://neothinkday.com/home" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 800; text-decoration: none; padding: 20px 50px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
-                                                        Sign Into Your Dashboard &rarr;
+                                                        Open Your Dashboard &rarr;
                                                     </a>
                                                 </td>
                                             </tr>
@@ -158,9 +158,9 @@ GHL WORKFLOW IF/ELSE:
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 16px 0;">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Sign Into Your Dashboard</p>
+                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Confirm Your Dashboard</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Go to neothinkday.com/home and confirm everything loads. Your Zoom link appears here tomorrow morning.
+                                            Go to neothinkday.com/home and verify everything loads. Your Zoom link appears here tomorrow morning.
                                         </p>
                                     </td>
                                 </tr>
@@ -195,6 +195,33 @@ GHL WORKFLOW IF/ELSE:
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
                                             Update Zoom. Test your camera and microphone. Have a backup device charged and ready. Technical issues during the opening are the one thing worth preventing tonight.
                                         </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- VIP Upgrade CTA — Secondary -->
+                    <tr>
+                        <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td style="background: rgba(255, 215, 0, 0.08); border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 10px; padding: 32px 30px; text-align: center;" class="mobile-spacing-reduce">
+                                        <p style="margin: 0 0 8px 0; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
+                                            VIP Experience
+                                        </p>
+                                        <p style="margin: 0 0 20px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: #d0d0d0; line-height: 24px; font-weight: 400;" class="mobile-text-small">
+                                            Want priority access, exclusive workshop materials, and an enhanced experience across both days? VIP is still available before tomorrow.
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://neothinkday.com/vip-upgrade" style="display: inline-block; background: transparent; color: #FFD700; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; text-decoration: none; padding: 14px 40px; border-radius: 8px; border: 2px solid #FFD700; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
+                                                        Upgrade to VIP — $297
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>

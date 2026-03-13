@@ -1,22 +1,15 @@
 <!--
 EMAIL: Day 1 Morning — Before Start (Saturday)
+BRANCH: 2 — Signed in, not VIP
+CONDITION: Contact has tag "doe march 2026 - signin" but NOT "level 2 workshop vip"
 SUBJECT: Today is the day — sign into your dashboard now
 ALT SUBJECTS:
   - Day 1 is here — sign in before we open the doors
-  - This is it — doors open in 2 hours
-PREHEADER: Doors open 10:00 AM Eastern / 7:00 AM Pacific. Sign into your dashboard at neothinkday.com/home. Workshop begins at 11 AM Eastern / 8 AM Pacific SHARP.
-SEND TIME: Saturday, March 14, 2026 @ 5:00 AM PT / 8:00 AM ET (2 hours before doors)
-AUDIENCE: All pre-event sequence registrants
-OFFSET: -2h (from Day 1 T=0 at 8:00 AM PT)
-
-GHL WORKFLOW IF/ELSE INSTRUCTIONS:
-  Condition: Contact has tag "doe march 2026 registered"
-    YES → Send this email with CTA linking to: https://neothinkday.com/home
-    NO  → Send this email with CTA linking to: https://neothinkday.com/register
-          (Send them to the registration page — they'll get the VIP upsell)
-
-  NOTE: After this message, all subsequent messages on Day 1 use the Zoom trigger link
-  (day1-zoom.html) — no more if/else needed once the event is live.
+  - This is it — doors open in 3 hours
+PREHEADER: Doors open 10:30 AM Eastern / 7:30 AM Pacific. Sign into your dashboard at neothinkday.com/home. Workshop begins at 11 AM Eastern / 8 AM Pacific SHARP.
+SEND TIME: Saturday, March 14, 2026 @ 5:00 AM PT / 8:00 AM ET (3 hours before start)
+AUDIENCE: Signed-in registrants who are NOT VIP
+OFFSET: -3h (from Day 1 T=0 at 8:00 AM PT)
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -62,7 +55,7 @@ GHL WORKFLOW IF/ELSE INSTRUCTIONS:
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        Doors open 10:00 AM Eastern / 7:00 AM Pacific. Sign into your dashboard now. Workshop begins 11:00 AM Eastern / 8:00 AM Pacific SHARP.
+        Doors open 10:30 AM Eastern / 7:30 AM Pacific. Sign into your dashboard now. Workshop begins 11:00 AM Eastern / 8:00 AM Pacific SHARP.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -79,7 +72,7 @@ GHL WORKFLOW IF/ELSE INSTRUCTIONS:
                                 <tr>
                                     <td align="center">
                                         <p style="margin: 0; padding: 0; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; color: #888888; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
-                                            TODAY &bull; DOORS OPEN IN 2 HOURS
+                                            TODAY &bull; DOORS OPEN IN 3 HOURS
                                         </p>
                                     </td>
                                 </tr>
@@ -153,10 +146,10 @@ GHL WORKFLOW IF/ELSE INSTRUCTIONS:
                                             Doors Open
                                         </p>
                                         <p style="margin: 0 0 4px 0; font-family: 'Baskervville', Georgia, serif; font-size: 30px; font-weight: 400; color: #FFD700; line-height: 38px;">
-                                            10:00 AM Eastern / 7:00 AM Pacific
+                                            10:30 AM Eastern / 7:30 AM Pacific
                                         </p>
                                         <p style="margin: 0 0 22px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: #d0d0d0; line-height: 20px;">
-                                            9:00 AM Central &bull; 8:00 AM Mountain
+                                            9:30 AM Central &bull; 8:30 AM Mountain
                                         </p>
 
                                         <div style="border-top: 1px solid rgba(255, 215, 0, 0.3); padding-top: 20px;">
@@ -170,6 +163,36 @@ GHL WORKFLOW IF/ELSE INSTRUCTIONS:
                                                 10:00 AM Central &bull; 9:00 AM Mountain &bull; 8:00 AM Pacific
                                             </p>
                                         </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- VIP Upgrade -->
+                    <tr>
+                        <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td style="background: rgba(255, 215, 0, 0.05); border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 8px; padding: 28px; text-align: center;" class="mobile-spacing-reduce">
+                                        <p style="margin: 0 0 12px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
+                                            Still Time
+                                        </p>
+                                        <h2 style="margin: 0 0 14px 0; font-family: 'Baskervville', Georgia, serif; font-size: 22px; font-weight: 400; color: #ffffff; line-height: 30px;">
+                                            Upgrade to VIP Before We Begin
+                                        </h2>
+                                        <p style="margin: 0 0 22px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px;">
+                                            VIP includes an intimate group session with Wallace Hamilton and exclusive access on Day 2.
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://neothinkday.com/vip-upgrade" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 800; text-decoration: none; padding: 16px 40px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1.5px;" class="mobile-button">
+                                                        Upgrade to VIP &rarr;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>

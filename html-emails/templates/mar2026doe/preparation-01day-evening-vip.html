@@ -1,17 +1,18 @@
 <!--
-EMAIL: 1 Day Out — Evening (Friday) — Branch 2: Signed in, not VIP
-SUBJECT: Tomorrow is the day — sign into your dashboard
+EMAIL: 1 Day Out — Evening (Friday) — VIP Branch
+SUBJECT: Your VIP weekend starts tomorrow, {{contact.first_name}}
 ALT SUBJECTS:
-  - Tomorrow: Make sure you're ready — sign in now
-  - Sign into your dashboard before tomorrow's workshop
-PREHEADER: Sign into your dashboard at neothinkday.com/home to make sure everything is ready. Doors open 10:30 AM Eastern / 7:30 AM Pacific.
+  - Tomorrow is yours, {{contact.first_name}} — VIP dashboard is ready
+  - {{contact.first_name}}, sign into your VIP dashboard before tomorrow
+PREHEADER: Sign into your VIP dashboard at neothinkday.com/home to make sure everything is ready. Doors open 10:30 AM Eastern / 7:30 AM Pacific tomorrow.
 SEND TIME: Friday, March 13, 2026 @ 4:00 PM PT / 7:00 PM ET
-AUDIENCE: Contacts with tag "doe march 2026 - signin" who do NOT have tag "level 2 workshop vip"
+AUDIENCE: VIP registrants (tag: level 2 workshop vip)
 OFFSET: -16h (from Day 1 T=0 at 8:00 AM PT)
 
-GHL WORKFLOW BRANCH:
-  Condition: Contact has tag "doe march 2026 - signin" AND does NOT have tag "level 2 workshop vip"
-    → Send this email (signed in, not VIP — CTA links to neothinkday.com/home, includes VIP upsell)
+GHL WORKFLOW IF/ELSE INSTRUCTIONS:
+  Branch 1 (this file): Contact has tag "level 2 workshop vip"
+    YES → Send this VIP email with CTA button linking to: https://neothinkday.com/home
+    NO  → Send the standard preparation-01day-evening.html instead
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -24,7 +25,7 @@ GHL WORKFLOW BRANCH:
     <meta name="format-detection" content="email=no" />
     <meta name="color-scheme" content="light only">
     <meta name="supported-color-schemes" content="light only">
-    <title>Tomorrow Is the Day — Sign Into Your Dashboard</title>
+    <title>Your VIP Weekend Starts Tomorrow</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +65,7 @@ GHL WORKFLOW BRANCH:
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        Sign into your dashboard at neothinkday.com/home. Everything you need is waiting there. Doors open 10:30 AM Eastern / 7:30 AM Pacific tomorrow.
+        Sign into your VIP dashboard at neothinkday.com/home. Your exclusive materials and Zoom access are waiting. Doors open 10:30 AM Eastern / 7:30 AM Pacific tomorrow.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -82,7 +83,7 @@ GHL WORKFLOW BRANCH:
                                 <tr>
                                     <td align="center">
                                         <p style="margin: 0; padding: 0; font-family: 'Courier Prime', 'Courier New', Courier, monospace; font-size: 11px; font-weight: 700; color: #888888; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
-                                            FINAL PREP &bull; 24 HOURS OUT
+                                            VIP &bull; FINAL PREP &bull; 24 HOURS OUT
                                         </p>
                                     </td>
                                 </tr>
@@ -113,7 +114,7 @@ GHL WORKFLOW BRANCH:
                         <td style="padding: 0 40px 40px 40px;" class="mobile-padding">
                             <p style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; color: #e5e5e5; line-height: 30px; text-align: center; font-weight: 400;" class="mobile-text">
                                 {{custom_values.doe_day1_date}} is here.<br>
-                                Sign into your dashboard tonight so you're fully prepared.
+                                As a VIP, you have exclusive access waiting inside your dashboard. Sign in tonight so you're fully prepared.
                             </p>
                         </td>
                     </tr>
@@ -125,10 +126,10 @@ GHL WORKFLOW BRANCH:
                                 <tr>
                                     <td style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05)); border: 3px solid #FFD700; border-radius: 10px; padding: 40px 35px; text-align: center;" class="mobile-spacing-reduce">
                                         <p style="margin: 0 0 10px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 2px; line-height: 18px;">
-                                            Your Workshop Hub
+                                            Your VIP Workshop Hub
                                         </p>
                                         <p style="margin: 0 0 25px 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #d0d0d0; line-height: 24px; font-weight: 400;" class="mobile-text-small">
-                                            Your workbook, Zoom access, and everything you need for the weekend is waiting inside your dashboard. Sign in tonight to make sure you're all set.
+                                            Your workbook, Zoom access, and VIP-exclusive materials are waiting inside your dashboard. Sign in tonight to make sure you're all set.
                                         </p>
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                             <tr>
@@ -188,9 +189,9 @@ GHL WORKFLOW BRANCH:
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 16px 0;">
                                 <tr>
                                     <td style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #FFD700; padding: 20px 25px; border-radius: 6px;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Sign Into Your Dashboard</p>
+                                        <p style="margin: 0 0 5px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: #FFD700; font-weight: 700; line-height: 22px;" class="mobile-text">Sign Into Your VIP Dashboard</p>
                                         <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            Log into neothinkday.com/home and confirm everything loads — workbook, Zoom access, all materials. Your Zoom link will appear Saturday morning.
+                                            Log into neothinkday.com/home and confirm everything loads — workbook, VIP materials, Zoom access. Your Zoom link will appear Saturday morning.
                                         </p>
                                     </td>
                                 </tr>
@@ -239,36 +240,6 @@ GHL WORKFLOW BRANCH:
                         <td style="padding: 0 40px 35px 40px;">
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr><td style="border-top: 1px solid rgba(255, 215, 0, 0.2);">&nbsp;</td></tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                    <!-- VIP upsell (last chance) -->
-                    <tr>
-                        <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
-                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                <tr>
-                                    <td style="background: rgba(255, 215, 0, 0.05); border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 8px; padding: 28px 28px; text-align: center;" class="mobile-spacing-reduce">
-                                        <p style="margin: 0 0 8px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; color: #FFD700; text-transform: uppercase; letter-spacing: 1.5px; line-height: 18px;">
-                                            Final Hours
-                                        </p>
-                                        <p style="margin: 0 0 8px 0; font-family: 'Baskervville', Georgia, serif; font-size: 22px; font-weight: 400; color: #ffffff; line-height: 30px;">
-                                            Upgrade to VIP Elite
-                                        </p>
-                                        <p style="margin: 0 0 20px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: #d0d0d0; line-height: 22px; font-weight: 400;" class="mobile-text-small">
-                                            VIP closes Saturday morning. Includes an intimate group session with Wallace Hamilton and exclusive Day 2 access.
-                                        </p>
-                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                            <tr>
-                                                <td align="center">
-                                                    <a href="https://neothinkday.com/vip-upgrade" style="display: inline-block; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 800; text-decoration: none; padding: 14px 35px; border-radius: 6px; text-transform: uppercase; letter-spacing: 1px;" class="mobile-button">
-                                                        Upgrade to VIP &rarr;
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
                             </table>
                         </td>
                     </tr>

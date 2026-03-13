@@ -32,7 +32,7 @@ Apply this to every send step — email and SMS pairs:
 | Sun morning email | day2-morning.html | day2-morning-unregistered.html |
 | Sun morning SMS | Version F1 (pre-event-sms.md) | Version F2 (pre-event-sms.md) |
 
-After Sat doors open (7am PT): All remaining messages use Zoom trigger link — NO if/else.
+After Sat doors open (7:30am PT): All remaining messages use Zoom trigger link — NO if/else.
 
 After event starts (Zoom link and beyond): No if/else — everyone gets Zoom trigger link.
 
@@ -63,10 +63,10 @@ With direct:
 This removes unnecessary tag clutter. Apply wherever this pattern exists.
 
 ### 8. Fix Start Time Discrepancy
-- Custom values say: Doors open 7am PT, Wallace starts 8am PT
+- Custom values say: Doors open 7:30am PT, Wallace starts 8am PT
 - Pre-event sequence workflow shows: 8am start time
-**Clarification:** Doors open at 7am PT. Wallace takes stage at 8am PT.
-- [ ] Update pre-event workflow timing/copy to reflect 7am doors, 8am workshop start
+**Clarification:** Doors open at 7:30am PT. Wallace takes stage at 8am PT.
+- [ ] Update pre-event workflow timing/copy to reflect 7:30am doors, 8am workshop start
 - [ ] Verify all email/SMS timing offsets are correct relative to 8am PT (T=0)
 
 ### 9. Set Up Attendance Capture Trigger Link

@@ -1,17 +1,18 @@
 <!--
-EMAIL: Day 1 Morning — Before Start (Saturday) — UNREGISTERED BRANCH
-SUBJECT: Today is the day — complete registration for your Zoom link
+EMAIL: Day 1 Morning — Before Start (Saturday) — NOT SIGNED IN BRANCH
+SUBJECT: Today is the day — sign in to get your Zoom link
 ALT SUBJECTS:
   - One step left before doors open
-  - Register now to get your Zoom link for today
-PREHEADER: Complete registration at neothinkday.com/register to access your Zoom link. Doors open 10:00 AM Eastern / 7:00 AM Pacific.
-SEND TIME: Saturday, March 14, 2026 @ 5:00 AM PT / 8:00 AM ET (2 hours before doors)
-AUDIENCE: Pre-event sequence contacts WITHOUT tag "doe march 2026 registered"
-OFFSET: -2h (from Day 1 T=0 at 8:00 AM PT)
+  - Sign in now to get your Zoom link for today
+PREHEADER: Sign in at neothinkday.com to get your Zoom link. Workshop begins 11:00 AM Eastern / 8:00 AM Pacific.
+SEND TIME: Saturday, March 14, 2026 @ 5:00 AM PT / 8:00 AM ET (3 hours before doors)
+AUDIENCE: Pre-event sequence contacts WITHOUT tag "doe march 2026 vip" AND WITHOUT tag "doe march 2026 signin"
+OFFSET: -3h (from Day 1 T=0 at 8:00 AM PT)
 
 GHL WORKFLOW IF/ELSE:
-  This is the NO branch — send when contact does NOT have tag "doe march 2026 registered"
-  Paired with: day1-morning.html (YES branch — has tag, sends to dashboard)
+  Branch 3 — Not signed in. Contact has NEITHER tag.
+  Condition: no VIP tag, no signin tag. They've been getting emails but never filled out the form.
+  Paired with: day1-morning.html (Branch 1 — VIP), day1-morning-registered.html (Branch 2 — signed in)
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -24,7 +25,7 @@ GHL WORKFLOW IF/ELSE:
     <meta name="format-detection" content="email=no" />
     <meta name="color-scheme" content="light only">
     <meta name="supported-color-schemes" content="light only">
-    <title>Today Is the Day — Complete Registration for Your Zoom Link</title>
+    <title>Today Is the Day — Sign In for Your Zoom Link</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +57,7 @@ GHL WORKFLOW IF/ELSE:
 <body class="body dark-bg" style="margin: 0; padding: 0; background-color: #000000 !important;" bgcolor="#000000">
 
     <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
-        Doors open 10:00 AM Eastern / 7:00 AM Pacific. Register at neothinkday.com/register to get your Zoom link. Workshop begins 11:00 AM Eastern SHARP.
+        Sign in at neothinkday.com to get your Zoom link. Workshop begins 11:00 AM Eastern / 8:00 AM Pacific. Doors open 10:30 AM Eastern / 7:30 AM Pacific.
     </div>
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #000000;" class="dark-bg" bgcolor="#000000">
@@ -103,12 +104,12 @@ GHL WORKFLOW IF/ELSE:
                     <tr>
                         <td style="padding: 0 40px 40px 40px;" class="mobile-padding">
                             <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; color: #e5e5e5; line-height: 30px; text-align: center; font-weight: 400;" class="mobile-text">
-                                Register now to get your Zoom link<br>and access your workshop dashboard.
+                                Sign in now to get your Zoom link<br>and access your workshop dashboard.
                             </p>
                         </td>
                     </tr>
 
-                    <!-- REGISTRATION CTA — Primary -->
+                    <!-- SIGN IN CTA — Primary -->
                     <tr>
                         <td style="padding: 0 40px 45px 40px;" class="mobile-padding">
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
@@ -120,14 +121,14 @@ GHL WORKFLOW IF/ELSE:
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 0 20px 0;">
                                             <tr>
                                                 <td align="center">
-                                                    <a href="https://neothinkday.com/register" style="display: inline-block; background: #000000; color: #FFD700; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; text-decoration: none; padding: 24px 60px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1.5px;" class="mobile-button">
-                                                        Complete Registration &rarr;
+                                                    <a href="https://neothinkday.com" style="display: inline-block; background: #000000; color: #FFD700; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; text-decoration: none; padding: 24px 60px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1.5px;" class="mobile-button">
+                                                        Sign In Now &rarr;
                                                     </a>
                                                 </td>
                                             </tr>
                                         </table>
                                         <p style="margin: 0; font-family: 'Courier Prime', monospace; font-size: 13px; color: #000000; line-height: 20px; font-weight: 700;">
-                                            neothinkday.com/register
+                                            neothinkday.com
                                         </p>
                                     </td>
                                 </tr>
@@ -145,10 +146,10 @@ GHL WORKFLOW IF/ELSE:
                                             Doors Open
                                         </p>
                                         <p style="margin: 0 0 4px 0; font-family: 'Baskervville', Georgia, serif; font-size: 30px; font-weight: 400; color: #FFD700; line-height: 38px;">
-                                            10:00 AM Eastern / 7:00 AM Pacific
+                                            10:30 AM Eastern / 7:30 AM Pacific
                                         </p>
                                         <p style="margin: 0 0 20px 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: #d0d0d0; line-height: 20px;">
-                                            9:00 AM Central &bull; 8:00 AM Mountain
+                                            9:30 AM Central &bull; 8:30 AM Mountain
                                         </p>
                                         <div style="border-top: 1px solid rgba(255, 215, 0, 0.3); padding-top: 20px;">
                                             <p style="margin: 0 0 4px 0; font-family: 'Baskervville', Georgia, serif; font-size: 30px; font-weight: 400; color: #ffffff; line-height: 38px;">
