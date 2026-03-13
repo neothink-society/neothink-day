@@ -7,30 +7,31 @@ The pre-event sequence currently adds a tag like `registered doe march 2026` or 
 **Change it to:** `doe march 2026 sequence`
 This tag means "in the pre-event workflow" — NOT that they registered.
 
-### 2. Fix DOE 01 Registration Confirmation Workflow
-The registration confirmation workflow should ONLY fire the `doe march 2026 registered` tag
-when someone submits the actual registration form.
-**Verify:** The `doe march 2026 registered` tag is NOT being added to manually-enrolled contacts.
+### 2. Verify Tag Architecture
+The 3-branch system uses two tags:
+- `level 2 workshop vip` — contact purchased VIP
+- `doe march 2026 - signin` — contact signed in on neothinkday.com
+**Verify:** These tags are applied correctly and not conflated with old `doe march 2026 registered` tag.
 
-### 3. Add If/Else to Every Pre-Event Message (GHL Workflow)
-In the pre-event sequence, before every SMS and email send step, add:
+### 3. Add 3-Branch If/Else to Every Pre-Event Message (GHL Workflow)
+In the pre-event sequence, before every SMS and email send step, add a 3-branch If/Else:
 
-**If/Else condition:** Contact has tag `doe march 2026 registered`
-- YES → send to `neothinkday.com/home`
-- NO → send to `neothinkday.com/register`
+**Branch 1 — VIP:** Contact has tag `level 2 workshop vip` → VIP email/SMS
+**Branch 2 — Signed in:** Contact has tag `doe march 2026 - signin` (no VIP tag) → signed-in email/SMS with VIP upsell
+**Branch 3 — Not signed in:** Contact has NEITHER tag → sign-in email/SMS, links to neothinkday.com
 
 Apply this to every send step — email and SMS pairs:
 
-| Send | Has tag (YES branch) | No tag (NO branch) |
-|------|---------------------|-------------------|
-| Fri morning email | preparation-01day-morning.html | preparation-01day-morning-unregistered.html |
-| Fri morning SMS | Version A1 (pre-event-sms.md) | Version A2 (pre-event-sms.md) |
-| Fri evening email | preparation-01day-evening.html | preparation-01day-evening-unregistered.html |
-| Fri evening SMS | Version B1 (pre-event-sms.md) | Version B2 (pre-event-sms.md) |
-| Sat morning email | day1-morning.html | day1-morning-unregistered.html |
-| Sat morning SMS | Version C1 (pre-event-sms.md) | Version C2 (pre-event-sms.md) |
-| Sun morning email | day2-morning.html | day2-morning-unregistered.html |
-| Sun morning SMS | Version F1 (pre-event-sms.md) | Version F2 (pre-event-sms.md) |
+| Send | Branch 1 (VIP) | Branch 2 (Signed in) | Branch 3 (Not signed in) |
+|------|----------------|---------------------|-------------------------|
+| Fri morning email | preparation-01day-morning-vip.html | preparation-01day-morning.html | preparation-01day-morning-unregistered.html |
+| Fri morning SMS | Version A1 (pre-event-sms.md) | Version A2 (pre-event-sms.md) | Version A3 (pre-event-sms.md) |
+| Fri evening email | preparation-01day-evening-vip.html | preparation-01day-evening.html | preparation-01day-evening-unregistered.html |
+| Fri evening SMS | Version B1 (pre-event-sms.md) | Version B2 (pre-event-sms.md) | Version B3 (pre-event-sms.md) |
+| Sat morning email | day1-morning-vip.html | day1-morning.html | day1-morning-unregistered.html |
+| Sat morning SMS | Version C1 (pre-event-sms.md) | Version C2 (pre-event-sms.md) | Version C3 (pre-event-sms.md) |
+| Sun morning email | day2-morning-vip.html | day2-morning.html | day2-morning-unregistered.html |
+| Sun morning SMS | Version F1 (pre-event-sms.md) | Version F2 (pre-event-sms.md) | Version F3 (pre-event-sms.md) |
 
 After Sat doors open (7:30am PT): All remaining messages use Zoom trigger link — NO if/else.
 
@@ -92,19 +93,20 @@ Day 1 segments this time: (confirm with Wallace — NO Wealth segment on Day 1)
 
 ### Registration Form Required for VIP Access
 **The problem:** People manually added to the pre-event sequence never see the VIP upsell
-(which appears on the post-submit page of the registration form).
+(which appears on the post-submit page of the sign-in form).
 
-**The fix:** The if/else condition (item 3 above) ensures anyone without `doe march 2026 registered`
-gets directed to the registration form first. Once they submit, they:
-1. Get tagged `doe march 2026 registered`
-2. See the VIP upsell on the post-submit page
-3. Subsequent messages send them to the dashboard
+**The fix:** The 3-branch if/else (item 3 above) ensures:
+- Branch 3 contacts (no tags) get directed to neothinkday.com to sign in first
+- Once they sign in, they get tagged `doe march 2026 - signin` and move to Branch 2
+- Branch 2 contacts see VIP upsell in their emails
+- VIP purchasers get tagged `level 2 workshop vip` and move to Branch 1
 
-For future events, set this up from day one so ALL contacts go through registration.
-Never manually add someone to the pre-event workflow without also sending them the registration link first.
+For future events, set this up from day one so ALL contacts go through sign-in.
+Never manually add someone to the pre-event workflow without also sending them the sign-in link first.
 
 ### Tag Architecture for Future Events
 - `doe [month] [year] sequence` = enrolled in pre-event workflow (could be anyone)
-- `doe [month] [year] registered` = submitted the registration form (saw VIP upsell)
+- `doe [month] [year] - signin` = signed in on the website (saw VIP upsell)
+- `level 2 workshop vip` = purchased VIP (persistent across events)
 
-Only the registration FORM submission should trigger the `registered` tag. Not manual enrollment.
+Only the sign-in form submission should trigger the signin tag. Not manual enrollment.

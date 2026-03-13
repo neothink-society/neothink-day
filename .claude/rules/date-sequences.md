@@ -4,7 +4,7 @@
 
 **Day of Enlightenment** is a 2-day workshop + follow-up events:
 - Day 1 (Saturday): 8:00 AM Pacific / 11:00 AM Eastern
-- Day 2 (Sunday): 9:00 AM Pacific / 12:00 PM Eastern
+- Day 2 (Sunday): 8:00 AM Pacific / 11:00 AM Eastern
 - L3 Welcome Party (Monday): 4:00 PM Pacific / 7:00 PM Eastern
 - L3 Offer Close (Wednesday): 4:00 PM Pacific / 7:00 PM Eastern
 
@@ -16,7 +16,7 @@
 
 **T=0 Reference Points:**
 - Saturday T=0 = 8:00 AM Pacific
-- Sunday T=0 = 9:00 AM Pacific (+25h from Saturday T=0)
+- Sunday T=0 = 8:00 AM Pacific (+24h from Saturday T=0)
 - Monday T=0 = 4:00 PM Pacific (+56h from Saturday T=0)
 - Wednesday T=0 = 4:00 PM Pacific (+104h from Saturday T=0)
 
@@ -64,10 +64,11 @@ To send at **9:00 AM Pacific** (optimal send time for engagement):
 
 | Timing | Pacific | Eastern | Offset |
 |--------|---------|---------|--------|
-| 2 hours before | 7:00 AM PT | 10:00 AM ET | +23h |
-| 1 hour before | 8:00 AM PT | 11:00 AM ET | +24h |
-| Day 2 start | 9:00 AM PT | 12:00 PM ET | +25h |
-| 15 min after | 9:15 AM PT | 12:15 PM ET | +25h 15m |
+| 2 hours before | 6:00 AM PT | 9:00 AM ET | +22h |
+| 1 hour before | 7:00 AM PT | 10:00 AM ET | +23h |
+| Doors open | 7:30 AM PT | 10:30 AM ET | +23h 30m |
+| Day 2 start | 8:00 AM PT | 11:00 AM ET | +24h |
+| 15 min after | 8:15 AM PT | 11:15 AM ET | +24h 15m |
 
 ### Post-Event Offsets (positive from Saturday T=0)
 
