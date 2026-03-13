@@ -22,20 +22,31 @@ In the pre-event sequence, before every SMS and email send step, add a 3-branch 
 
 Apply this to every send step — email and SMS pairs:
 
-| Send | Branch 1 (VIP) | Branch 2 (Signed in) | Branch 3 (Not signed in) |
-|------|----------------|---------------------|-------------------------|
-| Fri morning email | preparation-01day-morning-vip.html | preparation-01day-morning.html | preparation-01day-morning-unregistered.html |
-| Fri morning SMS | Version A1 (pre-event-sms.md) | Version A2 (pre-event-sms.md) | Version A3 (pre-event-sms.md) |
-| Fri evening email | preparation-01day-evening-vip.html | preparation-01day-evening.html | preparation-01day-evening-unregistered.html |
-| Fri evening SMS | Version B1 (pre-event-sms.md) | Version B2 (pre-event-sms.md) | Version B3 (pre-event-sms.md) |
-| Sat morning email | day1-morning-vip.html | day1-morning.html | day1-morning-unregistered.html |
-| Sat morning SMS | Version C1 (pre-event-sms.md) | Version C2 (pre-event-sms.md) | Version C3 (pre-event-sms.md) |
-| Sun morning email | day2-morning-vip.html | day2-morning.html | day2-morning-unregistered.html |
-| Sun morning SMS | Version F1 (pre-event-sms.md) | Version F2 (pre-event-sms.md) | Version F3 (pre-event-sms.md) |
+#### 3-Branch Messages (If/Else required)
 
-After Sat doors open (7:30am PT): All remaining messages use Zoom trigger link — NO if/else.
+| Send | Time (PT) | Offset | Branch 1 (VIP) | Branch 2 (Signed in) | Branch 3 (Not signed in) |
+|------|-----------|--------|----------------|---------------------|-------------------------|
+| Fri morning email | 9:00 AM | -23h | preparation-01day-morning-vip.html | preparation-01day-morning.html | preparation-01day-morning-unregistered.html |
+| Fri morning SMS | 9:00 AM | -23h | A1 (pre-event-sms.md) | A2 (pre-event-sms.md) | A3 (pre-event-sms.md) |
+| Fri evening email | 4:00 PM | -16h | preparation-01day-evening-vip.html | preparation-01day-evening.html | preparation-01day-evening-unregistered.html |
+| Fri evening SMS | 4:00 PM | -16h | B1 (pre-event-sms.md) | B2 (pre-event-sms.md) | B3 (pre-event-sms.md) |
+| Sat morning email | 6:00 AM | -2h | day1-morning-vip.html | day1-morning.html | day1-morning-unregistered.html |
+| Sat morning SMS | 5:00 AM | -3h | C1 (pre-event-sms.md) | C2 (pre-event-sms.md) | C3 (pre-event-sms.md) |
 
-After event starts (Zoom link and beyond): No if/else — everyone gets Zoom trigger link.
+#### Single-Send Messages — Saturday Morning (No branching, all contacts)
+
+After the 3-branch sends, these go to everyone using the Zoom trigger link:
+
+| Send | Time (PT) | Time (ET) | Offset | Template (canonical) |
+|------|-----------|-----------|--------|---------------------|
+| 1 hour before | 7:00 AM | 10:00 AM | -1h | workflows/04-day-of-reminders/day1-01hour.html |
+| Doors open | 7:30 AM | 10:30 AM | -30m | workflows/04-day-of-reminders/day1-30min.html + day1-zoom.html |
+| Doors open SMS | 7:30 AM | 10:30 AM | -30m | D (pre-event-sms.md) |
+| 15 min before | 7:45 AM | 10:45 AM | -15m | workflows/04-day-of-reminders/day1-15min.html |
+| Workshop live | 8:00 AM | 11:00 AM | T=0 | workflows/04-day-of-reminders/day1-live.html |
+| We're Live SMS | 8:00 AM | 11:00 AM | T=0 | E (pre-event-sms.md) |
+| Late joiner +15m | 8:15 AM | 11:15 AM | +15m | workflows/04-day-of-reminders/day1-late-15min.html |
+| Late joiner +30m | 8:30 AM | 11:30 AM | +30m | workflows/04-day-of-reminders/day1-late-30min.html |
 
 ---
 
