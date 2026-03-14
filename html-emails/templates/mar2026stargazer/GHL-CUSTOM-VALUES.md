@@ -24,7 +24,7 @@
 | SG Day 3 Start Time | `{{custom_values.sg_day_3_start_time}}` | 8:00 AM Pacific / 11:00 AM Eastern | 9807jU0e60PiiZGTyla2 |
 | SG Workshop Hub URL | `{{custom_values.sg_workshop_hub_url}}` | neothinkstargazer.com/home | 8UKNcRJR5FluCR9W5ehx |
 | SG Registration URL | `{{custom_values.sg_registration_url}}` | https://neothinkstargazer.com/register | lEKxLhCRKfuA4havde8z |
-| SG Intake Form URL | `{{custom_values.sg_intake_form_url}}` | ⚠️ TBD — update when form is ready | Pcuzc0gAdQ6YrkMlya9D |
+| SG Intake Form URL | `{{custom_values.sg_intake_form_url}}` | https://neothink.typeform.com/to/t94slZLo | Pcuzc0gAdQ6YrkMlya9D |
 | SG Zoom ID | `{{custom_values.sg_zoom_id}}` | ⚠️ TBD — update after Zoom created | em8nGRtDscG4eAIykHbm |
 | SG Zoom Passcode | `{{custom_values.sg_zoom_passcode}}` | ⚠️ TBD — update after Zoom created | CnSijrUjegojmj8HYApR |
 
@@ -46,8 +46,8 @@ Create a new GHL trigger link for the Stargazer Zoom join URL.
 - [ ] Update `sg_zoom_id` in GHL (ID: em8nGRtDscG4eAIykHbm)
 - [ ] Update `sg_zoom_passcode` in GHL (ID: CnSijrUjegojmj8HYApR)
 - [ ] Create Stargazer Zoom trigger link in GHL > Trigger Links
-- [ ] Create and publish intake questionnaire
-- [ ] Update `sg_intake_form_url` in GHL (ID: Pcuzc0gAdQ6YrkMlya9D)
+- [x] ~~Create and publish intake questionnaire~~ — Typeform `t94slZLo` (Member Intake) + `AKSGDvHU` (Business Assessment)
+- [ ] Update `sg_intake_form_url` in GHL (ID: Pcuzc0gAdQ6YrkMlya9D) → `https://neothink.typeform.com/to/t94slZLo`
 - [x] ~~Create `sg_registration_url` custom value in GHL~~ — created Feb 25, 2026 (ID: lEKxLhCRKfuA4havde8z)
 - [ ] Confirm neothinkstargazer.com/home is live and audio tracks accessible
 - [ ] Build GHL workflow for pre-event sequence

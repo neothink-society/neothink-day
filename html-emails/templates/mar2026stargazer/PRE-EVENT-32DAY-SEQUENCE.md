@@ -90,7 +90,7 @@ Use this language. They are not arriving somewhere new — they are **launching*
 The **intake questionnaire** is the most critical pre-work item for this event (unlike L2 where reading was primary). It enables the Hamilton family to personalize the immersion to each attendee's specific situation — business, finances, personal life.
 
 **Call to action order:**
-1. Complete intake questionnaire (link: `{{custom_values.sg_intake_form_url}}`) — ⚠️ pending
+1. Complete intake questionnaire (link: `{{custom_values.sg_intake_form_url}}` → https://neothink.typeform.com/to/t94slZLo)
 2. Have Golden Life Sheet from DOE ready (not written again — bring the one they have)
 3. Block all three days completely
 4. Camera on — small group, everyone in the room
@@ -160,4 +160,4 @@ Day 0: LAUNCH
 **Version:** 1.0
 **Created:** February 23, 2026
 **Event:** March 27–29, 2026 (Stargazer Level Three Immersion)
-**Status:** Draft — pending intake form URL and Zoom details
+**Status:** Draft — intake form ready (Typeform t94slZLo + AKSGDvHU), pending Zoom details
