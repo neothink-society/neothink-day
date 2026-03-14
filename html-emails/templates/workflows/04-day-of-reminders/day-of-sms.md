@@ -128,7 +128,7 @@ Better late than never. We're here for you.
 ```
 Neothink Society: Day 1 complete. You are a Dream Harvester now.
 
-Day 2 starts this morning: Pre-session 8am PT / 11am ET. Wallace at 9am PT / 12pm ET.
+Day 2 starts this morning: {{custom_values.doe_day_2_start_time}}.
 
 Same Zoom link. See you soon.
 ```
@@ -139,7 +139,7 @@ Same Zoom link. See you soon.
 ```
 Neothink Society: Day 1 complete. You're a Dream Harvester now.
 
-Day 2 this morning: Pre-session 8am PT / 11am ET. Same Zoom link. See you soon.
+Day 2 this morning: {{custom_values.doe_day_2_start_time}}. Same Zoom link. See you soon.
 ```
 
 **Character Count:** ~138/160
@@ -156,23 +156,22 @@ Day 2 this morning: Pre-session 8am PT / 11am ET. Same Zoom link. See you soon.
 ```
 Neothink Society: Day 2 in 2 hours.
 
-Pre-session: 8am PT / 11am ET
-Wallace takes stage: 9am PT / 12pm ET
+Workshop starts: {{custom_values.doe_day_2_start_time}}
 
 Have ready:
 - Workbook + Day 1 notes
 - Water, pen, paper
 
-Same Zoom link. Today is about Wealth and Integration.
+Same Zoom link. Today: Wealth, Matrix, and Integration.
 ```
 
 **Character Count:** ~195/160 — **REQUIRES 2 SEGMENTS**
 
 **Alternative (single segment):**
 ```
-Neothink Society: Day 2 in 2 hours. Pre-session 8am PT / 11am ET.
+Neothink Society: Day 2 in 2 hours. Starts: {{custom_values.doe_day_2_start_time}}.
 
-Workbook + Day 1 notes ready. Same Zoom link. Today: Wealth & Integration.
+Workbook + Day 1 notes ready. Same Zoom link. Today: Wealth, Matrix, Integration.
 ```
 
 **Character Count:** ~145/160
@@ -183,10 +182,9 @@ Workbook + Day 1 notes ready. Same Zoom link. Today: Wealth & Integration.
 **Offset:** +23h (7:00 AM Pacific / 10:00 AM Eastern)
 
 ```
-Neothink Society: Day 2 pre-session in 1 hour.
+Neothink Society: Day 2 in 1 hour.
 
-8am PT / 11am ET — Pre-session opens
-9am PT / 12pm ET — Wallace takes the stage
+Workshop starts: {{custom_values.doe_day_2_start_time}}
 
 Gather your Day 1 notes. Same Zoom link. See you soon.
 ```
@@ -195,29 +193,29 @@ Gather your Day 1 notes. Same Zoom link. See you soon.
 
 ---
 
-### Day 2 — Pre-Session Starting
+### Day 2 — Workshop Starting
 **Offset:** +24h (8:00 AM Pacific / 11:00 AM Eastern)
 
 ```
-Neothink Society: Day 2 pre-session starting now.
+Neothink Society: Day 2 starting now.
 
 Join us:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
-Wallace takes the stage in 1 hour. Today: Wealth Creation & Level 2 initiation.
+Today: Matrix, Wealth Creation & Level 2 initiation.
 ```
 
 **Character Count:** ~155/160
 
 ---
 
-### Day 2 — 45 Minutes Until Wallace
+### Day 2 — Late Joiner (15min)
 **Offset:** +24h 15m (8:15 AM Pacific / 11:15 AM Eastern)
 
 ```
-Neothink Society: 45 minutes until Wallace takes the stage.
+Neothink Society: Day 2 is underway.
 
-In the pre-session? Great. Stay with us.
+In the room? Great. Stay with us.
 
 Joining now?
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -229,15 +227,13 @@ Today we build on yesterday's foundation.
 
 ---
 
-### Day 2 — 30 Minutes Until Wallace
+### Day 2 — Late Joiner (30min)
 **Offset:** +24h 30m (8:30 AM Pacific / 11:30 AM Eastern)
 
 ```
-Neothink Society: 30 minutes until Wallace.
+Neothink Society: Day 2 continues.
 
-Pre-session happening now. The room is filling up.
-
-Join us:
+The room is filling up. Join us if you haven't yet:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
 
 Yesterday was foundation. Today is transformation.
@@ -247,13 +243,13 @@ Yesterday was foundation. Today is transformation.
 
 ---
 
-### Day 2 — 15 Minutes Until Wallace
+### Day 2 — Late Joiner (45min)
 **Offset:** +24h 45m (8:45 AM Pacific / 11:45 AM Eastern)
 
 ```
-Neothink Society: Wallace in 15 minutes.
+Neothink Society: Day 2 is happening now.
 
-In the room? Get settled. Have your workbook ready.
+In the room? Stay with us. Have your workbook ready.
 
 Not in yet? Join now:
 {{trigger_link.bw3pFLlMkAQiQOlYB674}}
@@ -265,11 +261,11 @@ This is it.
 
 ---
 
-### Day 2 — Wallace Live
+### Day 2 — Late Joiner (1hr)
 **Offset:** +25h (9:00 AM Pacific / 12:00 PM Eastern)
 
 ```
-Neothink Society: Wallace is live. Day 2 is underway.
+Neothink Society: Day 2 is in full swing.
 
 In the room? Thank you for showing up again.
 
@@ -362,13 +358,13 @@ Welcome to Neothink Society. Your golden life has begun.
 | Day 1 — End of Day | +9h | 5:00 PM | 8:00 PM |
 | Day 2 — 2 Hours | +22h | 6:00 AM | 9:00 AM |
 | Day 2 — 1 Hour | +23h | 7:00 AM | 10:00 AM |
-| Day 2 — Pre-Session | +24h | 8:00 AM | 11:00 AM |
-| Day 2 — 45 Minutes | +24h 15m | 8:15 AM | 11:15 AM |
-| Day 2 — 30 Minutes | +24h 30m | 8:30 AM | 11:30 AM |
-| Day 2 — 15 Minutes | +24h 45m | 8:45 AM | 11:45 AM |
-| Day 2 — Live | +25h | 9:00 AM | 12:00 PM |
-| Day 2 — Late 15min | +25h 15m | 9:15 AM | 12:15 PM |
-| Day 2 — Late 30min | +25h 30m | 9:30 AM | 12:30 PM |
+| Day 2 — Workshop Starting | +24h | 8:00 AM | 11:00 AM |
+| Day 2 — Late 15min | +24h 15m | 8:15 AM | 11:15 AM |
+| Day 2 — Late 30min | +24h 30m | 8:30 AM | 11:30 AM |
+| Day 2 — Late 45min | +24h 45m | 8:45 AM | 11:45 AM |
+| Day 2 — Late 1hr | +25h | 9:00 AM | 12:00 PM |
+| Day 2 — Late 1hr 15min | +25h 15m | 9:15 AM | 12:15 PM |
+| Day 2 — Late 1hr 30min | +25h 30m | 9:30 AM | 12:30 PM |
 | Day 2 — Complete | +33h | 5:00 PM | 8:00 PM |
 
 ---

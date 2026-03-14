@@ -36,30 +36,30 @@ Neothink Society: Wallace Hamilton is live now teaching about your Friday Night 
 ### Stage 3 - Lunch Break
 
 ```
-Neothink Society: Lunch break! Return at {{custom_values.doe_day_1_return_time}} for the Wealth Engine segment. Get some food, stay energized!
-```
-
-**Character Count:** ~130/160
-
----
-
-### Stage 4 - Back from Lunch
-
-```
-Neothink Society: We're back! Wealth Engine segment starting now. This is where your financial breakthrough happens. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Lunch break! Return at {{custom_values.doe_day_1_return_time}} for the Dream Harvester Framework. Get some food, stay energized!
 ```
 
 **Character Count:** ~140/160
 
 ---
 
-### Stage 5 - Wealth Segment
+### Stage 4 - Back from Lunch (Dream Harvester Framework)
 
 ```
-Neothink Society: The Wealth Engine segment is underway. Your path to financial freedom is being revealed. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: We're back! Dream Harvester Framework starting now. Time to turn your FNE into action. Join: {{custom_values.doe_zoom_link}}
 ```
 
-**Character Count:** ~135/160
+**Character Count:** ~140/160
+
+---
+
+### Stage 5 - Identity Segment
+
+```
+Neothink Society: The Identity Segment has begun. Step into who you were always meant to be. Join: {{custom_values.doe_zoom_link}}
+```
+
+**Character Count:** ~130/160
 
 ---
 
@@ -77,40 +77,40 @@ Neothink Society: Day 1 complete! Incredible breakthroughs today. Get rest — t
 
 ---
 
-### Stage 7 - MH Segment
+### Stage 7 - Matrix Segment (WH)
 
 ```
-Neothink Society: Mark Hamilton is now teaching! This is the integration that changes everything. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Wallace Hamilton is revealing the Matrix of Illusions. This changes everything. Join: {{custom_values.doe_zoom_link}}
+```
+
+**Character Count:** ~130/160
+
+---
+
+### Stage 8 - Day 2 Snack Break
+
+```
+Neothink Society: Quick snack break! Return at {{custom_values.doe_day_2_return_time}}. The most powerful part of the weekend is still ahead.
+```
+
+**Character Count:** ~140/160
+
+---
+
+### Stage 9 - Back from Break
+
+```
+Neothink Society: We're back from break. The afternoon continues — don't miss what's next. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Character Count:** ~125/160
 
 ---
 
-### Stage 8 - Day 2 Lunch Break
+### Stage 10 - Mark Hamilton Takes the Stage
 
 ```
-Neothink Society: Day 2 lunch break! Return at {{custom_values.doe_day_2_return_time}} for the final integration. Almost there!
-```
-
-**Character Count:** ~115/160
-
----
-
-### Stage 9 - Back from Lunch
-
-```
-Neothink Society: Final session starting now! Integration and your path forward. This is it. Join: {{custom_values.doe_zoom_link}}
-```
-
-**Character Count:** ~115/160
-
----
-
-### Stage 10 - Integration
-
-```
-Neothink Society: The integration segment has begun. Everything comes together now. Don't miss this. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: Mark Hamilton is now on stage! This is a rare moment. Don't miss a word. Join: {{custom_values.doe_zoom_link}}
 ```
 
 **Character Count:** ~130/160
@@ -144,13 +144,13 @@ Neothink Society: Workshop complete! You did it. Check your email for next steps
 | 1 | WH takes stage | ❌ |
 | 2 | WH live (late joiner) | ❌ |
 | 3 | Lunch break | ❌ |
-| 4 | Back from lunch | ❌ |
-| 5 | Wealth segment | ❌ |
+| 4 | Back from lunch (Dream Harvester) | ❌ |
+| 5 | Identity segment | ❌ |
 | 6 | Day 1 end | ❌ |
-| 7 | MH segment | ❌ |
-| 8 | Day 2 lunch | ❌ |
-| 9 | Back from lunch | ❌ |
-| 10 | Integration | ❌ |
+| 7 | Matrix segment (WH) | ❌ |
+| 8 | Day 2 snack break | ❌ |
+| 9 | Back from break | ❌ |
+| 10 | Mark Hamilton takes stage | ❌ |
 | 11 | **L3 REVEAL** | ✅ |
 | 12 | Day 2 end | ✅ |
 

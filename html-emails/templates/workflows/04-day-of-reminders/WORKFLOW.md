@@ -27,18 +27,16 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 
 ## Day 2 Schedule
 
-**Base Time:** Day 2 start = T+25h (12:00 PM Eastern the next day)
+**Base Time:** Day 2 start = T+24h (11:00 AM Eastern / 8:00 AM Pacific the next day — same as Day 1)
 
-| Offset from D2 | Time (ET) | Template | Subject Line |
-|----------------|-----------|----------|--------------|
-| -2h | 10:00 AM | `day2-2hours.html` | Day 2 starts in 2 hours |
-| -1h | 11:00 AM | `day2-1hour.html` | 1 hour until Day 2 begins |
-| -45m | 11:15 AM | `day2-45min.html` | 45 minutes — prepare for integration |
-| -30m | 11:30 AM | `day2-30min.html` | 30 MINUTES — Get ready |
-| -15m | 11:45 AM | `day2-15min.html` | 15 MINUTES — Open Zoom |
-| T=D2 | 12:00 PM | `day2-live.html` | DAY 2 IS LIVE — Join now! |
-| +15m | 12:15 PM | `day2-late-15min.html` | Day 2 has started — join now! |
-| +30m | 12:30 PM | `day2-late-30min.html` | Integration is happening — get in! |
+| Offset from T=0 | Time (ET) | Template | Subject Line |
+|-----------------|-----------|----------|--------------|
+| +22h | 9:00 AM | `day2-2hours.html` | Day 2 starts in 2 hours |
+| +23h | 10:00 AM | `day2-1hour.html` | 1 hour until Day 2 begins |
+| +23h 30m | 10:30 AM | `day2-30min.html` | 30 MINUTES — Get ready |
+| +24h | 11:00 AM | `day2-live.html` | DAY 2 IS LIVE — Join now! |
+| +24h 15m | 11:15 AM | `day2-late-15min.html` | Day 2 has started — join now! |
+| +24h 30m | 11:30 AM | `day2-late-30min.html` | Day 2 is underway — get in! |
 
 ---
 
@@ -95,12 +93,13 @@ To avoid sending late-joiner emails to people who are already in:
 **Day 2 SMS Schedule:**
 | Message | Offset | Time (PT) |
 |---------|--------|-----------|
-| 2 Hours Before | +23h | 7:00 AM |
-| 45 Minutes | +24h 15m | 8:15 AM |
-| Doors Open | +24h 45m | 8:45 AM |
-| Live | +25h | 9:00 AM |
-| Late 15min | +25h 15m | 9:15 AM |
-| Late 30min | +25h 30m | 9:30 AM |
+| 2 Hours Before | +22h | 6:00 AM |
+| 1 Hour Before | +23h | 7:00 AM |
+| Workshop Starting | +24h | 8:00 AM |
+| Late 15min | +24h 15m | 8:15 AM |
+| Late 30min | +24h 30m | 8:30 AM |
+| Late 45min | +24h 45m | 8:45 AM |
+| Late 1hr | +25h | 9:00 AM |
 | Complete | +33h | 5:00 PM |
 
 ---
@@ -112,9 +111,9 @@ To avoid sending late-joiner emails to people who are already in:
 | Day 1, 2h before | -2h | 9:00 AM |
 | Day 1 start | T=0 | 11:00 AM |
 | Day 1, 30m after | +30m | 11:30 AM |
-| Day 2, 2h before | +23h | 10:00 AM next day |
-| Day 2 start | +25h | 12:00 PM next day |
-| Day 2, 30m after | +25h 30m | 12:30 PM next day |
+| Day 2, 2h before | +22h | 9:00 AM next day |
+| Day 2 start | +24h | 11:00 AM next day |
+| Day 2, 30m after | +24h 30m | 11:30 AM next day |
 
 ---
 

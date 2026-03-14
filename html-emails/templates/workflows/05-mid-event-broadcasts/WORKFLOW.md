@@ -31,19 +31,19 @@ This allows real-time control during the live event.
 | 1 | `day1-wh-in-session.html` | Wallace Hamilton takes stage | ❌ No |
 | 2 | `day1-wh-live-now.html` | WH is teaching (late joiner hook) | ❌ No |
 | 3 | `day1-lunch-break.html` | Lunch break announced | ❌ No |
-| 4 | `day1-back-from-lunch.html` | Returning from lunch | ❌ No |
-| 5 | `day1-wealth-segment.html` | Wealth/FNE segment begins | ❌ No |
+| 4 | `day1-back-from-lunch.html` | Dream Harvester Framework begins | ❌ No |
+| 5 | `day1-wealth-segment.html` | Identity Segment begins | ❌ No |
 | 6 | `day1-end.html` | Day 1 complete | ❌ No |
 
 ### Day 2 Stages
 
 | Stage | Template | Trigger Moment | L3 Mention OK? |
 |-------|----------|----------------|----------------|
-| 7 | `day2-mh-segment.html` | Mark Hamilton segment | ❌ No |
-| 8 | `day2-lunch-break.html` | Day 2 lunch break | ❌ No |
-| 9 | `day2-back-from-lunch.html` | Returning from lunch | ❌ No |
-| 10 | `day2-integration.html` | Integration segment | ❌ No |
-| 11 | `day2-l3-offer.html` | **L3 REVEAL** | ✅ Yes |
+| 7 | `day2-mh-segment.html` | Matrix segment (WH teaches) | ❌ No |
+| 8 | `day2-lunch-break.html` | Day 2 snack break (~3pm PT) | ❌ No |
+| 9 | `day2-back-from-lunch.html` | Returning from snack break | ❌ No |
+| 10 | `day2-integration.html` | Mark Hamilton takes stage (~5:23pm PT) | ❌ No |
+| 11 | `day2-l3-offer.html` | **L3 REVEAL** (after Grand Finale) | ✅ Yes |
 | 12 | `day2-end.html` | Day 2 complete | ✅ Yes (after reveal) |
 
 > **IMPORTANT:** Level 3 is NOT revealed until Stage 11. All Day 1 and Day 2 Stages 7-10 must NOT mention L3, VIP Session, Welcome Party, or Stargazer.
@@ -86,17 +86,17 @@ When ready to trigger the next broadcast:
 
 | Moment | Action | L3 OK? |
 |--------|--------|--------|
-| WH takes stage | Move all to Stage 1 | ❌ |
-| WH teaching (11:30+) | Move all to Stage 2 | ❌ |
-| Lunch break | Move all to Stage 3 | ❌ |
-| Return from lunch | Move all to Stage 4 | ❌ |
-| Wealth segment | Move all to Stage 5 | ❌ |
-| Day 1 ends | Move all to Stage 6 | ❌ |
-| MH segment (Day 2) | Move all to Stage 7 | ❌ |
-| Day 2 lunch | Move all to Stage 8 | ❌ |
-| Return from lunch | Move all to Stage 9 | ❌ |
-| Integration | Move all to Stage 10 | ❌ |
-| **L3 REVEAL** | Move all to Stage 11 | ✅ |
+| WH takes stage (~9am PT) | Move all to Stage 1 | ❌ |
+| WH teaching (late joiner hook) | Move all to Stage 2 | ❌ |
+| Lunch break (~2:10pm PT) | Move all to Stage 3 | ❌ |
+| Dream Harvester Framework starts | Move all to Stage 4 | ❌ |
+| Identity Segment starts | Move all to Stage 5 | ❌ |
+| Day 1 ends (~5:45pm PT) | Move all to Stage 6 | ❌ |
+| Matrix segment — WH (~9am PT) | Move all to Stage 7 | ❌ |
+| Snack break (~3pm PT) | Move all to Stage 8 | ❌ |
+| Back from snack break | Move all to Stage 9 | ❌ |
+| Mark Hamilton takes stage (~5:23pm PT) | Move all to Stage 10 | ❌ |
+| **L3 REVEAL** (after Grand Finale ~8:50pm PT) | Move all to Stage 11 | ✅ |
 | Day 2 ends | Move all to Stage 12 | ✅ |
 
 ---
@@ -113,12 +113,12 @@ Neothink Society: Wallace Hamilton is LIVE NOW teaching about your Friday Night 
 
 ### Day 1 - Lunch Break
 ```
-Neothink Society: Lunch break! Return at {{custom_values.doe_day_1_return_time}} for the Wealth Engine segment. Get some food, stay energized!
+Neothink Society: Lunch break! Return at {{custom_values.doe_day_1_return_time}} for the Dream Harvester Framework. Get some food, stay energized!
 ```
 
-### Day 1 - Back from Lunch
+### Day 1 - Back from Lunch (Dream Harvester)
 ```
-Neothink Society: We're BACK! Wealth Engine segment starting NOW. This is where your financial breakthrough happens. Join: {{custom_values.doe_zoom_link}}
+Neothink Society: We're back! Dream Harvester Framework starting now. Time to turn your FNE into action. Join: {{custom_values.doe_zoom_link}}
 ```
 
 ### Day 2 - L3 Offer
@@ -137,18 +137,18 @@ Neothink Society: Level 3 enrollment is NOW OPEN! The next level of your transfo
 | 1 | `day1-wh-in-session.html` | `DOE 05 Day 1 WH In Session` |
 | 2 | `day1-wh-live-now.html` | `DOE 05 Day 1 WH Starting` |
 | 3 | `day1-lunch-break.html` | `DOE 05 Day 1 Lunch Break` |
-| 4 | `day1-back-from-lunch.html` | `DOE 05 Day 1 Back From Lunch` |
-| 5 | `day1-wealth-segment.html` | `DOE 05 Day 1 Wealth Segment` |
+| 4 | `day1-back-from-lunch.html` | `DOE 05 Day 1 Dream Harvester` |
+| 5 | `day1-wealth-segment.html` | `DOE 05 Day 1 Identity Segment` |
 | 6 | `day1-end.html` | `DOE 05 Day 1 End` |
 
 ### Day 2 Broadcasts (Phase 07)
 
 | Stage | File | GHL Template Name |
 |-------|------|-------------------|
-| 7 | `day2-mh-segment.html` | `DOE 07 Day 2 MH Segment` |
-| 8 | `day2-lunch-break.html` | `DOE 07 Day 2 Lunch Break` |
-| 9 | `day2-back-from-lunch.html` | `DOE 07 Day 2 Back From Lunch` |
-| 10 | `day2-integration.html` | `DOE 07 Day 2 Integration` |
+| 7 | `day2-mh-segment.html` | `DOE 07 Day 2 Matrix Segment` |
+| 8 | `day2-lunch-break.html` | `DOE 07 Day 2 Snack Break` |
+| 9 | `day2-back-from-lunch.html` | `DOE 07 Day 2 Back From Break` |
+| 10 | `day2-integration.html` | `DOE 07 Day 2 MH Takes Stage` |
 | 11 | `day2-l3-offer.html` | `DOE 07 Day 2 L3 Offer` |
 | 12 | `day2-end.html` | `DOE 07 Day 2 End` |
 
