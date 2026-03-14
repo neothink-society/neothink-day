@@ -177,12 +177,118 @@ We start at 11am Eastern / 8am Pacific.
 
 ---
 
-## SATURDAY ZOOM LINK — AT DOORS OPEN
+## SATURDAY 2 HOURS BEFORE — 3-BRANCH
 
-**Send Time:** Saturday, March 14, 2026 @ 7:30 AM PT / 10:30 AM ET (doors open)
+**Send Time:** Saturday, March 14, 2026 @ 6:00 AM PT / 9:00 AM ET
+**Offset:** -2h
+**Audience:** All pre-event sequence
+
+### Branch 1 — VIP (`level 2 workshop vip`)
+```
+Neothink Society: 2 hours, {{contact.first_name}}.
+
+Final prep: workbook ready, water nearby, quiet space.
+
+Your VIP dashboard has everything:
+neothinkday.com/home
+
+Zoom link coming in 1 hour.
+```
+**Character count:** ~160/160
+
+---
+
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
+```
+Neothink Society: 2 hours until Day of Enlightenment.
+
+Final prep: workbook ready, water nearby, quiet space.
+
+Your dashboard:
+neothinkday.com/home
+
+Zoom link coming in 1 hour.
+```
+**Character count:** ~158/160
+
+---
+
+### Branch 3 — Not signed in (no tags)
+```
+Neothink Society: 2 hours until Day of Enlightenment.
+
+Sign in now to access your Zoom link and dashboard:
+neothinkday.com
+
+Final prep: workbook ready, water nearby, quiet space.
+```
+**Character count:** ~155/160
+
+---
+
+## SATURDAY ZOOM LINK — 1 HOUR BEFORE — 3-BRANCH
+
+**Send Time:** Saturday, March 14, 2026 @ 7:00 AM PT / 10:00 AM ET
+**Offset:** -1h
+**Audience:** All pre-event sequence
+
+### Branch 1 — VIP (`level 2 workshop vip`)
+```
+Neothink Society: YOUR ZOOM LINK
+
+Doors open: 7:30am PT / 10:30am ET
+We begin: 8:00am PT / 11:00am ET SHARP
+
+JOIN: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
+
+Join early. Get settled.
+```
+**Character count:** ~160/160 (varies with custom values)
+
+---
+
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
+```
+Neothink Society: YOUR ZOOM LINK
+
+Doors open: 7:30am PT / 10:30am ET
+We begin: 8:00am PT / 11:00am ET SHARP
+
+JOIN: {{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
+
+Join early. Get settled.
+```
+**Character count:** ~160/160 (varies with custom values)
+
+---
+
+### Branch 3 — Not signed in (no tags)
+```
+Neothink Society: 1 hour until Day of Enlightenment.
+
+Sign in now to get your Zoom link:
+neothinkday.com
+
+Doors open 7:30am PT / 10:30am ET.
+We begin 8:00am PT / 11:00am ET SHARP.
+```
+**Character count:** ~158/160
+
+---
+
+## SATURDAY DOORS OPEN — 3-BRANCH
+
+**Send Time:** Saturday, March 14, 2026 @ 7:30 AM PT / 10:30 AM ET
 **Offset:** -30m
-**Audience:** All (no branching)
+**Audience:** All pre-event sequence
 
+### Branch 1 — VIP (`level 2 workshop vip`)
 ```
 Neothink Society: DOORS ARE OPEN.
 
@@ -194,7 +300,36 @@ Pass: {{custom_values.doe_zoom_passcode}}
 
 Workshop begins 11am Eastern / 8am Pacific.
 ```
-**Character count:** ~190 — will split into 2 SMS segments (acceptable for day-of)
+**Character count:** ~190 (2 segments — acceptable for day-of)
+
+---
+
+### Branch 2 — Signed in, not VIP (`doe march 2026 - signin`)
+```
+Neothink Society: DOORS ARE OPEN.
+
+Join your Day of Enlightenment workshop now:
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+ID: {{custom_values.doe_zoom_id}}
+Pass: {{custom_values.doe_zoom_passcode}}
+
+Workshop begins 11am Eastern / 8am Pacific.
+```
+**Character count:** ~190 (2 segments — acceptable for day-of)
+
+---
+
+### Branch 3 — Not signed in (no tags)
+```
+Neothink Society: DOORS ARE OPEN.
+
+Sign in now to get your Zoom link and join:
+neothinkday.com
+
+Workshop begins 11am Eastern / 8am Pacific.
+```
+**Character count:** ~130/160
 
 ---
 
@@ -322,10 +457,18 @@ We begin at 11am Eastern / 8am Pacific.
 | C1 | Sat Morning — VIP | `level 2 workshop vip` | Sat Mar 14 | 5:00 AM | -3h |
 | C2 | Sat Morning — Signed in | `doe march 2026 - signin` | Sat Mar 14 | 5:00 AM | -3h |
 | C3 | Sat Morning — Not signed in | No tags | Sat Mar 14 | 5:00 AM | -3h |
-| D | Zoom Link (doors open) | All | Sat Mar 14 | 7:30 AM | -30m |
-| E | We're Live | All | Sat Mar 14 | 8:00 AM | T=0 |
-| F | Day 1 End | All | Sat Mar 14 | ~5:00 PM | +9h |
-| G1 | Sun Morning — VIP | `level 2 workshop vip` | Sun Mar 15 | 6:00 AM | +22h |
-| G2 | Sun Morning — Signed in | `doe march 2026 - signin` | Sun Mar 15 | 6:00 AM | +22h |
-| G3 | Sun Morning — Not signed in | No tags | Sun Mar 15 | 6:00 AM | +22h |
-| H | Day 2 Zoom | All | Sun Mar 15 | 8:00 AM | +24h |
+| D1 | Sat 2 Hours — VIP | `level 2 workshop vip` | Sat Mar 14 | 6:00 AM | -2h |
+| D2 | Sat 2 Hours — Signed in | `doe march 2026 - signin` | Sat Mar 14 | 6:00 AM | -2h |
+| D3 | Sat 2 Hours — Not signed in | No tags | Sat Mar 14 | 6:00 AM | -2h |
+| E1 | Sat Zoom Link — VIP | `level 2 workshop vip` | Sat Mar 14 | 7:00 AM | -1h |
+| E2 | Sat Zoom Link — Signed in | `doe march 2026 - signin` | Sat Mar 14 | 7:00 AM | -1h |
+| E3 | Sat Zoom Link — Not signed in | No tags | Sat Mar 14 | 7:00 AM | -1h |
+| F1 | Sat Doors Open — VIP | `level 2 workshop vip` | Sat Mar 14 | 7:30 AM | -30m |
+| F2 | Sat Doors Open — Signed in | `doe march 2026 - signin` | Sat Mar 14 | 7:30 AM | -30m |
+| F3 | Sat Doors Open — Not signed in | No tags | Sat Mar 14 | 7:30 AM | -30m |
+| G | We're Live | All | Sat Mar 14 | 8:00 AM | T=0 |
+| H | Day 1 End | All | Sat Mar 14 | ~5:00 PM | +9h |
+| I1 | Sun Morning — VIP | `level 2 workshop vip` | Sun Mar 15 | 6:00 AM | +22h |
+| I2 | Sun Morning — Signed in | `doe march 2026 - signin` | Sun Mar 15 | 6:00 AM | +22h |
+| I3 | Sun Morning — Not signed in | No tags | Sun Mar 15 | 6:00 AM | +22h |
+| J | Day 2 Zoom | All | Sun Mar 15 | 8:00 AM | +24h |

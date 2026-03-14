@@ -32,19 +32,19 @@ Apply this to every send step — email and SMS pairs:
 | Fri evening SMS | 4:00 PM | -16h | B1 (pre-event-sms.md) | B2 (pre-event-sms.md) | B3 (pre-event-sms.md) |
 | Sat morning email | 6:00 AM | -2h | day1-morning-vip.html | day1-morning.html | day1-morning-unregistered.html |
 | Sat morning SMS | 5:00 AM | -3h | C1 (pre-event-sms.md) | C2 (pre-event-sms.md) | C3 (pre-event-sms.md) |
+| Sat 2hr SMS | 6:00 AM | -2h | D1 (pre-event-sms.md) | D2 (pre-event-sms.md) | D3 (pre-event-sms.md) |
+| Sat 1hr email | 7:00 AM | -1h | day1-01hour-vip.html | day1-01hour.html | day1-01hour-unregistered.html |
+| Sat 1hr SMS | 7:00 AM | -1h | E1 (pre-event-sms.md) | E2 (pre-event-sms.md) | E3 (pre-event-sms.md) |
+| Sat doors open email | 7:30 AM | -30m | day1-30min-vip.html | day1-30min.html | day1-30min-unregistered.html |
+| Sat doors open SMS | 7:30 AM | -30m | F1 (pre-event-sms.md) | F2 (pre-event-sms.md) | F3 (pre-event-sms.md) |
+| Sat 15min email | 7:45 AM | -15m | day1-15min-vip.html | day1-15min.html | day1-15min-unregistered.html |
 
-#### Single-Send Messages — Saturday Morning (No branching, all contacts)
-
-After the 3-branch sends, these go to everyone using the Zoom trigger link:
+#### Single-Send Messages — At and After Event Start (No branching, all contacts)
 
 | Send | Time (PT) | Time (ET) | Offset | Template (canonical) |
 |------|-----------|-----------|--------|---------------------|
-| 1 hour before | 7:00 AM | 10:00 AM | -1h | workflows/04-day-of-reminders/day1-01hour.html |
-| Doors open | 7:30 AM | 10:30 AM | -30m | workflows/04-day-of-reminders/day1-30min.html + day1-zoom.html |
-| Doors open SMS | 7:30 AM | 10:30 AM | -30m | D (pre-event-sms.md) |
-| 15 min before | 7:45 AM | 10:45 AM | -15m | workflows/04-day-of-reminders/day1-15min.html |
 | Workshop live | 8:00 AM | 11:00 AM | T=0 | workflows/04-day-of-reminders/day1-live.html |
-| We're Live SMS | 8:00 AM | 11:00 AM | T=0 | E (pre-event-sms.md) |
+| We're Live SMS | 8:00 AM | 11:00 AM | T=0 | G (pre-event-sms.md) |
 | Late joiner +15m | 8:15 AM | 11:15 AM | +15m | workflows/04-day-of-reminders/day1-late-15min.html |
 | Late joiner +30m | 8:30 AM | 11:30 AM | +30m | workflows/04-day-of-reminders/day1-late-30min.html |
 
