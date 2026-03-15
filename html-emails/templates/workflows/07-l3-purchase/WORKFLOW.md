@@ -113,6 +113,7 @@ This workflow has two parts with different timing references:
 {{custom_values.doe_welcome_party_id}}        → 825 3274 2248
 {{custom_values.doe_welcome_party_passcode}}       → abc123
 {{custom_values.doe_welcome_party_recording_url}}  → https://neothinkday.com/level-three-welcome-party
+{{custom_values.sg_intake_form_url}}              → https://neothink.typeform.com/to/t94slZLo
 ```
 
 ## Audience Notes

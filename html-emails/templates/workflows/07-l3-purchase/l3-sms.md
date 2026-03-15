@@ -18,12 +18,12 @@
 ```
 Neothink Society: Welcome to Level 3. You're in the inner circle.
 
-Check your email for VIP Session and Welcome Party details.
+Your first step: complete your intake form. The mentors use it to personalize the Stargazer Immersion to you.
 
-Your transformation continues.
+{{custom_values.sg_intake_form_url}}
 ```
 
-**Character Count:** ~140/160
+**Character Count:** ~210 (2 segments)
 
 ---
 
