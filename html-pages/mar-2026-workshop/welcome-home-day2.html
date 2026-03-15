@@ -744,6 +744,12 @@
             border: 1px solid var(--gray-700);
         }
 
+        .card-status.urgent {
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.15);
+            border: 1px solid rgba(255, 107, 107, 0.4);
+        }
+
         .access-card h3 {
             font-family: var(--font-serif);
             font-size: var(--text-2xl);
@@ -1155,6 +1161,24 @@
                             <h3>Wealth Engine</h3>
                             <p>Your path to financial freedom. This calculator tool unlocks when Wallace walks through it with you.</p>
                             <span class="card-link locked-btn" aria-disabled="true">Unlocks During Session</span>
+                        </div>
+
+                        <!-- VIP Upgrade Card -->
+                        <div class="access-card featured" aria-label="VIP upgrade">
+                            <span class="card-status urgent">Limited Spots</span>
+                            <div class="card-icon" style="border-color: rgba(255, 107, 107, 0.4); background: rgba(255, 107, 107, 0.1);">
+                                <svg fill="none" stroke="#ff6b6b" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3>VIP Upgrade</h3>
+                            <p>Guaranteed private group mentorship with Wallace Hamilton. Priority assistance throughout the weekend. Exclusive VIP session. Closes at workshop start.</p>
+                            <a href="https://neothinkday.com/vip-upgrade" target="_blank" rel="noopener" class="card-link" style="background: linear-gradient(135deg, #ff8787, #ff6b6b); color: white; box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);" aria-label="Upgrade to VIP for $297">
+                                Get VIP Access — $297
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
                         </div>
 
                     </div>
