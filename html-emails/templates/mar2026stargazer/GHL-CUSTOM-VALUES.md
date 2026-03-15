@@ -26,27 +26,27 @@
 | SG Registration URL | `{{custom_values.sg_registration_url}}` | https://neothinkstargazer.com/register | lEKxLhCRKfuA4havde8z |
 | SG Intake Form URL | `{{custom_values.sg_intake_form_url}}` | https://neothink.typeform.com/to/t94slZLo | Pcuzc0gAdQ6YrkMlya9D |
 | SG Business Form URL | `{{custom_values.sg_business_form_url}}` | https://neothink.typeform.com/to/AKSGDvHU | xRLRW4mpAKVH0ace1O0a |
-| SG Zoom ID | `{{custom_values.sg_zoom_id}}` | ⚠️ TBD — update after Zoom created | em8nGRtDscG4eAIykHbm |
-| SG Zoom Passcode | `{{custom_values.sg_zoom_passcode}}` | ⚠️ TBD — update after Zoom created | CnSijrUjegojmj8HYApR |
+| SG Zoom ID | `{{custom_values.sg_zoom_id}}` | 868 5622 6572 | em8nGRtDscG4eAIykHbm |
+| SG Zoom Passcode | `{{custom_values.sg_zoom_passcode}}` | 289769 | CnSijrUjegojmj8HYApR |
 
 ---
 
 ## Workflow Trigger Link (separate from custom values)
 
 Create a new GHL trigger link for the Stargazer Zoom join URL.
-- Name it: "Stargazer Zoom Join"
-- Used in day-of emails and SMS as: `{{trigger_link.[YOUR_LINK_ID]}}`
-- This is NOT a custom value — create it under GHL > Trigger Links
+- Trigger link ID: `4DOGtGnTIXdc3oWzDrV6`
+- Used in day-of emails and SMS as: `{{trigger_link.4DOGtGnTIXdc3oWzDrV6}}`
+- This is NOT a custom value — it's under GHL > Trigger Links
 
 ---
 
 ## Pre-Launch Checklist
 
 - [x] ~~Create custom values in GHL~~ — all 14 created via API on Feb 23, 2026
-- [ ] Create new Zoom meeting for March 27 (one link works all 3 days)
-- [ ] Update `sg_zoom_id` in GHL (ID: em8nGRtDscG4eAIykHbm)
-- [ ] Update `sg_zoom_passcode` in GHL (ID: CnSijrUjegojmj8HYApR)
-- [ ] Create Stargazer Zoom trigger link in GHL > Trigger Links
+- [x] ~~Create new Zoom meeting for March 27~~ — Meeting ID: 868 5622 6572, Passcode: 289769
+- [x] ~~Update `sg_zoom_id` in GHL~~ (ID: em8nGRtDscG4eAIykHbm) → 868 5622 6572
+- [x] ~~Update `sg_zoom_passcode` in GHL~~ (ID: CnSijrUjegojmj8HYApR) → 289769
+- [x] ~~Create Stargazer Zoom trigger link~~ → `{{trigger_link.4DOGtGnTIXdc3oWzDrV6}}`
 - [x] ~~Create and publish intake questionnaire~~ — Typeform `t94slZLo` (Member Intake) + `AKSGDvHU` (Business Assessment)
 - [x] ~~Update `sg_intake_form_url` in GHL~~ (ID: Pcuzc0gAdQ6YrkMlya9D) → `https://neothink.typeform.com/to/t94slZLo`
 - [x] ~~Create `sg_registration_url` custom value in GHL~~ — created Feb 25, 2026 (ID: lEKxLhCRKfuA4havde8z)

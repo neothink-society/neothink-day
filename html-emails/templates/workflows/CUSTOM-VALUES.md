@@ -53,8 +53,8 @@ All custom values use the `doe_` prefix (Day of Enlightenment) and are stored in
 | `doe_day_1_start_time_full` | 11:00 AM Eastern • 10:00 AM Central • 9:00 AM Mountain • 8:00 AM Pacific | Day 1 all time zones |
 | `doe_day_2_start_time` | 11:00 AM Eastern / 8:00 AM Pacific | Day 2 pre-session start |
 | `doe_day_2_start_time_full` | 11:00 AM Eastern • 10:00 AM Central • 9:00 AM Mountain • 8:00 AM Pacific | Day 2 pre-session all time zones |
-| `doe_day_1_return_time` | 6:15 PM Eastern / 5:15 PM Central / 4:15 PM Mountain / 3:15 PM Pacific | Day 1 lunch return |
-| `doe_day_2_return_time` | 7:00 PM Eastern / 6:00 PM Central / 5:00 PM Mountain / 4:00 PM Pacific | Day 2 lunch return |
+| `doe_day_1_return_time` | 6:45 PM Eastern / 5:45 PM Central / 4:45 PM Mountain / 3:45 PM Pacific | Day 1 lunch return |
+| `doe_day_2_return_time` | 7:30 PM Eastern / 6:30 PM Central / 5:30 PM Mountain / 4:30 PM Pacific | Day 2 lunch return |
 
 ---
 
@@ -65,8 +65,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | GHL Field Key | Current Value | Used For |
 |---------------|---------------|----------|
 | `doe_zoom_link` | `{{trigger_link.bw3pFLlMkAQiQOlYB674}}` | Main workshop Zoom |
-| `doe_zoom_id` | 852 4025 0021 | Meeting ID (for display) |
-| `doe_zoom_passcode` | 848453 | Passcode (for display) |
+| `doe_zoom_id` | 821 0456 0901 | Meeting ID (for display) |
+| `doe_zoom_passcode` | 266365 | Passcode (for display) |
 
 **Why Trigger Links?**
 - Track who clicked to join
@@ -105,8 +105,8 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 | `doe_welcome_party_date_full` | Wednesday, March 18, 2026 | Welcome Party full date |
 | `doe_welcome_party_time` | 4:00 PM Pacific / 7:00 PM Eastern | Welcome Party time |
 | `doe_welcome_party_zoom` | `{{trigger_link.1iWXAhKPkv1YrL7kXM7h}}` | Welcome Party Zoom (trigger link) |
-| `doe_welcome_party_id` | 893 8151 6489 | Welcome Party Meeting ID (for display) |
-| `doe_welcome_party_passcode` | 890039 | Welcome Party Passcode (for display) |
+| `doe_welcome_party_id` | 852 3507 7396 | Welcome Party Meeting ID (for display) |
+| `doe_welcome_party_passcode` | 408205 | Welcome Party Passcode (for display) |
 
 ---
 
