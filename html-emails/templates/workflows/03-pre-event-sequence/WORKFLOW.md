@@ -75,9 +75,9 @@ Add workflow settings:
 ## Email Templates
 
 All templates use custom values for dates. Key replacements:
-- `{{custom_values.doe_event_dates}}` - January 24-25, 2026
-- `{{custom_values.doe_day_1_date}}` - Saturday, January 24, 2026
-- `{{custom_values.doe_day_2_date}}` - Sunday, January 25, 2026
+- `{{custom_values.doe_event_dates}}` - March 14-15, 2026
+- `{{custom_values.doe_day_1_date}}` - Saturday, March 14, 2026
+- `{{custom_values.doe_day_2_date}}` - Sunday, March 15, 2026
 - `{{custom_values.doe_day_1_start_time_full}}` - All time zones
 
 ---
@@ -105,21 +105,21 @@ Neothink Society: See you in the morning! Day of Enlightenment starts {{custom_v
 
 | Days Before | Send at 9am ET | Offset from T=0 |
 |-------------|----------------|-----------------|
-| 30 | Dec 25 | -30d 2h |
-| 25 | Dec 30 | -25d 2h |
-| 20 | Jan 4 | -20d 2h |
-| 14 | Jan 10 | -14d 2h |
-| 10 | Jan 14 | -10d 2h |
-| 9 | Jan 15 | -9d 2h |
-| 7 | Jan 17 | -7d 2h |
-| 5 | Jan 19 | -5d 2h |
-| 4 | Jan 20 | -4d 2h |
-| 3 | Jan 21 | -3d 2h |
-| 2 | Jan 22 | -2d 2h |
-| 1 (morning) | Jan 23 12pm ET | -23h |
-| 1 (evening) | Jan 23 7pm ET | -16h |
+| 30 | Feb 12 | -30d 2h |
+| 25 | Feb 17 | -25d 2h |
+| 20 | Feb 22 | -20d 2h |
+| 14 | Feb 28 | -14d 2h |
+| 10 | Mar 4 | -10d 2h |
+| 9 | Mar 5 | -9d 2h |
+| 7 | Mar 7 | -7d 2h |
+| 5 | Mar 9 | -5d 2h |
+| 4 | Mar 10 | -4d 2h |
+| 3 | Mar 11 | -3d 2h |
+| 2 | Mar 12 | -2d 2h |
+| 1 (morning) | Mar 13 12pm ET | -23h |
+| 1 (evening) | Mar 13 7pm ET | -16h |
 
-*Dates shown for January 24, 2026 event*
+*Dates shown for March 14, 2026 event*
 
 ---
 

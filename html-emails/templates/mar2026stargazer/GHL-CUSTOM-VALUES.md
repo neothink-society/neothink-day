@@ -59,4 +59,5 @@ Create a new GHL trigger link for the Stargazer Zoom join URL.
 - [ ] Load all emails + SMS into workflow with correct offsets (see PRE-EVENT-32DAY-SEQUENCE.md)
 - [ ] Test all custom value substitutions in preview before going live
 - [ ] Load `business-assessment-invite.html` into GHL intake webhook workflow (Yes branch)
-- [ ] Test end-to-end: submit Typeform → GHL creates contact → tags applied → business email sent
+- [ ] Add Business Assessment SMS to GHL intake webhook workflow (Yes branch) — see `pre-event-sms.md`
+- [ ] Test end-to-end: submit Typeform → GHL creates contact → tags applied → business email + SMS sent

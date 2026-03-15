@@ -124,9 +124,9 @@ After the workshop ends, VIP members continue to the session reminder sequence:
 ## Custom Values Required
 
 ```
-{{custom_values.doe_day_1_date}}           → Saturday, January 24
+{{custom_values.doe_day_1_date}}           → Saturday, March 14
 {{custom_values.doe_day_1_start_time}}     → 11:00 AM Eastern / 8:00 AM Pacific
-{{custom_values.doe_vip_session_date}}     → Monday, January 26
+{{custom_values.doe_vip_session_date}}     → Monday, March 16
 {{custom_values.doe_vip_session_time}}     → 4:00 PM Pacific / 7:00 PM Eastern
 {{custom_values.doe_vip_session_zoom}}     → https://neothink.zoom.us/j/xxx
 {{custom_values.doe_vip_recording_url}}    → https://neothinkday.com/vip-session-recording

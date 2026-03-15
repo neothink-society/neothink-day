@@ -26,8 +26,8 @@ If the contact purchases Level 3 at any point:
 
 ## Timing Reference
 
-**T=0 (Deadline):** Wednesday January 28, 2026 @ 8:59 PM PT / 11:59 PM ET
-**GHL Event Type:** Select date → `2026-01-28 8:59 PM Pacific`
+**T=0 (Deadline):** Wednesday March 18, 2026 @ 8:59 PM PT / 11:59 PM ET
+**GHL Event Type:** Select date → `2026-03-18 8:59 PM Pacific`
 
 All offsets are BEFORE the deadline (negative from T=0).
 
@@ -99,15 +99,15 @@ All offsets are BEFORE the deadline (negative from T=0).
 ## Custom Values Required
 
 ```
-{{custom_values.doe_day_1_date}}                → Saturday, January 24, 2026
-{{custom_values.doe_day_1_date_short}}          → January 24
-{{custom_values.doe_day_2_date_short}}          → January 25
-{{custom_values.doe_welcome_party_date}}       → Wednesday, January 28
-{{custom_values.doe_l3_deadline}}              → Wednesday, January 28 at 11:59 PM ET
+{{custom_values.doe_day_1_date}}                → Saturday, March 14, 2026
+{{custom_values.doe_day_1_date_short}}          → March 14
+{{custom_values.doe_day_2_date_short}}          → March 15
+{{custom_values.doe_welcome_party_date}}       → Wednesday, March 18
+{{custom_values.doe_l3_deadline}}              → Wednesday, March 18 at 11:59 PM ET
 {{custom_values.doe_l3_deadline_short}}        → 11:59 PM Wednesday
 {{custom_values.doe_l3_enrollment_url}}        → https://societysecrets.com/level3
 {{custom_values.doe_qa_call_link}}             → https://societysecrets.com/schedule
-{{custom_values.doe_vip_session_date}}         → Monday, January 26
+{{custom_values.doe_vip_session_date}}         → Monday, March 16
 {{custom_values.doe_vip_session_time}}         → 4:00 PM Pacific / 7:00 PM Eastern
 ```
 

@@ -78,7 +78,7 @@ workflows/
 
 **Before (hardcoded):**
 ```html
-<p>Join us Saturday, January 24, 2026 at 11:00 AM Eastern</p>
+<p>Join us Saturday, March 14, 2026 at 11:00 AM Eastern</p>
 ```
 
 **After (custom values):**

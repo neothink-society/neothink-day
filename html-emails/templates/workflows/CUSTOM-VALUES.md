@@ -30,13 +30,13 @@ All custom values use the `doe_` prefix (Day of Enlightenment) and are stored in
 
 ## Event Date Custom Values
 
-| GHL Field Key | Current Value (Jan 2026) | Used For |
+| GHL Field Key | Current Value (Mar 2026) | Used For |
 |---------------|--------------------------|----------|
-| `doe_day_1_date` | Saturday, January 24, 2026 | Day 1 full date |
-| `doe_day_1_date_short` | January 24 | Day 1 short date |
-| `doe_day_2_date` | Sunday, January 25, 2026 | Day 2 full date |
-| `doe_day_2_date_short` | January 25 | Day 2 short date |
-| `doe_event_dates` | January 24-25, 2026 | Combined date range |
+| `doe_day_1_date` | Saturday, March 14, 2026 | Day 1 full date |
+| `doe_day_1_date_short` | March 14 | Day 1 short date |
+| `doe_day_2_date` | Sunday, March 15, 2026 | Day 2 full date |
+| `doe_day_2_date_short` | March 15 | Day 2 short date |
+| `doe_event_dates` | March 14-15, 2026 | Combined date range |
 
 **Usage in templates:**
 ```html
@@ -47,7 +47,7 @@ All custom values use the `doe_` prefix (Day of Enlightenment) and are stored in
 
 ## Time Custom Values
 
-| GHL Field Key | Current Value (Jan 2026) | Used For |
+| GHL Field Key | Current Value (Mar 2026) | Used For |
 |---------------|--------------------------|----------|
 | `doe_day_1_start_time` | 11:00 AM Eastern / 8:00 AM Pacific | Day 1 start |
 | `doe_day_1_start_time_full` | 11:00 AM Eastern • 10:00 AM Central • 9:00 AM Mountain • 8:00 AM Pacific | Day 1 all time zones |
@@ -86,10 +86,10 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 
 ## VIP Session Custom Values
 
-| GHL Field Key | Current Value (Jan 2026) | Used For |
+| GHL Field Key | Current Value (Mar 2026) | Used For |
 |---------------|--------------------------|----------|
-| `doe_vip_session_date` | Monday, January 26 | VIP Session day |
-| `doe_vip_session_date_full` | Monday, January 26, 2026 | VIP Session full date |
+| `doe_vip_session_date` | Monday, March 16 | VIP Session day |
+| `doe_vip_session_date_full` | Monday, March 16, 2026 | VIP Session full date |
 | `doe_vip_session_time` | 4:00 PM Pacific / 7:00 PM Eastern | VIP Session time |
 | `doe_vip_session_zoom` | `{{trigger_link.oewaGnllvYO0WZ4NfUc6}}` | VIP Zoom (trigger link) |
 | `doe_vip_session_id` | 832 7546 6649 | VIP Meeting ID (for display) |
@@ -99,10 +99,10 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 
 ## L3 Welcome Party Custom Values
 
-| GHL Field Key | Current Value (Jan 2026) | Used For |
+| GHL Field Key | Current Value (Mar 2026) | Used For |
 |---------------|--------------------------|----------|
-| `doe_welcome_party_date` | Wednesday, January 28 | Welcome Party day |
-| `doe_welcome_party_date_full` | Wednesday, January 28, 2026 | Welcome Party full date |
+| `doe_welcome_party_date` | Wednesday, March 18 | Welcome Party day |
+| `doe_welcome_party_date_full` | Wednesday, March 18, 2026 | Welcome Party full date |
 | `doe_welcome_party_time` | 4:00 PM Pacific / 7:00 PM Eastern | Welcome Party time |
 | `doe_welcome_party_zoom` | `{{trigger_link.1iWXAhKPkv1YrL7kXM7h}}` | Welcome Party Zoom (trigger link) |
 | `doe_welcome_party_id` | 893 8151 6489 | Welcome Party Meeting ID (for display) |
@@ -112,9 +112,9 @@ Zoom links use **GHL Trigger Links** for click tracking and workflow automation.
 
 ## L3 Offer Custom Values
 
-| GHL Field Key | Current Value (Jan 2026) | Used For |
+| GHL Field Key | Current Value (Mar 2026) | Used For |
 |---------------|--------------------------|----------|
-| `doe_l3_deadline` | Wednesday, January 28 at midnight ET | L3 offer deadline |
+| `doe_l3_deadline` | Wednesday, March 18 at midnight ET | L3 offer deadline |
 | `doe_l3_deadline_short` | midnight Wednesday | Short deadline |
 | `doe_l3_deadline_time` | midnight ET | L3 deadline time only |
 | `doe_l3_enrollment_url` | https://societysecrets.com/level3 | L3 enrollment link |
@@ -295,4 +295,4 @@ curl -X POST "https://services.leadconnectorhq.com/locations/OWPT3ihPWINakwA0bGR
 
 ---
 
-*Last updated: February 17, 2026*
+*Last updated: March 15, 2026*

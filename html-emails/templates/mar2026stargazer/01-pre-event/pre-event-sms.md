@@ -3,7 +3,7 @@
 
 **Audience:** All Level 3 Stargazer enrollees (no VIP split)
 **T=0:** March 27, 2026 @ 8:00 AM Pacific / 11:00 AM Eastern
-**Total SMS:** 13 messages
+**Total SMS:** 13 scheduled messages + 1 webhook-triggered (business assessment)
 
 ---
 
@@ -303,6 +303,24 @@ See you inside.
 | 11 | 2 Days Out — Tech | -1d 23h | Wed Mar 25 | 9:00 AM |
 | 12 | 1 Day Out — Morning | -23h | Thu Mar 26 | 9:00 AM |
 | 13 | 1 Day Out — Evening | -16h | Thu Mar 26 | 4:00 PM |
+
+---
+
+## WEBHOOK-TRIGGERED SMS — Business Assessment (Intake Form Completion)
+
+**Trigger:** Typeform intake form submission → GHL webhook → IF business owner = yes
+**Paired with:** `business-assessment-invite.html` email (sent simultaneously)
+**Audience:** L3 enrollees who indicated they own a business on the intake form
+
+```
+Neothink Society: Intake form received. One more step for business owners.
+
+Day 2 is built around YOUR wealth blueprint. A 15-min Business Assessment lets Mark Hamilton tailor it to your specific situation.
+
+Complete it here: {{custom_values.sg_business_form_url}}
+```
+
+**Character count:** ~250 (2 segments)
 
 ---
 

@@ -1,6 +1,6 @@
 # L3 Offer Close SMS Messages
 
-**T=0 (Deadline):** Wednesday January 28, 2026 @ 8:59 PM PT / 11:59 PM ET
+**T=0 (Deadline):** Wednesday March 18, 2026 @ 8:59 PM PT / 11:59 PM ET
 
 ---
 

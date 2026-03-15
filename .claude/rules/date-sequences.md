@@ -60,15 +60,18 @@ To send at **9:00 AM Pacific** (optimal send time for engagement):
 | Lunch break | ~12:00 PM PT | ~3:00 PM ET | +4h |
 | Day 1 end | ~5:00 PM PT | ~8:00 PM ET | +9h |
 
-### Day 2 Offsets (Sunday, relative to Saturday T=0)
+### Day 2 Offsets (Sunday — Separate Workflow with own T=0)
 
-| Timing | Pacific | Eastern | Offset |
-|--------|---------|---------|--------|
-| 2 hours before | 6:00 AM PT | 9:00 AM ET | +22h |
-| 1 hour before | 7:00 AM PT | 10:00 AM ET | +23h |
-| Doors open | 7:30 AM PT | 10:30 AM ET | +23h 30m |
-| Day 2 start | 8:00 AM PT | 11:00 AM ET | +24h |
-| 15 min after | 8:15 AM PT | 11:15 AM ET | +24h 15m |
+**As of March 2026, Day 2 has its own GHL workflow with T=0 = 8:00 AM Pacific Sunday.**
+
+| Timing | Pacific | Eastern | Offset (Day 2 T=0) | Offset (if combined, from Sat T=0) |
+|--------|---------|---------|---------------------|-------------------------------------|
+| 2 hours before | 6:00 AM PT | 9:00 AM ET | -2h | +22h |
+| 1 hour before | 7:00 AM PT | 10:00 AM ET | -1h | +23h |
+| Doors open | 7:30 AM PT | 10:30 AM ET | -30m | +23h 30m |
+| Day 2 start | 8:00 AM PT | 11:00 AM ET | T=0 | +24h |
+| 15 min after | 8:15 AM PT | 11:15 AM ET | +15m | +24h 15m |
+| 30 min after | 8:30 AM PT | 11:30 AM ET | +30m | +24h 30m |
 
 ### Post-Event Offsets (positive from Saturday T=0)
 
