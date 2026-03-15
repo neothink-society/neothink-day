@@ -151,7 +151,7 @@ Day 2 this morning: {{custom_values.doe_day_2_start_time}}. Same Zoom link. See 
 ---
 
 ### Day 2 — 2 Hours Before
-**Offset:** +22h (6:00 AM Pacific / 9:00 AM Eastern)
+**Offset:** -2h (6:00 AM Pacific / 9:00 AM Eastern)
 
 ```
 Neothink Society: Day 2 in 2 hours.
@@ -179,7 +179,7 @@ Workbook + Day 1 notes ready. Same Zoom link. Today: Wealth, Matrix, Integration
 ---
 
 ### Day 2 — 1 Hour Before
-**Offset:** +23h (7:00 AM Pacific / 10:00 AM Eastern)
+**Offset:** -1h (7:00 AM Pacific / 10:00 AM Eastern)
 
 ```
 Neothink Society: Day 2 in 1 hour.
@@ -193,8 +193,8 @@ Gather your Day 1 notes. Same Zoom link. See you soon.
 
 ---
 
-### Day 2 — Workshop Starting
-**Offset:** +24h (8:00 AM Pacific / 11:00 AM Eastern)
+### Day 2 — Day 2 Live
+**Offset:** T=0 (8:00 AM Pacific / 11:00 AM Eastern)
 
 ```
 Neothink Society: Day 2 starting now.
@@ -210,7 +210,7 @@ Today: Matrix, Wealth Creation & Level 2 initiation.
 ---
 
 ### Day 2 — Late Joiner (15min)
-**Offset:** +24h 15m (8:15 AM Pacific / 11:15 AM Eastern)
+**Offset:** +15m (8:15 AM Pacific / 11:15 AM Eastern)
 
 ```
 Neothink Society: Day 2 is underway.
@@ -228,7 +228,7 @@ Today we build on yesterday's foundation.
 ---
 
 ### Day 2 — Late Joiner (30min)
-**Offset:** +24h 30m (8:30 AM Pacific / 11:30 AM Eastern)
+**Offset:** +30m (8:30 AM Pacific / 11:30 AM Eastern)
 
 ```
 Neothink Society: Day 2 continues.
@@ -243,76 +243,8 @@ Yesterday was foundation. Today is transformation.
 
 ---
 
-### Day 2 — Late Joiner (45min)
-**Offset:** +24h 45m (8:45 AM Pacific / 11:45 AM Eastern)
-
-```
-Neothink Society: Day 2 is happening now.
-
-In the room? Stay with us. Have your workbook ready.
-
-Not in yet? Join now:
-{{trigger_link.bw3pFLlMkAQiQOlYB674}}
-
-This is it.
-```
-
-**Character Count:** ~140/160
-
----
-
-### Day 2 — Late Joiner (1hr)
-**Offset:** +25h (9:00 AM Pacific / 12:00 PM Eastern)
-
-```
-Neothink Society: Day 2 is in full swing.
-
-In the room? Thank you for showing up again.
-
-Not in yet?
-{{trigger_link.bw3pFLlMkAQiQOlYB674}}
-
-Today, everything comes together.
-```
-
-**Character Count:** ~145/160
-
----
-
-### Day 2 — Late Joiner (15min)
-**Offset:** +25h 15m (9:15 AM Pacific / 12:15 PM Eastern)
-
-```
-Neothink Society: Day 2 is happening now.
-
-Integration has started. Join:
-{{trigger_link.bw3pFLlMkAQiQOlYB674}}
-
-You can still catch up.
-```
-
-**Character Count:** ~110/160
-
----
-
-### Day 2 — Late Joiner (30min)
-**Offset:** +25h 30m (9:30 AM Pacific / 12:30 PM Eastern)
-
-```
-Neothink Society: Integration is happening.
-
-Day 2 is underway. Join now:
-{{trigger_link.bw3pFLlMkAQiQOlYB674}}
-
-Don't miss the completion of your transformation.
-```
-
-**Character Count:** ~130/160
-
----
-
 ### Day 2 — Workshop Complete
-**Offset:** +33h (5:00 PM Pacific / 8:00 PM Eastern)
+**Offset:** +9h (5:00 PM Pacific / 8:00 PM Eastern)
 
 ```
 Neothink Society: You did it.
@@ -356,16 +288,12 @@ Welcome to Neothink Society. Your golden life has begun.
 | Day 1 — Late 15min | +15m | 8:15 AM | 11:15 AM |
 | Day 1 — Late 30min | +30m | 8:30 AM | 11:30 AM |
 | Day 1 — End of Day | +9h | 5:00 PM | 8:00 PM |
-| Day 2 — 2 Hours | +22h | 6:00 AM | 9:00 AM |
-| Day 2 — 1 Hour | +23h | 7:00 AM | 10:00 AM |
-| Day 2 — Workshop Starting | +24h | 8:00 AM | 11:00 AM |
-| Day 2 — Late 15min | +24h 15m | 8:15 AM | 11:15 AM |
-| Day 2 — Late 30min | +24h 30m | 8:30 AM | 11:30 AM |
-| Day 2 — Late 45min | +24h 45m | 8:45 AM | 11:45 AM |
-| Day 2 — Late 1hr | +25h | 9:00 AM | 12:00 PM |
-| Day 2 — Late 1hr 15min | +25h 15m | 9:15 AM | 12:15 PM |
-| Day 2 — Late 1hr 30min | +25h 30m | 9:30 AM | 12:30 PM |
-| Day 2 — Complete | +33h | 5:00 PM | 8:00 PM |
+| Day 2 — 2 Hours | -2h | 6:00 AM | 9:00 AM |
+| Day 2 — 1 Hour | -1h | 7:00 AM | 10:00 AM |
+| Day 2 — Day 2 Live | T=0 | 8:00 AM | 11:00 AM |
+| Day 2 — Late 15min | +15m | 8:15 AM | 11:15 AM |
+| Day 2 — Late 30min | +30m | 8:30 AM | 11:30 AM |
+| Day 2 — Complete | +9h | 5:00 PM | 8:00 PM |
 
 ---
 

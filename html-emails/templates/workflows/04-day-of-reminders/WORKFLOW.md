@@ -7,7 +7,8 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 
 ## Trigger
 - **Type:** Date-based (offset from event start)
-- **Base Time:** T=0 = Event Day 1 start (e.g., 11:00 AM Eastern)
+- **Day 1 T=0:** 11:00 AM Eastern / 8:00 AM Pacific (Saturday)
+- **Day 2 T=0:** 11:00 AM Eastern / 8:00 AM Pacific (Sunday — separate workflow)
 
 ---
 
@@ -27,16 +28,18 @@ Countdown and reminder emails sent on the day of the event, based on offsets fro
 
 ## Day 2 Schedule
 
-**Base Time:** Day 2 start = T+24h (11:00 AM Eastern / 8:00 AM Pacific the next day — same as Day 1)
+**Base Time:** Day 2 T=0 = 11:00 AM Eastern / 8:00 AM Pacific (separate workflow with own event start time)
+**Doors Open:** 10:30 AM Eastern / 7:30 AM Pacific
 
-| Offset from T=0 | Time (ET) | Template | Subject Line |
-|-----------------|-----------|----------|--------------|
-| +22h | 9:00 AM | `day2-2hours.html` | Day 2 starts in 2 hours |
-| +23h | 10:00 AM | `day2-1hour.html` | 1 hour until Day 2 begins |
-| +23h 30m | 10:30 AM | `day2-30min.html` | 30 MINUTES — Get ready |
-| +24h | 11:00 AM | `day2-live.html` | DAY 2 IS LIVE — Join now! |
-| +24h 15m | 11:15 AM | `day2-late-15min.html` | Day 2 has started — join now! |
-| +24h 30m | 11:30 AM | `day2-late-30min.html` | Day 2 is underway — get in! |
+| Offset | Time (ET) | Template | Subject Line |
+|--------|-----------|----------|--------------|
+| -2h | 9:00 AM | `day2-02hours.html` | Day 2 in 2 hours |
+| -1h | 10:00 AM | `day2-01hour.html` | 1 hour until Day 2 begins |
+| -30m | 10:30 AM | `day2-30min.html` | Doors open — Day 2 in 30 min |
+| -15m | 10:45 AM | `day2-15min.html` | 15 minutes — join the room |
+| T=0 | 11:00 AM | `day2-live.html` | DAY 2 IS LIVE — Join now! |
+| +15m | 11:15 AM | `day2-late-15min.html` | Day 2 has started — join now! |
+| +30m | 11:30 AM | `day2-late-30min.html` | Day 2 is underway — get in! |
 
 ---
 
@@ -93,27 +96,37 @@ To avoid sending late-joiner emails to people who are already in:
 **Day 2 SMS Schedule:**
 | Message | Offset | Time (PT) |
 |---------|--------|-----------|
-| 2 Hours Before | +22h | 6:00 AM |
-| 1 Hour Before | +23h | 7:00 AM |
-| Workshop Starting | +24h | 8:00 AM |
-| Late 15min | +24h 15m | 8:15 AM |
-| Late 30min | +24h 30m | 8:30 AM |
-| Late 45min | +24h 45m | 8:45 AM |
-| Late 1hr | +25h | 9:00 AM |
-| Complete | +33h | 5:00 PM |
+| 2 Hours Before | -2h | 6:00 AM |
+| 1 Hour Before | -1h | 7:00 AM |
+| Day 2 Live | T=0 | 8:00 AM |
+| Late 15min | +15m | 8:15 AM |
+| Late 30min | +30m | 8:30 AM |
+| Complete | +9h | 5:00 PM |
 
 ---
 
-## Offset Reference (from T=0)
+## Offset Reference
+
+Each day has its own T=0 at 8:00 AM Pacific / 11:00 AM Eastern.
+
+**Day 1 (Saturday):**
 
 | Event | Offset | Time (ET) |
 |-------|--------|-----------|
-| Day 1, 2h before | -2h | 9:00 AM |
+| 2h before | -2h | 9:00 AM |
 | Day 1 start | T=0 | 11:00 AM |
-| Day 1, 30m after | +30m | 11:30 AM |
-| Day 2, 2h before | +22h | 9:00 AM next day |
-| Day 2 start | +24h | 11:00 AM next day |
-| Day 2, 30m after | +24h 30m | 11:30 AM next day |
+| 30m after | +30m | 11:30 AM |
+
+**Day 2 (Sunday):**
+
+| Event | Offset | Time (ET) |
+|-------|--------|-----------|
+| 2h before | -2h | 9:00 AM |
+| 1h before | -1h | 10:00 AM |
+| Doors open | -30m | 10:30 AM |
+| Day 2 start | T=0 | 11:00 AM |
+| 15m after | +15m | 11:15 AM |
+| 30m after | +30m | 11:30 AM |
 
 ---
 
@@ -135,10 +148,9 @@ To avoid sending late-joiner emails to people who are already in:
 
 | File | GHL Template Name |
 |------|-------------------|
-| `day2-2hours.html` | `DOE 06 Day 2 Reminder 2h` |
-| `day2-1hour.html` | `DOE 06 Day 2 Reminder 1h` |
-| `day2-45min.html` | `DOE 06 Day 2 Reminder 45m` |
-| `day2-30min.html` | `DOE 06 Day 2 Reminder 30m` |
+| `day2-02hours.html` | `DOE 06 Day 2 Reminder 2h` |
+| `day2-01hour.html` | `DOE 06 Day 2 Reminder 1h` |
+| `day2-30min.html` | `DOE 06 Day 2 Doors Open 30m` |
 | `day2-15min.html` | `DOE 06 Day 2 Reminder 15m` |
 | `day2-live.html` | `DOE 06 Day 2 Live Now` |
 | `day2-late-15min.html` | `DOE 06 Day 2 Late 15m` |
