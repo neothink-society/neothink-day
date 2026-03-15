@@ -98,6 +98,7 @@ To avoid sending late-joiner emails to people who are already in:
 |---------|--------|-----------|
 | 2 Hours Before | -2h | 6:00 AM |
 | 1 Hour Before | -1h | 7:00 AM |
+| Doors Open | -30m | 7:30 AM |
 | Day 2 Live | T=0 | 8:00 AM |
 | Late 15min | +15m | 8:15 AM |
 | Late 30min | +30m | 8:30 AM |

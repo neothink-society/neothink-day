@@ -193,6 +193,24 @@ Gather your Day 1 notes. Same Zoom link. See you soon.
 
 ---
 
+### Day 2 — Doors Open
+**Offset:** -30m (7:30 AM Pacific / 10:30 AM Eastern)
+
+```
+Neothink Society: Doors are open for Day 2.
+
+Already in the room? Welcome back. Yesterday was foundation.
+
+Not in yet? Join us:
+{{trigger_link.bw3pFLlMkAQiQOlYB674}}
+
+30 minutes until we begin.
+```
+
+**Character Count:** ~155/160
+
+---
+
 ### Day 2 — Day 2 Live
 **Offset:** T=0 (8:00 AM Pacific / 11:00 AM Eastern)
 
@@ -290,6 +308,7 @@ Welcome to Neothink Society. Your golden life has begun.
 | Day 1 — End of Day | +9h | 5:00 PM | 8:00 PM |
 | Day 2 — 2 Hours | -2h | 6:00 AM | 9:00 AM |
 | Day 2 — 1 Hour | -1h | 7:00 AM | 10:00 AM |
+| Day 2 — Doors Open | -30m | 7:30 AM | 10:30 AM |
 | Day 2 — Day 2 Live | T=0 | 8:00 AM | 11:00 AM |
 | Day 2 — Late 15min | +15m | 8:15 AM | 11:15 AM |
 | Day 2 — Late 30min | +30m | 8:30 AM | 11:30 AM |
