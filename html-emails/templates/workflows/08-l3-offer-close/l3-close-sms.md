@@ -13,7 +13,7 @@ Neothink Society: Level 3 sold out — but I'm honoring my word.
 
 Final Q&A TODAY 4pm PT / 7pm ET. Your L3 questions + 90-day roadmap.
 
-Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Join: {{custom_values.doe_qa_session_zoom}}
 
 Wednesday midnight = final deadline.
 – Wallace
@@ -34,7 +34,7 @@ Neothink Society: Level 3 sold out but I'm honoring my word. Final Q&A TODAY 4pm
 **SMS 2 (send 5 min later):**
 ```
 Neothink Society: Today's Q&A Zoom link:
-https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+{{custom_values.doe_qa_session_zoom}}
 
 Enroll now: societysecrets.com/level3
 ```
@@ -54,7 +54,7 @@ Neothink Society: Level 3 Q&A + Implementation Session starts in 1 HOUR.
 
 Get clarity on Level 3 + we'll help you create your 90-day implementation plan.
 
-Zoom: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Zoom: {{custom_values.doe_qa_session_zoom}}
 
 Last chance before Wednesday's enrollment deadline.
 
@@ -81,7 +81,7 @@ Neothink Society: L3 Q&A in 1 HOUR. 4pm PT / 7pm ET. Get L3 clarity + 90-day pla
 ```
 Neothink Society: LIVE NOW — Level 3 Q&A + Implementation Session.
 
-Join immediately: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Join immediately: {{custom_values.doe_qa_session_zoom}}
 
 Get L3 clarity + your 90-day plan.
 
@@ -93,7 +93,7 @@ Last chance before Wednesday's deadline.
 
 **Alternative (single segment):**
 ```
-Neothink Society: LIVE NOW — L3 Q&A. Join: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Neothink Society: LIVE NOW — L3 Q&A. Join: {{custom_values.doe_qa_session_zoom}}
 ```
 
 **Character Count:** ~125/160
@@ -108,7 +108,7 @@ Neothink Society: LIVE NOW — L3 Q&A. Join: https://neothink.zoom.us/j/82729227
 ```
 Neothink Society: 1 HOUR LEFT in final Level 3 Q&A.
 
-We're still live: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+We're still live: {{custom_values.doe_qa_session_zoom}}
 
 Last chance for clarity before Wednesday midnight deadline.
 – The Neothink Team
@@ -118,7 +118,7 @@ Last chance for clarity before Wednesday midnight deadline.
 
 **Alternative (single segment):**
 ```
-Neothink Society: 1 HOUR LEFT in L3 Q&A. Still live: https://neothink.zoom.us/j/82729227938?pwd=eDsRlJ0tdQxIA5ZsLW2DmyadEphaHy.1
+Neothink Society: 1 HOUR LEFT in L3 Q&A. Still live: {{custom_values.doe_qa_session_zoom}}
 ```
 
 **Character Count:** ~130/160
