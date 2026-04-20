@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Day of Enlightenment is LIVE. Join the workshop on Zoom now. Access your materials and VIP upgrade.">
+    <title>WE ARE LIVE - Day of Enlightenment | {{ custom_values.doe_event_dates }}</title>
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+        =========================== */
+        :root {
+            /* Fonts */
+            --font-serif: 'Baskervville', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Courier Prime', 'Courier New', monospace;
+
+            /* Colors */
+            --gold: #FFD700;
+            --gold-light: #FFED4E;
+            --gold-dark: #B8860B;
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6a6a6a;
+            --gray-400: #8a8a8a;
+            --gray-300: #aaaaaa;
+            --gray-200: #cccccc;
+            --gray-100: #e5e5e5;
+            --white: #ffffff;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Typography */
+            --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+            --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.313rem);
+            --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+            --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.953rem);
+            --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.441rem);
+            --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.052rem);
+            --text-5xl: clamp(3rem, 2.55rem + 2.25vw, 4.209rem);
+
+            /* Focus */
+            --min-touch-target: 44px;
+            --focus-ring: 3px solid var(--gold);
+            --focus-offset: 3px;
+        }
+
+        /* ===========================
+           RESET & BASE
+        =========================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--black);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *:focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: var(--focus-offset);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 100;
+        }
+        .skip-to-content:focus { top: 0; }
+
+        /* ===========================
+           ANIMATIONS
+        =========================== */
+        @keyframes live-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(255, 59, 48, 0); }
+        }
+
+        @keyframes zoom-glow {
+            0%, 100% {
+                box-shadow: 0 8px 30px rgba(45, 140, 255, 0.4), 0 0 60px rgba(45, 140, 255, 0.15);
+            }
+            50% {
+                box-shadow: 0 12px 40px rgba(45, 140, 255, 0.6), 0 0 80px rgba(45, 140, 255, 0.25);
+            }
+        }
+
+        @keyframes subtle-pulse {
+            0%, 100% { box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.2); }
+            50% { box-shadow: 0 2px 12px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.3); }
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), 0 0 40px rgba(255, 215, 0, 0.1), inset 0 0 20px rgba(255, 215, 0, 0.05);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255, 215, 0, 0.5), 0 0 60px rgba(255, 215, 0, 0.2), inset 0 0 30px rgba(255, 215, 0, 0.1);
+            }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6)); }
+            50% { opacity: 0.7; filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.9)); }
+        }
+
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        main { flex: 1; }
+
+        /* ===========================
+           HEADER
+        =========================== */
+        .site-header {
+            background: var(--gray-900);
+            border-bottom: 1px solid var(--gray-800);
+            padding: var(--space-md) 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .header-live-badge {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ff3b30;
+            padding: 0.375rem 0.875rem;
+            background: rgba(255, 59, 48, 0.15);
+            border: 1px solid rgba(255, 59, 48, 0.4);
+            border-radius: 20px;
+        }
+
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background: #ff3b30;
+            border-radius: 50%;
+            animation: live-pulse 1.5s ease-in-out infinite;
+        }
+
+        /* ===========================
+           HERO - LIVE STATE
+        =========================== */
+        .hero-live {
+            text-align: center;
+            padding: var(--space-2xl) var(--space-md) var(--space-xl);
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+        }
+
+        .hero-live-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: var(--font-mono);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #ff3b30;
+            margin-bottom: var(--space-lg);
+            padding: 0.5rem 1.25rem;
+            background: rgba(255, 59, 48, 0.1);
+            border: 1px solid rgba(255, 59, 48, 0.3);
+            border-radius: 30px;
+        }
+
+        .hero-live-indicator .live-dot {
+            width: 12px;
+            height: 12px;
+        }
+
+        .hero-live h1 {
+            font-family: var(--font-serif);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .gradient-text {
+            display: block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: var(--gold);
+            padding-bottom: 0.15em;
+            line-height: 1.3;
+        }
+
+        .hero-live-subtitle {
+            font-size: var(--text-lg);
+            color: var(--gray-300);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===========================
+           JOIN NOW CTA
+        =========================== */
+        .join-now-section {
+            padding: var(--space-xl) var(--space-md) var(--space-2xl);
+            background: linear-gradient(180deg, var(--black) 0%, rgba(45, 140, 255, 0.05) 50%, var(--black) 100%);
+            text-align: center;
+        }
+
+        .join-now-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, rgba(45, 140, 255, 0.12), rgba(45, 140, 255, 0.04));
+            border: 2px solid rgba(45, 140, 255, 0.3);
+            border-radius: 24px;
+            animation: zoom-glow 3s ease-in-out infinite;
+        }
+
+        .join-now-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(45, 140, 255, 0.2), rgba(45, 140, 255, 0.08));
+            border: 2px solid rgba(45, 140, 255, 0.4);
+            border-radius: 50%;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .join-now-icon svg {
+            width: 40px;
+            height: 40px;
+            color: #2d8cff;
+        }
+
+        .join-now-card h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .join-now-card p {
+            color: var(--gray-300);
+            margin-bottom: var(--space-xl);
+        }
+
+        .join-now-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            width: 100%;
+            padding: 1.25rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--white);
+            background: linear-gradient(135deg, #2d8cff, #1a6fdd);
+            border: none;
+            border-radius: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 64px;
+            box-shadow: 0 8px 30px rgba(45, 140, 255, 0.4);
+        }
+
+        .join-now-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(45, 140, 255, 0.6), 0 0 60px rgba(45, 140, 255, 0.2);
+        }
+
+        .join-now-button svg {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .join-now-button:hover svg { transform: translateX(4px); }
+
+        .join-now-details {
+            margin-top: var(--space-lg);
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(45, 140, 255, 0.2);
+        }
+
+        .join-now-details p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            margin-bottom: 0;
+        }
+
+        /* ===========================
+           VIP UPGRADE BANNER
+        =========================== */
+        .vip-banner-section {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,
+                rgba(255, 107, 107, 0.08) 0%,
+                rgba(255, 154, 0, 0.08) 50%,
+                rgba(255, 215, 0, 0.08) 100%
+            );
+            border-top: 2px solid rgba(255, 107, 107, 0.2);
+            border-bottom: 2px solid rgba(255, 107, 107, 0.2);
+        }
+
+        .vip-banner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-2xl) var(--space-lg);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+
+        .vip-banner-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .vip-banner-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-family: var(--font-sans);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .vip-banner-eyebrow svg {
+            width: 20px;
+            height: 20px;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .vip-banner-title {
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .vip-banner-title .highlight {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .vip-banner-subtitle {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.6;
+            margin: 0;
+            max-width: 600px;
+        }
+
+        .vip-banner-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            margin-top: var(--space-sm);
+        }
+
+        .vip-benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            font-size: var(--text-sm);
+            color: var(--gray-300);
+            line-height: 1.5;
+        }
+
+        .vip-benefit-item strong { color: var(--gold); font-weight: 700; }
+
+        .vip-benefit-item svg {
+            width: 18px;
+            height: 18px;
+            color: var(--gold);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .vip-banner-cta {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+            align-items: flex-end;
+        }
+
+        .vip-banner-value { text-align: right; }
+
+        .vip-value-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .vip-value-price {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+        }
+
+        .vip-value-note {
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+            font-style: italic;
+        }
+
+        .vip-banner-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: 1.25rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 60px;
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3), 0 0 60px rgba(255, 215, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .vip-banner-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .vip-banner-button:hover::before { left: 100%; }
+
+        .vip-banner-button:hover {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.5), 0 0 80px rgba(255, 215, 0, 0.2);
+        }
+
+        .vip-banner-button svg {
+            transition: transform 0.3s ease;
+            width: 20px;
+            height: 20px;
+        }
+
+        .vip-banner-button:hover svg { transform: translateX(4px); }
+
+        /* ===========================
+           SECTION SHARED
+        =========================== */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-header h2 {
+            font-family: var(--font-serif);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-header p {
+            font-size: var(--text-xl);
+            color: var(--gray-300);
+        }
+
+        /* ===========================
+           WORKSHOP DETAILS SECTION
+        =========================== */
+        .workshop-details-section {
+            padding: var(--space-3xl) 0;
+            background: var(--gray-900);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        @media (min-width: 768px) {
+            .details-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        .detail-card {
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--gold);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .detail-card:hover {
+            border-left-color: var(--gold-light);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            transform: translateY(-4px);
+        }
+
+        .detail-card h3 {
+            font-size: var(--text-lg);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            color: var(--white);
+        }
+
+        .detail-answer { color: var(--gray-300); }
+        .detail-answer p { margin-bottom: var(--space-sm); line-height: 1.7; }
+        .detail-answer ul { margin: var(--space-md) 0; padding-left: var(--space-lg); }
+        .detail-answer li { margin-bottom: var(--space-xs); line-height: 1.7; }
+
+        .detail-note {
+            margin-top: var(--space-md);
+            padding: var(--space-sm) var(--space-md);
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 3px solid var(--gold);
+            border-radius: 8px;
+            font-style: italic;
+            color: var(--white);
+        }
+
+        /* ===========================
+           PRE-WORK SECTION
+        =========================== */
+        .pre-work-section {
+            padding: var(--space-3xl) 0;
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--black) 100%);
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .pre-work-grid {
+            display: grid;
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .pre-work-card {
+            display: flex;
+            gap: var(--space-lg);
+            align-items: flex-start;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 215, 0, 0.02));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .pre-work-card:hover {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.03));
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+        }
+
+        .pre-work-number {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            color: var(--black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-2xl);
+            font-weight: 900;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .pre-work-content { flex: 1; }
+
+        .pre-work-content h3 {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            color: var(--white);
+        }
+
+        .pre-work-content p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .pre-work-questions {
+            list-style: none;
+            padding: 0;
+            margin: var(--space-md) 0 0 0;
+        }
+
+        .pre-work-questions li {
+            padding-left: var(--space-lg);
+            margin-bottom: var(--space-sm);
+            position: relative;
+            color: var(--gray-200);
+            font-size: var(--text-sm);
+            line-height: 1.6;
+        }
+
+        .pre-work-questions li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .pre-work-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-lg);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: var(--text-sm);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        .pre-work-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .pre-work-button svg { width: 18px; height: 18px; }
+
+        /* ===========================
+           QUICK ACCESS SECTION
+        =========================== */
+        .quick-access-section {
+            padding: var(--space-3xl) var(--space-md);
+            background: linear-gradient(180deg, var(--black) 0%, var(--gray-900) 50%, var(--black) 100%);
+        }
+
+        .access-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .access-grid-2col { grid-template-columns: repeat(2, 1fr); }
+
+        @media (max-width: 768px) {
+            .access-grid-2col { grid-template-columns: 1fr; }
+        }
+
+        /* Modern Card Design */
+        .access-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.8));
+            border: 2px solid var(--gray-800);
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .access-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--gray-700), transparent);
+            transition: all 0.4s ease;
+        }
+
+        .access-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.1);
+        }
+
+        .access-card:hover::before {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        /* Featured VIP Card */
+        .access-card.featured {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.98), rgba(255, 215, 0, 0.08));
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+
+        .access-card.featured::before {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            height: 3px;
+        }
+
+        /* Locked Cards */
+        .access-card.locked { opacity: 0.65; }
+
+        .access-card.locked::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+            border-radius: 20px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .access-card.locked:hover {
+            transform: translateY(-4px);
+            border-color: var(--gray-700);
+        }
+
+        .lock-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            color: var(--gold);
+            z-index: 2;
+            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+            opacity: 0.9;
+        }
+
+        /* Card Icon */
+        .card-icon {
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            margin-bottom: var(--space-lg);
+            transition: all 0.3s ease;
+        }
+
+        .access-card:hover .card-icon {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.1));
+            border-color: rgba(255, 215, 0, 0.6);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .card-icon svg {
+            width: 36px;
+            height: 36px;
+            color: var(--gold);
+        }
+
+        /* Card Content */
+        .card-status {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin-bottom: var(--space-md);
+            align-self: flex-start;
+        }
+
+        .card-status.available {
+            color: var(--gold);
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+        }
+
+        .card-status.locked {
+            color: var(--gray-400);
+            background: rgba(106, 106, 106, 0.1);
+            border: 1px solid var(--gray-700);
+        }
+
+        .card-status.urgent {
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.15);
+            border: 1px solid rgba(255, 107, 107, 0.4);
+        }
+
+        .access-card h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            line-height: 1.3;
+        }
+
+        .access-card p {
+            font-size: var(--text-base);
+            color: var(--gray-300);
+            line-height: 1.8;
+            margin-bottom: var(--space-xl);
+            flex: 1;
+        }
+
+        /* Buttons */
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            width: 100%;
+            padding: 1.125rem 2rem;
+            font-family: var(--font-sans);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--black);
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 56px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+        }
+
+        .card-link:hover {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .card-link svg { transition: transform 0.3s ease; }
+        .card-link:hover svg { transform: translateX(4px); }
+
+        .card-link.secondary {
+            color: var(--gold);
+            background: transparent;
+            border: 2px solid var(--gold);
+            box-shadow: none;
+        }
+
+        .card-link.secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--gold-light);
+            color: var(--gold-light);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .card-link.locked-btn {
+            opacity: 0.5;
+            cursor: default;
+            background: var(--gray-800);
+            color: var(--gray-400);
+            box-shadow: none;
+        }
+
+        /* ===========================
+           FOOTER
+        =========================== */
+        .site-footer {
+            background: var(--gray-900);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--space-2xl) var(--space-md) var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-serif);
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .footer-brand p {
+            font-size: var(--text-sm);
+            color: var(--gray-400);
+            line-height: 1.5;
+        }
+
+        .footer-support { text-align: right; }
+
+        .support-label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--gray-400);
+            margin-bottom: var(--space-sm);
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: 6px;
+            min-height: var(--min-touch-target);
+        }
+
+        .support-link:hover {
+            color: var(--gold-light);
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-800);
+        }
+
+        .footer-bottom p {
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           RESPONSIVE
+        =========================== */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+
+            .hero-live { padding: var(--space-xl) var(--space-sm); }
+            .hero-live h1 { font-size: var(--text-3xl); }
+
+            .access-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+
+            .access-card { padding: var(--space-xl); }
+
+            .vip-banner {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+                padding: var(--space-xl) var(--space-md);
+            }
+
+            .vip-banner-title { font-size: var(--text-2xl); }
+
+            .vip-banner-cta {
+                align-items: stretch;
+            }
+
+            .vip-banner-value { text-align: center; }
+
+            .vip-banner-button {
+                width: 100%;
+                padding: 1.125rem 2rem;
+            }
+
+            .footer-content { text-align: center; gap: var(--space-xl); margin-bottom: var(--space-xl); }
+            .footer-brand, .footer-support { text-align: center; }
+            .support-link { justify-content: center; }
+
+            .pre-work-card { flex-direction: column; gap: var(--space-md); }
+            .pre-work-number { width: 50px; height: 50px; font-size: var(--text-xl); }
+        }
+
+        @media (max-width: 480px) {
+            .hero-live h1 { font-size: var(--text-2xl); }
+            .join-now-button { padding: 1rem 1.5rem; font-size: var(--text-lg); }
+            .access-card h3 { font-size: var(--text-xl); }
+            .card-link { padding: 1rem 1.5rem; font-size: var(--text-base); }
+            .vip-banner-title { font-size: var(--text-xl); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="/home" class="site-logo" aria-label="Day of Enlightenment Workshop Hub">Neothink Society</a>
+                    <div class="header-live-badge" aria-label="Workshop is live">
+                        <span class="live-dot" aria-hidden="true"></span>
+                        Live Now
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Hero - LIVE -->
+            <section class="hero-live">
+                <div class="container">
+                    <div class="hero-live-indicator">
+                        <span class="live-dot" aria-hidden="true"></span>
+                        Workshop is Live
+                    </div>
+
+                    <h1>
+                        Welcome to the
+                        <span class="gradient-text">Day of Enlightenment</span>
+                    </h1>
+
+                    <p class="hero-live-subtitle">
+                        The workshop is happening right now. Join on Zoom and be fully present. Your transformation starts the moment you show up.
+                    </p>
+                </div>
+            </section>
+
+            <!-- JOIN NOW CTA -->
+            <section class="join-now-section">
+                <div class="join-now-card">
+                    <div class="join-now-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+
+                    <h2>Join on Zoom</h2>
+                    <p>Same link works for both days. Click below to enter the workshop.</p>
+
+                    <a href="https://neothink.zoom.us/j/82104560901?pwd=bpMKWhCz0TKbPkxijeGtaTySYIvTjQ.1" target="_blank" rel="noopener" class="join-now-button" aria-label="Join Workshop on Zoom">
+                        Join Workshop Now
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+
+                    <div class="join-now-details">
+                        <p><strong>Meeting ID:</strong> 821 0456 0901 &nbsp;|&nbsp; <strong>Passcode:</strong> 266365</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIP Upgrade Banner -->
+            <section class="vip-banner-section" aria-label="VIP upgrade offer">
+                <div class="vip-banner">
+                    <div class="vip-banner-content">
+                        <span class="vip-banner-eyebrow">
+                            <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            VIP Upgrade — Limited Spots
+                        </span>
+                        <h2 class="vip-banner-title">
+                            Don't Leave Your Breakthrough to Chance — <span class="highlight">Get VIP</span>
+                        </h2>
+                        <p class="vip-banner-subtitle">
+                            VIP members receive guaranteed private group mentorship with Wallace Hamilton and priority assistance throughout the weekend.
+                        </p>
+                        <div class="vip-banner-benefits">
+                            <div class="vip-benefit-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong>GUARANTEED</strong> private intimate group session with Wallace Hamilton</span>
+                            </div>
+                            <div class="vip-benefit-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong>PRIORITY</strong> assistance on Day 1 — your questions answered first</span>
+                            </div>
+                            <div class="vip-benefit-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span><strong>EXCLUSIVE</strong> VIP-only session on Day 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-banner-cta">
+                        <div class="vip-banner-value">
+                            <div class="vip-value-label">VIP Upgrade</div>
+                            <div class="vip-value-price">$297</div>
+                            <div class="vip-value-note">Closes at workshop start</div>
+                        </div>
+                        <a href="https://neothinkday.com/vip-upgrade" target="_blank" rel="noopener" class="vip-banner-button" aria-label="Upgrade to VIP Experience for $297">
+                            Secure VIP Access Now
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workshop Details Section -->
+            <section class="workshop-details-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Workshop Details</h2>
+                        <p>Everything at a glance</p>
+                    </div>
+
+                    <div class="details-grid">
+                        <!-- Schedule -->
+                        <div class="detail-card">
+                            <h3>📅 Weekend Schedule</h3>
+                            <div class="detail-answer">
+                                <p><strong style="color: var(--gold);">Day 1 — Saturday, {{ custom_values.doe_day_1_date_short }}</strong></p>
+                                <ul>
+                                    <li><strong>Doors open:</strong> 10:30 AM Eastern / 7:30 AM Pacific</li>
+                                    <li><strong>Wallace takes stage:</strong> 11:00 AM Eastern / 8:00 AM Pacific SHARP</li>
+                                    <li><strong>Runs until:</strong> Late evening</li>
+                                </ul>
+                                <p style="margin-top: 1.25rem;"><strong style="color: var(--gold);">Day 2 — Sunday, {{ custom_values.doe_day_2_date_short }}</strong></p>
+                                <ul>
+                                    <li><strong>Starts:</strong> 11:00 AM Eastern / 8:00 AM Pacific SHARP</li>
+                                    <li><strong>Runs until:</strong> Evening</li>
+                                </ul>
+                                <p class="detail-note">Lunch breaks are strictly 30 minutes. Clear your entire weekend.</p>
+                            </div>
+                        </div>
+
+                        <!-- Where -->
+                        <div class="detail-card">
+                            <h3>📍 Where is it?</h3>
+                            <div class="detail-answer">
+                                <p><strong>Live on Zoom</strong></p>
+                                <p>This is a virtual workshop accessible from anywhere. You need a reliable internet connection and a quiet, distraction-free space.</p>
+                                <p>Your Zoom link is in the Quick Access section above. Same link works for both days.</p>
+                                <p><a href="https://neothinkday.com/zoom" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline;">View Zoom joining guide →</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Preparation Checklist -->
+                        <div class="detail-card">
+                            <h3>✅ Pre-Event Checklist</h3>
+                            <div class="detail-answer">
+                                <ul>
+                                    <li><strong>Block your calendar:</strong> Both days, full day. No interruptions.</li>
+                                    <li><strong>Download your workbook:</strong> Print it before Saturday morning.</li>
+                                    <li><strong>Read pages 1–50</strong> of your Secret Manuscript.</li>
+                                    <li><strong>Complete the questionnaire</strong> so we can tailor the experience.</li>
+                                    <li><strong>Prepare meals in advance</strong> — lunch breaks are only 30 min.</li>
+                                    <li><strong>Set up your space:</strong> Quiet, comfortable, water nearby.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- What to Bring -->
+                        <div class="detail-card">
+                            <h3>🎒 Have These Within Reach</h3>
+                            <div class="detail-answer">
+                                <ul>
+                                    <li>Your Secret Manuscript</li>
+                                    <li>Your printed FNE Workbook</li>
+                                    <li>Pen and notebook for additional notes</li>
+                                    <li>Water bottle (stay hydrated)</li>
+                                    <li>Prepared snacks for short breaks</li>
+                                    <li>Phone on Do Not Disturb, notifications off</li>
+                                </ul>
+                                <p class="detail-note">Full presence is the foundation of transformation. Arrive distraction-free.</p>
+                            </div>
+                        </div>
+
+                        <!-- Duration / Timeline -->
+                        <div class="detail-card">
+                            <h3>⏱️ How Long Does It Run?</h3>
+                            <div class="detail-answer">
+                                <p><strong>Clear your entire weekend.</strong></p>
+                                <p>Each day starts in the morning and runs through the evening. Day 1 tends to run longer. Lunch is the only break — plan accordingly.</p>
+                                <p>Full presence both days is required for the full transformation. Missing sessions means missing breakthroughs that build on each other.</p>
+                            </div>
+                        </div>
+
+                        <!-- Support -->
+                        <div class="detail-card">
+                            <h3>❓ Need Help?</h3>
+                            <div class="detail-answer">
+                                <p>Questions, Zoom issues, or anything else — we're here.</p>
+                                <p><a href="mailto:support@neothink.com" style="color: var(--gold); text-decoration: underline;">support@neothink.com</a></p>
+                                <p><a href="https://neothinkday.com/zoom" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline;">Zoom joining guide →</a></p>
+                                <p class="detail-note">If you're experiencing technical issues on the day of the event, email support immediately — we monitor throughout the workshop.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pre-Work Section -->
+            <section class="pre-work-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Required Pre-Work</h2>
+                        <p>Complete these before Saturday morning</p>
+                    </div>
+
+                    <div class="pre-work-grid">
+                        <!-- Pre-Work 1: Questionnaire -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number" aria-hidden="true">1</div>
+                            <div class="pre-work-content">
+                                <h3>Complete the Questionnaire</h3>
+                                <p>Fill out the pre-workshop form so we can tailor the experience to you. Takes 5–10 minutes. Do this first.</p>
+                                <a href="https://neothink.typeform.com/to/R6zL32wy" target="_blank" rel="noopener" class="pre-work-button" aria-label="Complete pre-workshop questionnaire">
+                                    Open the Form
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work 2: Manuscript -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number" aria-hidden="true">2</div>
+                            <div class="pre-work-content">
+                                <h3>Read Pages 1–50 of Your Manuscript</h3>
+                                <p>Read the first 50 pages of <em>The Secret Manuscript</em>. This establishes the foundation we'll build upon together. Focus on engagement, not perfection — notice what resonates, what challenges your assumptions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work 3: Workbook -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number" aria-hidden="true">3</div>
+                            <div class="pre-work-content">
+                                <h3>Download &amp; Print Your FNE Workbook</h3>
+                                <p>This is your Day of Enlightenment workbook — print it before the workshop. You'll need it to follow along and capture breakthroughs. Having it printed is essential.</p>
+                                <a href="{{custom_values.doe_workbook_url}}" target="_blank" rel="noopener" class="pre-work-button" aria-label="Download Day of Enlightenment Workbook PDF">
+                                    Download Workbook (PDF)
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Work 4: Reflect -->
+                        <div class="pre-work-card">
+                            <div class="pre-work-number" aria-hidden="true">4</div>
+                            <div class="pre-work-content">
+                                <h3>Reflect on These Questions</h3>
+                                <p>Don't try to answer these — just let them open you up before Saturday:</p>
+                                <ul class="pre-work-questions">
+                                    <li>What pattern keeps repeating in your life that you're finally ready to break?</li>
+                                    <li>If you operated from absolute certainty instead of fear, what would you create?</li>
+                                    <li>What single breakthrough would create cascading transformation across your entire life?</li>
+                                    <li>Where are you settling for less when you're capable of extraordinary?</li>
+                                    <li>Who would you become if you operated from your highest capabilities every day?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Access Section -->
+            <section class="quick-access-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Quick Access</h2>
+                        <p>Your workshop materials</p>
+                    </div>
+
+                    <!-- FNE Workbook Card - Full Width -->
+                    <div class="access-card featured" style="max-width: 800px; margin: 0 auto var(--space-2xl);" aria-label="FNE Workbook">
+                        <span class="card-status available">Available Now</span>
+                        <div class="card-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3>FNE Workbook</h3>
+                        <p>Discover your deepest motivational root — your Friday Night Essence. Download and print this before Saturday morning. You'll follow along during the workshop.</p>
+                        <a href="{{custom_values.doe_workbook_url}}" target="_blank" rel="noopener" class="card-link" aria-label="Download FNE Workbook PDF">
+                            Download &amp; Print Workbook
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 2-Column Grid -->
+                    <div class="access-grid access-grid-2col">
+
+                        <!-- Zoom Room - LIVE -->
+                        <div class="access-card featured" style="border-color: #2d8cff; background: linear-gradient(135deg, rgba(45, 140, 255, 0.15), rgba(45, 140, 255, 0.05));" aria-label="Join Workshop on Zoom">
+                            <span class="card-status available" style="background: #2d8cff; color: #ffffff;">LIVE NOW</span>
+                            <div class="card-icon" style="border-color: rgba(45, 140, 255, 0.4); background: linear-gradient(135deg, rgba(45, 140, 255, 0.15), rgba(45, 140, 255, 0.05));">
+                                <svg fill="none" stroke="#2d8cff" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Join Workshop on Zoom</h3>
+                            <p>Click the button below to join the Day of Enlightenment workshop. Same link works for both days.</p>
+                            <a href="https://neothink.zoom.us/j/82104560901?pwd=bpMKWhCz0TKbPkxijeGtaTySYIvTjQ.1" target="_blank" rel="noopener" class="card-link" style="background: linear-gradient(135deg, #2d8cff, #1a6fdd); color: #ffffff; box-shadow: 0 4px 20px rgba(45, 140, 255, 0.4);" aria-label="Join Workshop on Zoom">
+                                Join Workshop Now
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                            <div style="margin-top: var(--space-lg, 24px); padding-top: var(--space-lg, 24px); border-top: 1px solid rgba(45, 140, 255, 0.3);">
+                                <p style="font-size: 14px; color: #b0b0b0;"><strong>Meeting ID:</strong> 821 0456 0901 &nbsp;|&nbsp; <strong>Passcode:</strong> 266365</p>
+                            </div>
+                        </div>
+
+                        <!-- Golden Life Sheet - Locked -->
+                        <div class="access-card locked" aria-label="Golden Life Sheet - unlocks during workshop">
+                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span class="card-status locked">Unlocks During Workshop</span>
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Golden Life Sheet</h3>
+                            <p>Your primary implementation tool from the workshop — where everything comes together. This unlocks during the Day 1 session.</p>
+                            <span class="card-link locked-btn" aria-disabled="true">🔒 Unlocks During Day 1</span>
+                        </div>
+
+                        <!-- Wealth Engine - Locked -->
+                        <div class="access-card locked" aria-label="Wealth Engine - unlocks during workshop">
+                            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span class="card-status locked">Unlocks During Workshop</span>
+                            <div class="card-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Wealth Engine</h3>
+                            <p>Your exact path to financial freedom. This calculator tool unlocks during the Day 1 session when Wallace walks through it with you.</p>
+                            <span class="card-link locked-btn" aria-disabled="true">🔒 Unlocks During Day 1</span>
+                        </div>
+
+                        <!-- VIP Upgrade Card -->
+                        <div class="access-card featured" aria-label="VIP upgrade">
+                            <span class="card-status urgent">Limited Spots</span>
+                            <div class="card-icon" style="border-color: rgba(255, 107, 107, 0.4); background: rgba(255, 107, 107, 0.1);">
+                                <svg fill="none" stroke="#ff6b6b" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3>VIP Upgrade</h3>
+                            <p>Guaranteed private group mentorship with Wallace Hamilton. Priority assistance throughout the weekend. Exclusive Day 2 VIP session. Closes at workshop start.</p>
+                            <a href="https://neothinkday.com/vip-upgrade" target="_blank" rel="noopener" class="card-link" style="background: linear-gradient(135deg, #ff8787, #ff6b6b); color: white; box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);" aria-label="Upgrade to VIP for $297">
+                                Get VIP Access — $297
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Neothink Society</h3>
+                    <p>Day of Enlightenment Workshop &bull; {{ custom_values.doe_event_dates }}</p>
+                </div>
+                <div class="footer-support">
+                    <p class="support-label">Questions or technical issues?</p>
+                    <a href="mailto:support@neothink.com" class="support-link" aria-label="Email support">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@neothink.com
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Neothink Society. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
