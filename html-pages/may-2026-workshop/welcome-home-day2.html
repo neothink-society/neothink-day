@@ -996,8 +996,8 @@
                     </div>
 
                     <p class="countdown-info">
-                        Doors open at <strong>10:30 AM Eastern / 7:30 AM Pacific</strong><br>
-                        We begin at <strong>11:00 AM Eastern / 8:00 AM Pacific</strong>
+                        Doors open at <strong>9:30 AM Eastern / 6:30 AM Pacific</strong><br>
+                        We begin at <strong>10:00 AM Eastern / 7:00 AM Pacific</strong>
                     </p>
 
                     <a href="https://neothink.zoom.us/j/82104560901?pwd=bpMKWhCz0TKbPkxijeGtaTySYIvTjQ.1" target="_blank" rel="noopener" class="countdown-join-early" aria-label="Join Zoom room early">
@@ -1053,8 +1053,8 @@
                             <div class="detail-answer">
                                 <p><strong style="color: var(--gold);">Day 2 — Sunday, {{ custom_values.doe_day_2_date_short }}</strong></p>
                                 <ul>
-                                    <li><strong>Doors open:</strong> 10:30 AM Eastern / 7:30 AM Pacific</li>
-                                    <li><strong>We begin:</strong> 11:00 AM Eastern / 8:00 AM Pacific</li>
+                                    <li><strong>Doors open:</strong> 9:30 AM Eastern / 6:30 AM Pacific</li>
+                                    <li><strong>We begin:</strong> 10:00 AM Eastern / 7:00 AM Pacific</li>
                                     <li><strong>Runs until:</strong> Evening</li>
                                 </ul>
                                 <p class="detail-note">Today: Wealth Creation, the Matrix, and Integration. Bring your Day 1 notes.</p>
@@ -1212,9 +1212,9 @@
     <!-- Countdown Script -->
     <script>
         (function() {
-            // Day 2 start: {{ custom_values.doe_day_2_date_short }}, 2026 at 11:00 AM Eastern (8:00 AM Pacific)
+            // Day 2 start: {{ custom_values.doe_day_2_date_short }}, 2026 at 10:00 AM Eastern (7:00 AM Pacific)
             // Eastern = UTC-4 in May (EDT)
-            var startTime = new Date('{{ custom_values.doe_day_2_start_iso }}'); // 11am EDT = 3pm UTC
+            var startTime = new Date('{{ custom_values.doe_day_2_start_iso }}'); // 10am EDT = 2pm UTC
 
             var hoursEl = document.getElementById('countdown-hours');
             var minutesEl = document.getElementById('countdown-minutes');

@@ -1118,7 +1118,7 @@
             const interval = setInterval(updateCountdown, 1000);
         }
 
-        // Initialize countdown to {{ custom_values.doe_day_1_date_short }}, 2026 at 11:00 AM ET (8:00am PT / 9:00am MT / 10:00am CT / 11:00am ET)
+        // Initialize countdown to {{ custom_values.doe_day_1_date_short }}, 2026 at 10:00 AM ET (7:00am PT / 8:00am MT / 9:00am CT / 10:00am ET)
         document.addEventListener('DOMContentLoaded', function() {
             const workshopDate = new Date('{{ custom_values.doe_day_1_start_iso }}').getTime();
             initCountdown(workshopDate);
