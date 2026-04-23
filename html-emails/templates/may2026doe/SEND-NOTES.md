@@ -2,8 +2,10 @@
 
 **Send date:** Thursday, April 23, 2026 (morning)
 **Event dates:** Saturday–Sunday, May 23–24, 2026
+**Start time (both days):** 7:00 AM Pacific / 10:00 AM Eastern
 **Days out at send:** 30
 **Registration URL:** https://neothinkday.com/register
+**Core message (both variants):** Everyone must register to attend — previous registrations do not carry forward.
 
 Two variants. Same visual system, different messaging. Audience-split at the workflow level — a given contact should receive **one** of these, not both.
 
@@ -52,27 +54,35 @@ You've already made the investment. Registration is the moment you consciously c
 
 **Subject line (primary):**
 ```
-{{contact.first_name}}, the room opens again May 23–24 — come back deeper
+{{contact.first_name}}, you're invited back to the Day of Enlightenment — May 23–24
 ```
 
 **Alt subject lines:**
-- `Return to the Day of Enlightenment — May 23–24, 2026`
-- `{{contact.first_name}}, you know what this weekend does. May 23–24.`
-- `The work continues. May 23–24.`
+- `You're invited back. Free. Register if you want to attend.`
+- `Open invitation: come back to the Day of Enlightenment, May 23–24`
+- `{{contact.first_name}}, want to go through it again? May 23–24, 2026.`
 
 **Preheader:**
 ```
-You've walked through these two days before. What emerges this time is not a repeat—it's the next layer. Register to confirm your seat.
+You've already been through this workshop. You're invited back at no additional cost. If you want to attend, register at neothinkday.com/register. If not, no action needed—we'll send a few more reminders in case you change your mind.
 ```
 
 **Primary CTA:** `Confirm My Seat for May 23–24 →` → `https://neothinkday.com/register`
 
-**Framing:** Doesn't re-explain what the DOE is. Acknowledges prior attendance. Frames return as the next layer — same structure, different you. Four plain-spoken notes worth knowing:
+**Framing:** Explicit, no-pressure invitation. Lead message is "you're invited back at no additional cost — register if you want to attend, ignore if you don't." Doesn't re-explain what the DOE is. Makes it obvious that going through it again is:
+- **Free** (no additional cost)
+- **Optional** (no obligation — they can ignore)
+- **Purposeful** (solidify foundation, go deeper, meet what's emerged since)
+- **Active** (requires completing the registration form for this specific cohort)
+
+Four plain-spoken notes worth knowing:
 
 1. **New this time: a dedicated member portal** — previous cohorts worked from public pages and email links; this cohort gets a logged-in portal at `/apps/web` built for this workshop (event hub, pre-work, Secret Manuscript, schedule, live Zoom link behind one login). Portal login is created at registration.
-2. **Registration is per cohort** — previous registrations don't carry forward; complete the form for this workshop.
+2. **Everyone must register for this cohort** — previous registrations don't carry forward; complete the form for this workshop if you want to attend.
 3. **VIP is purchased per workshop** — VIP from a prior DOE does not carry over. If they want VIP for May 23–24, they purchase it again at the end of registration.
 4. **The pre-work is worth doing again** — same prompts, different doors depending on who's answering.
+
+**Follow-up plan referenced in the email:** "We'll send a few more reminders in the next few weeks in case you change your mind." Plan follow-up broadcasts (suggested cadence: 20 days out, 10 days out, 3 days out) for anyone in this audience who still hasn't registered.
 
 ---
 
